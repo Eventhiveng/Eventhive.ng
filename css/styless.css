@@ -15550,9 +15550,9 @@
  .sector-section:after {
    content: "";
    display: block;
-   width: 1340px;
-   height: 1150px;
-   position: absolute;
+   /* width: 1340px; */
+   /* height: 1150px; */
+   /* position: absolute; */
    left: -44%;
    top: 0;
    background-image: url(../assets/img/pattern-2.png);
@@ -15564,11 +15564,11 @@
  .sector-section:before {
    content: "";
    display: block;
-   width: 570px;
-   height: 580px;
-   position: absolute;
-   right: -212px;
-   bottom: -165px;
+   /* width: 570px; */
+   /* height: 580px; */
+   /* position: absolute; */
+   /* right: -212px; */
+   /* bottom: -165px; */
    background-image: url(../assets/img/patern-1.png);
    background-repeat: no-repeat;
    background-size: contain;

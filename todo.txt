@@ -1,5 +1,4 @@
 push notification
 tawk.to or zendesk
-google tag manager
-ogp.me
-bam.nr-data.net
+add sectors svg
+<script>document.write(new Date().getFullYear());</script>
