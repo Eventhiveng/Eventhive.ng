@@ -12,8 +12,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-200px * 20));
-            transform: translateX(calc(-200px * 20));
+    -webkit-transform: translateX(calc(-200px * 22));
+            transform: translateX(calc(-200px * 22));
   }
 }
 
@@ -23,8 +23,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-200px * 20));
-            transform: translateX(calc(-200px * 20));
+    -webkit-transform: translateX(calc(-200px * 22));
+            transform: translateX(calc(-200px * 22));
   }
 }
 .company-slider {
@@ -58,7 +58,7 @@
   -webkit-animation: scroll 40s linear infinite;
           animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(200px * 22);
+  width: calc(200px * 44);
 }
 .company-slider .company-slide {
   height: 200px;
