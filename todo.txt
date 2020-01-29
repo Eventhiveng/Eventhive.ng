@@ -1,4 +1,4 @@
 push notification
 tawk.to or zendesk
-add sectors svg
-<script>document.write(new Date().getFullYear());</script>
+add sizeable logos to index.html event sections
+add text to picture gallery or change the layout
