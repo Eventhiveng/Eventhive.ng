@@ -1,8 +1,2 @@
 push notification
-tawk.to or zendesk
-add sizeable logos to index.html event sections
 add text to picture gallery or change the layout
-
-change the content of the sectors quotes
-get involved partner icons
-contact banner
