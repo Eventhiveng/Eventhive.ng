@@ -4,7 +4,5 @@ make header photos clearer
 add engineering summit photos to gellery
 remove sectors text and replace with eboss logos
 change sectors.htmlheader photo
-remove fintech and sme sectors
-remove entities we partner with on get-involved.html
 add enquiries details (see techpoint page for insight) and map to contact us page
 add header photo to contact us page
