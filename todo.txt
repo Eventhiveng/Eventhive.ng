@@ -1,8 +1,3 @@
 push notification
-add text to picture gallery or change the layout
-make header photos clearer
-add engineering summit photos to gellery
 remove sectors text and replace with eboss logos
-change sectors.htmlheader photo
 add enquiries details (see techpoint page for insight) and map to contact us page
-add header photo to contact us page
