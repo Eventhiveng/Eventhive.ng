@@ -1,3 +1,2 @@
 push notification
 remove sectors text and replace with eboss logos
-add enquiries details (see techpoint page for insight) and map to contact us page
