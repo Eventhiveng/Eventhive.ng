@@ -1,2 +1,1 @@
-# Eventhive.ng
-Company Website
+#Lagos Power Fest
