@@ -1,2 +1,0 @@
-# Eventhive.ng
-Company Website
