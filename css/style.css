@@ -1770,6 +1770,9 @@ a:hover {
   color: transparent;
   font-weight: bolder;
 }
+.sponsorship .row img{
+  margin: 30px;
+}
 
 /* AGENDA SECTION */
 .agenda .grid-container {
@@ -2479,6 +2482,9 @@ input::-moz-focus-outer {
 
   .footer-bar h2 {
     padding: 0;
+  }
+  .sponsorship .row img{
+    width: 60%;
   }
 }
 /* RESPONSIVE TABLET  */
