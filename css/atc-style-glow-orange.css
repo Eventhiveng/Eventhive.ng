@@ -3,11 +3,11 @@
 .atc-style-glow-orange .atcb-list {
   line-height: 1.3em;
   vertical-align: middle;
-  zoom: 1
+  zoom: 1;
 }
 
 .addtocalendar var {
-  display: none
+  display: none;
 }
 
 .addtocalendar {
@@ -15,19 +15,19 @@
   display: inline-block;
   width: 195px;
   height: 46px;
-  float: left
+  float: left;
 }
 
 .atcb-link {
   display: block;
-  outline: 0!important;
-  cursor: pointer
+  outline: 0 !important;
+  cursor: pointer;
 }
 
-.atcb-link:active~ul,
-.atcb-link:focus~ul,
+.atcb-link:active ~ ul,
+.atcb-link:focus ~ ul,
 .atcb-list:hover {
-  visibility: visible
+  visibility: visible;
 }
 
 .atcb-list {
@@ -36,7 +36,7 @@
   top: 100%;
   left: 0;
   width: 170px;
-  z-index: 900
+  z-index: 900;
 }
 
 .atcb-item,
@@ -44,18 +44,18 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #fff
+  background: #fff;
 }
 
 .atcb-item {
   float: none;
-  text-align: left
+  text-align: left;
 }
 
 .atcb-item-link {
   text-decoration: none;
   outline: 0;
-  display: block
+  display: block;
 }
 
 .atcb-item.hover,
@@ -64,7 +64,7 @@
   z-index: 900;
   cursor: pointer;
   text-decoration: none;
-  outline: 0
+  outline: 0;
 }
 
 .atc-style-glow-orange .atcb-link {
@@ -74,16 +74,16 @@
   -moz-border-radius: 8px;
   border-radius: 8px;
   text-align: center;
-  -webkit-transition: all .1s ease;
-  -moz-transition: all .1s ease;
-  -ms-transition: all .1s ease;
-  -o-transition: all .1s ease;
-  transition: all .1s ease
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .atc-style-glow-orange .atcb-link:active {
-  opacity: .8;
-  position: relative
+  opacity: 0.8;
+  position: relative;
 }
 
 .atc-style-glow-orange .atcb-link,
@@ -97,20 +97,20 @@
   outline: 0;
   width: 195px;
   height: 27px;
-  right: 32px
+  right: 32px;
 }
 
 .atc-style-glow-orange .atcb-list {
   margin: 0;
-  border-radius: 2px
+  border-radius: 2px;
 }
 
 .atc-style-glow-orange .atcb-item,
 .atc-style-glow-orange .atcb-list {
   background: #fff;
   color: #000;
-  padding: 0!important;
-  width: 100%!important
+  padding: 0 !important;
+  width: 100% !important;
 }
 
 .atc-style-glow-orange .atcb-item-link,
@@ -122,7 +122,7 @@
   font-size: 14px;
   text-decoration: none;
   outline: 0;
-  padding: 5px 15px
+  padding: 5px 15px;
 }
 
 .atc-style-glow-orange .atcb-item-link:active,
@@ -130,10 +130,10 @@
 .atc-style-glow-orange .atcb-item-link:hover {
   color: #fff;
   width: 100%;
-  background: #1075c0
+  background: #1075c0;
 }
 
 .atc-style-glow-orange .atcb-item.hover,
 .atc-style-glow-orange .atcb-item:hover {
-  background: 0 0
+  background: 0 0;
 }
