@@ -1862,10 +1862,10 @@ a:hover {
 
 .ticket .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  /* grid-gap: 50px; */
-  padding-left: 50px;
-  padding-right: 50px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 30px;
 }
 .ticket .grid-item {
@@ -1879,6 +1879,7 @@ a:hover {
 }
 .ticket li {
   list-style-type: "->";
+  font-size: 16px;
 }
 .ticket a {
   display: inline-block;
