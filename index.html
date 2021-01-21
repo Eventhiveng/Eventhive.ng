@@ -95,14 +95,14 @@
     <header class="slider">
       <div class="container">
         <h2>Welcome to <b>Lagos Tech Fest 2021</b></h2>
-        <p>February 24th - 25th, 2021</p>
+        <p>February 25th, 2021</p>
         <p>VIRTUAL CONFERENCE</p>
         <div class="buttons">
           <a href="https://zfrmz.com/bffV5lSZApHQgfRcDruC"
           target="_blank">Download Event Brochure<i class="lni lni-arrow-right"></i
           ></a>
           <a href="#ticket" class="left"
-            >Book Ticket <i class="lni lni-arrow-right"></i
+            >Reserve Ticket <i class="lni lni-arrow-right"></i
           ></a>
         </div>
       </div>
@@ -195,8 +195,8 @@
               <p>
                 <b> -VIRTUAL SESSION WITH TECH THOUGHT LEADERS </b>
 
-                Lagos Tech Fest is a 2-day high caliber gathering of tech
-                stakeholders. Participate in a 2-day live sessions and
+                Lagos Tech Fest is high caliber gathering of tech
+                stakeholders. Participate in live sessions and
                 presentations with industry peers delivered by thought leaders
                 within the tech ecosystem.
               </p>
@@ -609,7 +609,7 @@
     <!-- TICKET SECTION -->
     <section class="content-section no-spacing ticket" id="ticket">
       <h1>BOOK A <b>SEAT</b></h1>
-      <div class="grid-container">
+      <!-- <div class="grid-container">
         <div class="grid-item">
           <p>GENERAL PASS FOR INDIVIDUAL - (5,000)</p>
           <ul>
@@ -675,11 +675,8 @@
             <a href="https://paystack.com/pay/gold-pass-ltf">Book Pass</a>
           </div>
         </div>
-      </div>
-      <p>
-        *50% discount on all categories of Early Bird ticket ended on 31st of
-        January, 2021
-      </p>
+      </div> -->
+      <div id="eventbrite-widget-container-137746929775"></div>
     </section>
     <!-- TICKET SECTION -->
 
@@ -789,5 +786,23 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/odometer.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+        window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '137746929775',
+            iframeContainerId: 'eventbrite-widget-container-137746929775',
+
+            // Optional
+            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        });
+    </script>
   </body>
 </html>
