@@ -1848,6 +1848,12 @@ a:hover {
 }
 
 /* TICKET SECTION */
+#eventbrite-widget-container-137746929775 {
+  max-width: 1200px;
+  margin: 20px auto;
+  margin-bottom: 2.4rem;
+}
+
 .ticket h1 {
   text-align: center;
   margin-bottom: 50px;
