@@ -387,9 +387,9 @@ header a:nth-of-type(2):hover {
   right: 0;
 }
 
-#list-speaker li {
+/* #list-speaker li {
   display: none;
-}
+} */
 
 /* speaker detail */
 
@@ -1507,6 +1507,9 @@ figure.effect-ming:hover img {
 	.navbar-collapse{
 		background-color: #222222;
 	}
+}
+.price-table .price {
+  font-size: 40px;
 }
 
 /* -------------------------------------------------- 
