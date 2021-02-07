@@ -195,7 +195,7 @@ header {
 header .title {
   position: absolute;
   top: 48%;
-  left: 38%;
+  left: 40%;
   transform: translate(-10%, -40%);
   color: white;
   text-align: right;
