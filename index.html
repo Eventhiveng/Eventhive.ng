@@ -1,822 +1,697 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+    	
+        <title>Nigeria Power Outlook</title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Eventr - One Page Event Template">
+        <meta name="author" content="themecube">
+        
+        <!-- viewport settings -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+     
 
-    <title>Lagos Power Fest</title>
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        
+        <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="css/helper.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/salvattore.css">
+        <link rel="stylesheet" href="css/jquery.countdown.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/owl.transitions.css">
+        <link rel="stylesheet" href="css/revolution.css">
+        <link rel="stylesheet" href="css/revolution-extralayers.css">
+        
+        <link rel="stylesheet" href="css/main.css">
+		        
 
-    <!-- Google font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,700,900"
-      rel="stylesheet"
-    />
+        <!-- Font -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/logo.png">
+        <script>
+            function show(shown, hidden) {
+              document.getElementById(shown).style.display='block';
+              document.getElementById(hidden).style.display='none';
+              return false;
+            }
+        </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	</head>
 
-    <!-- Bootstrap -->
-    <!-- <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-
-    <!-- Owl Carousel -->
-    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
-
-    <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-
-    <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <script
-      type="text/javascript"
-      src="https://addevent.com/libs/atc/1.6.1/atc.min.js"
-      async
-      defer
-    ></script>
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      (function () {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/5df6081f43be710e1d222773/default";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script>
-    <!--End of Tawk.to Script-->
-  </head>
-  <body>
-    <!-- Header -->
-    <header id="header" class="transparent-navbar">
-      <!-- container -->
-      <div class="container">
-        <!-- navbar header -->
-        <div class="navbar-header">
-          <!-- Logo -->
-          <div class="navbar-brand">
-            <h1>
-              <a class="logo" href="index.html">
-                <img
-                  class="logo"
-                  src="./img/LagosPowerFest-Logo.png"
-                  alt="logo"
-                />
-              </a>
-            </h1>
-          </div>
-          <!-- /Logo -->
-
-          <!-- Mobile toggle -->
-          <button class="navbar-toggle">
-            <i class="fa fa-bars"></i>
-          </button>
-          <!-- /Mobile toggle -->
+	<body>
+    	
+        <!-- PRELOADING --> 
+        <div id="preload">
+        	<div class="preload">
+            	<div class="spinner"></div>
+            </div>
         </div>
-        <!-- /navbar header -->
-
-        <!-- Navigation -->
-        <nav id="nav">
-          <ul class="main-nav nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#speakers">Speakers</a></li>
-            <li><a href="#exhibition">Exhibition</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- /Navigation -->
-      </div>
-      <!-- /container -->
-    </header>
-    <!-- /Header -->
-
-    <!-- Home -->
-    <div id="home">
-      <!-- background image -->
-      <div
-        class="section-bg"
-        style="
-          background-image: url(./img/photo-1466611653911-95081537e5b7.jfif);
-        "
-        data-stellar-background-ratio="0.5"
-      ></div>
-      <!-- /background image -->
-
-      <!-- home wrapper -->
-      <div class="home-wrapper">
-        <!-- container -->
-        <div class="container">
-          <!-- row -->
-          <div class="row">
-            <!-- home content -->
-            <div class="col-md-8 col-md-offset-2">
-              <div class="home-content">
-                <h2 style="color: white;" class="text-uppercase">
-                  Thank you for attending
-                  <span class="section-title" style="color: #dd0a37;"
-                    >Lagos power fest 2020</span
-                  >
-                </h2>
-                <h4 class="lead">29th - 30th June 2020 | Virtual Live Event</h4>
-                <!-- <div title="Add to Calendar " class="addeventatc">
-                  Stay reminded
-                  <span class="start">03/26/2020 09:00 AM</span>
-                  <span class="end">03/26/2020 02:00 PM</span>
-                  <span class="timezone">Nigeria</span>
-                  <span class="title">Lagos Power Fest</span>
-                  <span class="description"> </span>
-                  <span class="location">Civic Center VI Lagos</span>
-                </div> -->
-                <!-- <a href="#book-a-seat" class="main-btn">Book A Seat !</a> -->
-                <!-- <a
-                  href="https://zfrmz.com/VeZXQIzlEDqg5VbXYmAW"
-                  target="_blank"
-                  class="brochure-btn"
-                  >Download Our Brochure</a
-                > -->
-                <a href="https://zfrmz.com/QDa5GW57zDXAL0GH7qNp" target="_blank" class="brochure-btn">Download the Post-event Report</a>
-              </div>
+        
+        <!-- NAVIGATION -->
+		<nav id="nav-primary" class="navbar navbar-custom" role="navigation">
+          <div class="container">
+            
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="index.html"><img src="img/logo.png" alt="logo" width="120px" height="40px"></a>
             </div>
-            <!-- /home content -->
-          </div>
-          <!-- /row -->
-        </div>
-        <!-- /container -->
-      </div>
-      <!-- /home wrapper -->
-    </div>
-    <!-- /Home -->
-
-    <!-- About -->
-    <div id="about" class="section">
-      <!-- container -->
-      <div class="container">
-        <!-- row -->
-        <div class="row">
-          <!-- section title -->
-          <div class="section-title">
-            <h3 class="title">
-              <span>About</span> <span style="color: #dd0a37;">Us</span>
-            </h3>
-          </div>
-          <!-- /section title -->
-
-          <div class="col-md-8 col-md-offset-2 text-center">
-            <!-- about content -->
-            <div class="about-content">
-              <p>
-                Lagos Power Fest is the foremost gathering of the industry's
-                finest minds, top-level business leaders and decision-makers
-                within Nigeria's Power and Energy sector. At the conference &
-                exhibition, industry experts will share major insights
-                concerning the Nigeria's Power market.
-              </p>
-              <p>
-                Lagos Power Fest will provide an opportunity for learning,
-                knowledge transfer, interaction and peer-to-peer networking.
-                Keynote and specialist session content will be unique to the
-                conference as it is the result of public and private sector
-                collaboration.
-              </p>
-              <p>
-                Lagos Power Fest puts strategy, policy and thought leadership at
-                the heart of its sessions ensuring a delegate audience of key
-                decision-makers and c-suite directors.
-              </p>
-              <p>
-                Join 1000+ delegates and thought leaders, trend setters to
-                refresh thinking, exchange ideas on the future of Power and
-                connect with other stakeholders & decision makers.
-              </p>
-              <br />
-              <div class="row">
-                <div class="col-md-6">
-                  <h2 style="color: #dd0a37;">
-                    Why you should attend
-                  </h2>
-                  <h4>Lagos Power Fest will create an opportunity to:</h4>
-                  <ul>
-                    <li>
-                      <p>
-                        - Provide a global platform for debate and action to
-                        build the Nigeria's Power sector.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Explore business opportunities within the Power and
-                        Energy sector.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Learn on how Power is evolving with the rise of
-                        digitisation.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Share conversations with policy makers as regards what
-                        they are doing to support innovation and investment in
-                        the Power sector.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Network with policy-setting government figures at
-                        Federal and State Governments levels and benefit from
-                        collaboration and knowledge transfer.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Network with Industry Leaders in the Power and Energy
-                        sector.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <h2 style="color: #dd0a37;">
-                    Who you will meet at the event
-                  </h2>
-                  <ul>
-                    <li>
-                      <p>Federal and State Governments and their agencies.</p>
-                    </li>
-                    <li>
-                      <p>Power sector subject matter experts.</p>
-                    </li>
-                    <li>
-                      <p>Oil and Gas Companies.</p>
-                    </li>
-                    <li>
-                      <p>Equipment Vendors</p>
-                    </li>
-                    <li>
-                      <p>Grid Operators</p>
-                    </li>
-                    <li>
-                      <p>Power Utilities</p>
-                    </li>
-                    <li>
-                      <p>Off-grid Energy Suppliers</p>
-                    </li>
-                    <li>
-                      <p>International Development Partners</p>
-                    </li>
-                    <li>
-                      <p>Private Equity and Investment Banks</p>
-                    </li>
-                    <li>
-                      <p>Energy Sector Heads at Financial Institutions.</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- /about content -->
-
-            <!-- Numbers -->
-            <div id="numbers">
-              <!-- row -->
-              <div class="row">
-                <!-- number -->
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                  <div class="number">
-                    <h3>
-                      <span
-                        class="counter"
-                        data-from="0"
-                        data-to="10"
-                        data-speed="2500"
-                        >0</span
-                      >+
-                    </h3>
-                    <p>SPEAKERS</p>
-                  </div>
-                </div>
-                <!-- /number -->
-
-                <!-- number -->
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                  <div class="number">
-                    <h3>
-                      <span
-                        class="counter"
-                        data-from="0"
-                        data-to="100"
-                        data-speed="2500"
-                        >0</span
-                      >+
-                    </h3>
-                    <p>ATTENDEES</p>
-                  </div>
-                </div>
-                <!-- /number -->
-                <!-- number -->
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                  <div class="number">
-                    <h3>
-                      <span
-                        class="counter"
-                        data-from="0"
-                        data-to="4"
-                        data-speed="2500"
-                        >0</span
-                      >+
-                    </h3>
-                    <p>SESSIONS</p>
-                  </div>
-                </div>
-                <!-- /number -->
-                <!-- number -->
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                  <div class="number">
-                    <h3>
-                      <span
-                        class="counter"
-                        data-from="0"
-                        data-to="30"
-                        data-speed="2500"
-                        >0</span
-                      >+
-                    </h3>
-                    <p>COMPANIES</p>
-                  </div>
-                </div>
-                <!-- /number -->
-                <!-- number -->
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                  <div class="number">
-                    <h3>
-                      <span
-                        class="counter"
-                        data-from="0"
-                        data-to="30"
-                        data-speed="2500"
-                        >0</span
-                      >+
-                    </h3>
-                    <p>DECISION MAKERS</p>
-                  </div>
-                </div>
-                <!-- /number -->
-              </div>
-              <!-- /row -->
-            </div>
-            <!-- /Numbers -->
-          </div>
-        </div>
-        <!-- row -->
-      </div>
-      <!-- /container -->
-    </div>
-    <!-- /About -->
-
-    <!-- Sponsors -->
-    <div id="sponsors" class="section">
-      <!-- container -->
-      <div class="container">
-        <!-- row -->
-        <div class="row">
-          <!-- section title -->
-          <div class="section-title col-md-8 col-md-offset-2">
-            <h3 class="title">
-              <span>Why you should be our</span>
-              <span style="color: #dd0a37;">Sponsor</span>
-            </h3>
-            <p>
-              Sponsorship provides your organsiation with a world class
-              marketing mix offering a seamless end to end journey to build your
-              brand equity and creat valuable connections within the power
-              sector
-            </p>
-            <p>
-              Aligning your organisation brand with Lagos Power Fest is a smart
-              and effective way to engage global audiences and demonstrate
-              expertise
-            </p>
-            <p>
-              The delegate and speakers Lagos Power Fest attracts are
-              unparalleled in thier level of relevance and influence
-            </p>
-            <p>
-              For more information,
-              <a href="#contact" style="color: #dd0a37;">Contact us</a>
-            </p>
-          </div>
-          <!-- /section title -->
-        </div>
-        <!-- /row -->
-      </div>
-      <!-- /container -->
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="section-title col-md-12 col-lg-12">
-            <h3 class="title">
-              <span>Media</span> <span style="color: #dd0a37;">Partners</span>
-            </h3>
-            <br />
-            <div class="col-md-12">
-              <div class="col-md-3">
-                <img
-                  class=""
-                  src="img/Business-Day-Logo.png"
-                  width="200"
-                  alt="Business Day"
-                />
-              </div>
-              <div class="col-md-3">
-                <img
-                  class=""
-                  src="img/arise-news.png"
-                  width="200"
-                  alt="arise-news"
-                />
-              </div>
-              <div class="col-md-3">
-                <img
-                  class=""
-                  src="img/Pulse-ng-Logo.png"
-                  width="200"
-                  alt="Pulse Ng"
-                />
-              </div>
-
-              <div class="col-md-3">
-                <img
-                  class=""
-                  src="img/lasgidi-fest.png"
-                  width="200"
-                  alt="Pulse Ng"
-                />
-              </div>
-
-              <div class="col-md-3">
-                <img
-                  class=""
-                  src="img/TechEconomy.ng-Logo(1).png"
-                  width="200"
-                  alt="TechEconomy"
-                />
-              </div>
-            </div>
-          </div>
-          <br /><br />
-          <!-- <div class=" section-title col-md-12 col-lg-12">
-					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
-					<br>
-					<div class="col-md-3"><img class="" src="img/axxela-logo.png" width="200" alt="Axxela logo"></div>
-					
-				</div> -->
-        </div>
-      </div>
-    </div>
-
-    <!-- /Sponsors -->
-
-    <!--Speakers -->
-
-    <div id="speakers" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="section-title col-md-8 col-md-offset-2">
-            <h3 class="title">
-              <span>meet</span>
-              <span style="color: #dd0a37;"> our speakers</span>
-            </h3>
-          </div>
-          <br />
-          <div class="text-center col-md-12 col-lg-12">
-            <div class="col-md-3">
-              <div class="card">
-                <img
-                  src="img/06.jpg"
-                  class="card-img-top"
-                  width="200"
-                  alt="image"
-                />
-                <div class="card-body">
-                  <br />
-                  <h5 class="card-title">
-                    Obafemi Hamzat<br />Deputy Governor,<br /><span
-                      style="color: #dd0a37;"
-                      >Lagos State</span
-                    >
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img
-                  src="img/mukhtaar-tijani.jpg"
-                  class="card-img-top"
-                  width="200"
-                  alt="image"
-                />
-                <div class="card-body">
-                  <br />
-                  <h5 class="card-title">
-                    Mukhtaar Tijani<br />
-                    General Manager,<br /><span style="color: #dd0a37;"
-                      >Lagos State Electricy Board</span
-                    >
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img
-                  src="img/yewande-abiose.jpeg"
-                  class="card-img-top"
-                  width="200"
-                  alt="James Momoh"
-                />
-                <div class="card-body">
-                  <br />
-                  <h5 class="card-title">
-                    Yewande Abiose <br />
-                    MD, <br />
-                    <span style="color: #dd0a37;"
-                      >Energy Institute Nigeria</span
-                    >
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img
-                  src="img/nasir-giwa.jpg"
-                  class="card-img-top"
-                  width="200"
-                  alt="image"
-                />
-                <div class="card-body">
-                  <br />
-                  <h5 class="card-title">
-                    Nasir Giwa<br />Vice President, Power and Gas<br /><span
-                      style="color: #dd0a37;"
-                      >Siemens</span
-                    >
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img
-                  src="img/segun-adaju.jpeg"
-                  class="card-img-top"
-                  width="200"
-                  alt="James Momoh"
-                />
-                <div class="card-body">
-                  <br />
-                  <h5 class="card-title">
-                    Segun Adaju <br />
-                    President, <br />
-                    <span style="color: #dd0a37;"
-                      >Renewable Energy Association of Nigeria</span
-                    >
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img
-                  src="img/Oni-Ayodele.jpg"
-                  class="card-img-top"
-                  width="200"
-                  alt="Dr Ayodele Oni"
-                />
-                <div class="card-body">
-                  <br />
-                  <h5 class="card-title">
-                    Dr Ayodele Oni <br />
-                    Partner,<br />
-                    <span style="color: #dd0a37;">
-                      Bloomfield Law Practice</span
-                    >
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img
-                  src="img/Mohammed GE.jpg"
-                  class="card-img-top"
-                  width="200"
-                  alt="Mohammed Mijindadi
-                />
-                <div class="card-body">
-                  <br />
-                  <h5 class="card-title">
-                    Mohammed Mijindadi <br />
-                    Managing Director, <br />
-                    <span style="color: #dd0a37;">
-                      GE Gas Power Systems Nigeria</span
-                    >
-                  </h5>
-                </div>
-              </div>
+    
+            <div class="collapse navbar-collapse" id="nav">
+              <ul class="nav navbar-nav navbar-right uppercase">
+                <li><a data-toggle="elementscroll" href="#side-by-side">About</a></li>
+                <li><a data-toggle="elementscroll" href="#sponsors">Sponsors</a></li>
+                <li><a data-toggle="elementscroll" href="#speakers">Speakers</a></li>
+                <!-- <li><a data-toggle="elementscroll" href="#program">Program</a></li> -->
+                <!-- <li><a data-toggle="elementscroll" href="#venue">Venue</a></li> -->
+                <li><a data-toggle="elementscroll" href="#register">Register</a></li>
+                <!-- <li><a data-toggle="elementscroll" href="#gallery">Gallery</a></li> -->
+                <li><a data-toggle="elementscroll" href="#footer">Contact</a></li>
+              </ul>
             </div>
             
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- /speakers section -->
-
-    <!-- Ticket section -->
-    <!-- <div id="book-a-seat" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="section-title col-md-8 col-md-offset-2">
-            <h3 class="title">
-              <span>BOOK A </span> <span style="color: #dd0a37;">SEAT</span>
-            </h3>
-            <h3 class="title"><span>TICKET </span> <span style="color: #dd0a37;">REGISTRATION</span></h3>
-          </div>
-          <div class="col-md-12">
-						<iframe src="https://services.cognitoforms.com/f/KK-KYEWKpkyHDKQqqygkIw?id=2" style="position:relative;width:1px;min-width:100%;*width:100%;" frameborder="0" scrolling="yes" seamless="seamless" height="504" width="100%"></iframe>
-						<script src="https://services.cognitoforms.com/scripts/embed.js"></script>
-					</div>
-          <div class="col-md-12">
-            <h4 class="">STANDARD PASS</h4>
-            <ul>
-              <li><em> > </em>Full virtual access pass to all main and breakaway discussions</li>
-              <li>
-                <em> > </em>Networking opportunity in our chat box
-              </li>
-              <li><em> > </em>Certificate</li>
-            </ul>
-            <p></p>
-            <strong>NGN 10,000</strong>
-            <br />
-            <a
-              class="ticket-btn"
-              href="https://paystack.com/pay/standard-lagospowerfest"
-              class="text-center"
-              >Book Pass</a
-            >
-            <br /><br />
-          </div>
-          <div class="col-md-8 col-md-offset-2">
-            <h3>
-              <em
-                >* 20% discount on all ticket categories ended on Tuesday,
-                February 11, 2020
-              </em>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- /CTA -->
-    <!-- Map start -->
-    <!-- <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <div id="container-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6418525067083!2d3.4286882143247475!3d6.440018395340771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d81513cf8f%3A0x3cc9ebc0a31cc055!2sThe+Civic+Centre!5e0!3m2!1sen!2sng!4v1563522641454!5m2!1sen!2sng"
-              width="100%"
-              height="400"
-              frameborder="0"
-              style="border: 0;"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Map end -->
-    <!-- Contact -->
-    <div id="contact" class="section">
-      <!-- container -->
-      <div class="container">
-        <!-- row -->
-        <div class="row">
-          <!-- section title -->
-          <div class="section-title">
-            <h3 class="title">
-              <span>Contact</span> <span style="color: #dd0a37;">Info</span>
-            </h3>
-          </div>
-          <!-- /section title -->
-
-          <!-- contact -->
-          <div class="col-md-4">
-            <div class="contact">
-              <h3>Phone</h3>
-              <p>Jamiu: +2347016673316</p>
-              <p>Arole: +2348157334019</p>
+        </nav>
+        
+        <!-- FULLSCREEN SLIDER -->
+        <header>
+            <div class="title">
+              <h1>Nigeria Power Outlook</h1>
+              <h3>THE PATHWAY FOR GROWTH</h3>
+              <p>A Virtual Live Event</p>
+              <a href="#" class="btn btn-custom"><b>Get Ticket</b></a>
+              <a href="" class="btn btn-border" download><b>Download Brochure</b></a>
             </div>
-          </div>
-          <!-- /contact -->
+          </header>
 
-          <!-- contact -->
-          <div class="col-md-4">
-            <div class="contact">
-              <h3>Email</h3>
-              <a href="mailto:jamiu@lagospowerfest.com"
-                >jamiu@lagospowerfest.com</a
-              >
-              <br />
-              <a href="mailto:arole@lagospowerfest.com"
-                >arole@lagospowerfest.com</a
-              >
-              <br />
-              <a href="mailto:hello@lagospowerfest.com"
-                >hello@lagospowerfest.com</a
-              >
+    	<!-- HIGHLIGHT -->
+        <section id="highlight">
+        	<div class="container-fluid">
+            	<div class="row">
+                
+                	<div id="left" class="left col-lg-9 col-md-8 text-right">
+                    	<h2>Join the Virtual event</h2>
+                        <p>April, 2021.
+                    </div>
+                    
+                    <div id="right" class="col-lg-3 col-md-4 text-left">
+                    	<div id="countdown"></div>
+                    </div>
+                
+                </div>
             </div>
-          </div>
-          <!-- /contact -->
-          <!-- contact social -->
-          <div class="col-md-4">
-            <div class="contact">
-              <h3 style="color: #dd0a37;">Socials</h3>
-              <div class="contact-social">
-                <a href="https://m.facebook.com/Lagospowerfest" target="_blank"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-                <a href="https://www.twitter.com/lagospowerfest" target="_blank"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-
-                <a
-                  href="https://www.instagram.com/lagospowerfest"
-                  target="_blank"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-
-                <a
-                  href="https://www.linkedin.com/company/lagos-power-fest"
-                  target="_blank"
-                  ><i class="fa fa fa-linkedin"></i
-                ></a>
-              </div>
+        </section>
+        
+        <!-- Side by side -->
+        <section id="side-by-side" class="col-md-12 text-center">
+            <div class="container">
+                <div class="row col-md-6">
+                    <img src="/img/bg-side.jpg" alt="" class="side-img">
+                </div>
+                <div class="row col-md-6 side-text">
+                    <!-- <h1>About</h1> -->
+                    <div id="Page1">
+                        <p>Nigeria’s potential to become one of the World’s largest economies will remain just an aspiration without the electricity required to pursue aggressive industrialization, including the revitalization of moribund local industries. The country’s power sector is undoubtedly invaluable to unlocking the potential and positioning her on the path to sustainable growth.
+                            <br>
+                            <br>
+                            <b class="id-color">Eventhive.ng</b> is hosting 2nd edition of the annual Nigeria Power Outlook themed <b class="id-color">‘THE PATHWAY FOR GROWTH’</b>. Nigeria Power Outlook is the foremost gathering of the Industry’s finest minds, top-level business leaders and decision makers across government, power and energy companies, development agencies, commercial banks, development finance institutions e.t.c, providing them with an opportunity to discuss, share thoughts on latest industry challenges & solutions, network and chart a growth path for the power and energy industry.
+                            </p>
+                        <br>
+                        <a href="#" onclick="return show('Page1','Page2');"><i class='fas fa-circle id-color'></i></a>
+                        <a href="#" onclick="return show('Page2','Page1');"><i class='fas fa-circle id-color-light'></i></a>
+                      </div>
+                    
+                      <div id="Page2" style="display:none">
+                        <p>This year’s edition will build on the impactful conversations at the 2020 edition, which had the theme <b class="id-color">‘FUTURE OF POWER- CONNECTING POLICIES TO REAL TIME POWER SOLUTIONS’</b>. Nigeria Power Outlook, now in its 2nd edition, will provide an opportunity for learning, knowledge transfer, interaction and peer-to-peer networking. The event will unite stakeholders from Power value chain which includes Generation, Transmission, Distribution, Renewable Energy, Off-takers, Developers, Equipment Manufacturers, Technology providers, Legal and Consulting companies.
+                            <br>
+                            <br>
+                            Nigeria Power Outlook offers a veritable platform for exhibitors to showcase the latest brands, products, technologies and innovations to a range of individuals from the Power and Energy ecosystem. Nigeria Power Outlook is annually organized by Eventhive.ng, West Africa’s leading PR Firm with core competencies in developing Africa’s businesses via face-to-face/virtual events.
+                            </p>
+                        <br>
+                        <a href="#" onclick="return show('Page1','Page2');"><i class='fas fa-circle id-color-light'></i></a>
+                        <a href="#" onclick="return show('Page2','Page1');"><i class='fas fa-circle id-color'></i></a>
+                      </div>
+                </div>
             </div>
-          </div>
-          <!-- /contact social -->
-        </div>
-        <!-- /row -->
-      </div>
-      <!-- /container -->
-    </div>
-    <!-- /Contact -->
+        </section>
+    
+        <!-- INFO -->
+        <section id="info">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-12 text-center">
+                        <h1>WHY YOU SHOULD BE PART OF <b class="id-color">NIGERIA POWER OUTLOOK</b></h1>
+                        <p class="lead">Nigeria Power Outlook will create an opportunity to;
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <div class="row">
+                            <div class="feature col-lg-4 col-md-4 col-sm-4">
+                                <!-- <i class="pe-4x pe-7s-refresh-2"></i> -->
+                                <i class='fas fa-network-wired id-color' style="font-size: 40px;"></i>
+                                <!-- <h4>New Topics</h4> -->
+                                <p>Network with Industry Leaders in the Power and Energy Sector.</p>
+                            </div>
+                            
+                            <div class="feature col-lg-4 col-md-4 col-sm-4">
+                                <!-- <i class="pe-4x pe-7s-headphones"></i> -->
+                                <i class='fas fa-book-reader id-color' style="font-size: 40px;"></i>
+                                <!-- <h4>Multilingual Support</h4> -->
+                                <p>Learn on how Power is evolving with the rise of digitisation.</p>
+                            </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <!-- container -->
-      <div class="container">
-        <!-- row -->
-        <div class="row">
-          <!-- footer logo -->
-          <div class="col-md-12 text-center">
-            <!-- <div class="footer-brand"> -->
-            <h5>All rights reserved. Lagos Power Fest ©2020</h5>
-            <!-- </div> -->
-          </div>
-          <!-- /footer logo -->
-        </div>
-        <!-- /row -->
-      </div>
-      <!-- /container -->
-    </footer>
-    <!-- /Footer -->
+                            <div class="feature col-lg-4 col-md-4 col-sm-4">
+                                <!-- <i class="pe-4x pe-7s-micro"></i> -->
+                                <i class="pe-4x pe-7s-refresh-2"></i>
+                                <!-- <h4>2 Keynote Speakers</h4> -->
+                                <p>Explore business opportunities within the Power sector.</p>
+                            </div>
+                            
+                            <div class="feature col-lg-4 col-md-4 col-sm-4">
+                                <!-- <i class="pe-4x pe-7s-refresh-2"></i> -->
+                                <i class='fas fa-people-arrows id-color' style="font-size: 40px;"></i>
+                                <!-- <h4>New Topics</h4> -->
+                                <p>Share conversations with policy makers regarding innovation and investment in the power sector.</p>
+                            </div>
+                            
+                            <div class="feature col-lg-4 col-md-4 col-sm-4">
+                                <!-- <i class="pe-4x pe-7s-micro"></i> -->
+                                <i class="pe-4x pe-7s-micro"></i>
+                                <!-- <h4>Multilingual Support</h4> -->
+                                <p>Provide a global platform for debate and action to build Nigeria’s Power Sector.</p>
+                            </div>
 
-    <!-- jQuery Plugins -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+                            <div class="feature col-lg-4 col-md-4 col-sm-4">
+                                <!-- <i class="pe-4x pe-7s-headphones"></i> -->
+                                <i class='far fa-handshake id-color' style="font-size: 40px;"></i>
+                                <!-- <h4>2 Keynote Speakers</h4> -->
+                                <p>Network with policy-setting government figures at Federal and State Governments levels.</p>
+                            </div>                        
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- FUNFACTS -->
+        <section id="funfacts">
+            <div class="funfacts-inner">
+                <div class="container">
+                    <div class="row">
+                        
+                        <h2 class="hidden">funfacts</h2>
+                        
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <div id="funfacts-carousel">
+                                
+                                <div class="item">
+                                    <i class="pe pe-4x pe-7s-micro"></i>
+                                    <div class="desc">
+                                        <p class="number">30</p>
+                                        <p class="description">Speakers</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <i class="pe pe-4x pe-7s-world"></i>
+                                    <div class="desc">
+                                        <p class="number">200</p>
+                                        <p class="description">Companies</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <i class="pe pe-4x pe-7s-display2"></i>
+                                    <div class="desc">
+                                        <p class="number">100</p>
+                                        <p class="description">Decision Makers</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <i class="pe pe-va pe-4x pe-7s-id"></i>
+                                    <div class="desc">
+                                        <p class="number">500</p>
+                                        <p class="description">attendees</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+                 
+        <!-- SPONSORS -->
+        <section id="sponsors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="uppercase">sponsors</h2>
+                        <!-- <p class="lead">Duis ut quam sed ex consectetur euismod. Aliquam et condimentum eros.</p> -->
+                        
+                        <div id="sponsors-carousel">
+                            
+                            <div class="sponsor">
+                                <img class="img-responsive img-sm" src="img/business-day-logo.png" alt="">
+                            </div>
+                            
+                            <div class="sponsor">
+                                <img class="img-responsive img-lg" src="img/arise-news.png" alt="">
+                            </div>
+                            
+                            <div class="sponsor">
+                                <img class="img-responsive img-sm" src="img/pulse-ng-logo.png" alt="">
+                            </div>
+                            
+                            <div class="sponsor">
+                                <img class="img-responsive img-lg" src="img/lasgidi-fest.png" alt="">
+                            </div>
+                            
+                            <div class="sponsor">
+                                <img class="img-responsive img-sm" src="img/TechEconomy.ng-Logo(1).png" alt="">
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- VENUE -->
+        <section id="venue">
+        
+            <div class="venue">
+            	<div class="venue-inner">
+                	<div class="container">
+                    	<div class="row">
+                        	
+                        	<div class="col-lg-8 col-md-6 col-sm-8 first">
+                            	<h2 class="uppercase">KEY FOCUS AREAS
+                                </h2>
+                                <p class="lead">
+                                    <ul>
+                                        <li><i class='fas fa-circle id-color'></i>De-risking Energy Investment in the Post-Pandemic Environment.</li>
+                                        <li><i class='fas fa-circle id-color'></i>The appeal and potential of off-grid power projects.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Attracting and retaining investments in the Nigerian Power and Gas Sectors.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Improving Power Delivery across the Generation, Transmission and Distribution Value Chain.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Understanding the Regulatory Environment.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Taking the grid forward : Sustainable approaches for getting the grid back to viability and encouraging private investments.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Collaborative approaches to ending energy poverty.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Nigeria’s LPG Market; Unlocking barriers to private capital- Accelerating market growth.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Metering, Transmission and Distribution in Nigeria’s Power Sector (CASE STUDY)</li>
+                                        <li><i class='fas fa-circle id-color'></i>Mobilizing long term domestic savings to fund Nigeria’s power and energy infrastructure.</li>
+                                    </ul>
+                                </p>
+                        		<!-- <h4>Recrea Hotel on Broadway</h4> -->
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-4 second">
+                            	<!-- <i class="pe-4x pe-7s-map-2"></i> -->
+                                <h4 class="uppercase">WHO SHOULD ATTEND?</h4>
+                                <p class="lead">
+                                    <ul>
+                                        <li><i class='fas fa-circle id-color'></i>Federal and State Governments and their agencies.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Power sector subject matter experts.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Oil and Gas Companies.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Grid Operators.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Equipment Vendors.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Power Utilities.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Off-grid Energy Suppliers.</li>
+                                        <li><i class='fas fa-circle id-color'></i>International Development Partners.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Private Equity and Investment Banks.</li>
+                                        <li><i class='fas fa-circle id-color'></i>Energy Sector Heads at Financial Institutions.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SPEAKERS -->
+        <section id="speakers">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-12">
+                        <h2 class="uppercase">speakers</h2>
+                        <!-- <p class="lead">Nam pellentesque fringilla faucibus. Aliquam tortor ex, egestas porta eget, pretium at lorem.</p> -->
+                    </div> 
+                    
+                    <ul id="list-speaker" class="list-unstyled"> 
+                        
+                        <!-- SPEAKER 1 -->	
+                        <li class="col-lg-3 col-md-3 col-sm-4">
+                            <div class="speaker">
+                                <figure class="effect-ming">
+                                    <img class="img-responsive" src="img/speaker1.png" alt=""/>
+                                </figure>
+                                
+                                <div class="caption text-center">
+                                    <h4>Stanley Willis</h4>
+                                    <p class="company">Fermentum Co.</p>
+                                </div>   
+                            </div>
+                        </li>
+                        
+                        <!-- SPEAKER 2 -->	
+                        <li class="col-lg-3 col-md-3 col-sm-4">
+                            <div class="speaker">
+                                <figure class="effect-ming">
+                                    <img class="img-responsive" src="img/speaker2.png" alt=""/>
+                                </figure>
+                                
+                                <div class="caption text-center">
+                                    <h4>Jane Richards</h4>
+                                    <p class="company">Hipmunk</p>
+                                </div>   
+                            </div>
+                        </li>
+                        
+                        <!-- SPEAKER 3 -->	
+                        <li class="col-lg-3 col-md-3 col-sm-4">
+                            <div class="speaker">
+                                <figure class="effect-ming">
+                                    <img class="img-responsive" src="img/speaker3.png" alt=""/>
+                                </figure>
+                                
+                                <div class="caption text-center">
+                                    <h4>Martin Pearson</h4>
+                                    <p class="company">Kitten Co.</p>
+                                </div>   
+                            </div>
+                        </li>
+                        
+                        <!-- SPEAKER 4 -->	
+                        <li class="col-lg-3 col-md-3 col-sm-4">
+                            <div class="speaker">
+                                <figure class="effect-ming">
+                                    <img class="img-responsive" src="img/speaker4.png" alt=""/>
+                                </figure>
+                                
+                                <div class="caption text-center">
+                                    <h4>Jessica Green</h4>
+                                    <p class="company">Magna</p>
+                                </div>   
+                            </div>
+                        </li>
+                        
+                        <!-- SPEAKER 5 -->
+                        <li class="col-lg-3 col-md-3 col-sm-4">
+                            <div class="speaker">
+                                <figure class="effect-ming">
+                                    <img class="img-responsive" src="img/speaker5.png" alt=""/>
+                                </figure>
+                                
+                                <div class="caption text-center">
+                                    <h4>Herman Russell</h4>
+                                    <p class="company">Zenquoace</p>
+                                </div>   
+                            </div>
+                        </li>
+                        
+                        <!-- SPEAKER 6 -->
+                        <li class="col-lg-3 col-md-3 col-sm-4">
+                            <div class="speaker">
+                                <figure class="effect-ming">
+                                    <img class="img-responsive" src="img/speaker6.png" alt=""/>
+                                </figure>
+                                
+                                <div class="caption text-center">
+                                    <h4>Joan Graves</h4>
+                                    <p class="company">Howtech</p>
+                                </div>   
+                            </div>
+                        </li>
+                        
+                        <!-- SPEAKER 7 -->
+                        <li class="col-lg-3 col-md-3 col-sm-4">
+                            <div class="speaker">
+                                <figure class="effect-ming">
+                                </figure>
+                                
+                                <div class="caption text-center">
+                                    <h4>Peter Reid</h4>
+                                    <p class="company">Ventolax</p>
+                                </div>   
+                            </div>
+                        </li>
+                        
+                        <!-- SPEAKER 8 -->
+                        <li class="col-lg-3 col-md-3 col-sm-4">
+                            <div class="speaker">
+                                <figure class="effect-ming">
+                                    <img class="img-responsive" src="img/speaker8.png" alt=""/>
+                                </figure>
+                                
+                                <div class="caption text-center">
+                                    <h4>Tracey Curtis</h4>
+                                    <p class="company">Zathmedia</p>
+                                </div>   
+                            </div>
+                        </li>
+                    
+                    </ul>
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    	<a id="loadmore" class="button button-small button-line-dark">load more</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- REGISTER -->
+        <section id="register">
+            <div class="container">
+                <div class="row">
+                
+                	<div class="col-lg-12">
+                    	<h2 class="uppercase text-center">register</h2>
+                        <!-- <p class="lead text-center">Nam pellentesque fringilla faucibus. Aliquam tortor ex, egestas porta eget, pretium at lorem.</p> -->
+                    </div>
+                
+                    <div class="col-lg-12">                        
+                        <!-- PRICE TABLES -->
+                        <div id="price-carousel">
+                            
+                            <div class="price-table early-bird">
+                                <div class="icon">
+                                    <i class="pe-5x pe-7s-wristwatch"></i> 
+                                </div>
+                                
+                                <div class="table-header">
+                                    <h3>Early Bird</h3>
+                                    <p class="price">$150</p>
+                                </div>
+                                
+                                <ul class="desc list-unstyled">
+                                    <li>Conference Kit</li>
+                                    <li>Coffee break</li>
+                                    <li>Lunch</li>
+                                    <li>All seasons</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="price-table standart">
+                                <div class="icon">
+                                    <i class="pe-5x pe-va pe-7s-ribbon"></i> 
+                                </div>
+                                
+                                <div class="table-header">
+                                    <h3>Standart</h3>
+                                    <p class="price">$175</p>
+                                </div>
+                                
+                                <ul class="desc list-unstyled">
+                                    <li>Conference Kit</li>
+                                    <li>Coffee break</li>
+                                    <li>Lunch</li>
+                                    <li>All seasons</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="price-table vip">
+                                <div class="icon">
+                                    <i class="pe-5x pe-va pe-7s-diamond"></i> 
+                                </div>
+                                
+                                <div class="table-header">
+                                    <h3>Exclusive</h3>
+                                    <p class="price">$250</p>
+                                </div>
+                                
+                                <ul class="desc list-unstyled">
+                                    <li>Conference Kit</li>
+                                    <li>Coffee break</li>
+                                    <li>Lunch</li>
+                                    <li>All seasons</li>
+                                </ul>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+					<div class="col-lg-12 text-center">
+                    	<a class="button button-small button-line-dark html-popup" href="register.html">register now</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- TESTIMONIAL -->
+        <section id="testimonial">
+            <div class="container-fluid">
+                <div class="row">
+ 
+                    <div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 no-padding">
+                        <div class="testimonial-inner">
+                            <h2 class="hidden">testimonial</h2>
+                        
+                            <div id="testimonial-carousel">
+                                <div class="item">
+                                    <img class="img-circle" src="img/testimonial1.png" alt="">
+                                    <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies.Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
+                                    <p class="name">Todd Stone</p>
+                                </div>
+                                
+                                <div class="item">
+                                    <img class="img-circle" src="img/testimonial2.png" alt="">
+                                    <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
+                                    <p class="name">Minnie Pierce</p>
+                                </div>
+                                
+                                <div class="item">
+                                    <img class="img-circle" src="img/testimonial3.png" alt="">
+                                    <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
+                                    <p class="name">Lena Kim</p>
+                                </div>
+                            </div>
+                         </div>   
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- google map -->
+		<!-- <div id="gmap_canvas"></div> -->
+        
+        <!-- FOOTER -->        
+        <footer id="footer">
+        	<div class="container">
+            	<div class="row">
+                	
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    	<h4 class="uppercase">Phone</h4>
+                        <!-- <p class="small">Vestibulum in ultrices justo. Praesent placerat justo metus, vitae malesuada lacus eleifend vel. Vivamus viverra volutpat leo, a gravida dolor posuere congue.</p> -->
+                        <ul class="list-unstyled list-inline uppercase">
+                            <li><b>JAMIU</b>: +2347016673316</li>
+                            <li><b>Arole</b>: +2348157334019</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    	<h4 class="uppercase">Email</h4>
+                        
+
+
+                        <ul class="list-unstyled list-inline uppercase">
+                            <li><a href="mailto:jamiu@eventhive.ng">jamiu@eventhive.ng</a></li>
+                            <li><a href="mailto:arole@eventhive.ng">arole@eventhive.ng</a></li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <div class="col-lg-6 col-md-4 col-sm-12 socials">
+                        <h4 class="uppercase">Socials</h4>
+                        <ul class="list-unstyled list-inline uppercase">
+                            <li><a href="https://www.facebook.com/eventhive.ng/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/eventhivedotng" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/eventhivedotng/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/eventhive-ng/" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+        </footer>
+        
+        <!-- SUBFOOTER -->
+        <div class="subfooter">
+        	<div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-12">
+                        <p class="pull-right uppercase id-color">&copy; 2021 Eventhive.ng | All rights reserved</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        
+
+        
+    	<script src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="js/jquery.themepunch.tools.min.js"></script>
+        <script src="js/jquery.themepunch.revolution.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/salvattore.js"></script>
+        <script src="js/jquery.countdown.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/retina.js"></script>
+        
+        <script src="js/main.js"></script>
+        
+      	
+        
+        
+        <!-- GOOGLE ANALYTICS -->
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-XXXXXXX-XX', 'yourdomain.com');  
+		  ga('send', 'pageview');
+		
+		</script> 
+        
+	</body>
 </html>
