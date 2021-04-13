@@ -1,5 +1,5 @@
 (function($) {
-	// "use strict"
+	"use strict"
 
 	// Scrollspy
 	$('body').scrollspy({
@@ -81,16 +81,16 @@
 	});
 
 	// CountTo
-	$('.counter').each(function() {
-		var $this = $(this);
-		var counter = new Waypoint({
-			element: $this,
-			handler: function()
-			{
-				$this.countTo();
-			},
-			offset: '95%'
-		});
-	});
+	// $('.counter').each(function() {
+	// 	var $this = $(this);
+	// 	var counter = new Waypoint({
+	// 		element: $this,
+	// 		handler: function()
+	// 		{
+	// 			$this.countTo();
+	// 		},
+	// 		offset: '95%'
+	// 	});
+	// });
 
 })(jQuery);
