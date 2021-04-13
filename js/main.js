@@ -36,23 +36,23 @@
 		}, 800);
 	});
 	// Section title animation
-	// $('.section-title').each(function() {
-	// 	var $this = $(this);
-	// 	$this.find('.title > span').each(function(i) {
-	// 		var $span = $(this);
-	// 		var animated = new Waypoint({
-	// 			element: $this,
-	// 			handler: function()
-	// 			{
-	// 				setTimeout(function(){
-	// 					$span.addClass('appear')
-	// 				}, i*250);
-	// 				this.destroy();
-	// 			},
-	// 			offset: '95%'
-	// 		});
-	// 	});
-	// });
+	$('.section-title').each(function() {
+		var $this = $(this);
+		$this.find('.title > span').each(function(i) {
+			var $span = $(this);
+			var animated = new Waypoint({
+				element: $this,
+				handler: function()
+				{
+					setTimeout(function(){
+						$span.addClass('appear')
+					}, i*250);
+					// this.destroy();
+				},
+				offset: '95%'
+			});
+		});
+	});
 
 	// Galery Owl
 	$('#galery-owl').owlCarousel({
