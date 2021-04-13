@@ -2,10 +2,10 @@
 	"use strict"
 
 	// Scrollspy
-	$('body').scrollspy({
-		target: '#nav',
-		offset: $(window).height() / 2
-	});
+	// $('body').scrollspy({
+	// 	target: '#nav',
+	// 	offset: $(window).height() / 2
+	// });
 
 	// Mobile nav toggle
 	$('.navbar-toggle').on('click',function() {
