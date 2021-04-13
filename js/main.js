@@ -1,5 +1,5 @@
 (function($) {
-	"use strict"
+	// "use strict"
 
 	// Scrollspy
 	$('body').scrollspy({
@@ -76,9 +76,9 @@
 	});
 
 	// Parallax Background
-	// $.stellar({
-	// 	responsive: true
-	// });
+	$.stellar({
+		responsive: true
+	});
 
 	// CountTo
 	$('.counter').each(function() {
