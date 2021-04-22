@@ -1064,8 +1064,9 @@ textarea.input {
   font-weight: 300;
   position: relative;
   overflow: hidden;
-  margin-right: 20px;
-  width: 30%;
+  margin: auto;
+  /* margin-right: 20px; */
+  width: 60%;
   margin-bottom: 30px;
 }
 
