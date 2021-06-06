@@ -1,3 +1,14 @@
-add recent images 
-nav dropdown for previous years
-add post event report
+Logo 
+  file has been added already the color is blue 
+  (i'm of the opinion that we can have more blue on the page istead of just yellow)
+
+ticket links, we have just 3 passes, virtual, executive and vip passes
+  https://paystack.com/pay/og-vip
+  https://paystack.com/pay/og-exec
+  https://paystack.com/pay/og-virtual
+
+  ticket details are the same as LRF ticket details
+
+  
+
+If you need shawarma or ice-cream or something to keep you busy while you make these changes, please let me know 

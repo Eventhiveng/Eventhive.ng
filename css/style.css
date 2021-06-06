@@ -376,29 +376,6 @@ a:hover {
   font-size: 13px;
   font-weight: 600;
 }
-.side-widget .languages {
-  width: 100%;
-  display: block;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.side-widget .languages ul {
-  width: 100%;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.side-widget .languages ul li {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 0;
-  list-style: none;
-}
-.side-widget .languages ul li a {
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-}
 .side-widget .site-menu {
   width: 100%;
   display: block;
@@ -532,61 +509,7 @@ a:hover {
   margin: 0;
 }
 .navbar .logo a img {
-  height: 40px;
-}
-.navbar .languages {
-  display: inline-block;
-  margin: 0 20px;
-}
-.navbar .languages ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.navbar .languages ul li {
-  display: inline-block;
-  margin: 0 5px;
-  padding: 0;
-  list-style: none;
-}
-.navbar .languages ul li a {
-  display: inline-block;
-  color: #fff;
-  position: relative;
-}
-.navbar .languages ul li a:hover {
-  text-decoration: none;
-}
-.navbar .languages ul li a:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  transition: width 0s ease, background 0.25s ease;
-}
-.navbar .languages ul li a:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background: #ffb715;
-  transition: width 0.25s ease;
-}
-.navbar .languages ul li a:hover:before {
-  width: 100%;
-  background: #ffb715;
-  transition: width 0.25s ease;
-}
-.navbar .languages ul li a:hover:after {
-  width: 100%;
-  background: transparent;
-  transition: all 0s ease;
+  height: 50px;
 }
 .navbar .site-menu {
   display: inline-block;
@@ -2756,10 +2679,6 @@ input::-moz-focus-outer {
   }
 
   .navbar .navbar-button span {
-    display: none;
-  }
-
-  .navbar .languages {
     display: none;
   }
 
