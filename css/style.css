@@ -2700,7 +2700,9 @@ input::-moz-focus-outer {
   .side-widget {
     width: 240px;
   }
-
+  .info .second {
+    text-align: left;
+  }
   .search-box .inner {
     width: 90vw;
   }
