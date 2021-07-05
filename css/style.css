@@ -1658,6 +1658,19 @@ a:hover {
   padding-right: 250px;
   padding-bottom: 0px;
 }
+
+a.btn-border-white {
+  border: solid 2px #ffa200;
+  background: none;
+  border-radius: 30px;
+  padding: 9px 30px 9px 30px;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
 .info .first {
   text-align: left;
   border-right: 1px solid #ffa200;
@@ -1744,6 +1757,10 @@ a:hover {
 }
 .spons-op .side-text {
   margin-top: 20px;
+}
+
+.spons-op .booth {
+  margin-top: 10px;
 }
 
 /* AGENDA SECTION */
