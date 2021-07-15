@@ -1760,7 +1760,7 @@ a.btn-border-white {
 /* SPONS-OP SECTION */
 .spons-op h1 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .spons-op .side-img {
   text-align: center;
@@ -1771,6 +1771,11 @@ a.btn-border-white {
 
 .spons-op .booth {
   margin-top: 10px;
+}
+
+.spons-op .text-link {
+  text-decoration: underline;
+  color: #ffa200 !important;
 }
 
 /* AGENDA SECTION */
@@ -2724,6 +2729,13 @@ input::-moz-focus-outer {
   .content-section {
     padding: 40px 0px;
   }
+  .spons-op .side-img {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .spons-op h1 {
+    margin-bottom: 0px;
+  }
   .side-widget {
     width: 240px;
   }
@@ -2850,7 +2862,6 @@ input::-moz-focus-outer {
   .spons-op img {
     width: 90%;
   }
-
   .agenda a {
     height: 45px;
     line-height: 45px;
