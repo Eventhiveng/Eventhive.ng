@@ -1654,8 +1654,8 @@ a:hover {
 }
 .sponsorship {
   text-align: center;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 200px;
+  padding-right: 200px;
   padding-bottom: 0px;
   margin-bottom: 60px;
   background-color: #fff;
@@ -1667,8 +1667,12 @@ a:hover {
 .sponsorship img {
   margin-top: 0px !important;
   margin-bottom: 50px !important;
+  width: 200px !important;
+  /* border: 1px solid #000 !important; */
 }
-
+.sponsorship .margin-top {
+  margin-top: 40px !important;
+}
 a.btn-border-white {
   border: solid 2px #ffa200;
   background: none;
@@ -2525,6 +2529,12 @@ input::-moz-focus-outer {
   .sponsorship .row img {
     width: 60%;
   }
+  .sponsorship .first-row img {
+    width: 130%;
+  }
+  .sponsorship .margin-top {
+    margin-top: 20px !important;
+  }
 }
 /* RESPONSIVE TABLET  */
 @media only screen and (max-width: 991px),
@@ -2574,7 +2584,9 @@ input::-moz-focus-outer {
     line-height: 50px;
     padding: 0 20px;
   }
-
+  .sponsorship .margin-top {
+    margin-top: 0px !important;
+  }
   .sponsorship {
     padding-left: 90px;
     padding-right: 90px;
@@ -2853,7 +2865,9 @@ input::-moz-focus-outer {
     padding-left: 0px;
     padding-right: 0px;
   }
-
+  .sponsorship .margin-top {
+    margin-top: 0px !important;
+  }
   .sponsorship a {
     height: 45px;
     line-height: 45px;
