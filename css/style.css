@@ -678,6 +678,12 @@ a:hover {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+.black-transparent {
+  -webkit-text-stroke: 1px #0b0b0b;
+  text-stroke: 1px #0b0b0b;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 .slider p {
   margin-bottom: 0px;
   /* margin-top: 20px; */
@@ -1053,6 +1059,49 @@ a:hover {
 .counter-box p {
   font-size: 13px;
   padding-right: 5%;
+}
+
+/* VIDEO BOX */
+.videoBox h2 {
+  margin-top: 30px;
+  color: #0b0b0b;
+  border-bottom: 3px solid #ffa200;
+}
+.video-box {
+  width: 100%;
+  display: block;
+  margin: 0;
+  background: #0b0b0b;
+  position: relative;
+  margin: 20px 0px 30px 0px !important;
+}
+.video-box .play-btn {
+  width: 70px;
+  height: 70px;
+  line-height: 66px;
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  z-index: 1;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  text-indent: 2px;
+}
+.video-box .play-btn:hover {
+  background: #ffa200;
+  border-color: #ffa200;
+  color: #0b0b0b;
+}
+.video-box video {
+  width: 100%;
+  display: block;
+  margin: 0;
+  opacity: 0.5;
+  filter: grayscale(1);
 }
 
 /* ISOTOPE FILTER */
