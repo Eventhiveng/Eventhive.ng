@@ -206,9 +206,9 @@
   });
 
   // STICKY NAVBAR
-  $(window).on("scroll touchmove", function () {
-    $(".navbar").toggleClass("sticky", $(document).scrollTop() > 0);
-  });
+  // $(window).on("scroll touchmove", function () {
+  //   $(".navbar").toggleClass("sticky", $(document).scrollTop() > 0);
+  // });
 
   // STICKY UP DOWN
   var didScroll;
