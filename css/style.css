@@ -122,6 +122,15 @@ a:hover {
 .overflow {
   overflow: hidden;
 }
+.y-bold {
+  color: #ffbf00;
+}
+.transparent {
+  -webkit-text-stroke: 2px #0b0b0b;
+  text-stroke: 1px #0b0b0b;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 
 /* SPACINGS */
 .no-spacing {
@@ -202,7 +211,7 @@ a:hover {
 }
 .hamburger span {
   display: block;
-  background: #0b0b0b;
+  background: #fff;
 }
 .hamburger #hamburger {
   position: absolute;
@@ -694,7 +703,7 @@ a:hover {
 }
 .navbar .hamburger {
   display: inline-block;
-  color: #fff;
+  color: #fff !important;
 }
 .navbar .navbar-button {
   height: 58px;
@@ -718,11 +727,12 @@ a:hover {
 /* SLIDER */
 .slider {
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   flex-wrap: wrap;
+  background-position: right -100px top -80px;
   /* background-color: #0b0b0b; */
-  background-image: url("../images/bcg/Group\ 1146.png");
+  background-image: url("../images/bcg/1.png");
   background-size: cover;
   position: relative;
   text-align: left;
@@ -750,9 +760,9 @@ a:hover {
   color: #0b0b0b;
 }
 .slider h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
-  margin-top: 150px;
+  margin-top: 200px;
   /* margin-left: 25px; */
   /* margin-bottom: 50px; */
 }
@@ -805,6 +815,169 @@ a:hover {
 }
 .slider a:hover i {
   margin-left: 20px;
+}
+
+/* WHATS NEW SECTION */
+.new {
+  color: white;
+  width: 100%;
+  /* background-color: #0b0b0b; */
+  /* background-image: ; */
+  background: #0b0b0b; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(
+      rgba(46, 46, 46, 0.8),
+      rgba(46, 46, 46, 0.8)
+    ),
+    url("../images/bcg/3.jpg");
+  background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
+    url("../images/bcg/3.jpg"); /* The least supported option. */
+  background-size: cover;
+  background-attachment: fixed;
+}
+.transparent-white {
+  -webkit-text-stroke: 2px #fff;
+  text-stroke: 1px #fff;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* WHY SPONSOR */
+.col-lg-3:nth-child(odd) .s-box {
+  margin-top: 30%;
+}
+
+.s-box {
+  width: 100%;
+  display: block;
+  border: 2px solid #ffbf00;
+  padding: 30px;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.s-box:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 30px 30px #eee;
+}
+.s-box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 14px 14px;
+  border-color: transparent transparent #e8e8e8 transparent;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+.s-box p {
+  font-size: 15px;
+  padding-right: 5%;
+}
+
+/* campaign */
+.campaign {
+  color: white;
+  width: 100%;
+  /* background-color: #0b0b0b; */
+  /* background-image: ; */
+  background: #0b0b0b; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(
+      rgba(138, 138, 138, 0.7),
+      rgba(138, 138, 138, 0.7)
+    ),
+    url("../images/bcg/4.jpg");
+  background: linear-gradient(
+      rgba(138, 138, 138, 0.7),
+      rgba(138, 138, 138, 0.7)
+    ),
+    url("../images/bcg/4.jpg"); /* The least supported option. */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* PGSB */
+.pgsb .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.pgsb .col-lg-3 {
+  max-width: 100% !important;
+}
+.pgsb .grid-item {
+  width: 100%;
+}
+.pgsb .plat:hover,
+.gold:hover,
+.silver:hover,
+.bronze:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 30px 30px #eee;
+}
+
+.pgsb .plat {
+  width: 100%;
+  display: block;
+  border: 3px dashed rgb(229, 228, 226);
+  padding: 20px;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.pgsb .plat p {
+  background-color: rgb(229, 228, 226);
+}
+.pgsb .gold {
+  width: 100%;
+  display: block;
+  border: 3px dashed rgb(255, 215, 0);
+  padding: 20px;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.pgsb .gold p {
+  background-color: rgb(255, 215, 0);
+}
+.pgsb .silver {
+  width: 100%;
+  display: block;
+  border: 3px dashed rgb(192, 192, 192);
+  padding: 20px;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.pgsb .silver p {
+  background-color: rgb(192, 192, 192);
+}
+.pgsb .bronze {
+  width: 100%;
+  display: block;
+  border: 3px dashed rgb(205, 127, 50);
+  padding: 20px;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.pgsb .bronze p {
+  background-color: rgb(205, 127, 50);
 }
 
 /* PAGE HEADER */
@@ -868,7 +1041,7 @@ a:hover {
 .content-section {
   width: 100%;
   display: block;
-  padding: 80px 0;
+  padding: 50px 0;
   position: relative;
 }
 
@@ -2617,6 +2790,14 @@ input::-moz-focus-outer {
     margin: 15px 0;
   }
 
+  .col-lg-3:nth-child(odd) .s-box {
+    margin-top: 0;
+  }
+
+  .s-box {
+    margin: 15px 0;
+  }
+
   .project-slider .swiper-slide {
     max-width: inherit;
   }
@@ -2673,8 +2854,13 @@ input::-moz-focus-outer {
   }
 }
 /* RESPONSIVE MOBILE */
-@media only screen and (max-width: 767px),
-  only screen and (max-device-width: 767px) {
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .side-widget {
     width: 240px;
   }
@@ -2694,7 +2880,32 @@ input::-moz-focus-outer {
   .navbar .navbar-button {
     margin-left: 0;
   }
-
+  .slider {
+    width: 100%;
+    height: 100vh;
+    background-position: right -250px top 70px;
+    background-image: url("../images/bcg/7.png");
+  }
+  .f-nav img {
+    margin-top: 10px;
+    width: 80%;
+  }
+  .f-nav p {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .hamburger span {
+    margin-left: 330px !important;
+  }
+  .hamburger #cross {
+    margin-left: 330px !important;
+  }
+  .pgsb .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .new {
+    background-position: right -450px top 0px;
+  }
   .slider .slider-content {
     margin-bottom: 30px;
   }
@@ -2717,6 +2928,7 @@ input::-moz-focus-outer {
   }
 
   .slider p {
+    font-weight: bold;
     margin-top: 0px;
     /* margin-bottom: 10px; */
   }
@@ -2892,5 +3104,92 @@ input::-moz-focus-outer {
   .footer .footer-bottom ul li {
     margin-left: 0;
     margin-right: 10px;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .slider {
+    width: 100%;
+    height: 100vh;
+    background-position: right -250px top 70px;
+    background-image: url("../images/bcg/7.png");
+  }
+  .slider h2 {
+    font-size: 40px;
+  }
+  .slider p {
+    font-weight: bold;
+  }
+  .left {
+    margin-left: 0px !important;
+  }
+  .f-nav img {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .f-nav .logo {
+    padding-right: 20px;
+  }
+  .f-nav p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .hamburger span {
+    margin-left: 315px !important;
+  }
+  .hamburger #cross {
+    margin-left: 315px !important;
+  }
+  .pgsb .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .new {
+    background-position: right -450px top 0px;
+  }
+}
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .slider {
+    width: 100%;
+    height: 100vh;
+    background-position: right -250px top 70px;
+    background-image: url("../images/bcg/7.png");
+  }
+  .slider h2 {
+    font-size: 40px;
+  }
+  .slider p {
+    font-weight: bold;
+  }
+  .left {
+    margin-left: 0px !important;
+  }
+  .f-nav img {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .f-nav .logo {
+    padding-right: 20px;
+  }
+  .f-nav p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .hamburger span {
+    margin-left: 315px !important;
+  }
+  .hamburger #cross {
+    margin-left: 315px !important;
+  }
+  .pgsb .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .new {
+    background-position: right -450px top 0px;
   }
 }
