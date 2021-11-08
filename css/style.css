@@ -110,12 +110,12 @@ figure {
 
 /* LINKS */
 a {
-  color: #003399;
+  color: #026bd1;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #003399;
+  color: #026bd1;
 }
 
 /* CUSTOM CLASSES */
@@ -188,7 +188,7 @@ a:hover {
   border-radius: 0 !important;
 }
 .swiper-pagination .swiper-pagination-bullet-active {
-  background: #ff9933;
+  background: #feb112;
 }
 
 /* HAMBURGER */
@@ -297,7 +297,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background-color: #003399;
+  background-color: #026bd1;
   /* background-image: url("../images/overlay.jpg"); */
   background-position: center;
   background-size: cover;
@@ -343,7 +343,7 @@ a:hover {
   width: 100%;
   display: block;
   font-weight: 600;
-  color: #ff9933;
+  color: #feb112;
   font-size: 13px;
   margin-bottom: 10px;
   margin-top: 20px;
@@ -470,7 +470,7 @@ a:hover {
   z-index: 9;
   right: 0;
   top: 0;
-  background: #ff9933;
+  background: #feb112;
   animation: first-transition 1s;
   animation-fill-mode: forwards;
 }
@@ -490,7 +490,7 @@ a:hover {
   z-index: 9;
   left: 0;
   top: 0;
-  background: #ff9933;
+  background: #feb112;
   transition: all ease 1s;
 }
 .page-transition.active {
@@ -511,7 +511,7 @@ a:hover {
 }
 .navbar.sticky {
   position: fixed;
-  background: #003399;
+  background: #026bd1;
 }
 .navbar.nav-down {
   top: 0;
@@ -570,12 +570,12 @@ a:hover {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: #ff9933;
+  background: #feb112;
   transition: width 0.25s ease;
 }
 .navbar .languages ul li a:hover:before {
   width: 100%;
-  background: #ff9933;
+  background: #feb112;
   transition: width 0.25s ease;
 }
 .navbar .languages ul li a:hover:after {
@@ -604,7 +604,7 @@ a:hover {
   position: absolute;
   left: -30px;
   top: calc(100% + 20px);
-  background: #ff9933;
+  background: #feb112;
   padding: 30px;
 }
 .navbar .site-menu ul li ul:before {
@@ -659,12 +659,12 @@ a:hover {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: #ff9933;
+  background: #feb112;
   transition: width 0.25s ease;
 }
 .navbar .site-menu ul li a:hover:before {
   width: 100%;
-  background: #ff9933;
+  background: #feb112;
   transition: width 0.25s ease;
 }
 .navbar .site-menu ul li a:hover:after {
@@ -686,8 +686,8 @@ a:hover {
   height: 58px;
   line-height: 58px;
   padding: 0 40px;
-  color: #003399;
-  background: #ff9933;
+  color: #026bd1;
+  background: #feb112;
   font-size: 13px;
   font-weight: 600;
 }
@@ -707,10 +707,10 @@ a:hover {
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
-  background-color: #003399;
+  background-color: #026bd1;
   background-image: url(../images/bg1.jpg);
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff9933", endColorstr="#879015", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEB112", endColorstr="#879015", GradientType=1 );
   background-size: cover;
   position: relative;
   text-align: center;
@@ -770,7 +770,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: #ff9933;
+  background: #feb112;
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
@@ -814,7 +814,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #003399;
+  background-color: #026bd1;
   background-image: url("../images/overlay.jpg");
   background-size: cover;
   position: relative;
@@ -849,7 +849,7 @@ a:hover {
   padding: 0;
   font-size: 13px;
   font-weight: 600;
-  color: #ff9933;
+  color: #feb112;
 }
 .page-header .container ul li:last-child:after {
   display: none;
@@ -899,7 +899,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 6px;
-  background: #ff9933;
+  background: #feb112;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -933,7 +933,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 100%;
-  background: #ff9933;
+  background: #feb112;
   position: absolute;
   left: 0;
   top: 0;
@@ -947,7 +947,7 @@ a:hover {
   box-shadow: 0 30px 30px #eee;
 }
 .icon-content:hover {
-  border-color: #ff9933;
+  border-color: #feb112;
 }
 .icon-content:hover:after {
   content: "";
@@ -987,7 +987,7 @@ a:hover {
   height: 50px;
   line-height: 50px;
   display: inline-block;
-  background: #003399;
+  background: #026bd1;
   color: #fff;
   text-align: center;
   font-size: 20px;
@@ -1044,7 +1044,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 6px;
-  background: #ff9933;
+  background: #feb112;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1112,7 +1112,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 6px;
-  background: #ff9933;
+  background: #feb112;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1157,7 +1157,7 @@ a:hover {
   content: "";
   width: 0;
   height: 4px;
-  background: #ff9933;
+  background: #feb112;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1227,7 +1227,7 @@ a:hover {
   left: 30px;
   bottom: 15px;
   padding: 30px;
-  background: #ff9933;
+  background: #feb112;
   color: #0b0b0b;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1333,7 +1333,7 @@ a:hover {
   box-shadow: none;
   z-index: 1;
   text-decoration: none;
-  background: #ff9933;
+  background: #feb112;
 }
 .sector-box:hover i {
   opacity: 1;
@@ -1362,10 +1362,10 @@ a:hover {
   background: #eee;
 }
 .our-history .swiper-pagination-progressbar-fill {
-  background: #ff9933;
+  background: #feb112;
 }
 .our-history .swiper-slide:hover b:after {
-  background: #ff9933;
+  background: #feb112;
 }
 .our-history .swiper-slide {
   z-index: 1;
@@ -1424,7 +1424,7 @@ a:hover {
   margin: 0 2px;
 }
 .our-history .controls .button-prev:hover {
-  background: #ff9933;
+  background: #feb112;
 }
 .our-history .controls .button-next {
   width: 80px;
@@ -1444,7 +1444,7 @@ a:hover {
   margin-right: 0;
 }
 .our-history .controls .button-next:hover {
-  background: #ff9933;
+  background: #feb112;
 }
 
 /* CORE VALUES BOX */
@@ -1497,7 +1497,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 6px;
-  background: #ff9933;
+  background: #feb112;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1545,7 +1545,7 @@ a:hover {
   height: 0;
   border-style: solid;
   border-width: 0 0 14px 14px;
-  border-color: transparent transparent #003399 transparent;
+  border-color: transparent transparent #026bd1 transparent;
   position: absolute;
   right: 4px;
   bottom: 4px;
@@ -1612,7 +1612,7 @@ a:hover {
 .tab-left {
   width: 100%;
   display: block;
-  background: #003399;
+  background: #026bd1;
   color: #fff;
   padding: 50px;
 }
@@ -1648,13 +1648,13 @@ a:hover {
 }
 .tab-left ul li a:hover {
   text-decoration: none;
-  color: #ff9933;
+  color: #feb112;
 }
 .tab-left ul li a:before {
   content: "";
   width: 0;
   height: 5px;
-  background: #ff9933;
+  background: #feb112;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1689,7 +1689,7 @@ a:hover {
   width: 100%;
   display: block;
   margin: 0;
-  background: #003399;
+  background: #026bd1;
   position: relative;
 }
 .video-box .play-btn {
@@ -1709,8 +1709,8 @@ a:hover {
   text-indent: 2px;
 }
 .video-box .play-btn:hover {
-  background: #ff9933;
-  border-color: #ff9933;
+  background: #feb112;
+  border-color: #feb112;
   color: #0b0b0b;
 }
 .video-box video {
@@ -1737,7 +1737,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: #ff9933;
+  background: #feb112;
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
@@ -1795,11 +1795,11 @@ a:hover {
   height: 50px;
   line-height: 50px;
   padding: 0 30px;
-  background: #ff9933;
+  background: #feb112;
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
-  border: 4px solid #ff9933;
+  border: 4px solid #feb112;
 
   /* margin-bottom: 10px; */
 
@@ -1814,7 +1814,7 @@ a:hover {
 }
 .agenda a:hover {
   text-decoration: none;
-  border: 4px solid #ff9933;
+  border: 4px solid #feb112;
   background-color: #fff;
   transition: 0.2s;
   /* box-shadow: 0 20px 20px #000; */
@@ -1875,8 +1875,8 @@ a:hover {
   height: 50px;
   line-height: 50px;
   padding: 0 30px;
-  border: 4px solid #ff9933;
-  background: #ff9933;
+  border: 4px solid #feb112;
+  background: #feb112;
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
@@ -1891,7 +1891,7 @@ a:hover {
 }
 .ticket a:hover {
   text-decoration: none;
-  border: 4px solid #ff9933;
+  border: 4px solid #feb112;
   background-color: #fff;
   transition: 0.3s;
   outline: none;
@@ -1940,7 +1940,7 @@ a:hover {
   line-height: 80px;
   display: inline-block;
   text-align: center;
-  background: #ff9933;
+  background: #feb112;
   border-radius: 50%;
   color: #0b0b0b;
   -webkit-transition: all 0.25s ease-in-out;
@@ -1951,7 +1951,7 @@ a:hover {
   margin-left: auto;
 }
 .testimonials-slider .controls .button-prev:hover {
-  background: #003399;
+  background: #026bd1;
   color: #fff;
 }
 .testimonials-slider .controls .button-next {
@@ -1960,7 +1960,7 @@ a:hover {
   line-height: 80px;
   display: inline-block;
   text-align: center;
-  background: #ff9933;
+  background: #feb112;
   border-radius: 50%;
   color: #0b0b0b;
   -webkit-transition: all 0.25s ease-in-out;
@@ -1972,7 +1972,7 @@ a:hover {
   margin-right: 0;
 }
 .testimonials-slider .controls .button-next:hover {
-  background: #003399;
+  background: #026bd1;
   color: #fff;
 }
 .testimonials-slider .testimonial {
@@ -2004,7 +2004,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   float: left;
-  background: #ff9933;
+  background: #feb112;
   color: #0b0b0b;
   text-align: center;
   font-size: 30px;
@@ -2088,7 +2088,7 @@ a:hover {
     hsla(186, 100%, 8%, 1) 23%
   );
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff9933", endColorstr="#879015", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEB112", endColorstr="#879015", GradientType=1 );
   background-position: center;
   background-size: cover;
 }
@@ -2118,7 +2118,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: #ff9933;
+  background: #feb112;
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
@@ -2167,7 +2167,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 4px;
-  background: #ff9933;
+  background: #feb112;
   position: absolute;
   left: 0;
   bottom: 20px;
@@ -2177,14 +2177,14 @@ a:hover {
 .footer {
   width: 100%;
   display: block;
-  background-color: #003399;
+  background-color: #026bd1;
   position: relative;
   padding-top: 80px;
   color: #fff;
 }
 .footer h3 {
-  -webkit-text-stroke: 1px #ff9933;
-  text-stroke: 1px #ff9933;
+  -webkit-text-stroke: 1px #feb112;
+  text-stroke: 1px #feb112;
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: bolder;
@@ -2193,7 +2193,7 @@ a:hover {
 }
 .footer .scroll-top {
   width: 100px;
-  background: #ff9933;
+  background: #feb112;
   position: absolute;
   right: 30px;
   top: -30px;
@@ -2230,7 +2230,7 @@ a:hover {
   color: #fff;
   font-weight: 600;
   font-size: 15px;
-  border-bottom: 3px solid #ff9933;
+  border-bottom: 3px solid #feb112;
 }
 .footer address a:hover {
   text-decoration: none;
@@ -2251,7 +2251,7 @@ a:hover {
 }
 .footer form input[type="submit"] {
   height: 60px;
-  background: #ff9933;
+  background: #feb112;
   border: none;
   padding: 0 40px;
   font-size: 13px;
@@ -2286,7 +2286,7 @@ a:hover {
   /* opacity: 0.7; */
   font-size: 20px;
   color: white;
-  border-bottom: 2px solid #ff9933;
+  border-bottom: 2px solid #feb112;
   padding: 10px;
   /* border-radius: 100%; */
   transition: 0.3s;
@@ -2328,8 +2328,8 @@ a:hover {
   width: 100%;
   display: block;
   position: relative;
-  background: #003399;
-  border: 4px solid #003399;
+  background: #026bd1;
+  border: 4px solid #026bd1;
 }
 .yes-no .switch {
   width: 100%;
@@ -2347,7 +2347,7 @@ a:hover {
   height: 100%;
   top: 0;
   left: 0;
-  background: #ff9933;
+  background: #feb112;
   font-weight: 600;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -2387,10 +2387,10 @@ a:hover {
   display: none;
 }
 .yes-no #no:checked ~ .switch {
-  background: #ff9933;
+  background: #feb112;
 }
 .yes-no #no:checked ~ .switch span {
-  background: #003399;
+  background: #026bd1;
 }
 .yes-no #no:checked ~ .switch span:after {
   background: none;
@@ -2426,7 +2426,7 @@ a:hover {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #ff9933;
+  background: #feb112;
   cursor: pointer;
   -webkit-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
@@ -2437,18 +2437,18 @@ a:hover {
   height: 20px;
   border: 0;
   border-radius: 50%;
-  background: #ff9933;
+  background: #feb112;
   cursor: pointer;
   -moz-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
 }
 
 .range-slider__range:active::-moz-range-thumb {
-  background: #ff9933;
+  background: #feb112;
 }
 
 .range-slider__range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #ff9933;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #feb112;
 }
 
 .range-slider__value {
@@ -2458,12 +2458,12 @@ a:hover {
   color: #0b0b0b;
   line-height: 20px;
   text-align: center;
-  background: #ff9933;
+  background: #feb112;
   padding: 5px 10px;
 }
 
 ::-moz-range-track {
-  background: #ff9933;
+  background: #feb112;
   border: 0;
 }
 
@@ -2890,7 +2890,7 @@ input::-moz-focus-outer {
   }
 
   .footer-bar .sales-representive b {
-    color: #ff9933;
+    color: #feb112;
   }
 
   .footer-bar .sales-representive b:before {
@@ -2933,7 +2933,7 @@ input::-moz-focus-outer {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #003399;
+  background: #026bd1;
 }
 
 /* Handle on hover */
