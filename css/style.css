@@ -636,6 +636,7 @@ a:hover {
 }
 .navbar .site-menu ul li a {
   display: inline-block;
+  font-size: 15px;
   color: #fff;
   position: relative;
 }
@@ -2491,7 +2492,7 @@ input::-moz-focus-outer {
   }
 
   .slider h2 {
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 70px;
     margin-left: 0px;
   }
@@ -2500,14 +2501,18 @@ input::-moz-focus-outer {
     margin-left: 0px;
   }
   .slider p:nth-of-type(1) {
-    margin-bottom: 20px;
-    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 120px;
   }
   .slider p:nth-of-type(3) {
     margin-bottom: 70px;
   }
   .slider p {
     margin-bottom: 0px;
+  }
+  .slider h2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
   }
 
   .counter-box .odometer {
@@ -2603,7 +2608,7 @@ input::-moz-focus-outer {
     height: auto;
   }
   .slider p:nth-of-type(1) {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: 0px;
   }
   .slider p:nth-of-type(3) {
@@ -2613,8 +2618,8 @@ input::-moz-focus-outer {
     margin-bottom: 0px;
   }
   .slider h2 {
-    margin-top: 50px;
-    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .slider a {
@@ -2939,6 +2944,26 @@ input::-moz-focus-outer {
   .footer .footer-bottom ul li {
     margin-left: 0;
     margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+  .slider h2 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .slider p:nth-of-type(1) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .slider p:nth-of-type(3) {
+    margin-bottom: 70px;
+  }
+  .slider p {
+    margin-bottom: 0px;
   }
 }
 
