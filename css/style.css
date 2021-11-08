@@ -110,12 +110,12 @@ figure {
 
 /* LINKS */
 a {
-  color: #026bd1;
+  color: #003399;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #026bd1;
+  color: #003399;
 }
 
 /* CUSTOM CLASSES */
@@ -297,7 +297,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background-color: #026bd1;
+  background-color: #003399;
   /* background-image: url("../images/overlay.jpg"); */
   background-position: center;
   background-size: cover;
@@ -502,8 +502,9 @@ a:hover {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
-  position: fixed;
+  padding: 10px 0;
+  position: relative;
+  background: #003399;
   left: 0;
   top: 0;
   z-index: 4;
@@ -511,7 +512,7 @@ a:hover {
 }
 .navbar.sticky {
   position: fixed;
-  background: #026bd1;
+  background: #003399;
 }
 .navbar.nav-down {
   top: 0;
@@ -594,7 +595,7 @@ a:hover {
 }
 .navbar .site-menu ul li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 40px;
   padding: 0;
   list-style: none;
   position: relative;
@@ -686,7 +687,7 @@ a:hover {
   height: 58px;
   line-height: 58px;
   padding: 0 40px;
-  color: #026bd1;
+  color: #003399;
   background: #feb112;
   font-size: 13px;
   font-weight: 600;
@@ -704,10 +705,10 @@ a:hover {
 /* SLIDER */
 .slider {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-wrap: wrap;
-  background-color: #026bd1;
+  background-color: #003399;
   background-image: url(../images/bg1.jpg);
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEB112", endColorstr="#879015", GradientType=1 );
@@ -717,7 +718,8 @@ a:hover {
 }
 .slider .container {
   position: relative;
-  padding-top: 150px;
+  padding-top: 120px;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -754,7 +756,7 @@ a:hover {
 .slider p:nth-of-type(1) {
   font-size: 20px;
   margin-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 0px;
   font-weight: bolder;
 }
 .slider p:nth-of-type(3) {
@@ -814,7 +816,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #026bd1;
+  background-color: #003399;
   background-image: url("../images/overlay.jpg");
   background-size: cover;
   position: relative;
@@ -987,7 +989,7 @@ a:hover {
   height: 50px;
   line-height: 50px;
   display: inline-block;
-  background: #026bd1;
+  background: #003399;
   color: #fff;
   text-align: center;
   font-size: 20px;
@@ -1545,7 +1547,7 @@ a:hover {
   height: 0;
   border-style: solid;
   border-width: 0 0 14px 14px;
-  border-color: transparent transparent #026bd1 transparent;
+  border-color: transparent transparent #003399 transparent;
   position: absolute;
   right: 4px;
   bottom: 4px;
@@ -1612,7 +1614,7 @@ a:hover {
 .tab-left {
   width: 100%;
   display: block;
-  background: #026bd1;
+  background: #003399;
   color: #fff;
   padding: 50px;
 }
@@ -1689,7 +1691,7 @@ a:hover {
   width: 100%;
   display: block;
   margin: 0;
-  background: #026bd1;
+  background: #003399;
   position: relative;
 }
 .video-box .play-btn {
@@ -1951,7 +1953,7 @@ a:hover {
   margin-left: auto;
 }
 .testimonials-slider .controls .button-prev:hover {
-  background: #026bd1;
+  background: #003399;
   color: #fff;
 }
 .testimonials-slider .controls .button-next {
@@ -1972,7 +1974,7 @@ a:hover {
   margin-right: 0;
 }
 .testimonials-slider .controls .button-next:hover {
-  background: #026bd1;
+  background: #003399;
   color: #fff;
 }
 .testimonials-slider .testimonial {
@@ -2177,7 +2179,7 @@ a:hover {
 .footer {
   width: 100%;
   display: block;
-  background-color: #026bd1;
+  background-color: #003399;
   position: relative;
   padding-top: 80px;
   color: #fff;
@@ -2328,8 +2330,8 @@ a:hover {
   width: 100%;
   display: block;
   position: relative;
-  background: #026bd1;
-  border: 4px solid #026bd1;
+  background: #003399;
+  border: 4px solid #003399;
 }
 .yes-no .switch {
   width: 100%;
@@ -2390,7 +2392,7 @@ a:hover {
   background: #feb112;
 }
 .yes-no #no:checked ~ .switch span {
-  background: #026bd1;
+  background: #003399;
 }
 .yes-no #no:checked ~ .switch span:after {
   background: none;
@@ -2497,6 +2499,16 @@ input::-moz-focus-outer {
   .slider .left {
     margin-left: 0px;
   }
+  .slider p:nth-of-type(1) {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  .slider p:nth-of-type(3) {
+    margin-bottom: 70px;
+  }
+  .slider p {
+    margin-bottom: 0px;
+  }
 
   .counter-box .odometer {
     font-size: 55px;
@@ -2590,7 +2602,16 @@ input::-moz-focus-outer {
   .slider {
     height: auto;
   }
-
+  .slider p:nth-of-type(1) {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  .slider p:nth-of-type(3) {
+    margin-bottom: 70px;
+  }
+  .slider p {
+    margin-bottom: 0px;
+  }
   .slider h2 {
     margin-top: 50px;
     margin-left: 0px;
@@ -2735,18 +2756,20 @@ input::-moz-focus-outer {
 
   .slider h2 {
     font-size: 40px;
-    margin-top: 40px;
-    margin-left: 0px;
-    margin-bottom: 15px;
-  }
-
-  .slider p {
     margin-top: 0px;
-    /* margin-bottom: 10px; */
+    margin-left: 0px;
+    margin-bottom: 20px;
   }
 
-  .slider p:nth-of-type(2) {
-    margin-bottom: 50px;
+  .slider p:nth-of-type(1) {
+    margin-bottom: 10px;
+    margin-top: 60px;
+  }
+  .slider p:nth-of-type(3) {
+    margin-bottom: 70px;
+  }
+  .slider p {
+    margin-bottom: 0px;
   }
 
   .slider .container {
@@ -2933,7 +2956,7 @@ input::-moz-focus-outer {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #026bd1;
+  background: #003399;
 }
 
 /* Handle on hover */
