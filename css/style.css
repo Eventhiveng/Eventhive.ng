@@ -510,6 +510,7 @@ a:hover {
   transition: top ease 1s;
 }
 .navbar.sticky {
+  position: fixed;
   background: #003399;
 }
 .navbar.nav-down {
