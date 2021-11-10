@@ -1908,6 +1908,9 @@ a:hover {
   padding-right: 250px;
   padding-bottom: 0px;
 }
+.sponsorship .container {
+  margin-bottom: 30px;
+}
 .sponsorship a {
   display: inline-block;
   height: 60px;
