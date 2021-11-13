@@ -752,7 +752,7 @@ a:hover {
   padding-top: 30px;
   color: white;
   width: 100%;
-  background: url("../images/bg2.jpg");
+  background: url("../images/Group\ 1.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -793,7 +793,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   background-color: #003399;
-  background-image: url(../images/bg2.jpg);
+  background-image: url(../images/Group\ 4.png);
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEB112", endColorstr="#879015", GradientType=1 );
   background-size: cover;
@@ -2602,7 +2602,9 @@ input::-moz-focus-outer {
     margin-top: 10px;
     margin-bottom: 40px;
   }
-
+  .slider {
+    background-position: right 1400px top 0px;
+  }
   .counter-box .odometer {
     font-size: 55px;
   }
@@ -2737,7 +2739,9 @@ input::-moz-focus-outer {
     .swiper-pagination-current {
     color: #fff;
   }
-
+  .slider {
+    background-position: right 900px top 0px;
+  }
   .icon-content {
     margin: 15px 0;
   }
@@ -2888,7 +2892,9 @@ input::-moz-focus-outer {
   .slider .left {
     margin-left: 0px;
   }
-
+  .slider {
+    background-position: right 900px top 0px;
+  }
   .section-title h2 {
     font-size: 25px;
   }
@@ -3061,6 +3067,9 @@ input::-moz-focus-outer {
   }
   .slider p {
     margin-bottom: 0px;
+  }
+  .slider {
+    background-position: right 1000px top 0px;
   }
   .about-content {
     margin: 2px;
