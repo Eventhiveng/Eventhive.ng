@@ -117,6 +117,10 @@ body {
   color: #003399;
   font-weight: bold;
 }
+.y-color {
+  color: #feb112;
+  font-weight: bold;
+}
 .ex-color {
   color: #e63946;
   font-weight: bold;
@@ -743,6 +747,30 @@ a:hover {
 }
 
 /* INFO */
+#info {
+  margin-top: 60px;
+  padding-top: 30px;
+  color: white;
+  width: 100%;
+  background: url("../images/bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+#info .hr {
+  width: 70px;
+  border: 3px solid #feb112;
+  /* margin: 0px; */
+  margin-bottom: 10px;
+  /* text-align: center !important; */
+}
+#info li {
+  list-style-type: none;
+  line-height: 30px;
+}
+#info li i {
+  color: #feb112;
+  margin-right: 10px;
+}
 
 /* WHATS NEW */
 #new {
@@ -2801,6 +2829,12 @@ input::-moz-focus-outer {
   .about-content {
     margin: 2px;
     padding: 30px 10px;
+  }
+  #info ul {
+    padding-left: 5px !important;
+  }
+  #info .hr {
+    margin-bottom: 20px !important;
   }
   .slider .slider-content {
     margin-bottom: 30px;
