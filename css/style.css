@@ -1926,8 +1926,8 @@ a:hover {
 
 .ticket .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 30px;
+  grid-template-columns: auto auto;
+  grid-gap: 80px;
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 50px;
@@ -1954,6 +1954,9 @@ a:hover {
     url("../images/bg2.jpg"); /* The least supported option. */
   background-size: cover;
   background-attachment: fixed;
+}
+.ticket .bgc:hover {
+  box-shadow: 0 40px 90px 0 rgba(0, 0, 0, 0.15) !important;
 }
 .ticket .grid-item ul {
   height: 200px;
