@@ -2006,19 +2006,35 @@ a:hover {
   transition: 0.4s;
   padding: 50px 10px 40px 10px;
 }
-.ticket .bgc {
+.ticket .uk {
   color: white;
   width: 100%;
   /* background-color: #0b0b0b; */
   /* background-image: ; */
-  background: #0b0b0b; /* fallback colour. Make sure this is just one solid colour. */
+  background: #001233; /* fallback colour. Make sure this is just one solid colour. */
   background: -webkit-linear-gradient(
       rgba(46, 46, 46, 0.8),
       rgba(46, 46, 46, 0.8)
     ),
-    url("../images/bg2.jpg");
+    url("../images/uk.jpg");
   background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
-    url("../images/bg2.jpg"); /* The least supported option. */
+    url("../images/uk.jpg"); /* The least supported option. */
+  background-size: cover;
+  background-attachment: fixed;
+}
+.ticket .ng {
+  color: white;
+  width: 100%;
+  /* background-color: #0b0b0b; */
+  /* background-image: ; */
+  background: #001233; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(
+      rgba(46, 46, 46, 0.8),
+      rgba(46, 46, 46, 0.8)
+    ),
+    url("../images/ng.jpg");
+  background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
+    url("../images/ng.jpg"); /* The least supported option. */
   background-size: cover;
   background-attachment: fixed;
 }
@@ -2910,6 +2926,10 @@ input::-moz-focus-outer {
     margin: 2px;
     padding: 30px 10px;
   }
+  .sponsOP-content {
+    margin: 2px;
+    padding: 30px 10px;
+  }
   #info ul {
     padding-left: 5px !important;
   }
@@ -3142,6 +3162,10 @@ input::-moz-focus-outer {
     background-position: right 1100px top 0px;
   }
   .about-content {
+    margin: 2px;
+    padding: 30px 10px;
+  }
+  .sponsOP-content {
     margin: 2px;
     padding: 30px 10px;
   }
