@@ -756,9 +756,9 @@ a:hover {
       rgba(46, 46, 46, 0.8),
       rgba(46, 46, 46, 0.8)
     ),
-    url("../images/e3.png");
+    url("../images/e555.png");
   background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
-    url("../images/e3.png"); /* The least supported option. */
+    url("../images/e555.png"); /* The least supported option. */
   background-size: cover;
   background-attachment: fixed;
 }
@@ -787,17 +787,20 @@ a:hover {
 /* INFOTWO */
 #infoTwo {
   margin-top: 60px;
-  padding-top: 30px;
+  padding-top: 80px;
   color: white;
   width: 100%;
-  background: url("../images/Group\ 1.png");
+  background: url("../images/bg11.jpg");
   background-size: cover;
   background-attachment: fixed;
+}
+#infoTwo h2 {
+  color: white;
 }
 #infoTwo .hr {
   width: 70px;
   border: 3px solid #ffae1e;
-  /* margin: 0px; */
+  margin: 0px;
   margin-bottom: 10px;
   /* text-align: center !important; */
 }
@@ -1007,7 +1010,7 @@ a:hover {
 .section-title {
   width: 100%;
   display: block;
-  text-align: center;
+  text-align: left;
   margin-bottom: 50px;
 }
 .section-title h6 {
@@ -1185,7 +1188,7 @@ a:hover {
 
 /* COUNTER BOX */
 .counter .section-title {
-  text-align-last: left;
+  text-align-last: left !important;
 }
 .col-lg-3:nth-child(even) .counter-box {
   margin-top: 50%;
@@ -1202,6 +1205,9 @@ a:hover {
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+}
+.counter-box p {
+  font-size: 14px !important;
 }
 .counter-box:hover {
   transform: translateY(-20px);
@@ -2645,7 +2651,7 @@ input::-moz-focus-outer {
     margin-bottom: 40px;
   }
   .slider {
-    background-position: right 1400px top 0px;
+    background-position: right 1800px top 0px;
   }
   .counter-box .odometer {
     font-size: 55px;
@@ -2782,7 +2788,7 @@ input::-moz-focus-outer {
     color: #fff;
   }
   .slider {
-    background-position: right 900px top 0px;
+    background-position: right 1200px top 0px;
   }
   .icon-content {
     margin: 15px 0;
@@ -2935,7 +2941,7 @@ input::-moz-focus-outer {
     margin-left: 0px;
   }
   .slider {
-    background-position: right 900px top 0px;
+    background-position: right 1100px top 0px;
   }
   .section-title h2 {
     font-size: 25px;
@@ -3111,7 +3117,7 @@ input::-moz-focus-outer {
     margin-bottom: 0px;
   }
   .slider {
-    background-position: right 1000px top 0px;
+    background-position: right 1100px top 0px;
   }
   .about-content {
     margin: 2px;
