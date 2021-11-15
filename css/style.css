@@ -797,6 +797,9 @@ a:hover {
   margin-bottom: 10px;
   /* text-align: center !important; */
 }
+#infoOne a {
+  color: #ffae1e !important;
+}
 #infoOne li {
   list-style-type: none;
   line-height: 30px;
@@ -932,9 +935,6 @@ a:hover {
 }
 .slider .left {
   margin-left: 20px;
-}
-.slider .buttons {
-  /* margin: 0 auto; */
 }
 .slider a i {
   display: inline-block;
