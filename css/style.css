@@ -1959,6 +1959,12 @@ a:hover {
 .sponsorship .row img {
   margin: 30px;
 }
+.transparent-yellow {
+  -webkit-text-stroke: 2px #ffbf00;
+  text-stroke: 1px #ffbf00;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 
 /* AGENDA SECTION */
 .agenda .grid-container {
