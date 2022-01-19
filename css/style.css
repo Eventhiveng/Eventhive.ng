@@ -43,7 +43,7 @@
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(200px * 44);
+  width: calc(200px * 30.5);
 }
 .company-slider .company-slide {
   height: 200px;
