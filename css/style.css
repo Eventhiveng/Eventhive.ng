@@ -436,6 +436,12 @@ textarea.input {
 #home {
   height: 100vh;
   position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/bcg/og1.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #home .home-wrapper {
@@ -1162,6 +1168,9 @@ textarea.input {
 }
 
 /* SPONS-OP SECTION */
+.spons-op {
+  margin-bottom: 30px;
+}
 .spons-op h1 {
   text-align: center;
   margin-bottom: 20px;
@@ -1180,6 +1189,22 @@ textarea.input {
 .spons-op .text-link {
   text-decoration: underline;
   color: #ffa200 !important;
+}
+a.btn-border-white {
+  border: solid 2px #ffa200;
+  background: none;
+  border-radius: 30px;
+  padding: 9px 30px 9px 30px;
+  color: #444;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  /* transition: 0.2s; */
+}
+a.btn-border-white:hover {
+  transition: 0.2s;
+  border: dotted 3px #ffa200;
 }
 
 /* RESPONSIVE TABLET  */
@@ -1643,12 +1668,6 @@ textarea.input {
   }
 }
 
-/* -------------------------------------------------- 
-	design for 768px (IPAD)
-	/* ================================================== */
-
-@media (min-width: 768px) and (max-width: 979px) {
-}
 @media only screen and (max-width: 992px) {
   .side-img {
     width: 60%;
@@ -1676,24 +1695,6 @@ textarea.input {
   }
 }
 
-/* -------------------------------------------------- 
-	custom for 320px & 480px 
-	/* -------------------------------------------------- */
-
-@media only screen and (max-width: 767px) {
-}
-
-/* -------------------------------------------------- 
-	design for 480px
-	/* -------------------------------------------------- */
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-}
-
-/* -------------------------------------------------- 
-	design for 320px (IPHONE)
-	/* -------------------------------------------------- */
-
 @media only screen and (max-width: 480px) {
   .side-img {
     width: 100%;
@@ -1717,5 +1718,118 @@ textarea.input {
   }
   .price-table {
     width: 100%;
+  }
+  #home {
+    height: 120vh;
+    background-position: right 1100px top 0px;
+  }
+  .home-content h2 {
+    font-size: 45px;
+  }
+  .about-content {
+    margin: 50px 10px;
+  }
+  #info {
+    margin-top: 70px;
+  }
+  #venue .second {
+    margin-top: 50px;
+  }
+}
+
+/* RESPONSIVE MEDIUM  */
+@media only screen and (max-width: 1199px),
+  only screen and (max-device-width: 1199px) {
+  .counter-box .odometer {
+    font-size: 55px;
+  }
+  #home {
+    height: 60vh;
+    background-position: right 1000px top 0px;
+  }
+  #info {
+    margin-top: 70px;
+  }
+  .spons-op .side-img {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+/* RESPONSIVE TABLET  */
+@media only screen and (max-width: 991px),
+  only screen and (max-device-width: 991px) {
+  .counter-box .value {
+    margin-right: 20px;
+  }
+  .col-lg-3:nth-child(even) .counter-box {
+    margin-top: 0;
+  }
+
+  .counter-box {
+    margin: 15px 0;
+  }
+}
+/* RESPONSIVE MOBILE */
+@media only screen and (max-width: 767px),
+  only screen and (max-device-width: 767px) {
+  #home {
+    height: 110vh;
+    background-position: right 1050px top 0px;
+  }
+  .home-content h2 {
+    font-size: 45px;
+  }
+  .about-content {
+    margin: 50px 10px;
+  }
+  #info {
+    margin-top: 70px;
+  }
+  #venue .second {
+    margin-top: 50px;
+  }
+  #venue .venue {
+    background-position: right -500px top 0px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+  #home {
+    height: 120vh;
+    background-position: right 1100px top 0px;
+  }
+  .home-content h2 {
+    font-size: 45px;
+  }
+  .about-content {
+    margin: 50px 10px;
+  }
+  #info {
+    margin-top: 70px;
+  }
+  #venue .second {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 300px) {
+  #home {
+    height: 120vh;
+    background-position: right 1100px top 0px;
+  }
+  .home-content h2 {
+    font-size: 35px;
+  }
+  .home-content a {
+    font-size: 10px;
+  }
+  .about-content {
+    margin: 50px 0px;
+  }
+  #info {
+    margin-top: 70px;
+  }
+  #venue .second {
+    margin-top: 50px;
   }
 }
