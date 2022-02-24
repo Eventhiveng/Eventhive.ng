@@ -353,7 +353,7 @@ textarea.input {
 }
 
 #header.fixed-navbar .main-nav li a {
-  color: #0b0f28;
+  color: #0b0f28 !important;
 }
 
 .main-nav li.active a:after {
