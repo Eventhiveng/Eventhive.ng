@@ -301,12 +301,20 @@ textarea.input {
   left: 0;
   right: 0;
   top: 0;
-  background: #fff;
+  background: #262626;
+  color: white !important;
   -webkit-box-shadow: 0px 0px 3px #0003;
   box-shadow: 0px 0px 3px #0003;
   border-bottom: none;
   -webkit-animation: slide-in 0.3s;
   animation: slide-in 0.3s;
+}
+
+#header.fixed-navbar .fa-bars {
+  color: white;
+}
+#header.fixed-navbar a {
+  color: white !important;
 }
 
 @-webkit-keyframes slide-in {
@@ -422,7 +430,9 @@ textarea.input {
 /*=========================================================
 	HOME
 ===========================================================*/
-
+.id-color {
+  color: #ffb715;
+}
 #home {
   height: 100vh;
   position: relative;
@@ -430,10 +440,9 @@ textarea.input {
 
 #home .home-wrapper {
   position: absolute;
-  top: 50%;
+  top: 62%;
   left: 0;
   right: 0;
-  text-align: center;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -444,7 +453,34 @@ textarea.input {
   font-weight: 900;
   color: #fff;
 }
-
+.home-content h2 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.home-content h2 b {
+  -webkit-text-stroke: 1px #fff;
+  text-stroke: 1px #fff;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.home-content p:nth-of-type(2) {
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+.home-content p:nth-of-type(3) {
+  margin-bottom: 70px;
+}
+.home-content p {
+  color: white;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0px;
+}
+.home-content .p-one {
+  font-size: 20px;
+}
 .home-content h4 {
   color: #fff;
 }
@@ -461,6 +497,25 @@ textarea.input {
 	ABOUT
 ===========================================================*/
 
+.about-content {
+  /* border: 1px solid rgba(50, 50, 50); */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 20px 30px 20px;
+  box-shadow: 1px 1px 21px -2px rgba(151, 141, 141, 0.66);
+  -webkit-box-shadow: 1px 1px 21px -2px rgba(151, 141, 141, 0.66);
+  -moz-box-shadow: 1px 1px 21px -2px rgba(151, 141, 141, 0.66);
+}
+#about .section-title {
+  text-align: left;
+}
+.block {
+  width: 70px;
+  border: 3px solid #ffb715;
+  margin: 0px;
+  margin-bottom: 10px;
+  text-align: left !important;
+}
 #numbers {
   margin-top: 60px;
 }
@@ -482,20 +537,6 @@ textarea.input {
   text-transform: uppercase;
   color: #ffb715;
 }
-/* Side by side */
-#about {
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-#about h1 {
-  margin-bottom: 50px;
-}
-.side-img {
-  width: 70%;
-}
-.side-text {
-  margin-top: 100px;
-}
 
 /* INFO */
 
@@ -510,6 +551,74 @@ textarea.input {
 
 .feature {
   margin: 50px 0 0 0;
+}
+
+/* COUNTER BOX */
+.col-lg-3:nth-child(even) .counter-box {
+  margin-top: 50%;
+}
+
+.counter-box {
+  width: 100%;
+  display: block;
+  border: 1px solid #e8e8e8;
+  padding: 30px;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.counter-box:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 30px 30px #eee;
+}
+.counter-box:hover h6:before {
+  width: 0;
+}
+.counter-box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 14px 14px;
+  border-color: transparent transparent #e8e8e8 transparent;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+.counter-box .odometer {
+  display: inline-block;
+  font-size: 70px;
+}
+.counter-box .value {
+  font-size: 24px;
+}
+.counter-box h6 {
+  display: inline-block;
+  font-weight: 800;
+  letter-spacing: 2px;
+  position: relative;
+}
+.counter-box h6:before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: #feb112;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  mix-blend-mode: multiply;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.counter-box p {
+  font-size: 13px;
+  padding-right: 5%;
 }
 
 /* FUNFACTS */

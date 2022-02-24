@@ -23,7 +23,7 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
- 
+
     <!-- Owl Carousel -->
     <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
     <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
@@ -35,15 +35,18 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <script>
-      function show(shown, hidden) {
-        document.getElementById(shown).style.display = "block";
-        document.getElementById(hidden).style.display = "none";
-        return false;
-      }
-    </script>
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/lineicons.css" />
+    <link rel="stylesheet" href="css/odometer.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      charset="UTF-8"
+      src="//web.webpushs.com/js/push/74c19e42e77ba733e4c5016c551f42c9_1.js"
+      async
+    ></script>
+    
   </head>
   <body>
     <!-- Header -->
@@ -79,9 +82,9 @@
           <ul class="main-nav nav navbar-nav navbar-right">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <!-- <li><a href="#speakers">Speakers</a></li> -->
-            <li><a href="#register">Register</a></li>
+            <li><a href="#speakers">Speakers</a></li>
             <li><a href="#media">Sponsors</a></li>
+            <li><a href="#register">Tickets</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -98,7 +101,7 @@
         class="section-bg"
         style="
           background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('/img/slide1.jpg');
+            url('/img/bcg/og1.jpg');
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
@@ -115,12 +118,12 @@
           <!-- row -->
           <div class="row">
             <!-- home content -->
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-12">
               <div class="home-content">
-                <h2 style="color: white" class="text-uppercase">
-                  Welcome To Nigeria <span class="id-color">Power</span> Outlook
-                </h2>
-                <h4 class="lead">28th April, 2021 <br> VIRTUAL EVENT</h4>
+                <p class="p-one"><b>Thursday, 28th of April, 2022</b></p>
+                <p>Oriental Hotel, Victoria Island,</p>
+                <h2><span class="id-color">WELCOME TO</span> <b>NIGERIA POWER OUTLOOK 2022</b></h2>
+                <p class="p-one"><b>THE MOST INFLUENTIAL NIGERIA-FOCUSED POWER GATHERING</b></p>
                 <!-- <div title="Add to Calendar " class="addeventatc">
                   Stay reminded
                   <span class="start">03/26/2020 09:00 AM</span>
@@ -130,12 +133,12 @@
                   <span class="description"> </span>
                   <span class="location">Civic Center VI Lagos</span>
                 </div> -->
-                <a href="#register" class="main-btn">Book A Pass</a>
+                <a href="#register" class="main-btn">Register Now</a>
                 <a
                   href="https://zfrmz.com/VoyGZVkfCkawteJO1n8g"
                   target="_blank"
                   class="brochure-btn"
-                  >Download Our Brochure</a
+                  >Download Event Brochure</a
                 >
                 <!-- <a href="https://zfrmz.com/QDa5GW57zDXAL0GH7qNp" target="_blank" class="brochure-btn">Download the Post-event Report</a> -->
               </div>
@@ -150,87 +153,137 @@
     </div>
     <!-- /Home -->
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="..." alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="..." alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="..." alt="Third slide">
-        </div>
-      </div>
-    </div>
-
-    <!-- Side by side -->
-    <section id="about" class="col-md-12 text-center">
-      <h1>THEME: POWERUP NIGERIA - THE PATHWAY FOR <span class="id-color">GROWTH</span></h1>
+    <!-- ABOUT -->
+    <section class="content-section" id="about">
       <div class="container">
-        <div class="row col-md-6">
-          <img src="/img/bg-side.jpg" alt="" class="side-img" />
-        </div>
-        <div class="row col-md-6 side-text">
-          <div id="Page1">
-            <p>
-              Nigeria’s potential to become one of the World’s largest economies
-              will remain just an aspiration without the electricity required to
-              pursue aggressive industrialization, including the revitalization
-              of moribund local industries. The country’s power sector is
-              undoubtedly invaluable to unlocking the potential and positioning
-              her on the path to sustainable growth.
-              <br />
-              <br />
-              <b class="id-color">Eventhive.ng</b> is hosting 2nd edition of the
-              annual Nigeria Power Outlook themed <b class="id-color">"THE PATHWAY FOR GROWTH"</b>.
-              Nigeria Power Outlook is the foremost gathering of the Industry’s
-              finest minds, top-level business leaders and decision makers
-              across government, power and energy companies, development
-              agencies, commercial banks, development finance institutions
-              e.t.c, providing them with an opportunity to discuss, share
-              thoughts on latest industry challenges & solutions, network and
-              chart a growth path for the power and energy industry.
-            </p> 
-            <br />
-            <a href="#" onclick="return show('Page1','Page2');"
-              ><i class="fas fa-circle id-color"></i
-            ></a>
-            <a href="#" onclick="return show('Page2','Page1');"
-              ><i class="fas fa-circle id-color-light"></i
-            ></a>
+        <div class="row about-content">
+          <div class="col-12">
+            <div class="section-title">
+              <hr class="block">
+              <h2><b>ABOUT</b></h2>
+            </div>
           </div>
+            <div class="col-lg-6">
+              <p>
+                Nigeria is miles away from the projected strength of its power generation and distribution. Since the privatization of the power sector, the industry has benefited from multiple interventions from the government of Nigeria, various structural reforms have also been introduced with not much progress recorded thus far. 
+                <br>
+                <br>
+                The constant question after these multiple interventions is why is the sector not recording the projected success? Stakeholders have opined that there is a gap in the value chain. The one thing that has remained important for all stakeholders is the urgency to increase access, reliability and stability of power supply, market certainty and viability of the power sector.
+              </p>
 
-          <div id="Page2" style="display: none">
-            <p>
-              This year’s edition will build on the impactful conversations at
-              the 2020 edition, which had the theme
-              <b class="id-color"
-                >‘FUTURE OF POWER- CONNECTING POLICIES TO REAL TIME POWER
-                SOLUTIONS’</b
-              >. Nigeria Power Outlook, now in its 2nd edition, will provide an
-              opportunity for learning, knowledge transfer, interaction and
-              peer-to-peer networking. The event will unite stakeholders from
-              Power value chain which includes Generation, Transmission,
-              Distribution, Renewable Energy, Off-takers, Developers, Equipment
-              Manufacturers, Technology providers, Legal and Consulting
-              companies.
-              <br />
-              <br />
-              Nigeria Power Outlook offers a veritable platform for exhibitors
-              to showcase the latest brands, products, technologies and
-              innovations to a range of individuals from the Power and Energy
-              ecosystem. Nigeria Power Outlook is annually organized by
-              Eventhive.ng, West Africa’s leading PR Firm with core competencies
-              in developing Africa’s businesses via face-to-face/virtual events.
-            </p>
-            <br />
-            <a href="#" onclick="return show('Page1','Page2');"
-              ><i class="fas fa-circle id-color-light"></i
-            ></a>
-            <a href="#" onclick="return show('Page2','Page1');"
-              ><i class="fas fa-circle id-color"></i
-            ></a>
+              <p>
+                In the last two years since we launched <span class="id-color"><b>Nigeria Power Outlook</b></span>, The event has led key discussions on the challenges of transforming the Nigerian power sector landscape, analyzing of the privatization of GENCO’S, alternative access to power such as the off-grid models, pathways to recovery in the sector, financing and collaborative ways of harmonizing stakeholders’ interests and working together to achieve success.
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <p>
+                With a view to continually lead very important deliberations across the power sector, We are pleased to announce the 3rd edition of the <span class="id-color"><b>Nigeria Power Outlook</b></span> scheduled to hold on the 28th of April, 2022 at the Oriental Hotel, Victoria Island, Lagos, Nigeria. 
+                <br>
+                <br>
+                This year’s edition of the event will bring together stakeholders across the ecosystem’s value chain to discuss the theme <span class="id-color"><b>‘ POWER FOR ALL- LOOKING BACK, MOVING FORWARD,  WHAT NEXT?’</b></span>. The event will provide an opportunity to discuss and debate key developments built from the last year’s edition of the event, that will drive important conversations and catalyze progress.
+              </p>
+              <p>
+                The event will convene stakeholders, participants, developers and investors in the power sector (on-grid and off-grid) representatives from state and federal government of Nigeria, Nigeria Electricity Regulatory Commission (NERC), Independent Power Producers (IPP), distribution companies and other stakeholders  within the Power Industry.
+              </p>
+              <p>
+                The event is annually organized by <span class="id-color"><a href="https://eventhive.ng/" target="_blank"><b>Eventhive.ng</b></a></span>, West Africa’s leading PR firm with core competencies in developing key sectors of the economy via B2B events and exhibitions.
+              </p>
+            </div>
+          <!-- end col-6 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- ABOUT -->
+    
+    <!-- FUNFACTS -->
+    <section id="funfacts">
+      <div class="funfacts-inner">
+        <div class="container">
+          <div class="row">
+            <!-- number -->
+            <div class="col-md-3 col-sm-3 col-xs-4">
+              <div class="number">
+                <h3>
+                  <span
+                    class="counter"
+                    data-from="0"
+                    data-to="30"
+                    data-speed="2500"
+                    >30</span
+                  >+
+                </h3>
+                <p>SPEAKERS</p>
+              </div>
+            </div>
+            <!-- /number -->
+
+            <!-- number -->
+            <div class="col-md-3 col-sm-3 col-xs-4">
+              <div class="number">
+                <h3>
+                  <span
+                    class="counter"
+                    data-from="0"
+                    data-to="500"
+                    data-speed="2500"
+                    >200</span
+                  >+
+                </h3>
+                <p>ATTENDEES</p>
+              </div>
+            </div>
+            <!-- /number -->
+            <!-- number -->
+            <!-- <div class="col-md-4 col-sm-4 col-xs-4">
+              <div class="number">
+                <h3>
+                  <span
+                    class="counter"
+                    data-from="0"
+                    data-to="4"
+                    data-speed="2500"
+                    >4</span
+                  >+
+                </h3>
+                <p>SESSIONS</p>
+              </div>
+            </div> -->
+            <!-- /number -->
+            <!-- number -->
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="number">
+                <h3>
+                  <span
+                    class="counter"
+                    data-from="0"
+                    data-to="200"
+                    data-speed="2500"
+                    >100</span
+                  >+
+                </h3>
+                <p>COMPANIES</p>
+              </div>
+            </div>
+            <!-- /number -->
+            <!-- number -->
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="number">
+                <h3>
+                  <span
+                    class="counter"
+                    data-from="0"
+                    data-to="100"
+                    data-speed="2500"
+                    >500</span
+                  >+
+                </h3>
+                <p>DECISION MAKERS</p>
+              </div>
+            </div>
+            <!-- /number -->
           </div>
         </div>
       </div>
@@ -302,7 +355,7 @@
                   Provide a global platform for debate and action to build
                   Nigeria’s Power Sector.
                 </p>
-              </div> 
+              </div>
 
               <div class="feature col-lg-4 col-md-4 col-sm-4">
                 <!-- <i class="pe-4x pe-7s-headphones"></i> -->
@@ -317,97 +370,6 @@
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FUNFACTS -->
-    <section id="funfacts">
-      <div class="funfacts-inner">
-        <div class="container">
-          <div class="row">
-            <!-- number -->
-            <div class="col-md-3 col-sm-3 col-xs-4">
-              <div class="number">
-                <h3>
-                  <span
-                    class="counter"
-                    data-from="0"
-                    data-to="30"
-                    data-speed="2500"
-                    >30</span
-                  >+
-                </h3>
-                <p>SPEAKERS</p>
-              </div>
-            </div>
-            <!-- /number -->
-
-            <!-- number -->
-            <div class="col-md-3 col-sm-3 col-xs-4">
-              <div class="number">
-                <h3>
-                  <span
-                    class="counter"
-                    data-from="0"
-                    data-to="500"
-                    data-speed="2500"
-                    >500</span
-                  >+
-                </h3>
-                <p>ATTENDEES</p>
-              </div>
-            </div>
-            <!-- /number -->
-            <!-- number -->
-            <!-- <div class="col-md-4 col-sm-4 col-xs-4">
-              <div class="number">
-                <h3>
-                  <span
-                    class="counter"
-                    data-from="0"
-                    data-to="4"
-                    data-speed="2500"
-                    >4</span
-                  >+
-                </h3>
-                <p>SESSIONS</p>
-              </div>
-            </div> -->
-            <!-- /number -->
-            <!-- number -->
-            <div class="col-md-3 col-sm-3 col-xs-6">
-              <div class="number">
-                <h3>
-                  <span
-                    class="counter"
-                    data-from="0"
-                    data-to="200"
-                    data-speed="2500"
-                    >200</span
-                  >+
-                </h3>
-                <p>COMPANIES</p>
-              </div>
-            </div>
-            <!-- /number -->
-            <!-- number -->
-            <div class="col-md-3 col-sm-3 col-xs-6">
-              <div class="number">
-                <h3>
-                  <span
-                    class="counter"
-                    data-from="0"
-                    data-to="100"
-                    data-speed="2500"
-                    >100</span
-                  >+
-                </h3>
-                <p>DECISION MAKERS</p>
-              </div>
-            </div>
-            <!-- /number -->
           </div>
         </div>
       </div>
