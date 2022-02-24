@@ -548,7 +548,21 @@ textarea.input {
   color: #ffb715;
   margin-bottom: 10px;
 }
-
+#info h1 b {
+  -webkit-text-stroke: 1px #444;
+  text-stroke: 1px #444;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  width: 30px;
+  text-align: center;
+}
+#info .num {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 30px;
+  text-align: center !important;
+  border-bottom: 5px solid #ffb715;
+}
 .feature {
   margin: 50px 0 0 0;
 }
@@ -569,6 +583,9 @@ textarea.input {
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+}
+.counter-box .counter {
+  font-size: 50px;
 }
 .counter-box:hover {
   transform: translateY(-20px);
@@ -1060,7 +1077,7 @@ textarea.input {
 }
 
 #venue .venue {
-  background-image: url(../img/bg-venue.jpg);
+  background-image: url(../img/bcg/og7.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1087,9 +1104,6 @@ textarea.input {
 .venue i {
   font-size: 5px;
   margin-right: 5px;
-}
-.venue .second {
-  margin-top: 30px;
 }
 
 .venue-inner h2 {
@@ -1174,8 +1188,8 @@ textarea.input {
   position: relative;
   overflow: hidden;
   margin: auto;
-  /* margin-right: 20px; */
-  width: 60%;
+  margin: 20px;
+  width: 500px;
   margin-bottom: 30px;
 }
 
