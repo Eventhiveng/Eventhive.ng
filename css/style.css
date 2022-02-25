@@ -353,7 +353,7 @@ textarea.input {
 }
 
 #header.fixed-navbar .main-nav li a {
-  color: #0b0f28 !important;
+  color: #0b0f28;
 }
 
 .main-nav li.active a:after {
@@ -409,6 +409,7 @@ textarea.input {
   }
   .main-nav.open {
     max-height: 500px;
+    background-color: #262626;
   }
   .main-nav li.active a:after {
     display: none;
@@ -437,7 +438,7 @@ textarea.input {
   height: 100vh;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/img/bcg/og1.jpg");
+    url("/img/bcg/IMG_8414.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1745,7 +1746,7 @@ a.btn-border-white:hover {
   }
   #home {
     height: 60vh;
-    background-position: right 1000px top 0px;
+    background-position: right 1250px top 0px;
   }
   #info {
     margin-top: 70px;
@@ -1768,13 +1769,16 @@ a.btn-border-white:hover {
   .counter-box {
     margin: 15px 0;
   }
+  #home {
+    background-position: right 1150px top 0px;
+  }
 }
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px),
   only screen and (max-device-width: 767px) {
   #home {
     height: 110vh;
-    background-position: right 1050px top 0px;
+    background-position: right 1150px top 0px;
   }
   .home-content h2 {
     font-size: 45px;
