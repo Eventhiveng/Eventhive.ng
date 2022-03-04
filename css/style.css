@@ -1993,13 +1993,12 @@ a:hover {
 
 .ticket .grid-container {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   grid-gap: 80px;
   padding: 0px 50px 30px 50px;
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 50px;
-  width: 500px;
   margin: auto;
 }
 .ticket .grid-item {
@@ -2015,12 +2014,9 @@ a:hover {
   /* background-color: #0b0b0b; */
   /* background-image: ; */
   background: #001233; /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(
-      rgba(46, 46, 46, 0.8),
-      rgba(46, 46, 46, 0.8)
-    ),
+  background: -webkit-linear-gradient(rgba(46, 46, 46, 0), rgba(46, 46, 46, 0)),
     url("../images/uk.jpg");
-  background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
+  background: linear-gradient(rgba(46, 46, 46, 0), rgba(46, 46, 46, 0)),
     url("../images/uk.jpg"); /* The least supported option. */
   background-size: cover;
   background-attachment: fixed;
@@ -2031,12 +2027,9 @@ a:hover {
   /* background-color: #0b0b0b; */
   /* background-image: ; */
   background: #001233; /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(
-      rgba(46, 46, 46, 0.8),
-      rgba(46, 46, 46, 0.8)
-    ),
+  background: -webkit-linear-gradient(rgba(46, 46, 46, 0), rgba(46, 46, 46, 0)),
     url("../images/ng.jpg");
-  background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
+  background: linear-gradient(rgba(46, 46, 46, 0), rgba(46, 46, 46, 0)),
     url("../images/ng.jpg"); /* The least supported option. */
   background-size: cover;
   background-attachment: fixed;
@@ -2854,7 +2847,7 @@ input::-moz-focus-outer {
 
   .ticket .grid-container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     grid-gap: 20px;
     padding-left: 50px;
     padding-right: 50px;
