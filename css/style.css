@@ -1993,8 +1993,8 @@ a:hover {
 
 .ticket .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 80px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
   padding: 0px 50px 30px 50px;
   padding-left: 50px;
   padding-right: 50px;
@@ -2038,7 +2038,7 @@ a:hover {
   box-shadow: 0 40px 90px 0 rgba(0, 0, 0, 0.15) !important;
 }
 .ticket .grid-item ul {
-  height: 230px;
+  height: 175px;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -2847,7 +2847,7 @@ input::-moz-focus-outer {
 
   .ticket .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-gap: 20px;
     padding-left: 50px;
     padding-right: 50px;
