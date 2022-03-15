@@ -1931,6 +1931,9 @@ a:hover {
   color: transparent;
   font-weight: bolder;
 }
+.sponsorship .first {
+  margin-right: 50px !important;
+}
 
 /* AGENDA SECTION */
 .agenda .grid-container {
@@ -3033,7 +3036,10 @@ input::-moz-focus-outer {
     line-height: 45px;
     padding: 0 20px;
   }
-
+  .sponsorship .first {
+    margin-right: 20px !important;
+    margin-bottom: 20px;
+  }
   .agenda a {
     height: 45px;
     line-height: 45px;
