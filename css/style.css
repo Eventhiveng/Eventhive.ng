@@ -727,6 +727,7 @@ textarea.input {
 ===========================================================*/
 
 #speakers {
+  margin-top: 30px;
   background-color: #f9f9fa;
 }
 
@@ -838,7 +839,8 @@ textarea.input {
 	Speaker Modal
 \*----------------------------*/
 #speakers {
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .speaker-modal .modal-dialog {
   width: 100%;
