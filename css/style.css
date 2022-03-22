@@ -37,21 +37,18 @@ RESPONSIVE
 	typography
 \*----------------------------*/
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #444;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 @media only screen and (max-width: 767px) {
   body {
     font-size: 1.5em;
-  }
-  .logo {
-    width: 2em;
   }
 }
 
@@ -105,7 +102,9 @@ ol {
   padding: 0;
   list-style: none;
 }
-
+.id-color {
+  color: #ffb005;
+}
 .main-btn {
   display: inline-block;
   padding: 11.5px 21px;
@@ -202,7 +201,7 @@ textarea.input {
       rgba(5, 6, 8, 0.52),
       rgba(15, 10, 14, 0.73)
     ),
-    url(../img/tall-buildings.jpg);
+    url(../img/bcg/bg4.jpg);
   position: absolute;
   left: 0;
   top: 0;
@@ -449,6 +448,8 @@ textarea.input {
 
 .home-content h4 {
   color: #fff;
+}
+.home-content .logo {
 }
 
 #page-wrapper {
