@@ -113,7 +113,7 @@ ol {
   text-transform: uppercase;
   border: none;
   -webkit-transition: 0.3s all;
-  transition: 0.8s all;
+  transition: 0.2s all;
   border-radius: 5px;
   margin-top: 5px;
 }
@@ -125,7 +125,7 @@ ol {
   text-transform: uppercase;
   border: none;
   -webkit-transition: 0.3s all;
-  transition: 0.8s all;
+  transition: 0.2s all;
   border-radius: 5px;
   margin-top: 5px;
 }
@@ -137,7 +137,7 @@ ol {
   text-transform: uppercase;
   border: none;
   -webkit-transition: 0.3s all;
-  transition: 0.8s all;
+  transition: 0.2s all;
   border-radius: 5px;
   margin-top: 5px;
 }
@@ -163,8 +163,8 @@ a.btn-border-black {
 .ticket-btn:hover {
   color: #fff;
   opacity: 0.8;
-  padding: 16.5px 36px;
-  transition: 0.8s all;
+  padding: 12.5px 30px;
+  transition: 0.2s all;
 }
 
 .input {
@@ -449,8 +449,6 @@ textarea.input {
 .home-content h4 {
   color: #fff;
 }
-.home-content .logo {
-}
 
 #page-wrapper {
   background-color: #f9f9fa;
@@ -458,6 +456,11 @@ textarea.input {
 
 .page-wrapper-content {
   text-align: center;
+}
+
+.tick-rem {
+  background-color: rgb(11, 15, 40);
+  padding: 40px;
 }
 
 /*=========================================================
@@ -530,6 +533,10 @@ textarea.input {
   font-weight: 800;
   letter-spacing: 2px;
   position: relative;
+}
+.counter-box .counter {
+  font-size: 60px;
+  color: black;
 }
 .counter-box h6:before {
   content: "";
