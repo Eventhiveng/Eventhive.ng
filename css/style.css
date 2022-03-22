@@ -568,6 +568,47 @@ textarea.input {
   padding-right: 5%;
 }
 
+/* INFOONE */
+#infoOne {
+  padding-top: 50px;
+  color: white;
+  width: 100%;
+  background: #0b0b0b; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(
+      rgba(46, 46, 46, 0.8),
+      rgba(46, 46, 46, 0.8)
+    ),
+    url("../images/e555.png");
+  background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
+    url("../images/e555.png"); /* The least supported option. */
+  background-size: cover;
+  background-attachment: fixed;
+}
+#infoOne .section-title {
+  text-align: left;
+}
+#infoOne .section-title h2 {
+  color: white;
+}
+#infoOne .hr {
+  width: 70px;
+  border: 3px solid #ffae1e;
+  margin: 0px;
+  margin-bottom: 10px;
+  /* text-align: center !important; */
+}
+#infoOne a {
+  color: #ffae1e !important;
+}
+#infoOne li {
+  list-style-type: none;
+  line-height: 30px;
+}
+#infoOne li i {
+  color: #ffae1e;
+  margin-right: 10px;
+}
+
 /*=========================================================
 	GALERY
 ===========================================================*/
