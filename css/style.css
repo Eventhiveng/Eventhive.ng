@@ -1101,3 +1101,49 @@ textarea.input {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 1199px),
+  only screen and (max-device-width: 1199px) {
+  .project-slider .swiper-slide {
+    max-width: 70vw;
+  }
+  .counter-box .odometer {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 991px),
+  only screen and (max-device-width: 991px) {
+  .project-slider .swiper-slide {
+    max-width: inherit;
+  }
+  .counter-box .value {
+    margin-right: 20px;
+  }
+  .col-lg-3:nth-child(even) .counter-box {
+    margin-top: 0;
+  }
+
+  .counter-box {
+    margin: 15px 0;
+  }
+}
+
+@media only screen and (max-width: 767px),
+  only screen and (max-device-width: 767px) {
+  .project-slider .swiper-slide .project-box figcaption {
+    width: 100%;
+    position: static;
+  }
+
+  .project-slider .swiper-slide .project-box figcaption h5 {
+    font-size: 22px;
+  }
+
+  .project-slider .swiper-slide .project-box figcaption:after {
+    bottom: 0;
+  }
+  .project-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 20px;
+  }
+}
