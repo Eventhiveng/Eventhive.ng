@@ -735,6 +735,58 @@ textarea.input {
 .autoplay:active {
   transform: scale(0.8);
 }
+/* LOGO ITEMS */
+.logo-item {
+  width: 100%;
+  display: block;
+  margin: 20px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  padding: 0 30px;
+}
+.logo-item img {
+  width: 100%;
+}
+
+/* WHY SPONSOR */
+.col-lg-3:nth-child(odd) .s-box {
+  margin-top: 30%;
+}
+
+.s-box {
+  width: 100%;
+  display: block;
+  border: 2px solid #ffbf00;
+  padding: 30px;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.s-box:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 30px 30px #eee;
+}
+.s-box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 14px 14px;
+  border-color: transparent transparent #e8e8e8 transparent;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+.s-box p {
+  font-size: 15px;
+  padding-right: 5%;
+}
 
 /*=========================================================
 	GALERY
@@ -1295,6 +1347,9 @@ textarea.input {
   .counter-box .odometer {
     font-size: 55px;
   }
+  .logo-item {
+    padding: 0 15px;
+  }
 }
 
 @media only screen and (max-width: 991px),
@@ -1310,6 +1365,16 @@ textarea.input {
   }
 
   .counter-box {
+    margin: 15px 0;
+  }
+  .col-lg-3:nth-child(odd) .s-box {
+    margin-top: 0;
+  }
+
+  .s-box {
+    margin: 15px 0;
+  }
+  .logo-item {
     margin: 15px 0;
   }
 }
