@@ -1207,12 +1207,21 @@ textarea.input {
 	TICKETS
 ===========================================================*/
 .ticket {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   padding: 50px;
 }
-/* .ticket-section{
-    background-color: rgba(0,0,0,0.8);
-  } */
+.ticket ul {
+  list-style-type: disc;
+}
+.ticket h3 {
+  font-size: 28px;
+}
+.ticket .section-title {
+  margin-bottom: 0px;
+}
+/* .ticket-section {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
 /*=========================================================
 	CONTACT
 ===========================================================*/
