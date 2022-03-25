@@ -112,6 +112,15 @@ ol {
 .MB-50 {
   margin-bottom: 50px;
 }
+.MB-20 {
+  margin-bottom: 20px;
+}
+.PB-0 {
+  padding-bottom: 0px;
+}
+.MB-0 {
+  margin-bottom: 0px !important;
+}
 .id-blue {
   color: #0b0f28;
 }
@@ -1183,7 +1192,12 @@ textarea.input {
 /*=========================================================
 	SPONSORS
 ===========================================================*/
-
+#sponsors .section-title {
+  margin-bottom: 20px;
+}
+#sponsors {
+  padding-bottom: 0px !important;
+}
 .sponsor {
   display: block;
   opacity: 0.5;
@@ -1218,6 +1232,11 @@ textarea.input {
 }
 .ticket .section-title {
   margin-bottom: 0px;
+}
+.ticket .bcg-blue {
+  background-color: rgb(11, 15, 40);
+  padding: 20px;
+  color: white;
 }
 /* .ticket-section {
   background-color: rgba(0, 0, 0, 0.8);
@@ -1277,7 +1296,7 @@ textarea.input {
 ===========================================================*/
 
 #footer {
-  padding: 60px 0px;
+  padding: 60px 0px 0px 0px;
 }
 
 .footer-brand {
@@ -1322,15 +1341,21 @@ textarea.input {
 /*=========================================================
 	RESPONSIVE
 ===========================================================*/
-
-@media only screen and (max-width: 991px) {
-  .contact-social {
-    text-align: center;
-    margin: 30px 0px;
+@media only screen and (max-width: 480px) {
+  [class*="col-xs"] {
+    width: 100%;
   }
-  .copyright {
-    display: block;
-    text-align: center;
+  .home-content .logo {
+    margin-top: 100px !important;
+  }
+  .section-title .title {
+    font-size: 36px;
+  }
+  .logo-item img {
+    margin-bottom: 30px;
+  }
+  .ticket {
+    padding: 30px 30px 10px 30px;
   }
 }
 
@@ -1361,29 +1386,32 @@ textarea.input {
   .event + .event:before {
     left: 45px;
   }
-}
-
-@media only screen and (max-width: 480px) {
-  [class*="col-xs"] {
+  .project-slider .swiper-slide .project-box figcaption {
     width: 100%;
+    position: static;
+  }
+
+  .project-slider .swiper-slide .project-box figcaption h5 {
+    font-size: 22px;
+  }
+
+  .project-slider .swiper-slide .project-box figcaption:after {
+    bottom: 0;
+  }
+  .project-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 20px;
   }
 }
 
-@media only screen and (max-width: 1199px),
-  only screen and (max-device-width: 1199px) {
-  .project-slider .swiper-slide {
-    max-width: 70vw;
+@media only screen and (max-width: 991px) {
+  .contact-social {
+    text-align: center;
+    margin: 30px 0px;
   }
-  .counter-box .odometer {
-    font-size: 55px;
+  .copyright {
+    display: block;
+    text-align: center;
   }
-  .logo-item {
-    padding: 0 15px;
-  }
-}
-
-@media only screen and (max-width: 991px),
-  only screen and (max-device-width: 991px) {
   .project-slider .swiper-slide {
     max-width: inherit;
   }
@@ -1407,23 +1435,29 @@ textarea.input {
   .logo-item {
     margin: 15px 0;
   }
+  .logo-item img {
+    width: 200px;
+  }
+  #infoOne .row {
+    margin-right: 0px !important;
+  }
+  .MB-SM-50 {
+    margin-bottom: 50px;
+  }
+  .ticket {
+    padding: 20px;
+  }
 }
 
-@media only screen and (max-width: 767px),
-  only screen and (max-device-width: 767px) {
-  .project-slider .swiper-slide .project-box figcaption {
-    width: 100%;
-    position: static;
+@media only screen and (max-width: 1199px),
+  only screen and (max-device-width: 1199px) {
+  .project-slider .swiper-slide {
+    max-width: 70vw;
   }
-
-  .project-slider .swiper-slide .project-box figcaption h5 {
-    font-size: 22px;
+  .counter-box .odometer {
+    font-size: 55px;
   }
-
-  .project-slider .swiper-slide .project-box figcaption:after {
-    bottom: 0;
-  }
-  .project-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 20px;
+  .logo-item {
+    padding: 0 15px;
   }
 }
