@@ -1206,6 +1206,10 @@ textarea.input {
 /*=========================================================
 	TICKETS
 ===========================================================*/
+.ticket {
+  border: 1px solid #000;
+  padding: 50px;
+}
 /* .ticket-section{
     background-color: rgba(0,0,0,0.8);
   } */
