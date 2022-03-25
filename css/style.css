@@ -752,6 +752,22 @@ textarea.input {
   width: 100%;
 }
 
+/* SWIPER BULLETS */
+.swiper-pagination {
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 50px;
+  height: 4px;
+  border-radius: 0 !important;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffbf00;
+}
+
 /* WHY SPONSOR */
 .col-lg-3:nth-child(odd) .s-box {
   margin-top: 30%;
