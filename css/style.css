@@ -742,9 +742,6 @@ a:hover {
   -webkit-box-shadow: 1px 1px 21px -2px rgba(151, 141, 141, 0.66);
   -moz-box-shadow: 1px 1px 21px -2px rgba(151, 141, 141, 0.66);
 }
-#about .section-title {
-  text-align: left;
-}
 
 /* sponsOP */
 .sponsOP-content {
@@ -753,9 +750,6 @@ a:hover {
   box-shadow: 1px 1px 21px -2px rgba(151, 141, 141, 0.66);
   -webkit-box-shadow: 1px 1px 21px -2px rgba(151, 141, 141, 0.66);
   -moz-box-shadow: 1px 1px 21px -2px rgba(151, 141, 141, 0.66);
-}
-#sponsOP .section-title {
-  text-align: left;
 }
 #sponsOP li {
   list-style-type: none;
@@ -783,9 +777,6 @@ a:hover {
     url("../images/e555.png"); /* The least supported option. */
   background-size: cover;
   background-attachment: fixed;
-}
-#infoOne .section-title {
-  text-align: left;
 }
 #infoOne .section-title h2 {
   color: white;
@@ -815,7 +806,7 @@ a:hover {
   padding-top: 80px;
   color: white;
   width: 100%;
-  background: url("../images/bg11.jpg");
+  background: url("../images/bg12.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -855,11 +846,11 @@ a:hover {
 /* SLIDER */
 .slider {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-wrap: wrap;
   background-color: #001233;
-  background-image: url(../images/Group3.png);
+  background-image: url(../images/bg13.png);
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFAE1E", endColorstr="#879015", GradientType=1 );
   background-size: cover;
@@ -895,7 +886,8 @@ a:hover {
   font-weight: 800;
   /* margin-left: 50px; */
   margin-bottom: 70px;
-  text-align: left;
+  text-align: center;
+  width: 100%;
 }
 .slider h2 b {
   -webkit-text-stroke: 1px #fff;
@@ -908,9 +900,10 @@ a:hover {
   margin-top: 0px;
 }
 .slider p {
-  text-align: left;
+  text-align: center;
   width: 100%;
   margin-bottom: 0px;
+  margin-top: 50px;
 }
 .p-one {
   font-size: 20px;
@@ -953,6 +946,9 @@ a:hover {
 }
 .slider a:hover i {
   margin-left: 20px;
+}
+.slider .buttons {
+  margin: auto;
 }
 
 /* PAGE HEADER */
@@ -1032,7 +1028,7 @@ a:hover {
 .section-title {
   width: 100%;
   display: block;
-  text-align: left;
+  text-align: center;
   margin-bottom: 50px;
 }
 .section-title h6 {
@@ -1209,9 +1205,6 @@ a:hover {
 }
 
 /* COUNTER BOX */
-.counter .section-title {
-  text-align-last: left !important;
-}
 .col-lg-3:nth-child(even) .counter-box {
   margin-top: 50%;
 }
@@ -2011,16 +2004,16 @@ a:hover {
   transition: 0.4s;
   padding: 50px 10px 40px 10px;
 }
-.ticket .uk {
+.ticket .us {
   color: white;
   width: 100%;
   /* background-color: #0b0b0b; */
   /* background-image: ; */
   background: #001233; /* fallback colour. Make sure this is just one solid colour. */
   background: -webkit-linear-gradient(rgba(46, 46, 46, 0), rgba(46, 46, 46, 0)),
-    url("../images/uk.jpg");
+    url("../images/US.png");
   background: linear-gradient(rgba(46, 46, 46, 0), rgba(46, 46, 46, 0)),
-    url("../images/uk.jpg"); /* The least supported option. */
+    url("../images/US.png"); /* The least supported option. */
   background-size: cover;
   background-attachment: fixed;
 }
@@ -2031,9 +2024,9 @@ a:hover {
   /* background-image: ; */
   background: #001233; /* fallback colour. Make sure this is just one solid colour. */
   background: -webkit-linear-gradient(rgba(46, 46, 46, 0), rgba(46, 46, 46, 0)),
-    url("../images/ng.jpg");
+    url("../images/ng.png");
   background: linear-gradient(rgba(46, 46, 46, 0), rgba(46, 46, 46, 0)),
-    url("../images/ng.jpg"); /* The least supported option. */
+    url("../images/ng.png"); /* The least supported option. */
   background-size: cover;
   background-attachment: fixed;
 }
