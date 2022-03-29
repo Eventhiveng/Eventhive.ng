@@ -346,7 +346,8 @@ a:hover {
   margin-bottom: 40px;
 }
 .side-widget .logo img {
-  height: 40px;
+  width: 130px;
+  height: 50px;
 }
 .side-widget .show-mobile {
   display: none;
@@ -558,7 +559,8 @@ a:hover {
   margin: 0;
 }
 .navbar .logo a img {
-  height: 40px;
+  width: 130px;
+  height: 50px;
 }
 .navbar .languages {
   display: inline-block;
