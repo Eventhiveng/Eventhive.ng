@@ -2036,8 +2036,8 @@ a:hover {
   box-shadow: 0 40px 90px 0 rgba(0, 0, 0, 0.15) !important;
 }
 .ticket .grid-item ul {
-  height: 200px;
-  overflow: visible;
+  height: 300px;
+  overflow: hidden;
   overflow-y: scroll;
 }
 .ticket .grid-item:hover {
@@ -2901,9 +2901,7 @@ input::-moz-focus-outer {
   .side-widget {
     width: 240px;
   }
-  .ticket .grid-item ul {
-    overflow: visible;
-  }
+
   .search-box .inner {
     width: 90vw;
   }
@@ -3168,9 +3166,6 @@ input::-moz-focus-outer {
   .sponsOP-content {
     margin: 2px;
     padding: 30px 10px;
-  }
-  .ticket .grid-item ul {
-    overflow: visible;
   }
 }
 
