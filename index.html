@@ -8,6 +8,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
   <title>Lagos Real Estate Fest</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 
   <!-- Google font -->
@@ -425,78 +426,24 @@
     <section
       class="content-section"
      id="highlights">
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title">
-              <h3 class="title">
-                <span style="color: #ffb005">LAGOS REAL ESTATE FEST 2021</span> HYBRID EDITION HIGHLIGHTS
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-container project-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <figure class="project-box">
-              <img src="img/bcg/1-opt.jpeg" alt="Image" />
-            </figure>
-          </div>
-          <div class="swiper-slide">
-            <figure class="project-box">
-              <img src="img/bcg/2-opt.jpeg" alt="Image" />
-            </figure>
-          </div>
-          <div class="swiper-slide">
-            <figure class="project-box">
-              <img src="img/bcg/3-opt.jpeg" alt="Image" />
-            </figure>
-          </div>
-          <div class="swiper-slide">
-            <figure class="project-box">
-              <img src="img/bcg/4-opt.jpeg" alt="Image" />
-            </figure>
-          </div>
-
-          <div class="swiper-slide">
-            <figure class="project-box">
-              <img src="img/bcg/5-opt.jpeg" alt="Image" />
-            </figure>
-          </div>
-
-          <div class="swiper-slide">
-            <figure class="project-box">
-              <img src="img/bcg/6-opt.jpeg" alt="Image" />
-            </figure>
-          </div>
-
-          <div class="swiper-slide">
-            <figure class="project-box">
-              <img src="img/bcg/7-opt.jpeg" alt="Image" />
-            </figure>
-          </div>
-
-          <div class="swiper-slide">
-            <figure class="project-box">
-              <img src="img/bcg/8-opt.jpeg alt="Image" />
-            </figure>
-          </div>
-          <div class="swiper-slide">
-            <figure class="project-box">
-              <img src="img/bcg/9-opt.jpeg" alt="Image" />
-            </figure>
-          </div>
-          <div class="swiper-slide">
-            <figure class="project-box">
-              <img src="img/bcg/10-opt.jpeg" alt="Image" />
-            </figure>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div> -->
-      <!-- end project-slider -->
-
+     <div class="section-title">
+      <h3 class="title">
+        LAGOS <span style="color: #ffb005">REAL ESTATE</span> FEST <span style="color: #ffb005">HIGHLIGHTS</span>
+      </h3>
+    </div>
+     <div class="w3-content w3-section" style="max-width:800px">
+      <img class="mySlides" src="img/bcg/1-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/2-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/3-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/4-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/5-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/6-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/7-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/8-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/9-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/10-opt.jpeg" style="width:100%">
+    </div>
+    <br>
       <div class="content-section">
         <div class="section-title">
           <h3 class="title">
@@ -1192,6 +1139,22 @@
   <!-- <script src="js/jquery.min.js"></script> -->
   <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+      }
+      </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/swiper.min.js"></script>
