@@ -2901,7 +2901,9 @@ input::-moz-focus-outer {
   .side-widget {
     width: 240px;
   }
-
+  .ticket .grid-item ul {
+    overflow: visible;
+  }
   .search-box .inner {
     width: 90vw;
   }
@@ -3166,6 +3168,9 @@ input::-moz-focus-outer {
   .sponsOP-content {
     margin: 2px;
     padding: 30px 10px;
+  }
+  .ticket .grid-item ul {
+    overflow: visible;
   }
 }
 
