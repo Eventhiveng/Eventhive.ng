@@ -113,6 +113,9 @@ body {
 .alignCenter {
   text-align: center !important;
 }
+.mySlides {
+  display:none;
+}
 .id-color {
   color: #001233;
   font-weight: bold;
@@ -162,6 +165,11 @@ a:hover {
 .no-bottom-spacing {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+}
+
+.no-top-spacing {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 /* CUSTOM CONTAINER */
@@ -848,12 +856,13 @@ a:hover {
 /* SLIDER */
 .slider {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background-color: #001233;
-  background-image: url(../images/bg13.png);
-
+  background: #001233;
+  background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(../images/bcg-new.jpg);
+  background-color: rgba(0,0,0,0.5);
+  background-repeat: no-repeat;
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFAE1E", endColorstr="#879015", GradientType=1 );
   background-size: cover;
   position: relative;
@@ -2683,7 +2692,7 @@ input::-moz-focus-outer {
     margin-bottom: 40px;
   }
   .slider {
-    background-position: right 1800px top 0px;
+    background-position: right 800px top 0px;
   }
   .counter-box .odometer {
     font-size: 55px;
@@ -2820,7 +2829,7 @@ input::-moz-focus-outer {
     color: #fff;
   }
   .slider {
-    background-position: right 1200px top 0px;
+    background-position: right 900px top 0px;
   }
   .icon-content {
     margin: 15px 0;
@@ -2978,7 +2987,8 @@ input::-moz-focus-outer {
     margin-left: 0px;
   }
   .slider {
-    background-position: right 1100px top 0px;
+    background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url(../images/bcg-2.jpg);
+    background-position: right 600px top 0px;
   }
   .section-title h2 {
     font-size: 25px;
