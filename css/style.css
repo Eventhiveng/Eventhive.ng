@@ -110,7 +110,9 @@ ol {
   padding: 0;
   list-style: none;
 }
-
+.img-width{
+  width: 500px;
+}
 .main-btn {
   display: inline-block;
   padding: 11.5px 21px;
@@ -1648,6 +1650,9 @@ a.btn-border-white:hover {
   [class*="col-xs"] {
     width: 100%;
   }
+  .img-width{
+    width: 300px;
+  }
 }
 
 @media (min-width: 980px) and (max-width: 1199px) {
@@ -1721,6 +1726,9 @@ a.btn-border-white:hover {
   }
   .price-table {
     width: 100%;
+  }
+  .img-width{
+    width: 300px;
   }
   #home {
     height: 120vh;
@@ -1797,6 +1805,9 @@ a.btn-border-white:hover {
   #venue .venue {
     background-position: right -500px top 0px;
   }
+  .img-width{
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {
@@ -1815,6 +1826,9 @@ a.btn-border-white:hover {
   }
   #venue .second {
     margin-top: 50px;
+  }
+  .img-width{
+    width: 300px;
   }
 }
 
@@ -1837,5 +1851,8 @@ a.btn-border-white:hover {
   }
   #venue .second {
     margin-top: 50px;
+  }
+  .img-width{
+    width: 200px;
   }
 }
