@@ -158,6 +158,9 @@ a:hover {
 .display-none{
   display: block;
 }
+.Ndisplay{
+  display: none !important;
+}
 /* SPACINGS */
 .no-spacing {
   margin: 0 !important;
@@ -740,7 +743,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   /* background-color: #0b0b0b; */
-  background-image: url("../images/bgi.jpg");
+  background-image: url("../images/bg1\ -\ Copy.jpg");
   background-size: cover;
   position: relative;
   text-align: center;
@@ -1094,6 +1097,7 @@ a:hover {
 } */
 .new-counter .counter-box {
   width: 100%;
+  height: 150px;
   display: block;
   padding: 20px;
   position: relative;
@@ -1120,6 +1124,56 @@ a:hover {
   position: relative;
 }
 .new-counter .counter-box p {
+  font-size: 13px;
+  padding-right: 5%;
+}
+
+/* COUNTER BOX */
+.old-counter .col-lg-3:nth-child(even) .counter-box {
+  margin-top: 50%;
+}
+
+.old-counter .counter-box {
+  width: 100%;
+  display: block;
+  border: 2px solid #ffa200;
+  padding: 30px;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.old-counter .counter-box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 14px 14px;
+  border-color: transparent transparent #ffa200 transparent;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+.old-counter .counter-box .odometer {
+  display: inline-block;
+  font-size: 70px;
+}
+.old-counter .counter-box .value {
+  font-size: 24px;
+}
+.old-counter .counter-box h6 {
+  display: inline-block;
+  font-weight: 800;
+  letter-spacing: 2px;
+  position: relative;
+}
+.old-counter .counter-box .counter {
+  font-size: 60px;
+  color: black;
+}
+.old-counter .counter-box p {
   font-size: 13px;
   padding-right: 5%;
 }
@@ -2633,7 +2687,9 @@ input::-moz-focus-outer {
     margin-left: 0px;
   }
 
-
+  .counter-box .odometer {
+    font-size: 55px;
+  }
   .project-slider .swiper-slide {
     max-width: 70vw;
   }
@@ -2693,6 +2749,17 @@ input::-moz-focus-outer {
     position: relative;
     font-size: 10px;
   }
+  .counter-box .value {
+    margin-right: 20px;
+  }
+  .col-lg-3:nth-child(even) .counter-box {
+    margin-top: 0;
+  }
+
+  .counter-box {
+    margin: 15px 0;
+  }
+
   .no-display{
     display: grid;
   }
@@ -2887,6 +2954,16 @@ input::-moz-focus-outer {
   }
   .display-none{
     display: none;
+  }
+  .slider{
+    background-image: url("../images/DSC_0002\ \(3\).jpg");
+    background-position: right 900px bottom;
+  }
+  .Ndisplay{
+    display: block !important;
+  }
+  .old-counter .col-lg-3:nth-child(even) .counter-box {
+    margin-top: 5%;
   }
   .f-nav img {
     margin-top: 25px;
@@ -3142,5 +3219,14 @@ input::-moz-focus-outer {
     .f-nav p {
       font-size: 11px;
       font-weight: bold;
+    }
+    .display-none{
+      display: none;
+    }
+    .Ndisplay{
+      display: block !important;
+    }
+    .old-counter .col-lg-3:nth-child(even) .counter-box {
+      margin-top: 5%;
     }
   }
