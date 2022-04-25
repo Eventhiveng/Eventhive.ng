@@ -6,7 +6,7 @@
 	 text-decoration: none;
 }
  body .testimonial {
-	 padding: 100px 0;
+	 padding: 100px 0px 0px 0px;
 }
  body .testimonial .row .tabs {
 	 all: unset;

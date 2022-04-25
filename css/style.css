@@ -146,6 +146,22 @@ a:hover {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+.FS-20 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.MB-50 {
+  margin-bottom: 50px;
+}
+.MB-20 {
+  margin-bottom: 20px;
+}
+.PB-0 {
+  padding-bottom: 0px;
+}
+.MB-0 {
+  margin-bottom: 0px !important;
+}
 .id-color{
   color: #ffa200;
 }
@@ -894,6 +910,22 @@ a:hover {
   color: #fff;
 }
 
+/* LOGO ITEMS */
+.logo-item {
+  width: 100%;
+  display: block;
+  margin: 20px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  padding: 0 30px;
+}
+.logo-item img {
+  width: 100%;
+}
+
 /* CONTENT SECTION */
 .content-section {
   width: 100%;
@@ -1177,6 +1209,15 @@ a:hover {
   font-size: 13px;
   padding-right: 5%;
 }
+
+/* FORMAT */
+.format{
+  color: #0b0b0b;
+}
+.format h2{
+  color: #0b0b0b;
+}
+
 
 /* VIDEO BOX */
 .videoBox h2 {
@@ -1813,7 +1854,42 @@ a:hover {
   opacity: 0.5;
   filter: grayscale(1);
 }
+/* WHY SPONSOR */
+.col-lg-3:nth-child(odd) .s-box {
+  margin-top: 30%;
+}
 
+.s-box {
+  width: 100%;
+  display: block;
+  border: 2px solid #ffbf00;
+  padding: 30px;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.s-box:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 10px #ffbf00;
+}
+.s-box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 14px 14px;
+  border-color: transparent transparent #e8e8e8 transparent;
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+.s-box p {
+  font-size: 15px;
+  padding-right: 5%;
+}
 /* SPONSORSHIP SECTION */
 .sponsor h6 {
   font-size: 25px;
@@ -2654,6 +2730,9 @@ input::-moz-focus-outer {
   .navbar .navbar-button span {
     display: none;
   }
+  .logo-item {
+    padding: 0 15px;
+  }
   .whyAttend .col-md-4 {
     padding: 20px;
   }
@@ -2728,6 +2807,19 @@ input::-moz-focus-outer {
 
   .side-widget .hide-mobile {
     display: none;
+  }
+  .MB-SM-50 {
+    margin-bottom: 50px;
+  }
+  .col-lg-3:nth-child(odd) .s-box {
+    margin-top: 0;
+  }
+
+  .s-box {
+    margin: 15px 0;
+  }
+  .logo-item {
+    margin: 15px 0;
   }
   .new-counter .counter-box {
     padding: 10px;
@@ -3229,4 +3321,10 @@ input::-moz-focus-outer {
     .old-counter .col-lg-3:nth-child(even) .counter-box {
       margin-top: 5%;
     }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .logo-item img {
+        margin-bottom: 30px;
+      }
   }
