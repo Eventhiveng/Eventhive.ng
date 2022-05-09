@@ -92,8 +92,8 @@ body {
   padding: 0;
   font-family: "Mont";
   font-size: 17px;
-  background-color: #0b0b0b;
-  color: white;
+  background-color: white;
+  color: #0b0b0b;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -129,16 +129,15 @@ a:hover {
   overflow: hidden;
 }
 .transparent {
-  -webkit-text-stroke: 1px #ffa200;
-  text-stroke: 1px #ffa200;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: #00115e;
+  font-weight: bolder;
 }
 .black-transparent {
   -webkit-text-stroke: 1px #0b0b0b;
   text-stroke: 1px #0b0b0b;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  font-weight: bolder;
 }
 .white-transparent {
   -webkit-text-stroke: 1px #fff;
@@ -164,6 +163,10 @@ a:hover {
 }
 .id-color{
   color: #ffa200;
+  font-weight: bold;
+}
+.id-blue{
+  color: #00115e;
 }
 .no-display{
   display: none;
@@ -351,7 +354,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background: #232222;
+  background: #00115e !important;
   background-image: url("../images/overlay.jpg");
   background-position: center;
   background-size: cover;
@@ -558,11 +561,11 @@ a:hover {
   top: 0;
   z-index: 4;
   transition: top ease 1s;
-  background-color: #0b0b0b;
+  background-color: #00115e;
 }
 .navbar.sticky {
   position: fixed;
-  background: #0b0b0b;
+  background: #00115e;
 }
 .navbar.nav-down {
   top: 0;
@@ -946,6 +949,7 @@ a:hover {
 .section-title {
   width: 100%;
   display: block;
+  font-weight: bolder;
   text-align: left;
   margin-bottom: 50px;
 }
@@ -1862,7 +1866,7 @@ a:hover {
 .s-box {
   width: 100%;
   display: block;
-  border: 2px solid #ffbf00;
+  border: 2px solid #00115e;
   padding: 30px;
   position: relative;
   -webkit-transition: all 0.25s ease-in-out;
@@ -1873,7 +1877,7 @@ a:hover {
 }
 .s-box:hover {
   transform: translateY(-20px);
-  box-shadow: 0 10px 10px #ffbf00;
+  box-shadow: 0 2px 2px #00115e;
 }
 .s-box:after {
   content: "";
@@ -2011,10 +2015,11 @@ a.btn-border-white {
 .spons-op .side-img {
   text-align: center;
 }
-.spons-op .side-text {
-  margin-top: 20px;
+.spons-op .text{
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 50px;
 }
-
 .spons-op .booth {
   margin-top: 10px;
 }
@@ -2105,7 +2110,7 @@ a.btn-border-white {
   padding: 50px 10px 40px 10px;
 }
 .ticket .grid-item ul {
-  height: 200px;
+  height: 350px;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -2263,7 +2268,7 @@ a.btn-border-white {
   width: 100%;
   display: block;
   margin-bottom: 30px;
-  color: #565656;
+  color: #0b0b0b;
 }
 .testimonials-slider .testimonial i {
   width: 60px;
@@ -2330,7 +2335,7 @@ a.btn-border-white {
   position: relative;
   overflow: hidden;
   color: #fff;
-  background-color: #232222;
+  background-color: #00115e;
   background-image: url("../images/overlay.jpg");
   background-position: center;
   background-size: cover;
@@ -2420,7 +2425,7 @@ a.btn-border-white {
 .footer {
   width: 100%;
   display: block;
-  background-color: #0b0b0b;
+  background-color: #00115e;
   position: relative;
   padding-top: 80px;
   color: #fff;
@@ -2889,7 +2894,9 @@ input::-moz-focus-outer {
     display: inline-block;
     margin-left: 6px;
   }
-
+  .new-counter .counter-box{
+    height: 80px;
+  }
   .sponsorship a {
     height: 50px;
     line-height: 50px;
@@ -2902,7 +2909,10 @@ input::-moz-focus-outer {
     padding-left: 90px;
     padding-right: 90px;
   }
-
+  .spons-op .text{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .agenda a {
     height: 50px;
     line-height: 50px;
@@ -3071,6 +3081,10 @@ input::-moz-focus-outer {
   }
   .spons-op h1 {
     margin-bottom: 0px;
+  }
+  .spons-op .text{
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .side-widget {
     width: 240px;
@@ -3326,5 +3340,9 @@ input::-moz-focus-outer {
   @media only screen and (max-width: 480px) {
     .logo-item img {
         margin-bottom: 30px;
+      }
+      .spons-op .text{
+        padding-left: 20px;
+        padding-right: 20px;
       }
   }

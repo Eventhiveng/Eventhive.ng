@@ -121,7 +121,7 @@
  body .testimonial .row .carousel > h3 {
 	 font-size: 20px;
 	 line-height: 1.45;
-	 color: rgba(255, 255, 255, 0.5);
+	 color: #0b0b0b;
 	 font-weight: 600;
 	 margin-bottom: 0;
 }
@@ -139,7 +139,7 @@
 	 list-style: none;
 }
  body .testimonial .row .carousel .carousel-indicators li {
-	 background: #fff;
+	 background: #00115e;
 	 background-clip: padding-box;
 	 height: 2px;
 }
@@ -150,10 +150,10 @@
 	 font-size: 18px;
 	 line-height: 1.72222;
 	 font-weight: 500;
-	 color: rgba(255, 255, 255, 0.7);
+	 color: #0b0b0b;
 }
  body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h3 {
-	 color: #fff;
+	 color: #0b0b0b;
 	 font-weight: 700;
 	 margin-top: 37px;
 	 font-size: 20px;
