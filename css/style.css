@@ -767,6 +767,7 @@ a:hover {
   list-style-type: none;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 #info li i {
   color: #ffb000;
