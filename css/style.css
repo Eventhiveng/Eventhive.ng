@@ -102,7 +102,7 @@ body {
 /* CUSTOM STYLES */
 .block {
   width: 70px;
-  border: 3px solid #003399;
+  border: 3px solid #002e94;
   margin: 0px;
   margin-bottom: 10px;
   text-align: left !important;
@@ -114,11 +114,11 @@ body {
   text-align: center !important;
 }
 .id-color {
-  color: #003399;
+  color: #002e94;
   font-weight: bold;
 }
 .y-color {
-  color: #feb112;
+  color: #ffb000;
   font-weight: bold;
 }
 .ex-color {
@@ -140,12 +140,12 @@ figure {
 
 /* LINKS */
 a {
-  color: #003399;
+  color: #002e94;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #003399;
+  color: #002e94;
 }
 
 /* CUSTOM CLASSES */
@@ -218,7 +218,7 @@ a:hover {
   border-radius: 0 !important;
 }
 .swiper-pagination .swiper-pagination-bullet-active {
-  background: #feb112;
+  background: #ffb000;
 }
 
 /* HAMBURGER */
@@ -327,7 +327,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background-color: #003399;
+  background-color: #002e94;
   /* background-image: url("../images/overlay.jpg"); */
   background-position: center;
   background-size: cover;
@@ -373,7 +373,7 @@ a:hover {
   width: 100%;
   display: block;
   font-weight: 600;
-  color: #feb112;
+  color: #ffb000;
   font-size: 13px;
   margin-bottom: 10px;
   margin-top: 20px;
@@ -500,7 +500,7 @@ a:hover {
   z-index: 9;
   right: 0;
   top: 0;
-  background: #feb112;
+  background: #ffb000;
   animation: first-transition 1s;
   animation-fill-mode: forwards;
 }
@@ -520,7 +520,7 @@ a:hover {
   z-index: 9;
   left: 0;
   top: 0;
-  background: #feb112;
+  background: #ffb000;
   transition: all ease 1s;
 }
 .page-transition.active {
@@ -534,7 +534,7 @@ a:hover {
   flex-wrap: wrap;
   padding: 10px 0;
   position: relative;
-  background: #003399;
+  background: #002e94;
   left: 0;
   top: 0;
   z-index: 4;
@@ -542,7 +542,7 @@ a:hover {
 }
 .navbar.sticky {
   position: fixed;
-  background: #003399;
+  background: #002e94;
 }
 .navbar.nav-down {
   top: 0;
@@ -601,12 +601,12 @@ a:hover {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: #feb112;
+  background: #ffb000;
   transition: width 0.25s ease;
 }
 .navbar .languages ul li a:hover:before {
   width: 100%;
-  background: #feb112;
+  background: #ffb000;
   transition: width 0.25s ease;
 }
 .navbar .languages ul li a:hover:after {
@@ -635,7 +635,7 @@ a:hover {
   position: absolute;
   left: -30px;
   top: calc(100% + 20px);
-  background: #feb112;
+  background: #ffb000;
   padding: 30px;
 }
 .navbar .site-menu ul li ul:before {
@@ -691,12 +691,12 @@ a:hover {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: #feb112;
+  background: #ffb000;
   transition: width 0.25s ease;
 }
 .navbar .site-menu ul li a:hover:before {
   width: 100%;
-  background: #feb112;
+  background: #ffb000;
   transition: width 0.25s ease;
 }
 .navbar .site-menu ul li a:hover:after {
@@ -718,8 +718,8 @@ a:hover {
   height: 58px;
   line-height: 58px;
   padding: 0 40px;
-  color: #003399;
-  background: #feb112;
+  color: #002e94;
+  background: #ffb000;
   font-size: 13px;
   font-weight: 600;
 }
@@ -752,13 +752,13 @@ a:hover {
   padding-top: 30px;
   color: white;
   width: 100%;
-  background: url("../images/Group\ 1.png");
+  background: url("../images/bg1.2.png");
   background-size: cover;
   background-attachment: fixed;
 }
 #info .hr {
   width: 70px;
-  border: 3px solid #feb112;
+  border: 3px solid #ffb000;
   /* margin: 0px; */
   margin-bottom: 10px;
   /* text-align: center !important; */
@@ -766,9 +766,10 @@ a:hover {
 #info li {
   list-style-type: none;
   line-height: 30px;
+  font-weight: bold;
 }
 #info li i {
-  color: #feb112;
+  color: #ffb000;
   margin-right: 10px;
 }
 
@@ -792,10 +793,10 @@ a:hover {
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
-  background-color: #003399;
-  background-image: url(../images/Group\ 4.png);
+  background-color: #002e94;
+  background-image: url(../images/bg4\ -\ Copy.png);
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEB112", endColorstr="#879015", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ffb000", endColorstr="#879015", GradientType=1 );
   background-size: cover;
   position: relative;
   text-align: center;
@@ -832,10 +833,11 @@ a:hover {
   text-align: left;
 }
 .slider h2 b {
-  -webkit-text-stroke: 1px #fff;
-  text-stroke: 1px #fff;
+  -webkit-text-stroke: 3px #fff;
+  text-stroke: 3px #fff;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  font-weight: bolder;
 }
 .slider p:nth-of-type(2) {
   margin-bottom: 40px;
@@ -858,7 +860,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: #feb112;
+  background: #ffb000;
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
@@ -902,7 +904,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #003399;
+  background-color: #002e94;
   background-image: url("../images/overlay.jpg");
   background-size: cover;
   position: relative;
@@ -937,7 +939,7 @@ a:hover {
   padding: 0;
   font-size: 13px;
   font-weight: 600;
-  color: #feb112;
+  color: #ffb000;
 }
 .page-header .container ul li:last-child:after {
   display: none;
@@ -987,7 +989,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 6px;
-  background: #feb112;
+  background: #ffb000;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1021,7 +1023,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 100%;
-  background: #feb112;
+  background: #ffb000;
   position: absolute;
   left: 0;
   top: 0;
@@ -1035,7 +1037,7 @@ a:hover {
   box-shadow: 0 30px 30px #eee;
 }
 .icon-content:hover {
-  border-color: #feb112;
+  border-color: #ffb000;
 }
 .icon-content:hover:after {
   content: "";
@@ -1075,7 +1077,7 @@ a:hover {
   height: 50px;
   line-height: 50px;
   display: inline-block;
-  background: #003399;
+  background: #002e94;
   color: #fff;
   text-align: center;
   font-size: 20px;
@@ -1131,7 +1133,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 6px;
-  background: #feb112;
+  background: #ffb000;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1199,7 +1201,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 6px;
-  background: #feb112;
+  background: #ffb000;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1244,7 +1246,7 @@ a:hover {
   content: "";
   width: 0;
   height: 4px;
-  background: #feb112;
+  background: #ffb000;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1314,7 +1316,7 @@ a:hover {
   left: 30px;
   bottom: 15px;
   padding: 30px;
-  background: #feb112;
+  background: #ffb000;
   color: #0b0b0b;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1420,7 +1422,7 @@ a:hover {
   box-shadow: none;
   z-index: 1;
   text-decoration: none;
-  background: #feb112;
+  background: #ffb000;
 }
 .sector-box:hover i {
   opacity: 1;
@@ -1449,10 +1451,10 @@ a:hover {
   background: #eee;
 }
 .our-history .swiper-pagination-progressbar-fill {
-  background: #feb112;
+  background: #ffb000;
 }
 .our-history .swiper-slide:hover b:after {
-  background: #feb112;
+  background: #ffb000;
 }
 .our-history .swiper-slide {
   z-index: 1;
@@ -1511,7 +1513,7 @@ a:hover {
   margin: 0 2px;
 }
 .our-history .controls .button-prev:hover {
-  background: #feb112;
+  background: #ffb000;
 }
 .our-history .controls .button-next {
   width: 80px;
@@ -1531,7 +1533,7 @@ a:hover {
   margin-right: 0;
 }
 .our-history .controls .button-next:hover {
-  background: #feb112;
+  background: #ffb000;
 }
 
 /* CORE VALUES BOX */
@@ -1584,7 +1586,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 6px;
-  background: #feb112;
+  background: #ffb000;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1632,7 +1634,7 @@ a:hover {
   height: 0;
   border-style: solid;
   border-width: 0 0 14px 14px;
-  border-color: transparent transparent #003399 transparent;
+  border-color: transparent transparent #002e94 transparent;
   position: absolute;
   right: 4px;
   bottom: 4px;
@@ -1699,7 +1701,7 @@ a:hover {
 .tab-left {
   width: 100%;
   display: block;
-  background: #003399;
+  background: #002e94;
   color: #fff;
   padding: 50px;
 }
@@ -1735,13 +1737,13 @@ a:hover {
 }
 .tab-left ul li a:hover {
   text-decoration: none;
-  color: #feb112;
+  color: #ffb000;
 }
 .tab-left ul li a:before {
   content: "";
   width: 0;
   height: 5px;
-  background: #feb112;
+  background: #ffb000;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1776,7 +1778,7 @@ a:hover {
   width: 100%;
   display: block;
   margin: 0;
-  background: #003399;
+  background: #002e94;
   position: relative;
 }
 .video-box .play-btn {
@@ -1796,8 +1798,8 @@ a:hover {
   text-indent: 2px;
 }
 .video-box .play-btn:hover {
-  background: #feb112;
-  border-color: #feb112;
+  background: #ffb000;
+  border-color: #ffb000;
   color: #0b0b0b;
 }
 .video-box video {
@@ -1824,7 +1826,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: #feb112;
+  background: #ffb000;
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
@@ -1882,11 +1884,11 @@ a:hover {
   height: 50px;
   line-height: 50px;
   padding: 0 30px;
-  background: #feb112;
+  background: #ffb000;
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
-  border: 4px solid #feb112;
+  border: 4px solid #ffb000;
 
   /* margin-bottom: 10px; */
 
@@ -1901,7 +1903,7 @@ a:hover {
 }
 .agenda a:hover {
   text-decoration: none;
-  border: 4px solid #feb112;
+  border: 4px solid #ffb000;
   background-color: #fff;
   transition: 0.2s;
   /* box-shadow: 0 20px 20px #000; */
@@ -1975,8 +1977,8 @@ a:hover {
   height: 50px;
   line-height: 50px;
   padding: 0 30px;
-  border: 4px solid #feb112;
-  background: #feb112;
+  border: 4px solid #ffb000;
+  background: #ffb000;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
@@ -1991,7 +1993,7 @@ a:hover {
 }
 .ticket a:hover {
   text-decoration: none;
-  border: 4px solid #feb112;
+  border: 4px solid #ffb000;
   background-color: #fff;
   transition: 0.3s;
   outline: none;
@@ -2034,7 +2036,7 @@ a:hover {
   line-height: 80px;
   display: inline-block;
   text-align: center;
-  background: #feb112;
+  background: #ffb000;
   border-radius: 50%;
   color: #0b0b0b;
   -webkit-transition: all 0.25s ease-in-out;
@@ -2045,7 +2047,7 @@ a:hover {
   margin-left: auto;
 }
 .testimonials-slider .controls .button-prev:hover {
-  background: #003399;
+  background: #002e94;
   color: #fff;
 }
 .testimonials-slider .controls .button-next {
@@ -2054,7 +2056,7 @@ a:hover {
   line-height: 80px;
   display: inline-block;
   text-align: center;
-  background: #feb112;
+  background: #ffb000;
   border-radius: 50%;
   color: #0b0b0b;
   -webkit-transition: all 0.25s ease-in-out;
@@ -2066,7 +2068,7 @@ a:hover {
   margin-right: 0;
 }
 .testimonials-slider .controls .button-next:hover {
-  background: #003399;
+  background: #002e94;
   color: #fff;
 }
 .testimonials-slider .testimonial {
@@ -2098,7 +2100,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   float: left;
-  background: #feb112;
+  background: #ffb000;
   color: #0b0b0b;
   text-align: center;
   font-size: 30px;
@@ -2182,7 +2184,7 @@ a:hover {
     hsla(186, 100%, 8%, 1) 23%
   );
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEB112", endColorstr="#879015", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ffb000", endColorstr="#879015", GradientType=1 );
   background-position: center;
   background-size: cover;
 }
@@ -2212,7 +2214,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: #feb112;
+  background: #ffb000;
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
@@ -2261,7 +2263,7 @@ a:hover {
   content: "";
   width: 100%;
   height: 4px;
-  background: #feb112;
+  background: #ffb000;
   position: absolute;
   left: 0;
   bottom: 20px;
@@ -2271,14 +2273,14 @@ a:hover {
 .footer {
   width: 100%;
   display: block;
-  background-color: #003399;
+  background-color: #002e94;
   position: relative;
   padding-top: 80px;
   color: #fff;
 }
 .footer h3 {
-  -webkit-text-stroke: 1px #feb112;
-  text-stroke: 1px #feb112;
+  -webkit-text-stroke: 1px #ffb000;
+  text-stroke: 1px #ffb000;
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: bolder;
@@ -2287,7 +2289,7 @@ a:hover {
 }
 .footer .scroll-top {
   width: 100px;
-  background: #feb112;
+  background: #ffb000;
   position: absolute;
   right: 30px;
   top: -30px;
@@ -2324,7 +2326,7 @@ a:hover {
   color: #fff;
   font-weight: 600;
   font-size: 15px;
-  border-bottom: 3px solid #feb112;
+  border-bottom: 3px solid #ffb000;
 }
 .footer address a:hover {
   text-decoration: none;
@@ -2345,7 +2347,7 @@ a:hover {
 }
 .footer form input[type="submit"] {
   height: 60px;
-  background: #feb112;
+  background: #ffb000;
   border: none;
   padding: 0 40px;
   font-size: 13px;
@@ -2380,7 +2382,7 @@ a:hover {
   /* opacity: 0.7; */
   font-size: 20px;
   color: white;
-  border-bottom: 2px solid #feb112;
+  border-bottom: 2px solid #ffb000;
   padding: 10px;
   /* border-radius: 100%; */
   transition: 0.3s;
@@ -2422,8 +2424,8 @@ a:hover {
   width: 100%;
   display: block;
   position: relative;
-  background: #003399;
-  border: 4px solid #003399;
+  background: #002e94;
+  border: 4px solid #002e94;
 }
 .yes-no .switch {
   width: 100%;
@@ -2441,7 +2443,7 @@ a:hover {
   height: 100%;
   top: 0;
   left: 0;
-  background: #feb112;
+  background: #ffb000;
   font-weight: 600;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -2481,10 +2483,10 @@ a:hover {
   display: none;
 }
 .yes-no #no:checked ~ .switch {
-  background: #feb112;
+  background: #ffb000;
 }
 .yes-no #no:checked ~ .switch span {
-  background: #003399;
+  background: #002e94;
 }
 .yes-no #no:checked ~ .switch span:after {
   background: none;
@@ -2520,7 +2522,7 @@ a:hover {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #feb112;
+  background: #ffb000;
   cursor: pointer;
   -webkit-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
@@ -2531,18 +2533,18 @@ a:hover {
   height: 20px;
   border: 0;
   border-radius: 50%;
-  background: #feb112;
+  background: #ffb000;
   cursor: pointer;
   -moz-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
 }
 
 .range-slider__range:active::-moz-range-thumb {
-  background: #feb112;
+  background: #ffb000;
 }
 
 .range-slider__range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #feb112;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #ffb000;
 }
 
 .range-slider__value {
@@ -2552,12 +2554,12 @@ a:hover {
   color: #0b0b0b;
   line-height: 20px;
   text-align: center;
-  background: #feb112;
+  background: #ffb000;
   padding: 5px 10px;
 }
 
 ::-moz-range-track {
-  background: #feb112;
+  background: #ffb000;
   border: 0;
 }
 
@@ -2896,7 +2898,8 @@ input::-moz-focus-outer {
     margin-left: 0px;
   }
   .slider {
-    background-position: right 900px top 0px;
+    background-image: url(../images/bg2.2.png);
+    background-position: right 500px top 0px;
   }
   .section-title h2 {
     font-size: 25px;
@@ -3024,7 +3027,7 @@ input::-moz-focus-outer {
   }
 
   .footer-bar .sales-representive b {
-    color: #feb112;
+    color: #ffb000;
   }
 
   .footer-bar .sales-representive b:before {
@@ -3094,7 +3097,7 @@ input::-moz-focus-outer {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #feb112;
+  background: #ffb000;
 }
 
 /* Handle on hover */
