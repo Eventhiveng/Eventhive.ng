@@ -118,7 +118,7 @@ body {
   font-weight: bold;
 }
 .y-color {
-  color: #ffb000;
+  color: #ffb000;s
   font-weight: bold;
 }
 .ex-color {
@@ -128,6 +128,7 @@ body {
 .MB-20 {
   margin-bottom: 20px !important;
 }
+
 
 /* HTML TAGS */
 img {
@@ -791,7 +792,7 @@ a:hover {
 /* SLIDER */
 .slider {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   background-color: #002e94;
@@ -1856,6 +1857,9 @@ a:hover {
 .sponsorship a:hover {
   text-decoration: none;
   /* box-shadow: 0 20px 20px #000; */
+}
+.sponsorship .right{
+  margin-right: 50px;
 }
 .sponsorship a:hover i {
   margin-left: 20px;
@@ -2947,7 +2951,10 @@ input::-moz-focus-outer {
     padding-left: 0px;
     padding-right: 0px;
   }
-
+  .sponsorship .right{
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
   .sponsorship a {
     height: 45px;
     line-height: 45px;
@@ -3064,7 +3071,10 @@ input::-moz-focus-outer {
     margin-left: 0px;
     margin-bottom: 20px;
   }
-
+  .sponsorship .right{
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
   .slider p:nth-of-type(1) {
     margin-bottom: 10px;
     margin-top: 10px;
