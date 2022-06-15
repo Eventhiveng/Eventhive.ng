@@ -486,6 +486,12 @@ textarea.input {
   margin-bottom: 0px;
 }
 
+#ticketR{
+  padding-top: 0px;
+}
+
+
+
 /*=========================================================
 	ABOUT
 ===========================================================*/
@@ -1218,6 +1224,10 @@ textarea.input {
 }
 .spons-media img {
   margin: 25px;
+}
+.spons-media{
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 /*=========================================================
