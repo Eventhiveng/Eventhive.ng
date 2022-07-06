@@ -2097,7 +2097,7 @@ a.btn-border-white {
 
 .ticket .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   grid-gap: 50px;
   padding-left: 50px;
   padding-right: 50px;
@@ -2111,7 +2111,7 @@ a.btn-border-white {
   padding: 50px 10px 40px 10px;
 }
 .ticket .grid-item ul {
-  height: 350px;
+  height: 380px;
   overflow: hidden;
   overflow-y: scroll;
 }
