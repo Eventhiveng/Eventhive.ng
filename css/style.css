@@ -1875,6 +1875,10 @@ a:hover {
   padding: 20px !important;
   }
 
+#speakers{
+  padding-bottom: 0px;
+}
+
 /* AGENDA SECTION */
 .agenda .grid-container {
   display: grid;
@@ -1930,7 +1934,7 @@ a:hover {
 /* TICKET SECTION */
 .ticket h1 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
