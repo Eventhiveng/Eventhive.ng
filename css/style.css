@@ -924,9 +924,11 @@ a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   padding: 0 30px;
+  text-align: center;
 }
 .logo-item img {
   width: 100%;
+  text-align: center;
 }
 
 /* CONTENT SECTION */
