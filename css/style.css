@@ -2099,11 +2099,13 @@ a.btn-border-white {
 
 .ticket .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   grid-gap: 50px;
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 50px;
+  width: 500px;
+  margin: auto;
 }
 .ticket .grid-item {
   border: 1px solid #e8e8e8;
@@ -2113,7 +2115,7 @@ a.btn-border-white {
   padding: 50px 10px 40px 10px;
 }
 .ticket .grid-item ul {
-  height: 380px;
+  height: 200px;
   overflow: hidden;
   overflow-y: scroll;
 }
