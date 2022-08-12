@@ -626,7 +626,7 @@ a:hover {
 }
 .navbar .site-menu ul li {
   display: inline-block;
-  margin: 0 40px;
+  margin: 0 30px;
   padding: 0;
   list-style: none;
   position: relative;
@@ -1931,6 +1931,11 @@ a:hover {
   font-weight: bolder;
 }
 
+/* MEDIA SECTION */
+.media{
+  padding-top: 50px;
+}
+
 /* TICKET SECTION */
 .ticket h1 {
   text-align: center;
@@ -2648,7 +2653,11 @@ input::-moz-focus-outer {
   .side-widget {
     box-shadow: none;
   }
-
+  
+  .media iframe{
+    width: 500px;
+    height: 250px;
+  }
   .side-widget .show-mobile {
     display: block;
   }
@@ -2837,7 +2846,13 @@ input::-moz-focus-outer {
   .side-widget {
     width: 240px;
   }
-
+  .media iframe{
+    width: 350px;
+    height: 200px;
+  }
+  .media{
+    padding-top: 0px;
+  }
   .search-box .inner {
     width: 90vw;
   }
@@ -3074,6 +3089,11 @@ input::-moz-focus-outer {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {
+  
+  .media iframe{
+    width: 350px;
+    height: 200px;
+  }
   .slider h2 {
     font-size: 40px;
     margin-top: 0px;
