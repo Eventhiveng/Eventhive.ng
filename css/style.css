@@ -1666,7 +1666,7 @@ a:hover {
 }
 .sales-team:hover {
   transform: translateY(-20px);
-  box-shadow: 0 30px 30px rgb(32, 32, 32);
+  box-shadow: 0 30px 30px rgb(230, 230, 230);
   z-index: 1;
 }
 .sales-team:hover:after {
