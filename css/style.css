@@ -3203,7 +3203,12 @@ input::-moz-focus-outer {
   .testimonials-slider .controls {
     display: none;
   }
-
+  .ticket .grid-container {
+    width: 300px;
+  }
+  .ticket .grid-item ul {
+    height: 300px;
+  }
   .sponsorship {
     padding-left: 0px;
     padding-right: 0px;
@@ -3339,6 +3344,11 @@ input::-moz-focus-outer {
     }
     .old-counter .col-lg-3:nth-child(even) .counter-box {
       margin-top: 5%;
+    }.ticket .grid-container {
+      width: 300px;
+    }
+    .ticket .grid-item ul {
+      height: 300px;
     }
   }
 
@@ -3349,5 +3359,11 @@ input::-moz-focus-outer {
       .spons-op .text{
         padding-left: 20px;
         padding-right: 20px;
+      }
+      .ticket .grid-container {
+        width: 300px;
+      }
+      .ticket .grid-item ul {
+        height: 300px;
       }
   }
