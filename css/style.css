@@ -861,6 +861,9 @@ a:hover {
 #about img{
   margin-bottom: 20px;
 }
+#about .w3-col{
+  padding: 0px !important;
+}
 .attendance img{
   max-width: 85%;
 }

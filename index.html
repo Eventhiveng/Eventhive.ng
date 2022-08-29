@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script
       charset="UTF-8"
       src="//web.webpushs.com/js/push/74c19e42e77ba733e4c5016c551f42c9_1.js"
@@ -286,6 +287,74 @@
       </div>
     </section>
 
+    <section class="content-section no-spacing" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <!-- <h6>WE AS AN ENTITY</h6> -->
+              <h2 class="spaced">HIGHLIGHTS FROM <br><b class="transparent">LAGOS TRANSPORT FEST 2021</b></h2>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="w3-content" style="max-width:1200px">
+              <img class="mySlides" src="images/2021-highlights/uno.jpeg" style="width:100%;display:none">
+              <img class="mySlides" src="images/2021-highlights/dos.jpeg" style="width:100%">
+              <img class="mySlides" src="images/2021-highlights/tres.jpeg" style="width:100%;display:none">
+              <img class="mySlides" src="images/2021-highlights/cuatro.jpeg" style="width:100%;display:none">
+              <img class="mySlides" src="images/2021-highlights/cinco.jpeg" style="width:100%">
+              <img class="mySlides" src="images/2021-highlights/seis.jpeg" style="width:100%;display:none">
+              <img class="mySlides" src="images/2021-highlights/siete.jpeg" style="width:100%;display:none">
+              <img class="mySlides" src="images/2021-highlights/ocho.jpeg" style="width:100%">
+              <img class="mySlides" src="images/2021-highlights/nueve.jpeg" style="width:100%;display:none">
+              <img class="mySlides" src="images/2021-highlights/diez.jpeg" style="width:100%;display:none">
+              <img class="mySlides" src="images/2021-highlights/once.jpeg" style="width:100%">
+              <img class="mySlides" src="images/2021-highlights/doce.jpeg" style="width:100%;display:none">
+            
+              <div class="w3-row-padding w3-section">
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/uno.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/dos.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/tres.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/cuatro.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/cinco.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/seis.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/siete.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(7)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/ocho.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(8)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/nueve.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(9)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/diez.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(10)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/once.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(11)">
+                </div>
+                <div class="w3-col s1">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="images/2021-highlights/doce.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(12)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section
       class="content-section"
       data-background="#f7f6f1"
@@ -361,7 +430,7 @@
       </div> -->
       <!-- end project-slider -->
 
-      <div class="content-section sponsor" data-background="#f7f6f1">
+      <div class="content-section no-spacing sponsor" data-background="#f7f6f1">
         <div class="section-title text-center">
           <h1 class="spaced">PREVIOUS <b class="transparent">SPONSORS</b><br> AND PARTNERS</h1>
         </div>
@@ -995,6 +1064,41 @@
       </a>
       <!-- end scroll-top -->
     </footer>
+    <script>
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      var myIndex = 0;
+      carousel();
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-opacity-off";
+      }
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+      }
+      </script>
+      
     <!-- end footer -->
     <!-- JS FILES -->
     <script src="js/jquery.min.js"></script>
