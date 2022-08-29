@@ -782,7 +782,7 @@ a:hover {
 .slider h2 {
   font-size: 40px;
   font-weight: 800;
-  margin-top: 80px !important;
+  margin-top: 150px !important;
   text-align: center;
   /* border: 1px solid #000; */
   margin: auto;
@@ -848,7 +848,7 @@ a:hover {
 
 /* ABOUT */
 #about p{
-  padding: 0px 100px;
+  /* padding: 0px 100px; */
   text-align: center;
 }
 #about h3{
@@ -861,7 +861,12 @@ a:hover {
 #about img{
   margin-bottom: 20px;
 }
-
+#about .spaced{
+    font-size: 30px !important;
+}
+#about .col-md-4{
+    border: 1px solid #000;
+}
 /* WHATS NEW SECTION */
 .new {
   color: white;
@@ -3037,9 +3042,6 @@ input::-moz-focus-outer {
   .slider p{
     font-size: 13px;
   }
-  .footer .spaced {
-    margin-top: 50px;
-  }
   .f-nav img {
     margin-top: 10px;
     width: 80%;
@@ -3195,9 +3197,7 @@ input::-moz-focus-outer {
     line-height: 40px;
     padding: 0 30px;
   }
-.ticket .grid-item ul{
-  height: 330px;
-}
+
   .recent-news {
     margin: 15px 0 !important;
   }
