@@ -1,7 +1,7 @@
 FONT COLOR ON DARK BACKGROUND - #fffcf0
 DARK BACKGROUND - #372b2b
 ALTERNATE FONT COLOR - #fff6c7, #ffe53a
-MAIN YELLOW - #ffbf00
+MAIN YELLOW - #fba304
 
 
 https://coolors.co/palette/e0bb00-fffcf0-fff6c7-ffdd33-e0bb00-1a1500    
