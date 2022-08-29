@@ -3037,6 +3037,9 @@ input::-moz-focus-outer {
   .slider p{
     font-size: 13px;
   }
+  .attendance img{
+    max-width: 100%;
+  }
   .footer .spaced {
     margin-top: 50px;
   }
