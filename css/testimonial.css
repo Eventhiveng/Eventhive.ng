@@ -849,10 +849,11 @@ a:hover {
 /* ABOUT */
 #about p{
   /* padding: 0px 100px; */
-  text-align: center;
+  text-align: left;
+  font-family: 'Courgette', cursive;
 }
 #about h3{
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   letter-spacing: 10px;
   font-size: 22px;
@@ -864,8 +865,13 @@ a:hover {
 #about .spaced{
     font-size: 30px !important;
 }
-#about .col-md-4{
-    border: 1px solid #000;
+#about .testimonial{
+    border-bottom: 5px solid #ffe53a;
+    padding: 0px 40px 40px 40px;
+    width: 100%;
+}
+#about i{
+    padding: 5px;
 }
 /* WHATS NEW SECTION */
 .new {
@@ -2411,7 +2417,7 @@ a:hover {
   position: relative;
   padding-top: 80px;
   color: #fffcf0;
-  
+  margin-top: 50px;
 }
 .footer h3 {
   /* -webkit-text-stroke: 1px #ffbf00;
@@ -3031,7 +3037,8 @@ input::-moz-focus-outer {
     margin-left: 0;
   }
   .slider h2{
-    padding-top: 50px;
+    padding-top: 90px !important;
+    font-size: 45px;
   }
   .slider{
     height: 90vh;
@@ -3074,7 +3081,6 @@ input::-moz-focus-outer {
   }
 
   .slider h2 {
-    font-size: 35px;
     margin-top: 0px !important;
     margin-left: 0px;
     margin-bottom: 15px;

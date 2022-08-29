@@ -862,6 +862,7 @@ a:hover {
   margin-bottom: 20px;
 }
 
+
 /* WHATS NEW SECTION */
 .new {
   color: white;
@@ -2407,6 +2408,9 @@ a:hover {
   padding-top: 80px;
   color: #fffcf0;
   
+}
+footer .fa-quote-right{
+  padding: 7px;
 }
 .footer h3 {
   /* -webkit-text-stroke: 1px #ffbf00;
