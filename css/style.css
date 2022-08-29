@@ -3103,7 +3103,10 @@ input::-moz-focus-outer {
   .slider .container {
     padding-top: 110px;
   }
-
+  .slider a{
+    font-size: 10px;
+    padding: 0px 10px;
+  }
   .slider a {
     margin-bottom: 15px;
     height: 45px;
