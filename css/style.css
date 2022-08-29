@@ -3029,10 +3029,10 @@ input::-moz-focus-outer {
     padding-top: 40px;
   }
   .slider{
-    height: 90vh;
+    height: 95vh;
   }
   .slider #background-video {
-    height: 90vh;
+    height: 95vh;
   }
   .slider p{
     font-size: 13px;
