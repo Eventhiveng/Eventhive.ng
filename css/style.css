@@ -2187,13 +2187,13 @@ a.btn-border-white {
 
 /* *-----Testimonial-------*/
 #testim {
-  /* margin-bottom: 40px; */
+  margin-bottom: 40px;
   padding-top: 30px;
   color: white;
   width: 100%;
   background: url("../images/bcg.png");
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 .testim:after {
   position: absolute;
