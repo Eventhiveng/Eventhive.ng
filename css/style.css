@@ -1245,6 +1245,14 @@ textarea.input {
 }
 .participate i{
   color: #E30521;
+  margin-right: 10px;
+}
+.participate img{
+  width: 100%;
+}
+.participate .w-70{
+  width: 70%;
+  text-align: center;
 }
 .participate ul li{
   padding: 10px;
@@ -1253,34 +1261,21 @@ textarea.input {
 .participate h3{
   margin-top: 10px;
 }
-.tabcontent ul img{
-  text-align: center;
-  margin: 0;
-}
-.tab button:hover {
-  background-color: #444444;
-  color: white;
-}
-.tab button.active {
-  background-color: #023B84;
-  color: white;
-}
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
-}
-@-webkit-keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 
+/* FOCUS */
+.focus{
+  padding-bottom: 0px;
+}
+.focus .blue-id{
+  margin-bottom: 30px;
+}
+.focus .red-id{
+  margin-bottom: 30px;
+}
+#sponsorship{
+  padding-bottom: 20px;
+}
 
 /*=========================================================
 	SPONSORS
@@ -1462,6 +1457,19 @@ textarea.input {
   .ticket {
     padding: 30px 30px 10px 30px;
   }
+  .home-content h2{
+    font-size: 40px;
+    padding-top: 40px;
+  }
+  #sponsorship{
+    padding-bottom: 50px;
+  }
+  .MB-20{
+    margin-bottom: 20px;
+  }
+  .MT-40{
+    margin-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1512,6 +1520,18 @@ textarea.input {
   .contact-social {
     text-align: center;
     margin: 30px 0px;
+  }
+  .participate img{
+    /* width: 70%; */
+  }
+  .MB-20{
+    margin-bottom: 20px;
+  }
+  .MT-40{
+    margin-top: 40px;
+  }
+  .main-nav li a{
+    padding: 20px;
   }
   .copyright {
     display: block;
