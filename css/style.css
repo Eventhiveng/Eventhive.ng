@@ -1451,7 +1451,7 @@ textarea.input {
     margin-top: 100px !important;
   }
   .section-bg{
-    /* background-position: 0px 500px; */
+    /* background-position: -1000px 0px; */
   }
   .section-title .title {
     font-size: 25px;
