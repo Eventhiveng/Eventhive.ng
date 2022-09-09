@@ -611,14 +611,7 @@ textarea.input {
   margin: 50px 0px;
   color: white;
   width: 100%;
-  background: #0b0b0b; /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(
-      rgba(46, 46, 46, 0.8),
-      rgba(46, 46, 46, 0.8)
-    ),
-    url("../img/bcg/e55.png");
-  background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
-    url("../img/bcg/e55.png"); /* The least supported option. */
+  background: #2c2c2c; 
   background-size: cover;
   background-attachment: fixed;
 }
@@ -636,7 +629,7 @@ textarea.input {
   /* text-align: center !important; */
 }
 #infoOne a {
-  color: #ffae1e !important;
+  color: #E30521;
 }
 #infoOne li {
   list-style-type: none;
