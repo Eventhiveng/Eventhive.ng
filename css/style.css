@@ -1312,9 +1312,11 @@ textarea.input {
 /*=========================================================
 	TICKETS
 ===========================================================*/
-.ticket {
-  /* border: 1px solid #000; */
-  padding: 50px;
+#book-a-seat{
+  padding-top: 30px;
+}
+.ticket{
+  padding-bottom: 30px;
 }
 .ticket ul {
   list-style-type: none;
@@ -1327,7 +1329,7 @@ textarea.input {
   color: #E30521;
 }
 .ticket h3 {
-  font-size: 28px;
+  font-size: 25px;
 }
 .ticket .section-title {
   margin-bottom: 0px;
@@ -1447,6 +1449,9 @@ textarea.input {
   }
   .home-content .logo {
     margin-top: 100px !important;
+  }
+  .section-bg{
+    /* background-position: 0px 500px; */
   }
   .section-title .title {
     font-size: 25px;
