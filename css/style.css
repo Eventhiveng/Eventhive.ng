@@ -233,10 +233,10 @@ textarea.input {
 .section-bg {
   background-image: linear-gradient(
       to bottom,
-      rgba(5, 6, 8, 0.20),
+      rgba(119, 122, 133, 0.1),
       rgba(15, 10, 14, 0.50)
     ),
-    url(../assets/bcg/bcg2.jpg);
+    url(../assets/bcg/bg4.jpg);
   position: absolute;
   left: 0;
   top: 0;
@@ -1449,7 +1449,7 @@ textarea.input {
     margin-top: 100px !important;
   }
   .section-title .title {
-    font-size: 36px;
+    font-size: 25px;
   }
   .logo-item img {
     margin-bottom: 30px;
