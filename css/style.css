@@ -1304,7 +1304,7 @@ textarea.input {
 .video-box .play-btn:hover {
   background: #023B84;
   border-color: #023B84;
-  color: #E30521;
+  color: white;
 }
 .video-box video {
   width: 100%;
