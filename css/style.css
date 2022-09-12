@@ -1028,6 +1028,7 @@ a:hover {
   display: block;
   margin-bottom: 0;
   font-size: 40px;
+  text-transform: uppercase;
 }
 .section-title p {
   width: 100%;
