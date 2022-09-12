@@ -777,7 +777,9 @@ a:hover {
   color: #feb112;
   margin-right: 10px;
 }
-
+.w3-content{
+  margin-top: 0px !important;
+}
 /* ATTEND */
 .attend{
   background: url("../images/bcg/Group7.png");
