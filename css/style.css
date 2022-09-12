@@ -746,13 +746,18 @@ a:hover {
   text-align: left;
 }
 
+.about-content p{
+  font-size: 15px !important;
+}
+
 /* INFO */
 #info {
   margin-top: 60px;
   padding-top: 30px;
+  padding-bottom: 20px !important;
   color: white;
   width: 100%;
-  background: url("../images/Group\ 1.png");
+  background: url("../images/bcg/Group8.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -766,10 +771,30 @@ a:hover {
 #info li {
   list-style-type: none;
   line-height: 30px;
+  font-weight: 600;
 }
 #info li i {
   color: #feb112;
   margin-right: 10px;
+}
+
+/* ATTEND */
+.attend{
+  background: url("../images/bcg/Group7.png");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+  padding-top: 40px !important;
+  /* margin-top: 20px !important; */
+  color: white;
+  font-weight: normal;
+}
+
+.attend p{
+  padding: 20px 100px 50px 100px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* WHATS NEW */
@@ -779,9 +804,6 @@ a:hover {
 #new img {
   margin: 70px 0px 10px;
 }
-.FS-20 {
-  font-size: 20px;
-}
 #new .section-title {
   margin-bottom: 0px;
 }
@@ -789,16 +811,16 @@ a:hover {
 /* SLIDER */
 .slider {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   background-color: #003399;
-  background-image: url(../images/Group\ 4.png);
+  background-image: url(../images/bcg/Group3.png);
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEB112", endColorstr="#879015", GradientType=1 );
   background-size: cover;
   position: relative;
-  text-align: center;
+  text-align: center !important;
 }
 .slider .container {
   position: relative;
@@ -827,15 +849,18 @@ a:hover {
 .slider h2 {
   font-size: 60px;
   font-weight: 800;
-  /* margin-left: 50px; */
-  margin-bottom: 5px;
-  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
 }
 .slider h2 b {
-  -webkit-text-stroke: 1px #fff;
-  text-stroke: 1px #fff;
+  -webkit-text-stroke: 2px #fff;
+  text-stroke: 2px #fff;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  letter-spacing: 10px;
+  font-weight: 800;
 }
 .slider p:nth-of-type(2) {
   margin-bottom: 40px;
@@ -845,7 +870,7 @@ a:hover {
   margin-bottom: 70px;
 }
 .slider p {
-  text-align: left;
+  text-align: center;
   width: 100%;
   margin-bottom: 0px;
 }
@@ -863,7 +888,7 @@ a:hover {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 10px;
-
+  text-transform: uppercase;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -874,7 +899,9 @@ a:hover {
   margin-left: 20px;
 }
 .slider .buttons {
-  /* margin: 0 auto; */
+  margin-top: 40px !important;
+  text-align: center;
+  margin: auto;
 }
 .slider a i {
   display: inline-block;
@@ -998,7 +1025,7 @@ a:hover {
   width: 100%;
   display: block;
   margin-bottom: 0;
-  font-size: 47px;
+  font-size: 40px;
 }
 .section-title p {
   width: 100%;
@@ -1815,8 +1842,6 @@ a:hover {
 
 .sponsorship {
   text-align: center;
-  padding-left: 250px;
-  padding-right: 250px;
   padding-bottom: 0px;
 }
 .sponsorship a {
@@ -1863,6 +1888,9 @@ a:hover {
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: bolder;
+}
+.sponsorship img{
+  padding: 20px;
 }
 
 /* AGENDA SECTION */
