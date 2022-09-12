@@ -2871,6 +2871,14 @@ input::-moz-focus-outer {
     margin: 2px;
     padding: 30px 10px;
   }
+  .attend{
+    padding-top: 50px !important;
+    background-position: right 500px bottom 0px;
+  }
+  .attend p{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   #info ul {
     padding-left: 5px !important;
   }
@@ -2893,7 +2901,7 @@ input::-moz-focus-outer {
 
   .slider h2 {
     font-size: 40px;
-    margin-top: 0px;
+    margin-top: 50px;
     margin-left: 0px;
     margin-bottom: 20px;
   }
@@ -2924,7 +2932,7 @@ input::-moz-focus-outer {
     margin-left: 0px;
   }
   .slider {
-    background-position: right 900px top 0px;
+    
   }
   .section-title h2 {
     font-size: 25px;
