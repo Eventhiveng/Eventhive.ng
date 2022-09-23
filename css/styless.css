@@ -17580,9 +17580,13 @@ section.contact-section {
   font-weight: 400;
 }
 
+.tf-v1-sidetab-button {
+  top: 90% !important;
+  outline: none !important;
+}
 .social-fixed {
   position: fixed;
-  top: 320px;
+  top: 200px;
   right: 0;
   z-index: 999;
 }
