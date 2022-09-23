@@ -17581,12 +17581,12 @@ section.contact-section {
 }
 
 .tf-v1-sidetab-button {
-  top: 90% !important;
+  top: 70% !important;
   outline: none !important;
 }
 .social-fixed {
   position: fixed;
-  top: 200px;
+  top: 150px;
   right: 0;
   z-index: 999;
 }
