@@ -2936,7 +2936,9 @@ input::-moz-focus-outer {
   .search-box .inner {
     width: 90vw;
   }
-
+  .section-title h2{
+    font-size: 25px !important;
+  }
   .navbar .navbar-button span {
     display: none;
   }
