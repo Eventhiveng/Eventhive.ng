@@ -2851,7 +2851,10 @@ input::-moz-focus-outer {
     color: #fff;
   }
   .slider {
-    background-position: right 1200px top 0px;
+    background-position: right 1000px top 0px;
+  }
+  .section-title h2{
+    font-size: 30px !important;
   }
   .icon-content {
     margin: 15px 0;
