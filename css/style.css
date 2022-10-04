@@ -2022,7 +2022,7 @@ a:hover {
 
 .ticket .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   grid-gap: 20px;
   padding: 0px 50px 30px 50px;
   padding-left: 50px;
