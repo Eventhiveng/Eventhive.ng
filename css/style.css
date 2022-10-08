@@ -2022,7 +2022,7 @@ a:hover {
 
 .ticket .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   grid-gap: 20px;
   padding: 0px 50px 30px 50px;
   padding-left: 50px;
@@ -2036,6 +2036,8 @@ a:hover {
   color: #0b0b0b;
   transition: 0.4s;
   padding: 50px 10px 40px 10px;
+  max-width: 500px;
+  margin: auto;
 }
 .ticket .uk {
   color: white;
