@@ -13914,6 +13914,61 @@ input.btn-search.red-grd-bg.searchbox-submit {
   flex-flow: row wrap;
 }
 
+/* NEWSLETTER */
+.newsletter-section{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.newsletter-section h2{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: ProximaNova-Bold;
+}
+.newsletter-section .page-heading{
+  padding-bottom: 10px;
+}
+#revue-embed ul{
+  padding: 0px !important;
+}
+#revue-embed ul li{
+  /* border: 1px solid #000; */
+  display: inline-block;
+  list-style-type: none;
+  margin: 0px 30px;
+  font-size: 15px;
+}
+#revue-embed ul label{
+  margin-right: 5px;
+}
+#revue-embed ul input{
+  border: none;
+  border-bottom: 2px solid #f18700;
+  outline: none;
+}
+#revue-embed ul input::placeholder{
+  color: #444;
+  opacity: 0.3;
+}
+.revue-form-actions input{
+  padding: 5px 20px;
+  background-color: #f18700;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #f18700 !important;
+  transition: 0.2s;
+}
+.revue-form-actions input:hover{
+  background-color: white;
+  transition: 0.2s;
+  color: #f18700;
+}
+.revue-form-footer{
+  font-size: 12px;
+}
+
+
 @media screen and (max-width: 1024px) {
   .nav-wrapper .nav-bar .menu-list li.main-menu:hover:after {
     width: 0;
@@ -16927,6 +16982,10 @@ h3.page-sub-title {
   .media-card {
     margin: 20px 5px 0;
   }
+  /* NEWSLETTER */
+#revue-embed ul li{
+  margin: 10px 30px;
+}
 }
 
 .media-card:hover {

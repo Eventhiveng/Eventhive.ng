@@ -1626,16 +1626,67 @@
 
       <!-- NEWSLETTER -->
       <section class="newsletter-section">
-        <iframe src="https://eventhiveng.substack.com/embed" width="100%" height="180" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+        <div class="section-title">
+          <h2>Join The Eventhive Community</h2>
+        </div>
+        <div class="container" id="revue-embed">
+          <form action="https://www.getrevue.co/profile/eventhiveng/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+          <ul>
+            <li>
+              <div class="revue-form-group">
+                <input class="revue-form-field" placeholder="jamesbond@007.com" type="email" name="member[email]" id="member_email">
+              </div>
+            </li>
+            <li>
+              <div class="revue-form-group">
+                <input class="revue-form-field" placeholder="James Bond" type="text" name="member[full_name]" id="member_full_name">
+              </div>
+            </li>
+            <li>
+              <div class="revue-form-actions">
+                <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+              </div>
+            </li>
+          </ul>
+          <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
+          </form>
+        </div>
       </section>
 
-      <div id="myModal" class="modal fade">
+      <!-- <div id="myModal" class="modal fade">
         <div class="modal-dialog">
           <div class="modal-content">
-            <iframe src="https://eventhiveng.substack.com/embed" width="100%" height="180" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+            <div class="modal-header">
+              <h2>Join The Eventhive Community</h2>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="container" id="revue-embed">
+                <form action="https://www.getrevue.co/profile/eventhiveng/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+                <ul>
+                  <li>
+                    <div class="revue-form-group">
+                      <input class="revue-form-field" placeholder="jamesbond@007.com" type="email" name="member[email]" id="member_email">
+                    </div>
+                  </li>
+                  <li>
+                    <div class="revue-form-group">
+                      <input class="revue-form-field" placeholder="James Bond" type="text" name="member[full_name]" id="member_full_name">
+                    </div>
+                  </li>
+                  <li>
+                    <div class="revue-form-actions">
+                      <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+                    </div>
+                  </li>
+                </ul>
+                <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- NEWSLETTER END -->
     </main>
     <div class="main-ft-wrapper">
