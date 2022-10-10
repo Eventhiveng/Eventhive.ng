@@ -13946,6 +13946,7 @@ input.btn-search.red-grd-bg.searchbox-submit {
   border: none;
   border-bottom: 2px solid #f18700;
   outline: none;
+  padding: 2px 10px;
 }
 #revue-embed ul input::placeholder{
   color: #444;
