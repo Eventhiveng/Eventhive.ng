@@ -6,7 +6,7 @@
   100% {
     -webkit-transform: translateX(calc(-200px * 22));
     transform: translateX(calc(-200px * 22));
-  }
+  } 
 }
 
 @keyframes scroll {
