@@ -1964,11 +1964,12 @@ a:hover {
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: #ffa600;
+  /* background: #ffa600; */
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
-  /* margin-bottom: 10px; */
+  margin-bottom: 40px;
+  margin-top: 40px;
 
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -2003,9 +2004,6 @@ a:hover {
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: bolder;
-}
-.sponsorship .row img {
-  margin: 30px;
 }
 .transparent-yellow {
   -webkit-text-stroke: 2px #ffa600;
@@ -2781,9 +2779,6 @@ input::-moz-focus-outer {
 
   .footer-bar h2 {
     padding: 0;
-  }
-  .sponsorship .row img {
-    width: 60%;
   }
   #about p{
     padding: 0px 20px;
