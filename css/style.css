@@ -1784,15 +1784,20 @@ a:hover {
 }
 .sales-team figure img {
   width: 100%;
+  /* filter: grayscale(1);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out; */
+  transition: all 0.25s ease-in-out;
+}
+.sales-team figure img:hover {
+  /* filter: none; */
   filter: grayscale(1);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-.sales-team figure img:hover {
-  filter: none;
 }
 .sales-team .infos {
   width: 100%;
