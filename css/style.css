@@ -506,6 +506,7 @@ textarea.input {
 
 #ticketR{
   padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 
@@ -1249,7 +1250,7 @@ textarea.input {
 }
 .participate ul li{
   padding: 10px;
-  text-align: center;
+  text-align: left;
 }
 .participate h3{
   margin-top: 10px;
@@ -1268,6 +1269,7 @@ textarea.input {
 }
 #sponsorship{
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 
