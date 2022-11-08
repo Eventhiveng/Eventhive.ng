@@ -2016,6 +2016,9 @@ a:hover {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+#speakers{
+  padding-bottom: 0px;
+}
 
 /* AGENDA SECTION */
 .agenda .grid-container {
