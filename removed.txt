@@ -4,7 +4,7 @@
      id="highlights">
      <div class="section-title">
       <h3 class="title">
-        LAGOS <span style="color: #E30521">REAL ESTATE</span> FEST <span style="color: #E30521">HIGHLIGHTS</span>
+        LAGOS <span style="color: #fbb30c">REAL ESTATE</span> FEST <span style="color: #fbb30c">HIGHLIGHTS</span>
       </h3>
     </div>
      <div class="w3-content w3-section" style="max-width:800px">
@@ -23,7 +23,7 @@
       <div class="content-section">
         <div class="section-title">
           <h3 class="title">
-            PREVIOUS <span style="color: #E30521">SPONSORS</span> AND <span style="color: #E30521">PARTNERS</span
+            PREVIOUS <span style="color: #fbb30c">SPONSORS</span> AND <span style="color: #fbb30c">PARTNERS</span
           </h3>
         </div>
         <div class="container">
@@ -78,7 +78,7 @@
   <div class="row">
     <div class="section-title tick-rem">
       <h3 class="title">
-        <span style="color: white;">BOOK YOUR SEAT AT </span> <span style="color: #E30521">LRF 2022</span>
+        <span style="color: white;">BOOK YOUR SEAT AT </span> <span style="color: #fbb30c">LRF 2022</span>
       </h3>
       <h4 class="lead" style="color: white;">28th June 2022 | CIVIC CENTER, VI LAGOS</h4>
       <a href="#book-a-seat" class="main-btn">REGISTER NOW!</a>
@@ -94,7 +94,7 @@
       <div class="col-lg-12">
         <div class="section-title">
           <h3 class="title">
-            <span style="color: #E30521">WHY SPONSOR?</span> MULTI-FOCUS MARKETING CAMPAIGN BENEFITS
+            <span style="color: #fbb30c">WHY SPONSOR?</span> MULTI-FOCUS MARKETING CAMPAIGN BENEFITS
           </h3>
         </div>
         <!-- end section-title -->
@@ -157,7 +157,7 @@
       <div class="col-12">
         <div class="section-title">
           <h3 class="title">
-            <span style="color: white;">ABOUT THE ORGANIZERS </span><span style="color: #E30521">- EVENTHIVE.NG</span>
+            <span style="color: white;">ABOUT THE ORGANIZERS </span><span style="color: #fbb30c">- EVENTHIVE.NG</span>
           </h3>
         </div>
       </div>

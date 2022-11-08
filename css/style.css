@@ -5,7 +5,7 @@ Author: yaminncco
 Colors:
 	Body 		  : #444
 	Headers 	: #023B84
-	Primary 	: #E30521
+	Primary 	: #fbb30c
 	Dark 		  : #000
 	Grey 		  : #F9F9FA #DADADA
 
@@ -93,7 +93,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
-  color: #E30521;
+  color: #fbb30c;
 }
 
 ul,
@@ -102,8 +102,8 @@ ol {
   padding: 0;
   list-style: none;
 }
-.red-id {
-  color: #E30521;
+.yellow-id {
+  color: #fbb30c;
 }
 .blue-id {
   color: #023B84;
@@ -136,7 +136,7 @@ ol {
   background: transparent;
   color: #fff;
   text-transform: uppercase;
-  border: 3px solid #E30521;
+  border: 3px solid #fbb30c;
   -webkit-transition: 0.3s all;
   transition: 0.2s all;
   border-radius: 5px;
@@ -144,8 +144,8 @@ ol {
 }
 .main-btn:hover{
   color: #fff;
-  background-color: #E30521;
-  border: 3px solid #E30521;
+  background-color: #fbb30c;
+  border: 3px solid #fbb30c;
 }
 .brochure-btn {
   display: inline-block;
@@ -161,28 +161,28 @@ ol {
 }
 .brochure-btn:hover{
   color: #fff;
-  border: 3px solid #E30521;
-  background-color: #E30521;
+  border: 3px solid #fbb30c;
+  background-color: #fbb30c;
 }
 .ticket-btn {
   display: inline-block;
   padding: 11.5px 21px;
-  background: #E30521;
+  background: #fbb30c;
   color: #fff;
   text-transform: uppercase;
   -webkit-transition: 0.3s all;
-  border: 2px solid #E30521;
+  border: 2px solid #fbb30c;
   transition: 0.2s all;
   border-radius: 5px;
   margin-top: 5px;
 }
 .ticket-btn:hover{
-  color: #E30521;
+  color: #fbb30c;
   background-color: transparent;
-  border: 2px solid #E30521;
+  border: 2px solid #fbb30c;
 }
 a.btn-border-black {
-  border: solid 2px #E30521;
+  border: solid 2px #fbb30c;
   background: none;
   border-radius: 30px;
   padding: 9px 30px 9px 30px;
@@ -218,7 +218,7 @@ textarea.input {
 }
 
 .input:focus {
-  border-color: #E30521;
+  border-color: #fbb30c;
 }
 
 /*----------------------------*\
@@ -391,17 +391,17 @@ textarea.input {
   bottom: -3px;
   width: 100%;
   left: 0;
-  background: #E30521;
+  background: #fbb30c;
 }
 
 .main-nav li a:hover,
 .main-nav li a:focus {
   background-color: transparent;
-  color: #E30521;
+  color: #fbb30c;
 }
 
 #header.transparent-navbar .main-nav li a:hover {
-  color: #E30521;
+  color: #fbb30c;
 }
 
 .navbar-toggle {
@@ -447,7 +447,7 @@ textarea.input {
   .main-nav li a:hover,
   .main-nav li a:focus,
   .main-nav li.active a {
-    background-color: #E30521;
+    background-color: #fbb30c;
     color: #fff !important;
   }
   .navbar-toggle {
@@ -506,6 +506,7 @@ textarea.input {
 
 #ticketR{
   padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 
@@ -525,7 +526,7 @@ textarea.input {
 .number h3 {
   font-size: 42px;
   margin-bottom: 0px;
-  color: #E30521;
+  color: #fbb30c;
 }
 
 .number p {
@@ -629,7 +630,7 @@ textarea.input {
   /* text-align: center !important; */
 }
 #infoOne a {
-  color: #E30521;
+  color: #fbb30c;
 }
 #infoOne li {
   list-style-type: none;
@@ -876,7 +877,7 @@ textarea.input {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: transparent;
-  color: #E30521;
+  color: #fbb30c;
   width: 90px;
   height: 90px;
   line-height: 90px;
@@ -939,7 +940,7 @@ textarea.input {
 .speaker .speaker-content {
   position: relative;
   padding: 30px;
-  background: #E30521;
+  background: #fbb30c;
   text-align: right;
   z-index: 20;
 }
@@ -971,7 +972,7 @@ textarea.input {
   line-height: 40px;
   text-align: center;
   color: #fff;
-  background: #E30521;
+  background: #fbb30c;
   z-index: 15;
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
@@ -1018,7 +1019,7 @@ textarea.input {
   height: 60px;
   line-height: 60px;
   text-align: center;
-  background-color: #E30521 !important;
+  background-color: #fbb30c !important;
   border-radius: 50%;
   padding: 0;
   color: #fff;
@@ -1046,7 +1047,7 @@ textarea.input {
 }
 
 .speaker-modal .speaker-modal-content .speaker-job {
-  color: #E30521;
+  color: #fbb30c;
 }
 
 .speaker-modal .speaker-modal-content .speaker-social {
@@ -1062,7 +1063,7 @@ textarea.input {
   text-align: center;
   font-size: 14px;
   border-radius: 50%;
-  background: #E30521;
+  background: #fbb30c;
   color: #fff;
   margin-right: 5px;
   -webkit-transition: 0.3s opacity;
@@ -1097,7 +1098,7 @@ textarea.input {
   .speaker-event
   > span
   strong {
-  color: #E30521;
+  color: #fbb30c;
 }
 
 /*=========================================================
@@ -1119,7 +1120,7 @@ textarea.input {
   top: 0px;
   bottom: 0px;
   width: 4px;
-  background-color: #E30521;
+  background-color: #fbb30c;
 }
 
 .event:last-child:after {
@@ -1133,7 +1134,7 @@ textarea.input {
   height: 60px;
   top: -60px;
   width: 4px;
-  background-color: #E30521;
+  background-color: #fbb30c;
 }
 
 .event .event-day {
@@ -1143,7 +1144,7 @@ textarea.input {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #E30521;
+  background: #fbb30c;
   z-index: 10;
 }
 
@@ -1154,7 +1155,7 @@ textarea.input {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #E30521;
+  background: #fbb30c;
   z-index: 10;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1197,11 +1198,11 @@ textarea.input {
 }
 
 .event .event-time i {
-  color: #E30521;
+  color: #fbb30c;
 }
 
 .event .event-content a {
-  color: #E30521;
+  color: #fbb30c;
 }
 
 .download-btn {
@@ -1237,7 +1238,7 @@ textarea.input {
   text-align: center;
 }
 .participate i{
-  color: #E30521;
+  color: #fbb30c;
   margin-right: 10px;
 }
 .participate img{
@@ -1248,8 +1249,8 @@ textarea.input {
   text-align: center;
 }
 .participate ul li{
-  padding: 10px;
-  text-align: center;
+  padding: 5px;
+  text-align: left;
 }
 .participate h3{
   margin-top: 10px;
@@ -1263,11 +1264,12 @@ textarea.input {
 .focus .blue-id{
   margin-bottom: 30px;
 }
-.focus .red-id{
+.focus .yellow-id{
   margin-bottom: 30px;
 }
 #sponsorship{
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 
@@ -1296,8 +1298,8 @@ textarea.input {
   z-index: 1;
   text-align: center;
   border-radius: 50%;
-  border: 2px solid #E30521;
-  color: #E30521;
+  border: 2px solid #fbb30c;
+  color: #fbb30c;
   font-size: 20px;
   text-indent: 2px;
 }
@@ -1363,7 +1365,7 @@ textarea.input {
 .ticket ul i{
   margin-right: 10px;
   margin-top: 5px;
-  color: #E30521;
+  color: #fbb30c;
 }
 .ticket h3 {
   font-size: 25px;
@@ -1393,7 +1395,7 @@ textarea.input {
 }
 
 .contact h3 {
-  color: #E30521;
+  color: #fbb30c;
 }
 
 #map {
@@ -1425,7 +1427,7 @@ textarea.input {
   text-align: center;
   line-height: 120px;
   font-size: 42px;
-  color: #E30521;
+  color: #fbb30c;
   cursor: pointer;
 }
 
@@ -1461,7 +1463,7 @@ textarea.input {
   height: 30px;
   text-align: center;
   border-radius: 50%;
-  background: #E30521;
+  background: #fbb30c;
   color: #fff;
   line-height: 30px;
   margin-right: 15px;
@@ -1474,7 +1476,7 @@ textarea.input {
 }
 
 .copyright a {
-  color: #E30521;
+  color: #fbb30c;
 }
 /*=========================================================
 	RESPONSIVE
