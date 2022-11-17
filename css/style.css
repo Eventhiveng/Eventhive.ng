@@ -2019,6 +2019,9 @@ a:hover {
 #speakers{
   padding-bottom: 0px;
 }
+#speakers .row.no-gutters .col{
+  padding: 20px;
+}
 
 /* AGENDA SECTION */
 .agenda .grid-container {
