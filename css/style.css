@@ -1361,6 +1361,7 @@ textarea.input {
   list-style-type: none;
   margin-left: 20px;
   margin-bottom: 30px;
+  height: 150px;
 }
 .ticket ul i{
   margin-right: 10px;
@@ -1375,7 +1376,10 @@ textarea.input {
 }
 .ticket .bcg-blue {
   background-color: #023B84;
-  padding: 20px;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
   color: white;
 }
 /* .ticket-section {
