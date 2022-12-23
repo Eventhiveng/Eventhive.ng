@@ -73,7 +73,7 @@ a:hover,
 }
 a,
 button {
-	color: #1696e7;
+	color: #d39e00;
 	outline: medium none;
 }
 button:focus,input:focus,input:focus,textarea,textarea:focus{outline: none;box-shadow: none;}
@@ -191,7 +191,7 @@ label {
 	position: relative
 }
 .theme-overlay::before {
-	background: #1696e7 none repeat scroll 0 0;
+	background: #d39e00 none repeat scroll 0 0;
 	content: "";
 	height: 100%;
 	left: 0;
@@ -2558,6 +2558,12 @@ border-radius: 10px;overflow: hidden; margin: 10px 0;}
 }
 .meta__info ul li i {
 	margin-right: 5px;
+}
+.details__content a{
+	text-decoration: underline;
+}
+.details__content a:hover{
+	color: #856404;
 }
 .details__content h2 {
 	font-size: 32px;
