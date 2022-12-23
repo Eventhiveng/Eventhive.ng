@@ -733,9 +733,13 @@ border-bottom: none;
 	min-height: 750px;
 }
 .slider-content h2 {
-	font-size: 48px;
+	font-size: 45px;
     letter-spacing: 0;
     margin-bottom: 30px;
+	width: 70%;
+}
+.slider-content p {
+	width: 70%;
 }
 .menu-area::before {
     width: 56%;
