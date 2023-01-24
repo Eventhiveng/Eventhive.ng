@@ -100,6 +100,12 @@ body {
 }
 
 /* CUSTOM STYLES */
+.hide-mobile{
+  display: block;
+}
+.show-mobile{
+  display: none;
+}
 .block {
   width: 70px;
   border: 3px solid #33cc66;
@@ -341,7 +347,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background-color: #001233;
+  background-color: #444;
   /* background-image: url("../images/overlay.jpg"); */
   background-position: center;
   background-size: cover;
@@ -819,7 +825,7 @@ a:hover {
     url("../images/e555.png");  */
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 #infoOne .section-title {
   text-align: center;
@@ -895,7 +901,7 @@ a:hover {
 /* SLIDER */
 .slider {
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   background-image: url(../images/bcg/bcg.png);
@@ -906,7 +912,7 @@ a:hover {
 }
 .slider .container {
   position: relative;
-  padding-top: 150px;
+  padding-top: 170px;
   padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -2046,6 +2052,9 @@ a:hover {
 }
 
 /* TICKET SECTION */
+.ticket{
+  margin-top: 30px;
+}
 .ticket h1 {
   text-align: center;
   margin-top: 50px;
@@ -2054,7 +2063,7 @@ a:hover {
 
 .ticket .grid-container {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   grid-gap: 20px;
   padding: 0px 50px 30px 50px;
   padding-left: 50px;
@@ -2072,7 +2081,6 @@ a:hover {
   margin: auto;
 }
 .ticket .uk {
-  color: white;
   width: 100%;
   /* background-color: #0b0b0b; */
   /* background-image: ; */
@@ -2292,128 +2300,11 @@ a:hover {
   outline: none !important;
 }
 
-/* FOOTER BAR */
-.footer-bar {
-  width: 100%;
-  display: block;
-  padding: 80px 0;
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  background-color: #232222;
-  background: hsla(56, 99%, 50%, 1);
-
-  background: linear-gradient(
-    180deg,
-    hsla(56, 99%, 50%, 1) 0%,
-    hsla(64, 75%, 32%, 1) 12%,
-    hsla(186, 100%, 8%, 1) 23%
-  );
-
-  background: -moz-linear-gradient(
-    180deg,
-    hsla(56, 99%, 50%, 1) 0%,
-    hsla(64, 75%, 32%, 1) 12%,
-    hsla(186, 100%, 8%, 1) 23%
-  );
-
-  background: -webkit-linear-gradient(
-    180deg,
-    hsla(56, 99%, 50%, 1) 0%,
-    hsla(64, 75%, 32%, 1) 12%,
-    hsla(186, 100%, 8%, 1) 23%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#33cc66", endColorstr="#879015", GradientType=1 );
-  background-position: center;
-  background-size: cover;
-}
-.footer-bar .logo {
-  width: 100%;
-  display: block;
-  margin-bottom: 30px;
-}
-.footer-bar .logo img {
-  height: 50px;
-}
-.footer-bar h2 {
-  font-size: 60px;
-  font-weight: 800;
-  padding-right: 20%;
-  margin-bottom: 50px;
-}
-.footer-bar h2 b {
-  -webkit-text-stroke: 1px #fff;
-  text-stroke: 1px #fff;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-}
-.footer-bar .button {
-  display: inline-block;
-  float: left;
-  height: 60px;
-  line-height: 60px;
-  padding: 0 40px;
-  background: #33cc66;
-  color: #0b0b0b;
-  font-size: 13px;
-  font-weight: 600;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-.footer-bar .button i {
-  display: inline-block;
-  margin-left: 10px;
-  font-size: 20px;
-  transform: translateY(3px);
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-.footer-bar .button:hover {
-  text-decoration: none;
-}
-.footer-bar .button:hover i {
-  margin-left: 20px;
-}
-.footer-bar .sales-representive {
-  display: inline-block;
-  margin-left: 5vw;
-  line-height: 68px;
-}
-.footer-bar .sales-representive figure {
-  float: left;
-  margin-right: 10px;
-}
-.footer-bar .sales-representive figure img {
-  height: 60px;
-  border-radius: 50%;
-}
-.footer-bar .sales-representive b {
-  display: inline-block;
-  font-weight: 600;
-  position: relative;
-}
-.footer-bar .sales-representive b:before {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background: #33cc66;
-  position: absolute;
-  left: 0;
-  bottom: 20px;
-}
-
 /* FOOTER */
 .footer {
   width: 100%;
   display: block;
-  background-color: #001233;
+  background-color: #444;
   position: relative;
   padding-top: 80px;
   color: #fff;
@@ -2711,7 +2602,13 @@ input::-moz-focus-outer {
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px),
   only screen and (max-device-width: 1199px) {
-  .navbar .navbar-button {
+  .hide-mobile{
+    display: block;
+  }
+  .show-mobile{
+    display: none;
+  }
+    .navbar .navbar-button {
     padding: 0 15px;
     margin-left: 20px;
   }
@@ -2773,7 +2670,13 @@ input::-moz-focus-outer {
 /* RESPONSIVE TABLET  */
 @media only screen and (max-width: 991px),
   only screen and (max-device-width: 991px) {
-  .side-widget {
+    .hide-mobile{
+      display: none;
+    }
+    .show-mobile{
+      display: block;
+    }
+    .side-widget {
     box-shadow: none;
   }
 
@@ -2966,7 +2869,23 @@ input::-moz-focus-outer {
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px),
   only screen and (max-device-width: 767px) {
-  .side-widget {
+    .hide-mobile{
+      display: none;
+    }
+    .show-mobile{
+      display: block;
+    }
+    #infoOne .mt{
+      margin-top: 20px;
+    }
+    #infoOne .section-title{
+      margin-bottom: 20px;
+    }
+    #rwanda .r-content{
+      padding: 20px 20px;
+      font-size: 15px;
+    }
+    .side-widget {
     width: 240px;
   }
 
@@ -3209,6 +3128,18 @@ input::-moz-focus-outer {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {
+  .hide-mobile{
+    display: none;
+  }
+  .show-mobile{
+    display: block;
+  }
+  #infoOne .mt{
+    margin-top: 20px;
+  }
+  #infoOne .section-title{
+    margin-bottom: 20px;
+  }
   .slider h2 {
     font-size: 40px;
     margin-top: 0px;
