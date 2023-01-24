@@ -771,6 +771,17 @@ a:hover {
   margin-bottom: 20px;
 }
 
+/* WHATS NEW */
+#new {
+  padding-bottom: 0px;
+}
+#new img {
+  margin: 70px 0px 10px;
+}
+#new .section-title {
+  margin-bottom: 0px;
+}
+
 /* sponsOP */
 .sponsOP-content {
   /* border: 1px solid rgba(50, 50, 50); */
@@ -798,19 +809,23 @@ a:hover {
   padding-top: 50px;
   color: white;
   width: 100%;
-  background: #0b0b0b; /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(
+  background: #444; /* fallback colour. Make sure this is just one solid colour. */
+  /* background: -webkit-linear-gradient(
       rgba(46, 46, 46, 0.8),
       rgba(46, 46, 46, 0.8)
     ),
     url("../images/e555.png");
   background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
-    url("../images/e555.png"); /* The least supported option. */
+    url("../images/e555.png");  */
   background-size: cover;
   background-attachment: fixed;
+  margin-top: 50px;
 }
 #infoOne .section-title {
   text-align: center;
+}
+#infoOne .mt{
+  margin-top: 30px;
 }
 #infoOne .section-title h2 {
   color: white;
