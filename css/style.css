@@ -347,7 +347,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background-color: #444;
+  background-color: #00298f;
   /* background-image: url("../images/overlay.jpg"); */
   background-position: center;
   background-size: cover;
@@ -554,7 +554,7 @@ a:hover {
   flex-wrap: wrap;
   padding: 10px 0;
   position: relative;
-  background-color: #444;
+  background-color: #00298f;
   left: 0;
   top: 0;
   z-index: 4;
@@ -562,7 +562,7 @@ a:hover {
 }
 .navbar.sticky {
   position: fixed;
-  background: #444;
+  background: #00298f;
 }
 .navbar.nav-down {
   top: 0;
@@ -815,7 +815,7 @@ a:hover {
   padding-top: 50px;
   color: white;
   width: 100%;
-  background: #444; /* fallback colour. Make sure this is just one solid colour. */
+  background: #00298f; /* fallback colour. Make sure this is just one solid colour. */
   /* background: -webkit-linear-gradient(
       rgba(46, 46, 46, 0.8),
       rgba(46, 46, 46, 0.8)
@@ -904,7 +904,7 @@ a:hover {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../images/bcg/bcg.png);
+  background-image: url(../images/bcg/kigali-bgcolors.png);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#33cc66", endColorstr="#879015", GradientType=1 );
   background-size: cover;
   position: relative;
@@ -931,7 +931,7 @@ a:hover {
 .slider {
   width: 100%;
   display: block;
-  color: #444;
+  color: #fff;
   padding-bottom: 100px;
 }
 .slider h2 {
@@ -953,7 +953,7 @@ a:hover {
   color: #fff;
 }
 .black{
-  color: #444;
+  color: #00298f;
 }
 .slider .small{
   font-size: 30px;
@@ -982,7 +982,7 @@ a:hover {
   line-height: 60px;
   padding: 0 40px;
   background: #33cc66;
-  color: #444;
+  color: #fff;
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -1307,7 +1307,7 @@ a:hover {
   height: 0;
   border-style: solid;
   border-width: 0 0 14px 14px;
-  border-color: transparent transparent #444 transparent;
+  border-color: transparent transparent #00298f transparent;
   position: absolute;
   right: 4px;
   bottom: 4px;
@@ -2304,7 +2304,7 @@ a:hover {
 .footer {
   width: 100%;
   display: block;
-  background-color: #444;
+  background-color: #00298f;
   position: relative;
   padding-top: 80px;
   color: #fff;
@@ -2967,7 +2967,7 @@ input::-moz-focus-outer {
     margin-left: 0px;
   }
   .slider {
-    background-position: right 800px top 0px;
+    background-position: right 1100px top 0px;
   }
   .section-title h2 {
     font-size: 25px;
