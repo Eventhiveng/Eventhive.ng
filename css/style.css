@@ -1027,7 +1027,7 @@ a:hover {
   width: 100%;
   display: block;
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 35px;
   text-transform: uppercase;
 }
 .section-title p {
@@ -1671,9 +1671,10 @@ a:hover {
   mix-blend-mode: multiply;
 }
 .sales-team figure {
-  width: 100%;
+  width: 80%;
   display: block;
-  margin: 0;
+  margin: auto;
+  text-align: center;
 }
 .sales-team figure img {
   width: 100%;
