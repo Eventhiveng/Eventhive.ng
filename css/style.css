@@ -1631,6 +1631,9 @@ a:hover {
 }
 
 /* SALES TEAM */
+#speakers{
+  padding-bottom: 0px;
+}
 .sales-team {
   width: 100%;
   display: block;
