@@ -1875,6 +1875,56 @@ a:hover {
   background: none;
   margin-bottom: 30px;
 }
+#sponsors a{
+  background: none;
+}
+ @keyframes scroll {
+	 0% {
+		 transform: translateX(0);
+	}
+	 100% {
+		 transform: translateX(calc(-250px * 7));
+	}
+}
+ #sponsors .slider {
+  align-items: center;
+	 display: flex;
+	 justify-content: center;
+	 background: white;
+	 height: 60px;
+	 margin: auto;
+	 overflow: hidden;
+	 position: relative;
+	 width: 90%;
+   padding-bottom: 70px;
+}
+ #sponsors .slider::before, .slider::after {
+	 background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	 content: "";
+	 height: 100px;
+	 position: absolute;
+	 width: 200px;
+	 z-index: 2;
+}
+ #sponsors .slider::after {
+	 right: 0;
+	 top: 0;
+	 transform: rotateZ(180deg);
+}
+#sponsors .slider::before {
+	 left: 0;
+	 top: 0;
+}
+#sponsors .slider .slide-track {
+	 animation: scroll 40s linear infinite;
+	 display: flex;
+	 width: calc(300px * 15);
+}
+ #sponsors .slider .slide {
+	 height: 100px;
+	 width: 250px;
+}
+ 
 .sponsorship .button {
   margin: 0 auto;
 }
