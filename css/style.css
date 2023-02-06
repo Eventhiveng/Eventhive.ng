@@ -1916,7 +1916,7 @@ a:hover {
 	 top: 0;
 }
 #sponsors .slider .slide-track {
-	 animation: scroll 40s linear infinite;
+	 animation: scroll 30s linear infinite;
 	 display: flex;
 	 width: calc(300px * 15);
 }
