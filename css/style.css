@@ -1898,12 +1898,12 @@ a:hover {
 	 width: 90%;
    padding-bottom: 70px;
 }
- #sponsors .slider::before, .slider::after {
+ #sponsors .slider::before, #sponsors .slider::after {
 	 background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 	 content: "";
 	 height: 100px;
 	 position: absolute;
-	 width: 200px;
+	 width: 100px;
 	 z-index: 2;
 }
  #sponsors .slider::after {
