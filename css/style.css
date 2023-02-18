@@ -823,7 +823,7 @@ a:hover {
   transform: rotate(180deg);
   text-align: right;
   color: #feb112;
-  float: left;
+  float: left !important;
   opacity: 0.4;
 }
 .test-text h1{
