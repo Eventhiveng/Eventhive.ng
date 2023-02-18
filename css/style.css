@@ -831,6 +831,13 @@ a:hover {
   font-size: 40px !important;
   font-weight: bolder;
 }
+#testimonial .section-title{
+  letter-spacing: 15px;
+  font-size: 40px !important;
+  font-weight: bolder;
+  /* opacity: 0.5; */
+  color: #003399;
+}
 #testimonial{
   padding-top: 30px;
   padding-bottom: 30px;
