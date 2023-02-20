@@ -1703,6 +1703,7 @@ a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   position: relative;
+  padding: 20px;
 }
 .sales-team:hover {
   transform: translateY(-20px);
@@ -1740,15 +1741,15 @@ a:hover {
 }
 .sales-team figure img {
   width: 100%;
+  filter: none;
+}
+.sales-team figure img:hover {
   filter: grayscale(1);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-}
-.sales-team figure img:hover {
-  filter: none;
 }
 .sales-team .infos {
   width: 100%;
