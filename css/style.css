@@ -1906,19 +1906,24 @@ a:hover {
 .sponsor h6 {
   font-size: 25px;
 }
-
+.sponsorship .section-title{
+  margin-bottom: 20px;
+}
 .sponsorship {
   text-align: center;
   padding-left: 250px;
   padding-right: 250px;
   padding-bottom: 0px;
 }
+.sponsorship img{
+  padding: 20px;
+}
 .sponsorship a {
   display: inline-block;
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: #ffae1e;
+  /* background: #ffae1e; */
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
@@ -1950,13 +1955,6 @@ a:hover {
 }
 .sponsorship a:hover i {
   margin-left: 20px;
-}
-.sponsorship b {
-  -webkit-text-stroke: 1px black;
-  text-stroke: 1px black;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  font-weight: bolder;
 }
 .sponsorship .first {
   margin-right: 50px !important;
