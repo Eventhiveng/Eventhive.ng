@@ -605,13 +605,12 @@
     <!-- SPONSORSHIP OP -->
 
     <!-- Ticket section -->
-    <section id="register">
+    <!-- <section id="register">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <h2 class="uppercase text-center">Book A Seat</h2>
           </div>
-
           <div class="col-lg-12">
             <div class="price-table">
               <div class="table-header">
@@ -623,7 +622,6 @@
                   Access to Exhibition areas.
                   </li>
                   <li>Conference seminar hand-outs.</li>
-                  <!-- <li>Complimentary lunch, coffee,tea or beverages</li> -->
                   <li>Full access pass to all main plenary and breakaway discussions.</li>
                   <li>Access to conference presentations and photo gallery after the conference.</li>
               </ul>
@@ -635,39 +633,32 @@
                 >
               </div>
             </div>
-
-            <!-- <div class="price-table col-lg-6 col-md-6">
-              <div class="table-header">
-                <h3>VIP Pass</h3>
-                <p class="price">₦25,000</p>
-              </div>
-              <ul class="desc list-unstyled">
-                <li>
-                  Access to Exhibition areas.
-                  </li>
-                  <li>Conference seminar hand-outs.</li>
-                  <li>Complimentary lunch, coffee,tea or beverages</li>
-                  <li>Full access pass to all main plenary and breakaway discussions.</li>    
-                  <li>Certificate.</li>  
-                  <li>Access to conference presentations and photo gallery after the conference.</li>
-                  <li>Complimentary mention in conference post event report.</li>
-              </ul>
-              <div class="col-lg-12 text-center">
-                <a
-                  class="button button-small button-line-dark html-popup"
-                  href="https://paystack.com/pay/power-vip"
-                  target="_blank">BOOK</a
-                >
-              </div>
-            </div> -->
-            <!-- <h3 class="text-center uppercase col-md-12" style="font-size: 20px">
-                *50% discount on all categories of early bird ticket ends on the 31st of March, 2023.*
-            </h3> -->
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    <div id="eventbrite-widget-container-611474916937"></div>
 
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+    
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+    
+        window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '611474916937',
+            iframeContainerId: 'eventbrite-widget-container-611474916937',
+    
+            // Optional
+            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        });
+    </script>
+
+    
     <!-- /CTA -->
     <!-- Map start -->
     <div class="container-fluid">
