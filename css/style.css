@@ -233,6 +233,32 @@ textarea.input {
   transform: translateY(0%);
 }
 
+.tick-rem {
+  background-color: #262626;
+  padding: 40px;
+  margin-bottom: 0px;
+}
+
+#ticketR{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+}
+
+.mySlides {
+  display:none;
+}
+
+#highlights .section-title{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#highlights{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
 /*=========================================================
 	LOGO
 ===========================================================*/

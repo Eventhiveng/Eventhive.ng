@@ -24,6 +24,7 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Owl Carousel -->
     <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
     <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
@@ -143,13 +144,73 @@
     </div>
     <!-- /Home --> 
 
+<!-- Highlights -->
+<section
+class="content-section"
+id="highlights">
+<div class="section-title col-md-8 col-md-offset-2">
+  <h3 class="title">
+    <span>The</span>
+    <span style="color: #ffb715;"> Highlights</span>
+  </h3>
+</div>
+<div class="w3-content w3-section" style="max-width:1100px">
+  <img class="mySlides" src="img/highlights/npo 1.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 2.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 3.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 4.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 5.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 6.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 7.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 8.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 9.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 10.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 11.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 12.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 13.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 14.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 15.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 16.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 17.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 18.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 19.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 20.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 21.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 22.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 23.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 24.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 25.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 26.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 27.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 28.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 29.JPG" style="width:100%">
+  <img class="mySlides" src="img/highlights/npo 30.JPG" style="width:100%">
+</div>
+</section>
+<!-- end content-section -->
+
+    <!-- Ticket Reminder -->
+<div id="ticketR" class="section">
+  <div class="row">
+    <div class="section-title tick-rem">
+      <h3 class="title">
+        <span style="color: white;">SEE YOU AT </span> 
+        <span style="color: #ffcc00">NIGERIA POWER</span> 
+        <span style="color: white;">OUTLOOK 2024!</span>
+      </h3>
+    </div>
+  </div>
+</div>
+<!-- Ticket Reminder -->
+
+
     <!-- ABOUT -->
     <section class="content-section" id="about">
       <div class="container">
         <div class="row about-content">
           <div class="col-12">
             <div class="section-title text-center">
-              <h2><b>About</b></h2>
+              <h2><b>About Nigeria Power Outlook</b></h2>
             </div>
           </div>
             <div class="col-lg-6">
@@ -642,11 +703,11 @@
       </div>
     </section> -->
     
-
+    
     
     <!-- /CTA -->
     <!-- Map start -->
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <div id="container-map">
@@ -654,7 +715,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Map end -->
     <!-- Contact -->
     <div id="contact" class="section">
@@ -743,6 +804,24 @@
       <!-- /container -->
     </footer>
     <!-- /Footer -->
+
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+
 
     <!-- jQuery Plugins -->
     <script src="js/jquery.min.js"></script>
