@@ -328,8 +328,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background-color: #002e94;
-  /* background-image: url("../images/overlay.jpg"); */
+  background: linear-gradient(162.03deg, #081B43 22.1%, #000000 49.24%);
   background-position: center;
   background-size: cover;
   z-index: 5;
@@ -535,16 +534,16 @@ a:hover {
   flex-wrap: wrap;
   padding: 10px 0;
   position: relative;
-  background: #002e94;
+  background: #081B43;
   left: 0;
   top: 0;
   z-index: 4;
   transition: top ease 1s;
 }
-.navbar.sticky {
+/* .navbar.sticky {
   position: fixed;
   background: #002e94;
-}
+} */
 .navbar.nav-down {
   top: 0;
 }
@@ -795,17 +794,14 @@ a:hover {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background-color: #002e94;
-  background-image: url(../images/bg4\ -\ Copy.png);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ffb000", endColorstr="#879015", GradientType=1 );
+  background-image: linear-gradient( to bottom, rgba(8, 27, 67, 0.70), rgba(0, 0, 0, 0.73) ), url(../images/bcg/main-bg.jpg);
   background-size: cover;
   position: relative;
   text-align: center;
 }
 .slider .container {
   position: relative;
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -835,8 +831,8 @@ a:hover {
   text-align: left;
 }
 .slider h2 b {
-  -webkit-text-stroke: 3px #fff;
-  text-stroke: 3px #fff;
+  -webkit-text-stroke: 1px #fff;
+  text-stroke: 1px #fff;
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: bolder;
