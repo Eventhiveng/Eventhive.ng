@@ -90,7 +90,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Mont";
+  font-family: "Mont" !important;
   font-size: 17px;
   color: #0b0b0b;
   -webkit-font-smoothing: antialiased;
@@ -780,6 +780,7 @@ a:hover {
 }
 #about .section-title {
   text-align: left;
+  margin-bottom: 0px !important;
 }
 
 /* INFO */
@@ -810,18 +811,63 @@ a:hover {
   margin-right: 10px;
 }
 
-/* WHATS NEW */
-#new {
+/* PARTNERSHIP */
+.partner{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../images/bcg/06.jpg);
+  background-size: cover;
+  position: relative;
+}
+.partner h2{
+  color: white;
+}
+.partner h6{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  /* color: #D39E00; */
+}
+.partner .p-item{
+  padding: 20px;
+}
+
+/* KEY THEMES */
+.themes {
+  color: #000;
   padding-bottom: 0px;
 }
-#new img {
-  margin: 70px 0px 10px;
+.themes .t-item{
+  /* padding: 20px 0px; */
+  margin: 20px;
+  /* max-width: 200px; */
+  text-align: center;
 }
-.FS-20 {
+.themes h6{
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* WHATS NEW */
+.w-new{
+  align-items: center;
+  color: white;
+  background-image: linear-gradient( to bottom, rgba(8, 27, 67, 0.60), rgba(0, 0, 0, 0.60) ), url(../images/bcg/02.jpg);
+}
+.w-new .w-item{
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  margin: 20px;
+  max-width: 500px;
+  padding: 30px;
+}
+.w-new h6{
   font-size: 20px;
-}
-#new .section-title {
-  margin-bottom: 0px;
+  font-weight: bold;
+  color: #D39E00;
+  letter-spacing: 3px;
 }
 
 /* SLIDER */
@@ -830,14 +876,14 @@ a:hover {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background-image: linear-gradient( to bottom, rgba(8, 27, 67, 0.70), rgba(0, 0, 0, 0.73) ), url(../images/bcg/main-bg.jpg);
+  background-image: linear-gradient( to bottom, rgba(8, 27, 67, 0.20), rgba(0, 0, 0, 0.73) ), url(../images/bcg/00.jpg);
   background-size: cover;
   position: relative;
   text-align: center;
 }
 .slider .container {
   position: relative;
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -902,6 +948,7 @@ a:hover {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-left: 0px !important;
   border: 2px solid #D39E00;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -946,7 +993,7 @@ a:hover {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 10px;
-  border: 2px solid transparent;
+  border: 2px solid white;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -977,7 +1024,7 @@ a:hover {
 .content-section {
   width: 100%;
   display: block;
-  padding: 80px 0;
+  padding: 50px 0;
   position: relative;
 }
 
@@ -993,8 +1040,8 @@ a:hover {
 .section-title {
   width: 100%;
   display: block;
-  text-align: center;
-  margin-bottom: 50px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 .section-title h6 {
   display: inline-block;
@@ -1002,12 +1049,12 @@ a:hover {
   z-index: 1;
   font-weight: 800;
   letter-spacing: 3px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .section-title h6:before {
   content: "";
   width: 100%;
-  height: 6px;
+  height: 2px;
   background: #D39E00;
   position: absolute;
   left: 0;
@@ -1019,7 +1066,8 @@ a:hover {
   width: 100%;
   display: block;
   margin-bottom: 0;
-  font-size: 47px;
+  font-size: 35px;
+  font-weight: bold;
 }
 .section-title p {
   width: 100%;
@@ -1028,6 +1076,9 @@ a:hover {
   margin-top: 20px;
 }
 
+#new img{
+  margin: 20px 0px 10px;
+}
 /* COUNTER BOX */
 .counter-box {
   width: 100%;
@@ -1039,6 +1090,9 @@ a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   color: white;
+}
+.counter-box img{
+  margin-bottom: 20px;
 }
 .counter-box .odometer {
   display: inline-block;
