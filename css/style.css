@@ -734,6 +734,46 @@ a:hover {
 }
 /* https://image.freepik.com/free-photo/film-texture-overlay_173951-28.jpg */
 
+/* S-SLIDER */
+.s-slider .slider {
+  align-items: center;
+	 display: flex;
+	 justify-content: center;
+	 background: white;
+	 height: 60px;
+	 margin: auto;
+	 overflow: hidden;
+	 position: relative;
+	 width: 90%;
+   padding-bottom: 70px;
+}
+ .s-slider .slider::before, .s-slider .slider::after {
+	 background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	 content: "";
+	 height: 100px;
+	 position: absolute;
+	 width: 100px;
+	 z-index: 2;
+}
+ .s-slider .slider::after {
+	 right: 0;
+	 top: 0;
+	 transform: rotateZ(180deg);
+}
+.s-slider .slider::before {
+	 left: 0;
+	 top: 0;
+}
+.s-slider .slider .slide-track {
+	 animation: scroll 30s linear infinite;
+	 display: flex;
+	 width: calc(300px * 15);
+}
+ .s-slider .slider .slide {
+	 height: 100px;
+	 width: 250px;
+}
+
 /* ABOUT */
 .about-content {
   border: 1px solid #D39E00;
@@ -743,6 +783,7 @@ a:hover {
 #about{
   background: url("../images/bcg/About\ Us\ Section.png");
   color: white;
+  padding-bottom: 50px !important;
 }
 #about .container{
   padding: 70px;
@@ -1001,9 +1042,6 @@ a:hover {
 .counter-box {
   width: 100%;
   display: block;
-  /* border: 1px solid #e8e8e8; */
-  margin-top: 20px;
-  padding: 30px;
   position: relative;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1014,7 +1052,7 @@ a:hover {
 }
 .counter-box .odometer {
   display: inline-block;
-  font-size: 70px;
+  font-size: 50px;
 }
 .counter-box .value {
   font-size: 24px;
