@@ -735,43 +735,33 @@ a:hover {
 /* https://image.freepik.com/free-photo/film-texture-overlay_173951-28.jpg */
 
 /* S-SLIDER */
-.s-slider .slider {
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.s-slider {
   align-items: center;
-	 display: flex;
-	 justify-content: center;
-	 background: white;
-	 height: 60px;
-	 margin: auto;
-	 overflow: hidden;
-	 position: relative;
-	 width: 90%;
-   padding-bottom: 70px;
+  justify-content: center;
+  height: 100px;
+  /* margin: 50px 0px; */
+  overflow: hidden;
+  background-color: white !important;
+  position: relative;
+  width: auto;
+  
 }
- .s-slider .slider::before, .s-slider .slider::after {
-	 background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-	 content: "";
-	 height: 100px;
-	 position: absolute;
-	 width: 100px;
-	 z-index: 2;
+.s-slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(210px * 15);
 }
- .s-slider .slider::after {
-	 right: 0;
-	 top: 0;
-	 transform: rotateZ(180deg);
-}
-.s-slider .slider::before {
-	 left: 0;
-	 top: 0;
-}
-.s-slider .slider .slide-track {
-	 animation: scroll 30s linear infinite;
-	 display: flex;
-	 width: calc(300px * 15);
-}
- .s-slider .slider .slide {
-	 height: 100px;
-	 width: 250px;
+.s-slider .slide {
+  height: 100px;
+  width: 250px;
 }
 
 /* ABOUT */
