@@ -1276,20 +1276,11 @@ a:hover {
 
 /*-----Testimonial-------*/
 #testimonials {
-  margin-bottom: 40px;
   padding-top: 30px;
   color: white;
   width: 100%;
-  background: url("../images/Group\ 12.png");
+  background-image: linear-gradient( to bottom, rgba(8, 27, 67, 0.80), rgba(0, 0, 0, 0.80) ), url(../images/bcg/01.jpg);
   background-size: cover;
-  background-attachment: fixed;
-}
-#testimonials .hr {
-  width: 70px;
-  border: 3px solid #D39E00;
-  /* margin: 0px; */
-  margin-bottom: 10px;
-  /* text-align: center !important; */
 }
 .testimonial:after {
   position: absolute;
@@ -2060,6 +2051,12 @@ input::-moz-focus-outer {
   }
   #about .container{
     padding: 30px;
+  }
+  .testimonial .carousel-item{
+    margin-top: 50px;
+  }
+  .testimonial{
+    background-position: right 500px top 0px;
   }
   .slider{
     background-position: right 1250px top 0px;
