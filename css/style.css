@@ -1092,7 +1092,6 @@ a:hover {
   font-size: 13px;
   font-weight: 600;
   margin: 20px;
-  margin-left: 0px !important;
   border: 2px solid #D39E00;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
