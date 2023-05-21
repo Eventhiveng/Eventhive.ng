@@ -746,7 +746,7 @@ a:hover {
 .s-slider {
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 80px;
   /* margin: 50px 0px; */
   overflow: hidden;
   background-color: white !important;
@@ -757,11 +757,12 @@ a:hover {
 .s-slider .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(210px * 15);
+  width: calc(160px * 20);
 }
 .s-slider .slide {
   height: 100px;
   width: 250px;
+  padding: 0px 2px;
 }
 
 /* ABOUT */
@@ -1043,19 +1044,20 @@ a:hover {
   text-align: left;
   margin-bottom: 20px;
 }
-.section-title h6 {
+.section-title h2 {
   display: inline-block;
   position: relative;
   z-index: 1;
   font-weight: 800;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 16px;
+  padding-bottom: 10px;
 }
-.section-title h6:before {
+.section-title h2:before {
   content: "";
   width: 100%;
-  height: 2px;
-  background: #D39E00;
+  height: 3px;
+  background: #D39E00 !important;
   position: absolute;
   left: 0;
   bottom: 0;
