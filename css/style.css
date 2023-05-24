@@ -1259,7 +1259,8 @@ textarea.input {
   list-style-type: disc;
 }
 .ticket h3 {
-  font-size: 28px;
+  font-size: 20px;
+  text-align: center;
 }
 .ticket .section-title {
   margin-bottom: 0px;
