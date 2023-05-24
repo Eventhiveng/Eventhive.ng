@@ -51,37 +51,10 @@ theme.
 	
 
 */
-/* CUSTOM FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Mont-Regular.eot");
-  src: local("☺"), url("../fonts/Mont-Regular.woff") format("woff"),
-    url("../fonts/Mont-Regular.ttf") format("truetype"),
-    url("../fonts/Mont-Regular.svg") format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Mont-Bold.eot");
-  src: local("☺"), url("../fonts/Mont-Bold.woff") format("woff"),
-    url("../fonts/Mont-Bold.ttf") format("truetype"),
-    url("../fonts/Mont-Bold.svg") format("svg");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/Mont-Heavy.eot");
-  src: local("☺"), url("../fonts/Mont-Heavy.woff") format("woff"),
-    url("../fonts/Mont-Heavy.ttf") format("truetype"),
-    url("../fonts/Mont-Heavy.svg") format("svg");
-  font-weight: 800;
-  font-style: normal;
-}
+
 * {
   outline: none !important;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -91,7 +64,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Mont";
+  font-family: 'Poppins', sans-serif;
   font-size: 17px;
   color: #0b0b0b;
   -webkit-font-smoothing: antialiased;
@@ -130,7 +103,7 @@ a:hover {
   color: #ffa600;
 }
 .transparent {
-  -webkit-text-stroke: 2px #0b0b0b;
+  -webkit-text-stroke: 1px #0b0b0b;
   text-stroke: 1px #0b0b0b;
   -webkit-text-fill-color: transparent;
   color: transparent;
@@ -791,7 +764,7 @@ a:hover {
   /* margin-bottom: 50px; */
 }
 .slider h2 b {
-  -webkit-text-stroke: 2px #fffcf0;
+  -webkit-text-stroke: 1px #fffcf0;
   text-stroke: 1px #fffcf0;
   -webkit-text-fill-color: transparent;
   color: transparent;
