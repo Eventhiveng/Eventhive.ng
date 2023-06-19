@@ -1184,7 +1184,7 @@ a:hover {
   font-size: 25px;
 }
 
-.sponsorship {
+.sponsorship .row{
   text-align: center;
   padding-left: 250px;
   padding-right: 250px;
