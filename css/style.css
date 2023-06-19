@@ -1241,7 +1241,8 @@ textarea.input {
   width: 100%;
 }
 .spons-media img {
-  margin: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 .spons-media{
   padding-bottom: 0px;
