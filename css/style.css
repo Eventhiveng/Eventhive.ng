@@ -1241,7 +1241,20 @@ a:hover {
   }
 
 #speakers{
-  padding-bottom: 0px;
+  padding-top: 20px;
+}
+#speakers .infos{
+  text-align: center;
+}
+#speakers .infos h6{
+  font-weight: bolder;
+  letter-spacing: 3px;
+  margin: 0px;
+}
+#speakers .infos b{
+  color: #D39E00;
+  font-size: 13px;
+  margin: 0px;
 }
 
 /*-----Testimonial-------*/
