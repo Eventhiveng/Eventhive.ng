@@ -95,11 +95,14 @@ body {
   font-weight: bold;
 }
 .ex-color {
-  color: #e63946;
+  color: #f50000;
   font-weight: bold;
 }
 .MB-20 {
   margin-bottom: 20px !important;
+}
+.MT-20 {
+  margin-top: 20px !important;
 }
 
 
@@ -206,7 +209,7 @@ a:hover {
 }
 .hamburger span {
   display: block;
-  background: #fff;
+  background: #010066;
 }
 .hamburger #hamburger {
   position: absolute;
@@ -507,7 +510,7 @@ a:hover {
   flex-wrap: wrap;
   padding: 10px 0;
   position: relative;
-  background: #020559;
+  background: transparent;
   left: 0;
   top: 0;
   z-index: 4;
@@ -550,7 +553,7 @@ a:hover {
 }
 .navbar .languages ul li a {
   display: inline-block;
-  color: #fff;
+  color: #010066;
   position: relative;
 }
 .navbar .languages ul li a:hover {
@@ -579,7 +582,7 @@ a:hover {
 }
 .navbar .languages ul li a:hover:before {
   width: 100%;
-  background: #ffaf00;
+  background: #010066;
   transition: width 0.25s ease;
 }
 .navbar .languages ul li a:hover:after {
@@ -640,8 +643,20 @@ a:hover {
 .navbar .site-menu ul li a {
   display: inline-block;
   font-size: 15px;
-  color: #fff;
+  color: #010066;
+  font-weight: bolder;
   position: relative;
+}
+.navbar .site-menu .contact-btn{
+  border: 2px solid #010066;
+  padding: 3px 20px;
+  transition: 0.25s;
+}
+.navbar .site-menu .contact-btn:hover{
+  border: 2px solid #010066;
+  background-color: #010066;
+  color: white;
+  transition: 0.25s;
 }
 .navbar .site-menu ul li a:hover {
   text-decoration: none;
@@ -664,12 +679,12 @@ a:hover {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: #ffaf00;
+  background: #010066;
   transition: width 0.25s ease;
 }
 .navbar .site-menu ul li a:hover:before {
   width: 100%;
-  background: #ffaf00;
+  background: #010066;
   transition: width 0.25s ease;
 }
 .navbar .site-menu ul li a:hover:after {
@@ -679,13 +694,13 @@ a:hover {
 }
 .navbar .search {
   display: inline-block;
-  color: #fff;
+  color: #010066;
   font-size: 24px;
   cursor: pointer;
 }
 .navbar .hamburger {
   display: inline-block;
-  color: #fff;
+  color: #010066;
 }
 .navbar .navbar-button {
   height: 58px;
@@ -701,6 +716,7 @@ a:hover {
   display: inline-block;
   transform: translateY(3px);
   margin-right: 5px;
+  color: #010066;
 }
 .navbar .navbar-button:hover {
   text-decoration: none;
@@ -740,7 +756,7 @@ a:hover {
 
 /* ABOUT */
 .about-content {
-  border: 1px solid #ffaf00;
+  border: 2px solid #f50000;
   border-radius: 0px 50px 0px;
   padding: 50px 20px 30px 20px;
 }
@@ -787,15 +803,15 @@ a:hover {
 
 /* PARTNERSHIP */
 .partner{
-  color: white;
+  color: black;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../images/bcg/06.jpg);
+  /* background-image: url(../images/bcg/06.jpg); */
   background-size: cover;
   position: relative;
 }
 .partner h2{
-  color: white;
+  color: black;
 }
 .partner h6{
   font-size: 20px;
@@ -850,7 +866,7 @@ a:hover {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background-image: linear-gradient( to bottom, rgba(8, 27, 67, 0.20), rgba(0, 0, 0, 0.73) ), url(../images/bcg/00.jpg);
+  background-image: url(../images/bcg/Hero\ section.png);
   background-size: cover;
   position: relative;
   text-align: center;
@@ -876,7 +892,7 @@ a:hover {
 .slider {
   width: 100%;
   display: block;
-  color: #fff;
+  color: black;
   padding-bottom: 100px;
 }
 .slider h2 {
@@ -887,27 +903,19 @@ a:hover {
   text-align: left;
 }
 .slider h2 b {
-  -webkit-text-stroke: 1px #fff;
-  text-stroke: 1px #fff;
+  -webkit-text-stroke: 3px black;
+  text-stroke: 3px black;
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: bolder;
 }
-.slider p:nth-of-type(2) {
+.slider .p-one {
   margin-bottom: 40px;
   margin-top: 0px;
-}
-.slider p:nth-of-type(3) {
-  margin-bottom: 70px;
-}
-.slider p {
+  font-size: 17px;
+  font-weight: bolder;
   text-align: left;
   width: 100%;
-  margin-bottom: 0px;
-}
-.p-one {
-  font-size: 20px;
-  font-weight: bolder;
 }
 .slider a{
   margin: 20px;
@@ -930,10 +938,10 @@ a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-.slider .register-btn:hover{
+/* .slider .register-btn:hover{
   border: 2px solid #ffaf00;
   background-color: transparent;
-  color: #fff;
+  color: #fff; */
 }
 .slider .sponsor-btn {
   display: inline-block;
@@ -962,12 +970,12 @@ a:hover {
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: transparent;
+  background: #010066;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 10px;
-  border: 2px solid white;
+  border: 2px solid #010066;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -1014,7 +1022,7 @@ a:hover {
 .section-title {
   width: 100%;
   display: block;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 }
 .section-title h2 {
@@ -1025,8 +1033,9 @@ a:hover {
   letter-spacing: 2px;
   font-size: 16px;
   padding-bottom: 10px;
+  text-align: center;
 }
-.section-title h2:before {
+/* .section-title h2:before {
   content: "";
   width: 100%;
   height: 3px;
@@ -1036,7 +1045,8 @@ a:hover {
   bottom: 0;
   z-index: -1;
   mix-blend-mode: difference;
-}
+  text-align: center;
+} */
 .section-title h2 {
   width: 100%;
   display: block;
