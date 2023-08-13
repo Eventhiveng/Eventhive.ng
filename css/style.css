@@ -209,7 +209,7 @@ a:hover {
 }
 .hamburger span {
   display: block;
-  background: #010066;
+  background: #fff;
 }
 .hamburger #hamburger {
   position: absolute;
@@ -510,7 +510,7 @@ a:hover {
   flex-wrap: wrap;
   padding: 10px 0;
   position: relative;
-  background: transparent;
+  background: #010066;
   left: 0;
   top: 0;
   z-index: 4;
@@ -553,7 +553,7 @@ a:hover {
 }
 .navbar .languages ul li a {
   display: inline-block;
-  color: #010066;
+  color: #fff;
   position: relative;
 }
 .navbar .languages ul li a:hover {
@@ -582,7 +582,7 @@ a:hover {
 }
 .navbar .languages ul li a:hover:before {
   width: 100%;
-  background: #010066;
+  background: #fff;
   transition: width 0.25s ease;
 }
 .navbar .languages ul li a:hover:after {
@@ -643,19 +643,19 @@ a:hover {
 .navbar .site-menu ul li a {
   display: inline-block;
   font-size: 15px;
-  color: #010066;
+  color: #fff;
   font-weight: bolder;
   position: relative;
 }
 .navbar .site-menu .contact-btn{
-  border: 2px solid #010066;
+  border: 2px solid #fff;
   padding: 3px 20px;
   transition: 0.25s;
 }
 .navbar .site-menu .contact-btn:hover{
-  border: 2px solid #010066;
-  background-color: #010066;
-  color: white;
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #444;
   transition: 0.25s;
 }
 .navbar .site-menu ul li a:hover {
@@ -679,12 +679,12 @@ a:hover {
   bottom: 0;
   height: 2px;
   width: 0;
-  background: #010066;
+  background: #fff;
   transition: width 0.25s ease;
 }
 .navbar .site-menu ul li a:hover:before {
   width: 100%;
-  background: #010066;
+  background: #fff;
   transition: width 0.25s ease;
 }
 .navbar .site-menu ul li a:hover:after {
@@ -694,19 +694,19 @@ a:hover {
 }
 .navbar .search {
   display: inline-block;
-  color: #010066;
+  color: #fff;
   font-size: 24px;
   cursor: pointer;
 }
 .navbar .hamburger {
   display: inline-block;
-  color: #010066;
+  color: #fff;
 }
 .navbar .navbar-button {
   height: 58px;
   line-height: 58px;
   padding: 0 40px;
-  color: #010066;
+  color: #fff;
   background: #ffaf00;
   font-size: 13px;
   font-weight: 600;
@@ -716,7 +716,7 @@ a:hover {
   display: inline-block;
   transform: translateY(3px);
   margin-right: 5px;
-  color: #010066;
+  color: #fff;
 }
 .navbar .navbar-button:hover {
   text-decoration: none;
@@ -763,10 +763,13 @@ a:hover {
 #about{
   background: url("../images/bcg/bg-0.jpg");
   color: white;
-  padding-bottom: 50px !important;
+  /* padding-bottom: 50px !important; */
+}
+#about img{
+  margin-top: 30px;
 }
 #about .container{
-  padding: 70px;
+  padding: 40px 70px;
 }
 #about .section-title {
   text-align: left;
@@ -895,7 +898,7 @@ a:hover {
 .slider {
   width: 100%;
   display: block;
-  color: #444;
+  color: #fff;
   padding-bottom: 100px;
 }
 .slider h2 {
@@ -906,8 +909,8 @@ a:hover {
   text-align: left;
 }
 .slider h2 b {
-  -webkit-text-stroke: 3px #444;
-  text-stroke: 3px #444;
+  -webkit-text-stroke: 3px #fff;
+  text-stroke: 3px #fff;
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: bolder;
@@ -937,7 +940,7 @@ a:hover {
 .slider .register-btn {
   display: inline-block;
   height: 60px;
-  line-height: 60px;
+  line-height: 55px;
   padding: 0 40px;
   background: #ffaf00;
   color: #0b0b0b;
@@ -982,14 +985,14 @@ a:hover {
 .slider .download-btn {
   display: inline-block;
   height: 60px;
-  line-height: 60px;
+  line-height: 55px;
   padding: 0 40px;
-  background: #010066;
+  background: #353535;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 10px;
-  border: 2px solid #010066;
+  border: 2px solid #353535;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -1147,7 +1150,7 @@ a:hover {
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  color: white;
+  color: #444;
 }
 .counter-box img{
   margin-bottom: 20px;
@@ -1164,7 +1167,7 @@ a:hover {
   font-weight: 800;
   letter-spacing: 2px;
   position: relative;
-  color: white;
+  color: #444;
 }
 .counter-box p {
   font-size: 13px;
@@ -2069,9 +2072,7 @@ input::-moz-focus-outer {
     .side-widget {
     width: 240px;
   }
-  #about{
-    background: url("../images/bcg/06.jpg");
-  }
+  
   #about .container{
     padding: 30px;
   }
@@ -2083,18 +2084,10 @@ input::-moz-focus-outer {
   }
   .slider{
     background-position: right 1000px top 0px;
-    height: 90vh;
     text-align: left !important;
-    background-image: linear-gradient( to bottom, rgba(8, 27, 67, 0.20), rgba(0, 0, 0, 0.20) ), url(/images/bcg/Hero\ section.png);
   }
   .slider .underline{
     margin-bottom: 20px;
-  }
-  .navbar{
-    background: linear-gradient( to bottom, rgba(8, 27, 67, 0.20), rgba(0, 0, 0, 0.20) );
-  }
-  .slider h2 b{
-    color: #444;
   }
   .slider a {
     margin-bottom: 15px;
@@ -2104,6 +2097,9 @@ input::-moz-focus-outer {
   }
 .sponsor .second{
   padding: 30px;
+}
+#about{
+  background: url("../images/bcg/06.jpg");
 }
   .partner{
     background-position: right 1250px top 0px;
@@ -2306,6 +2302,13 @@ input::-moz-focus-outer {
   .footer .b-right{
     border-right: none;
   }
+}
+
+@media(max-width: 320px){
+
+}
+@media only screen and (min-width: 200px) and (max-width: 300px){
+
 }
 
 /* SCROLL BAR */
