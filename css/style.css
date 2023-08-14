@@ -929,7 +929,7 @@ a:hover {
   letter-spacing: 7px;
 }
 .slider .underline{
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 14px;
   margin-top: 50px;
 }
@@ -1571,9 +1571,16 @@ padding-bottom:50px;
   padding: 60px 60px 0px 0px;
   text-align: center;
 }
+.sponsor .section-title{
+  color: #444;
+}
 .sponsor{
   padding-bottom: 0px;
 }
+.sponsor ol{
+  text-align: left;
+}
+
 
 /* TESTIOMONIALS SLIDER */
 .testimonials-slider {
@@ -2075,6 +2082,10 @@ input::-moz-focus-outer {
 }
 .ticket .tick-item ul{
   height: 260px;
+}
+.w-new .w-item{
+  max-width: 350px;
+  margin: 20px;
 }
   .partner{
     background-position: right 1250px top 0px;
