@@ -428,7 +428,6 @@ a:hover {
 }
 .side-widget .site-menu ul li a {
   color: #fff;
-  font-size: 18px;
   font-weight: 600;
 }
 .side-widget small {
@@ -1500,7 +1499,7 @@ padding-bottom:50px;
   padding: 20px 10px 20px 10px;
   margin: 20px;
   max-width: 400px;
-  max-height: 400px;
+  max-height: 450px;
 }
 .ticket .bgc1{
   background-image: url(../images/bcg/05.jpg);
@@ -1512,7 +1511,7 @@ padding-bottom:50px;
   box-shadow: 0 40px 90px 0 rgba(0, 0, 0, 0.15) !important;
 }
 .ticket .tick-item ul {
-  height: 170px;
+  height: 190px;
   color: #444;
 }
 .ticket .tick-item:hover {
@@ -1727,7 +1726,7 @@ padding-bottom:50px;
 .footer {
   width: 100%;
   display: block;
-  background-color: #010066;
+  background: url(/images/bcg/05.jpg);
   position: relative;
   padding-top: 80px;
   color: #fff;
@@ -1867,32 +1866,14 @@ input::-moz-focus-outer {
   .navbar .navbar-button span {
     display: none;
   }
-
-  .slider h2 {
-    font-size: 60px;
-    margin-top: 70px;
-    margin-left: 0px;
-  }
-
+  
   .slider .left {
     margin-left: 0px;
-  }
-  .slider p:nth-of-type(1) {
-    margin-bottom: 0px;
-    margin-top: 120px;
-  }
-  .slider p:nth-of-type(3) {
-    margin-bottom: 70px;
-  }
-  .slider p {
-    margin-bottom: 0px;
   }
   .slider h2 {
     margin-top: 10px;
     margin-bottom: 40px;
-  }
-  .slider {
-    background-position: right 1400px top 0px;
+    font-size: 40px;
   }
   .counter-box .odometer {
     font-size: 30px;
@@ -1934,13 +1915,14 @@ input::-moz-focus-outer {
   }
   .w-new .w-item{
     margin: 5px;
-    max-width: 350px;
-  }
-  .slider{
-    background-position: right 100px top 0px;
+    max-width: 200px;
+    padding: 10px;
   }
   .w-new{
     background-position: right 1200px top 0px;
+  }
+  .sponsor .second{
+    padding: 50px;
   }
   .navbar .site-menu {
     display: none;
@@ -1963,16 +1945,6 @@ input::-moz-focus-outer {
   }
   .slider {
     height: auto;
-  }
-  .slider p:nth-of-type(1) {
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  .slider p:nth-of-type(3) {
-    margin-bottom: 70px;
-  }
-  .slider p {
-    margin-bottom: 0px;
   }
   .slider h2 {
     margin-top: 10px;
@@ -2007,7 +1979,7 @@ input::-moz-focus-outer {
     color: #fff;
   }
   .slider {
-    background-position: right 1200px top 0px;
+    background-position: right 850px top 0px;
   }
   
   .slider h2 b{
@@ -2033,10 +2005,6 @@ input::-moz-focus-outer {
 
   .col-lg-5 .recent-news {
     margin-bottom: 30px;
-  }
-  .footer {
-    background-image: url(../images/bcg/07\ -\ Copy.jpg);
-    background-position: right 5000px top 0px;
   }
   .footer h3{
     text-align: center;
@@ -2100,6 +2068,13 @@ input::-moz-focus-outer {
 }
 #about{
   background: url("../images/bcg/06.jpg");
+  text-align: center;
+}
+.ticket .tick-item{
+  max-height: 500px;
+}
+.ticket .tick-item ul{
+  height: 260px;
 }
   .partner{
     background-position: right 1250px top 0px;
