@@ -507,7 +507,7 @@ a:hover {
   flex-wrap: wrap;
   padding: 10px 0;
   position: relative;
-  background: #020559;
+  background: #272727;
   left: 0;
   top: 0;
   z-index: 4;
@@ -740,13 +740,12 @@ a:hover {
 
 /* ABOUT */
 .about-content {
-  border: 1px solid #D39E00;
+  border: 2px solid #D39E00;
   border-radius: 0px 50px 0px;
   padding: 50px 20px 30px 20px;
 }
 #about{
-  background: url("../images/bcg/About\ Us\ Section.png");
-  color: white;
+  color: #444;
   padding-bottom: 50px !important;
 }
 #about .container{
@@ -790,7 +789,7 @@ a:hover {
   color: white;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../images/bcg/06.jpg);
+  background-image: url(../images/backgrounds/0033.png);
   background-size: cover;
   position: relative;
 }
@@ -828,7 +827,7 @@ a:hover {
 .w-new{
   align-items: center;
   color: white;
-  background-image: linear-gradient( to bottom, rgba(8, 27, 67, 0.60), rgba(0, 0, 0, 0.60) ), url(../images/bcg/02.jpg);
+  background-image: url(../images/backgrounds/222.png);
 }
 .w-new .w-item{
   background: rgba(255, 255, 255, 0.15);
@@ -1052,10 +1051,7 @@ a:hover {
 }
 
 /* HIGHLIGHTS */
-#new img{
-  margin: 20px 0px 10px;
-}
-#new .register-btn {
+.videoBox .new .register-btn {
   display: inline-block;
   height: 60px;
   line-height: 60px;
@@ -1072,45 +1068,88 @@ a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-#new .register-btn:hover{
+.videoBox .new .register-btn:hover{
   border: 2px solid #D39E00;
   background-color: transparent;
   color: #D39E00;
 }
-#new .sponsor-btn {
+.videoBox .new .sponsor-btn {
   display: inline-block;
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: transparent;
-  color:#000 ;
+  background: #000;
+  color:#fff ;
   font-size: 13px;
   font-weight: 600;
   margin: 20px;
-  border: 2px solid #000;
+  border: 2px solid transparent;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-#new .sponsor-btn:hover{
-  border: 2px solid transparent;
-  background-color: #000;
-  color: #fff;
+.videoBox .new .sponsor-btn:hover{
+  border: 2px solid #000;
+  background: transparent;
+  color: #000;
 }
-#new a i {
+.videoBox .new a i {
   display: inline-block;
   margin-left: 10px;
   font-size: 20px;
   transform: translateY(3px);
 }
-#new a:hover {
+.videoBox .new a:hover {
   text-decoration: none;
   /* box-shadow: 0 20px 20px #000; */
 }
-#new a:hover i {
+.videoBox .new a:hover i {
   margin-left: 20px;
+}
+
+/* VIDEO BOX */
+.videoBox h2 {
+  margin-top: 30px;
+  color: #0b0b0b;
+  border-bottom: 3px solid #ffa200;
+}
+.video-box {
+  width: 100%;
+  display: block;
+  margin: 0;
+  background: #0b0b0b;
+  position: relative;
+  margin: 20px 0px 30px 0px !important;
+}
+.video-box .play-btn {
+  width: 70px;
+  height: 70px;
+  line-height: 66px;
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  z-index: 1;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  text-indent: 2px;
+}
+.video-box .play-btn:hover {
+  background: #ffa200;
+  border-color: #ffa200;
+  color: #0b0b0b;
+}
+.video-box video {
+  width: 100%;
+  display: block;
+  margin: 0;
+  opacity: 0.5;
+  filter: grayscale(1);
 }
 
 /* COUNTER BOX */
@@ -1123,7 +1162,7 @@ a:hover {
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  color: white;
+  color: #444;
 }
 .counter-box img{
   margin-bottom: 20px;
@@ -1140,11 +1179,11 @@ a:hover {
   font-weight: 800;
   letter-spacing: 2px;
   position: relative;
-  color: white;
+  color: #444;
 }
 .counter-box p {
   font-size: 13px;
-  color: white;
+  color: #444;
 }
 
 .autoplay {
@@ -1465,28 +1504,23 @@ padding-bottom:50px;
 }
 
 .ticket .tick-item {
-  border: 1px solid #e8e8e8;
+  border: 2px solid #e8e8e8;
+  border-radius: 20px;
   background-color: #fff;
-  color: #0b0b0b;
+  color: #444;
   transition: 0.4s;
   padding: 20px 10px 20px 10px;
   margin: 20px;
-  max-width: 500px;
-}
-.ticket .bgc1{
-  background-image: url(../images/bcg/05.jpg);
-}
-.ticket .bgc2{
-  background-image: url(../images/bcg/04.jpg);
+  max-width: 400px;
+  min-height: 400px;
 }
 .ticket .bgc:hover {
   box-shadow: 0 40px 90px 0 rgba(0, 0, 0, 0.15) !important;
 }
 .ticket .tick-item ul {
-  height: 150px;
+  height: 190px;
   overflow: hidden;
-  overflow-y: scroll;
-  color: white;
+  color: #444;
 }
 .ticket .tick-item:hover {
   box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.15);
@@ -1499,7 +1533,7 @@ padding-bottom:50px;
 .ticket a {
   display: inline-block;
   height: 50px;
-  line-height: 50px;
+  line-height: 40px;
   padding: 0 30px;
   border: 4px solid #D39E00;
   background: #D39E00;
@@ -1521,14 +1555,20 @@ padding-bottom:50px;
   background-color: transparent;
   transition: 0.3s;
   outline: none;
-  color: #fff;
+  color: #D39E00;
 }
-.ticket p {
+.ticket p:nth-of-type(1) {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  color: white;
+  color: #444;
+  margin-bottom: 0px;
+}
+.ticket p:nth-of-type(2) {
+  letter-spacing: 2px;
+  color: #444;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 /* TESTIOMONIALS SLIDER */
@@ -1686,10 +1726,9 @@ padding-bottom:50px;
   position: relative;
   padding-top: 80px;
   color: #fff;
-  background-image: url(../images/bcg/07.jpg);
+  background-image: url(../images/backgrounds/06.jpg);
 }
 .footer h3 {
-  color: #595B6B;
   letter-spacing: 3px;
   font-weight: bolder;
   text-align: left;
@@ -2029,9 +2068,6 @@ input::-moz-focus-outer {
     .side-widget {
     width: 240px;
   }
-  #about{
-    background: url("../images/bcg/About-2.png");
-  }
   #about .container{
     padding: 30px;
   }
@@ -2042,7 +2078,7 @@ input::-moz-focus-outer {
     background-position: right 500px top 0px;
   }
   .slider{
-    background-position: right 1250px top 0px;
+    background-position: right 1000px top 0px;
   }
   .partner{
     background-position: right 1250px top 0px;

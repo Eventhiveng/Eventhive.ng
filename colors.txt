@@ -7,3 +7,5 @@ Purple ; #660066
 Pink ; #ef505f
 Yellow 2 ; #ffa200
 Blue 3 ; #316791
+Yellow 3 ; #D39E00
+Grey ; #272727
