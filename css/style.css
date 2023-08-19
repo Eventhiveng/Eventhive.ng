@@ -850,7 +850,7 @@ a:hover {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background-image: linear-gradient( to bottom, rgba(8, 27, 67, 0.20), rgba(0, 0, 0, 0.73) ), url(../images/bcg/00.jpg);
+  background-image: url(../images/backgrounds/0011.png);
   background-size: cover;
   position: relative;
   text-align: center;
@@ -906,7 +906,7 @@ a:hover {
   margin-bottom: 0px;
 }
 .p-one {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bolder;
 }
 .slider a{
