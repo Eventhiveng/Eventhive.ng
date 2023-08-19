@@ -301,7 +301,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background: linear-gradient(162.03deg, #020559 22.1%, #000000 49.24%);
+  background: linear-gradient(162.03deg, #272727 22.1%, #272727 49.24%);
   background-position: center;
   background-size: cover;
   z-index: 5;
@@ -789,7 +789,7 @@ a:hover {
   color: white;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../images/backgrounds/0033.png);
+  background-image: url(../images/backgrounds/0077.png);
   background-size: cover;
   position: relative;
 }
@@ -1931,8 +1931,8 @@ input::-moz-focus-outer {
     margin: 5px;
     max-width: 350px;
   }
-  .slider{
-    background-position: right 100px top 0px;
+  .partner{
+    background-position: right 1400px top 0px;
   }
   .w-new{
     background-position: right 1200px top 0px;
@@ -1962,6 +1962,7 @@ input::-moz-focus-outer {
   .slider p:nth-of-type(1) {
     margin-bottom: 0px;
     margin-top: 0px;
+    font-size: 15px;
   }
   .slider p:nth-of-type(3) {
     margin-bottom: 70px;
@@ -2030,8 +2031,7 @@ input::-moz-focus-outer {
     margin-bottom: 30px;
   }
   .footer {
-    background-image: url(../images/bcg/07\ -\ Copy.jpg);
-    background-position: right 5000px top 0px;
+    background-position: right 1000px top 0px;
   }
   .footer h3{
     text-align: center;
@@ -2081,7 +2081,7 @@ input::-moz-focus-outer {
     background-position: right 1000px top 0px;
   }
   .partner{
-    background-position: right 1250px top 0px;
+    /* background-position: right 1600px top 0px; */
   }
   .navbar .navbar-button span {
     display: none;
@@ -2137,16 +2137,19 @@ input::-moz-focus-outer {
   .slider p:nth-of-type(3) {
     margin-bottom: 70px;
   }
+  .slider .p-one{
+    font-size: 12px;
+  }
   .slider p {
     margin-bottom: 0px;
   }
 
   .slider .container {
-    padding-top: 110px;
+    padding-top: 200px;
   }
 
   .slider a {
-    margin-bottom: 15px;
+    margin: 0px;
     height: 45px;
     line-height: 45px;
     padding: 0 20px;
@@ -2154,6 +2157,9 @@ input::-moz-focus-outer {
 
   .slider .left {
     margin-left: 0px;
+  }
+  .videoBox .new .sponsor-btn{
+    margin: 5px;
   }
   .section-title h2 {
     font-size: 25px;
@@ -2193,10 +2199,6 @@ input::-moz-focus-outer {
     font-size: 14px;
   }
 
-  .footer {
-    background-image: url(../images/bcg/07\ -\ Copy.jpg);
-    background-position: right 5000px top 0px;
-  }
   .footer .scroll-top {
     right: auto;
     left: 15px;
@@ -2251,6 +2253,9 @@ input::-moz-focus-outer {
   .slider p:nth-of-type(3) {
     margin-bottom: 70px;
   }
+  .slider .p-one{
+    margin: 0px;
+  }
   .slider p {
     margin-bottom: 0px;
   }
@@ -2270,13 +2275,6 @@ input::-moz-focus-outer {
   }
   .ticket .tick-item{
     margin: 20px !important;
-  }
-  #about{
-    background: url("../images/bcg/About-2.png");
-  }
-  .footer {
-    background-image: url(../images/bcg/07\ -\ Copy.jpg);
-    background-position: right 5000px top 0px;
   }
   .footer .scroll-top {
     right: auto;
