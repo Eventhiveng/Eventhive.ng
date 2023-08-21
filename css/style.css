@@ -789,7 +789,7 @@ a:hover {
   color: white;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../images/backgrounds/0077.png);
+  background-image: url(../images/backgrounds/000.png);
   background-size: cover;
   position: relative;
 }
@@ -808,7 +808,7 @@ a:hover {
 
 /* KEY THEMES */
 .themes {
-  color: #000;
+  color: #444;
   padding-bottom: 0px;
 }
 .themes .t-item{
@@ -819,7 +819,7 @@ a:hover {
 }
 .themes h6{
   font-size: 17px;
-  font-weight: bold;
+  font-weight: bolder;
   text-transform: uppercase;
 }
 
@@ -1932,7 +1932,7 @@ input::-moz-focus-outer {
     max-width: 350px;
   }
   .partner{
-    background-position: right 1400px top 0px;
+    background-position: right 1600px top 0px;
   }
   .w-new{
     background-position: right 1200px top 0px;
@@ -2081,7 +2081,7 @@ input::-moz-focus-outer {
     background-position: right 1000px top 0px;
   }
   .partner{
-    /* background-position: right 1600px top 0px; */
+    background-position: right 1600px top 0px;
   }
   .navbar .navbar-button span {
     display: none;
