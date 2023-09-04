@@ -109,9 +109,9 @@ a:hover {
   color: transparent;
 }
 .spaced{
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   font-weight: bolder;
-  font-size: 40px !important;
+  font-size: 32px !important;
 }
 
 /* SPACINGS */
@@ -827,7 +827,7 @@ a:hover {
   border: #0f0f0f solid 2px;
   border-radius: 0px 50px;
   padding: 50px 20px 30px 20px;
-  margin: 0px 50px;
+  margin: 0px 50px 20px 50px;
   text-align: left;
   font-size: 16px;
 }
