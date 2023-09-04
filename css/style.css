@@ -709,12 +709,12 @@ a:hover {
 /* SLIDER */
 .slider {
   width: 20%;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   background-size: cover;
   position: relative;
-  background: rgba(0, 0, 0, 0.2);
+  background: url(/images/bcg/bg1.png);
 }
 .slider #background-video {
   width: 100%;
@@ -731,7 +731,7 @@ a:hover {
 .slider .container {
   position: relative;
   /* padding-top: 70px; */
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-wrap: wrap;
   /* border: 1px solid #000; */
@@ -770,9 +770,12 @@ a:hover {
   color: transparent;
   letter-spacing: 10px;
 }
+.slider img{
+  margin-top: 150px !important;
+  width: 350px;
+}
 .slider p {
   margin-top: 10px;
-  margin-bottom: 70px;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -794,11 +797,8 @@ a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-.slider .buttons{
-  margin: auto;
-}
-.slider .left {
-  margin-left: 20px;
+.slider .top {
+  margin-top: 50px;
 }
 .slider a i {
   display: inline-block;
