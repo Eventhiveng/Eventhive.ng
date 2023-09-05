@@ -1971,7 +1971,7 @@ padding-bottom:50px;
   color: #fff;
   transition: 0.4s;
   padding: 30px 10px;
-  max-width: 400px;
+  min-width: 350px;
   min-height: 260px;
 }
 .ticket .grid-item ul {
