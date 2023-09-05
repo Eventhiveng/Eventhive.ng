@@ -1971,11 +1971,11 @@ padding-bottom:50px;
   color: #fff;
   transition: 0.4s;
   padding: 30px 10px;
-  min-width: 350px;
-  min-height: 260px;
+  min-width: 320px;
+  max-height: 500px;
 }
 .ticket .grid-item ul {
-  height: 260px;
+  height: 200px;
 }
 .ticket .grid-item:hover {
   box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.15);
@@ -3047,7 +3047,7 @@ input::-moz-focus-outer {
     padding: 0 30px;
   }
 .ticket .grid-item ul{
-  height: 330px;
+  height: 200px;
 }
   .recent-news {
     margin: 15px 0 !important;
