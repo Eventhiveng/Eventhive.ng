@@ -315,7 +315,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background: #372b2b;
+  background: #000c18;
   z-index: 5;
   box-shadow: 0 0 60px #000;
   padding: 20px 30px;
@@ -536,7 +536,7 @@ a:hover {
   top: 0;
   z-index: 4;
   transition: top ease 1s;
-  background-color: #372b2b;
+  background-color: #000c18;
 }
 .navbar.sticky {
   position: fixed;
@@ -741,19 +741,7 @@ a:hover {
   flex-wrap: wrap;
   background-size: cover;
   position: relative;
-  background: rgba(0, 0, 0, 0.2);
-}
-.slider #background-video {
-  width: 100%;
-  height: 70vh;
-  outline: none;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+  background: url(/images/bcg/Group\ 4.png);
 }
 .slider .container {
   position: relative;
@@ -2318,102 +2306,12 @@ a:hover {
   outline: none !important;
 }
 
-/* FOOTER BAR */
-.footer-bar {
-  width: 100%;
-  display: block;
-  padding: 80px 0;
-  position: relative;
-  overflow: hidden;
-  color: #fffcf0;
-  background-color: #372b2b;
-}
-.footer-bar .logo {
-  width: 100%;
-  display: block;
-  margin-bottom: 30px;
-}
-.footer-bar .logo img {
-  height: 50px;
-}
-.footer-bar h2 {
-  font-size: 60px;
-  font-weight: 800;
-  padding-right: 20%;
-  margin-bottom: 50px;
-}
-.footer-bar h2 b {
-  -webkit-text-stroke: 1px #fffcf0;
-  text-stroke: 1px #fffcf0;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-}
-.footer-bar .button {
-  display: inline-block;
-  float: left;
-  height: 60px;
-  line-height: 60px;
-  padding: 0 40px;
-  background: #ffa600;
-  color: #0b0b0b;
-  font-size: 13px;
-  font-weight: 600;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-.footer-bar .button i {
-  display: inline-block;
-  margin-left: 10px;
-  font-size: 20px;
-  transform: translateY(3px);
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-.footer-bar .button:hover {
-  text-decoration: none;
-}
-.footer-bar .button:hover i {
-  margin-left: 20px;
-}
-.footer-bar .sales-representive {
-  display: inline-block;
-  margin-left: 5vw;
-  line-height: 68px;
-}
-.footer-bar .sales-representive figure {
-  float: left;
-  margin-right: 10px;
-}
-.footer-bar .sales-representive figure img {
-  height: 60px;
-  border-radius: 50%;
-}
-.footer-bar .sales-representive b {
-  display: inline-block;
-  font-weight: 600;
-  position: relative;
-}
-.footer-bar .sales-representive b:before {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background: #ffa600;
-  position: absolute;
-  left: 0;
-  bottom: 20px;
-}
 
 /* FOOTER */
 .footer {
   width: 100%;
   display: block;
-  background-color: #372b2b;
+  background-color: #000c18;
   position: relative;
   padding-top: 80px;
   color: #fffcf0;
