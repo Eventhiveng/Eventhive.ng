@@ -908,6 +908,9 @@ a:hover {
 }
 
 /* *-----Testimonial-------*/
+.w3-row-padding>.w3-col{
+  padding: 0px !important;
+}
 #testim {
   margin-bottom: 20px;
   padding-top: 30px;
