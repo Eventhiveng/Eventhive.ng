@@ -1269,6 +1269,9 @@ a:hover {
 #speakers{
   padding-top: 20px;
 }
+#speakers .section-title h2{
+  color: #444;
+}
 #speakers .infos{
   text-align: center;
 }
@@ -1278,9 +1281,10 @@ a:hover {
   margin: 0px;
 }
 #speakers .infos b{
-  color: #ffaf00;
+  color: #ffa200;
   font-size: 13px;
   margin: 0px;
+  font-weight: bolder;
 }
 
 /*-----Testimonial-------*/
