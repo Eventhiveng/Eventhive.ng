@@ -1,0 +1,8 @@
+Yellow #ffae1e
+Light blue #25baff
+Blue #0d135a
+Orange #ff6600
+Purple #8f008f
+Green #99ff00
+Dark purple #05073b
+Another blue #3300cc
