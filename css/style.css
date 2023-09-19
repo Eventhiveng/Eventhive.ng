@@ -1257,6 +1257,7 @@ a:hover {
 .counter .section-title {
   text-align: center !important;
   color: #fff;
+  margin-bottom: 20px;
 }
 .counter .section-title h2{
   color: #fff;
@@ -1332,11 +1333,13 @@ a:hover {
 }
 .counter ul{
   list-style-type: none;
+  padding-left: 0px;
 }
 .counter ul li{
   padding: 10px;
   font-weight: lighter;
   letter-spacing: 2px;
+  font-size: 16px;
 }
 .counter ul i{
   padding: 5px;
