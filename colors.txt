@@ -1,0 +1,5 @@
+Blue main #0e0081
+Blue light #00d9fe
+Blue dark #1955C9
+Purple #4F1964
+Yellow #ED8C1A
