@@ -787,7 +787,7 @@ a:hover {
   font-weight: 600;
 }
 
-/* WHATS NEW */
+/* FOCUS */
 #focus {
   background: url(/images/bcg/bg-tech.png);
   color: #fff;
@@ -802,6 +802,75 @@ a:hover {
 #focus span{
   font-weight: bolder;
   color: #00d9fe;
+}
+
+/* NEW */
+#new{
+  margin-top: 60px !important;
+}
+#new h6{
+  font-weight: bolder !important;
+  font-size: 18px;
+  margin: 10px;
+}
+#new .col-md-4{
+  padding: 20px;
+}
+#new p{
+  font-size: 15px;
+}
+
+/* PARTNER */
+#partner{
+  margin-top: 30px !important;
+  background: url(/images/bcg/bg-partner.png);
+  color: #fff;
+}
+#partner h6{
+  font-weight: bolder !important;
+  font-size: 18px;
+  margin: 10px;
+}
+#partner .col-md-4{
+  padding: 20px;
+}
+#partner p{
+  font-size: 15px;
+}
+#partner .blue{
+  background-color: #06004898;
+}
+#partner .red{
+  background-color: #7f000498;
+}
+#partner .purple{
+  background-color: #4c004d98;
+}
+#partner .green{
+  background-color: #19323b98;
+}
+#partner .lemon{
+  background-color: #4c7f0398;
+}
+
+/* STAGE */
+#stage{
+  color: #fff;
+}
+#stage .logo{
+  margin: 40px 20px 50px 20px;
+}
+#stage .stage-content{
+  background-color: #0e0081;
+  padding: 30px 0px 0px 50px;
+}
+#stage p{
+  margin: 30px 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+#stage h2{
+  margin: 20px;
 }
 
 /* TESTIMONIAL */
@@ -837,6 +906,38 @@ a:hover {
   color: #feb112;
   font-weight: bold;
   letter-spacing: 5px;
+}
+
+/* S-SLIDER */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.s-slider {
+  align-items: center;
+  justify-content: center;
+  height: 142px;
+  /* margin: 50px 0px; */
+  /* border: 1px solid #121212; */
+  overflow: hidden;
+  background-color: white !important;
+  position: relative;
+  width: auto;
+  
+}
+.s-slider .slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(200px * 100);
+}
+.s-slider .slide {
+  height: 100px;
+  /* width: 300px; */
+  padding: 0px 2px;
 }
 
 /* SLIDER */
@@ -911,7 +1012,7 @@ a:hover {
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: #1955C9;
+  background: #0e0081;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
@@ -1226,6 +1327,7 @@ a:hover {
   border-radius: 100px;
   color: #fff;
   text-align: center;
+  margin: auto;
 }
 .counter-section{
   margin-bottom: 60px !important;
@@ -2073,6 +2175,9 @@ a:hover {
 }
 
 /* TICKET SECTION */
+.ticket{
+  margin-top: 60px !important;
+}
 .ticket h1 {
   text-align: center;
   margin-top: 50px;
@@ -2199,135 +2304,19 @@ a:hover {
   outline: none !important;
 }
 
-/* FOOTER BAR */
-.footer-bar {
-  width: 100%;
-  display: block;
-  padding: 80px 0;
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  background-color: #232222;
-  background: hsla(56, 99%, 50%, 1);
-
-  background: linear-gradient(
-    180deg,
-    hsla(56, 99%, 50%, 1) 0%,
-    hsla(64, 75%, 32%, 1) 12%,
-    hsla(186, 100%, 8%, 1) 23%
-  );
-
-  background: -moz-linear-gradient(
-    180deg,
-    hsla(56, 99%, 50%, 1) 0%,
-    hsla(64, 75%, 32%, 1) 12%,
-    hsla(186, 100%, 8%, 1) 23%
-  );
-
-  background: -webkit-linear-gradient(
-    180deg,
-    hsla(56, 99%, 50%, 1) 0%,
-    hsla(64, 75%, 32%, 1) 12%,
-    hsla(186, 100%, 8%, 1) 23%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#feb112", endColorstr="#879015", GradientType=1 );
-  background-position: center;
-  background-size: cover;
-}
-.footer-bar .logo {
-  width: 100%;
-  display: block;
-  margin-bottom: 30px;
-}
-.footer-bar .logo img {
-  height: 50px;
-}
-.footer-bar h2 {
-  font-size: 60px;
-  font-weight: 800;
-  padding-right: 20%;
-  margin-bottom: 50px;
-}
-.footer-bar h2 b {
-  -webkit-text-stroke: 1px #fff;
-  text-stroke: 1px #fff;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-}
-.footer-bar .button {
-  display: inline-block;
-  float: left;
-  height: 60px;
-  line-height: 60px;
-  padding: 0 40px;
-  background: #feb112;
-  color: #0b0b0b;
-  font-size: 13px;
-  font-weight: 600;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-.footer-bar .button i {
-  display: inline-block;
-  margin-left: 10px;
-  font-size: 20px;
-  transform: translateY(3px);
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-.footer-bar .button:hover {
-  text-decoration: none;
-}
-.footer-bar .button:hover i {
-  margin-left: 20px;
-}
-.footer-bar .sales-representive {
-  display: inline-block;
-  margin-left: 5vw;
-  line-height: 68px;
-}
-.footer-bar .sales-representive figure {
-  float: left;
-  margin-right: 10px;
-}
-.footer-bar .sales-representive figure img {
-  height: 60px;
-  border-radius: 50%;
-}
-.footer-bar .sales-representive b {
-  display: inline-block;
-  font-weight: 600;
-  position: relative;
-}
-.footer-bar .sales-representive b:before {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background: #feb112;
-  position: absolute;
-  left: 0;
-  bottom: 20px;
-}
 
 /* FOOTER */
 .footer {
   width: 100%;
   display: block;
-  background-color: #0e0081;
+  background: url(/images/bcg/bg-tech.png);
   position: relative;
   padding-top: 80px;
   color: #fff;
 }
 .footer h3 {
-  -webkit-text-stroke: 1px #feb112;
-  text-stroke: 1px #feb112;
+  -webkit-text-stroke: 1px #00d9fe;
+  text-stroke: 1px #00d9fe;
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-weight: bolder;
@@ -2336,7 +2325,7 @@ a:hover {
 }
 .footer .scroll-top {
   width: 100px;
-  background: #feb112;
+  background: #00d9fe;
   position: absolute;
   right: 30px;
   top: -30px;
@@ -2373,7 +2362,7 @@ a:hover {
   color: #fff;
   font-weight: 600;
   font-size: 15px;
-  border-bottom: 3px solid #feb112;
+  border-bottom: 3px solid #00d9fe;
 }
 .footer address a:hover {
   text-decoration: none;
@@ -2394,7 +2383,7 @@ a:hover {
 }
 .footer form input[type="submit"] {
   height: 60px;
-  background: #feb112;
+  background: #00d9fe;
   border: none;
   padding: 0 40px;
   font-size: 13px;
@@ -2429,7 +2418,7 @@ a:hover {
   /* opacity: 0.7; */
   font-size: 20px;
   color: white;
-  border-bottom: 2px solid #feb112;
+  border-bottom: 2px solid #00d9fe;
   padding: 10px;
   /* border-radius: 100%; */
   transition: 0.3s;
