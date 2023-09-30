@@ -2741,9 +2741,53 @@ input::-moz-focus-outer {
   .agenda img {
     margin-top: 120px;
   }
-
+  #about{
+    background: url(/images/bcg/about-ipad.png);
+    padding-bottom: 30px;
+    /* background-position: right 200px top 0px; */
+  }
+  #partner{
+    background: url(/images/bcg/partner-ipad.png);
+    background-position: left 1000px bottom 0px;
+  }
+  #stage .stage-content{
+    padding: 0px 20px;
+  }
+  #stage br{
+    display: none;
+  }
+  #stage h2{
+    font-size: 20px;
+  }
+  #stage p{
+    letter-spacing: normal;
+    font-size: 15px;
+  }
+  #stage .side{
+    margin: auto;
+  }
+  #stage .logo{
+    margin: 40px 20px 10px 20px;
+  }
+  .counter-box{
+    margin: auto !important;
+  }
+  .counter-section .col-lg-3{
+    margin: 20px 0px;
+  }
   .slider {
     height: auto;
+    background: url(/images/bcg/slider-ipad.png);
+    background-position: right 1000px top 0px;
+  }
+  .slider video{
+    width: 350px;
+  }
+  .slider .p-left{
+    padding-left: 15px !important;
+  }
+  .slider img{
+    width: 200px;
   }
   .slider p:nth-of-type(1) {
     margin-bottom: 0px;
@@ -2786,9 +2830,6 @@ input::-moz-focus-outer {
     .swiper-pagination
     .swiper-pagination-current {
     color: #fff;
-  }
-  .slider {
-    background-position: right 900px top 0px;
   }
   .icon-content {
     margin: 15px 0;
@@ -2906,6 +2947,7 @@ input::-moz-focus-outer {
   #about{
     background: url(/images/bcg/about-sm.png);
     padding-bottom: 0px;
+    background-repeat: no-repeat;
   }
   #partner{
     background: url(/images/bcg/partner-sm.png);
@@ -2969,6 +3011,7 @@ input::-moz-focus-outer {
     margin-bottom: 20px;
   }
   .slider img{
+    width: 300px;
     margin-top: 30px;
   }
   .slider p:nth-of-type(1) {
