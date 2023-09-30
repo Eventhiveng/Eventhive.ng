@@ -2692,11 +2692,6 @@ input::-moz-focus-outer {
   .hide-mobile {
     display: block;
   }
-
-  .counter-box .value {
-    margin-right: 20px;
-  }
-
   .accordion {
     padding-right: 0;
   }
@@ -2898,9 +2893,39 @@ input::-moz-focus-outer {
     margin: 2px;
     padding: 30px 10px;
   }
+  .about-content p{
+    width: auto;
+  }
   .attend{
     padding-top: 50px !important;
     background-position: right 500px bottom 0px;
+  }
+  .slider{
+    background: url(/images/bcg/phonebg.png);
+  }
+  #about{
+    background: url(/images/bcg/about-sm.png);
+    padding-bottom: 0px;
+  }
+  #partner{
+    background: url(/images/bcg/partner-sm.png);
+    background-position: left 800px bottom 0px;
+  }
+  #stage .stage-content{
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+  }
+  #stage .logo{
+    margin: 40px 0px 30px 0px;
+  }
+  #stage .stage-content br{
+    display: none;
+  }
+  .counter-box{
+    margin: auto;
+  }
+  .counter-section .col-lg-3{
+    margin: 20px 0px;
   }
   .attend p{
     padding-left: 10px;
@@ -2911,6 +2936,17 @@ input::-moz-focus-outer {
   }
   #info .hr {
     margin-bottom: 20px !important;
+  }
+  .slider{
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  .slider video{
+    width: 330px;
+    margin: auto;
+  }
+  .slider .p-left{
+    padding-left: 15px !important;
   }
   .slider .slider-content {
     margin-bottom: 30px;
@@ -2932,20 +2968,19 @@ input::-moz-focus-outer {
     margin-left: 0px;
     margin-bottom: 20px;
   }
-
+  .slider img{
+    margin-top: 30px;
+  }
   .slider p:nth-of-type(1) {
     margin-bottom: 10px;
-    margin-top: 60px;
-  }
-  .slider p:nth-of-type(3) {
-    margin-bottom: 70px;
+    margin-top: 40px;
   }
   .slider p {
     margin-bottom: 0px;
+    text-align: center !important;
   }
-
   .slider .container {
-    padding-top: 110px;
+    padding-top: 70px;
   }
 
   .slider a {
@@ -3116,9 +3151,6 @@ input::-moz-focus-outer {
   .slider p:nth-of-type(1) {
     margin-bottom: 10px;
     margin-top: 10px;
-  }
-  .slider p:nth-of-type(3) {
-    margin-bottom: 70px;
   }
   .slider p {
     margin-bottom: 0px;
