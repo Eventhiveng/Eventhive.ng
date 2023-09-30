@@ -957,8 +957,8 @@ a:hover {
 .p-left{
   padding-left: 60px !important;
 }
-.slider video{
-  width: 500px;
+.slider .video{
+  width: 450px;
   border: 3px solid #0e0081;
   padding: 10px;
   box-shadow: 5px 10px #0e0081;
@@ -2780,7 +2780,7 @@ input::-moz-focus-outer {
     background: url(/images/bcg/slider-ipad.png);
     background-position: right 1000px top 0px;
   }
-  .slider video{
+  .slider .video{
     width: 350px;
   }
   .slider .p-left{
@@ -2983,12 +2983,13 @@ input::-moz-focus-outer {
     text-align: center !important;
     justify-content: center !important;
   }
-  .slider video{
-    width: 330px;
+  .slider .video{
+    width: 350px !important;
     margin: auto;
+    max-width: 350px;
   }
   .slider .p-left{
-    padding-left: 15px !important;
+    padding-left: 0px !important;
   }
   .slider .slider-content {
     margin-bottom: 30px;
