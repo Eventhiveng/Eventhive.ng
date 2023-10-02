@@ -952,7 +952,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   background-color: #0e0081;
-  background: url(/videos/Lagostechfest\ Rechopped.mp4), rgba(0,0,0,0.4);
+  background: url(/videos/Lagostechfest\ Rechopped.mp4), rgba(0,0,0,0.6);
   background-size: cover;
   position: relative;
   text-align: center !important;
@@ -995,7 +995,7 @@ a:hover {
   margin-top: 140px;
 }
 .slider h2{
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bolder;
 }
 .slider p:nth-of-type(2) {
