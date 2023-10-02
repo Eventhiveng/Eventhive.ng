@@ -527,6 +527,24 @@ a:hover {
   transition: top ease 1s;
   border-bottom: 1px solid #ffffff20;
 }
+.navbar .r-btn{
+  color: #fff;
+  font-weight: bolder;
+  background-color: transparent;
+  padding: 5px 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: 2px solid #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.navbar .r-btn:hover{
+  color: #000;
+  background-color: #fff;
+  transition: 0.2s;
+  border: 2px solid #fff;
+}
 .navbar.nav-down {
   top: 0;
 }
@@ -990,6 +1008,14 @@ a:hover {
   display: block;
   color: #fff;
   padding-bottom: 100px;
+}
+.d-v{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 10px 0px;
 }
 .slider .row{
   margin-top: 140px;
