@@ -1324,11 +1324,11 @@ a:hover {
 } */
 
 .counter-box {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   display: block;
   /* border: 1px solid #e8e8e8; */
-  padding-top: 70px;
+  padding-top: 40px;
   position: relative;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1353,7 +1353,10 @@ a:hover {
   background: url("../images/bcg/decision.png");
 }
 .counter-section .attendees{
-  background: url("../images/bcg/attendees.png");
+  background: url("../images/bcg/attend.png");
+}
+.counter-section .exhibit{
+  background: url("../images/bcg/exhibit.png");
 }
 .counter-box:hover {
   transform: translateY(-20px);
@@ -1375,20 +1378,22 @@ a:hover {
 } */
 .counter-box .odometer {
   display: inline-block;
-  font-size: 50px;
+  font-size: 30px;
 }
 .counter-box .value {
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: bolder;
   color: #fff;
 }
 .counter-box h6 {
   display: inline-block;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 2px;
   position: relative;
   color: white;
+  font-size: 13px;
 }
-.counter-box h6:before {
+/* .counter-box h6:before {
   content: "";
   width: 100%;
   height: 8px;
@@ -1402,7 +1407,7 @@ a:hover {
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-}
+} */
 .counter-box p {
   font-size: 13px;
   padding-right: 5%;
@@ -2777,6 +2782,18 @@ input::-moz-focus-outer {
   }
   .counter-section .col-lg-3{
     margin: 20px 0px;
+  }
+  .counter-box{
+    margin-bottom: 20px !important;
+  }
+  .counter-box .odometer{
+    font-size: 30px;
+  }
+  .counter-box .value{
+    font-size: 14px;
+  }
+  .counter-box h6{
+    font-size: 12px;
   }
   .slider p:nth-of-type(1) {
     margin-bottom: 0px;
