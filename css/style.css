@@ -2942,6 +2942,9 @@ input::-moz-focus-outer {
     padding-top: 50px !important;
     background-position: right 500px bottom 0px;
   }
+  .about-content h2{
+    font-weight: bolder !important;
+  }
   .about-content{
     padding: 0px 20px;
   }
@@ -2981,8 +2984,10 @@ input::-moz-focus-outer {
   #info .hr {
     margin-bottom: 20px !important;
   }
+  
   .slider{
     height: 100vh !important;
+    background: url(/videos/Lagostechfest\ Rechopped.mp4), rgba(0,0,0,0.6) !important;
   }
   .slider .slider-content {
     margin-bottom: 30px;
