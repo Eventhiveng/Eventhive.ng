@@ -2192,67 +2192,57 @@ a:hover {
 
 /* TICKET SECTION */
 .ticket{
-  margin-top: 60px !important;
+  margin-top: 50px !important;
 }
-.ticket h1 {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.ticket h3{
+  font-size: 25px;
 }
 
 .ticket .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 80px;
+  grid-gap: 50px;
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 50px;
 }
 .ticket .grid-item {
   border: 1px solid #e8e8e8;
-  background-color: #fff;
-  color: #0b0b0b;
+  border-radius: 10px;
+  background-color: #000c18;
+  color: #fff;
   transition: 0.4s;
-  padding: 50px 10px 40px 10px;
-}
-.ticket .bgc {
-  color: white;
-  width: 100%;
-  /* background-color: #0b0b0b; */
-  /* background-image: ; */
-  background: #0b0b0b; /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(
-      rgba(46, 46, 46, 0.8),
-      rgba(46, 46, 46, 0.8)
-    ),
-    url("../images/bg2.jpg");
-  background: linear-gradient(rgba(46, 46, 46, 0.8), rgba(46, 46, 46, 0.8)),
-    url("../images/bg2.jpg"); /* The least supported option. */
-  background-size: cover;
-  background-attachment: fixed;
-}
-.ticket .bgc:hover {
-  box-shadow: 0 40px 90px 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 30px 10px;
+  min-width: 320px;
+  max-height: 500px;
 }
 .ticket .grid-item ul {
   height: 200px;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 .ticket .grid-item:hover {
   box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.15);
   transition: 0.4s;
 }
+.ticket .grid-item h3{
+  text-align: center;
+  font-weight: bold;
+}
+.ticket .grid-item p{
+  letter-spacing: 5px;
+  font-weight: bold;
+}
 .ticket li {
   list-style-type: disc;
+  text-align: left;
+  font-size: 15px;
 }
 .ticket a {
   display: inline-block;
   height: 50px;
-  line-height: 50px;
+  line-height: 42px;
   padding: 0 30px;
-  border: 4px solid #feb112;
-  background: #feb112;
+  border: 4px solid #00d9fe;
+  background: transparent;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
@@ -2267,18 +2257,15 @@ a:hover {
 }
 .ticket a:hover {
   text-decoration: none;
-  border: 4px solid #feb112;
-  background-color: #fff;
   transition: 0.3s;
+  padding: 0 40px;
   outline: none;
-  color: #0b0b0b;
 }
 .ticket p {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
 }
-
 
 /* LOGO ITEMS */
 .logo-item {
@@ -3101,6 +3088,9 @@ input::-moz-focus-outer {
     line-height: 40px;
     padding: 0 30px;
   }
+.ticket .grid-item ul{
+  height: 200px;
+}
 
   .recent-news {
     margin: 15px 0 !important;
