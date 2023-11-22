@@ -36,15 +36,15 @@ RESPONSIVE
 /*----------------------------*\
 	typography
 \*----------------------------*/
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #444;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 @media only screen and (max-width: 767px) {
   body {
@@ -233,7 +233,7 @@ textarea.input {
 .section-bg {
   background: linear-gradient(
     to bottom,
-    rgba(119, 122, 133, 0.4),
+    rgba(15, 10, 14, 0.60),
     rgba(15, 10, 14, 0.60)
   ),
   url(../assets/2023/11.JPG) no-repeat;
@@ -1472,10 +1472,10 @@ textarea.input {
   line-height: 50px;
 }
 
-.contact-social {
+/* .contact-social {
   text-align: right;
   margin: 10px 0px;
-}
+} */
 
 .contact-social a {
   display: inline-block;
@@ -1509,9 +1509,9 @@ textarea.input {
   .home-content .logo {
     margin-top: 100px !important;
   }
-  .section-bg{
-    /* background-position: -1000px 0px; */
-  }
+  /* .section-bg{
+    background-position: 300px 500px;
+  } */
   .section-title .title {
     font-size: 30px;
   }
@@ -1540,6 +1540,7 @@ textarea.input {
   .home-content h1 {
     font-size: 31px;
   }
+  
   .page-wrapper-content h1 {
     font-size: 31px;
   }
@@ -1585,6 +1586,7 @@ textarea.input {
     text-align: center;
     margin: 30px 0px;
   }
+  
   .participate img{
     /* width: 70%; */
   }
