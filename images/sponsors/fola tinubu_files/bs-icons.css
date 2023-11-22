@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "bs-icons";
+    src:url("../fonts/bs-icons.eot");
+    src:url("../fonts/bs-icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/bs-icons.woff") format("woff"),
+    url("../fonts/bs-icons.ttf") format("truetype"),
+    url("../fonts/bs-icons.svg#bs-icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="bsfi-"],
+[class*=" bsfi-"] {
+    display: inline-block;
+    font: normal normal normal 14px/1 "bs-icons";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="bsfii"],
+[class*=" bsfii"] {
+    font: normal normal normal 14px/1 "bs-icons" !important;
+}
+
+/* Icons */
+.bsfi-facebook:before {
+    content: "\b000";
+}
+.bsfi-twitter:before {
+    content: "\b001";
+}
+.bsfi-dribbble:before {
+    content: "\b002";
+}
+.bsfi-vimeo:before {
+    content: "\b003";
+}
+.bsfi-rss:before {
+    content: "\b004";
+}
+.bsfi-github:before {
+    content: "\b005";
+}
+.bsfi-vk:before {
+    content: "\b006";
+}
+.bsfi-delicious:before {
+    content: "\b007";
+}
+.bsfi-soundcloud:before {
+    content: "\b009";
+}
+.bsfi-behance:before {
+    content: "\b00a";
+}
+.bsfi-pinterest:before {
+    content: "\b00b";
+}
+.bsfi-vine:before {
+    content: "\b00c";
+}
+.bsfi-steam:before {
+    content: "\b00d";
+}
+.bsfi-flickr:before {
+    content: "\b00e";
+}
+.bsfi-forrst:before {
+    content: "\b010";
+}
+.bsfi-mailchimp:before {
+    content: "\b011";
+}
+.bsfi-tumblr:before {
+    content: "\b013";
+}
+.bsfi-500px:before {
+    content: "\b014";
+}
+.bsfi-members:before {
+    content: "\b015";
+}
+.bsfi-comments:before {
+    content: "\b016";
+}
+.bsfi-posts:before {
+    content: "\b017";
+}
+.bsfi-instagram:before {
+    content: "\b018";
+}
+.bsfi-whatsapp:before {
+    content: "\b019";
+}
+.bsfi-line:before {
+    content: "\b01a";
+}
+.bsfi-blackberry:before {
+    content: "\b01b";
+}
+.bsfi-viber:before {
+    content: "\b01c";
+}
+.bsfi-skype:before {
+    content: "\b01d";
+}
+.bsfi-gplus:before {
+    content: "\b01e";
+}
+.bsfi-telegram:before {
+    content: "\b01f";
+}
+.bsfi-apple:before {
+    content: "\b020";
+}
+.bsfi-android:before {
+    content: "\b021";
+}
+.bsfi-fire-1:before {
+    content: "\b022";
+}
+.bsfi-fire-2:before {
+    content: "\b023";
+}
+.bsfi-publisher:before {
+    content: "\b024";
+}
+.bsfi-betterstudio:before {
+    content: "\b025";
+}
+.bsfi-fire-3:before {
+    content: "\b026";
+}
+.bsfi-fire-4:before {
+    content: "\b027";
+}
+.bsfi-disqus:before {
+    content: "\b028";
+}
+.bsfi-better-amp:before {
+    content: "\b029";
+}
+.bsfi-ok-ru:before {
+    content: "\b030";
+}
+.bsfi-linkedin:before {
+    content: "\b012";
+}
+.bsfi-snapchat:before {
+    content: "\b031";
+}
+.bsfi-comments-1:before {
+    content: "\b032";
+}
+.bsfi-comments-2:before {
+    content: "\b033";
+}
+.bsfi-comments-3:before {
+    content: "\b034";
+}
+.bsfi-calender:before {
+    content: "\b035";
+}
+.bsfi-comments-4:before {
+    content: "\b036";
+}
+.bsfi-comments-5:before {
+    content: "\b037";
+}
+.bsfi-comments-6:before {
+    content: "\b038";
+}
+.bsfi-comments-7:before {
+    content: "\b039";
+}
+.bsfi-quote-1:before {
+    content: "\b040";
+}
+.bsfi-quote-2:before {
+    content: "\b041";
+}
+.bsfi-quote-3:before {
+    content: "\b042";
+}
+.bsfi-quote-4:before {
+    content: "\b043";
+}
+.bsfi-quote-5:before {
+    content: "\b044";
+}
+.bsfi-quote-6:before {
+    content: "\b045";
+}
+.bsfi-quote-7:before {
+    content: "\b046";
+}
+.bsfi-youtube:before {
+    content: "\b008";
+}
+.bsfi-envato:before {
+    content: "\b00f";
+}
+.bsfi-arrow3-n:before {
+    content: "\b047";
+}
+.bsfi-arrow3-s:before {
+    content: "\b048";
+}
+.bsfi-arrow-n:before {
+    content: "\b049";
+}
+.bsfi-arrow-ne:before {
+    content: "\b050";
+}
+.bsfi-arrow-s:before {
+    content: "\b051";
+}
+.bsfi-arrow-se:before {
+    content: "\b052";
+}
+.bsfi-arrow2-n:before {
+    content: "\b053";
+}
+.bsfi-arrow2-s:before {
+    content: "\b054";
+}
+.bsfi-map-marker:before {
+    content: "\b055";
+}
+.bsfi-arrow3-e:before {
+    content: "\b056";
+}
+.bsfi-arrow-e:before {
+    content: "\b057";
+}
+.bsfi-arrow-up-down:before {
+    content: "\b058";
+}
+.bsfi-arrow2-e:before {
+    content: "\b059";
+}
+.bsfi-arrow-left-right:before {
+    content: "\b060";
+}
+.bsfi-bell:before {
+    content: "\b061";
+}
+
+
+/* alias */
+.bsfi-google:before {
+    content: "\b01e";
+}
+.bsfi-bbm:before {
+    content: "\b01b";
+}
+.bsfi-appstore:before {
+    content: "\b020";
+}
+.bsfi-bs:before {
+    content: "\b025";
+}
+.bsfi-ok_ru:before {
+    content: "\b030";
+}
