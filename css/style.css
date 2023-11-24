@@ -1839,7 +1839,6 @@ padding-bottom:50px;
   margin-bottom: 30px;
 }
 .sponsorship a {
-  display: inline-block;
   height: 60px;
   line-height: 60px;
   padding: 0 20px;
@@ -1848,13 +1847,15 @@ padding-bottom:50px;
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 40px;
-  margin-top: 40px;
-
+  margin-top: 10px;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+}
+.sponsorship .section-title{
+  margin-bottom: 10px;
 }
 .sponsorship .button {
   margin: 0 auto;
