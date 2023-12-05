@@ -2200,7 +2200,7 @@ a:hover {
 
 .ticket .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 50px;
   padding-left: 50px;
   padding-right: 50px;
