@@ -2325,6 +2325,9 @@ a:hover {
   text-align: center;
   margin-bottom: 40px;
 }
+.footer .buttons a{
+  background-color: #00d9fe !important;
+}
 .footer .scroll-top {
   width: 100px;
   background: #00d9fe;
