@@ -739,7 +739,6 @@ a:hover {
   text-align: center;
   width: 700px;
   margin: auto;
-  padding-bottom: 20px;
   /* letter-spacing: 1px; */
 }
 
@@ -970,7 +969,7 @@ a:hover {
 }
 .slider .container {
   position: relative;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -1016,7 +1015,7 @@ a:hover {
   color: #fff;
   letter-spacing: 2px;
 }
-.slider a {
+.buttons a {
   display: inline-block;
   height: 60px;
   line-height: 60px;
@@ -1036,12 +1035,12 @@ a:hover {
 .slider .left {
   margin-left: 20px;
 }
-.slider .buttons {
+.buttons {
   margin-top: 40px !important;
   text-align: center;
   margin: auto;
 }
-.slider a i {
+.buttons a i {
   display: inline-block;
   margin-left: 10px;
   font-size: 20px;
@@ -1052,11 +1051,11 @@ a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-.slider a:hover {
+.buttons a:hover {
   text-decoration: none;
   /* box-shadow: 0 20px 20px #000; */
 }
-.slider a:hover i {
+.buttons a:hover i {
   margin-left: 20px;
 }
 
