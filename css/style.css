@@ -331,7 +331,7 @@ margin-left: 0px;
 }
 .main-menu ul li {
 	display: inline-block;
-	margin-left: 25px;
+	margin-left: 20px;
 	position: relative;
 }
 .main-menu ul li.active a {
@@ -530,7 +530,6 @@ color: #FFF;
 	padding: 0;
 }
 .sticky-menu .second-menu::before{content: none;}
-.second-menu .main-menu ul li{margin-left: 30px;}
 .second-menu .main-menu ul li:first-child{margin-left: 0;}
 .second-menu .main-menu ul li a::before{content: none;}
 .second-header-btn .btn {
