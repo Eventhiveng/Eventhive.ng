@@ -2677,7 +2677,10 @@ input::-moz-focus-outer {
 /* RESPONSIVE TABLET  */
 @media only screen and (max-width: 991px),
   only screen and (max-device-width: 991px) {
-  .side-widget {
+    .uKlDk{
+      width: 100% !important;
+    }
+    .side-widget {
     box-shadow: none;
   }
 
@@ -2900,7 +2903,10 @@ input::-moz-focus-outer {
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px),
   only screen and (max-device-width: 767px) {
-  .side-widget {
+    .uKlDk{
+      width: 100% !important;
+    }
+    .side-widget {
     width: 240px;
   }
   .show-mobile {
@@ -3179,6 +3185,14 @@ input::-moz-focus-outer {
   .hide-mobile {
     display: none;
   }
+  .uKlDk{
+    width: 100% !important;
+  }
+}
+
+.uKlDk{
+  width: fit-content !important;
+  margin: auto !important;
 }
 
 /* SCROLL BAR */
