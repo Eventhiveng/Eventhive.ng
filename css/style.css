@@ -3181,11 +3181,6 @@ input::-moz-focus-outer {
   }
 }
 
-.uKlDk{
-  width: fit-content !important;
-  margin: auto !important;
-}
-
 /* SCROLL BAR */
 /* width */
 ::-webkit-scrollbar {
