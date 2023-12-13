@@ -2677,9 +2677,7 @@ input::-moz-focus-outer {
 /* RESPONSIVE TABLET  */
 @media only screen and (max-width: 991px),
   only screen and (max-device-width: 991px) {
-    .uKlDk{
-      width: 100% !important;
-    }
+    
     .side-widget {
     box-shadow: none;
   }
