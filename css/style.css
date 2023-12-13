@@ -1737,7 +1737,6 @@ a.btn-border-white:hover {
   }
   #home {
     height: 120vh;
-    background-position: right 500px top 0px;
   }
   .home-content h2 {
     font-size: 45px;
@@ -1761,7 +1760,6 @@ a.btn-border-white:hover {
   }
   #home {
     height: 60vh;
-    background-position: right 900px top 0px;
   }
   #info {
     margin-top: 70px;
@@ -1784,16 +1782,13 @@ a.btn-border-white:hover {
   .counter-box {
     margin: 15px 0;
   }
-  #home {
-    background-position: right 1100px top 0px;
-  }
 }
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px),
   only screen and (max-device-width: 767px) {
   #home {
     height: 110vh;
-    background-position: right 1000px top 0px;
+    background-position: right 1200px top 0px;
   }
   .home-content h2 {
     font-size: 45px;
@@ -1807,9 +1802,6 @@ a.btn-border-white:hover {
   #venue .second {
     margin-top: 50px;
   }
-  #venue .venue {
-    background-position: right -300px top 0px;
-  }
   .img-width{
     width: 300px;
   }
@@ -1818,7 +1810,6 @@ a.btn-border-white:hover {
 @media only screen and (min-width: 300px) and (max-width: 350px) {
   #home {
     height: 120vh;
-    background-position: right 1000px top 0px;
   }
   .home-content h2 {
     font-size: 45px;
@@ -1840,7 +1831,6 @@ a.btn-border-white:hover {
 @media only screen and (min-width: 200px) and (max-width: 300px) {
   #home {
     height: 120vh;
-    background-position: right 1000px top 0px;
   }
   .home-content h2 {
     font-size: 35px;
