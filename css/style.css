@@ -435,9 +435,6 @@ textarea.input {
   .main-nav li.active a:after {
     display: none;
   }
-  #header.transparent-navbar .main-nav li a {
-    color: #0b0f28;
-  }
   .main-nav li a:hover,
   .main-nav li a:focus,
   .main-nav li.active a {
