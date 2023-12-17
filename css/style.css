@@ -301,7 +301,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background: linear-gradient(162.03deg, #020559 22.1%, #000000 49.24%);
+  background: #000814;
   background-position: center;
   background-size: cover;
   z-index: 5;
@@ -740,18 +740,9 @@ a:hover {
 }
 
 /* ABOUT */
-.about-content {
-  border: 1px solid #D39E00;
-  border-radius: 0px 50px 0px;
-  padding: 50px 20px 30px 20px;
-}
-#about{
-  background: url("../images/bcg/About\ Us\ Section.png");
-  color: white;
-  padding-bottom: 50px !important;
-}
-#about .container{
-  padding: 70px;
+#about .about-content{
+  text-align: center;
+  padding: 50px 20px;
 }
 #about .section-title {
   text-align: left;
@@ -806,6 +797,47 @@ a:hover {
 }
 .partner .p-item{
   padding: 20px;
+}
+
+.partner .sponsor-btn {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 40px;
+  background: transparent;
+  color:#fff ;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.partner .sponsor-btn:hover{
+  border: 2px solid transparent;
+  background-color: white;
+  color: #000;
+}
+.partner a i {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
+  transform: translateY(3px);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.partner a:hover {
+  text-decoration: none;
+  /* box-shadow: 0 20px 20px #000; */
+}
+.partner a:hover i {
+  margin-left: 20px;
 }
 
 /* KEY THEMES */
@@ -1082,8 +1114,8 @@ a:hover {
 }
 
 /* HIGHLIGHTS */
-#new img{
-  margin: 20px 0px 10px;
+#new{
+  padding: 0px;
 }
 #new .register-btn {
   display: inline-block;
@@ -1144,6 +1176,11 @@ a:hover {
 }
 
 /* COUNTER BOX */
+.counter{
+  background-color: #000814;
+  border-radius: 0px 20px 0px 20px;
+  padding: 10px;
+}
 .counter-box {
   width: 100%;
   display: block;
@@ -1154,20 +1191,23 @@ a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   color: white;
+  margin: 20px;
 }
 .counter-box img{
   margin-bottom: 20px;
 }
 .counter-box .odometer {
   display: inline-block;
-  font-size: 50px;
+  font-size: 30px;
+  font-weight: bolder;
 }
 .counter-box .value {
   font-size: 24px;
 }
 .counter-box h6 {
   display: inline-block;
-  font-weight: 800;
+  font-size: 15px;
+  font-weight: bolder;
   letter-spacing: 2px;
   position: relative;
   color: white;
@@ -1712,11 +1752,10 @@ padding-bottom:50px;
 .footer {
   width: 100%;
   display: block;
-  background-color: #002e94;
+  background-color: #000814;
   position: relative;
   padding-top: 80px;
   color: #fff;
-  background-image: url(../images/bcg/07.jpg);
 }
 .footer h3 {
   color: #595B6B;
@@ -2000,9 +2039,6 @@ input::-moz-focus-outer {
     -webkit-text-stroke: 2px #fff;
   text-stroke: 2px #fff;
   }
-  .col-lg-3:nth-child(even) .counter-box {
-    margin-top: 0;
-  }
 
   .counter-box {
     margin: 15px 0;
@@ -2019,10 +2055,6 @@ input::-moz-focus-outer {
 
   .col-lg-5 .recent-news {
     margin-bottom: 30px;
-  }
-  .footer {
-    background-image: url(../images/bcg/07\ -\ Copy.jpg);
-    background-position: right 5000px top 0px;
   }
   .footer h3{
     text-align: center;
@@ -2059,11 +2091,11 @@ input::-moz-focus-outer {
     .side-widget {
     width: 240px;
   }
-  #about{
-    background: url("../images/bcg/About-2.png");
-  }
   #about .container{
     padding: 30px;
+  }
+  #about .about-content{
+    padding: 20px 20px;
   }
   .testimonial .carousel-item{
     margin-top: 50px;
@@ -2186,11 +2218,6 @@ input::-moz-focus-outer {
   .sponsor h6 {
     font-size: 14px;
   }
-
-  .footer {
-    background-image: url(../images/bcg/07\ -\ Copy.jpg);
-    background-position: right 5000px top 0px;
-  }
   .footer .scroll-top {
     right: auto;
     left: 15px;
@@ -2264,13 +2291,6 @@ input::-moz-focus-outer {
   }
   .ticket .tick-item{
     margin: 20px !important;
-  }
-  #about{
-    background: url("../images/bcg/About-2.png");
-  }
-  .footer {
-    background-image: url(../images/bcg/07\ -\ Copy.jpg);
-    background-position: right 5000px top 0px;
   }
   .footer .scroll-top {
     right: auto;
