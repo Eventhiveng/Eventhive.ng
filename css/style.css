@@ -757,7 +757,12 @@ textarea.input {
   /* margin-top: 30px; */
   background-color: #f9f9fa;
 }
-
+#speakers .card-title{
+  font-size: 12px;
+}
+#speakers .section-title{
+  margin-bottom: 30px;
+}
 .speaker {
   position: relative;
   cursor: pointer;
