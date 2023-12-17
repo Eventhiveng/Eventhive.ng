@@ -40,17 +40,21 @@
         <div class="site-menu">
           <ul>
             <li><a href="#">HOME</a></li>
-            <!-- <li><a href="#about">ABOUT</a></li> -->
-          <li><a href="#new">HIGHLIGHTS</a></li>
-          <li><a href="#partner">PARTNERSHIP</a></li>
-          <li><a href="https://zfrmz.com/OA4vxuJLtq8dxmeUZsof" download>DOWNLOAD BROCHURE</a></li>
+            <li><a href="#new">AGENDA</a></li>
+            <li><a href="#new">ABOUT</a></li>
+            <li><a href="#partner">PARTNERSHIP</a></li>
+            <li><a href="https://zfrmz.com/OA4vxuJLtq8dxmeUZsof" download>BROCHURE</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
         <!-- end site-menu -->
       </div>
       <!-- end show-mobile -->
-      <small>© 2023 Nigeria Fintech Forum </small>
+      <small>©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+         Africa Fintech Forum </small>
     </div>
     <!-- end inner -->
   </aside>
@@ -60,7 +64,7 @@
 
   <!-- end slider -->
   <!-- NAV -->
-  <nav class="navbar">
+  <nav class="navbar fixed">
     <div class="container">
       <div class="logo">
         <a href="index.html"><img src="ico/NFF-logo.png" alt="Image" /></a>
@@ -71,10 +75,10 @@
       <div class="site-menu">
         <ul>
           <li><a href="#">HOME</a></li>
-          <!-- <li><a href="#about">ABOUT</a></li> -->
-          <li><a href="#new">HIGHLIGHTS</a></li>
+          <li><a href="#">AGENDA</a></li>
+          <li><a href="#about">ABOUT</a></li>
           <li><a href="#partner">PARTNERSHIP</a></li>
-          <li><a href="/Brochure-NFintechForum (web).pdf" download>DOWNLOAD BROCHURE</a></li>
+          <li><a href="https://zfrmz.com/OA4vxuJLtq8dxmeUZsof" download>BROCHURE</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
@@ -91,20 +95,16 @@
   <!-- NAV -->
 
   <!-- HEADER -->
-  <header class="slider">
+  <header class="slider text-center">
     <div class="container">
-      <h2><b>NIGERIA FINTECH <br> FORUM 2023</b></h2>
-      <p class="p-one">Nigeria’s leading gathering of stakeholders working across <br> various verticals of finance and banking.
-      <br>
-    <br>
-  THANK YOU FOR ATTENDING!</p>
-      <p class="p-one"></p>
-      <!-- <p>CIVIC CENTER, VICTORIA ISLAND, LAGOS | <b>3RD AUGUST, 2023</b></p> -->
+      <h2>AFRICA <b>FINTECH</b> FORUM 2024</h2>
+      <p class="p-one">May 15th, 2024 | Sarit Expo Center, Nairobi, Kenya</p>
       <div class="buttons">
-        <a class="register-btn" href="/PostEvent Report - Fintech Forum.pdf" target="_blank" download>POST-EVENT REPORT<i class="lni lni-arrow-right"></i></a>
-        <a class="sponsor-btn" href="https://zfrmz.com/OA4vxuJLtq8dxmeUZsof" class="left">BECOME A SPONSOR<i class="lni lni-arrow-right"></i></a>
-        <a class="download-btn" href="/agenda-NFintechForum (web).pdf" class="left" target="_blank" download>DOWNLOAD AGENDA<i class="fa fa-download"></i></a>
+        <a class="register-btn" href="#" target="_blank" download>DOWNLOAD AGENDA<i class="fa fa-download"></i></a>
+        <a class="sponsor-btn" href="#" class="left">REGISTER TODAY<i class="lni lni-arrow-right"></i></a>
+        <!-- <a class="download-btn" href="/agenda-NFintechForum (web).pdf" class="left" target="_blank" download>DOWNLOAD AGENDA<i class="fa fa-download"></i></a> -->
       </div>
+      <p id="demo"></p>
     </div>
     <!-- end container -->
   </header>
@@ -1419,6 +1419,43 @@
   <script src="js/odometer.min.js"></script>
   <script src="js/scripts.js"></script>
   <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("May 15, 2024 09:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = "<div class=\"days\"> \
+  <div class=\"numbers\">" + days + "</div>days</div> \
+<div class=\"hours\"> \
+  <div class=\"numbers\">" + hours + "</div>hours</div> \
+<div class=\"minutes\"> \
+  <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+<div class=\"seconds\"> \
+  <div class=\"numbers\">" + seconds + "</div>seconds</div> \
+</div>";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "THANK YOU FOR ATTENDING!";
+      }
+    }, 1000);
+    </script>
   <script>
     var myIndex = 0;
     carousel();
