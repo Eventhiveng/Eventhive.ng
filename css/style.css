@@ -803,10 +803,10 @@ a:hover {
   display: inline-block;
   height: 60px;
   line-height: 60px;
-  padding: 0 40px;
+  padding: 0 20px;
   background: transparent;
   color:#fff ;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   margin-bottom: 10px;
   border: 2px solid white;
@@ -820,6 +820,29 @@ a:hover {
   border: 2px solid transparent;
   background-color: white;
   color: #000;
+}
+.partner .register-btn {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 30px;
+  background: #001d3d;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 0px !important;
+  border: 2px solid #001d3d;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.partner .register-btn:hover{
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
 }
 .partner a i {
   display: inline-block;
@@ -855,6 +878,31 @@ a:hover {
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.themes .buttons{
+  text-align: center;;
+}
+.themes .sponsor-btn {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 40px;
+  background: transparent;
+  color:#fff ;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.themes .sponsor-btn:hover{
+  border: 2px solid transparent;
+  background-color: white;
+  color: #000;
 }
 
 /* WHATS NEW */
@@ -893,7 +941,7 @@ a:hover {
   color: #F6F4F3;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 5px;
   margin-top: 30px;
 }
@@ -901,7 +949,7 @@ a:hover {
   display: inline-block;
   padding: 20px;
   margin: 10px;
-  width: 150px;
+  width: 120px;
   border-radius: 5px;
 }
 
@@ -978,10 +1026,10 @@ a:hover {
   display: inline-block;
   height: 60px;
   line-height: 60px;
-  padding: 0 40px;
+  padding: 0 30px;
   background: #001d3d;
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   margin-bottom: 10px;
   margin-left: 0px !important;
@@ -1091,7 +1139,7 @@ a:hover {
 .section-title h2:before {
   content: "";
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: #D39E00 !important;
   position: absolute;
   left: 0;
@@ -1757,6 +1805,14 @@ padding-bottom:50px;
   padding-top: 80px;
   color: #fff;
 }
+.footer .content{
+  font-size: 12px;
+  padding: 20px 10px;
+}
+.footer .title{
+  color: #595B6B;
+  font-weight: bold;
+}
 .footer h3 {
   color: #595B6B;
   letter-spacing: 3px;
@@ -1791,13 +1847,13 @@ padding-bottom:50px;
   font-weight: 600;
   opacity: 0.7;
   letter-spacing: 2px;
-  text-align: center;
+  text-align: left;
 }
 .footer address {
   width: 100%;
   display: block;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 .footer address p {
   width: 100%;
@@ -1844,7 +1900,7 @@ padding-bottom:50px;
   /* margin-top: 50px; */
   /* border: 1px solid #fff; */
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 .footer ul li {
   display: inline-block;
@@ -1953,6 +2009,12 @@ input::-moz-focus-outer {
     }
     .ticket .tick-item{
       margin: 0px !important;
+    }
+    .text-center-mobile{
+      text-align: center !important;
+    }
+    .footer ul{
+      text-align: center;
     }
   .counter-box .value {
     margin-right: 20px;
@@ -2079,7 +2141,9 @@ input::-moz-focus-outer {
   .section-title h6{
     font-size: 13px;
   }
-  
+  .text-center-mobile{
+    text-align: center !important;
+  }
   .ticket a {
     height: 40px;
     line-height: 40px;
@@ -2148,8 +2212,8 @@ input::-moz-focus-outer {
   }
 
   .slider h2 {
-    font-size: 40px;
-    margin-top: 30px;
+    font-size: 30px;
+    margin-top: 50px;
     margin-left: 0px;
     margin-bottom: 20px;
   }
@@ -2157,11 +2221,8 @@ input::-moz-focus-outer {
     -webkit-text-stroke: 2px #fff;
   text-stroke: 2px #fff;
   }
-  .slider p:nth-of-type(1) {
-    margin-bottom: 10px;
-  }
-  .slider p:nth-of-type(3) {
-    margin-bottom: 70px;
+  .slider .p-one {
+    font-size: 14px;
   }
   .slider p {
     margin-bottom: 0px;
@@ -2182,7 +2243,7 @@ input::-moz-focus-outer {
     margin-left: 0px;
   }
   .section-title h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .row.no-gutters .col {
     width: 80%;
