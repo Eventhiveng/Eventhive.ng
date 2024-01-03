@@ -931,7 +931,7 @@ a:hover {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../images/bcg/bcg3.png);
+  background-image: url(../images/bcg/bcg4.png);
   background-size: cover;
   position: relative;
   text-align: center;
@@ -1972,9 +1972,6 @@ input::-moz-focus-outer {
     margin-top: 10px;
     margin-bottom: 40px;
   }
-  .slider {
-    background-position: right 1400px top 0px;
-  }
   .counter-box .odometer {
     font-size: 30px;
   }
@@ -2022,9 +2019,6 @@ input::-moz-focus-outer {
   .w-new .w-item{
     margin: 5px;
     max-width: 350px;
-  }
-  .slider{
-    background-position: right 100px top 0px;
   }
   .w-new{
     background-position: right 1200px top 0px;
@@ -2094,7 +2088,7 @@ input::-moz-focus-outer {
     color: #fff;
   }
   .slider {
-    background-position: right 1200px top 0px;
+    background-position: right 1000px top 0px;
   }
   
   .slider h2 b{
@@ -2168,7 +2162,7 @@ input::-moz-focus-outer {
     background-position: right 500px top 0px;
   }
   .slider{
-    background-position: right 1250px top 0px;
+    background-position: right 1200px top 0px;
   }
   .partner{
     background-position: right 1250px top 0px;
@@ -2335,9 +2329,6 @@ input::-moz-focus-outer {
   }
   .slider p {
     margin-bottom: 0px;
-  }
-  .slider {
-    background-position: right 1000px top 0px;
   }
   .about-content {
     margin: 2px;
