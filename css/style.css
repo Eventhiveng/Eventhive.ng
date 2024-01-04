@@ -1817,27 +1817,6 @@ a:hover {
   box-shadow: 0 30px 30px #eee;
   z-index: 1;
 }
-.sales-team:hover:after {
-  content: "";
-  width: 80px;
-  height: 70px;
-  background: url("../images/pattern-dot.png");
-  background-size: 12px 12px;
-  position: absolute;
-  left: -30px;
-  top: 30px;
-}
-.sales-team:hover .infos:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 14px 14px;
-  border-color: transparent transparent #0e0081 transparent;
-  position: absolute;
-  right: 4px;
-  bottom: 4px;
-}
 .sales-team:hover figure img {
   mix-blend-mode: multiply;
 }
@@ -1849,15 +1828,15 @@ a:hover {
 }
 .sales-team figure img {
   width: 100%;
+  
+}
+.sales-team figure img:hover {
   filter: grayscale(1);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-}
-.sales-team figure img:hover {
-  filter: none;
 }
 .sales-team .infos {
   width: 100%;
