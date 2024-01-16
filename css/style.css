@@ -1853,12 +1853,14 @@ a:hover {
   width: 100%;
   display: block;
   opacity: 0.5;
+  font-size: 12px;
 }
 .sales-team b {
   width: 100%;
   display: block;
   font-weight: 600;
   margin-bottom: 15px;
+  font-size: 12px;
 }
 .sales-team ul {
   display: inline-block;
