@@ -1251,6 +1251,41 @@ a:hover {
   background-color: #0d135a;
   color: #fff;
 }
+.counter a {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 40px;
+  background: #ffae1e;
+  color: #444;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.counter a i {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
+  transform: translateY(3px);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.counter a:hover {
+  text-decoration: none;
+  /* box-shadow: 0 20px 20px #000; */
+}
+.counter a:hover i {
+  margin-left: 20px;
+}
 .border-right{
   border-right: 1px solid #25baff !important;
 }
@@ -2814,6 +2849,11 @@ input::-moz-focus-outer {
     line-height: 50px;
     padding: 0 20px;
   }
+  .counter a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+  }
 
   .slider .left {
     margin-left: 20px;
@@ -2984,7 +3024,12 @@ input::-moz-focus-outer {
     line-height: 45px;
     padding: 0 20px;
   }
-
+  .counter a {
+    margin-bottom: 15px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+  }
   .slider .left {
     margin-left: 0px;
   }
