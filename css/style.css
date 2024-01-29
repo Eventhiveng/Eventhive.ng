@@ -841,6 +841,10 @@ a:hover {
   background-size: cover;
   background-attachment: fixed;
 }
+#infoTwo a{
+  text-decoration: underline;
+  color: white;
+}
 #infoTwo h2 {
   color: white;
 }
