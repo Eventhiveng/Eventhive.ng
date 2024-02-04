@@ -1905,12 +1905,14 @@ a:hover {
   width: 100%;
   display: block;
   opacity: 0.5;
+  font-size: 12px;
 }
 .sales-team b {
   width: 100%;
   display: block;
   font-weight: 600;
   margin-bottom: 15px;
+  font-size: 12px;
 }
 .sales-team ul {
   display: inline-block;
@@ -2047,6 +2049,9 @@ a:hover {
 }
 .sponsorship .section-title{
   margin-bottom: 20px;
+}
+#sponsors{
+  text-align: center;
 }
 .sponsorship {
   text-align: center;
