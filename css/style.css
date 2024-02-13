@@ -761,7 +761,7 @@ textarea.input {
   background-color: #f9f9fa;
 }
 #speakers .card-title{
-  font-size: 12px;
+  font-size: 14px;
 }
 #speakers .section-title{
   margin-bottom: 30px;
@@ -1583,6 +1583,9 @@ a.btn-border-white:hover {
 }
 
 @media only screen and (max-width: 992px) {
+  #speakers .card-title{
+    font-size: 18px;
+  }
   .new .col-md-3{
     height: 22rem;
   }
