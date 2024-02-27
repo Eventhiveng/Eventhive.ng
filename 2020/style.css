@@ -5,7 +5,7 @@ Author: yaminncco
 Colors:
 	Body 		  : #444
 	Headers 	: #0b0f28
-	Primary 	: #ffcc00
+	Primary 	: #fcc404
 	Dark 		  : #000
 	Grey 		  : #F9F9FA #DADADA
 
@@ -93,7 +93,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
-  color: #ffcc00;
+  color: #fcc404;
 }
 
 ul,
@@ -103,12 +103,12 @@ ol {
   list-style: none;
 }
 .id-color {
-  color: #ffcc00;
+  color: #fcc404;
 }
 .main-btn {
   display: inline-block;
   padding: 11.5px 21px;
-  background: #ffcc00;
+  background: #fcc404;
   color: #fff;
   text-transform: uppercase;
   border: none;
@@ -132,7 +132,7 @@ ol {
 .ticket-btn {
   display: inline-block;
   padding: 11.5px 21px;
-  background: #ffcc00;
+  background: #fcc404;
   color: #fff;
   text-transform: uppercase;
   border: none;
@@ -143,7 +143,7 @@ ol {
 }
 
 a.btn-border-black {
-  border: solid 2px #ffcc00;
+  border: solid 2px #fcc404;
   background: none;
   border-radius: 30px;
   padding: 9px 30px 9px 30px;
@@ -183,7 +183,7 @@ textarea.input {
 }
 
 .input:focus {
-  border-color: #ffcc00;
+  border-color: #fcc404;
 }
 
 /*----------------------------*\
@@ -356,17 +356,17 @@ textarea.input {
   bottom: -3px;
   width: 100%;
   left: 0;
-  background: #ffcc00;
+  background: #fcc404;
 }
 
 .main-nav li a:hover,
 .main-nav li a:focus {
   background-color: transparent;
-  color: #ffcc00;
+  color: #fcc404;
 }
 
 #header.transparent-navbar .main-nav li a:hover {
-  color: #ffcc00;
+  color: #fcc404;
 }
 
 .navbar-toggle {
@@ -412,7 +412,7 @@ textarea.input {
   .main-nav li a:hover,
   .main-nav li a:focus,
   .main-nav li.active a {
-    background-color: #ffcc00;
+    background-color: #fcc404;
     color: #fff !important;
   }
   .navbar-toggle {
@@ -475,7 +475,7 @@ textarea.input {
 .number h3 {
   font-size: 42px;
   margin-bottom: 0px;
-  color: #ffcc00;
+  color: #fcc404;
 }
 
 .number p {
@@ -525,7 +525,7 @@ textarea.input {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: transparent;
-  color: #ffcc00;
+  color: #fcc404;
   width: 90px;
   height: 90px;
   line-height: 90px;
@@ -588,7 +588,7 @@ textarea.input {
 .speaker .speaker-content {
   position: relative;
   padding: 30px;
-  background: #ffcc00;
+  background: #fcc404;
   text-align: right;
   z-index: 20;
 }
@@ -620,7 +620,7 @@ textarea.input {
   line-height: 40px;
   text-align: center;
   color: #fff;
-  background: #ffcc00;
+  background: #fcc404;
   z-index: 15;
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
@@ -667,7 +667,7 @@ textarea.input {
   height: 60px;
   line-height: 60px;
   text-align: center;
-  background-color: #ffcc00 !important;
+  background-color: #fcc404 !important;
   border-radius: 50%;
   padding: 0;
   color: #fff;
@@ -695,7 +695,7 @@ textarea.input {
 }
 
 .speaker-modal .speaker-modal-content .speaker-job {
-  color: #ffcc00;
+  color: #fcc404;
 }
 
 .speaker-modal .speaker-modal-content .speaker-social {
@@ -711,7 +711,7 @@ textarea.input {
   text-align: center;
   font-size: 14px;
   border-radius: 50%;
-  background: #ffcc00;
+  background: #fcc404;
   color: #fff;
   margin-right: 5px;
   -webkit-transition: 0.3s opacity;
@@ -746,7 +746,7 @@ textarea.input {
   .speaker-event
   > span
   strong {
-  color: #ffcc00;
+  color: #fcc404;
 }
 
 /*=========================================================
@@ -768,7 +768,7 @@ textarea.input {
   top: 0px;
   bottom: 0px;
   width: 4px;
-  background-color: #ffcc00;
+  background-color: #fcc404;
 }
 
 .event:last-child:after {
@@ -782,7 +782,7 @@ textarea.input {
   height: 60px;
   top: -60px;
   width: 4px;
-  background-color: #ffcc00;
+  background-color: #fcc404;
 }
 
 .event .event-day {
@@ -792,7 +792,7 @@ textarea.input {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #ffcc00;
+  background: #fcc404;
   z-index: 10;
 }
 
@@ -803,7 +803,7 @@ textarea.input {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #ffcc00;
+  background: #fcc404;
   z-index: 10;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -846,11 +846,11 @@ textarea.input {
 }
 
 .event .event-time i {
-  color: #ffcc00;
+  color: #fcc404;
 }
 
 .event .event-content a {
-  color: #ffcc00;
+  color: #fcc404;
 }
 
 .download-btn {
@@ -901,7 +901,7 @@ textarea.input {
 }
 
 .contact h3 {
-  color: #ffcc00;
+  color: #fcc404;
 }
 
 #map {
@@ -933,7 +933,7 @@ textarea.input {
   text-align: center;
   line-height: 120px;
   font-size: 42px;
-  color: #ffcc00;
+  color: #fcc404;
   cursor: pointer;
 }
 
@@ -969,7 +969,7 @@ textarea.input {
   height: 30px;
   text-align: center;
   border-radius: 50%;
-  background: #ffcc00;
+  background: #fcc404;
   color: #fff;
   line-height: 30px;
   margin-right: 15px;
@@ -982,7 +982,7 @@ textarea.input {
 }
 
 .copyright a {
-  color: #ffcc00;
+  color: #fcc404;
 }
 /*=========================================================
 	RESPONSIVE
