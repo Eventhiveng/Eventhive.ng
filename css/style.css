@@ -37,14 +37,13 @@ RESPONSIVE
 	typography
 \*----------------------------*/
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #444;
-  scroll-behavior: smooth;
 }
 @media only screen and (max-width: 767px) {
   body {
@@ -1465,4 +1464,28 @@ filter: gray;  /* IE6-9 */
   .logo-item {
     padding: 0 15px;
   }
+}
+
+
+
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  margin: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fcc404;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fcc404;
 }
