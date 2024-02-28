@@ -1,0 +1,415 @@
+<!-- Counter -->
+  <!-- <section class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <h3 class="title">
+              <span style="color: #fcc404">LAGOS REAL ESTATE FEST</span> BY NUMBERS
+            </h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="counter-box">
+            <span class="counter" data-from="0" data-to="20" data-speed="2500">0</span>
+            <span class="value">+</span>
+            <h6>Speakers</h6>
+            <p>
+              Enjoy one day  of interactive, live & on-demand panel discussions and presentations, delivered by international and regional real estate  thought leaders.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="counter-box">
+            <span class="counter" data-from="0" data-to="200" data-speed="2500">0</span>
+            <span class="value">+</span>
+            <h6>Companies</h6>
+            <p>
+              Engage with Nigeria’s leading Real Estate brands cutting across various sectors of the property ecosystem.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="counter-box">
+            <span class="counter" data-from="0" data-to="100" data-speed="2500">0</span>
+            <span class="value">+</span>
+            <h6>Decision Makers</h6>
+            <p>
+              One day of content, connections and collaborations with over 500 leading Nigeria’s real estate thought leaders.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="counter-box">
+            <span class="counter" data-from="0" data-to="1000" data-speed="2500">0</span>
+            <span class="value">+</span>
+            <h6>Attendees</h6>
+            <p>Attendees drawn from the Global Real Estate market.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+<!-- INFO -->
+<section class="content-section" id="infoOne">
+  <div class="container">
+    <div class="row infoOne-content">
+      <div class="col-12">
+        <div class="section-title">
+          <h3 class="title">
+            <span style="color: white;">ABOUT THE ORGANIZERS </span><span style="color: #fcc404"> - EVENTHIVE.NG</span>
+          </h3>
+        </div>
+      </div>
+        <div class="col-lg-12">
+          <p>
+            <span class="id-color"><a href="https://eventhive.ng/"><b>Eventhive.ng</b></a></span> is Nigeria’s leading B2B Events company with core competencies in developing Africa’s businesses via face-to-face conferences, networking and exhibitions, With an extensive understanding of the Nigeria’s business environment, <span class="id-color"><a href="https://eventhive.ng/"><b>Eventhive.ng</b></a></span> has hosted multiple industry focused events across Oil & Gas, Power, Transport, Real Estate, Tech, Construction and Agribusiness in Nigeria.
+          </p>
+
+          <p>
+            <span class="id-color"><a href="https://eventhive.ng/"><b>Eventhive.ng</b></a></span> operates in the heart of the knowledge and information economy across major sectors in Africa. We enable businesses to grow through connecting them with knowledge, ideas and opportunities.
+          </p>
+
+          <p>
+            <span class="id-color"><a href="https://eventhive.ng/"><b>Eventhive.ng</b></a></span> helps organizations in communicating their brand value, reach their target audience and meet with stakeholders relevant to their businesses.
+          </p>
+        </div>
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>
+<!-- INFO -->
+
+<!-- Highlights -->
+    <section
+      class="content-section"
+     id="highlights">
+     <div class="section-title">
+      <h3 class="title">
+        LREF 2022 <span style="color: #fcc404">HIGHLIGHTS</span>
+      </h3>
+    </div>
+     <div class="w3-content w3-section" style="max-width:800px">
+      <img class="mySlides" src="img/bcg/1-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/2-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/3-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/4-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/5-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/6-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/7-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/8-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/9-opt.jpeg" style="width:100%">
+      <img class="mySlides" src="img/bcg/10-opt.jpeg" style="width:100%">
+    </div>
+    <!-- <br>
+      <div class="content-section">
+        <div class="section-title">
+          <h3 class="title">
+            PREVIOUS <span style="color: #fcc404">SPONSORS</span> AND <span style="color: #fcc404">PARTNERS</span
+          </h3>
+        </div>
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <figure class="logo-item">
+                <img src="img/sponsors/STONETRUST.png" alt="Image" />
+              </figure>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <figure class="logo-item">
+                <img src="img/sponsors/ALPHACRUX.png" alt="Image" />
+              </figure>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <figure class="logo-item">
+                <img src="img/sponsors/SESO.png" alt="Image" />
+              </figure>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <figure class="logo-item">
+                <img src="img/sponsors/itmb.jpg" alt="Image" />
+              </figure>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <figure class="logo-item">
+                <img src="img/sponsors/YNAIJA.png" alt="Image" />
+              </figure>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <figure class="logo-item">
+                <img src="img/sponsors/business-day.png" alt="Image" />
+              </figure>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <figure class="logo-item">
+                <img
+                  src="img/sponsors/LIVINSPACE.png"
+                  alt="Image"
+                />
+              </figure>
+            </div>
+          </div>
+          <br />
+        </div> -->
+      </div>
+    </section>
+    <!-- end content-section -->
+
+<!-- end content-section -->
+<section class="content-section" id="sponsor">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title">
+          <h3 class="title">
+            <span style="color: #fcc404">WHY SPONSOR?</span> MULTI-FOCUS MARKETING CAMPAIGN BENEFITS
+          </h3>
+        </div>
+        <!-- end section-title -->
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="s-box">
+          <p>
+            <span class="id-color"><b>Email</b></span>- Targeting a database of 7000+ key sector stakeholders drawn from various industries.
+          </p>
+        </div>
+        <!-- end s-box -->
+      </div>
+      <!-- end col-3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="s-box">
+          <p>
+            <span class="id-color"><b>Exhibition</b></span>- Providing you with a rightly positioned booth to showcase your real estate offerings/solutions to industry stakeholders.
+          </p>
+        </div>
+        <!-- end s-box -->
+      </div>
+      <!-- end col-3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="s-box">
+          <p>
+            <span class="id-color"><b>Media Campaign</b></span>- A carefully curated pre,on and post event media campaign targeting digital and physical media platforms.
+          </p>
+        </div>
+        <!-- end s-box -->
+      </div>
+      <!-- enh d col-3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="s-box">
+          <p>
+            <span class="id-color"><b>Branding</b></span>- Embedding your brand logos and materials across our event showcase platforms.
+          </p>
+        </div>
+        <!-- end s-box -->
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="s-box">
+          <p>
+            <span class="id-color"><b>Thought Leadership</b></span>- Strengthening your market position via carefully designed presentations/fireside chats during the event.
+          </p>
+        </div>
+        <!-- end s-box -->
+      </div>
+      <!-- end col-3 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</section>
+<!-- end content-section -->
+
+ <!-- Sponsors -->
+  <div id="sponsorship" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="section-title col-md-8 col-md-offset-2">
+          <h3 class="title">
+            <span>SPONSORSHIP</span>
+            <span style="color: #fcc404">OPPORTUNITIES</span>
+          </h3>
+        </div>
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <p>
+            In a constantly changing Industry, Positioning your company at the
+            forefront of the market provides your brand with an opportunity to
+            further strengthen its position within the Industry. Our
+            <span class="id-color"><b>Sponsorship and Exhibition</b></span> plans provides your organization with a
+            world class marketing mix offering a seamless end to end journey
+            to build brand equity and create valuable connections within the
+            <span class="id-color"><b>Real Estate ecosystem</b></span>.
+          </p>
+          <p>
+            Aligning our sponsors organization brand with <span class="id-color"><b>Lagos Real Estate
+              Fest</b></span> is a smart and effective way to engage global audiences and
+            demonstrate expertise.
+          </p>
+          <p>
+            The delegate and speakers <span class="id-color"><b>Lagos Real Estate Fest</b></span> attracts are
+            unparalleled in their level of relevance and influence. <a href="https://zfrmz.com/VoyGZVkfCkawteJO1n8g" style="text-decoration: underline;" target="_blank" >Please
+              download the Sponsorship brochure and get in touch.</a>
+          </p>
+        </div>
+        
+        <!-- <div class="col-lg-6 text-center">
+          <a target="_blank" class="btn btn-border-black" href="https://paystack.com/pay/re-booth">Book A Booth</a>
+        </div> -->
+        
+      </div>
+    </div>
+  </div>
+  <!-- Sponsors -->
+
+  <!-- <div id="spons" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="section-title col-md-8 col-md-offset-2">
+          <h3 class="title">
+            <span>Our Key</span>
+            <span style="color: #fcc404">Deliverables</span>
+          </h3>
+          <h5>QUALITY SESSION WITH REAL ESTATE THOUGHT LEADERS</h5>
+          <p>
+            Lagos Real Estate Fest is a high caliber gathering of property
+            stakeholders. Participate in live sessions and presentations with
+            industry peers delivered by thought leaders within the real estate
+            ecosystem.
+          </p>
+          <br />
+
+          <h5>EXHIBITION BOOTHS</h5>
+          <p>
+            Lagos Real Estate Fest provides an opportunity to engage with
+            leading brands in our exhibition booths serving as market place
+            for the Industry
+            <br /><br />
+            Our Exhibition booths provides access to some of Nigeria's leading
+            real estate developments.
+          </p>
+          <br />
+
+          <h5>NETWORKING</h5>
+          <p>
+            Lagos Real Estate Fest provides an opportunity to engage and make
+            meaningful connections within the Real estate Industry.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="section spons-media" id="sponsors">
+    <div class="container">
+      <div class="row">
+        <div class="section-title col-md-12 col-lg-12">
+          <h3 class="title">
+            <span>LREF 2023 SPONSORS</span> <span style="color: #fcc404">AND PARTNERS</span>
+          </h3>
+          <br />
+          <div class="col-md-12">
+            <h3><span style="color: #fcc404">GOLD</span> SPONSOR</h3>
+            <img class="" src="img/sponsors/rebar-gold.png" width="200" alt="" />
+          </div>
+          <div class="col-md-12">
+            <h3><span style="color: #fcc404">SILVER</span> SPONSOR</h3>
+            <img class="" src="img/sponsors/lafarge-silver.png" width="180" alt="" />
+          </div>
+          <div class="col-md-12">
+            <h3><span style="color: #fcc404">BRONZE</span> SPONSORS</h3>
+            <img class="" src="img/sponsors/bronze-facibus.png" width="180" alt="" />
+            <img class="" src="img/sponsors/materialpro-bronze.png" width="180" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Ticket Reminder -->
+<!-- <div id="ticketR" class="section" style="padding-bottom: 10px;">
+  <div class="row">
+    <div class="section-title tick-rem">
+      <h3 class="title">
+        <span style="color: #fcc404">LAGOS REAL ESTATE FEST 2023</span><br><span style="color: white;"> THE MOST INFLUENTIAL NIGERIA-FOCUSED REAL ESTATE GATHERING</span> 
+      </h3>
+      <h4 class="lead" style="color: white;"><b>26TH JUNE 2023 | FOURPOINT BY SHERATON, VICTORIA ISLAND, LAGOS</b></h4>
+    </div>
+  </div>
+</div> -->
+<!-- Ticket Reminder -->
+
+  <!-- Ticket section -->
+  <!-- <div id="book-a-seat" class="section ticket">
+    <div class="container">
+      <div class="row">
+        <div class="section-title col-md-12 text-center">
+          <h3 class="title">
+            <span>BOOK A </span> <span style="color: #fcc404">SEAT</span>
+          </h3>
+        </div>
+        <div class="ticket col-md-6 col-md-offset-3">
+          <h3 class="text-center bcg-blue">GENERAL PASS - <span class="id-color">₦10,000</span></h3>
+          <ul>
+            <li>
+              Full access pass to all main plenary and
+              breakaway discussions.
+            </li>
+            <li>Access to question and answers</li>
+            <li>Full access pass to exhibition areas</li>
+            <li>
+              Full access pass to networking opportunities
+            </li>
+          </ul>
+          <br>
+          <br>
+          <a class="ticket-btn" target="_blank" href="https://paystack.com/pay/re-gen" class="text-center" >Book Pass</a>
+          <br /><br />
+        </div>
+        <div class="col-md-12">
+          <h3>
+            <em>*FREE REGISTRATION ENDED ON THE 24TH OF MAY</em>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- /Tickets section	   -->
+
+  <!-- <div class="section-title col-md-12 col-lg-12">
+    <h3 class="title">
+      <span>PREVIOUS</span> <span style="color: #fcc404"> SPONSORS AND PARTNERS</span>
+    </h3>
+    <br />
+
+    <div class="col-md-12">
+      <a href="https://greenkeyfm.com/"><img src="img/sponsors/GKFM LOGO.jpg" width="200"/></a>
+      <a href="https://strongmasresidence.com/"><img src="img/sponsors/strongmas residence logo.png" width="200"/></a>
+      <a href="https://stonetrust.ng/"><img src="img/sponsors/STONETRUST.png" width="200"/></a>
+      <a href="https://www.infinitytrustmortgagebank.com/"><img src="img/sponsors/itmb.jpg" width="200"/></a>
+      <a href="https://alphacruxltd.com/"><img src="img/sponsors/ALPHACRUX.png" width="200"/></a>
+      <a href="https://app.seso.global/properties/home"><img src="img/sponsors/SESO.png" width="200"/></a>
+      <a href="https://businessday.ng/"><img src="img/sponsors/business-day.png" width="200"/></a>
+      <a href="https://www.livinspaces.net/"><img src="img/sponsors/LIVINSPACE.png" width="200"/></a>
+      <a href="https://ynaija.com/"><img src="img/sponsors/YNAIJA.png" width="250"/></a>
+      <a href="https://www.tvcnews.tv/"><img src="img/sponsors/tvcnews.png" width="200"/></a>
+    </div>
+  </div> -->
+
+  <!-- Map start -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <!-- <div class="col-md-12">
+            <iframe src="https://www.cognitoforms.com/f/lKswiXBAPkCoyc2427jaXA?id=1" style="position:relative;width:1px;min-width:100%;*width:100%;" frameborder="0" scrolling="yes" seamless="seamless" height="504" width="100%"></iframe>
+            <script src="https://www.cognitoforms.com/scripts/embed.js"></script>
+          </div> -->
+        <div id="container-map">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6915709069162!2d3.440724274045953!3d6.433649693557515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf519368e6f1b%3A0x3a1eed0bbc0fd9c8!2sFour%20Points%20by%20Sheraton%20Lagos!5e0!3m2!1sen!2suk!4v1684511969016!5m2!1sen!2suk"
+            width="100%" height="400" frameborder="0" style="border: 0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map end -->
