@@ -252,7 +252,7 @@ textarea.input {
 }
 
 .section-bg {
-  background-image: url(../img/bcg/one.png);
+  background-image: url(../img/bcg/four.png);
   position: absolute;
   left: 0;
   top: 0;
@@ -313,8 +313,8 @@ textarea.input {
 }
 .section-title h2:before {
   content: "";
-  width: 11%;
-  height: 3px;
+  width: 100px;
+  height: 4px;
   background: #fcc404 !important;
   position: absolute;
   left: 0;
@@ -730,6 +730,55 @@ textarea.input {
 .new p{
   font-size: 13px;
   padding: 0px 10px !important;
+}
+
+/* EXHIBIT */
+.exhibit .col-md-4{
+  padding: 0px !important;
+}
+.exhibit img{
+  width: 200px;
+  margin: 10px;
+}
+.exhibit p{
+  font-size: 16px;
+  text-align: left;
+}
+.exhibit .main-btn {
+  display: inline-block;
+  padding: 11.5px 21px;
+  background: transparent;
+  border: 2px solid #0b0f28;
+  color: #0b0f28;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s all;
+  transition: 0.2s all;
+  border-radius: 5px;
+   margin: 10px;
+}
+.exhibit .main-btn:hover{
+  transition: 0.2s all;
+  background: #0b0f28;
+  border: 2px solid #0b0f28;
+  color: #fff;
+}
+.exhibit .brochure-btn {
+  display: inline-block;
+  padding: 11.5px 21px;
+  background: #0b0f28;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #0b0f28;
+  -webkit-transition: 0.3s all;
+  transition: 0.2s all;
+   margin: 10px;
+   border-radius: 5px;
+}
+.exhibit .brochure-btn:hover{
+ background: transparent;
+ border: 2px solid #0b0f28;
+ color: #0b0f28;
+ transition: 0.2s all;
 }
 
 /* SPONS */
@@ -1417,9 +1466,6 @@ filter: gray;  /* IE6-9 */
   .section-bg{
       background-position: left 1000px top 0px;
     }
-  }.section-bg-spons{
-    background-position: left 1000px top 0px;
-  }
   .text-main{
     margin-top: 70px;
   }
