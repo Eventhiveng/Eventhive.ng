@@ -311,7 +311,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background: linear-gradient(162.03deg, #020559 22.1%, #000000 49.24%);
+  background: rgba(20, 20, 20, 1);
   background-position: center;
   background-size: cover;
   z-index: 5;
@@ -1991,12 +1991,9 @@ input::-moz-focus-outer {
   .col-lg-5 .recent-news {
     margin-bottom: 30px;
   }
-  .footer {
-    background-image: url(../images/bcg/07\ -\ Copy.jpg);
-    background-position: right 5000px top 0px;
-  }
   .footer h3{
     text-align: center;
+    margin-top: 20px;
   }
   .footer .b-right{
     border-right: none;
@@ -2139,10 +2136,6 @@ input::-moz-focus-outer {
     font-size: 14px;
   }
 
-  .footer {
-    background-image: url(../images/bcg/07\ -\ Copy.jpg);
-    background-position: right 5000px top 0px;
-  }
   .footer .scroll-top {
     right: auto;
     left: 15px;
@@ -2153,6 +2146,7 @@ input::-moz-focus-outer {
   }
   .footer h3{
     text-align: center;
+    margin-top: 20px;
   }
   .footer .b-right{
     border-right: none;
@@ -2212,10 +2206,6 @@ input::-moz-focus-outer {
   /* #about{
     background: url("../images/bcg/About-2.png");
   } */
-  .footer {
-    background-image: url(../images/bcg/07\ -\ Copy.jpg);
-    background-position: right 5000px top 0px;
-  }
   .footer .scroll-top {
     right: auto;
     left: 15px;
@@ -2226,6 +2216,7 @@ input::-moz-focus-outer {
   }
   .footer h3{
     text-align: center;
+    margin-top: 20px;
   }
   .footer .b-right{
     border-right: none;
