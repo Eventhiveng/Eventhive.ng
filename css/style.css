@@ -1075,7 +1075,6 @@ a:hover {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 10px;
-  margin-left: 0px !important;
   border: 2px solid #ffb000;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1098,6 +1097,7 @@ a:hover {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-left: 0px !important;
   border: 2px solid white;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1493,6 +1493,15 @@ a:hover {
 }
 
 /* SPONSORSHIP SECTION */
+.sponsorship{
+  background-color: #fff;
+}
+.sponsorship .section-title h2{
+  color: rgba(20, 20, 20, 1);
+}
+.sponsorship .section-title h2:before{
+  background: rgba(20, 20, 20, 1) !important;
+}
 .sponsor h6 {
   font-size: 25px;
 }
