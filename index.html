@@ -789,7 +789,7 @@
   <!-- SPONSOP -->
 
   <!-- COUNTER -->
-  <section class="content-section count-agenda justify-content-center">
+  <section class="content-section no-spacing justify-content-center">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12">
@@ -862,6 +862,37 @@
     <!-- end container -->
   </section>
   <!-- COUNTER -->
+
+   <!-- TICKET SECTION -->
+   <section class="content-section ticket" id="ticket">
+    <div class="col-12">
+      <div class="section-title">
+        <hr class="block">
+        <h2><b>BOOK A SEAT</b></h2>
+      </div>
+    </div>
+    <div id="eventbrite-widget-container-722049398187"></div>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '722049398187',
+        iframeContainerId: 'eventbrite-widget-container-722049398187',
+
+        // Optional
+        iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
+  </section>
+  <!-- TICKET SECTION -->
 
   <!-- <section
       class="content-section no-spacing white-space-top"
