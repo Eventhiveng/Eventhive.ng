@@ -531,10 +531,10 @@ a:hover {
   z-index: 4;
   transition: top ease 1s;
 }
-.navbar.sticky {
+/* .navbar.sticky {
   position: fixed;
   background: #060021;
-}
+} */
 .navbar.nav-down {
   top: 0;
 }
@@ -729,10 +729,17 @@ a:hover {
 /* ABOUT */
 #about{
   background-color: #060021;
+  color: white;
+}
+.about-content .section-title h2{
+  color: white;
 }
 .about-content a{
   color: #25baff;
   font-weight: bolder;
+}
+.about-content p{
+  font-size: 15px;
 }
 #about .section-title {
   text-align: center;
@@ -2978,7 +2985,7 @@ input::-moz-focus-outer {
     margin-left: 0;
   }
   .about-content {
-    margin: 2px;
+    margin: 0px 2px;
     padding: 30px 10px;
   }
   .sponsOP-content {
@@ -3235,7 +3242,7 @@ input::-moz-focus-outer {
     background-position: right 1100px top 0px;
   }
   .about-content {
-    margin: 2px;
+    margin: 0px 2px;
     padding: 30px 10px;
   }
   .sponsOP-content {
