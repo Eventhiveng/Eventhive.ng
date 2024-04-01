@@ -730,6 +730,7 @@ a:hover {
 #about{
   background-color: #060021;
   color: white;
+  padding-top: 0px;
 }
 .about-content .section-title h2{
   color: white;
@@ -740,6 +741,7 @@ a:hover {
 }
 .about-content p{
   font-size: 15px;
+  text-align: center;
 }
 #about .section-title {
   text-align: center;
@@ -794,6 +796,9 @@ a:hover {
 }
 
 /* INFOONE */
+#infoOne .section-title .block{
+  background-color: #ffae1e !important;
+}
 #infoOne {
   padding-top: 50px;
   color: white;
@@ -811,19 +816,16 @@ a:hover {
 }
 #infoOne .section-title {
   text-align: center;
+  margin-bottom: 30px;
 }
 #infoOne .section-title h2 {
   color: white;
 }
-#infoOne .hr {
-  width: 70px;
-  border: 3px solid #25baff;
-  margin: 0px;
-  margin-bottom: 10px;
-  /* text-align: center !important; */
-}
 #infoOne a {
-  color: #25baff !important;
+  color: #ffae1e !important;
+}
+#infoOne .points{
+  letter-spacing: 3px;
 }
 #infoOne li {
   list-style-type: none;
@@ -833,6 +835,11 @@ a:hover {
   color: #25baff;
   margin-right: 10px;
 }
+#infoOne .col-lg-8{
+  margin: auto;
+  font-size: 15px;
+  text-align: center;
+}
 
 /* INFOTWO */
 #infoTwo {
@@ -840,9 +847,12 @@ a:hover {
   padding-top: 80px;
   color: white;
   width: 100%;
-  background: url("../images/bg/bg2.png");
+  background: url("../images/bg/bg9.png");
   background-size: cover;
   background-attachment: fixed;
+}
+#infoTwo .section-title{
+  margin-bottom: 0px;
 }
 #infoTwo a{
   text-decoration: underline;
@@ -862,7 +872,7 @@ a:hover {
   list-style-type: none;
   line-height: 30px;
   margin: 20px;
-  font-size: 16px;
+  font-size: 15px;
 }
 #infoTwo li i {
   color: #25baff;
@@ -871,21 +881,22 @@ a:hover {
 #infoTwo li b{
   color: #25baff;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* WHATS NEW */
 #new {
   padding-bottom: 0px;
 }
-#new img {
-  margin: 70px 0px 10px;
-}
 .FS-20 {
   font-size: 20px;
 }
 #new .section-title {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
+}
+#new .new-content{
+  text-align: left !important;
+  font-size: 15px;
 }
 
 /* SLIDER */
@@ -1106,7 +1117,7 @@ a:hover {
   width: 100%;
   display: block;
   margin-bottom: 0;
-  font-size: 47px;
+  font-size: 32px !important;
   color: #000;
 }
 .section-title p {
@@ -1258,15 +1269,17 @@ a:hover {
 
 /* COUNTER BOX */
 .counter{
-  background-color: #060021;
-  color: #fff;
+  background-color: #fff;
+  color: #444;
+  padding-bottom: 0px;
 }
 .counter a {
   display: inline-block;
   height: 60px;
   line-height: 60px;
   padding: 0 40px;
-  background: #ffae1e;
+  background: transparent;
+  border: 2px solid #444;
   color: #444;
   font-size: 13px;
   font-weight: 600;
@@ -1301,11 +1314,11 @@ a:hover {
 }
 .counter .section-title {
   text-align: center !important;
-  color: #fff;
+  color: #444;
   margin-bottom: 20px;
 }
 .counter .section-title h2{
-  color: #fff;
+  color: #444;
 }
 .counter .col-lg-3{
   margin-bottom: 40px;

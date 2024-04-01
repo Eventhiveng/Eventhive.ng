@@ -1,0 +1,76 @@
+
+
+  <!-- COUNTER -->
+  <section class="content-section no-spacing justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title">
+            <hr class="block">
+            <h2><b>WHY ATTEND <br>UK-NIGERIA BUSINESS OUTLOOK</b></h2>
+          </div>
+        </div>
+        
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="count-agenda-box">
+            <!-- <span class="odometer" data-count="50" data-status="yes">0</span>
+              <span class="value">+</span> -->
+            <h6>HIGHLIGHTING OPPORTUNITY</h6>
+            <p>Our events drive decision-making and action. The UK-NIGERIA Business Outlook is designed to bring
+              together UK and Nigerian Government and Business leaders to facilitate deals across Trade, Energy, Real
+              Estate and Tech</p>
+          </div>
+          <!-- end count-agenda-box -->
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="count-agenda-box">
+            <!-- <span class="odometer" data-count="500" data-status="yes">0</span>
+              <span class="value">+</span> -->
+            <h6>DIVERSE APPROACH</h6>
+            <p>The UK-Nigeria Business Outlook presents the unique opportunity for stakeholders from every part of the
+              Business value chain, across both countries, to come together, network and gain business</p>
+          </div>
+          <!-- end count-agenda-box -->
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="count-agenda-box">
+            <!-- <span class="odometer" data-count="50" data-status="yes">0</span>
+              <span class="value">+</span> -->
+            <h6>UNPARALLELED NETWORKING ACCESS</h6>
+            <p>Eventhive.ng ensures the high-level participation of several key governments from across Nigeria. and
+              access to key officials and sector leaders</p>
+          </div>
+          <!-- end count-agenda-box -->
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-6 col-md-6">
+          <div class="count-agenda-box">
+            <!-- <span class="odometer" data-count="30" data-status="yes">0</span> -->
+            <!-- <span class="value">+</span> -->
+            <h6>EXTENSIVE MARKET UNDERSTANDING</h6>
+            <p>Eventhive.ng has led key deliberations and networking across the most important industries across the
+              Nigerian market, Eventhive seeks to bring these expertise towards ensuring unparalleled access to business
+              opportunities within the Nigerian market</p>
+          </div>
+          <!-- end count-agenda-box -->
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-6 col-md-6">
+          <div class="count-agenda-box">
+            <!-- <span class="odometer" data-count="100" data-status="yes">0</span>
+              <span class="value">+</span> -->
+            <h6>STRENGTHENING FDI’s INTO NIGERIA</h6>
+            <p>With a focus on strengthening foreign direct investment into Nigeria, the UK.-Nigeria Business Outlook
+              represents the premier platform for getting deals done and for defining the commercial opportunities for
+              UK companies in Nigeria</p>
+          </div>
+          <!-- end count-agenda-box -->
+        </div>
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- COUNTER -->
