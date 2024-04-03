@@ -843,7 +843,6 @@ a:hover {
 
 /* INFOTWO */
 #infoTwo {
-  margin-top: 60px;
   padding-top: 80px;
   color: white;
   width: 100%;
@@ -897,6 +896,37 @@ a:hover {
 #new .new-content{
   text-align: left !important;
   font-size: 15px;
+}
+
+/* S-SLIDER */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-550px * 7));
+  }
+}
+.s-slider {
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  /* margin: 50px 0px; */
+  overflow: hidden;
+  background-color: white !important;
+  position: relative;
+  width: auto;
+  
+}
+.s-slider .slide-track {
+  animation: scroll 50s linear infinite;
+  display: flex;
+  width: calc(170px * 30);
+}
+.s-slider .slide {
+  height: 100px;
+  width: 250px;
+  padding: 0px 2px;
 }
 
 /* SLIDER */
