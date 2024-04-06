@@ -1,3 +1,3 @@
 # Eventhive.ng
 
-Company Website - NOGR branch
+Company Website - LTF branch
