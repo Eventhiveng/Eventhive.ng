@@ -83,6 +83,331 @@
   <!-- TESTIMONIALS -->
 
 
+  
+
+  <!-- KEY THEMES -->
+  <section class="content-section themes no-spacing">
+    <div class="container">
+      <div class="row new-content alignCenter justify-content-center">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>2024 KEY THEMES</h2>
+            <!-- <h6><span class="y-color"><b>AT NFF - 2ND EDITION</b></span></h6> -->
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/banking.png" alt="" width="80px">
+          <br>
+          <h6>Banking</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/ecommerce.png" alt="" width="80px">
+          <br>
+          <h6>E-commerce & Retail</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/payments.png" alt="" width="80px">
+          <br>
+          <h6>Payments</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/embedfinance.png" alt="" width="80px">
+          <br>
+          <h6>Embedded Finance</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/fraud.png" alt="" width="80px">
+          <br>
+          <h6>Fraud & ID</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/lending.png" alt="" width="80px">
+          <br>
+          <h6>Lending & Credit</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/forex.png" alt="" width="80px">
+          <br>
+          <h6>Forex</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/crypto.png" alt="" width="80px">
+          <br>
+          <h6>Web3, Crypto & Defi</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/financialinc.png" alt="" width="80px">
+          <br>
+          <h6>Financial Inclusion</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/cx.png" alt="" width="80px">
+          <br>
+          <h6>Future of CX</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/regulation.png" alt="" width="80px">
+          <br>
+          <h6>Regulation</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/fintech.png" alt="" width="80px">
+          <br>
+          <h6>Fintech & Banking Infrastructure</h6>
+        </div>
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- KEY THEMES -->
+
+
+  
+
+  <!-- HIGHLIGHT -->
+  <section class="content-section no-spacing" id="speak">
+    <div class="container">
+      <div class="row new-content alignCenter justify-content-center">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>WHO SPEAKS AT NFF?</h2>
+            <!-- <h6><span class="y-color"><b>HERE ARE SOME HIGHLIGHTS AND TESTIMONIALS</b></span></h6> -->
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="container">
+           <div class="testimonial__inner">
+             <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/akeem-lawal.jpg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Akeem Lawal
+                          </h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Managing Director, <br>Interswitch Purepay
+                          </p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/Olu-Akanmu-3.jpeg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Olu Akanmu
+                          </h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Ex-President, <br>Opay Nigeria
+                        </p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/Jay-Alabraba.jpg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Jay Alabrabra 
+                          </h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Co-Founder, <br>Paga Group
+                        </p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/Yinka-Edu.jpg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Yinka Edu</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Partner, <br>Udo Udoma & Belo-Osagie
+                        </p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/prof olayinka.jpg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Professor Olayinka David-West</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Associate Dean, <br>Lagos Business School
+                        </p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/olayinka-oni.jpg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Olayinka Oni</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Executive Director, <br>Sterling Bank
+                        </p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/Wasiu.jpg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Wasiu Popoola
+                          </h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Chief Digital Officer, <br>Lotus Bank
+                        </p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/olatayo.jpg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Olatayo Ladipo-Ajai
+                          </h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Regional Manager, <br>West Africa
+                          Infobip
+                          </p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/aaron-fu.jpg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Aaron Fu</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Fintech Ventures, <br>Digital Currency Group</p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/Joshua.jpg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Joshua Chibueze
+                          </h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Co-Founder, <br>Piggyvest</p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-top">
+                        <img src="/images/speakers/Mayowa.jpg" alt="" width="250px">
+                        <div class="testimonial_box-name">
+                          <h4>Mayowa Kuyoro
+                          </h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Partner, <br>
+                          McKinsey & Company</p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HIGHLIGHT -->
+
+
+  
+
+  <!-- WHAT'S NEW -->
+  <section class="content-section w-new">
+    <div class="container">
+      <div class="row new-content alignCenter justify-content-center">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>WHAT'S NEW IN 2024?</h2>
+            <!-- <h6><span class="y-color"><b>#NFF2023</b></span></h6> -->
+          </div>
+        </div>
+        <div class="w-item col-md-6">
+          <h6>REGULATOR STAGE</h6>
+          <p>We are delighted to introduce a Regulation stage at the Nigeria Fintech Forum, This stage will provide a platform for financial policymakers, law enforcement agencies and regulators to exchange knowledge and insights on their regulatory and development strategies with industry stakeholders. The stage will also feature RegTech and ID solutions in the areas of regulatory compliance and cybersecurity.</p>
+        </div>
+        <div class="w-item col-md-6 ">
+          <h6>NFF PRE-EVENT HAPPY HOUR</h6>
+          <p>As a prelude to Nigeria Fintech Forum, we are convening attendees for a night of networking, fun, and revelry that you won't want to miss. We are looking forward to delivering a truly unforgettable evening!</p>
+        </div>
+        <div class="w-item col-md-6 ">
+          <h6>INDUSTRY MASTERCLASS STAGES</h6>
+          <p>With keen interest in delving into specific industry-focused sessions, we are introducing sector-focused discussions across various verticals at this year's edition of the Nigeria Fintech Forum.</p>
+        </div>
+        <div class="w-item col-md-6 ">
+          <h6>EXPO ARENA</h6>
+          <p>We are expanding our exhibition arena at this year's edition of the Nigeria Fintech Forum, providing more partners with an opportunity to showcase their latest solutions, services and products.
+            </p>
+        </div>
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- WHAT'S NEW -->
+
+
 /*-----Testimonial-------*/
 #testimonials {
   padding-top: 30px;
