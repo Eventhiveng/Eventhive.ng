@@ -940,47 +940,30 @@ a:hover {
   background: #0b0b0b !important;
 }
 .attendees h1{
-  font-size: 50px;
-  font-weight: 800;
+  font-size: 25px;
+  font-weight: bold;
   color: white;
+  letter-spacing: 3px;
+}
+.attendees .col-md-6{
+  text-align: left;
+  padding: 40px;
 }
 .attendees p{
   font-weight: 800;
   color: white;
 }
-.attendees .circles{
-  text-align: center;
-  /* border-radius: 100px; */
-  margin: 10px;
-  padding: 10px;
+.attendees .blue{
+  background-color: #003399;
 }
 .attendees .purple{
-  background-color: #3300cc;
-  opacity: 0.8;
-}
-.attendees .pink{
-  opacity: 0.8;
-  background-color: #9933cc;
+  background-color: #330066;
 }
 .attendees .orange{
-  opacity: 0.8;
   background-color: #ff6600;
 }
-.attendees .brown{
-  opacity: 0.8;
-  background-color: #663333;
-}
 .attendees .green{
-  opacity: 0.8;
   background-color: #009933;
-}
-.attendees .red{
-  opacity: 0.8;
-  background-color: #ff3c14;
-}
-.attendees .yellow{
-  opacity: 0.8;
-  background-color: #ffb800;
 }
 
 
@@ -1279,7 +1262,7 @@ a:hover {
   padding: 10px 20px 40px 20px;
 }
 #new .testimonial_box-top {
-  border: 2px solid #2596be;
+  border: 2px solid #009933;
   padding: 30px;
   border-radius: 15px;
   display: flex;
@@ -1314,7 +1297,7 @@ a:hover {
 }
 #new .testimonial_box-icon i {
   font-size: 25px;
-  color: #ED264E;
+  color: #ff3c14;
 }
 #new .testimonial_box-text {
   padding: 10px 0;
@@ -1342,7 +1325,7 @@ a:hover {
   width: 70px;
   height: 70px;
   border-radius: 50px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #ff3c14;
 }
 #new .testimonial_box-name {
   padding-top: 10px;
