@@ -723,3 +723,165 @@ padding-bottom:50px;
 
 
 
+  <!-- SLIDER -->
+<section class="content-section no-spacing">
+  <div class="row">
+    <div class="s-slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="images/sponsors/ftx (1).png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/alat.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/anchoria (1).png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/bankingly.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/capricorn.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/cellulant (1).png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/fidelity.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/firstb.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/freshworks (1).png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/alat.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/fsdh.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/heirs.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/i-invest (1).png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/identity.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/interswitch (1).png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/kpmg.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/leadway.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/lotus.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/migo (1).png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/moniepoint.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/mtn.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/ngr.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/opay.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/paga.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/patricia.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/pt.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/pwc.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/remita.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/sc.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/scalex (1).png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/ss.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/sterling.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/uba.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/udo.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/union.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/zenith.png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/zitra (1).png"
+              alt="" width="200px" />
+        </div>
+        <div class="slide">
+          <img src="images/sponsors/zoho (1).png"
+              alt="" width="200px" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SLIDER -->
