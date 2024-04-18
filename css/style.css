@@ -759,6 +759,7 @@ textarea.input {
 #speakers {
   /* margin-top: 30px; */
   background-color: #f9f9fa;
+  padding: 40px 0px 20px 0px !important;
 }
 #speakers .card-title{
   font-size: 14px;
@@ -860,7 +861,7 @@ textarea.input {
 }
 #speakers .card img {
   width: 100%;
-  padding: 50px;
+  padding: 40px;
   filter: none;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1716,6 +1717,9 @@ a.btn-border-white:hover {
   .img-width{
     width: 300px;
   }
+  #speakers .card img{
+    padding: 70px;
+  }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {
@@ -1736,6 +1740,9 @@ a.btn-border-white:hover {
   }
   .img-width{
     width: 300px;
+  }
+  #speakers .card img{
+    padding: 70px;
   }
 }
 
@@ -1760,5 +1767,8 @@ a.btn-border-white:hover {
   }
   .img-width{
     width: 200px;
+  }
+  #speakers .card img{
+    padding: 70px;
   }
 }
