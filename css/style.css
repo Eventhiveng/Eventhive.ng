@@ -1107,13 +1107,13 @@ textarea.input {
 #speakers {
   padding: 0px 0px 20px 0px;
 }
-#speakers .card img{
-  filter: grayscale(100%); /* Standard */
--webkit-filter: grayscale(100%); /* Webkit */
-filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale"); /* Firefox4-34*/
-filter: gray;  /* IE6-9 */
--webkit-filter: grayscale(1); /* Old WebKit */
-}
+/* #speakers .card img{
+  filter: grayscale(100%);
+-webkit-filter: grayscale(100%); 
+filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+filter: gray; 
+-webkit-filter: grayscale(1);
+} */
 .speaker {
   position: relative;
   cursor: pointer;
