@@ -371,6 +371,145 @@
   <!-- HIGHLIGHT -->
 
 
+
+
+  <!-- HIGHLIGHT -->
+  <section class="content-section" id="new">
+    <div class="container">
+      <div class="row new-content alignCenter justify-content-center">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>WHAT THEY HAD TO SAY</h2>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="container">
+           <div class="testimonial__inner">
+             <div class="testimonial-slider">
+               <div class="testimonial-slide">
+                 <div class="testimonial_box">
+                   <div class="testimonial_box-inner">
+                     <div class="testimonial_box-top">
+                       <div class="testimonial_box-icon">
+                         <i class="fa fa-quote-right"></i>
+                       </div>
+                       <div class="testimonial_box-text">
+                         <p>I had a great time at this year's edition of the Nigeria Oil & Gas Outlook event, It was a very important platform to engage with operators in the Oil & Gas market.</p>
+                       </div>
+                       <div class="testimonial_box-img">
+                        <img src="/images/testimonials/rasaq-obe.png" alt="profile">
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>Engr. Rasaq Obe</h4>
+                     </div>
+                     <div class="testimonial_box-job">
+                       <p>Hon. Commissioner For Energy
+                        & Mineral Resources, Ondo State Government</p>
+                     </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fa fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>Great session with co- panelists discussing the Nigeria Oil & Gas Outlook and the Petroleum Industry Act. Congratulations to Eventhive for a well put together event.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="/images/testimonials/Mohammed-Mijindadi.jpg" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>Mohammed Mijindadi</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>President, GE Nigeria</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fa fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>I feel honored to have been part of this year's edition of the Nigeria Oil & Gas Outlook, Kudos to Eventhive.ng for this initiative that provides us with an opportunity to share efforts of the government with the industry players.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="/images/testimonials/gwarzo.jpg" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>Dr Nasir Sani-Gwarzo, MNI</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>Fmr. NPOM Permanent Secretary, Ministry of Petroleum Resources, Nigeria</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fa fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>Thank you very much for creating this platform that enables and fosters public and private sector engagement within the Oil & Gas Industry.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="/images/testimonials/tijjani.jpg" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>Senator Tijjani Yahaya Kaura</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>Managing Director & CEO, Oil & Gas Free Zones Authority</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fa fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>I am very excited to participate at this year's edition of the Nigeria Oil & Gas Outlook, The event is happening at the right time as we all work to share insights aimed at developing the Oil & Gas sector in Nigeria.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="/images/testimonials/Ed-Ubong.jpg" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>Ed Ubong</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>Director, Shell Nigeria Gas</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HIGHLIGHT -->
   
 
   <!-- WHAT'S NEW -->

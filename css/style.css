@@ -67,7 +67,7 @@ body {
   font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif !important;
   font-size: 17px;
   color: #fff;
-  background-color: rgba(20, 20, 20, 1);
+  background-color:#110706;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -100,7 +100,10 @@ body {
   color: #ff3c14;
 }
 .g-main{
-  color: #009933;
+  color: #ccffcc;
+}
+.g-dark{
+  color: #003333;
 }
 .b-light{
   color: #2596be;
@@ -114,6 +117,12 @@ body {
 }
 .MB-20 {
   margin-bottom: 20px !important;
+}
+.P1-40{
+  padding: 40px 0px 40px 40px;
+}
+.P-40{
+  padding: 40px;
 }
 
 
@@ -521,7 +530,7 @@ a:hover {
   flex-wrap: wrap;
   padding: 10px 0;
   position: relative;
-  background: rgba(20, 20, 20, 1);
+  background: #110706;
   left: 0;
   top: 0;
   z-index: 4;
@@ -941,13 +950,15 @@ a:hover {
   background: #0b0b0b !important;
 }
 .attendees h1{
-  font-size: 25px;
+  font-size: 22px;
+  text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: 2px;
   color: white;
 }
 .attendees .col-md-6{
   text-align: left;
-  padding: 40px;
+  /* padding: 40px; */
 }
 .attendees p{
   font-weight: lighter;
@@ -995,7 +1006,7 @@ a:hover {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.0) 0%, rgba(20, 20, 20, 1.0) 100%), linear-gradient(to top, rgba(20, 20, 20, 0.0) 0%, rgba(20, 20, 20, 1.0) 100%), url(../images/backgrounds/14n.jpg);
+  background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.0) 0%, rgba(20, 20, 20, 1.0) 200%), linear-gradient(to top, rgba(20, 20, 20, 0.0) 0%, rgba(20, 20, 20, 1.0) 200%), url(../images/bcg/bulb.jpg);
   background-size: cover;
   position: relative;
   text-align: center;
@@ -1029,16 +1040,22 @@ a:hover {
   font-weight: 800;
   /* margin-left: 50px; */
   margin-bottom: 5px;
-  text-align: left;
+  margin: auto;
+  text-align: center;
+}
+.slider .buttons{
+ margin: auto;
 }
 .slider p:nth-of-type(2) {
   margin-bottom: 0px;
   margin-top: 20px;
 }
 .slider p {
-  text-align: left;
+  text-align: center;
   width: 100%;
   margin-bottom: 0px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .p-one {
   font-size: 15px;
@@ -1051,6 +1068,11 @@ a:hover {
 }
 .slider a{
   margin: 20px;
+}
+
+.slider .img{
+  margin: auto;
+  padding: 20px;
 }
 .slider .register-btn {
   display: inline-block;
@@ -1171,7 +1193,7 @@ a:hover {
   content: "";
   width: 200px;
   height: 3px;
-  background: #fff !important;
+  background: #ccffcc !important;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1427,13 +1449,15 @@ a:hover {
 }
 .counter-box .odometer {
   display: inline-block;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 800;
   letter-spacing: -2px;
+  color: #ffb000;
 }
 .counter-box .value {
   font-size: 15px;
   font-weight: 800;
+  color: #ffb000;
 }
 .counter-box h6 {
   display: inline-block;
@@ -1682,14 +1706,14 @@ a:hover {
 .footer {
   width: 100%;
   display: block;
-  background-color: #002e94;
+  background-color: #003333;
   position: relative;
   padding-top: 80px;
   color: #fff;
-  background-image: url(../images/backgrounds/08.png);
+  /* background-image: url(../images/bcg/bcg.png); */
 }
 .footer h3 {
-  color: #595B6B;
+  color: #fff;
   letter-spacing: 3px;
   font-weight: bolder;
   text-align: left;
@@ -1889,9 +1913,6 @@ input::-moz-focus-outer {
     margin: 5px;
     max-width: 350px;
   }
-  .slider{
-    background-position: right 100px top 0px;
-  }
   .w-new{
     background-position: right 1200px top 0px;
   }
@@ -1960,7 +1981,7 @@ input::-moz-focus-outer {
     color: #fff;
   }
   .slider {
-    background-position: right 1200px top 0px;
+    background-position: right 900px top 0px;
   }
   
   .slider h2 b{
@@ -2011,7 +2032,12 @@ input::-moz-focus-outer {
   .section-title h6{
     font-size: 13px;
   }
-  
+  .P1-40{
+    padding: 0px 20px;
+  }
+  .P-40{
+    padding: 0px 20px;
+  }
   .ticket a {
     height: 40px;
     line-height: 40px;
@@ -2030,7 +2056,7 @@ input::-moz-focus-outer {
     padding: 30px;
   } */
   .slider{
-    background-position: right 1250px top 0px;
+    background-position: right 800px top 0px;
   }
   .partner{
     background-position: right 1250px top 0px;
@@ -2075,6 +2101,10 @@ input::-moz-focus-outer {
     margin-top: 30px;
     margin-left: 0px;
     margin-bottom: 20px;
+    text-align: center;
+  }
+  .slider .img{
+    margin: auto;
   }
   .slider h2 b{
     -webkit-text-stroke: 2px #fff;
@@ -2088,8 +2118,11 @@ input::-moz-focus-outer {
   }
   .slider p {
     margin-bottom: 0px;
+    text-align: center;
   }
-
+  .slider .sponsor-btn{
+    margin-left: 20px !important;
+  }
   .slider .container {
     padding-top: 110px;
   }

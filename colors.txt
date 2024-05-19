@@ -1,7 +1,5 @@
-red #ff3c14
-green #009933
 black #0c0c0c
 yellow #ffb000
-blue #003399
-purple #330066
-orange #ff6600
+green #003333
+lemon #ccffcc
+blue #25baff
