@@ -324,7 +324,7 @@ a:hover {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background: rgba(20, 20, 20, 1);
+  background: #110706;
   background-position: center;
   background-size: cover;
   z-index: 5;
@@ -1593,8 +1593,14 @@ a:hover {
 /* TICKET SECTION */
 .ticket {
   /* padding-top: 20px; */
+  background-color: #fff;
 }
-
+.ticket .section-title h2{
+  color: #0b0b0b;
+}
+.ticket .section-title h2:before{
+  background: #0b0b0b !important;
+}
 .ticket .tick-item {
   border: 1px solid #e8e8e8;
   background-color: #fff;
