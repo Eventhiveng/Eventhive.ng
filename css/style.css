@@ -1058,8 +1058,9 @@ a:hover {
   letter-spacing: 1px;
 }
 .p-one {
+  padding: 20px;
   font-size: 15px;
-  font-weight: lighter;
+  font-weight: lighter !important;
   text-transform: uppercase;
 }
 .p-one span{
@@ -1720,8 +1721,9 @@ a:hover {
 }
 .footer h3 {
   color: #fff;
+  font-size: 20px;
   letter-spacing: 3px;
-  font-weight: bolder;
+  /* font-weight: 300; */
   text-align: left;
   margin-bottom: 40px;
 }
