@@ -1,0 +1,4 @@
+blue #40b4fe
+yellow #ffca18
+orange #ff8e18
+green #01cfa0

@@ -1,5 +1,330 @@
 
 
+
+<!-- HIGHLIGHT -->
+  <section class="content-section no-spacing" id="new">
+    <div class="container">
+      <div class="row new-content alignCenter justify-content-center">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>HIGHLIGHTS FROM OUR LONDON EVENT</h2>
+            <!-- <h6><span class="y-color"><b>HERE ARE SOME HIGHLIGHTS AND TESTIMONIALS</b></span></h6> -->
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="container">
+           <div class="testimonial__inner">
+             <div class="testimonial-slider">
+               <div class="testimonial-slide">
+                 <div class="testimonial_box">
+                   <div class="testimonial_box-inner">
+                     <div class="testimonial_box-top">
+                       <div class="testimonial_box-icon">
+                         <i class="fa fa-quote-right"></i>
+                       </div>
+                       <div class="testimonial_box-text">
+                         <p>I had a great time in Lagos, discussing the Fintech VC landscape across Nigeria. It was an engaging session with other panelists.</p>
+                       </div>
+                       <div class="testimonial_box-img">
+                        <img src="/images/testimonials/aaron-fu-removebg-preview.png" alt="profile">
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>Aaron Fu</h4>
+                     </div>
+                     <div class="testimonial_box-job">
+                       <p>Fintech Ventures, Digital Currency Group</p>
+                     </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-highlight">
+                        <img src="/images/slider/72.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-highlight">
+                        <img src="/images/slider/51.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial_box">
+                    <div class="testimonial_box-inner">
+                      <div class="testimonial_box-highlight">
+                        <img src="/images/slider/33.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fa fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>We are always excited to be parts of events like this as it provides us with an opportunity to promote partnership amongst stakeholders and equally showcase our solutions.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="/images/testimonials/akeem-lawal-removebg-preview.png" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>Akeem Lawal</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>MD, Interswitch Purepay</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/62.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/75.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fa fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>I am pleased to be on the panel session today, discussing with other stakeholders, on building partnership between Banks, Telcos, and Fintech.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="/images/testimonials/OlayinkaOni-removebg-preview.png" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>Olayinka Oni</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>Chief Digital Officer, Sterling Bank</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/74.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/70.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/67.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fa fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>I really enjoyed the energy in the room at this event today, you can't recreate that on Zoom... at least I can't. Thanks Nigeria Fintech Forum.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="/images/testimonials/YINKA_EDU_-003-cropped-removebg-preview.png" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>Yinka Edu</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>Partner, Udo Udoma & Belo-Osagie</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/26.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/20.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/28.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fa fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>I am very happy to be here today, engaging sector stakeholders, meeting with peers in the industry.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="/images/testimonials/Olu-Akanmu-3-removebg-preview.png" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>Olu Akanmu</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>Ex-President, OPAY Nigeria</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/14.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/11.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fa fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>Interswitch Group, Africa’s leading integrated payments and digital commerce company will...</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="/images/testimonials/interswitch__1_-removebg-preview.png" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>Independent.ng Press Release</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p><a class="testimonial-link" href="https://independent.ng/interswitch-group-headlines-nigeria-fintech-forum-2022/">READ HERE</a></p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/59.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/24.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-highlight">
+                      <img src="/images/slider/29.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HIGHLIGHT -->
+
+  
   <!-- TESTIMONIALS -->
   <section class="content-section testimonial" id="testimonials">
     <div class="container">
@@ -317,7 +642,7 @@ padding-bottom:50px;
   line-height: 80px;
   display: inline-block;
   text-align: center;
-  background: #ffb000;
+  background: #ffca18;
   border-radius: 50%;
   color: #0b0b0b;
   -webkit-transition: all 0.25s ease-in-out;
@@ -337,7 +662,7 @@ padding-bottom:50px;
   line-height: 80px;
   display: inline-block;
   text-align: center;
-  background: #ffb000;
+  background: #ffca18;
   border-radius: 50%;
   color: #0b0b0b;
   -webkit-transition: all 0.25s ease-in-out;
@@ -381,7 +706,7 @@ padding-bottom:50px;
   height: 60px;
   line-height: 60px;
   float: left;
-  background: #ffb000;
+  background: #ffca18;
   color: #0b0b0b;
   text-align: center;
   font-size: 30px;

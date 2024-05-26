@@ -1,4 +1,4 @@
-main - #ffb000
+main - #ffca18
 bg - rgba(20, 20, 20, 1)
 red - #ED264E
 blue - #2596be
