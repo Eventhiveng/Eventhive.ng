@@ -801,9 +801,10 @@ a:hover {
 /* PARTNERSHIP */
 .partner{
   color: white;
+  font-weight: lighter;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../images/bcg/06.jpg);
+  background-image: url(../images/backgrounds/13.png);
   background-size: cover;
   position: relative;
 }
@@ -813,7 +814,7 @@ a:hover {
 .partner h6{
   font-size: 20px;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   /* color: #ffca18; */
 }
 .partner .p-item{
@@ -945,7 +946,6 @@ a:hover {
 }
 .a-expect .section-title h2{
   color: #000;
-  margin-top: 30px;
 }
 .a-expect .section-title h2:before{
   background: #000 !important;
@@ -1710,16 +1710,20 @@ a:hover {
 .footer {
   width: 100%;
   display: block;
-  background-color: #002e94;
+  background-color: #141414;
   position: relative;
   padding-top: 80px;
   color: #fff;
-  background-image: url(../images/backgrounds/08.png);
+  /* background-image: url(../images/backgrounds/06.jpg); */
+}
+.footer a:hover{
+  color: #fff;
 }
 .footer h3 {
-  color: #595B6B;
+  color: #fff;
   letter-spacing: 3px;
-  font-weight: bolder;
+  font-weight: lighter;
+  font-size: 20px;
   text-align: left;
   margin-bottom: 40px;
 }
@@ -2072,7 +2076,7 @@ input::-moz-focus-outer {
     background-position: right 500px top 0px;
   }
   .partner{
-    background-position: right 1250px top 0px;
+    background-position: right 1800px top 0px;
   }
   .navbar .navbar-button span {
     display: none;
