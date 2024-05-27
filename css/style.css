@@ -1723,9 +1723,10 @@ a:hover {
   color: #fff;
   letter-spacing: 3px;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   margin-bottom: 40px;
+  margin-top: 30px !important;
 }
 .footer .b-right{
   border-right: 2px solid #595B6B;
