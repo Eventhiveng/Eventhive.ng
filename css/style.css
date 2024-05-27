@@ -2117,7 +2117,7 @@ input::-moz-focus-outer {
     font-size: 35px;
     margin-top: 50px;
     margin-left: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .slider h2 b{
     -webkit-text-stroke: 2px #fff;
