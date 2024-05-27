@@ -1,6 +1,244 @@
 
 
 
+<!-- KEY THEMES -->
+  <section class="content-section themes no-spacing">
+    <div class="container">
+      <div class="row new-content alignCenter justify-content-center">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>2024 KEY THEMES</h2>
+            <!-- <h6><span class="y-color"><b>AT NFF - 2ND EDITION</b></span></h6> -->
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/banking.png" alt="" width="80px">
+          <br>
+          <h6>Banking</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/ecommerce.png" alt="" width="80px">
+          <br>
+          <h6>E-commerce & Retail</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/payments.png" alt="" width="80px">
+          <br>
+          <h6>Payments</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/embedfinance.png" alt="" width="80px">
+          <br>
+          <h6>Embedded Finance</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/fraud.png" alt="" width="80px">
+          <br>
+          <h6>Fraud & ID</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/lending.png" alt="" width="80px">
+          <br>
+          <h6>Lending & Credit</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/forex.png" alt="" width="80px">
+          <br>
+          <h6>Forex</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/crypto.png" alt="" width="80px">
+          <br>
+          <h6>Web3, Crypto & Defi</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/financialinc.png" alt="" width="80px">
+          <br>
+          <h6>Financial Inclusion</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/cx.png" alt="" width="80px">
+          <br>
+          <h6>Future of CX</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/regulation.png" alt="" width="80px">
+          <br>
+          <h6>Regulation</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 t-item">
+          <img src="/ico/themes/fintech.png" alt="" width="80px">
+          <br>
+          <h6>Fintech & Banking Infrastructure</h6>
+        </div>
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- KEY THEMES -->
+
+
+  /* KEY THEMES */
+.themes {
+  padding-bottom: 0px;
+}
+.themes .t-item{
+  /* padding: 20px 0px; */
+  margin-bottom: 20px;
+  /* max-width: 200px; */
+  text-align: center;
+}
+.themes h6{
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #2596be;
+}
+.attend{
+  background-color: white;
+  color: #0b0b0b;
+  padding-top: 20px !important;
+}
+.attend .section-title h2{
+  color: #0b0b0b;
+}
+.attend .section-title h2:before{
+  background: #0b0b0b !important;
+}
+.attendees h1{
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+.attendees p{
+  font-weight: 800;
+  color: white;
+}
+.attendees .circles{
+  text-align: center;
+  /* border-radius: 100px; */
+  margin: 10px;
+  padding: 10px;
+}
+.attendees .purple{
+  background-color: #3300cc;
+  opacity: 0.8;
+}
+.attendees .pink{
+  opacity: 0.8;
+  background-color: #9933cc;
+}
+.attendees .orange{
+  opacity: 0.8;
+  background-color: #ff6600;
+}
+.attendees .brown{
+  opacity: 0.8;
+  background-color: #663333;
+}
+.attendees .green{
+  opacity: 0.8;
+  background-color: #00ac29;
+}
+.attendees .red{
+  opacity: 0.8;
+  background-color: #d30000;
+}
+.attendees .yellow{
+  opacity: 0.8;
+  background-color: #ffb800;
+}
+
+
+<!-- ATTENDEES -->
+  <section class="content-section attendees">
+    <div class="container">
+      <div class="row new-content alignCenter justify-content-center">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>ATTENDEES BY PROFILE</h2>
+          </div>
+        </div>
+        <div class="circles purple col-md-3 col-sm-6">
+          <h1>15%</h1>
+          <p>Banks & Telco's</p>
+        </div>
+        <div class="circles green col-md-3 col-sm-6">
+          <h1>20%</h1>
+          <p>Technology Providers</p>
+        </div>
+        <div class="circles pink col-md-3 col-sm-6">
+          <h1>9%</h1>
+          <p>Investors</p>
+        </div>
+        <div class="circles yellow col-md-3 col-sm-6">
+          <h1>20%</h1>
+          <p>Product Users</p>
+        </div>
+        <div class="circles red col-md-3 col-sm-6">
+          <h1>25%</h1>
+          <p>Fintech Entrepreneurs</p>
+        </div>
+        <div class="circles brown col-md-3 col-sm-6">
+          <h1>7%</h1>
+          <p>Regulators & Law Enforcements</p>
+        </div>
+        <div class="circles orange col-md-3 col-sm-6">
+          <h1>4%</h1>
+          <p>Consulting, Legal & Media</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ATTENDEES -->
+
+.attendees h1{
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+.attendees p{
+  font-weight: 800;
+  color: white;
+}
+.attendees .circles{
+  text-align: center;
+  /* border-radius: 100px; */
+  margin: 10px;
+  padding: 10px;
+}
+.attendees .purple{
+  background-color: #3300cc;
+  opacity: 0.8;
+}
+.attendees .pink{
+  opacity: 0.8;
+  background-color: #9933cc;
+}
+.attendees .orange{
+  opacity: 0.8;
+  background-color: #ff6600;
+}
+.attendees .brown{
+  opacity: 0.8;
+  background-color: #663333;
+}
+.attendees .green{
+  opacity: 0.8;
+  background-color: #00ac29;
+}
+.attendees .red{
+  opacity: 0.8;
+  background-color: #d30000;
+}
+.attendees .yellow{
+  opacity: 0.8;
+  background-color: #ffb800;
+}
+
+
 <!-- HIGHLIGHT -->
   <section class="content-section no-spacing" id="new">
     <div class="container">
@@ -324,7 +562,7 @@
   </section>
   <!-- HIGHLIGHT -->
 
-  
+
   <!-- TESTIMONIALS -->
   <section class="content-section testimonial" id="testimonials">
     <div class="container">
