@@ -1891,7 +1891,6 @@ a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   position: relative;
-  padding: 20px;
 }
 .sales-team:hover {
   transform: translateY(-20px);
@@ -2966,10 +2965,6 @@ input::-moz-focus-outer {
     flex-basis: 33%;
     flex-grow: inherit;
     margin: 0 auto;
-  }
-
-  .sales-team {
-    margin: 15px 0;
   }
 
   .logo-item {
