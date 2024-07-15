@@ -1,0 +1,3 @@
+green #33cc66
+yellow #fea70e
+blue #00296b
