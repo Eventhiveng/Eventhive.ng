@@ -720,7 +720,7 @@ a:hover {
   flex-wrap: wrap;
   background-size: cover;
   position: relative;
-  background: url(/images/bcg/bg1.png);
+  background: url(/images/bcg/bg1.png) no-repeat center/cover;
 }
 .slider .container {
   position: relative;
@@ -2809,7 +2809,7 @@ input::-moz-focus-outer {
       padding-top: 60px;
     }
     .slider{
-      height: 50vh;
+      height: 80vh;
     }
     .slider #background-video {
       height: 50vh;
