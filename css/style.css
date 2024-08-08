@@ -1511,6 +1511,9 @@ a:hover {
 .sponsorship{
   background-color: #fff;
 }
+.sponsorship .content-section{
+  padding: 20px 0 !important;
+}
 .sponsorship .section-title h2{
   color: rgba(20, 20, 20, 1);
 }
@@ -1525,7 +1528,7 @@ a:hover {
   text-align: center;
   padding-bottom: 0px;
 }
-.sponsorship a {
+/* .sponsorship a {
   display: inline-block;
   height: 60px;
   line-height: 60px;
@@ -1534,7 +1537,6 @@ a:hover {
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
-  /* margin-bottom: 10px; */
 
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1558,14 +1560,13 @@ a:hover {
 }
 .sponsorship a:hover {
   text-decoration: none;
-  /* box-shadow: 0 20px 20px #000; */
 }
 .sponsorship .right{
   margin-right: 50px;
 }
 .sponsorship a:hover i {
   margin-left: 20px;
-}
+} */
 .sponsorship b {
   -webkit-text-stroke: 1px black;
   text-stroke: 1px black;
