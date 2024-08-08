@@ -166,6 +166,7 @@ a:hover {
     max-width: 1260px;
   }
 }
+
 /* ODOMETER */
 .odometer-formatting-mark {
   display: none;
@@ -3271,6 +3272,14 @@ input::-moz-focus-outer {
     margin-left: 0;
     margin-right: 10px;
   }
+
+  .sales-team figure {
+    height: 100%;
+  }
+
+  .sales-team .infos {
+    padding: 15px 5px;
+  }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {
@@ -3303,3 +3312,5 @@ input::-moz-focus-outer {
     padding: 30px 10px;
   }
 }
+
+
