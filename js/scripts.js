@@ -37,25 +37,25 @@
     });
 
     // PAGE TRANSITION
-    $("body a").on("click", function (e) {
-      if (typeof $(this).data("fancybox") == "undefined") {
-        // e.preventDefault();
-        var url = this.getAttribute("href");
-        if (url.indexOf("#") != -1) {
-          var hash = url.substring(url.indexOf("#"));
-          if ($("body " + hash).length != 0) {
-            $(".page-transition").removeClass("active");
-            $(".sandiwch").toggleClass("open");
-            $(".site-menavigation").removeClass("active");
-          }
-        } else {
-          $(".page-transition").toggleClass("active");
-          setTimeout(function () {
-            window.location = url;
-          }, 1000);
-        }
-      }
-    });
+    // $("body a").on("click", function (e) {
+    //   if (typeof $(this).data("fancybox") == "undefined") {
+    //     // e.preventDefault();
+    //     var url = this.getAttribute("href");
+    //     if (url.indexOf("#") != -1) {
+    //       var hash = url.substring(url.indexOf("#"));
+    //       if ($("body " + hash).length != 0) {
+    //         $(".page-transition").removeClass("active");
+    //         $(".sandiwch").toggleClass("open");
+    //         $(".site-menavigation").removeClass("active");
+    //       }
+    //     } else {
+    //       $(".page-transition").toggleClass("active");
+    //       setTimeout(function () {
+    //         window.location = url;
+    //       }, 1000);
+    //     }
+    //   }
+    // });
 
     // LOGO HOVER
     $(".logo-item").hover(
