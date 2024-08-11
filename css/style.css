@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /*
 
 This file contains the styling for the actual theme, this
@@ -63,7 +64,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Verdana", sans-serif;
+  font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif !important;
   font-size: 17px;
   color: #0b0b0b;
   -webkit-font-smoothing: antialiased;
@@ -743,6 +744,7 @@ a:hover {
 .about-content p {
   font-size: 15px;
   text-align: center;
+  font-weight: lighter;
 }
 #about .section-title {
   text-align: center;
@@ -815,6 +817,9 @@ a:hover {
   background-size: cover;
   background-attachment: fixed;
 }
+#infoOne p{
+  font-weight: lighter;
+}
 #infoOne .section-title {
   text-align: center;
   margin-bottom: 30px;
@@ -850,6 +855,9 @@ a:hover {
   background: url("../images/bg/bg9.png");
   background-size: cover;
   background-attachment: fixed;
+}
+#infoTwo li{
+  font-weight: lighter;
 }
 #infoTwo .section-title {
   margin-bottom: 0px;
@@ -887,6 +895,9 @@ a:hover {
 /* WHATS NEW */
 #new {
   padding-bottom: 0px;
+}
+#new{
+  font-weight: lighter;
 }
 .FS-20 {
   font-size: 20px;
@@ -982,7 +993,7 @@ a:hover {
 }
 .slider h3 {
   font-size: 30px;
-  font-weight: 800;
+  /* font-weight: 800; */
   /* margin-left: 50px; */
   margin-bottom: 40px;
   text-align: center;
@@ -1008,6 +1019,7 @@ h3 b {
   text-align: center;
   width: 100%;
   margin-bottom: 0px;
+  font-weight: lighter;
 }
 .p-one {
   font-size: 20px;
@@ -2348,6 +2360,7 @@ h3 b {
   text-align: center;
   margin-bottom: 50px;
   padding: 0px 40px;
+  font-weight: lighter;
 }
 
 /* TESTIOMONIALS SLIDER */
@@ -2549,7 +2562,7 @@ h3 b {
 .footer address a {
   display: inline-block;
   color: #fff;
-  font-weight: 600;
+  font-weight: lighter;
   font-size: 15px;
   border-bottom: 3px solid #ffae1e;
 }
