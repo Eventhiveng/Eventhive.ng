@@ -960,7 +960,7 @@ a:hover {
 }
 .slider .container {
   position: relative;
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -983,7 +983,7 @@ a:hover {
   padding-bottom: 100px;
 }
 .slider h2 {
-  font-size: 40px;
+  font-size: 42px;
   font-weight: 800;
   /* margin-left: 50px; */
   margin-bottom: 40px;
@@ -992,8 +992,8 @@ a:hover {
   /* letter-spacing: 10px; */
 }
 .slider h3 {
-  font-size: 30px;
-  /* font-weight: 800; */
+  font-size: 25px;
+  font-weight: lighter;
   /* margin-left: 50px; */
   margin-bottom: 40px;
   text-align: center;
@@ -3132,7 +3132,7 @@ input::-moz-focus-outer {
   }
 
   .slider .container {
-    padding-top: 150px;
+    padding-top: 130px;
   }
 
   .slider a {
