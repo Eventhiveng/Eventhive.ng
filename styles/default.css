@@ -1,0 +1,261 @@
+:root {
+  --white: #fff;
+  --white-dim: #ffffff50;
+  --white-dark: #4c3c3c50;
+  --black: #000;
+  --black-light: #333;
+  --black-sec: #490b0b;
+  --black-overlay: #000000bb;
+  --color-primary: #ffa600;
+}
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  color: var(--black-light);
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+p {
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Container style */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Section Padding */
+.padding {
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .padding {
+    padding: 80px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .padding {
+    padding: 60px 0;
+  }
+}
+
+/* Re-used styles */
+.text-pry {
+  color: var(--color-primary);
+}
+
+.text-white {
+  color: var(--white) !important;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.ttc {
+  text-transform: capitalize;
+}
+
+.key {
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.sec-head {
+  font-weight: 700;
+  font-size: clamp(24px, 3vw, 40px);
+  color: var(--black-sec);
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  max-width: 85%;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: clamp(24px, 3vw, 40px);
+  text-align: center;
+  /* margin-bottom: 50px; */
+  color: var(--black-sec);
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+/* .section-title h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 250px;
+  height: 15px;
+  background-color: var(--color-primary);
+  z-index: -1;
+} */
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  padding: 20px 40px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-pry {
+  color: var(--white);
+  background-color: var(--color-primary);
+}
+.btn-pry:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-sec {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+}
+
+.btn-sec:hover {
+  background-color: var(--white);
+  color: var(--color-primary);
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.odometer {
+  font-family: "Playfair Display", serif !important;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
+.odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+  right: auto !important;
+}
+
+/* Keyframes */
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    top: -10px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 166, 0, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 30px rgba(255, 166, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 166, 0, 0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

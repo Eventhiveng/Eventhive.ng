@@ -1,0 +1,130 @@
+/* Mid Screen */
+@media screen and (max-width: 992px) {
+  .btn {
+    padding: 15px 30px;
+  }
+
+  .section-heading {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .hero-section .hero-section-wrapper {
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  .about-section .about-section-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .partner-section
+    .partner-section-container
+    .partner-box-container
+    .partner-box,
+  .whats-new-section
+    .whats-new-section-container
+    .whats-new-box-container
+    .whats-new-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  .speaker-section .speakers-container .speakers-box {
+    flex: 0 0 calc((100% - 40px) / 3);
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  nav .nav-links {
+    display: none;
+  }
+  /* 
+  nav .logo {
+    display: none;
+  } */
+
+  nav .mobile-toggler {
+    display: block;
+    justify-self: flex-end;
+    /* align-self: flex-end; */
+  }
+
+  .hero-section {
+    background-attachment: unset;
+  }
+
+  .key-themes-section
+    .key-themes-container
+    .key-themes-box-container
+    .key-themes-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  .partner-section
+    .partner-section-container
+    .partner-box-container
+    .partner-box,
+  .whats-new-section
+    .whats-new-section-container
+    .whats-new-box-container
+    .whats-new-box {
+    flex: 0 0 100%;
+  }
+
+  .testimonial-section .testimonial-container .testimonial-box {
+    flex-direction: column;
+  }
+
+  .speaker-section .speakers-container .speakers-box {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
+
+  .register-section {
+    margin-top: -30px;
+  }
+
+  .register-section .register-container {
+    flex-direction: column;
+  }
+
+  footer .top .center {
+    flex-direction: column;
+  }
+
+  .section-heading {
+    text-align: left;
+  }
+
+  .section-title {
+    text-align: left;
+  }
+
+  .more-about {
+    background-attachment: unset;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 567px) {
+  .btn {
+    padding: 16px 20px;
+  }
+
+  .key-themes-section
+    .key-themes-container
+    .key-themes-box-container
+    .key-themes-box {
+    flex: 0 0 100%;
+  }
+
+  .speaker-section .speakers-container .speakers-box {
+    flex: 0 0 100%;
+  }
+
+  footer .top .center .quick-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
