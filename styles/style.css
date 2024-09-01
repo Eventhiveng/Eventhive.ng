@@ -673,7 +673,7 @@ nav aside.active {
 .sponsor-section .contact-container .contact-box {
   position: relative;
   padding: 50px;
-  box-shadow: 0 0 20px #00000031;
+  box-shadow: 0 0 20px #00000080;
   border-radius: 30px;
   width: 350px;
   display: flex;
@@ -688,7 +688,7 @@ nav aside.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 20px #00000043;
+  box-shadow: 0 0 20px #00000070;
   border-radius: 50%;
   padding: 10px;
   font-size: 30px;
