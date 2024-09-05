@@ -1,0 +1,79 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container styling */
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Logo styling */
+.logo img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Heading and text */
+h1 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-info p {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 30px;
+  font-size: 0.875rem;
+  color: #999;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
