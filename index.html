@@ -23,6 +23,14 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <script charset="UTF-8" src="//web.webpushs.com/js/push/74c19e42e77ba733e4c5016c551f42c9_1.js" async></script>
+  <script>
+    // Maintenance mode check
+    const maintenanceMode = true; // Change this to false to disable maintenance mode
+    
+    if (maintenanceMode) {
+      window.location.href = '/maintenance.html';
+    }
+  </script>
 </head>
 
 <body>
