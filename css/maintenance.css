@@ -6,43 +6,47 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: "Inter", sans-serif;
+  background: #000000;
+  color: #fff;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background: linear-gradient(#000066e2, #000066df),
+    url(../images/logo/logo-usnig.png) no-repeat center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Main container styling */
 .container {
   text-align: center;
-  background-color: #fff;
   padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   width: 100%;
 }
 
 /* Logo styling */
-.logo img {
-  max-width: 150px;
-  margin-bottom: 20px;
+.icon {
+  width: 250px;
+  margin: auto;
 }
 
-/* Heading and text */
-h1 {
-  font-size: 2rem;
-  color: #0056b3;
-  margin-bottom: 20px;
-}
+/* Text */
 
 p {
   font-size: 1rem;
   margin-bottom: 10px;
-  color: #555;
 }
 
 p a {
@@ -50,10 +54,12 @@ p a {
   text-decoration: none;
 }
 
+.contact-info {
+  margin-top: 30px;
+}
+
 .contact-info p {
-  margin-top: 10px;
   font-weight: 700;
-  color: #333;
 }
 
 /* Footer styling */
@@ -65,15 +71,14 @@ footer {
 
 /* Responsive design */
 @media (max-width: 600px) {
+  .wrapper {
+    background-size: 90%;
+  }
   .container {
     padding: 20px;
   }
 
-  h1 {
-    font-size: 1.5rem;
-  }
-
   p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
