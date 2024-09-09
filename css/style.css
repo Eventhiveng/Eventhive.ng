@@ -1520,7 +1520,7 @@ margin: auto;
   text-align: center;
   padding-bottom: 0px;
 }
-.sponsorship a {
+/* .sponsorship a {
   display: inline-block;
   height: 60px;
   line-height: 60px;
@@ -1529,14 +1529,14 @@ margin: auto;
   color: #0b0b0b;
   font-size: 13px;
   font-weight: 600;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
 
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-}
+} */
 .sponsorship .button {
   margin: 0 auto;
 }
