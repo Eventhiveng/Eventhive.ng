@@ -213,12 +213,12 @@ $(document).ready(function () {
   //   });
   // });
 
-  $(document).scroll(function () {
+  $(window).scroll(function () {
     $(".odometer").each(function () {
       let parent_section_postion = $(this).closest(".right").position();
       let parent_section_top = parent_section_postion.top;
       if (
-        $(document).scrollTop() >
+        $(window).scrollTop() >
         parent_section_top - ($(window).height() - 200)
       ) {
         if ($(this).data("status") == "yes") {
