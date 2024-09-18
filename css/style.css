@@ -547,6 +547,14 @@ a:hover {
 }
 .navbar .logo {
   margin-left: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .logo .divider {
+  width: 1px;
+  height: 40px;
+  background-color: #ccc;
 }
 .navbar .logo a {
   display: block;
