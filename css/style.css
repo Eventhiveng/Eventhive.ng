@@ -510,11 +510,20 @@ a:hover {
 }
 .navbar .logo {
   margin-left: 0;
+  display: flex;
+  gap: 10px;
 }
 .navbar .logo a {
   display: block;
   margin: 0;
 }
+
+.navbar .logo .divider {
+  height: 40px;
+  width: 1px;
+  background-color: #e5e5e5;
+}
+
 .navbar .logo a img {
   height: 40px;
 }
