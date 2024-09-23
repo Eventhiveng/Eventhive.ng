@@ -1,0 +1,268 @@
+/* Big screen */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Tap Pro */
+@media only screen and (max-width: 991px) {
+  /* Hero */
+  #hero-section .hero-section-container .hero-section-wrapper .description p {
+    width: 90%;
+  }
+
+  /* About */
+  #about-section .about-section-wrapper .top .image-left .inner-image {
+    height: 100%;
+    width: 50%;
+  }
+
+  #about-section .about-section-wrapper .bottom .about-content {
+    margin-top: 20px;
+  }
+
+  /* What's New */
+  #whats-new-section .whats-new-section-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #whats-new-section .whats-new-section-wrapper :is(.left, .right) {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+  }
+
+  #whats-new-section .whats-new-section-wrapper .center {
+    height: 100%;
+    min-height: 500px;
+  }
+
+  #whats-new-section .whats-new-section-wrapper .whats-new-box {
+    flex-direction: column;
+    flex: 0 0 calc((100% - 40px) / 3);
+  }
+
+  /* Key */
+  #key-section .key-container .key-wrapper {
+    display: none;
+  }
+
+  #key-section .key-container .key-wrapper-mobile {
+    display: block;
+  }
+
+  /* Partner */
+  #partner-section .partner-section-wrapper .partner-box {
+    flex: 0 0 calc((100% - 40px) / 2);
+  }
+
+  /* Speakers */
+  #speakers-section .speakers-section-wrapper {
+    display: block;
+  }
+
+  #speakers-section
+    .lightbox-overlay
+    .lightbox-content
+    .all-speakers
+    .speaker-box {
+    flex: 0 0 calc((100% - 40px) / 3);
+  }
+
+  /* Highlights */
+  #highlights-section
+    .highlights-section-wrapper
+    .highlights-container
+    :is(.top, .bottom) {
+    min-height: 400px;
+  }
+
+  /* Event Recap */
+  #event-recap-section .event-recap-wrapper .video-container {
+    height: 600px;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  /* Nav */
+  #nav {
+    width: 100%;
+  }
+
+  #nav .nav-container {
+    background: transparent;
+  }
+
+  #nav .nav-container .nav-wrapper :is(.center, .right) {
+    display: none;
+  }
+
+  #nav .nav-container .nav-wrapper .hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  #hero-section .hero-section-container .hero-section-wrapper .description p {
+    width: 100%;
+  }
+
+  #hero-section .hero-section-container .circle-text-container {
+    display: none;
+  }
+
+  /* Scroll top */
+  #scroll-top {
+    right: 20px;
+  }
+
+  /* About */
+  #about-section .about-section-wrapper .top .image-left .inner-image {
+    height: 100%;
+    width: 50%;
+  }
+
+  /* What's new  */
+  #whats-new-section .whats-new-section-wrapper :is(.left, .right) {
+    flex-direction: column;
+  }
+  #whats-new-section .whats-new-section-wrapper .whats-new-box {
+    flex-direction: column;
+    flex: 0 0 100%;
+  }
+
+  /* Key */
+  #key-section .key-container .key-wrapper-mobile .top .icon-box {
+    flex: 0 0 calc((100% - 60px) / 3);
+  }
+
+  /* Event */
+  #event-section .event-section-container .event-container .event-box {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
+
+  /* Partner */
+  #partner-section .partner-section-wrapper .partner-box {
+    flex-direction: column;
+  }
+
+  /* Speakers */
+  #speakers-section
+    .lightbox-overlay
+    .lightbox-content
+    .all-speakers
+    .speaker-box {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
+
+  /* Highlights */
+  #highlights-section
+    .highlights-section-wrapper
+    .highlights-container
+    :is(.top, .bottom)
+    :is(.left, .right) {
+    height: 450px !important;
+  }
+
+  #highlights-section .highlights-section-wrapper .highlights-container .top {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #highlights-section
+    .highlights-section-wrapper
+    .highlights-container
+    .bottom {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  #highlights-section
+    .highlights-section-wrapper
+    .highlights-container
+    :is(.right, .left) {
+    flex: 0 0 100%;
+  }
+
+  /* Event Recap */
+  #event-recap-section .event-recap-wrapper .video-container {
+    height: 500px;
+  }
+
+  /* Sponsor */
+  #sponsors-section .sponsors-section-wrapper .contact-container {
+    gap: 25px;
+  }
+
+  /* Footer */
+  #footer .footer-wrapper {
+    flex-direction: column;
+  }
+
+  #footer .footer-wrapper .center {
+    order: 9999;
+  }
+
+  #footer .footer-wrapper .right {
+    align-items: flex-start;
+  }
+
+  /* Util */
+  .section-header h2 {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 18px 35px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 568px) {
+  /* Scroll top */
+  #scroll-top {
+    right: 10px;
+  }
+
+  /* About */
+  #about-section .about-section-wrapper {
+    display: none;
+  }
+
+  #about-section .about-section-wrapper-mobile {
+    display: flex;
+  }
+  /* What's new */
+  #whats-new-section .whats-new-section-wrapper .center {
+    display: none;
+  }
+
+  #whats-new-section .whats-new-section-wrapper .whats-new-box {
+    flex-direction: row;
+  }
+
+  /* Key */
+  #key-section .key-container .key-wrapper-mobile .top .icon-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Event */
+  #event-section .event-section-container .event-container .event-box {
+    flex: 0 0 100%;
+  }
+
+  /* Partner */
+  #partner-section .partner-section-wrapper .partner-box {
+    flex: 0 0 100%;
+    flex-direction: row;
+  }
+
+  /* Speakers */
+  #speakers-section
+    .lightbox-overlay
+    .lightbox-content
+    .all-speakers
+    .speaker-box {
+    flex: 0 0 100%;
+  }
+}
