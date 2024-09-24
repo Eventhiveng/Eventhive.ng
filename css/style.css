@@ -1398,11 +1398,13 @@ margin: auto;
   flex-direction: column;
   text-align: center;
   /* box-shadow: 5px 5px 20px rgba(152, 193, 217, 0.493); */
-  height: 430px;
+  /* height: 430px; */
   /* width: 370px; */
 }
 #speak .testimonial_box-top img{
   border-radius: 15px;
+  height: 300px;
+  object-fit: cover;
 }
 #speak .testimonial_box-text {
   padding: 10px 0;
