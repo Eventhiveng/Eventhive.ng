@@ -112,6 +112,7 @@
 
 .btn-sec {
   color: var(--primary-color);
+  background-color: var(--white);
 }
 
 .btn-sec:hover {
