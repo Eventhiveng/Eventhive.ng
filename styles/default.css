@@ -3,10 +3,7 @@
   --white: #fff;
   --black: #000;
   --bg-black: #141414;
-  /* --primary-color: #33cc66; */
   --primary-color: #00ac29;
-  /* --primary-color-light: #0a133a;
-  --secondary-color: #ffa600; */
 }
 
 /* Reset */
@@ -39,8 +36,6 @@ video {
   object-fit: cover;
 }
 
-
-
 /* General Style */
 body {
   font-family: "Nunito", sans-serif;
@@ -64,12 +59,8 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "", sans-serif; */
   line-height: 1.2;
 }
-
-/* p {
-} */
 
 section {
   scroll-margin-top: 50px;
