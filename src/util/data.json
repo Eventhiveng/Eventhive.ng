@@ -1,0 +1,179 @@
+{
+  "sectionData": [
+    {
+      "icon": "fluent:vehicle-car-profile-ltr-20-regular",
+      "title": "Transport",
+      "description": "Providing essential networking opportunities between the most Knowledgeable and Influential private and public sector stakeholders within Nigeria's transport sector to network and discuss ideas on the future of transport."
+    },
+    {
+      "icon": "hugeicons:nano-technology",
+      "title": "Technology",
+      "description": "Focused on addressing key economic and development issues in line with technology applications in Africa, and beyond, with a view to driving sustainable development."
+    },
+    {
+      "icon": "mdi:energy-from-grid",
+      "title": "Power & Energy",
+      "description": "Bringing together the most Knowledgeable and Influential private and public sector stakeholders within Nigeria's Power sector to network and share ideas on the future of power and energy."
+    },
+    {
+      "icon": "bi:houses",
+      "title": "Real Estate",
+      "description": "Expanding the real estate horizons by creating valuable avenues for networking amongst the most Knowledgeable and Influential private and public sector stakeholders within Nigeria's real estate sector."
+    },
+    {
+      "icon": "mdi:gas",
+      "title": "Oil and Gas",
+      "description": "Opening the floor for important discussions and valuable ideas for the present and future of Nigeria's oil & gas sector. Bringing together the most Knowledgeable and Influential private and public sector stakeholders within the sector."
+    },
+    {
+      "icon": "ion:business-outline",
+      "title": "Business",
+      "description": "Providing rare opportunites for networking opportunities, crucial discussions and brainstorming amongst the most Knowledgeable and Influential private and public sector stakeholders within Nigeria's growing business sector."
+    }
+  ],
+  "eventData": {
+    "useFor": "event",
+    "settings": {
+      "infinite": true,
+      "speed": 1500,
+      "autoplay": true,
+      "autoplaySpeed": 5000,
+      "slidesToShow": 5,
+      "slidesToScroll": 1,
+      "lazyLoad": "ondemand",
+      "arrow": true,
+
+      "responsive": [
+        {
+          "breakpoint": 991,
+          "settings": {
+            "slidesToShow": 3
+          }
+        },
+        {
+          "breakpoint": 767,
+          "settings": {
+            "slidesToShow": 1
+          }
+        }
+      ]
+    },
+    "info": [
+      {
+        "imgLink": "/images/events/economy.png",
+        "event": "Nigeria Economy Breakfast",
+        "date": "January",
+        "eventLink": "/events/nigeria-economy-breakfast"
+      },
+      {
+        "imgLink": "/images/events/tech.png",
+        "event": "Lagos Tech Fest",
+        "date": "February",
+        "eventLink": "/events/lagos-tech-fest"
+      },
+      {
+        "imgLink": "/images/events/uk.png",
+        "event": "UK-Nigeria Business Outlook",
+        "date": "March",
+        "eventLink": "/events/uk-nigeria-business-outlook"
+      },
+      {
+        "imgLink": "/images/events/power.png",
+        "event": "Nigeria Power Outlook",
+        "date": "April",
+        "eventLink": "/events/nigeria-power-outlook"
+      },
+      {
+        "imgLink": "/images/events/lrf.jpeg",
+        "event": "Lagos Real Estate Fest",
+        "date": "June",
+        "eventLink": "/events/lagos-real-estate-fest"
+      },
+      {
+        "imgLink": "/images/events/nff.png",
+        "event": "Nigeria Fintect Forum",
+        "date": "July",
+        "eventLink": "/events/nigeria-fintech-forum"
+      },
+      {
+        "imgLink": "/images/events/og.png",
+        "event": "Nigeria Oil and Gas Outlook",
+        "date": "August",
+        "eventLink": "/events/nigeria-oil-and-gas-outlook"
+      },
+      {
+        "imgLink": "/images/events/us-nigeria.png",
+        "event": "US-Nigeria Business Outlook",
+        "date": "September",
+        "eventLink": "/events/us-nigeria-business-outlook"
+      },
+      {
+        "imgLink": "/images/events/af-fin.png",
+        "event": "Africa Fintect Outlook",
+        "date": "October",
+        "eventLink": "/events/africa-fintech-outlook"
+      },
+      {
+        "imgLink": "/images/events/af-tech.png",
+        "event": "Africa Tech Forum",
+        "date": "November",
+        "eventLink": "/events/africa-tech-forum"
+      },
+      {
+        "imgLink": "/images/events/lagtrans.png",
+        "event": "Lagos Transport Fest",
+        "date": "December",
+        "eventLink": "/events/lagos-transport-fest"
+      },
+      {
+        "imgLink": "/images/events/business.png",
+        "event": "Nigeria Business Forum",
+        "date": "December",
+        "eventLink": "/events/nigeria-business-forum"
+      }
+    ]
+  },
+  "blogdata": {
+    "useFor": "blog",
+    "settings": {
+      "infinite": true,
+      "speed": 1500,
+      "autoplay": true,
+      "autoplaySpeed": 5000,
+      "slidesToShow": 3,
+      "slidesToScroll": 1,
+      "lazyLoad": "ondemand",
+      "arrow": false,
+      "dots": true,
+
+      "responsive": [
+        {
+          "breakpoint": 991,
+          "settings": {
+            "slidesToShow": 2
+          }
+        },
+        {
+          "breakpoint": 767,
+          "settings": {
+            "slidesToShow": 1
+          }
+        }
+      ]
+    },
+    "info": [
+      {
+        "imgLink": "/images/events/economy.png",
+        "event": "Nigeria Economy Breakfast",
+        "date": "January",
+        "eventLink": "/events/nigeria-economy-breakfast"
+      },
+      {
+        "imgLink": "/images/events/tech.png",
+        "event": "Lagos Tech Fest",
+        "date": "February",
+        "eventLink": "/events/lagos-tech-fest"
+      }
+    ]
+  }
+}

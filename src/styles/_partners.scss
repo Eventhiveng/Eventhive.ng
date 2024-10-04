@@ -1,0 +1,37 @@
+.partners {
+  .partners-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include padding;
+
+    .slick-slider {
+      .slick-list {
+        .slick-slide {
+          .brand-box {
+            img {
+              aspect-ratio: 4 / 3;
+            }
+          }
+        }
+      }
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      background: linear-gradient(to right, #efeef2 0%, #ffffff00 100%);
+      height: 100%;
+      top: 0;
+      position: absolute;
+      width: 200px;
+      z-index: 1;
+    }
+
+    &::after {
+      right: 0;
+      transform: rotateZ(180deg);
+    }
+  }
+}

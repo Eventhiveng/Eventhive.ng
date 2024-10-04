@@ -1,0 +1,98 @@
+.hero {
+  position: relative;
+  border-bottom: 20px solid $color-primary;
+  height: 85vh;
+
+  .hero-container {
+    width: 100%;
+    height: 100%;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      .hero-wrapper {
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        .years {
+          display: flex;
+          align-items: center;
+          color: $color-white;
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 4.5px;
+
+          span {
+            display: inline-block;
+            height: 2px;
+            background-color: $color-white;
+            width: 60px;
+            margin-right: 15px;
+          }
+        }
+
+        h2 {
+          color: $color-white;
+          //   font-size: 60px;
+          font-size: clamp(36px, 5vw, 60px);
+          line-height: 1.1;
+          letter-spacing: 1.8px;
+          margin: 20px 0;
+        }
+
+        .welcome {
+          color: $color-white;
+          font-size: 16px;
+          margin-bottom: 30px;
+
+          p {
+            span {
+              font-weight: 600;
+            }
+          }
+
+          a {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, #00000080, #00000080);
+    }
+  }
+
+  @include big-screen {
+    .hero-container {
+      .container {
+        .hero-wrapper {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  @include xma-screen {
+    .hero-container {
+      .container {
+        .hero-wrapper {
+          width: auto;
+        }
+      }
+    }
+  }
+}

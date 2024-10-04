@@ -1,0 +1,71 @@
+.countup {
+  background: linear-gradient(#00000060, #00000060),
+    url(../assets/img/count-bg.jpg) no-repeat center/cover;
+
+  .container {
+    .countup-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .countup-box {
+        // background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        margin: 0 10px;
+
+        .image {
+          height: 60px;
+          width: 60px;
+          margin: 30px 0 20px;
+        }
+
+        h2 {
+          font-size: 36px;
+          color: $color-primary;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+
+          &::after {
+            content: "+";
+            font-size: 20px;
+            margin-top: -7px;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          color: $color-white;
+        }
+
+        .line {
+          display: inline-block;
+          width: 1px;
+          height: 65px;
+          background-color: $color-primary;
+          margin-top: 10px;
+        }
+
+        &:hover {
+          .image {
+            animation: bounce 1s ease infinite;
+          }
+        }
+      }
+    }
+  }
+
+  @include mid-screen {
+    .container {
+      .countup-container {
+        .countup-box {
+          flex: 0 0 30%;
+        }
+      }
+    }
+  }
+}

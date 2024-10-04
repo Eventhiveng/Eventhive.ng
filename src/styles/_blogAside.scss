@@ -1,0 +1,94 @@
+.blog-aside {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .top {
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid #f5f8fa;
+        transition: all 0.3s ease;
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          color: $color-white;
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .center {
+    .blog-box-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .blog-box {
+        display: flex;
+        gap: 10px;
+
+        .image {
+          width: 100px;
+          height: 60px;
+          flex: 4;
+        }
+
+        .title {
+          transition: all 0.3s ease;
+          flex: 8;
+        }
+
+        &:hover {
+          .title {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  .top,
+  .center {
+    box-shadow: $color-boxShadow;
+    border-radius: 8px;
+    padding: 35px 25px;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+//   @include mid-screen {
+//     .center {
+//       .blog-box-container {
+//         .blog-box {
+//           .image {
+//             flex: 3;
+//             height: 70px;
+//           }
+
+//           .title {
+//             flex: 9;
+//           }
+//         }
+//       }
+//     }
+//   }
+}

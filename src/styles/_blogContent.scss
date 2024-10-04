@@ -1,0 +1,53 @@
+.blog-content {
+  flex: 8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+
+  .blog-card {
+    flex: 0 0 calc(50% - 10px);
+    box-shadow: $color-boxShadow;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    height: fit-content;
+    background-color: $color-white;
+    margin: 0 0 20px;
+
+    .card-content {
+      padding: 20px 20px 50px;
+
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-transform: capitalize;
+        font-weight: 500;
+
+        svg {
+          margin-top: -2px;
+          font-size: 16px;
+        }
+      }
+
+      h2 {
+        margin: 10px 0 20px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+
+      p {
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @include sma-screen {
+    flex-direction: column;
+  }
+}

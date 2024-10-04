@@ -1,0 +1,69 @@
+// Minimal Pages
+
+// Sector Page
+.sector-page {
+  .sector-page-container {
+    background: url(../assets/img/sectors-bg.png);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include background;
+  }
+}
+
+// Event Page
+.event-page {
+  .container {
+    .event-container {
+      display: flex;
+      gap: 30px;
+      @include padding;
+    }
+  }
+
+  @include mid-screen {
+    .container {
+      .event-container {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// Blog Page
+.blog-page {
+  .container {
+    .blog-page-container {
+      display: flex;
+      gap: 30px;
+      @include padding;
+    }
+  }
+
+  @include mid-screen {
+    .container {
+      .blog-page-container {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// Single Blog Page
+.single-blog-page {
+  .single-blog-page-container {
+    @include padding;
+
+    .container {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  @include mid-screen {
+    .single-blog-page-container {
+      .container {
+        flex-direction: column;
+      }
+    }
+  }
+}

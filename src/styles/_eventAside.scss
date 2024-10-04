@@ -1,0 +1,49 @@
+.event-aside {
+  flex: 3;
+  .top {
+    margin-bottom: 50px;
+    background-color: #00000008;
+  }
+
+  .bottom {
+    padding: 30px;
+    background-color: $color-secondary;
+    color: $color-white;
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    p {
+      margin: 20px 0;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .btn {
+        text-transform: uppercase;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-primary;
+        gap: 7px;
+        width: 100%;
+        padding: 8px 20px;
+        transition: all 0.3s ease;
+
+        svg {
+          font-size: 16px;
+        }
+
+        &:hover {
+          background-color: $color-white;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}

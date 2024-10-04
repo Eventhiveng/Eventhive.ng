@@ -1,0 +1,94 @@
+.sectors {
+  @include background;
+  @include padding;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.core-sectors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .sectors-box {
+    flex: 0 0 calc(33.33% - 15px);
+    max-width: calc(33.33% - 15px);
+    min-height: 320px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(#00000060, #00000060),
+      url(../assets/img/sector-hover-bg.png) no-repeat right/cover;
+    background-size: 0%;
+
+    .icon {
+      padding: 10px;
+      background-color: $color-primary;
+      color: $color-white;
+      width: 60px;
+      height: 60px;
+      box-shadow: 3px 4px 15px #00000040;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 10px 0;
+      transition: all 0.1s ease;
+    }
+
+    p {
+      line-height: 1.7;
+      transition: all 0.1s ease;
+    }
+
+    &:hover {
+      box-shadow: $color-boxShadow;
+      background: linear-gradient(#00000060, #00000060),
+        url(../assets/img/sector-hover-bg.png) no-repeat center/cover;
+      .icon {
+        background-color: $color-white;
+        color: $color-primary;
+      }
+
+      h3 {
+        color: $color-white;
+      }
+      p {
+        color: $color-white;
+      }
+    }
+  }
+
+  @include mid-screen {
+    .sectors-box {
+      flex: 0 0 calc(50% - 15px);
+      max-width: calc(50% - 15px);
+    }
+  }
+
+  @include sma-screen {
+    .sectors-box {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}

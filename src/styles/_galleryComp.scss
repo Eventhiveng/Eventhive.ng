@@ -1,0 +1,181 @@
+.gallery-comp {
+  // display: flex;
+  //   z-index: inherit;
+  position: relative;
+  @include padding;
+
+  .gallery-comp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .selectors {
+      margin-bottom: 40px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        li {
+          padding: 5px 8px;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          &.active {
+            color: $color-primary;
+            border-bottom: 2px solid $color-primary;
+          }
+        }
+      }
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 50px;
+
+      .image {
+        flex: 0 0 20%;
+        max-width: 19%;
+        height: 200px;
+        cursor: pointer;
+      }
+    }
+
+    .pagination {
+      ul {
+        display: flex;
+        gap: 10px;
+
+        li {
+          button {
+            cursor: pointer;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            font-weight: 700;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-white;
+            color: $color-secondary;
+            transition: all 0.3s ease;
+          }
+          &.active,
+          &:hover {
+            button {
+              color: $color-white;
+              background-color: $color-primary;
+              border: 1px solid $color-primary;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      animation: fadeIn 0.5s ease forwards;
+      transform-origin: center center;
+
+      .modal-content {
+        position: relative;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        width: 90%;
+        height: 90%;
+
+        .modal-close {
+          position: absolute;
+          top: -30px;
+          right: -30px;
+          background: none;
+          border: 1px solid $color-primary;
+          color: $color-primary;
+          height: 30px;
+          padding-top: 2px;
+          width: 30px;
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+
+        .image {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  @include mid-screen {
+    .gallery-comp-container {
+      .gallery-container {
+        .image {
+          flex: 0 0 23%;
+          max-width: 23%;
+          height: 150px;
+        }
+      }
+    }
+  }
+  @include sma-screen {
+    .gallery-comp-container {
+      .gallery-container {
+        .image {
+          flex: 0 0 31%;
+          max-width: 31%;
+          height: 150px;
+        }
+      }
+
+      .modal-overlay {
+        .modal-content {
+          height: 70%;
+
+          .modal-close {
+            // top: -15px;
+            right: -15px;
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+  @include xma-screen {
+    .gallery-comp-container {
+      .gallery-container {
+        .image {
+          // flex: 0 0 31%;
+          // max-width: 31%;
+          height: 100px;
+        }
+      }
+
+      .modal-overlay {
+        .modal-content {
+          height: 50%;
+        }
+      }
+    }
+  }
+}

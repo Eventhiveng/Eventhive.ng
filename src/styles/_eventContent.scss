@@ -1,0 +1,93 @@
+.event-content {
+  flex: 9;
+  .event-pictures {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+
+    .event-logos {
+      flex: 4;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      figure {
+        flex: 1;
+        display: flex;
+      }
+    }
+
+    .main-pic {
+      flex: 8;
+    }
+  }
+
+  .event-description {
+    h2 {
+      font-size: clamp(24px, 5vw, 32px);
+      color: #856404;
+      transition: all 0.3s ease;
+
+      a {
+        text-decoration: underline;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    h4 {
+      font-size: 16px;
+      margin: 20px 0 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .image-text {
+      margin-bottom: 30px;
+      display: flex;
+      gap: 20px;
+
+      .text {
+        flex: 1;
+      }
+
+      .imag {
+        flex: 1;
+      }
+    }
+
+    .why {
+      h3 {
+        font-size: clamp(24px, 5vw, 32px);
+        margin-bottom: 20px;
+      }
+
+      ul {
+        li {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          //   line-height: 2;
+          margin-bottom: 10px;
+
+          svg {
+            color: $color-primary;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  @include sma-screen {
+    .event-description {
+      .image-text {
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "hash": "8de5ec94",
+  "configHash": "515b9b20",
+  "lockfileHash": "4d8dc569",
+  "browserHash": "399b2e85",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "8a38dfdd",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "6817f298",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "d016183a",
+      "needsInterop": false
+    },
+    "@iconify/react": {
+      "src": "../../node_modules/@iconify/react/dist/iconify.js",
+      "file": "@iconify_react.js",
+      "fileHash": "e21000e3",
+      "needsInterop": false
+    },
+    "react-countup": {
+      "src": "../../node_modules/react-countup/build/index.js",
+      "file": "react-countup.js",
+      "fileHash": "c20b2e4f",
+      "needsInterop": true
+    },
+    "react-slick": {
+      "src": "../../node_modules/react-slick/lib/index.js",
+      "file": "react-slick.js",
+      "fileHash": "661da081",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-YUNTBJI6": {
+      "file": "chunk-YUNTBJI6.js"
+    },
+    "chunk-45FXRYJS": {
+      "file": "chunk-45FXRYJS.js"
+    }
+  }
+}

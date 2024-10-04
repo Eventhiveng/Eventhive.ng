@@ -1,0 +1,58 @@
+@mixin big-screen {
+  @media screen and (max-width: $px-media-lg) {
+    @content;
+  }
+}
+
+@mixin mid-screen {
+  @media screen and (max-width: $px-media-md) {
+    @content;
+  }
+}
+
+@mixin sma-screen {
+  @media screen and (max-width: $px-media-sm) {
+    @content;
+  }
+}
+
+@mixin xma-screen {
+  @media screen and (max-width: $px-media-xsm) {
+    @content;
+  }
+}
+
+@mixin skew {
+  transform: skewX(35deg);
+}
+
+// @mixin unskew {
+//   transform: skewX(-35deg);
+// }
+
+// @mixin hidden {
+//   overflow: hidden !important;
+// }
+
+@mixin padding {
+  padding: 100px 0;
+
+  @include mid-screen {
+    padding: 80px 0;
+  }
+  @include sma-screen {
+    padding: 60px 0;
+  }
+
+  @include xma-screen {
+    padding: 60px 0;
+  }
+}
+
+@mixin background {
+  background: url(../assets/img/sectors-bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  animation: zoomBackground 5s ease-in-out infinite;
+}

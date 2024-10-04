@@ -1,0 +1,39 @@
+.who-we-are {
+  background: url(../assets/img/about-bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  animation: zoomBackground 5s ease-in-out infinite;
+  @include padding;
+
+  .container {
+    display: flex;
+    gap: 30px;
+    .left {
+      flex: 1;
+      .section-header {
+        h2 {
+          color: $color-black-sec;
+        }
+      }
+      .about-content {
+        margin-bottom: 40px;
+        p {
+          line-height: 1.7;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+    }
+  }
+
+  @include mid-screen {
+    .container {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}
