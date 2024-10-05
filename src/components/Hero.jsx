@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import bgdVideo from "../assets/video/bg-video.mp4";
-import poster from "../assets/img/4.jpg";
+import poster from "../assets/img/hero-bg.jpg";
 
 const Hero = () => {
   return (
