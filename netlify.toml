@@ -1,0 +1,9 @@
+[build]
+  # Default settings for static branches (HTML, CSS, JS)
+  publish = "/"
+  command = ""
+
+# Specific context for the master branch (React/Vite)
+[context.production]  # This is equivalent to [context."master"]
+  command = "npm run build"
+  publish = "dist"
