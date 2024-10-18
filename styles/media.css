@@ -1,0 +1,134 @@
+/* Big screen */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Tap Pro */
+@media only screen and (max-width: 991px) {
+  /* Nav */
+  #nav .nav-wrapper .nav-links {
+    display: none;
+  }
+
+  #nav .nav-wrapper .hamburger {
+    display: flex;
+  }
+
+  #nav .nav-wrapper .logo {
+    margin-left: 50px;
+  }
+
+  /* Hero */
+  #hero .hero-wrapper .hero-header {
+    width: 100%;
+  }
+
+  #hero .hero-wrapper .hero-description {
+    width: 100%;
+    text-align: justify;
+  }
+
+  /* Testimonial */
+  #testimonial .testimonial-container {
+    height: auto;
+  }
+
+  #testimonial .testimonial-wrapper {
+    flex-direction: column;
+  }
+
+  /* What's new */
+  #whats-new .whats-new-wrapper .whats-new-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Key */
+  #key .key-wrapper .key-box {
+    flex: 0 0 calc((100% - 90px) / 4);
+  }
+
+  /* Partner */
+  #partner .partner-wrapper .partner-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Contact */
+  #contact .contact-container {
+    height: auto;
+  }
+
+  #contact .contact-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  /* Nav */
+  #nav .nav-wrapper .button {
+    display: none;
+  }
+
+  #nav .nav-wrapper .mobile-btn {
+    display: block;
+  }
+
+  /* About */
+  #about .about-wrapper {
+    flex-direction: column;
+  }
+
+  /* Highlight */
+  #highlight .highlight-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  /* What's new */
+  #whats-new .whats-new-wrapper .whats-new-box {
+    flex: 0 0 100%;
+  }
+
+  /* Key */
+  #key .key-wrapper .key-box {
+    flex: 0 0 calc((100% - 60px) / 3);
+  }
+
+  /* Partner */
+  #partner .partner-wrapper .partner-box {
+    flex: 0 0 100%;
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 100%;
+  }
+
+  /* Footer */
+  #footer .footer-wrapper .top {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 568px) {
+  /* Highlight */
+  #highlight .highlight-wrapper .v-stretch {
+    grid-row: span 1;
+  }
+  #highlight .highlight-wrapper .h-stretch {
+    grid-column: span 1;
+  }
+
+  /* Key */
+  #key .key-wrapper .key-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+  /* #highlight .highlight-wrapper .big-stretch {
+    grid-column: span 1;
+    grid-row: span 1;
+  } */
+}
