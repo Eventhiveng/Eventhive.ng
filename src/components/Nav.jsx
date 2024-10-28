@@ -114,10 +114,22 @@ const Nav = () => {
                   <Link to={linkPath}>{label}</Link>
                 </li>
               ))}
-              <li>
-                <a href="/calendar/2024-event-calendar.pdf" download>
-                  Download Calendar
+              <li className="has-submenu">
+                <a href="#">
+                  Download Calendar <Icon icon="typcn:arrow-sorted-down" />
                 </a>
+                <ul className="submenu">
+                  <li>
+                    <a href="/calendar/2025-events-calendar.pdf" download>
+                      Download 2025 Calendar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/calendar/2024-event-calendar.pdf" download>
+                      Download 2024 Calendar
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -170,14 +182,22 @@ const Nav = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <a
-                  href="/calendar/2024-event-calendar.pdf"
-                  download
-                  onClick={toggleMobileNav}
-                >
-                  Download Calendar
+              <li className="has-submenu">
+                <a href="#">
+                  Download Calendar <Icon icon="typcn:arrow-sorted-down" />
                 </a>
+                <ul className="submenu">
+                  <li>
+                    <a href="/calendar/2025-events-calendar.pdf" download>
+                      Download 2025 Calendar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/calendar/2024-event-calendar.pdf" download>
+                      Download 2024 Calendar
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>

@@ -119,6 +119,57 @@ nav {
           li {
             padding: 5px 10px;
           }
+
+          li.has-submenu {
+            position: relative;
+
+            .submenu {
+              display: none;
+              position: absolute;
+              top: calc(100% - 10px);
+              width: max-content;
+              left: 0;
+              background-color: #fff;
+              padding: 30px 0;
+              color: #000000;
+              flex-direction: column;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              z-index: 9999999;
+              transition: all 1s ease;
+
+              li {
+                border-bottom: 1px solid #0000000c;
+
+                &:last-child {
+                  border-bottom: none;
+                }
+                a {
+                  display: inline-block;
+                  padding: 10px 20px;
+                }
+                &:hover {
+                  background-color: $color-primary;
+                  a {
+                    color: $color-white;
+                  }
+                }
+              }
+            }
+
+            & > a {
+              display: flex;
+              align-items: center;
+              gap: 3px;
+            }
+
+            &:hover {
+              .submenu {
+                display: block;
+                animation: fadeUp 0.5s ease-in-out forwards;
+              }
+            }
+          }
         }
       }
 
@@ -249,7 +300,6 @@ nav {
     position: fixed;
     animation: fade-down 0.5s ease-in-out;
 
-   
     .top {
       display: none;
     }
@@ -358,6 +408,57 @@ nav {
             &:hover::after,
             &.current::after {
               transform: scaleX(1);
+            }
+          }
+
+          li.has-submenu {
+            & > a {
+              display: flex;
+              align-items: center;
+              gap: 3px;
+            }
+            .submenu {
+              display: none;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              width: 100%;
+              background-color: $color-white;
+              padding: 30px 0;
+              color: #000000;
+              flex-direction: column;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              z-index: 9999999;
+
+              li {
+                padding: 0;
+                transition: all 0.3s ease-in-out;
+                a {
+                  padding: 10px 15px;
+                  color: $color-secondary;
+                  transition: all 0.3s ease-in-out;
+                  border-bottom: 1px solid $color-white;
+                }
+                &:hover {
+                  background: $color-primary;
+
+                  a {
+                    color: $color-white;
+                  }
+                }
+
+                &::after {
+                  display: none;
+                }
+              }
+            }
+
+            &:hover {
+              .submenu {
+                display: flex;
+                animation: fadeUp 0.2s ease-in-out forwards;
+              }
             }
           }
         }

@@ -42,7 +42,7 @@ const WhoWeAre = () => {
           </div>
 
           <a
-            href="/calendar/2024-event-calendar.pdf"
+            href="/calendar/2025-events-calendar.pdf"
             download
             className="btn btn-pry"
             data-aos="fade-up"
