@@ -13,14 +13,14 @@ const Events = () => {
             type={"single"}
           />
           <a
-            href="/calendar/2024-event-calendar.pdf"
+            href="/calendar/2025-events-calendar.pdf"
             download
             className="btn btn-pry"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="300"
           >
-            Dowload 2024 Event Calendar
+            Download 2025 Event Calendar
           </a>
         </div>
         <div className="events-wrapper">
