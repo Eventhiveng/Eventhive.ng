@@ -596,6 +596,7 @@ nav aside.active {
 }
 
 .speaker-section .speakers-container .speakers-box .image {
+  height: 280px;
   position: relative;
   overflow: hidden;
 }
