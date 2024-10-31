@@ -28,42 +28,9 @@
   gap: 20px;
 }
 
-#nav .nav-wrapper .nav-links ul li.has-submenu {
-  position: relative;
-}
-
-#nav .nav-wrapper .nav-links ul li.has-submenu .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  width: 200px;
-  left: 0;
-  background-color: #fff;
-  padding: 30px 0;
-  color: #000000;
-  flex-direction: column;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 9999999;
-}
-
 #nav .nav-wrapper .nav-links ul li a {
   padding: 10px 0;
   transition: color 0.3s ease-in-out;
-}
-
-#nav .nav-wrapper .nav-links ul li .submenu li a {
-  padding: 10px 15px;
-  display: block;
-  color: var(--secondary-color);
-  transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid var(--white);
-}
-
-#nav .nav-wrapper .nav-links ul li .submenu li a.current,
-#nav .nav-wrapper .nav-links ul li .submenu li a:hover {
-  background: var(--primary-color);
-  color: var(--white);
 }
 
 #nav .nav-wrapper .nav-links ul li a.active,
@@ -75,7 +42,7 @@
   display: flex;
   align-items: center;
   width: 100px;
-  margin-left: -250px;
+  margin-left: -200px;
   transform-origin: center center;
 }
 
@@ -152,32 +119,12 @@
   position: relative;
 }
 
-#aside .aside-wrapper .nav-links ul li.has-submenu .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: -30px;
-  background-color: #fff;
-  padding: 30px 0;
-  color: #000000;
-  flex-direction: column;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 9999999;
+#aside .aside-wrapper .nav-links ul li a {
+  transition: color 0.3s ease;
 }
 
-#aside .aside-wrapper .nav-links ul li .submenu li a {
-  padding: 10px 15px;
-  display: block;
-  color: var(--secondary-color);
-  transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid var(--white);
-}
-
-#aside .aside-wrapper .nav-links ul li .submenu li a.current,
-#aside .aside-wrapper .nav-links ul li .submenu li a:hover {
-  background: var(--primary-color);
-  color: var(--white);
+#aside .aside-wrapper .nav-links ul li a:hover {
+  color: var(--primary-color);
 }
 
 /* Hero */

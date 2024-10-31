@@ -107,7 +107,6 @@ $(document).ready(function () {
   };
 
   const eventDateNairobi = new Date("April 30, 2025 00:00:00").getTime();
-  const eventDateJohan = new Date("June 12, 2025 00:00:00").getTime();
 
   const countdownFunction = setInterval(function () {
     const now = new Date().getTime();
@@ -139,35 +138,8 @@ $(document).ready(function () {
       $("#countdown-timer").html("Event is Live!");
     }
 
-    // Calculate the time remaining for Johannesburg
-    const distanceJohan = eventDateJohan - now;
-    const daysJohan = Math.floor(distanceJohan / (1000 * 60 * 60 * 24));
-    const hoursJohan = Math.floor(
-      (distanceJohan % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutesJohan = Math.floor(
-      (distanceJohan % (1000 * 60 * 60)) / (1000 * 60)
-    );
-    const secondsJohan = Math.floor((distanceJohan % (1000 * 60)) / 1000);
-
-    // Display countdown for Johannesburg
-    if (distanceJohan > 0) {
-      $("#countdown-timer-johan").html(
-        daysJohan +
-          "d " +
-          hoursJohan +
-          "h " +
-          minutesJohan +
-          "m " +
-          secondsJohan +
-          "s "
-      );
-    } else {
-      $("#countdown-timer-johan").html("Event is Live!");
-    }
-
     // Stop the countdown if both events are live
-    if (distanceNairobi < 0 && distanceJohan < 0) {
+    if (distanceNairobi < 0) {
       clearInterval(countdownFunction);
     }
   }, 1000);
@@ -200,13 +172,10 @@ $(document).ready(function () {
   };
 
   // Sticky nav
-  let lastScrollTop = 0;
   const stickyNav = (scrollTop) => {
     scrollTop > 200
       ? $navbar.addClass("sticky")
       : $navbar.removeClass("sticky");
-
-    lastScrollTop = scrollTop;
   };
 
   const activeNav = (scrollTop) => {
