@@ -106,6 +106,22 @@
     width: 100%;
   }
 
+  #hero-section
+    .hero-section-container
+    .hero-section-wrapper
+    .hero-section-cta
+    .mobile-ticket {
+    display: block;
+  }
+
+  #hero-section
+    .hero-section-container
+    .hero-section-wrapper
+    .hero-section-cta
+    .pass {
+    display: none;
+  }
+
   #hero-section .hero-section-container .circle-text-container {
     display: none;
   }

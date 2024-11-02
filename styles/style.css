@@ -232,7 +232,7 @@
   color: var(--white);
 }
 
-.aside-menu .ticket {
+.aside-menu .pass {
   margin-top: 50px;
 }
 
@@ -303,6 +303,14 @@
 #hero-section .hero-section-container .hero-section-wrapper .hero-section-cta {
   gap: 20px;
   flex-wrap: wrap;
+}
+
+#hero-section
+  .hero-section-container
+  .hero-section-wrapper
+  .hero-section-cta
+  .mobile-ticket {
+  display: none;
 }
 
 #hero-section .hero-section-container .circle-text-container {
