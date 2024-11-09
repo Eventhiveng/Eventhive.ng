@@ -705,8 +705,49 @@ nav aside.active {
   text-align: center;
 }
 
+/* Sponsors Section */
+.sponsors-section {
+  background: linear-gradient(#fff, #fcf7f7, #ede3e3, #d8d2d2);
+}
+
+.sponsors-section .sponsors-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.sponsors-section .sponsors-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.sponsors-section .sponsors-wrapper .sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  row-gap: 20px;
+}
+
+.sponsors-section .sponsors-wrapper .sponsors-header {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.sponsors-section .sponsors-wrapper .sponsors img {
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
+  vertical-align: middle;
+  background: #0000003b;
+  padding: 10px;
+}
+
 /* Register Section */
-.register-section {
+/* .register-section {
   margin-top: -100px;
   background: linear-gradient(#fff, #fcf7f7, #ede3e3, #d8d2d2);
 }
@@ -734,7 +775,7 @@ nav aside.active {
 .register-section .register-container .register-box ul li span {
   margin-right: 7px;
   color: var(--color-primary);
-}
+} */
 
 /* More About Eventhive Section */
 .more-about {

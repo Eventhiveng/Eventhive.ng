@@ -30,6 +30,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 0.875rem;
   color: var(--black-light);
+  /* background: var(--white); */
   z-index: 1;
   overflow-x: hidden;
 }
