@@ -603,6 +603,7 @@ nav aside.active {
 
 .speaker-section .speakers-container .speakers-box .image img {
   transition: all 0.3s ease;
+  object-position: top;
 }
 
 .speaker-section .speakers-container .speakers-box .image .socials {
