@@ -1,0 +1,121 @@
+/* Big screen */
+@media only screen and (max-width: 1200px) {
+  /* Partner */
+  #partner .partner-box-container .partner-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Speakers */
+  #speakers .speakers-subwrapper .speaker-box {
+    flex: 0 0 calc((100% - 60px) / 3);
+  }
+
+  /* Agenda */
+  #agenda .agenda-subwrapper .left {
+    flex: 0 0 calc(50% - (50px / 2));
+  }
+
+  #agenda .agenda-subwrapper .right {
+    flex: 0 0 calc(50% - (50px / 2));
+  }
+
+  #agenda .agenda-subwrapper .right .agenda-image {
+    height: 400px;
+    top: calc(50% - (400px / 2));
+  }
+}
+
+/* Tap Pro */
+@media only screen and (max-width: 991px) {
+  /* Hero */
+  #hero .hero-wrapper {
+    width: 80%;
+  }
+
+  /* About */
+  #about .about-wrapper {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  /* Speakers */
+  #speakers .speakers-subwrapper .speaker-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Agenda */
+  #agenda .agenda-subwrapper .left .agenda-item {
+    min-height: auto;
+  }
+
+  #agenda .agenda-subwrapper .left {
+    flex: 0 0 100%;
+  }
+
+  #agenda .agenda-subwrapper .right {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  /* Nav */
+  #nav .nav-wrapper .nav-links {
+    display: none;
+  }
+
+  #nav .nav-wrapper .hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  #hero .hero-wrapper {
+    width: 100%;
+  }
+
+  /* Objectives */
+  #objectives .objectives-subwrapper {
+    flex-direction: column;
+  }
+
+  /* What's new */
+  #whats-new .whats-new-box-container .whats-new-box {
+    flex: 0 0 100%;
+  }
+
+  /* Partner */
+  #partner .partner-box-container .partner-box {
+    flex: 0 0 100%;
+  }
+
+  #partner .buttons {
+    flex-direction: column;
+  }
+
+  #testimonial .testimonial-subwrapper {
+    flex-direction: column-reverse;
+  }
+
+  /* Footer */
+  #footer .footer-wrapper .top {
+    flex-direction: column;
+  }
+
+  #footer .footer-wrapper .top .quick-links {
+    display: block;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 568px) {
+  /* Hero */
+  #hero .hero-wrapper .hero-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Speakers */
+  #speakers .speakers-subwrapper .speaker-box {
+    flex: 0 0 100%;
+  }
+}
