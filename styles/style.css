@@ -536,7 +536,7 @@
   height: 500px;
   /* position: sticky; */
   /* top: calc(50% - (600px / 2)); */
-  border-radius: 50%;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -622,7 +622,9 @@
 
 /* Contact */
 #contact {
-  background: var(--primary-color);
+  background: linear-gradient(#00000080, #00000080),
+    var(--primary-color) url(../assets/section-img/mining-excavator.jpeg)
+      no-repeat center/cover fixed;
   color: var(--white);
 }
 
@@ -713,12 +715,11 @@
   margin-right: 10px;
 }
 
-
-
 /* Footer */
 #footer .footer-container {
   background-color: var(--primary-color);
   color: white;
+  border-top: 1px solid #ffffff10;
 }
 
 #footer .footer-wrapper .top {
