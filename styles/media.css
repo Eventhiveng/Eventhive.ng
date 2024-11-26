@@ -90,7 +90,7 @@
 @media only screen and (max-width: 568px) {
   /* Speakers */
   #speakers .speakers-box-container .speaker-box .speaker-image {
-    height: 300px;
+    height: auto;
   }
 
   #speakers .speakers-wrapper .speaker-box {
