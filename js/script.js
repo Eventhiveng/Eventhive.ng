@@ -152,7 +152,7 @@ $(document).ready(function () {
     _.throttle(function () {
       let currentScrollTop = $(window).scrollTop();
       let windowHeight = $(window).height();
-      let delayTime = $(window).width() <= 768 ? 50 : 100;
+      let delayTime = $(window).width() <= 768 ? 10 : 30;
 
       $(".speakers-box, .whats-new-box").each(function (i) {
         let boxTop = $(this).offset().top;
