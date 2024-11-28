@@ -1,2 +1,0 @@
-push notification
-remove sectors text and replace with eboss logos
