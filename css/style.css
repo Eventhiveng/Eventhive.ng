@@ -793,6 +793,13 @@ textarea.input {
   margin-top: 0px !important;
 }
 
+.w3-content img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
 /* LOGO ITEMS */
 .logo-item {
   width: 100%;
