@@ -930,6 +930,28 @@ textarea.input {
   background-color: #f9f9fa;
 }
 
+#speakers .text-center {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#speakers .card {
+  flex: 0 0 calc((100% - 60px) / 4);
+}
+
+#speakers .card .card-img-top {
+  object-position: top;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#speakers .card h5 span {
+  margin-top: 15px;
+  display: block;
+}
+
 .speaker {
   position: relative;
   cursor: pointer;
@@ -1682,5 +1704,21 @@ textarea.input {
   }
   .logo-item {
     padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #speakers .card {
+    flex: 0 0 calc((100% - 40px) / 3);
+  }
+}
+@media screen and (max-width: 768px) {
+  #speakers .card {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
+}
+@media screen and (max-width: 568px) {
+  #speakers .card {
+    flex: 0 0 100%;
   }
 }
