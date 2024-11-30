@@ -954,6 +954,11 @@ textarea.input {
   object-fit: cover;
 }
 
+#speakers .card h5 b {
+  font-size: 18px;
+  display: block;
+}
+
 #speakers .card h5 span {
   margin-top: 15px;
   display: block;
