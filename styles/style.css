@@ -463,18 +463,18 @@ aside.active {
   color: #fefefef8;
 }
 
-/* Agenda */
-#agenda .agenda-container {
+/* Key */
+#key .key-container {
   background: var(--white);
 }
 
-#agenda .agenda-wrapper ul {
+#key .key-wrapper ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-#agenda .agenda-wrapper ul li {
+#key .key-wrapper ul li {
   background: var(--bg-black);
   font-size: 20px;
   /* text-align: center; */
@@ -485,8 +485,55 @@ aside.active {
   margin: auto;
 }
 
-#agenda .agenda-wrapper ul li::marker {
+#key .key-wrapper ul li::marker {
   color: var(--bg-black);
+}
+
+/* Agenda */
+#agenda .agenda-item {
+  display: flex;
+  min-height: 100vh;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+#agenda .agenda-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#agenda .agenda-item .left {
+  flex: 4;
+}
+
+#agenda .agenda-item .left .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+#agenda .agenda-item .left .description ul {
+  list-style: circle;
+  padding-left: 20px;
+}
+
+#agenda .agenda-item .left .description ul li {
+  margin-bottom: 20px;
+}
+
+#agenda .agenda-item .left .description ul li::marker {
+  color: var(--primary-color);
+}
+
+#agenda .agenda-item .right {
+  flex: 3;
+}
+
+#agenda .agenda-item .right .image {
+  height: 500px;
+  position: sticky;
+  top: calc(50% - (500px / 2));
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Sponsors */
@@ -609,7 +656,7 @@ aside.active {
 /* More About Eventhive  */
 #more-about .more-container {
   background: linear-gradient(#000000a1, #000000a7),
-    url(/assets/section-img/hero.jpg) no-repeat center/cover fixed;
+    url(/assets/section-img/cta.jpg) no-repeat center/cover fixed;
 }
 
 #more-about {

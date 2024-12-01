@@ -28,6 +28,16 @@
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
+  /* Agenda */
+  #agenda .agenda-item {
+    min-height: auto;
+  }
+
+  #agenda .agenda-item .right {
+    display: none;
+  }
+  
+
   /* Speaker */
   #speakers .speakers-box-container .speaker-box {
     flex: 0 0 calc((100% - 30px) / 2);
