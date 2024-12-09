@@ -15,7 +15,7 @@ const BlogComp = ({ element }) => {
           <Link to={element.slug}>{element.title}</Link>
         </h4>
         <p>{element.excerpt.substr(0, 150).padEnd(157, " .")}</p>
-        <Link to={element.slug} className="more">
+        <Link to={`/blog/${element.slug}`} className="more">
           Read More <Icon icon="pajamas:arrow-right" />
         </Link>
       </div>
