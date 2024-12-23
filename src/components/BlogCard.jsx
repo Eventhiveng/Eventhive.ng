@@ -13,7 +13,7 @@ const BlogCard = ({ data }) => {
           {data.author}
         </div>
         <h2 className="black-sec">
-          <Link to="#">{data.title}</Link>
+          <Link to={data.slug}>{data.title}</Link>
         </h2>
         <p>{data.excerpt.substr(0, 150).padEnd(157, " .")}</p>
         <Link to={data.slug} className="btn btn-pry">
