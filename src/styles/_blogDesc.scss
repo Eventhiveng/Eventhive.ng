@@ -41,6 +41,10 @@
       .image-text {
         display: flex;
         gap: 20px;
+
+        @include sma-screen {
+          flex-direction: column;
+        }
       }
 
       blockquote {
