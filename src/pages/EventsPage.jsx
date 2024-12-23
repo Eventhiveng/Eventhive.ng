@@ -12,10 +12,10 @@ const EventsPage = () => {
   const selectedEvent = eventPageData.find((event) => event.slug === slug);
 
   useEffect(() => {
-    document.title = "Events | Eventhive.ng";
+    document.title = "Events | Eventhive";
 
     return () => {
-      document.title = "Events | Eventhive.ng";
+      document.title = "Events | Eventhive";
     };
   }, []);
 

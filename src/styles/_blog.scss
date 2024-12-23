@@ -26,6 +26,10 @@
                   box-shadow: $color-boxShadow;
                   background-color: $color-white;
 
+                  .image {
+                    aspect-ratio: 4/3;
+                  }
+
                   .blog-info {
                     padding: 30px;
                     display: flex;

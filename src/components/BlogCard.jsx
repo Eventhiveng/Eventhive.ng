@@ -2,7 +2,6 @@ import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ data }) => {
-  console.log(data);
   return (
     <div className="blog-card">
       <div className="image">
@@ -16,9 +15,7 @@ const BlogCard = ({ data }) => {
         <h2 className="black-sec">
           <Link to="#">{data.title}</Link>
         </h2>
-        <p>
-          <p>{data.excerpt.substr(0, 150).padEnd(157, " .")}</p>
-        </p>
+        <p>{data.excerpt.substr(0, 150).padEnd(157, " .")}</p>
         <Link to={data.slug} className="btn btn-pry">
           Read More
         </Link>

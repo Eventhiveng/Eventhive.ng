@@ -14,7 +14,7 @@ const GetInvolved = () => {
             type={"single"}
           />
           <p>
-            <b class="text-pry">Eventhive.ng</b> creates platforms where
+            <b className="text-pry">Eventhive</b> creates platforms where
             stakeholders can forge new relationships. We bring people and
             businesses together, because when they meet, ideas spark and
             connections are made.
@@ -31,7 +31,7 @@ const GetInvolved = () => {
             <b>
               <Link
                 to="/events/nigeria-economy-breakfast"
-                class="text-pry"
+                className="text-pry"
                 style={{ textDecoration: "underline" }}
               >
                 our events

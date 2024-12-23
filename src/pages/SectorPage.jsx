@@ -6,10 +6,10 @@ import Partners from "../components/Partners";
 
 const SectorPage = () => {
   useEffect(() => {
-    document.title = "Sectors | Eventhive.ng";
+    document.title = "Sectors | Eventhive";
 
     return () => {
-      document.title = "Sectors | Eventhive.ng";
+      document.title = "Sectors | Eventhive";
     };
   }, []);
   return (
@@ -20,7 +20,7 @@ const SectorPage = () => {
       />
       <div className="sector-page-container">
         <div className="container">
-          <CoreSectors />
+          <CoreSectors all={true} />
         </div>
       </div>
       <CountUpComp />

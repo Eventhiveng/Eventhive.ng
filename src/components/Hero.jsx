@@ -25,7 +25,7 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-duration="800"
             >
-              <span></span>3 Years — 13 Events
+              <span></span>5 Years — 40+ Events
             </div>
             <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
               <span className="text-pry">Developing Africa's Businesses </span>
@@ -39,14 +39,15 @@ const Hero = () => {
               data-aos-offset="10"
             >
               <p>
-                Welcome to <span className="text-pry">Eventhive.ng</span>, West
-                Africa’s leading B2B event servicing company with event
-                portfolios across Oil & Gas, Power, Transport, Real Estate,
-                Construction, Agribusiness, and Tech.
+                Welcome to <span className="text-pry">Eventhive</span>, Africa’s
+                leading B2B event servicing company with event portfolios across
+                Oil & Gas, Technlogy, Finance, Aviation, Telecoms, International
+                Trade, Power, Transport, Real Estate, PE/VC, Creative Economy and
+                Insurance.
               </p>
-              <Link to="/about" className="text-pry text-up">
+              {/* <Link to="/about" className="text-pry text-up">
                 Read more about us here
-              </Link>
+              </Link> */}
             </div>
 
             <a

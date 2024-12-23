@@ -1,10 +1,14 @@
 import { Icon } from "@iconify/react";
 import data from "../util/data";
 
-const CoreSectors = () => {
+const CoreSectors = ({ all }) => {
+  let items;
+
+  items = all ? data.sectorData : data.sectorData.slice(0, 6);
+
   return (
     <div className="core-sectors">
-      {data.sectorData.map((data, index) => (
+      {items.map((data, index) => (
         <div
           data-aos="fade-left"
           data-aos-duration="800"

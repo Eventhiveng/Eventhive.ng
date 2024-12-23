@@ -110,7 +110,7 @@ const Footer = () => {
         <div className="divider"></div>
         <div className="container">
           <div className="footer-bottom">
-            <p>&copy; {new Date().getFullYear()} | Eventhive.ng</p>
+            <p>&copy; {new Date().getFullYear()} | Events by Eventhive</p>
           </div>
         </div>
       </div>

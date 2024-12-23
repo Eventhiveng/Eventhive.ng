@@ -12,7 +12,7 @@ const EventContent = ({ data }) => {
           data-aos-delay="100"
         >
           <figure>
-            <img src={data?.logo} alt="Eventhive" />
+            <img src={data?.banner} alt="Eventhive" />
           </figure>
           <figure>
             <img src={data?.pic1} alt="Eventhive" />

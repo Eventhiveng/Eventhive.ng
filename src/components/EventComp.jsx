@@ -5,7 +5,7 @@ const EventComp = ({ element }) => {
   return (
     <div className="event-comp">
       <div className="image">
-        <img src={element.imgLink} alt={element.event} />
+        <img src={element.banner} alt={element.event} />
       </div>
       <div className="info">
         <h4 className="black-sec">

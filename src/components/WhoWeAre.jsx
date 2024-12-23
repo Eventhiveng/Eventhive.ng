@@ -18,7 +18,7 @@ const WhoWeAre = () => {
             data-aos-delay="300"
           >
             <p>
-              <b class="text-pry">Eventhive.ng</b> is one of the fastest growing
+              <b className="text-pry">Eventhive</b> is one of the fastest growing
               PR Firm in Nigeria with core competencies in developing Africa's
               businesses via face-to-face events. We work very hard to bring
               stakeholders together, creating opportunities for them to network,
@@ -49,7 +49,7 @@ const WhoWeAre = () => {
             data-aos-duration="800"
             data-aos-delat="300"
           >
-            Download 2024 Event Calendar
+            Download 2025 Event Calendar
           </a>
         </div>
         <div

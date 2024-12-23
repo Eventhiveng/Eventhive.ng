@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CoreSectors from "./CoreSectors";
 import SectionHeader from "./SectionHeader";
 
@@ -10,7 +11,10 @@ const Sectors = () => {
           heading={"Our Core Sectors"}
           type={"double"}
         />
-        <CoreSectors />
+        <CoreSectors all={false} />
+        <Link to="/sectors" className="btn btn-pry">
+          View all
+        </Link>
       </div>
     </section>
   );

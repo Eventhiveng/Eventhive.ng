@@ -13,7 +13,10 @@
 
       figure {
         flex: 1;
-        display: flex;
+
+        img {
+          aspect-ratio: 4/3;
+        }
       }
     }
 
@@ -71,7 +74,6 @@
           display: flex;
           align-items: flex-start;
           gap: 10px;
-          //   line-height: 2;
           margin-bottom: 10px;
 
           svg {

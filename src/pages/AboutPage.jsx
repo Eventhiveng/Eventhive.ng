@@ -6,10 +6,10 @@ import WhoWeAre from "../components/WhoWeAre";
 
 const AboutPage = () => {
   useEffect(() => {
-    document.title = "About | Eventhive.ng";
+    document.title = "About | Eventhive";
 
     return () => {
-      document.title = "About | Eventhive.ng";
+      document.title = "About | Eventhive";
     };
   }, []);
   return (

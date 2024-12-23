@@ -8,10 +8,17 @@
 
     .slick-slider {
       .slick-list {
-        .slick-slide {
-          .brand-box {
-            img {
-              aspect-ratio: 4 / 3;
+        .slick-track {
+          display: flex;
+          align-items: center;
+          .slick-slide {
+            .brand-box {
+              padding: 10px;
+              // width: 200px;
+              img {
+                aspect-ratio: 4 / 3;
+                object-fit: contain;
+              }
             }
           }
         }

@@ -2,6 +2,7 @@
   // position: fixed;
   // z-index: 9999999999999;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -50,6 +51,18 @@
         100% {
           transform: translate(-50%, -50%) rotate(360deg) scale(1);
         }
+      }
+    }
+  }
+
+  .ann {
+    margin-top: 100px;
+    h4 {
+      font-size: 15px;
+      color: $color-white;
+
+      span {
+        color: $color-primary;
       }
     }
   }

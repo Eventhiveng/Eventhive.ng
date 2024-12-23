@@ -1,0 +1,38 @@
+.what-we-do {
+  @include padding;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .what-we-do-container {
+      display: flex;
+      gap: 30px;
+      .left {
+        flex: 1;
+        h2 {
+          font-size: 30px;
+          margin-bottom: 30px;
+          color: $color-black-sec;
+        }
+        p {
+          line-height: 1.7;
+          margin-bottom: 15px;
+        }
+      }
+      .right {
+        flex: 1;
+
+        img {
+          border-radius: 30px;
+        }
+      }
+
+      @include mid-screen {
+        flex-direction: column;
+        gap: 50px;
+      }
+    }
+  }
+}

@@ -1,7 +1,16 @@
+import { useEffect } from "react";
 import GetInvolved from "../components/GetInvolved";
 import PageHeader from "../components/PageHeader";
 
 const GetInvolvedPage = () => {
+  useEffect(() => {
+    document.title = "Get Involved | Eventhive";
+
+    return () => {
+      document.title = "Get Involved | Eventhive";
+    };
+  }, []);
+
   return (
     <main className="get-involved-page">
       <PageHeader
@@ -9,7 +18,7 @@ const GetInvolvedPage = () => {
         bgdImg={"/images/headers/involved.png"}
       />
       {/* <div className="container"> */}
-        <GetInvolved />
+      <GetInvolved />
       {/* </div> */}
     </main>
   );

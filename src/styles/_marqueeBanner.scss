@@ -1,0 +1,35 @@
+.marquee-section {
+  background: $color-secondary;
+  border-top: 1px solid $color-white;
+  color: $color-white;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed;
+  bottom: 0;
+  z-index: 499;
+
+  .marquee-slide {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 16px;
+
+    .marquee-item {
+      display: flex;
+      //   gap: 50px;
+      align-items: center;
+      justify-content: center;
+      //   margin-right: 50px; /* Adjust spacing between items */
+
+      & div span {
+        padding: 0 50px; /* Adjust padding between text */
+      }
+
+      .icon {
+        height: 30px;
+        width: 30px !important;
+      }
+    }
+  }
+}

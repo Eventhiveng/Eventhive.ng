@@ -99,7 +99,7 @@ const Nav = () => {
           <div className="nav-links">
             <ul>
               {[
-                { path: "/", label: "Home" },
+                // { path: "/", label: "Home" },
                 { path: "/about-us", label: "About Us" },
                 { path: "/sectors", label: "Sectors" },
                 { path: "/events/nigeria-economy-breakfast", label: "Events" },
@@ -165,7 +165,7 @@ const Nav = () => {
           <div className="mobile-nav-links">
             <ul>
               {[
-                { path: "/", label: "Home" },
+                // { path: "/", label: "Home" },
                 { path: "/about-us", label: "About Us" },
                 { path: "/sectors", label: "Sectors" },
                 { path: "/events/nigeria-economy-breakfast", label: "Events" },
