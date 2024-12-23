@@ -159,7 +159,6 @@ const data = {
     },
     info: null,
   },
-
   counterData: [
     {
       imgLink: "/images/icons/icon1.png",
