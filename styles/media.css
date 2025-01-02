@@ -163,6 +163,14 @@
 
   /* Speakers */
   #speakers-section
+    .speakers-section-wrapper
+    .speakers-slider
+    .speaker-box
+    .image {
+    height: auto;
+  }
+
+  #speakers-section
     .lightbox-overlay
     .lightbox-content
     .all-speakers
