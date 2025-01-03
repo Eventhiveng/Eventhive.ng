@@ -1103,8 +1103,8 @@
 
 /* Sponsors */
 #spons-section .sponsors-sections-container {
-  /* background: var(--primary-color) url(../assets/images/background/noise.png)
-    no-repeat center/cover; */
+  background: var(--white) url(../assets/images/background/noise.png) no-repeat
+    center/cover;
 }
 
 #spons-section .sponsors-container {
@@ -1123,8 +1123,8 @@
 #spons-section .sponsors-grid .sponsors-grid-header {
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 1px var(--white);
-  stroke: 1px var(--white);
+  -webkit-text-stroke: 1px var(--primary-color);
+  stroke: 1px var(--primary-color);
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   font-size: 24px;
@@ -1144,9 +1144,8 @@
   margin: 0 10px;
   height: 70px;
   width: 200px;
-  background: var(--white);
   padding: 10px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 #spons-section .sponsors-grid .sponsors-grid-wrapper a img {
