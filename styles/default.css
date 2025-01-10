@@ -1,0 +1,117 @@
+/* Variables */
+:root {
+  --white: #fff;
+  --black: #000;
+  --nav-bgd-color: #bcaeae73;
+  --primary-color: #000066;
+  --primary-color-light: #0a133a;
+  --secondary-color: #ffa600;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* General Style */
+body {
+  font-family: "Cabin", sans-serif;
+  color: #7b7979;
+  font-size: 0.9375rem;
+  background: #020512;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cambay", sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+section {
+  scroll-margin-top: 50px;
+}
+
+/* Keyframes */
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    top: 0px;
+  }
+  to {
+    opacity: 1;
+    top: 30px;
+  }
+}
+
+@-webkit-keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+
+.blinking-cursor {
+  font-weight: 900;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

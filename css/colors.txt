@@ -1,4 +1,0 @@
-main - #fcc404
-blue - #0b0f28
-green - #069b35
-red - #d50b0b
