@@ -37,6 +37,7 @@ $(document).ready(function () {
   const $asideMenu = $(".aside-menu");
   const $asideMenuLink = $(".aside-menu a");
   const $hamburger = $(".hamburger");
+  const $testimonialSlide = $(".testimonial-slides");
 
   const date = new Date().getFullYear();
   $year.html(date);
@@ -224,6 +225,24 @@ $(document).ready(function () {
       const rotation = (scrollTop - heroSectionOffset) / 3;
       $(".circle-svg").css("transform", `rotate(${rotation}deg)`);
     }
+  };
+
+  // Testimonial
+  const testimonialComp = () => {
+    const testimonialSettings = {
+      infinite: true,
+      speed: 2000,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      lazyLoad: "ondemand",
+      arrows: false,
+      cssEase: "linear",
+      fade: true,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+    };
+
+    $testimonialSlide.slick(testimonialSettings);
   };
 
   // Move Box Function
@@ -427,7 +446,8 @@ $(document).ready(function () {
   moveBox();
   rotateImages();
   toggleNav();
-  typeLocation();
+  testimonialComp();
+  // typeLocation();
   $window.on("scroll", function () {
     const scrollTop = $window.scrollTop();
     const windowHeight = $window.height();

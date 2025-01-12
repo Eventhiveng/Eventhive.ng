@@ -2,7 +2,7 @@
 @media only screen and (max-width: 1200px) {
 }
 
-/* Tap Pro */
+/* Tab Pro */
 @media only screen and (max-width: 991px) {
   /* Hero */
   #hero-section .hero-section-container .hero-section-wrapper .description p {
@@ -17,6 +17,15 @@
 
   #about-section .about-section-wrapper .bottom .about-content {
     margin-top: 20px;
+  }
+
+  /* Testimonial */
+  #testimonial .testimonial-container {
+    height: auto;
+  }
+
+  #testimonial .testimonial-wrapper {
+    flex-direction: column;
   }
 
   /* What's New */
