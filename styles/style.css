@@ -1009,6 +1009,7 @@
   max-width: 200px;
   max-height: 200px;
   border-radius: 50%;
+  aspect-ratio: 1/1;
 }
 
 #speakers-section .lightbox-overlay .speaker-box .speaker-info {

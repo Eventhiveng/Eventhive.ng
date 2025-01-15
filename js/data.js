@@ -76,6 +76,13 @@ const speakers = [
     image: "assets/images/speakers/fola-olatunji.png",
     linkedIn: "#",
   },
+  {
+    name: "Olawale Olakanmi",
+    title: "CEO,",
+    company: "Axia Africa",
+    image: "assets/images/speakers/olawale-olakanmi.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
