@@ -1,12 +1,25 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nigeria Telecoms Forum</title>
+    <!-- <meta
+      name="description"
+      content="For all kind of fintech company website"
+    />
+    <meta
+      name="keywords"
+      content="industrial, coding, fintech, industry 4.0, industrialization, programming, corporate, lagos tech, tech fest, lagos, engineering summit"
+    /> -->
 
-    <!-- Slick css -->
-    <!-- <link
+    <link
+      rel="shortcut icon"
+      href="/assets/logo/banking-icon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Slick -->
+    <link
       rel="stylesheet"
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
@@ -15,12 +28,14 @@
       rel="stylesheet"
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    /> -->
+    />
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="shortcut icon"
-      href="/assets/logo/nt-svg.svg"
-      type="image/x-icon"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
     />
 
     <!-- Aos -->
@@ -32,10 +47,17 @@
       href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css"
     />
 
-    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Custom css -->
     <link rel="stylesheet" href="styles/util.css" />
-    <link rel="stylesheet" href="styles/media.css" />
     <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <title>Nigeria Banking Outlook</title>
+
+    <script
+      src="https://kit.fontawesome.com/50fe2ce4a1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Preloader -->
@@ -43,222 +65,371 @@
       <div class="loader"></div>
     </div>
 
+    <!-- Main Container -->
     <div class="main-container">
-      <!-- Header -->
       <header>
-        <!-- Main nav -->
-        <nav id="nav">
+        <!-- Nav bar -->
+        <nav id="navbar">
           <div class="nav-container">
             <div class="container">
               <div class="nav-wrapper">
                 <div class="logo">
-                  <a href="/">
-                    <img
-                      src="/assets/logo/nt-full-logo-white.svg"
-                      alt="Nigeria Telecoms Forum"
-                    />
-                  </a>
+                  <img src="/assets/logo/banking-white.png" alt="" />
                 </div>
                 <div class="nav-links">
                   <ul>
-                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#partner">Partner</a></li>
-                    <li><a href="#agenda">Agenda</a></li>
+                    <li>
+                      <a href="https://tix.africa/banking" target="_blank"
+                        >Tickets</a
+                      >
+                    </li>
+                    <li><a href="#partner">Partnership</a></li>
                     <li><a href="#contact">Contact</a></li>
                   </ul>
                 </div>
-                <div class="button">
-                  <a
-                    href="https://tix.africa/telecoms"
-                    target="_blank"
-                    class="btn btn-pry"
-                    >Get Ticket</a
-                  >
-                </div>
-                <div class="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <div class="hamburger-icons">
+                  <div id="hamburger">
+                    <span></span> <span></span> <span></span>
+                  </div>
+                  <div id="cross"><span></span> <span></span></div>
                 </div>
               </div>
             </div>
           </div>
         </nav>
-
-        <!-- Aside -->
-        <aside id="aside">
+        <aside>
           <div class="aside-container">
-            <div class="aside-wrapper">
+            <a href="/">
               <div class="logo">
-                <a href="/">
-                  <img
-                    src="/assets/logo/nt-full-logo-white.svg"
-                    alt="Nigeria Telecoms Forum"
-                  />
-                </a>
+                <img src="/assets/logo/banking-white.png" alt="" />
               </div>
-              <div class="nav-links">
-                <div class="nav-links">
-                  <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#agenda">Agenda</a></li>
-                    <li>
-                      <a href="https://tix.africa/telecoms" target="_blank"
-                        >Tickets</a
-                      >
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <small
-                  >&copy; <span class="year">2025</span>. An event by
-                  eventhive</small
-                >
-              </div>
+            </a>
+            <div class="nav-links">
+              <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                  <a href="https://tix.africa/banking" target="_blank"
+                    >Tickets</a
+                  >
+                </li>
+                <li><a href="#partner">Partnership</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
             </div>
+            <small class="copy">&copy; 2025 Nigeria Banking Outlook</small>
           </div>
         </aside>
       </header>
 
-      <!-- Main -->
       <main>
-        <!-- Hero -->
+        <!-- Hero section -->
         <section id="hero">
           <div class="hero-container">
             <div class="container">
-              <div class="hero-wrapper">
-                <div class="left">
-                  <div class="hero-header">
-                    <h5 data-aos="fade-right">
-                      February 13, 2025 | Fourpoints by Sheraton, VI, Lagos
-                    </h5>
-                  </div>
-                  <div class="hero-sub-header">
-                    <h1 data-aos="fade-left" data-aos-delay="500">
-                      Bringing Together Nigeria Telecoms industry
-                    </h1>
-                  </div>
-                  <div class="hero-description">
-                    <p data-aos="fade-right" data-aos-delay="1000">
-                      The Nigeria Telecoms Forum unites industry experts to
-                      address challenges and opportunities in Nigeria’s telecom
-                      sector.
-                    </p>
-                  </div>
-                  <div class="hero-socials">
-                    <ul>
-                      <li data-aos="fade-left" data-aos-delay="1200">
-                        <a
-                          href="https://www.facebook.com/eventhive.ng"
-                          target="_blank"
-                          style="--color: #1877f2"
-                          ><iconify-icon icon="fa:facebook"></iconify-icon>
-                        </a>
-                      </li>
-                      <li data-aos="fade-left" data-aos-delay="1300">
-                        <a
-                          href="https://x.com/eventhivedotng?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ"
-                          target="_blank"
-                          style="--color: #14171a"
-                          ><iconify-icon icon="ri:twitter-x-fill"></iconify-icon
-                        ></a>
-                      </li>
-                      <li data-aos="fade-left" data-aos-delay="1400">
-                        <a
-                          href="https://www.linkedin.com/company/eventhive-ng/"
-                          target="_blank"
-                          style="--color: #0a66c2"
-                          ><iconify-icon icon="formkit:linkedin"></iconify-icon
-                        ></a>
-                      </li>
-                      <li data-aos="fade-left" data-aos-delay="1500">
-                        <a
-                          href="https://www.instagram.com/eventhivedotng?igsh=MWJzbmVpOWxoMHkzYg=="
-                          target="_blank"
-                          style="
-                            --color: radial-gradient(
-                              circle at 30% 107%,
-                              #fdf497 0%,
-                              #fdf497 5%,
-                              #fd5949 45%,
-                              #d6249f 60%,
-                              #285aeb 90%
-                            );
-                          "
-                          ><iconify-icon icon="mdi:instagram"></iconify-icon
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    class="button"
+              <div class="hero-wrapper" data-aos="zoom-in">
+                <h4 class="hero-name" data-aos="fade-up">
+                  Nigeria Banking Outlook 2025
+                </h4>
+                <h1
+                  class="hero-heading"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  Bringing together Nigeria Banking Industry
+                </h1>
+
+                <div
+                  class="hero-loc-date"
+                  data-aos="fade-up"
+                  data-aos-delay="800"
+                >
+                  <span class="text-pry"
+                    >Fourpoints by Sheraton, Victoria Island, Lagos</span
+                  >
+                  | April 10th, 2025
+                </div>
+                <div class="hero-buttons buttons">
+                  <a
+                    href="https://tix.africa/banking"
+                    target="_blank"
+                    class="btn btn-sec"
+                    data-aos="fade-right"
+                    data-aos-delay="1000"
+                  >
+                    <span>Get a Ticket</span>
+                    <iconify-icon icon="cil:arrow-right"></iconify-icon>
+                  </a>
+                  <a
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Banking%20Outlook%20Sponsorship%20Deck"
+                    class="btn btn-pry"
                     data-aos="fade-left"
                     data-aos-delay="1200"
                   >
-                    <a
-                      href="https://tix.africa/telecoms"
-                      target="_blank"
-                      class="btn btn-pry"
-                      >Get Ticket</a
-                    >
-                  </div>
-                </div>
-                <div class="right" data-aos="zoom-in" data-aos-delay="1600">
-                  <div class="image">
-                    <img src="/assets/section-img/mast.jpg" alt="" />
-                  </div>
+                    <span>Request Sponsorship Deck</span>
+                    <iconify-icon icon="fa:send"></iconify-icon>
+                  </a>
+
+                  <!-- <a
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Tech%20Forum%20Exhibition%20Deck"
+                    class="btn btn-sec"
+                  >
+                    <span>Book a Booth</span>
+                    <iconify-icon icon="prime:bookmark-fill"></iconify-icon>
+                  </a> -->
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- About -->
+        <!-- About Section -->
         <section id="about">
           <div class="about-container padding">
             <div class="container">
               <div class="about-wrapper">
-                <div class="left">
-                  <div class="image" data-aos="zoom-out" data-aos-delay="100">
-                    <img src="/assets/section-img/about.jpg" alt="" />
-                  </div>
+                <div class="image" data-aos="fade-right">
+                  <img src="/assets/section-img/about.jpg" alt="" />
                 </div>
-                <div class="right">
-                  <div class="section-header">
-                    <h2 data-aos="fade-left">
-                      Stay ahead of Nigeria's telecoms market.
-                    </h2>
+                <div class="content">
+                  <h3 data-aos="fade-left">
+                    Staying at the forefront of innovation in Banking
+                  </h3>
+                  <p data-aos="fade-left" data-aos-delay="200">
+                    Nigeria's banking industry has long been a critical part of
+                    the nation's economy, driving financial inclusion, business
+                    growth, and access to capital. Over the years, the sector
+                    has undergone significant reforms aimed at modernising
+                    operations, enhancing digital transactions, and aligning
+                    with global banking standards.
+                  </p>
+                  <p data-aos="fade-left" data-aos-delay="300">
+                    It is essential for the industry to stay ahead of emerging
+                    developments which includes enhanced regulatory oversight,
+                    CBN's recapitalisation drive, challenges of banking in the
+                    digital era, fraud and cybersecurity concerns amongst other
+                    key focus areas.
+                  </p>
+                  <p data-aos="fade-left" data-aos-delay="400">
+                    Nigeria Banking Outlook will convene leading voices across
+                    the banking landscape to tackle the industry's most pressing
+                    issues. Through collaborative discussions, stakeholders will
+                    uncover strategies to drive growth, leverage innovation to
+                    spur the development of the banking industry.
+                  </p>
+                </div>
+                <!-- <div class="image">
+                  <img src="/assets/images/section-images/about-2.jpg" alt="" />
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Count Up -->
+        <section id="countup">
+          <div class="countup-container padding">
+            <div class="container">
+              <div class="countup-wrapper">
+                <div
+                  class="countup-box"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <!-- <div class="icon">
+                    <img
+                      src="/assets/images/icons/countup/attendees.png"
+                      alt=""
+                    />
+                  </div> -->
+                  <h2>
+                    <span
+                      class="count odometer"
+                      data-count="500"
+                      data-status="yes"
+                      >0</span
+                    ><span class="plus">+</span>
+                  </h2>
+                  <p class="count-description">Delegates</p>
+                </div>
+                <div
+                  class="countup-box"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <!-- <div class="icon">
+                    <img
+                      src="/assets/images/icons/countup/speakers.png"
+                      alt=""
+                    />
+                  </div> -->
+                  <h2>
+                    <span
+                      class="count odometer"
+                      data-count="25"
+                      data-status="yes"
+                      >0</span
+                    ><span class="plus">+</span>
+                  </h2>
+                  <p class="count-description">Speakers</p>
+                </div>
+                <div
+                  class="countup-box"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <!-- <div class="icon">
+                    <img
+                      src="/assets/images/icons/countup/company.png"
+                      alt=""
+                    />
+                  </div> -->
+                  <h2>
+                    <span
+                      class="count odometer"
+                      data-count="300"
+                      data-status="yes"
+                      >0</span
+                    ><span class="plus">+</span>
+                  </h2>
+                  <p class="count-description">Companies</p>
+                </div>
+                <div
+                  class="countup-box"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <!-- <div class="icon">
+                    <img
+                      src="/assets/images/icons/countup/exhibitors.png"
+                      alt=""
+                    />
+                  </div> -->
+                  <h2>
+                    <span
+                      class="count odometer"
+                      data-count="20"
+                      data-status="yes"
+                      >0</span
+                    ><span class="plus">+</span>
+                  </h2>
+                  <p class="count-description">Exhibitors</p>
+                </div>
+                <div
+                  class="countup-box"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <!-- <div class="icon">
+                    <img src="/assets/images/icons/countup/stages.png" alt="" />
+                  </div> -->
+                  <h2>
+                    <span
+                      class="count odometer"
+                      data-count="20"
+                      data-status="yes"
+                      >0</span
+                    ><span class="plus">+</span>
+                  </h2>
+                  <p class="count-description">Decision Makers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- What's new Section -->
+        <section id="whats-new">
+          <div class="whats-new-container padding">
+            <div class="container">
+              <div class="whats-new-wrapper">
+                <div class="section-header">
+                  <h2 data-aos="fade-up">
+                    Why Nigeria Banking Outlook is a Must-Attend?
+                  </h2>
+                </div>
+                <p class="content" data-aos="fade-up" data-aos-delay="50">
+                  The Nigeria Banking Outlook is a premier event gathering over
+                  150 senior banking executives, technology providers,
+                  regulators, and financial service operators. It serves as a
+                  platform for in-depth discussions on key issues and
+                  opportunities in Nigeria's banking sector. Attendees will have
+                  the chance to network, forge new relationships, and gain
+                  valuable insights from leading industry experts through a
+                  variety of engaging discussions.
+                </p>
+                <div class="whats-new-box-container">
+                  <div
+                    class="whats-new-box"
+                    data-aos="flip-left"
+                    data-aos-delay="100"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/ins.png" alt="" />
+                    </div>
+                    <h4>Broad Industry Insights</h4>
+                    <p>
+                      Explore insights in a broad range of banking and finance
+                      topics hearing from banking leaders and experts.
+                    </p>
                   </div>
-                  <div class="about-description">
-                    <p data-aos="fade-left" data-aos-delay="200">
-                      Nigeria’s telecoms industry has widely been known as a
-                      major contributor to the country’s GDP, as the industry
-                      grapple with multiple challenges which includes
-                      challenging operating environment and currency
-                      depreciation, stakeholders will converge at the Nigeria
-                      Telecoms Forum to debate and define the future of the
-                      industry.
+                  <div
+                    class="whats-new-box"
+                    data-aos="flip-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/ceos.png" alt="" />
+                    </div>
+                    <h4>Leadership Strategies</h4>
+                    <p>
+                      Hear From CEOs and industry leaders on how they are
+                      adapting their businesses to the challenges facing banks
+                      today.
                     </p>
-                    <p data-aos="fade-left" data-aos-delay="300">
-                      Focused on exploring the future of Nigeria’s telecoms
-                      industry, the event will bring together top executives
-                      across various verticals of the telecoms industry.
-                      Cybersecurity and emerging technologies, infrastructure
-                      and networks, power reliability, regulation and
-                      investment, inflation and economic market realities will
-                      headline discussions at the forum.
+                  </div>
+                  <div
+                    class="whats-new-box"
+                    data-aos="flip-left"
+                    data-aos-delay="300"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/exp.png" alt="" />
+                    </div>
+                    <h4>Industry Connections</h4>
+                    <p>
+                      Connect with experts and peers in-person in this agenda-
+                      setting event covering the important themes shaping
+                      Nigeria's banking future.
                     </p>
-                    <p data-aos="fade-left" data-aos-delay="400">
-                      Fixed line and mobile carriers, ISPs, regulators,
-                      investors, technology suppliers, consultants, telecoms
-                      executives, telco associations, government representatives
-                      amongst other players will converge to share insights,
-                      expertise and strategies that will spur the growth of the
-                      telecom industry in Nigeria.
+                  </div>
+                  <div
+                    class="whats-new-box"
+                    data-aos="flip-left"
+                    data-aos-delay="400"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/nxt.png" alt="" />
+                    </div>
+                    <h4>Future of Banking</h4>
+                    <p>
+                      Understand What’s next for banks and how you can best
+                      prepare your business for the challenges ahead.
+                    </p>
+                  </div>
+                  <div
+                    class="whats-new-box"
+                    data-aos="flip-left"
+                    data-aos-delay="500"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/deal.png" alt="" />
+                    </div>
+                    <h4>Partnership Opportunities</h4>
+                    <p>
+                      Identify new partnership and deal making opportunities.
                     </p>
                   </div>
                 </div>
@@ -267,15 +438,14 @@
           </div>
         </section>
 
-        <!-- Objectives -->
+        <!-- Objectives Section -->
         <section id="objectives">
           <div class="objectives-container padding">
             <div class="container">
               <div class="objectives-wrapper">
-                <div class="section-header white">
+                <div class="section-header black">
                   <h2 data-aos="fade-up">
-                    Empowering Nigeria’s Telecom Industry: Collaboration,
-                    Strategy and Growth
+                    Driving Innovation and Growth in Nigeria’s Banking Industry
                   </h2>
                 </div>
 
@@ -284,62 +454,80 @@
                     <div class="accordion">
                       <div class="accordion-item">
                         <div class="accordion-header">
-                          Fostering Regulator-Industry Collaboration
+                          Strengthening Financial Stability
                           <span class="icon">+</span>
                         </div>
                         <div class="accordion-content">
                           <p>
-                            Promote engagements between regulators and players
-                            in Nigeria’s telecoms industry.
+                            Examine how CBN’s recapitalisation drive will
+                            enhance capital adequacy and long-term financial
+                            stability in Nigeria’s banking sector.
                           </p>
                         </div>
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-header">
-                          Strengthening Investment in Nigeria’s Telecom Sector
+                          Navigating Regulatory Changes
                           <span class="icon">+</span>
                         </div>
                         <div class="accordion-content">
                           <p>
-                            Deliver an important meeting place to strengthen
-                            investments into Nigeria’s telecoms industry.
+                            Understand the evolving regulatory landscape and its
+                            impact on banking operations, compliance, and risk
+                            management.
                           </p>
                         </div>
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-header">
-                          Building Strategic Linkages and Shaping Policy
+                          Addressing Macroeconomic Challenges
                           <span class="icon">+</span>
                         </div>
                         <div class="accordion-content">
                           <p>
-                            Create new linkages and relationships and host the
-                            discussion that drives long-term policy formulation.
+                            Explore how banks can mitigate the effects of
+                            inflation, currency volatility, and forex
+                            illiquidity while staying competitive.
                           </p>
                         </div>
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-header">
-                          Driving Innovation Through Strategy
+                          Driving Digital Transformation
                           <span class="icon">+</span>
                         </div>
                         <div class="accordion-content">
                           <p>
-                            Provide a strategic platform for developing new
-                            ideas, strategies and business models to tackle
-                            challenges in the telecoms industry.
+                            Discuss the role of technology and innovation in
+                            modernising banking operations and improving
+                            financial inclusion.
                           </p>
                         </div>
                       </div>
                       <div class="accordion-item">
                         <div class="accordion-header">
-                          Unmatched Networking for Telecom Executives
+                          Enhancing Security & Fraud Prevention
+
                           <span class="icon">+</span>
                         </div>
                         <div class="accordion-content">
                           <p>
-                            Stimulate unrivaled networking opportunities for
-                            executives in the Telecoms industry.
+                            Identify strategies to tackle cybersecurity threats,
+                            fraud risks, and data protection in Nigeria’s
+                            digital banking era.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-header">
+                          Unlocking Growth & Partnerships
+                          <span class="icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                          <p>
+                            Discover opportunities for strategic collaborations,
+                            mergers, and acquisitions to strengthen market
+                            position and profitability.
                           </p>
                         </div>
                       </div>
@@ -347,65 +535,7 @@
                   </div>
                   <div class="right">
                     <div class="image" data-aos="zoom-in" data-aos-delay="100">
-                      <img
-                        src="/assets/section-img/telecom-industry.jpeg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="bottom">
-                  <div class="count-container">
-                    <div
-                      class="count-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="300"
-                    >
-                      <h2>
-                        <span
-                          class="odometer"
-                          data-status="yes"
-                          data-count="200"
-                          >0</span
-                        ><span class="plus">+</span>
-                      </h2>
-                      <p>Attendees</p>
-                    </div>
-                    <div
-                      class="count-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="350"
-                    >
-                      <h2>
-                        <span class="odometer" data-status="yes" data-count="15"
-                          >0</span
-                        ><span class="plus">+</span>
-                      </h2>
-                      <p>Speakers</p>
-                    </div>
-                    <div
-                      class="count-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="400"
-                    >
-                      <h2>
-                        <span class="odometer" data-status="yes" data-count="50"
-                          >0</span
-                        ><span class="plus">+</span>
-                      </h2>
-                      <p>Companies</p>
-                    </div>
-                    <div
-                      class="count-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="450"
-                    >
-                      <h2>
-                        <span class="odometer" data-status="yes" data-count="50"
-                          >0</span
-                        ><span class="plus">+</span>
-                      </h2>
-                      <p>Decision Makers</p>
+                      <img src="/assets/section-img/obj.jpg" alt="" />
                     </div>
                   </div>
                 </div>
@@ -414,196 +544,47 @@
           </div>
         </section>
 
-        <!-- Who attends -->
-        <!-- <section id="who-attends">
-          <div class="who-attends-container padding">
-            <div class="container">
-              <div class="who-attends-wrapper">
-                <div class="section-header">
-                  <h2 data-aos="fade-up">
-                    Who will attend Nigeria Telecoms Forum?
-                  </h2>
-                </div>
-              </div>
-              <p data-aos="fade-right" data-aos-delay="200">
-                Nigeria Telecoms Forum will bring together 200+ senior telecoms
-                executives, infrastructure providers, telecom operators,
-                technology providers, service providers, regulators, investors,
-                telco associations, consultants and everyone working across
-                various verticals of the telco industry.
-              </p>
-            </div>
-            <div
-              class="who-attends-subwrapper"
-              data-aos="zoom-out"
-              data-aos-delay="400"
-            >
-              <div class="who-attends-slide-1">
-                <img src="assets/who-attends-logo/mastercard.png" alt="" />
-                <img src="assets/who-attends-logo/up.jpg" alt="" />
-                <img
-                  src="assets/who-attends-logo/interswitch-colored.png"
-                  alt=""
-                />
-                <img src="assets/who-attends-logo/9-psb.png" alt="" />
-                <img src="assets/who-attends-logo/dpopay.png" alt="" />
-                <img src="assets/who-attends-logo/palmpay.png" alt="" />
-                <img src="assets/who-attends-logo/zoho.jpg" alt="" />
-                <img src="assets/who-attends-logo/vfd.png" alt="" />
-                <img src="assets/who-attends-logo/octa.png" alt="" />
-                <img src="assets/who-attends-logo/paystack.jpg" alt="" />
-                <img src="assets/who-attends-logo/freshworks.png" alt="" />
-                <img src="assets/who-attends-logo/rackcenter.jpg" alt="" />
-                <img src="assets/who-attends-logo/moniepoint.png" alt="" />
-                <img src="assets/who-attends-logo/maplerad.png" alt="" />
-                <img src="assets/who-attends-logo/payaza.png" alt="" />
-                <img src="assets/who-attends-logo/termii.png" alt="" />
-                <img src="assets/who-attends-logo/uber.png" alt="" />
-                <img src="assets/who-attends-logo/yellowcard.png" alt="" />
-                <img src="assets/who-attends-logo/qwid.png" alt="" />
-                <img src="assets/who-attends-logo/flutterwave.png" alt="" />
-                <img src="assets/who-attends-logo/cleva.jpg" alt="" />
-                <img src="assets/who-attends-logo/anchoria.png" alt="" />
-                <img src="assets/who-attends-logo/bitmama.png" alt="" />
-                <img src="assets/who-attends-logo/servercore.png" alt="" />
-                <img src="assets/who-attends-logo/bolt.png" alt="" />
-                <img src="assets/who-attends-logo/zone.jpg" alt="" />
-                <img src="assets/who-attends-logo/identitypass.png" alt="" />
-              </div>
-              <div class="who-attends-slide-2" dir="rtl">
-                <img src="assets/who-attends-logo/migo.png" alt="" />
-                <img src="assets/who-attends-logo/uba.jpg" alt="" />
-                <img
-                  src="assets/who-attends-logo/nationalbankrwanda.png"
-                  alt=""
-                />
-                <img src="assets/who-attends-logo/scrella.png" alt="" />
-                <img src="assets/who-attends-logo/africastalking.png" alt="" />
-                <img src="assets/who-attends-logo/anchor.jpg" alt="" />
-                <img src="assets/who-attends-logo/i-invest.jpg" alt="" />
-                <img src="assets/who-attends-logo/cellulant.jpg" alt="" />
-                <img src="assets/who-attends-logo/scalex.png" alt="" />
-                <img src="assets/who-attends-logo/mycoverai.png" alt="" />
-                <img src="assets/who-attends-logo/infobip.jpg" alt="" />
-                <img src="assets/who-attends-logo/zitra.png" alt="" />
-                <img src="assets/who-attends-logo/rra.jpg" alt="" />
-                <img src="assets/who-attends-logo/ami.png" alt="" />
-                <img src="assets/who-attends-logo/nownow.png" alt="" />
-                <img src="assets/who-attends-logo/credo.jpg" alt="" />
-                <img src="assets/who-attends-logo/flincap.png" alt="" />
-                <img src="assets/who-attends-logo/seerbit.png" alt="" />
-                <img src="assets/who-attends-logo/alx.png" alt="" />
-                <img src="assets/who-attends-logo/pocketfood.jpg" alt="" />
-                <img src="assets/who-attends-logo/ayo.jpg" alt="" />
-                <img src="assets/who-attends-logo/africadate.jpg" alt="" />
-                <img
-                  src="assets/who-attends-logo/republicofrwanda.jpg"
-                  alt=""
-                />
-                <img src="assets/who-attends-logo/zerocomplex.png" alt="" />
-                <img src="assets/who-attends-logo/flick.png" alt="" />
-                <img src="assets/who-attends-logo/garamart.jpg" alt="" />
-                <img src="assets/who-attends-logo/prembly.jpg" alt="" />
-              </div>
-              <div class="who-attends-slide-3">
-                <img src="assets/who-attends-logo/chamsaccess.jpg" alt="" />
-                <img src="assets/who-attends-logo/bunce.png" alt="" />
-                <img src="assets/who-attends-logo/3line.png" alt="" />
-                <img src="assets/who-attends-logo/turaco.png" alt="" />
-                <img src="assets/who-attends-logo/fifthlab.png" alt="" />
-                <img src="assets/who-attends-logo/pawapay.png" alt="" />
-                <img src="assets/who-attends-logo/arca.jpg" alt="" />
-                <img src="assets/who-attends-logo/upperlink.jpg" alt="" />
-                <img src="assets/who-attends-logo/pfs.jpg" alt="" />
-                <img src="assets/who-attends-logo/furex.png" alt="" />
-                <img src="assets/who-attends-logo/cent.png" alt="" />
-                <img src="assets/who-attends-logo/inlaks.png" alt="" />
-                <img src="assets/who-attends-logo/shortlet.png" alt="" />
-                <img src="assets/who-attends-logo/businessinsider.png" alt="" />
-                <img src="assets/who-attends-logo/pesc-choice.jpg" alt="" />
-                <img src="assets/who-attends-logo/bankofkigali.jpg" alt="" />
-                <img src="assets/who-attends-logo/tekexperts.png" alt="" />
-                <img src="assets/who-attends-logo/getequity.jpg" alt="" />
-                <img src="assets/who-attends-logo/businessinsider.png" alt="" />
-                <img src="assets/who-attends-logo/i&m-bank.jpg" alt="" />
-                <img src="assets/who-attends-logo/absa.png" alt="" />
-                <img src="assets/who-attends-logo/irembo.jpg" alt="" />
-                <img src="assets/who-attends-logo/eversend.jpg" alt="" />
-                <img src="assets/who-attends-logo/sasapay.png" alt="" />
-                <img src="assets/who-attends-logo/dcg.png" alt="" />
-                <img src="assets/who-attends-logo/techstars.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </section> -->
-
-        <!-- Partner -->
+        <!-- Partner Section -->
         <section id="partner">
           <div class="partner-container padding">
             <div class="container">
               <div class="partner-wrapper">
-                <div class="section-header">
-                  <h2 data-aos="fade-up">
-                    Get involved - Explore our Sponsorship Opportunities
-                  </h2>
+                <div class="section-header" data-aos="fade-up">
+                  <h2>Get Involved - Explore Our Sponsorship Opportunities</h2>
                 </div>
                 <div class="partner-box-container">
                   <div
                     class="partner-box"
-                    data-aos="zoom-in"
+                    data-aos="flip-left"
                     data-aos-delay="100"
                   >
                     <div class="icon">
-                      <img src="/assets/icon/brand.svg" alt="" />
+                      <img src="/assets/icons/exhibition.svg" alt="" />
                     </div>
-                    <h4>Brand Awareness</h4>
+                    <h4>Executive Connections</h4>
                     <p>
-                      Nigeria Telecoms Forum plays host to senior industry
-                      leaders, exploring partnership provides you with an
-                      opportunity for raising your brand awareness and
-                      positioning it for growth.
+                      Important engagement with senior banking executives
+                      through interactive panel discussions and networking
                     </p>
                   </div>
                   <div
                     class="partner-box"
-                    data-aos="zoom-in"
+                    data-aos="flip-left"
                     data-aos-delay="200"
                   >
                     <div class="icon">
-                      <img src="/assets/icon/thought.svg" alt="" />
+                      <img src="/assets/icons/brandawarenss.svg" alt="" />
                     </div>
-                    <h4>Thought Leaderships</h4>
-                    <p>
-                      Joining panel sessions, fireside chats, breakout sessions
-                      and keynote sessions are some of the ways to profile your
-                      brand as a leader through demonstration of thought
-                      leadership to a unique audience of Nigeria Telecoms
-                      Stakeholders across Nigeria.
-                    </p>
+                    <h4>Brand Awareness</h4>
+                    <p>Positon your brand alongside industry leaders.</p>
                   </div>
-                  <div
+                  <!-- <div
                     class="partner-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="400"
+                    data-aos="flip-left"
+                    data-aos-delay="300"
                   >
                     <div class="icon">
-                      <img src="/assets/icon/leadgen.svg" alt="" />
-                    </div>
-                    <h4>Lead Generation</h4>
-                    <p>
-                      We bring industry leaders and customers to Nigeria
-                      Telecoms Forum, providing you with an opportunity to
-                      generate qualified leads and network with sector
-                      stakeholders.
-                    </p>
-                  </div>
-                  <div
-                    class="partner-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="500"
-                  >
-                    <div class="icon">
-                      <img src="/assets/icon/media.svg" alt="" />
+                      <img src="/assets/icons/mediavisibility.svg" alt="" />
                     </div>
                     <h4>Media Visibility</h4>
                     <p>
@@ -612,34 +593,129 @@
                       the event. We have done this multiple times for multiple
                       brands.
                     </p>
+                  </div> -->
+                  <div
+                    class="partner-box"
+                    data-aos="flip-left"
+                    data-aos-delay="400"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/thought-leadership.svg" alt="" />
+                    </div>
+                    <h4>Thought Leaderships</h4>
+                    <p>
+                      Share your views with other executives through a range of
+                      panel discussions and keynotes
+                    </p>
                   </div>
+                  <!-- <div
+                    class="partner-box"
+                    data-aos="flip-left"
+                    data-aos-delay="500"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/lead-generation.svg" alt="" />
+                    </div>
+                    <h4>Lead Generation</h4>
+                    <p>
+                      We bring industry leaders and customers to Africa Tech
+                      Forum, providing you with an opportunity to generate
+                      qualified leads and network with sector stakeholders.
+                    </p>
+                  </div> -->
                 </div>
                 <div class="buttons">
-                  <!-- <div class="button">
-                    <a
-                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Telecoms%20Forum%20Exhibition%20Deck"
-                      class="btn btn-sec"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
-                    >
-                      Book a Booth
-                    </a>
-                  </div> -->
-                  <div class="button">
-                    <a
-                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Telecoms%20Forum%20Sponsorship%20Deck"
-                      class="btn btn-pry"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
-                    >
-                      Request Sponsorship Deck
-                    </a>
-                  </div>
+                  <!-- <a
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Tech%20Forum%20Exhibition%20Deck"
+                    class="btn btn-sec"
+                  >
+                    <span>Book a Booth</span>
+                    <iconify-icon icon="prime:bookmark-fill"></iconify-icon>
+                  </a> -->
+                  <a
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Banking%20Outlook%20Sponsorship%20Decks"
+                    class="btn btn-sec"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <span>Request Sponsorship Deck</span>
+                    <iconify-icon icon="fa:send"></iconify-icon>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        <!-- Agenda Section -->
+        <!-- <section id="agenda">
+          <div class="agenda-container padding">
+            <div class="container">
+              <div class="agenda-wrapper">
+                <div class="section-header black" data-aos="fade-up">
+                  <h2>Key Focus Discussions</h2>
+                </div>
+                <ul>
+                  <li
+                    class="agenda-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    Nigeria’s landscape of microinsurance; key trends and
+                    opportunities.
+                  </li>
+                  <li
+                    class="agenda-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    Driving the growth of inclusive insurance.
+                  </li>
+                  <li
+                    class="agenda-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    Private capital and investments; What role will they play in
+                    the insurance markets?
+                  </li>
+                  <li
+                    class="agenda-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    Digital innovation and the important role of Insurtech in
+                    accelerating adoption.
+                  </li>
+                  <li
+                    class="agenda-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    State of the Insurance Industry; Affordability,
+                    Accessibility and Transparency.
+                  </li>
+                  <li
+                    class="agenda-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    Regulatory and Policy Changes; Understanding and adapting to
+                    new regulatory environments.
+                  </li>
+                  <li
+                    class="agenda-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    Accelerating access to optimum healthcare through health
+                    insurance.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section> -->
 
         <!-- Agenda -->
         <section id="agenda">
@@ -647,7 +723,7 @@
             <div class="container">
               <div class="agenda-wrapper">
                 <div class="section-header">
-                  <h2 data-aos="fade-up">Agenda & Key Discussions</h2>
+                  <h2 data-aos="fade-up">Key Focus Discussions</h2>
                 </div>
                 <div class="agenda-item-container">
                   <div class="agenda-item">
@@ -658,60 +734,35 @@
                     >
                       <div class="content">
                         <h3 class="title">
-                          Navigating the Digital Divide: Challenges and
-                          Opportunities in Nigeria's Telecoms Industry
+                          Nigeria's Banking Recapitalisation; What's Ahead for
+                          new possibilities?
                         </h3>
                         <div class="description">
-                          This panel session will delve into the critical role
-                          of telecommunications in driving Nigeria's digital
-                          transformation. Panelists will discuss the challenges
-                          and opportunities facing the industry, including
-                          infrastructure development, affordability, and digital
-                          inclusion. Key discussion areas will include:
+                          In March 2024, the Central Bank of Nigeria (CBN)
+                          released recapitalisation guidelines for Nigerian
+                          banks. The minimum capital requirements for banks were
+                          revised with a compliance deadline of March 31, 2026.
+                          The upward review of the capital base is an essential
+                          action required to boost capital adequacy needs of the
+                          Nigerian financial industry, which has been
+                          significantly impacted by macroeconomic challenges
+                          such as high inflation and interest rates, currency
+                          volatility and forex illiquidity.
 
                           <br /><br />
 
-                          <ul>
-                            <li>
-                              <b>Infrastructure development:</b> Examining the
-                              state of Nigeria's telecom infrastructure,
-                              identifying gaps, and exploring strategies for
-                              expansion and modernization.
-                            </li>
-                            <li>
-                              <b>Economic realities:</b> Addressing the impact
-                              of inflation and FX volatilities on the operations
-                              of telcos.
-                            </li>
-                            <li>
-                              <b>Affordability and accessibility:</b> Addressing
-                              the issue of affordability and ensuring that
-                              telecom services are accessible to all segments of
-                              the population.
-                            </li>
-                            <li>
-                              <b>Regulatory framework:</b> The role of
-                              regulators in fostering a conducive environment
-                              for innovation and investment in the telecoms
-                              sector.
-                            </li>
-                            <li>
-                              <b>Cybersecurity and data privacy:</b> Protecting
-                              critical infrastructure and safeguarding consumer
-                              data in an increasingly interconnected world.
-                            </li>
-                            <li>
-                              <b>Emerging technologies:</b> Leveraging emerging
-                              technologies like 5G, IoT, and AI to drive
-                              innovation and improve service delivery.
-                            </li>
-                          </ul>
+                          As banks seek to meet the deadline, against the
+                          backdrop of macroeconomic headwinds, This opening
+                          panel session will convene leaders across Nigeria's
+                          banking industry, they will examine CBN’s decision to
+                          raise capital requirements, how banks are responding,
+                          and the implications for the Nigerian banking sector.
                         </div>
                       </div>
                     </div>
                     <div class="right">
                       <div class="image" data-aos="zoom-in">
-                        <img src="/assets/section-img/telecom.jpg" alt="" />
+                        <img src="/assets/section-img/atm.jpg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -719,61 +770,38 @@
                     <div class="left" data-aos="fade-left" data-aos-delay="100">
                       <div class="content">
                         <h3 class="title">
-                          Financing the Digital Future: Funding Telecom
-                          Infrastructure in Nigeria
+                          Banking for tomorrow: Vision for the future of
+                          Nigeria's banking
                         </h3>
                         <div class="description">
-                          This panel session will explore the critical issue of
-                          financing telecom infrastructure in Nigeria. With the
-                          increasing demand for connectivity and digital
-                          services, securing adequate funding is essential for
-                          the growth and development of the telecommunications
-                          sector. Panelists will discuss innovative funding
-                          models, regulatory frameworks, risk mitigation
-                          strategies, and international partnerships to drive
-                          infrastructure investment.
+                          This session will gather innovative leaders across
+                          Nigeria's banking market to share their expectations
+                          for the next decade of banking.
 
-                          <br /><br />
-                          Focus discussion areas include:
                           <br /><br />
 
                           <ul>
                             <li>
-                              <b
-                                >Innovative funding models and investment
-                                opportunities:</b
-                              >
-                              Exploringalternativefundingsourcessuch as
-                              public-private partnerships, infrastructure funds,
-                              and debt financing.
+                              Fast forward to 2035: what will the future of
+                              banking look like?
                             </li>
                             <li>
-                              <b>Regulatory framework:</b> The role of
-                              government policies and regulations in attracting
-                              investment and stimulating infrastructure
-                              development.
+                              Building a robust banking system; What role with
+                              regulators play in this?
                             </li>
                             <li>
-                              <b>Risk mitigation:</b> Strategies for mitigating
-                              financial and operational risks associated with
-                              large-scale infrastructure projects.
+                              Banking in turbulent times; strategies to adapt in
+                              a high-interest rate environment
                             </li>
                             <li>
-                              <b>Regulatory framework:</b> The role of
-                              regulators in fostering a conducive environment
-                              for innovation and investment in the telecoms
-                              sector.
+                              Inspire, attract, retain: what can banks do to
+                              engage the next generation of talent?
                             </li>
+                            The rise of CBDCs: charting the future of money and
+                            how banks should prepare
                             <li>
-                              <b>International partnerships:</b> The potential
-                              for international collaboration and partnerships
-                              to drive infrastructure development.
-                            </li>
-                            <li>
-                              <b>Sustainability and environmental impact:</b>
-                              Balancing the need for infrastructure development
-                              with environmental sustainability and social
-                              responsibility.
+                              Remaining relevant in a sea of competitors: How
+                              must banking strategies adapt?
                             </li>
                           </ul>
                         </div>
@@ -781,7 +809,7 @@
                     </div>
                     <div class="right">
                       <div class="image" data-aos="zoom-in">
-                        <img src="/assets/section-img/digital.jpg" alt="" />
+                        <img src="/assets/section-img/future.jpg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -789,58 +817,39 @@
                     <div class="left" data-aos="fade-right">
                       <div class="content">
                         <h3 class="title">
-                          From Connectivity to Computing: How Telcos are making
-                          inroads into the data centre market
+                          Keeping the customers at the heart of innovation;
+                          Building next level of CX in Banking
                         </h3>
                         <div class="description">
-                          This panel session will explore the evolving role of
-                          telecommunications companies (telcos) as they venture
-                          into the data center market. As traditional carriers
-                          of data, telcos are now expanding their offerings to
-                          become providers of critical digital infrastructure.
-                          Panelists will discuss the strategic motivations
-                          behind this shi􏰀, the challenges and opportunities
-                          involved, and the impact on the broader technology
-                          landscape.
-
-                          <br /><br />
-                          Key discussion areas will include:
-                          <br /><br />
-
                           <ul>
                             <li>
-                              <b>Leveraging network infrastructure:</b> How
-                              telcos can leverage their existing network
-                              infrastructure to build and operate efficient data
-                              centers.
+                              How can banks deliver on new customer
+                              expectations?
                             </li>
                             <li>
-                              <b>Expanding offerings:</b> Exploring the
-                              potential for telcos to offer additional
-                              value-added services, such as cloud computing,
-                              cybersecurity, and managed services.
+                              How can banks offer a frictionless customer
+                              journey across the evolving digital ecosystem?
                             </li>
                             <li>
-                              <b>Partnerships and collaborations:</b> The
-                              importance of strategic partnerships with other
-                              players in the ecosystem, including hyperscalers,
-                              cloud service providers, and IT companies.
+                              Towards end-to-end digital onboarding: what more
+                              needs to be done?
                             </li>
                             <li>
-                              <b>Regulatory and policy considerations:</b>
-                              Navigating the regulatory landscape and addressing
-                              policy challenges to facilitate data center
-                              development.
+                              Supporting customers in the face of economic
+                              uncertainty: what more can banks do?
                             </li>
                             <li>
-                              <b>Financial models and investment strategies:</b>
-                              Identifying sustainable financing models and
-                              investment strategies for data center projects.
+                              How far can generative AI go in providing
+                              financial advice without transgressing regulatory
+                              requirements?
                             </li>
                             <li>
-                              <b>Customer focus and innovation:</b> Meeting the
-                              evolving needs of customers and driving innovation
-                              in data center services.
+                              AI-first, not AI-only: how to leverage generative
+                              AI while preserving the all-important human touch?
+                            </li>
+                            <li>
+                              From Gen Z to Gen Alpha: strategies to engage new
+                              demographics
                             </li>
                           </ul>
                         </div>
@@ -848,7 +857,7 @@
                     </div>
                     <div class="right">
                       <div class="image" data-aos="zoom-in">
-                        <img src="/assets/section-img/digital-.jpg" alt="" />
+                        <img src="/assets/section-img/customer.jpg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -856,53 +865,39 @@
                     <div class="left" data-aos="fade-left">
                       <div class="content">
                         <h3 class="title">
-                          Meeting the evolving needs of customers and driving
-                          innovation in data center services.
+                          Fraud in Banking; Turning up the heat on prevention
                         </h3>
                         <div class="description">
-                          This panel session will delve into the evolving role
-                          of telecommunications companies in Nigeria, exploring
-                          the opportunities beyond traditional connectivity
-                          services. As the digital landscape continues to
-                          expand, telcos are positioned to play a pivotal role
-                          in driving economic growth and social development.
-
-                          <br /><br />
-                          Key discussion areas will include:
-                          <br /><br />
-
                           <ul>
                             <li>
-                              <b>Digital Services:</b> Exploring the potential
-                              of telcos to offer a range of digital services,
-                              such as fintech, e- commerce, and cloud computing.
+                              From APP fraud to insider fraud: keeping an eye on
+                              the fraudulent activity of today
                             </li>
                             <li>
-                              <b>Emerging technologies:</b> Examining the place
-                              of emerging technologies such as 5G technology,
-                              Internet of Things (IoT), and artificial
-                              intelligence (AI) in shaping innovation in the
-                              telco industry.
+                              Preventing real-time payments from becoming
+                              real-time fraud: leveraging advanced analytics and
+                              ML
                             </li>
                             <li>
-                              <b>Infrastructure as a Service (IaaS):</b>
-                              Leveraging existing infrastructure to provide data
-                              center and cloud services to businesses.
+                              Knowing your customers rather than catching the
+                              fraudsters: are behavioural analytics the key?
                             </li>
                             <li>
-                              <b>Cybersecurity and data privacy:</b> Addressing
-                              the growing cybersecurity threats and protecting
-                              sensitive customer data.
+                              What role will law enforcement play in stemming
+                              the tide?
                             </li>
                             <li>
-                              <b>Regulatory framework:</b> The need for
-                              supportive regulatory policies to foster
-                              innovation and investment in the telecoms sector.
+                              Face recognition, voice recognition and beyond:
+                              the next phase of counter-fraud technology
                             </li>
                             <li>
-                              <b>Partnerships and collaborations:</b> Exploring
-                              strategic partnerships with other industry players
-                              to accelerate digital transformation.
+                              New channels, new data sources: unlocking the
+                              potential of big data in fraud prevention
+                              strategies
+                            </li>
+                            <li>
+                              The flip side of generative AI: how could
+                              fraudsters leverage this technology?
                             </li>
                           </ul>
                         </div>
@@ -910,10 +905,7 @@
                     </div>
                     <div class="right">
                       <div class="image" data-aos="zoom-out">
-                        <img
-                          src="/assets/section-img/data-service.jpg"
-                          alt=""
-                        />
+                        <img src="/assets/section-img/fraud.jpg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -923,179 +915,26 @@
           </div>
         </section>
 
-        <!-- Speakers Section -->
-        <section id="speakers">
-          <div class="speakers-container padding">
-            <div class="container">
-              <div class="speakers-wrapper">
-                <div class="section-header white">
-                  <h2 data-aos="fade-up">
-                    Who speaks at Nigeria Telecoms Forum?
-                  </h2>
-                </div>
-                <div class="speakers-box-container">
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/obafemi-banigbe.jpeg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Obafemi Banigbe</h4>
-                      <p class="designation">CEO,</p>
-                      <p class="company">9Mobile Nigeria</p>
-                    </div>
-                  </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/bukola-ajayi.png" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Bukola Ajayi</h4>
-                      <p class="designation">GM, Architecture & Engineering,</p>
-                      <p class="company">MTN Nigeria</p>
-                    </div>
-                  </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/ogo-ofomata.jpeg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Ogo Ofomata</h4>
-                      <p class="designation">Director, Airtel Business,</p>
-                      <p class="company">Airtel Business Africa</p>
-                    </div>
-                  </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/bruce-ayonote.jpeg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Bruce Ayonote</h4>
-                      <p class="designation">CEO,</p>
-                      <p class="company">Suburban</p>
-                    </div>
-                  </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/ajibola-olomola.jpg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Ajibola Olomola</h4>
-                      <p class="designation">Partner,</p>
-                      <p class="company">KPMG West Africa</p>
-                    </div>
-                  </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/tunji.jpg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Tunji Alabi</h4>
-                      <p class="designation">Managing Director,</p>
-                      <p class="company">Infratel Africa</p>
-                    </div>
-                  </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/ibrahim-dikko.png" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Ibrahim Dikko</h4>
-                      <p class="designation">CEO,</p>
-                      <p class="company">Backbone Connectivity Network</p>
-                    </div>
-                  </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/reuben.jpeg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Reuben Oshomah</h4>
-                      <p class="designation">Regional Director, West Africa,</p>
-                      <p class="company">Avanti Communications</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Highlight -->
-        <!-- <section id="highlight">
-          <div class="highlight-container padding">
-            <div class="container">
-              <div class="section-header">
-                <h2 data-aos="fade-up">Highlights from our events</h2>
-              </div>
-            </div>
-            <div
-              class="slide-container"
-              data-aos="zoom-out"
-              data-aos-delay="300"
-            >
-              <div class="slider highlight-slider-1">
-                <img src="/assets/highlights/1.jpg" alt="" />
-                <img src="/assets/highlights/2.jpg" alt="" />
-                <img src="/assets/highlights/3.jpg" alt="" />
-                <img src="/assets/highlights/4.jpg" alt="" />
-                <img src="/assets/highlights/5.jpg" alt="" />
-                <img src="/assets/highlights/6.jpg" alt="" />
-                <img src="/assets/highlights/7.jpg" alt="" />
-                <img src="/assets/highlights/8.jpg" alt="" />
-                <img src="/assets/highlights/9.jpg" alt="" />
-                <img src="/assets/highlights/10.jpg" alt="" />
-                <img src="/assets/highlights/11.jpg" alt="" />
-                <img src="/assets/highlights/12.jpg" alt="" />
-              </div>
-              <div class="slider highlight-slider-2" dir="rtl">
-                <img src="/assets/highlights/13.jpg" alt="" />
-                <img src="/assets/highlights/14.jpg" alt="" />
-                <img src="/assets/highlights/15.jpg" alt="" />
-                <img src="/assets/highlights/16.jpg" alt="" />
-                <img src="/assets/highlights/17.jpg" alt="" />
-                <img src="/assets/highlights/18.jpg" alt="" />
-                <img src="/assets/highlights/19.jpg" alt="" />
-                <img src="/assets/highlights/20.jpg" alt="" />
-                <img src="/assets/highlights/21.jpg" alt="" />
-                <img src="/assets/highlights/22.jpg" alt="" />
-                <img src="/assets/highlights/23.jpg" alt="" />
-                <img src="/assets/highlights/24.jpg" alt="" />
-              </div>
-              <div class="slider highlight-slider-3">
-                <img src="/assets/highlights/25.jpg" alt="" />
-                <img src="/assets/highlights/26.jpg" alt="" />
-                <img src="/assets/highlights/27.jpg" alt="" />
-                <img src="/assets/highlights/28.jpg" alt="" />
-                <img src="/assets/highlights/29.jpg" alt="" />
-                <img src="/assets/highlights/30.jpg" alt="" />
-                <img src="/assets/highlights/31.jpg" alt="" />
-                <img src="/assets/highlights/32.jpg" alt="" />
-                <img src="/assets/highlights/33.jpg" alt="" />
-                <img src="/assets/highlights/34.jpg" alt="" />
-                <img src="/assets/highlights/35.jpg" alt="" />
-                <img src="/assets/highlights/36.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </section> -->
-
-        <!-- Sponsors -->
-        <section id="sponsors">
+        <!-- Sponsors Section -->
+        <!-- <section id="sponsors">
           <div class="sponsors-container padding">
             <div class="container">
               <div class="sponsors-wrapper">
                 <div class="section-header black">
-                  <h2 data-aos="fade-up">2025 Sponsors and Partners</h2>
+                  <h2>2024 Sponsors and Partners</h2>
                 </div>
 
                 <div class="sponsors-grid-container">
                   <div class="sponsors-grid">
-                    <div class="sponsors-grid-header">Associate Sponsor</div>
+                    <div class="sponsors-grid-header">Sponsors</div>
                     <div class="sponsors-grid-wrapper">
                       <a href="">
-                        <img src="/assets/sponsors/isn.jpg" alt="" />
+                        <img
+                          src="/assets/images/sponsors-logo/odoo.png"
+                          alt=""
+                        />
                       </a>
-                      <!-- <a href="">
+                      <a href="">
                         <img
                           src="/assets/images/sponsors-logo/instadeep.png"
                           alt=""
@@ -1112,20 +951,23 @@
                           src="/assets/images/sponsors-logo/scrella.png"
                           alt=""
                         />
-                      </a> -->
+                      </a>
                     </div>
                   </div>
                   <div class="sponsors-grid">
                     <div class="sponsors-grid-header">Media Partners</div>
                     <div class="sponsors-grid-wrapper">
-                      <a href="https://africa.hyperscalers.news/">
+                      <a href="">
                         <img
-                          src="/assets/sponsors/africa-hyperscalers.png"
+                          src="/assets/images/sponsors-logo/tech-gyant.png"
                           alt=""
                         />
                       </a>
-                      <a href="https://www.techinafrica.com">
-                        <img src="/assets/sponsors/techpression.png" alt="" />
+                      <a href="">
+                        <img
+                          src="/assets/images/sponsors-logo/benjamindada.png"
+                          alt=""
+                        />
                       </a>
                     </div>
                   </div>
@@ -1133,52 +975,441 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
-        <!-- Contact -->
-        <section id="contact">
-          <div class="contact-container padding">
+        <!-- Speakers Section -->
+        <!-- <section id="speakers">
+          <div class="speakers-container padding">
             <div class="container">
-              <div class="contact-wrapper">
-                <h2 data-aos="fade-up">
-                  To learn more about sponsorship, speaking and other
-                  partnership opportunities,
-                </h2>
-
-                <div class="contact-box-container">
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="150"
-                  >
-                    <h4>Jamiu Ijaodola</h4>
-                    <a href="tel: +2347016673316">+234 701 667 3316</a>
-                    <a href="mailto: jamiu@eventhive.ng">jamiu@eventhive.ng</a>
-                  </div>
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="250"
-                  >
-                    <h4>Arole Mustapha</h4>
-                    <a href="tel: +2348086081614">+234 808 608 1614</a>
-                    <a href="mailto: arole@eventhive.ng">arole@eventhive.ng</a>
-                  </div>
+              <div class="speakers-wrapper">
+                <div class="section-header">
+                  <h2>2024 Speakers Line Up</h2>
                 </div>
-
-                <div class="become">
-                  <a
-                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20UK-Africa%20Business%20Outlook%20Sponsorship%20Deck"
-                    class="btn btn-pry"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    >Become a Sponsor</a
-                  >
+                <div class="speakers-box-container">
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/charles-eloi.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Charles Eloi Cyusa</h4>
+                      <p class="designation">
+                        Head of Digital Financial Services and Market
+                        Infrastructure,
+                      </p>
+                      <p class="company">Access to Finance Rwanda</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/nathaniel-luz.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Nathaniel Luz</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Cheqwa</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/esther-ndeti.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Esther Ndeti</h4>
+                      <p class="designation">Managing Partner,</p>
+                      <p class="company">Uncap</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/eveque-mutabaruka.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Eveque Mutabaruka</h4>
+                      <p class="designation">Chief Information Officer,</p>
+                      <p class="company">Bank of Kigali</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/oladotun-akangbe.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Oladotun Akangbe</h4>
+                      <p class="designation">Chief Marketing Officer,,</p>
+                      <p class="company">Flincap</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/jansen-durham.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Jansen Durham</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Fixa Rwanda</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/gbenga-adigun.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Gbenga Adigun</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Scrella</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/lily-ngarambe.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Lily Ngarambe</h4>
+                      <p class="designation">Country Manager-Rwanda,</p>
+                      <p class="company">Yellowcard</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/samuel-tayengwa.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Samuel Tanyengwa</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">
+                        TransUnion Rwanda & Head of Growth Africa Regions
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
+
+        <!-- Highlights Section -->
+        <!-- <div id="highlights">
+          <div class="highlights-container padding">
+            <div class="container">
+              <div class="hightlights-wrapper">
+                <div class="section-header">
+                  <h2>Highlights from ATF 2023</h2>
+                </div>
+                <div class="highlights-box-container">
+                  <div class="highlights-slider">
+                    <img src="/assets/images/highlights/1.jpg" alt="" />
+                    <img src="/assets/images/highlights/2.jpg" alt="" />
+                    <img src="/assets/images/highlights/3.jpg" alt="" />
+                    <img src="/assets/images/highlights/4.jpg" alt="" />
+                    <img src="/assets/images/highlights/5.jpg" alt="" />
+                    <img src="/assets/images/highlights/6.jpg" alt="" />
+                    <img src="/assets/images/highlights/7.jpg" alt="" />
+                    <img src="/assets/images/highlights/8.jpg" alt="" />
+                    <img src="/assets/images/highlights/9.jpg" alt="" />
+                    <img src="/assets/images/highlights/10.jpg" alt="" />
+                    <img src="/assets/images/highlights/11.jpg" alt="" />
+                    <img src="/assets/images/highlights/12.jpg" alt="" />
+                    <img src="/assets/images/highlights/13.jpg" alt="" />
+                    <img src="/assets/images/highlights/14.jpg" alt="" />
+                    <img src="/assets/images/highlights/15.jpg" alt="" />
+                    <img src="/assets/images/highlights/16.jpg" alt="" />
+                    <img src="/assets/images/highlights/17.jpg" alt="" />
+                    <img src="/assets/images/highlights/18.jpg" alt="" />
+                    <img src="/assets/images/highlights/19.jpg" alt="" />
+                    <img src="/assets/images/highlights/20.jpg" alt="" />
+                    <img src="/assets/images/highlights/21.jpg" alt="" />
+                    <img src="/assets/images/highlights/22.jpg" alt="" />
+                    <img src="/assets/images/highlights/23.jpg" alt="" />
+                    <img src="/assets/images/highlights/24.jpg" alt="" />
+                    <img src="/assets/images/highlights/25.jpg" alt="" />
+                    <img src="/assets/images/highlights/26.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Spons Section -->
+        <!-- <div id="spons">
+          <div class="spons-container padding">
+            <div class="container">
+              <div class="spons-wrapper">
+                <div class="section-header black">
+                  <h2>Who Sponsors our Events</h2>
+                </div>
+              </div>
+            </div>
+            <div class="spons-slide-container">
+              <div class="spons-slide spons-slide-1">
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/mastercard.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/zoho.png"
+                    alt=""
+                  />
+                </div>
+
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/interswitch-colored.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/octa.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/infobip.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/dpopay-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/moniepoint.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/cellulant.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/freshworks.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img src="/assets/images/spons-partner-logo/ami.png" alt="" />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/uber.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/termii.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/i-invest.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img src="/assets/images/spons-partner-logo/alx.png" alt="" />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/zitra.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/scalex.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/anchoria.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/prembly.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/yellow.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img src="/assets/images/spons-partner-logo/at.png" alt="" />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/bitmama.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="spons-slide spons-slide-2" dir="rtl">
+                <div>
+                  <img src="/assets/images/spons-partner-logo/now.png" alt="" />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/turaco.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/payaza.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/qwid.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/credo.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/mycoverai.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/maplerad.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/seerbit.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/9-psb.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/ayo-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/unicaf.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/cleva.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img src="/assets/images/spons-partner-logo/zap.png" alt="" />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/platnova.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/shortlet.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/flick.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img src="/assets/images/sponsors-logo/scrella.png" alt="" />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/pfood.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/furex.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/zerocomplex.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/assets/images/spons-partner-logo/acuity.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
         <!-- More About Eventhive -->
         <section id="more-about">
@@ -1229,77 +1460,75 @@
           </div>
         </section>
       </main>
-
       <!-- Footer -->
       <footer id="footer">
         <div class="footer-container padding">
           <div class="container">
             <div class="footer-wrapper">
-              <div class="top">
-                <div class="logo">
-                  <div class="logo-icon">
-                    <img src="/assets/logo/nt-full-logo-white.svg" alt="" />
-                  </div>
+              <h3>
+                To learn more about available
+                <span class="text-pry"
+                  >sponsorship, exhibition & partnership</span
+                >
+                opportunities, Please reach out to:
+              </h3>
+              <div class="footer-box-container">
+                <div id="contact" class="phone box">
+                  <a href="tel: +2347016673316"
+                    ><b>Jamiu:</b> +234 701 667 3316</a
+                  >
+                  <!-- <a href="tel: +2349028112744"
+                    ><b>Malik:</b> +234 902 811 2744
+                  </a> -->
+                  <a href="tel: +2348086081614"
+                    ><b>Arole:</b> +234 808 608 1614
+                  </a>
                 </div>
-                <div class="quick-links">
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#agenda">Agenda</a></li>
-                    <li>
-                      <a href="https://tix.africa/telecoms" target="_blank"
-                        >Tickets</a
-                      >
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                  </ul>
+                <div class="email box">
+                  <a href="mailto: jamiu@eventhive.ng"> jamiu@eventhive.ng</a>
+                  <!-- <a href="mailto: malik@eventhive.ng"> malik@eventhive.ng</a> -->
+                  <a href="mailto: arole@eventhive.ng"> arole@eventhive.ng</a>
                 </div>
-                <div class="socials">
-                  <h3>Nigeria Telecoms Forum</h3>
-                  <p>
-                    February 13th, 2025 | Fourpoints by Sheraton, V.I, Lagos
-                  </p>
+                <div class="socials box">
                   <ul>
                     <li>
-                      <a
-                        href="https://www.facebook.com/eventhive.ng"
-                        target="_blank"
-                        ><iconify-icon icon="fa:facebook"></iconify-icon>
+                      <a href="https://www.linkedin.com/company/eventhive-ng/">
+                        <iconify-icon icon="mage:linkedin"></iconify-icon>
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://x.com/eventhivedotng?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ"
-                        target="_blank"
-                        ><iconify-icon icon="ri:twitter-x-fill"></iconify-icon
-                      ></a>
+                      <a href="https://www.facebook.com/eventhive.ng/">
+                        <iconify-icon
+                          icon="ant-design:facebook-filled"
+                        ></iconify-icon>
+                      </a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.linkedin.com/company/eventhive-ng/"
-                        target="_blank"
-                        ><iconify-icon icon="formkit:linkedin"></iconify-icon
-                      ></a>
+                      <a href="https://www.instagram.com/eventhivedotng/">
+                        <iconify-icon
+                          icon="basil:instagram-outline"
+                        ></iconify-icon>
+                      </a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.instagram.com/eventhivedotng?igsh=MWJzbmVpOWxoMHkzYg=="
-                        target="_blank"
-                        ><iconify-icon icon="mdi:instagram"></iconify-icon
-                      ></a>
+                      <a href="https://twitter.com/eventhivedotng">
+                        <iconify-icon
+                          icon="fa6-brands:square-x-twitter"
+                        ></iconify-icon>
+                      </a>
                     </li>
                   </ul>
                 </div>
+                <div class="box logo">
+                  <div class="">
+                    <img src="/assets/logo/logo.svg" alt="" />
+                  </div>
+                </div>
               </div>
-              <!-- <div class="center">
-              <div id="countdown-timer" class="timer"></div>
-            </div> -->
               <div class="divider"></div>
-              <div class="bottom">
-                <p>
-                  &copy; <span class="year">2025</span> Nigeria Telecoms Forum.
-                  All Rights Reserved.
-                </p>
+              <div class="copy">
+                &copy; &nbsp;<span class="year">2024 </span>&nbsp; Eventhive |
+                All rights reserved
               </div>
             </div>
           </div>
@@ -1308,6 +1537,7 @@
     </div>
 
     <!-- Scripts -->
+    <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -1315,20 +1545,20 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <!-- Odometer -->
-    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
-
     <!-- Iconify -->
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+    <!-- Slick -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <!-- Aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Slick Carousel -->
-    <!-- <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script> -->
+    <!-- Odometer -->
+    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
 
     <!-- Custom script -->
     <script src="/js/script.js"></script>

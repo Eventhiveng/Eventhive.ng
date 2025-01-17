@@ -1,6 +1,6 @@
 $(window).on("load", function () {
   $("#preloader").fadeOut(500, () => {
-    $("main").fadeIn(500, () => {
+    $(".main-container").fadeIn(500, () => {
       AOS.init({
         duration: 1000,
       });
@@ -9,142 +9,96 @@ $(window).on("load", function () {
 });
 
 $(document).ready(function () {
-  const $hamburger = $(".hamburger");
-  const $asideMenu = $(".aside-container");
-  const $asideMenuLink = $(".aside-container a");
+  const $window = $(window);
+  const $navbar = $("#navbar");
+  const $hamburger = $(".hamburger-icons");
+  const $aside = $("aside");
+  const $sponsSlides = $(".spons-slide-1, .spons-slide-2");
+  const year = new Date().getFullYear();
 
-  // const $attendeeSlideOne = $(".who-attends-slide-1");
-  // const $attendeeSlideTwo = $(".who-attends-slide-2");
-  // const $attendeeSlideThree = $(".who-attends-slide-3");
+  // Set current year
+  $(".year").html(year);
 
-  // const $highlightSlideOne = $(".highlight-slider-1");
-  // const $highlightSlideTwo = $(".highlight-slider-2");
-  // const $highlightSlideThree = $(".highlight-slider-3");
+  // Initialize highlights slider
+  $(".highlights-slider").slick({
+    infinite: true,
+    speed: 4000,
+    autoplay: true,
+    autoplaySpeed: 10,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    lazyLoad: "ondemand",
+    arrows: false,
+    cssEase: "linear",
+    responsive: [
+      { breakpoint: 991, settings: { slidesToShow: 2 } },
+      { breakpoint: 767, settings: { slidesToShow: 1 } },
+    ],
+  });
 
-  // const $slides = $(
-  //   ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
-  // );
+  // Function to calculate slidesToShow based on window width
+  function getSlidesToShow() {
+    return Math.ceil($window.width() / 150);
+  }
 
-  // Toggle Nav
-  const toggleNav = () => {
-    // Toggle hamburger and aside menu
-    $hamburger.on("click", function () {
-      $(this).toggleClass("open");
-      $asideMenu.toggleClass("open");
-    });
-
-    // Close the aside menu when a link is clicked
-    $asideMenuLink.on("click", function () {
-      $asideMenu.removeClass("open");
-      $hamburger.removeClass("open");
-    });
-
-    $(document).on("click", function (event) {
-      if (
-        !$asideMenu.is(event.target) &&
-        !$asideMenu.has(event.target).length &&
-        !$hamburger.is(event.target) &&
-        !$hamburger.has(event.target).length
-      ) {
-        $asideMenu.removeClass("open");
-        $hamburger.removeClass("open");
-      }
-    });
+  // Initialize sponsor sliders
+  const slickSettings1 = {
+    infinite: true,
+    speed: 2000,
+    autoplay: true,
+    autoplaySpeed: 10,
+    slidesToShow: getSlidesToShow(),
+    slidesToScroll: 1,
+    lazyLoad: "ondemand",
+    arrows: false,
+    cssEase: "linear",
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    draggable: false,
   };
 
-  // const attendeeComp = () => {
-  //   // Function to calculate slidesToShow based on window width
-  //   function getSlidesToShow() {
-  //     return Math.ceil($(window).width() / 250);
-  //   }
+  const slickSettings2 = $.extend({}, slickSettings1, {
+    speed: 3000,
+    rtl: true,
+  });
 
-  //   const slickSettings1 = {
-  //     infinite: true,
-  //     speed: 2000,
-  //     autoplay: true,
-  //     autoplaySpeed: 10,
-  //     slidesToShow: getSlidesToShow(),
-  //     slidesToScroll: 1,
-  //     lazyLoad: "ondemand",
-  //     arrows: false,
-  //     cssEase: "linear",
-  //     pauseOnHover: false,
-  //     pauseOnFocus: false,
-  //     draggable: false,
-  //   };
+  $(".spons-slide-1").slick(slickSettings1);
+  $(".spons-slide-2").slick(slickSettings2);
 
-  //   const slickSettings2 = $.extend({}, slickSettings1, {
-  //     speed: 3000,
-  //     rtl: true,
-  //   });
+  // Throttle function to optimize resize event handling
+  let resizeTimeout;
+  $window.on("resize", function () {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function () {
+      const newSlidesToShow = getSlidesToShow();
+      $sponsSlides.slick(
+        "slickSetOption",
+        "slidesToShow",
+        newSlidesToShow,
+        true
+      );
+    }, 200); // Delay to prevent excessive updates during resizing
+  });
 
-  //   const slickSettings3 = $.extend({}, slickSettings1, {
-  //     speed: 6000,
-  //   });
+  // Hamburger menu toggle
+  $hamburger.on("click", function () {
+    $(this).toggleClass("open");
+    $aside.toggleClass("active");
+  });
 
-  //   $attendeeSlideOne.slick(slickSettings1);
-  //   $attendeeSlideTwo.slick(slickSettings2);
-  //   $attendeeSlideThree.slick(slickSettings3);
+  $(document).on("click", function (event) {
+    if (
+      !$aside.is(event.target) &&
+      !$aside.has(event.target).length &&
+      !$hamburger.is(event.target) &&
+      !$hamburger.has(event.target).length
+    ) {
+      $aside.removeClass("active");
+      $hamburger.removeClass("open");
+    }
+  });
 
-  //   // Throttle function to optimize resize event handling
-  //   let resizeTimeout;
-  //   $(window).on("resize", function () {
-  //     clearTimeout(resizeTimeout);
-  //     resizeTimeout = setTimeout(function () {
-  //       const newSlidesToShow = getSlidesToShow();
-  //       $slides.slick("slickSetOption", "slidesToShow", newSlidesToShow, true);
-  //     }, 200); // Delay to prevent excessive updates during resizing
-  //   });
-  // };
-
-  // const highlightComp = () => {
-  //   const highlightSettings1 = {
-  //     infinite: true,
-  //     speed: 4000,
-  //     autoplay: true,
-  //     autoplaySpeed: 10,
-  //     slidesToShow: 4,
-  //     slidesToScroll: 1,
-  //     lazyLoad: "ondemand",
-  //     arrows: false,
-  //     cssEase: "linear",
-
-  //     responsive: [
-  //       {
-  //         breakpoint: 991,
-  //         settings: {
-  //           slidesToShow: 3,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 767,
-  //         settings: {
-  //           slidesToShow: 2,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 567,
-  //         settings: {
-  //           slidesToShow: 1,
-  //         },
-  //       },
-  //     ],
-  //   };
-
-  //   const highlightSettings2 = $.extend({}, highlightSettings1, {
-  //     speed: 3000,
-  //     rtl: true,
-  //   });
-
-  //   const highlightSettings3 = $.extend({}, highlightSettings1, {
-  //     speed: 6000,
-  //   });
-
-  //   $highlightSlideOne.slick(highlightSettings1);
-  //   $highlightSlideTwo.slick(highlightSettings2);
-  //   $highlightSlideThree.slick(highlightSettings3);
-  // };
-
+  // Accordion
   const accordionFunc = () => {
     // Open the first accordion item by default and set the icon to minus
     $(".accordion-content").first().show();
@@ -165,25 +119,35 @@ $(document).ready(function () {
     });
   };
 
-  $(window).scroll(function () {
+  // Sticky navbar functionality
+  $window.on("scroll", function () {
+    const scrollTop = $window.scrollTop();
+    const windowHeight = $window.height();
+    $navbar.toggleClass("sticky", scrollTop > 150);
+
     $(".odometer").each(function () {
-      let parent_section_postion = $(this).closest(".count-box").position();
-      let parent_section_top = parent_section_postion.top;
-      if (
-        $(window).scrollTop() >
-        parent_section_top - ($(window).height() - 200)
-      ) {
-        if ($(this).data("status") == "yes") {
-          $(this).html($(this).data("count"));
-          $(this).data("status", "no");
+      const $this = $(this);
+      const $countupContainer = $this.closest(".countup-container");
+      const parentSectionTop = $countupContainer.length
+        ? $countupContainer.offset().top
+        : 0;
+
+      // Ensure parentSectionTop is valid
+      if (parentSectionTop === 0) return;
+
+      if (scrollTop > parentSectionTop - (windowHeight - 200)) {
+        if ($this.data("status") === "yes") {
+          const count = $this.data("count");
+
+          if (typeof count === "number" || !isNaN(parseFloat(count))) {
+            $this.html(count); // Update the HTML content
+            $this.data("status", "no"); // Update the data attribute
+          }
         }
       }
     });
   });
 
-  // Initialize all functions
-  toggleNav();
+  // Initialize function
   accordionFunc();
-  // attendeeComp();
-  // highlightComp();
 });
