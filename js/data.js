@@ -79,8 +79,15 @@ const speakers = [
   {
     name: "Olawale Olakanmi",
     title: "CEO,",
-    company: "Axia Africa",
+    company: "Jumia Nigeria",
     image: "assets/images/speakers/olawale-olakanmi.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Sunil Natraj",
+    title: "CEO,",
+    company: "Axia Africa",
+    image: "assets/images/speakers/sunil-natraj.png",
     linkedIn: "#",
   },
 ];
