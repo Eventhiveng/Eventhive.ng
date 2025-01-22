@@ -77,7 +77,7 @@ const speakers = [
     linkedIn: "#",
   },
   {
-    name: "Olawale Olakanmi",
+    name: "Olawale Samuel",
     title: "CEO,",
     company: "Axia Africa",
     image: "assets/images/speakers/olawale-olakanmi.jpg",
