@@ -97,6 +97,20 @@ const speakers = [
     image: "assets/images/speakers/ayotunde-alabi.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Lamide Akinola",
+    title: "General Manager,",
+    company: "Glovo Nigeria",
+    image: "assets/images/speakers/lamide-akinola.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Bidemi Oke",
+    title: "CEO,",
+    company: "FlashChange",
+    image: "assets/images/speakers/bidemi-oke.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
