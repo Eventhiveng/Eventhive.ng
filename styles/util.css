@@ -1,0 +1,138 @@
+/* Container style */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 566px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 758px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 982px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1190px;
+  }
+}
+
+/* Section Padding */
+.padding {
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 962px) {
+  .padding {
+    padding: 80px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .padding {
+    padding: 60px 0;
+  }
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-pry {
+  background: var(--primary-light-color);
+  /* background: linear-gradient(
+    40deg,
+    #25baff,
+    #25baff,
+    #25baff,
+    #ffffff,
+    #ffffffb3,
+    #25baffbd,
+    #25baff
+  ); */
+  color: var(--white);
+  /* background-size: 200% auto; */
+}
+
+.btn-pry:hover {
+  background: var(--white);
+  color: var(--primary-color);
+  box-shadow: 0 0 5px #00000040;
+}
+
+.btn-sec {
+  color: var(--primary-color);
+  background: var(--white);
+}
+
+.btn-sec:hover {
+  background: transparent;
+  color: var(--white);
+  box-shadow: 0 0 3px #ffffff60;
+}
+
+/* .btn-grad {
+    background-image: linear-gradient(
+        to right,
+        #1fa2ff 0%,
+        #12d8fa 51%,
+        #1fa2ff 100%
+        );
+    }
+    .btn-grad {
+        margin: 10px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+    
+    .btn-grad:hover {
+        background-position: right center; 
+        color: #fff;
+        text-decoration: none;
+    } */
+
+/* Section header */
+.section-header {
+  margin-bottom: 48px;
+  color: var(--primary-color);
+}
+
+.section-header h2 {
+  font-size: clamp(24px, 3vw, 40px);
+}
+
+.section-header.white h2 {
+  color: var(--white);
+}

@@ -1,984 +1,1190 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Nigeria Power Outlook</title>
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/logo/" type="image/x-icon" />
+    <title>Africa Mining Investment Outlook</title>
 
-    <!-- Google font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,700,900"
-      rel="stylesheet"
-    />
-
-    <!-- Bootstrap -->
-    <!-- <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <!-- Slick css -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- Owl Carousel -->
-    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <script
-      src="https://kit.fontawesome.com/e6b819aa57.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Odometer -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css"
+    />
 
-    <!-- CSS FILES -->
-    <link rel="stylesheet" href="css/lineicons.css" />
-    <link rel="stylesheet" href="css/odometer.min.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      charset="UTF-8"
-      src="//web.webpushs.com/js/push/74c19e42e77ba733e4c5016c551f42c9_1.js"
-      async
-    ></script>
-    
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/util.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <link rel="stylesheet" href="styles/default.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header id="header" class="transparent-navbar">
-      <!-- container -->
-      <div class="container">
-        <!-- navbar header -->
-        <div class="navbar-header">
-          <!-- Logo -->
-          <div class="navbar-brand">
-            <h1>
-              <a class="logo" href="index.html">
-                <img
-                  class="logo"
-                  src="./img/logo.png"
-                  alt="logo"
-                />
-              </a>
-            </h1>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <div class="main-container" style="display: none">
+      <!-- Header -->
+      <header>
+        <!-- Main nav -->
+        <nav id="nav">
+          <div class="nav-container">
+            <div class="container">
+              <div class="nav-wrapper">
+                <div class="logo">
+                  <a href="/">
+                    <img
+                      src="/assets/logo/logoo-white.png"
+                      alt="Africa Mining Investment Outlook"
+                    />
+                  </a>
+                </div>
+                <div class="nav-links">
+                  <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#partner">Partner</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="button">
+                  <a
+                    href="https://www.eventbrite.com/e/africa-mining-investment-outlook-tickets-1092619487299?aff=oddtdtcreator"
+                    class="btn btn-pry"
+                    >Get Ticket</a
+                  >
+                </div>
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- /Logo -->
-
-          <!-- Mobile toggle -->
-          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false" aria-controls="navbar">
-            <i class="fa fa-bars"></i>
-          </button>
-          <!-- /Mobile toggle -->
-        </div>
-        <!-- /navbar header -->
-
-        <!-- Navigation -->
-        <nav id="nav" class="navbar-collapse collapse">
-          <ul class="main-nav nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <!-- <li><a href="#speakers">Speakers</a></li> -->
-            <!-- <li><a href="#media">Sponsors</a></li> -->
-            <li><a href="https://tix.africa/npo2024">Tickets</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
         </nav>
-        <!-- /Navigation -->
-      </div>
-      <!-- /container -->
-    </header>
-    <!-- /Header -->
 
-    <!-- Home -->
-    <div id="home">
-      <!-- background image -->
-      <div class="section-bg"></div>
-      <!-- /background image -->
-
-      <!-- home wrapper -->
-      <div class="home-wrapper">
-        <!-- container -->
-        <div class="container">
-          <!-- row -->
-          <div class="row">
-            <!-- home content -->
-            <div class="col-md-12 text-center">
-              <div class="home-content">
-                <p class="p-one"><b>24TH OF APRIL, 2024.</b></p>
-                <p>FOURPOINTS BY SHERATON, VICTORIA ISLAND, LAGOS, NIGERIA</p>
-                <h2><span class="id-color">NIGERIA POWER</span> <b>OUTLOOK 2024</b></h2>
-                <p class="p-one"><b>5TH EDITION</b></p>
-                <!-- <div title="Add to Calendar " class="addeventatc">
-                  Stay reminded
-                  <span class="start">03/26/2020 09:00 AM</span>
-                  <span class="end">03/26/2020 02:00 PM</span>
-                  <span class="timezone">Nigeria</span>
-                  <span class="title">Lagos Power Fest</span>
-                  <span class="description"> </span> 
-                  <span class="location">Civic Center VI Lagos</span>
-                </div> -->
-                <!-- <a href="#register" class="main-btn">Register Now</a> -->
-                <a href="https://tix.africa/npo2024" target="_blank" class="brochure-btn">BOOK A SEAT</a>
-                <br>
-                <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Power%20Outlook%20Event%C2%A0Brochure" class="brochure-btn" target="_blank">Request Brochure</a>
+        <!-- Aside -->
+        <aside id="aside">
+          <div class="aside-container">
+            <!-- <div class="close-icon">X</div> -->
+            <div class="aside-wrapper">
+              <div class="logo">
+                <a href="/">
+                  <img
+                    src="/assets/logo/logoo-white.png"
+                    alt="Africa Mining Investment Outlook"
+                  />
+                </a>
+              </div>
+              <div class="nav-links">
+                <div class="nav-links">
+                  <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li>
+                      <a
+                        href="https://www.eventbrite.com/e/africa-mining-investment-outlook-tickets-1092619487299?aff=oddtdtcreator"
+                        >Tickets</a
+                      >
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <small
+                  >&copy; <span class="year">2025</span>. An event by
+                  eventhive</small
+                >
               </div>
             </div>
-            <!-- /home content -->
           </div>
-          <!-- /row -->
-        </div>
-        <!-- /container -->
-      </div>
-      <!-- /home wrapper -->
-    </div>
-    <!-- /Home --> 
+        </aside>
+      </header>
 
-    <!-- ABOUT -->
-    <section class="content-section" id="about">
-        <div class="container">
-          <div class="row about-content">
-            <div class="col-12">
-              <div class="section-title text-center">
-                <h2><b>About <span style="color: #ffb715;">Nigeria Power</span> Outlook</b></h2>
+      <!-- Main -->
+      <main>
+        <!-- Hero -->
+        <section id="hero">
+          <div class="hero-container padding">
+            <div class="sliders">
+              <div class="sliders-wrapper">
+                <div class="slide">
+                  <img src="/assets/section-img/mining-excavator.jpeg" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/section-img/hero-3.jpg" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/section-img/service-image.jpg" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/section-img/manufacturing.jpg" alt="" />
+                </div>
               </div>
             </div>
-              <div class="col-lg-6">
-                  <p>
-                      <span class="id-color"><a href="https://eventhive.ng/" target="_blank"><b>Eventhive</b></a></span> is delighted to announce that <span class="id-color"><b>Nigeria Power Outlook 2024</b></span> will hold on the <b>24th of April, 2024</b>. Now in its <b>5th</b> year, <span class="id-color"><b>Nigeria Power Outlook</b></span> is a high caliber Nigeria power-focused conference, exhibitions and networking platform.
-                  </p>
-                <p>
-                  The event annually provides a veritable platform that convenes stakeholders, developers and investors in the power sector (on-grid and off-grid), representatives from state and federal government of Nigeria, Nigeria Electricity Regulatory Commission (NERC), Independent Power Producers (IPP), Distribution companies, Development partners, Renewable energy companies, amongst other stakeholders working within the power industry.
-                </p>
-  
-                
-              </div>
-  
-              <div class="col-lg-6">
-                <p>
-                    <span class="id-color"><b>Nigeria Power Outlook</b></span> will harmonize public and private sector stakeholders to define the future of the power industry, debate and discuss key developments in the power industry, share knowledge and build collaborative approaches with the common objective to increase access, reliability and stability of power supply, market certainty and viability of the power sector.
-                </p>
-                <p>
-                  <span class="id-color"><b>Nigeria Power Outlook</b></span> will combine conference and exhibitions, beyond the conversations and networking, the event will provide a platform for companies working in the power value chain, to showcase their solutions, through available exhibition opportunities.
-                </p>
-                <p>
-                  <span class="id-color"><b>Nigeria Power Outlook</b></span> is annually organized by <span class="id-color"><a href="https://eventhive.ng/" target="_blank"><b>Eventhive.ng</b></a></span>, West Africa’s leading B2B event serving company, with event portfolio’s across Power, Oil & Gas,Tech, Real Estate and Transport in Nigeria, UK and USA.
-                </p>
-              </div>
-            <!-- end col-6 -->
-          </div>
-          <!-- end row -->
-        </div>
-        <!-- end container -->
-      </section>
-      <!-- ABOUT -->
-
-    <!-- Ticket Reminder -->
-<!-- <div id="ticketR" class="section">
-  <div class="row">
-    <div class="section-title tick-rem">
-      <h3 class="title">
-        <span style="color: white;">SEE YOU AT </span> 
-        <span style="color: #ffcc00">NIGERIA POWER</span> 
-        <span style="color: white;">OUTLOOK 2024!</span>
-      </h3>
-    </div>
-  </div>
-</div> -->
-<!-- Ticket Reminder -->
-    
-    <!-- COUNTER -->
-    <!-- end content-section -->
-    <section class="content-section count">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="counter-box">
-              <span
-              class="counter"
-              data-from="0"
-              data-to="20"
-              data-speed="2500"
-                ></span
-              >
-              <span class="value transparent">+</span>
-              <br>
-              <h6>Speakers</h6>
-              <p>
-                Enjoy a day of interactive, live & on-demand panel discussions
-                and presentations, delivered by international and regional Power thought leaders.
-              </p>
-            </div>
-            <!-- end counter-box -->
-          </div>
-          <!-- end col-3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="counter-box">
-              <span
-              class="counter"
-              data-from="0"
-              data-to="100"
-              data-speed="2500"
-                ></span
-              >
-              <span class="value transparent">+</span>
-              <br>
-              <h6>Organizations</h6>
-              <p>
-                Engage with West Africa’s leading brands cutting across various
-                sectors of the Power ecosystem.
-              </p>
-            </div>
-            <!-- end counter-box -->
-          </div>
-          <!-- end col-3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="counter-box">
-              <span
-              class="counter"
-              data-from="0"
-              data-to="50"
-              data-speed="2500" 
-                ></span
-              >
-              <span class="value transparent">+</span>
-              <br>
-              <h6>Decision Makers</h6>
-              <p>
-                A day of Content, Connections and Collaborations with over 500
-                Leading West African Power leaders
-              </p>
-            </div>
-            <!-- end counter-box -->
-          </div>
-          <!-- enh d col-3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="counter-box">
-              <span
-              class="counter"
-              data-from="0"
-              data-to="300"
-              data-speed="2500"
-                ></span
-              >
-              <span class="value transparent">+</span>
-              <br>
-              <h6>Attendees</h6>
-              <p>Attendees drawn from the Global Power market.</p>
-            </div>
-            <!-- end counter-box -->
-          </div>
-          <!-- end col-3 -->
-        </div>
-        <!-- end row -->
-      </div>
-      <!-- end container -->
-    </section>
-    <!-- end content-section -->
-
-    <!-- Highlights -->
-    <section
-    class="content-section"
-    id="highlights">
-    <div class="section-title">
-    <h3 class="title">
-    <span>Nigeria Power Outlook</span>
-    <span style="color: #ffb715;"> 2023 Highlights</span>
-    </h3>
-    </div>
-    <div class="w3-content w3-section" style="max-width:1100px">
-    <img class="mySlides" src="img/highlights/npo 1.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 2.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 3.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 4.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 5.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 6.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 7.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 8.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 9.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 10.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 11.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 12.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 13.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 14.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 15.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 16.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 17.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 18.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 19.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 20.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 21.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 22.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 23.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 24.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 25.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 26.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 27.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 28.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 29.JPG" style="width:100%">
-    <img class="mySlides" src="img/highlights/npo 30.JPG" style="width:100%">
-    </div>
-    </section>
-    <!-- end content-section -->
-
-     <!--Speakers -->
-    <div id="speakers" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h3 class="title">
-              <span>Meet Our</span>
-              <span style="color: #ffb715;"> speakers</span>
-            </h3>
-          </div>
-          <br />
-          <div class="text-center col-md-12 col-lg-12">
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/saurabh (2).png"
-                  class="card-img-top"
-                  width="200"
-                  alt="Saurabh Srivastava"
-                />
-                <br>
-                <!-- <div class="card-body">
-                  <br />
-                  <h5 class="card-title">
-                    Saurabh Srivastava,<br>
-                    Director,<br>
-                    <span style="color: #ffb715;">Chapel Hill Denham, Nigeria Infrastructure Debt Fund</span>
+            <div class="container">
+              <div class="hero-wrapper">
+                <div class="hero-header">
+                  <h5 data-aos="fade-right">
+                    Africa Mining Investment Outlook 2025
                   </h5>
-                </div> -->
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/yishai.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/dolapo.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/habeeb.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div>
-            </div>
-          </div>
-          <div class="text-center col-md-12 col-lg-12">
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/iyunade.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/wolemi.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/olayemi.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/iyetude.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
+                </div>
+                <div class="hero-sub-header">
+                  <h1 data-aos="fade-left" data-aos-delay="500">
+                    Driving the growth of Africa's Mining market
+                  </h1>
+                </div>
+                <div class="hero-description">
+                  <p data-aos="fade-right" data-aos-delay="1000">
+                    Africa holds vast reserves of critical energy minerals yet
+                    to be fully harnessed. The Africa Mining Investment Outlook
+                    will explore responsible mining, attracting investments, and
+                    leveraging these resources for energy transition.
+                  </p>
+                </div>
+                <div
+                  class="hero-details"
+                  data-aos="zoom-out"
+                  data-aos-delay="1400"
+                >
+                  <div class="date-loc">
+                    <h4 class="date">March 28th, 2025</h4>
+                    <p class="location">London, United Kingdom</p>
+                  </div>
+                  <div class="button">
+                    <a href="#" class="btn btn-pry">Sponsorship Deck</a>
+                  </div>
+                  <div class="button mobile-ticket">
+                    <a
+                      href="https://www.eventbrite.com/e/africa-mining-investment-outlook-tickets-1092619487299?aff=oddtdtcreator"
+                      class="btn btn-pry"
+                      >Get Ticket</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="text-center col-md-12 col-lg-12">
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/abimbola.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/ajayi.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/chido.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/chima.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+          <div class="about-container padding">
+            <div class="container">
+              <div class="about-wrapper">
+                <div class="left">
+                  <div class="image" data-aos="zoom-out" data-aos-delay="100">
+                    <img src="/assets/section-img/about.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="section-header">
+                    <h2 data-aos="fade-left">
+                      Harnessing Africa's Mineral Wealth for a Sustainable
+                      Future
+                    </h2>
+                  </div>
+                  <div class="about-description">
+                    <p data-aos="fade-left" data-aos-delay="200">
+                      Africa holds significant reserves of critical minerals,
+                      including 48.1% of the world’s cobalt and 47.7% of its
+                      manganese, essential for the global energy transition.
+                      These resources present opportunities to generate revenue,
+                      create jobs, and improve living standards across the
+                      continent. However, Africa has yet to fully harness its
+                      resource potential.
+                    </p>
+                    <p data-aos="fade-left" data-aos-delay="300">
+                      The Africa Mining Investment Outlook 2025 will address
+                      challenges and opportunities in the mining industry,
+                      exploring how to leverage critical minerals for
+                      sustainable growth. The event will focus on attracting
+                      investments, ensuring responsible mining, and integrating
+                      these resources into Africa’s energy transition efforts.
+                    </p>
+                    <p data-aos="fade-left" data-aos-delay="400">
+                      Bringing together mining executives, government
+                      representatives, and industry leaders, the event will
+                      drive conversations on sustainable practices, innovation,
+                      and technology in mining. It will highlight the role of
+                      critical minerals in fostering energy independence while
+                      ensuring long-term benefits for the continent.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="text-center col-md-12 col-lg-12">
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <img
-                  src="img/speakers/robo.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
+        </section>
+
+        <!-- Objectives -->
+        <section id="objectives">
+          <div class="objectives-container padding">
+            <div class="container">
+              <div class="objectives-wrapper">
+                <div class="section-header white">
+                  <h2 data-aos="fade-up">
+                    Driving Investment, Collaboration, and Sustainable Growth in
+                    Africa's Mining Sector
+                  </h2>
+                </div>
+
+                <div class="top">
+                  <div class="left" data-aos="fade-right" data-aos-delay="200">
+                    <div class="accordion">
+                      <div class="accordion-item">
+                        <div class="accordion-header">
+                          Fostering European Investment in African Mining
+                          <span class="icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                          <p>
+                            Promote the interests of African mining, high-light
+                            projects and stimulate new investment in mining from
+                            European entities.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-header">
+                          Forge Policy-Driving Partnerships
+                          <span class="icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                          <p>
+                            Create new linkages and relationships and host the
+                            discussions that drive long-term policy formation.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-header">
+                          Bridge Europe-Africa Opportunities
+                          <span class="icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                          <p>
+                            Facilitate European companies in understanding and
+                            investing in African mining opportunities.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-header">
+                          Africa’s Role in Transition
+                          <span class="icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                          <p>
+                            Discuss and establish the role Africa mining in the
+                            global transition.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- <div class="accordion-item">
+                        <div class="accordion-header">
+                          Unmatched Networking for Telecom Executives
+                          <span class="icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                          <p>
+                            Stimulate unrivaled networking opportunities for
+                            executives in the Telecoms industry.
+                          </p>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="image" data-aos="zoom-in" data-aos-delay="100">
+                      <img src="/assets/section-img/hero-1.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="count-container">
+                    <div
+                      class="count-box"
+                      data-aos="zoom-in"
+                      data-aos-delay="300"
+                    >
+                      <h2>
+                        <span
+                          class="odometer"
+                          data-status="yes"
+                          data-count="150"
+                          >0</span
+                        ><span class="plus">+</span>
+                      </h2>
+                      <p>Delegates</p>
+                    </div>
+                    <div
+                      class="count-box"
+                      data-aos="zoom-in"
+                      data-aos-delay="350"
+                    >
+                      <h2>
+                        <span class="odometer" data-status="yes" data-count="20"
+                          >0</span
+                        ><span class="plus">+</span>
+                      </h2>
+                      <p>Speakers</p>
+                    </div>
+                    <div
+                      class="count-box"
+                      data-aos="zoom-in"
+                      data-aos-delay="400"
+                    >
+                      <h2>
+                        <span class="odometer" data-status="yes" data-count="50"
+                          >0</span
+                        ><span class="plus">+</span>
+                      </h2>
+                      <p>Companies</p>
+                    </div>
+                    <div
+                      class="count-box"
+                      data-aos="zoom-in"
+                      data-aos-delay="450"
+                    >
+                      <h2>
+                        <span class="odometer" data-status="yes" data-count="40"
+                          >0</span
+                        ><span class="plus">+</span>
+                      </h2>
+                      <p>Decision Makers</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <!-- <div class="card">
-                <img
-                  src="img/speakers/iyetude.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div> -->
+          </div>
+        </section>
+
+        <!-- Who attends -->
+        <!-- <section id="who-attends">
+          <div class="who-attends-container padding">
+            <div class="container">
+              <div class="who-attends-wrapper">
+                <div class="section-header">
+                  <h2 data-aos="fade-up">
+                    Who will attend Africa Mining Investment Outlook?
+                  </h2>
+                </div>
+              </div>
+              <p data-aos="fade-right" data-aos-delay="200">
+                Africa Mining Investment Outlook will bring together 200+ senior telecoms
+                executives, infrastructure providers, telecom operators,
+                technology providers, service providers, regulators, investors,
+                telco associations, consultants and everyone working across
+                various verticals of the telco industry.
+              </p>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <!-- <div class="card">
+            <div
+              class="who-attends-subwrapper"
+              data-aos="zoom-out"
+              data-aos-delay="400"
+            >
+              <div class="who-attends-slide-1">
+                <img src="assets/who-attends-logo/mastercard.png" alt="" />
+                <img src="assets/who-attends-logo/up.jpg" alt="" />
                 <img
-                  src="img/speakers/abimbola.png"
-                  class="card-img-top"
-                  width="200"
+                  src="assets/who-attends-logo/interswitch-colored.png"
+                  alt=""
                 />
-                <br>
-              </div> -->
+                <img src="assets/who-attends-logo/9-psb.png" alt="" />
+                <img src="assets/who-attends-logo/dpopay.png" alt="" />
+                <img src="assets/who-attends-logo/palmpay.png" alt="" />
+                <img src="assets/who-attends-logo/zoho.jpg" alt="" />
+                <img src="assets/who-attends-logo/vfd.png" alt="" />
+                <img src="assets/who-attends-logo/octa.png" alt="" />
+                <img src="assets/who-attends-logo/paystack.jpg" alt="" />
+                <img src="assets/who-attends-logo/freshworks.png" alt="" />
+                <img src="assets/who-attends-logo/rackcenter.jpg" alt="" />
+                <img src="assets/who-attends-logo/moniepoint.png" alt="" />
+                <img src="assets/who-attends-logo/maplerad.png" alt="" />
+                <img src="assets/who-attends-logo/payaza.png" alt="" />
+                <img src="assets/who-attends-logo/termii.png" alt="" />
+                <img src="assets/who-attends-logo/uber.png" alt="" />
+                <img src="assets/who-attends-logo/yellowcard.png" alt="" />
+                <img src="assets/who-attends-logo/qwid.png" alt="" />
+                <img src="assets/who-attends-logo/flutterwave.png" alt="" />
+                <img src="assets/who-attends-logo/cleva.jpg" alt="" />
+                <img src="assets/who-attends-logo/anchoria.png" alt="" />
+                <img src="assets/who-attends-logo/bitmama.png" alt="" />
+                <img src="assets/who-attends-logo/servercore.png" alt="" />
+                <img src="assets/who-attends-logo/bolt.png" alt="" />
+                <img src="assets/who-attends-logo/zone.jpg" alt="" />
+                <img src="assets/who-attends-logo/identitypass.png" alt="" />
+              </div>
+              <div class="who-attends-slide-2" dir="rtl">
+                <img src="assets/who-attends-logo/migo.png" alt="" />
+                <img src="assets/who-attends-logo/uba.jpg" alt="" />
+                <img
+                  src="assets/who-attends-logo/nationalbankrwanda.png"
+                  alt=""
+                />
+                <img src="assets/who-attends-logo/scrella.png" alt="" />
+                <img src="assets/who-attends-logo/africastalking.png" alt="" />
+                <img src="assets/who-attends-logo/anchor.jpg" alt="" />
+                <img src="assets/who-attends-logo/i-invest.jpg" alt="" />
+                <img src="assets/who-attends-logo/cellulant.jpg" alt="" />
+                <img src="assets/who-attends-logo/scalex.png" alt="" />
+                <img src="assets/who-attends-logo/mycoverai.png" alt="" />
+                <img src="assets/who-attends-logo/infobip.jpg" alt="" />
+                <img src="assets/who-attends-logo/zitra.png" alt="" />
+                <img src="assets/who-attends-logo/rra.jpg" alt="" />
+                <img src="assets/who-attends-logo/ami.png" alt="" />
+                <img src="assets/who-attends-logo/nownow.png" alt="" />
+                <img src="assets/who-attends-logo/credo.jpg" alt="" />
+                <img src="assets/who-attends-logo/flincap.png" alt="" />
+                <img src="assets/who-attends-logo/seerbit.png" alt="" />
+                <img src="assets/who-attends-logo/alx.png" alt="" />
+                <img src="assets/who-attends-logo/pocketfood.jpg" alt="" />
+                <img src="assets/who-attends-logo/ayo.jpg" alt="" />
+                <img src="assets/who-attends-logo/africadate.jpg" alt="" />
+                <img
+                  src="assets/who-attends-logo/republicofrwanda.jpg"
+                  alt=""
+                />
+                <img src="assets/who-attends-logo/zerocomplex.png" alt="" />
+                <img src="assets/who-attends-logo/flick.png" alt="" />
+                <img src="assets/who-attends-logo/garamart.jpg" alt="" />
+                <img src="assets/who-attends-logo/prembly.jpg" alt="" />
+              </div>
+              <div class="who-attends-slide-3">
+                <img src="assets/who-attends-logo/chamsaccess.jpg" alt="" />
+                <img src="assets/who-attends-logo/bunce.png" alt="" />
+                <img src="assets/who-attends-logo/3line.png" alt="" />
+                <img src="assets/who-attends-logo/turaco.png" alt="" />
+                <img src="assets/who-attends-logo/fifthlab.png" alt="" />
+                <img src="assets/who-attends-logo/pawapay.png" alt="" />
+                <img src="assets/who-attends-logo/arca.jpg" alt="" />
+                <img src="assets/who-attends-logo/upperlink.jpg" alt="" />
+                <img src="assets/who-attends-logo/pfs.jpg" alt="" />
+                <img src="assets/who-attends-logo/furex.png" alt="" />
+                <img src="assets/who-attends-logo/cent.png" alt="" />
+                <img src="assets/who-attends-logo/inlaks.png" alt="" />
+                <img src="assets/who-attends-logo/shortlet.png" alt="" />
+                <img src="assets/who-attends-logo/businessinsider.png" alt="" />
+                <img src="assets/who-attends-logo/pesc-choice.jpg" alt="" />
+                <img src="assets/who-attends-logo/bankofkigali.jpg" alt="" />
+                <img src="assets/who-attends-logo/tekexperts.png" alt="" />
+                <img src="assets/who-attends-logo/getequity.jpg" alt="" />
+                <img src="assets/who-attends-logo/businessinsider.png" alt="" />
+                <img src="assets/who-attends-logo/i&m-bank.jpg" alt="" />
+                <img src="assets/who-attends-logo/absa.png" alt="" />
+                <img src="assets/who-attends-logo/irembo.jpg" alt="" />
+                <img src="assets/who-attends-logo/eversend.jpg" alt="" />
+                <img src="assets/who-attends-logo/sasapay.png" alt="" />
+                <img src="assets/who-attends-logo/dcg.png" alt="" />
+                <img src="assets/who-attends-logo/techstars.jpg" alt="" />
+              </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <!-- <div class="card">
-                <img
-                  src="img/speakers/ajayi.png"
-                  class="card-img-top"
-                  width="200"
-                />
-                <br>
-              </div> -->
+          </div>
+        </section> -->
+
+        <!-- Partner -->
+        <section id="partner">
+          <div class="partner-container padding">
+            <div class="container">
+              <div class="partner-wrapper">
+                <div class="section-header">
+                  <h2 data-aos="fade-up">
+                    Get involved - Explore our Sponsorship Opportunities
+                  </h2>
+                </div>
+                <div class="partner-box-container">
+                  <div
+                    class="partner-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icon/brand.svg" alt="" />
+                    </div>
+                    <h4>Brand Awareness</h4>
+                    <p>
+                      Africa Mining Investment Outlook plays host to senior
+                      industry leaders, exploring partnership provides you with
+                      an opportunity for raising your brand awareness and
+                      positioning it for growth.
+                    </p>
+                  </div>
+                  <div
+                    class="partner-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icon/thought.svg" alt="" />
+                    </div>
+                    <h4>Thought Leaderships</h4>
+                    <p>
+                      Joining panel sessions, fireside chats, breakout sessions
+                      and keynote sessions are some of the ways to profile your
+                      brand as a leader through demonstration of thought
+                      leadership to a unique audience of Nigeria Telecoms
+                      Stakeholders across Nigeria.
+                    </p>
+                  </div>
+                  <div
+                    class="partner-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icon/leadgen.svg" alt="" />
+                    </div>
+                    <h4>Lead Generation</h4>
+                    <p>
+                      We bring industry leaders and customers to Nigeria
+                      Telecoms Forum, providing you with an opportunity to
+                      generate qualified leads and network with sector
+                      stakeholders.
+                    </p>
+                  </div>
+                  <div
+                    class="partner-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icon/media.svg" alt="" />
+                    </div>
+                    <h4>Media Visibility</h4>
+                    <p>
+                      We leverage multiple media platforms to ensure your brand
+                      messages gets to the right audience before, during & after
+                      the event. We have done this multiple times for multiple
+                      brands.
+                    </p>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <!-- <div class="button">
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Telecoms%20Forum%20Exhibition%20Deck"
+                      class="btn btn-sec"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      Book a Booth
+                    </a>
+                  </div> -->
+                  <div class="button">
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Telecoms%20Forum%20Sponsorship%20Deck"
+                      class="btn btn-pry"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      Request Sponsorship Deck
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Agenda -->
+        <section id="agenda">
+          <div class="agenda-container padding">
+            <div class="container">
+              <div class="agenda-wrapper">
+                <div class="section-header white">
+                  <h2 data-aos="fade-up">
+                    STATE OF THE MARKET - Industry report for Africa's Mining
+                  </h2>
+                </div>
+                <div class="agenda-item-container">
+                  <div class="agenda-item">
+                    <div
+                      class="left"
+                      data-aos="fade-right"
+                      data-aos-delay="100"
+                    >
+                      <div class="content">
+                        <h3 class="title">
+                          Africa's Mining Industry and its role in Global energy
+                          transition
+                        </h3>
+                        <div class="description">
+                          <p>
+                            As we acceslerate towards cleaner energy solutions,
+                            Africa's mining will play a pivotal role in the
+                            global energy transition, with growing demand for
+                            important minerals like cobalt, lithium and copper.
+                            This session will explore trends shaping the future
+                            of Africa's mining industry with key spotlights on
+                            energy transition.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="image" data-aos="zoom-in">
+                        <img src="/assets/section-img/agenda-1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="agenda-item">
+                    <div class="left" data-aos="fade-left" data-aos-delay="100">
+                      <div class="content">
+                        <h3 class="title">
+                          Capital at Play; Making African mining more attractive
+                          to investments
+                        </h3>
+                        <div class="description">
+                          <p>
+                            This session seeks to understand what incentives are
+                            required to enhance investor interest in Africa's
+                            mining industry, industry players will examine the
+                            broad spectrum of investment opportunities within
+                            Africa's critical minerals and rare earth projects.
+                            It will focus on creating an enabling environment
+                            that attracts key producers and buyers, as well as
+                            navigating the competitive landscape and exploring
+                            collaborative approaches among governments, private
+                            sector players and international partners.
+                          </p>
+                          <br /><br />
+                          <p>
+                            This session will equally explore financing
+                            instruments foreign partners can provide to supply
+                            greater sums o f concessional financing and to
+                            de-risk private sector investments with a key focus
+                            on making Africa the world's mineral partner of
+                            choice.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="image" data-aos="zoom-in">
+                        <img src="/assets/section-img/agenda-3.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="agenda-item">
+                    <div class="left" data-aos="fade-right">
+                      <div class="content">
+                        <h3 class="title">
+                          Driving the growth of Africa's mining through
+                          Innovation
+                        </h3>
+                        <div class="description">
+                          <p>
+                            Engagements on this panel will gather key industry
+                            leaders to discuss how innovative strategies,
+                            next-generation technologies and sustainable
+                            practices are reshaping the African mining
+                            landscape. Panelists will explore policy reforms,
+                            digital tools and advanced processing techniques
+                            that can unlock Africa's mineral potential, boost
+                            value addition and position the continent as a
+                            global leader in critical minerals.
+                          </p>
+
+                          <br /><br />
+
+                          <p>
+                            Speakers on the session will equally share insights
+                            on leveraging data for stronger ESG in Africa's
+                            mining industry.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="image" data-aos="zoom-in">
+                        <img src="/assets/section-img/industry.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="agenda-item">
+                    <div class="left" data-aos="fade-left">
+                      <div class="content">
+                        <h3 class="title">
+                          Responsible Mining and its impact on the community
+                        </h3>
+                        <div class="description">
+                          <p>
+                            This session will examine how Africa's mining is
+                            impacting the host communities with a key focus on
+                            understanding the long-term commitments to these
+                            communities,the session will make a case for
+                            affected communities and the need for exploring
+                            post-mining opportunities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="image" data-aos="zoom-out">
+                        <img src="/assets/section-img/agenda-2.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Speakers Section -->
+        <!-- <section id="speakers">
+          <div class="speakers-container padding">
+            <div class="container">
+              <div class="speakers-wrapper">
+                <div class="section-header white">
+                  <h2>Who speaks at Africa Mining Investment Outlook?</h2>
+                </div>
+                <div class="speakers-box-container">
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/els-boerhof.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Els Boerhof</h4>
+                      <p class="designation">Managing Partner,</p>
+                      <p class="company">Goodwell</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/joyce-ann-wainaina.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Joyce-Ann Wainaina</h4>
+                      <p class="designation">Managing Partner,</p>
+                      <p class="company">Chui Ventures</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/charles-eloi.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Charles Eloi Cyusa</h4>
+                      <p class="designation">
+                        Head of Digital Financial Services and Market
+                        Infrastructure,
+                      </p>
+                      <p class="company">Access to Finance Rwanda</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/nathaniel-luz.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Nathaniel Luz</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Cheqwa</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/esther-ndeti.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Esther Ndeti</h4>
+                      <p class="designation">Managing Partner,</p>
+                      <p class="company">Unconventional Capital</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/eveque-mutabaruka.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Eveque Mutabaruka</h4>
+                      <p class="designation">Chief Information Officer,</p>
+                      <p class="company">Bank of Kigali</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/oladotun-akangbe.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Oladotun Akangbe</h4>
+                      <p class="designation">Chief Marketing Officer,,</p>
+                      <p class="company">Flincap</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/jansen-durham.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Jansen Durham</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Fixa Rwanda</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/gbenga-adigun.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Gbenga Adigun</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Scrella</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/lily-ngarambe.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Lily Ngarambe</h4>
+                      <p class="designation">Country Manager-Rwanda,</p>
+                      <p class="company">Yellowcard</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/samuel-tayengwa.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Samuel Tanyengwa</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">
+                        TransUnion Rwanda & Head of Growth Africa Regions
+                      </p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/images/speakers/mark-mico.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Mark Mico</h4>
+                      <p class="designation">Head of Payments,</p>
+                      <p class="company">Equity Bank Rwanda</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- Highlight -->
+        <!-- <section id="highlight">
+          <div class="highlight-container padding">
+            <div class="container">
+              <div class="section-header">
+                <h2 data-aos="fade-up">Highlights from our events</h2>
+              </div>
+            </div>
+            <div
+              class="slide-container"
+              data-aos="zoom-out"
+              data-aos-delay="300"
+            >
+              <div class="slider highlight-slider-1">
+                <img src="/assets/highlights/1.jpg" alt="" />
+                <img src="/assets/highlights/2.jpg" alt="" />
+                <img src="/assets/highlights/3.jpg" alt="" />
+                <img src="/assets/highlights/4.jpg" alt="" />
+                <img src="/assets/highlights/5.jpg" alt="" />
+                <img src="/assets/highlights/6.jpg" alt="" />
+                <img src="/assets/highlights/7.jpg" alt="" />
+                <img src="/assets/highlights/8.jpg" alt="" />
+                <img src="/assets/highlights/9.jpg" alt="" />
+                <img src="/assets/highlights/10.jpg" alt="" />
+                <img src="/assets/highlights/11.jpg" alt="" />
+                <img src="/assets/highlights/12.jpg" alt="" />
+              </div>
+              <div class="slider highlight-slider-2" dir="rtl">
+                <img src="/assets/highlights/13.jpg" alt="" />
+                <img src="/assets/highlights/14.jpg" alt="" />
+                <img src="/assets/highlights/15.jpg" alt="" />
+                <img src="/assets/highlights/16.jpg" alt="" />
+                <img src="/assets/highlights/17.jpg" alt="" />
+                <img src="/assets/highlights/18.jpg" alt="" />
+                <img src="/assets/highlights/19.jpg" alt="" />
+                <img src="/assets/highlights/20.jpg" alt="" />
+                <img src="/assets/highlights/21.jpg" alt="" />
+                <img src="/assets/highlights/22.jpg" alt="" />
+                <img src="/assets/highlights/23.jpg" alt="" />
+                <img src="/assets/highlights/24.jpg" alt="" />
+              </div>
+              <div class="slider highlight-slider-3">
+                <img src="/assets/highlights/25.jpg" alt="" />
+                <img src="/assets/highlights/26.jpg" alt="" />
+                <img src="/assets/highlights/27.jpg" alt="" />
+                <img src="/assets/highlights/28.jpg" alt="" />
+                <img src="/assets/highlights/29.jpg" alt="" />
+                <img src="/assets/highlights/30.jpg" alt="" />
+                <img src="/assets/highlights/31.jpg" alt="" />
+                <img src="/assets/highlights/32.jpg" alt="" />
+                <img src="/assets/highlights/33.jpg" alt="" />
+                <img src="/assets/highlights/34.jpg" alt="" />
+                <img src="/assets/highlights/35.jpg" alt="" />
+                <img src="/assets/highlights/36.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- Contact -->
+        <section id="contact">
+          <div class="contact-container padding">
+            <div class="container">
+              <div class="contact-wrapper">
+                <h2 data-aos="fade-up">
+                  To learn more about sponsorship, speaking and other
+                  partnership opportunities,
+                </h2>
+
+                <div class="contact-box-container">
+                  <div
+                    class="contact-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="150"
+                  >
+                    <h4>Jamiu Ijaodola</h4>
+                    <a href="tel: +2347016673316">+234 701 667 3316</a>
+                    <a href="mailto: jamiu@eventhive.ng">jamiu@eventhive.ng</a>
+                  </div>
+                  <div
+                    class="contact-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="250"
+                  >
+                    <h4>Arole Mustapha</h4>
+                    <a href="tel: +2348086081614">+234 808 608 1614</a>
+                    <a href="mailto: arole@eventhive.ng">arole@eventhive.ng</a>
+                  </div>
+                </div>
+
+                <div class="become">
+                  <a
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20UK-Africa%20Business%20Outlook%20Sponsorship%20Deck"
+                    class="btn btn-pry"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    >Become a Sponsor</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- More About Eventhive -->
+        <section id="more-about">
+          <div class="more-container padding">
+            <div class="container">
+              <div class="more-wrapper" data-aos="fade-left">
+                <div class="more-logo">
+                  <span>An event by:</span>
+                  <div class="logo">
+                    <img src="assets/logo/logo.svg" alt="" />
+                  </div>
+                </div>
+
+                <p>
+                  Eventhive is Africa's leading B2B2C event servicing company
+                  with event portfolios across Lagos, London, Nairobi, Kigali
+                  and New York.
+                </p>
+                <p>
+                  Eventhive operates in the heart of the knowledge and
+                  information economy across major sectors in Africa. We enable
+                  businesses to grow through connecting them with knowledge,
+                  ideas and opportunities.
+                </p>
+
+                <div class="indus-cities">
+                  <h4 class="text-sec">Industries We Operate In:</h4>
+                  <div>
+                    <span>Energy</span><span>.</span><span>Tech</span
+                    ><span>.</span><span>Real Estate</span><span>.</span
+                    ><span>Finance</span><span>.</span><span>Transport</span
+                    ><span>.</span><span>Telecoms</span><span>.</span
+                    ><span>Aviation</span><span>.</span><span>Mining</span
+                    ><span>.</span><span>International Trade</span>
+                  </div>
+                </div>
+                <div class="indus-cities">
+                  <h4 class="text-sec">Cities We Operate In:</h4>
+                  <div>
+                    <span>Lagos</span><span>.</span><span>London</span
+                    ><span>.</span><span>New York</span><span>.</span
+                    ><span>Kigali</span><span>.</span><span>Nairobi</span
+                    ><span>.</span><span>Johannesburg</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="footer-container padding">
+          <div class="container">
+            <div class="footer-wrapper">
+              <div class="top">
+                <div class="logo">
+                  <div class="logo-icon">
+                    <img src="/assets/logo/logoo-white.png" alt="" />
+                  </div>
+                </div>
+                <div class="quick-links">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li>
+                      <a
+                        href="https://www.eventbrite.com/e/africa-mining-investment-outlook-tickets-1092619487299?aff=oddtdtcreator"
+                        >Tickets</a
+                      >
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <h3>Africa Mining Investment Outlook</h3>
+                  <p>
+                    February 13th, 2025 | Fourpoints by Sheraton, V.I, Lagos.
+                  </p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/eventhive.ng"
+                        target="_blank"
+                        ><iconify-icon icon="fa:facebook"></iconify-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://x.com/eventhivedotng?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ"
+                        target="_blank"
+                        ><iconify-icon icon="ri:twitter-x-fill"></iconify-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/eventhive-ng/"
+                        target="_blank"
+                        ><iconify-icon icon="formkit:linkedin"></iconify-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/eventhivedotng?igsh=MWJzbmVpOWxoMHkzYg=="
+                        target="_blank"
+                        ><iconify-icon icon="mdi:instagram"></iconify-icon
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="center">
+              <div id="countdown-timer" class="timer"></div>
+            </div> -->
+              <div class="divider"></div>
+              <div class="bottom">
+                <p>
+                  &copy; <span class="year">2025</span> Africa Mining Investment
+                  Outlook. All Rights Reserved.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
-    <!-- /speakers section -->
 
-    <!-- Track -->
-    <section class="content-section">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h3 class="title" style="margin-top: 30px;">
-              <span>5 Tracks of</span>
-              <span style="color: #ffb715;"> Content</span>
-            </h3>
-            <div class="col-12">
-              <div class="col-md-4 col-sm-6">
-                <img src="/img/extras/energy.jpg" alt="" width="300px" style="margin: 20px;">
-                <p><b>RENEWABLE ENERGY</b></p>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <img src="/img/extras/act.jpg" alt="" width="300px" style="margin: 20px;">
-                <p><b>ELECTRICITY ACT</b></p>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <img src="/img/extras/gas.jpg" alt="" width="300px" style="margin: 20px;">
-                <p><b>GAS-TO-POWER</b></p>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <img src="/img/extras/discos.jpg" alt="" width="300px" style="margin: 20px;">
-                <p><b>DISCO'S</b></p>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <img src="/img/extras/power.jpg" alt="" width="300px" style="margin: 20px;">
-                <p><b>POWER INFRASTRUCTURE</b></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end content-section -->
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    <!-- Agenda -->
-    <section class="content-section agenda" id="agenda">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h3 class="title">
-              <span>Agenda & Key</span>
-              <span style="color: #ffb715;"> Discussions</span>
-            </h3>
-          </div>
-          <div class="a-content">
-            <ol style="--length: 6" role="list">
-              <li style="--i: 1">
-                <h3>
-                  State of the market: Examining how The Nigeria
-                  <br>
-                  Electricity Act 2023 will transform Nigeria's Power Sector
-                </h3>
-                <p>This session will bring together industry leaders, executives and stakeholders working across various verticals of the Nigerian electricity value chain, providing them with an opportunity to examine the Electricity Act 2023 and what it means for the future of Nigeria's power sector.</p>
-              </li>
-              <li style="--i: 2">
-                <h3>Mobilising private capital for clean energy in Nigeria</h3>
-                <p>This session will examine conversations across a range of issues surrounding the provision and availability of equity, debt, grant finance and other options available for DFIs to scale investment across clean energy in Nigeria and closing the financing gap.</p>
-              </li>
-              <li style="--i: 3">
-                <h3>Gas-To-Power-The race towards Net Zero economy in Nigeria</h3>
-                <p>This session will assess the global gas market and what it means for Nigeria's domestic gas and power markets. Speakers will explore gas-to-power as a pathway to decarbonisation.</p>
-              </li>
-              <li style="--i: 4">
-                <h3>In-Conversation with DISCO's</h3>
-                <p>This session will bring together, players across Nigeria's electricity distribution companies, providing them with an opportunity to provide updates on
-                  liquidity issues, smart metering, investment efforts and the role, The Electricity Act 2023 will play in their industry.</p>
-              </li>
-              <li style="--i: 5">
-                <h3>Executive Conversation - What next for Infrastructural Roadmap for Nigeria's Power Sector</h3>
-              </li>
-              <li style="--i: 6">
-                <h3>Leveraging digital technology to deliver value to
-                  customers in Nigeria's electricity value chain</h3>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end content-section -->
+    <!-- Odometer -->
+    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
 
-    <!-- New -->
-    <!-- <section class="content-section new">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h3 class="title" style="margin-top: 30px;">
-              <span>What's New</span>
-              <span style="color: #ffb715;"> in 2024</span>
-            </h3>
-            <div class="col-12">
-              <div class="col-md-3 col-sm-6" style="background-color: #e35959;">
-                <h4><b>New <br>Stage</b></h4>
-                <p>To expand the focus of discussions at the <b>Nigeria Power Outlook</b>, we are delighted to introduce a new stage, beyond the main stage, providing you with an opportunity to choose the sessions that interest you.</p>
-              </div>
-              <div class="col-md-3 col-sm-6" style="background-color: #e39e59;">
-                <h4><b>Leader's <br>Forum</b></h4>
-                <p>This year's line-up of speakers will target <b>C-level innovative company leaders</b>, who are redefining the future of energy in Nigeria.</p>
-              </div>
-              <div class="col-md-3 col-sm-6" style="background-color: #47484f;">
-                <h4><b>Pre-event Networking Drinks</b></h4>
-                <p>To aid <b>1-2-1 networking</b>, we are introducing a pre-event networking drinks for executives and government representatives that will be participating at the event, providing an opportunity to network in a relaxed setting.</p>
-              </div>
-              <div class="col-md-3 col-sm-6" style="background-color: #59e29e;">
-                <h4><b>Expo <br>Hall</b></h4>
-                <p>At this year's edition of the <b>Nigeria Power Outlook</b>, We are introducing an expo hall, providing power companies with an opportunity to showcase their solutions/products to delegates at the event.</p>
-              </div>
-            </div>
-            <a href="https://tix.africa/npo2024" target="_blank" class="brochure-btn" style="margin-top: 30px;">BOOK A SEAT</a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- end content-section -->
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
-    <!-- <div class="container" style="margin-bottom: 20px;">
-        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-      <div class="elfsight-app-7451548d-bc8c-4266-841f-de5a0d24ec34" data-elfsight-app-lazy></div>
-    </div> -->
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- TICKETS -->
-    <!-- <section
-    class="content-section"
-    id="highlights">
-        <div class="section-title" style="margin-bottom: 50px;">
-            <h3 class="title">
-            <span>Book Your</span>
-            <span style="color: #ffb715;"> Pass</span>
-            </h3>
-        </div>
-        <div class="col-12">
-            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-            <div class="elfsight-app-ec5c2a46-9d1e-436d-aad6-b680875ddd04" data-elfsight-app-lazy></div>
-        </div>
-    </section> -->
-    <!-- end content-section -->
+    <!-- Slick Carousel -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
-    <!-- SPONSORS -->
-    <!-- <div class="section" id="media">
-      <div class="media">
-        <div class="row">
-          <div class="section-title col-md-12 col-lg-12">
-            <h2 class="title">
-              <span style="color: #ffb715">Gold Sponsor</span>
-            </h2> 
-            <br />
-            <div class="col-lg-12">
-              <div class="col-md-12">
-                <a href="https://www.all-on.com/">
-                  <img
-                  class=""
-                  src="img/Sponsors/allon.png"
-                  width="300"
-                  alt="All On"
-                  style="margin-bottom: 10px;"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="section-title col-md-12 col-lg-12">
-            <h2 class="title">
-              <span style="color: #ffb715">Silver Sponsor</span>
-            </h2> 
-            <br />
-            <div class="col-lg-12">
-              <div class="col-md-12">
-                <a href="https://www.viathan-ng.com/">
-                  <img
-                  class=""
-                  src="img/Sponsors/viathan.png"
-                  width="150"
-                  alt="Viathan Group"
-                  style="margin-bottom: 10px;"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- SPONSORS -->
-    
-    <!-- INFO -->
-    <!-- <section id="info">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h1>
-              Agenda <span class="id-color">Panel Sessions</span>, Keynote Sessions And <span class="id-color">Fireside Chats</span>
-            </h1>
-          </div>
-
-          <div class="col-lg-12 col-md-12 text-center">
-            <div class="row">
-              <div class="feature col-lg-3 col-md-3 col-sm-3">
-                <h1 class="num"><b>1</b></h1>
-                <p>
-                    EXAMINING THE ROLE OF SMART METERING IN BRIDGING ACCESS TO ENERGY IN NIGERIA.
-                </p>
-              </div>
-
-              <div class="feature col-lg-3 col-md-3 col-sm-3">
-                <h1 class="num"><b>2</b></h1>
-                <p>
-                    EXAMINING THE NEXT WAVE OF GLOBAL INVESTMENTS IN ACCELERATING ACCESS TO ENERGY.
-                </p>
-              </div>
-
-              <div class="feature col-lg-3 col-md-3 col-sm-3">
-               <h1 class="num"><b>3</b></h1>
-                <p>ACCELERATING ADOPTION OF NATURAL GAS  AND LNG IN ADDRESSING ELECTRICITY DEMAND.</p>
-              </div>
-
-              <div class="feature col-lg-3 col-md-3 col-sm-3">
-                <h1 class="num"><b>4</b></h1>
-                <p>
-                    TECHNOLOGY & ACCESS TO ENERGY; EXPLORING TRENDS SHAPING THE IMPACT OF TECHNOLOGY IN NIGERIA’S ENERGY INDUSTRY.
-                </p>
-              </div>
-
-              <div class="feature col-lg-3 col-md-3 col-sm-3">
-                <h1 class="num"><b>5</b></h1>
-                <p>
-                    IN-CONVERSATION WITH DISCO’S.
-                </p>
-              </div>
-
-              <div class="feature col-lg-3 col-md-3 col-sm-3">
-                <h1 class="num"><b>6</b></h1>
-                <p>
-                    FINANCING OFF-GRID ENERGY PROJECTS IN NIGERIA; WHAT’S NEW?.
-                </p>
-              </div>
-
-              <div class="feature col-lg-3 col-md-3 col-sm-3">
-                <h1 class="num"><b>7</b></h1>
-                <p>
-                    INFRASTRUCTURE & ENERGY ACCESS.
-                </p>
-              </div>
-
-              <div class="feature col-lg-3 col-md-3 col-sm-3">
-                <h1 class="num"><b>8</b></h1>
-                <p>
-                    IMPROVING GENERATION CAPACITY; INCREMENTAL POWER OR QUANTUM LEAP.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- SPONSORSHIP OP -->
-    <!-- <section class="content-section spons-op">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>
-              <span class="id-color">SPONSORSHIP & EXHIBITION</span>
-              OPPORTUNITIES
-            </h1>
-          </div>
-          <div class="col-lg-6 col-md-12 side-text">
-            <p>
-              In a constantly changing Industry, positioning your company at the
-              forefront of the market provides your brand with an opportunity to
-              further strengthen its position within the Industry. Our
-              <span class="id-color"><b>Sponsorship and Exhibition plans</b></span>
-              provides your organization with a world class marketing mix
-              offering a seamless end to end journey to build brand equity and
-              create valuable connections within the Power ecosystem.
-            </p>
-            <p>
-              Aligning our sponsors organization brand with
-              <span class="id-color"><b>Nigeria Power Outlook</b></span> is a
-              smart and effective way to engage global audiences and demonstrate
-              expertise.
-            </p>
-            <p>
-              The delegate and speakers
-              <span class="id-color"><b>Nigeria Power Outlook</b></span>
-              attracts are unparalleled in their level of relevance and
-              influence. <a href="https://zfrmz.com/VoyGZVkfCkawteJO1n8g" class="text-link"><b>Please download the Sponsorship brochure and get in touch.</b></a>
-            </p>
-          </div>
-          <div class="col-lg-6 col-md-12 side-img">
-            <h3>
-              EXHIBITION BOOTH <br> 3x3 (9sqm) 
-              <span class="transparent">₦500,000</span>
-            </h3>
-            <img src="/img/bcg/exhb.jpg" alt="image" width="70%" />
-
-            <div class="booth text-center">
-              <a
-                target="_blank"
-                class="btn btn-border-white"
-                href="#"
-                >Book a Booth</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- SPONSORSHIP OP -->
-
-    <!-- Ticket section -->
-    <!-- <section id="register">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="uppercase text-center">Book A Seat</h2>
-          </div>
-          <div id="eventbrite-widget-container-611474916937"></div>
-
-    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-    
-    <script type="text/javascript">
-        var exampleCallback = function() {
-            console.log('Order complete!');
-        };
-    
-        window.EBWidgets.createWidget({
-            widgetType: 'checkout',
-            eventId: '611474916937',
-            iframeContainerId: 'eventbrite-widget-container-611474916937',
-    
-            iframeContainerHeight: 425, 
-            onOrderComplete: exampleCallback 
-        });
-    </script>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Contact -->
-    <div id="contact" class="content-section">
-      <!-- container -->
-      <div class="container">
-        <!-- row -->
-        <div class="row">
-          <!-- section title -->
-          <div class="section-title">
-            <h3 class="title">
-              <span>Contact</span> <span style="color: #ffb715">Info</span>
-            </h3>
-          </div>
-          <!-- /section title -->
-
-          <!-- contact -->
-          <div class="col-md-4">
-            <div class="contact">
-              <h3>Phone</h3>
-              <p>Jamiu: +2347016673316</p>
-              <p>Malik: +2349028112744</p>
-            </div>
-          </div>
-          <!-- /contact -->
-
-          <!-- contact -->
-          <div class="col-md-4">
-            <div class="contact">
-              <h3>Email</h3>
-              <a href="mailto:jamiu@eventhive.ng">jamiu@eventhive.ng</a>
-              <br>
-              <a href="mailto:malik@eventhive.ng">malik@eventhive.ng</a>
-            </div>
-          </div>
-          <!-- /contact -->
-          <!-- contact social -->
-          <div class="col-md-4">
-            <div class="contact text-center">
-              <h3 style="color: #ffb715">Socials</h3>
-              <div class="contact-social">
-                <a href="https://www.facebook.com/eventhive.ng/" target="_blank"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-                <a href="https://twitter.com/npoweroutlook?s=21" target="_blank"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-
-                <a
-                  href="https://instagram.com/npoweroutlook?igshid=1lqpiotgiqh12"
-                  target="_blank"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-
-                <a
-                  href="https://www.linkedin.com/company/lagos-power-fest"
-                  target="_blank"
-                  ><i class="fa fa fa-linkedin"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- /contact social -->
-        </div>
-        <!-- /row -->
-      </div>
-      <!-- /container -->
-    </div>
-    <!-- /Contact -->
-
-    <!-- Footer -->
-    <footer id="footer">
-      <!-- container -->
-      <div class="container">
-        <!-- row -->
-        <div class="row">
-          <!-- footer logo -->
-          <div class="col-md-12 text-center">
-            <!-- <div class="footer-brand"> -->
-            <h5>All rights reserved. Nigeria Power Outlook ©
-              <script>
-                document.write(new Date().getFullYear());
-              </script></h5>
-            <!-- </div> -->
-          </div>
-          <!-- /footer logo -->
-        </div>
-        <!-- /row -->
-      </div>
-      <!-- /container -->
-    </footer>
-    <!-- /Footer -->
-
-    <script>
-      var myIndex = 0;
-      carousel();
-      
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-      }
-      </script>
-
-
-    <!-- jQuery Plugins -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/odometer.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Custom script -->
+    <script src="/js/script.js"></script>
   </body>
 </html>
