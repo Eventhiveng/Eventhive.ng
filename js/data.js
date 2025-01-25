@@ -111,6 +111,56 @@ const speakers = [
     image: "assets/images/speakers/bidemi-oke.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Adekanbi Oluwaseun",
+    title: "Growth Lead,",
+    company: "Cleva",
+    image: "assets/images/speakers/adekanbi-oluwaseun.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Ayo Adewuyi",
+    title: "Head of Product,",
+    company: "Prestmit",
+    image: "assets/images/speakers/ayo-adewuyi.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Ashley Immanuel",
+    title: "Co-Founder/COO,",
+    company: "Semicolon",
+    image: "assets/images/speakers/ashley-immanuel.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Khalil Suleiman Halilu",
+    title: "EVC/CEO,",
+    company:
+      "National Agency for Science and Engineering Infrastructure (NASENI)",
+    image: "assets/images/speakers/khalil-suleiman.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Chidera Amuta",
+    title: "Marketing Manager,",
+    company: "Vendorcredit Limited",
+    image: "assets/images/speakers/chidera-amuta.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Oluseye Seton",
+    title: "Chief Growth Officer,",
+    company: "Vendorcredit Limited",
+    image: "assets/images/speakers/oluseye-seton.png",
+    linkedIn: "#",
+  },
+  {
+    name: "Preston Ideh ",
+    title: "Co-founder & CEO,",
+    company: "Stears",
+    image: "assets/images/speakers/preston-ideh.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
