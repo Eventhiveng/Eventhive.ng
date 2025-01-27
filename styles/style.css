@@ -253,14 +253,15 @@ aside.active {
   height: 100%;
   display: flex;
   /* text-transform: uppercase; */
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #hero .hero-wrapper .hero-name {
-  font-size: clamp(24px, 3vw, 30px);
+  font-size: clamp(18px, 3vw, 24px);
+  margin-bottom: 30px;
 }
 
 #hero .hero-wrapper .hero-heading {
