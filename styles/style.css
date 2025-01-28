@@ -531,7 +531,7 @@ aside.active {
 
 #agenda .agenda-item .right .image {
   height: 500px;
-  position: sticky;
+  /* position: sticky; */
   top: calc(50% - (600px / 2));
   top: 50%;
   border-radius: 10px;
