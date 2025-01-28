@@ -161,6 +161,13 @@ const speakers = [
     image: "assets/images/speakers/preston-ideh.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Dapo Salami",
+    title: "Managing Director/CEO,",
+    company: "Platview Technologies",
+    image: "assets/images/speakers/dapo-salami.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
