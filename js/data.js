@@ -168,6 +168,13 @@ const speakers = [
     image: "assets/images/speakers/dapo-salami.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Tolu Osho",
+    title: "CEO & Co-Founder,",
+    company: "Pesa",
+    image: "assets/images/speakers/tolu-osho.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
