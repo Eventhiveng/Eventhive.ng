@@ -15,17 +15,17 @@ $(document).ready(function () {
 
   const $heroSlides = $(".sliders-wrapper");
 
-  // const $attendeeSlideOne = $(".who-attends-slide-1");
-  // const $attendeeSlideTwo = $(".who-attends-slide-2");
-  // const $attendeeSlideThree = $(".who-attends-slide-3");
+  const $attendeeSlideOne = $(".who-attends-slide-1");
+  const $attendeeSlideTwo = $(".who-attends-slide-2");
+  const $attendeeSlideThree = $(".who-attends-slide-3");
 
-  // const $highlightSlideOne = $(".highlight-slider-1");
-  // const $highlightSlideTwo = $(".highlight-slider-2");
-  // const $highlightSlideThree = $(".highlight-slider-3");
+  const $highlightSlideOne = $(".highlight-slider-1");
+  const $highlightSlideTwo = $(".highlight-slider-2");
+  const $highlightSlideThree = $(".highlight-slider-3");
 
-  // const $slides = $(
-  //   ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
-  // );
+  const $slides = $(
+    ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
+  );
 
   // Toggle Nav
   const toggleNav = () => {
@@ -54,98 +54,98 @@ $(document).ready(function () {
     });
   };
 
-  // const attendeeComp = () => {
-  //   // Function to calculate slidesToShow based on window width
-  //   function getSlidesToShow() {
-  //     return Math.ceil($(window).width() / 250);
-  //   }
+  const attendeeComp = () => {
+    // Function to calculate slidesToShow based on window width
+    function getSlidesToShow() {
+      return Math.ceil($(window).width() / 250);
+    }
 
-  //   const slickSettings1 = {
-  //     infinite: true,
-  //     speed: 2000,
-  //     autoplay: true,
-  //     autoplaySpeed: 10,
-  //     slidesToShow: getSlidesToShow(),
-  //     slidesToScroll: 1,
-  //     lazyLoad: "ondemand",
-  //     arrows: false,
-  //     cssEase: "linear",
-  //     pauseOnHover: false,
-  //     pauseOnFocus: false,
-  //     draggable: false,
-  //   };
+    const slickSettings1 = {
+      infinite: true,
+      speed: 2000,
+      autoplay: true,
+      autoplaySpeed: 10,
+      slidesToShow: getSlidesToShow(),
+      slidesToScroll: 1,
+      lazyLoad: "ondemand",
+      arrows: false,
+      cssEase: "linear",
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      draggable: false,
+    };
 
-  //   const slickSettings2 = $.extend({}, slickSettings1, {
-  //     speed: 3000,
-  //     rtl: true,
-  //   });
+    const slickSettings2 = $.extend({}, slickSettings1, {
+      speed: 3000,
+      rtl: true,
+    });
 
-  //   const slickSettings3 = $.extend({}, slickSettings1, {
-  //     speed: 6000,
-  //   });
+    const slickSettings3 = $.extend({}, slickSettings1, {
+      speed: 6000,
+    });
 
-  //   $attendeeSlideOne.slick(slickSettings1);
-  //   $attendeeSlideTwo.slick(slickSettings2);
-  //   $attendeeSlideThree.slick(slickSettings3);
+    $attendeeSlideOne.slick(slickSettings1);
+    $attendeeSlideTwo.slick(slickSettings2);
+    $attendeeSlideThree.slick(slickSettings3);
 
-  //   // Throttle function to optimize resize event handling
-  //   let resizeTimeout;
-  //   $(window).on("resize", function () {
-  //     clearTimeout(resizeTimeout);
-  //     resizeTimeout = setTimeout(function () {
-  //       const newSlidesToShow = getSlidesToShow();
-  //       $slides.slick("slickSetOption", "slidesToShow", newSlidesToShow, true);
-  //     }, 200); // Delay to prevent excessive updates during resizing
-  //   });
-  // };
+    // Throttle function to optimize resize event handling
+    let resizeTimeout;
+    $(window).on("resize", function () {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function () {
+        const newSlidesToShow = getSlidesToShow();
+        $slides.slick("slickSetOption", "slidesToShow", newSlidesToShow, true);
+      }, 200); // Delay to prevent excessive updates during resizing
+    });
+  };
 
-  // const highlightComp = () => {
-  //   const highlightSettings1 = {
-  //     infinite: true,
-  //     speed: 4000,
-  //     autoplay: true,
-  //     autoplaySpeed: 10,
-  //     slidesToShow: 4,
-  //     slidesToScroll: 1,
-  //     lazyLoad: "ondemand",
-  //     arrows: false,
-  //     cssEase: "linear",
+  const highlightComp = () => {
+    const highlightSettings1 = {
+      infinite: true,
+      speed: 4000,
+      autoplay: true,
+      autoplaySpeed: 10,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      lazyLoad: "ondemand",
+      arrows: false,
+      cssEase: "linear",
 
-  //     responsive: [
-  //       {
-  //         breakpoint: 991,
-  //         settings: {
-  //           slidesToShow: 3,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 767,
-  //         settings: {
-  //           slidesToShow: 2,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 567,
-  //         settings: {
-  //           slidesToShow: 1,
-  //         },
-  //       },
-  //     ],
-  //   };
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 567,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    };
 
-  //   const highlightSettings2 = $.extend({}, highlightSettings1, {
-  //     speed: 3000,
-  //     rtl: true,
-  //   });
+    const highlightSettings2 = $.extend({}, highlightSettings1, {
+      speed: 3000,
+      rtl: true,
+    });
 
-  //   const highlightSettings3 = $.extend({}, highlightSettings1, {
-  //     speed: 6000,
-  //   });
+    const highlightSettings3 = $.extend({}, highlightSettings1, {
+      speed: 6000,
+    });
 
-  //   $highlightSlideOne.slick(highlightSettings1);
-  //   $highlightSlideTwo.slick(highlightSettings2);
-  //   $highlightSlideThree.slick(highlightSettings3);
-  // };
+    $highlightSlideOne.slick(highlightSettings1);
+    $highlightSlideTwo.slick(highlightSettings2);
+    $highlightSlideThree.slick(highlightSettings3);
+  };
 
   const heroComp = () => {
     const heroSettings = {
@@ -200,12 +200,14 @@ $(document).ready(function () {
         }
       }
     });
+
+    AOS.refresh();
   });
 
   // Initialize all functions
   toggleNav();
   accordionFunc();
-  // attendeeComp();
-  // highlightComp();
+  attendeeComp();
+  highlightComp();
   heroComp();
 });
