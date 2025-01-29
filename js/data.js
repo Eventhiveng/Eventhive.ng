@@ -175,6 +175,13 @@ const speakers = [
     image: "assets/images/speakers/tolu-osho.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Dr Ayotunder Coker",
+    title: "CEO,",
+    company: "OADC",
+    image: "assets/images/speakers/ayotunde-coker.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
