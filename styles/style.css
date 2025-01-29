@@ -521,6 +521,10 @@
   overflow: hidden;
 }
 
+#speakers .speakers-wrapper .speaker-box .speaker-image img {
+  object-position: top;
+}
+
 #speakers .speakers-wrapper .speaker-box .speaker-info {
   padding: 20px;
 }
