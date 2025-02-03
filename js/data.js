@@ -182,6 +182,20 @@ const speakers = [
     image: "assets/images/speakers/ayotunde-coker.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Goodness Okpani",
+    title: "Chief Information Security Officer,",
+    company: "Ethnos",
+    image: "assets/images/speakers/goodness-okpani.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Ayo Oyaleke",
+    title: "Co-founder and CEO,",
+    company: "Mainstack",
+    image: "assets/images/speakers/ayo-oyaleke.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
