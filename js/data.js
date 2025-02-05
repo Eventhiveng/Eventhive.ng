@@ -210,6 +210,13 @@ const speakers = [
     image: "assets/images/speakers/yemi-keri.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Mfonobong Umana",
+    title: "Product Lead,",
+    company: "Human Capital Matrix",
+    image: "assets/images/speakers/mfonobong-umana.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
