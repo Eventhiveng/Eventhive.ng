@@ -203,6 +203,13 @@ const speakers = [
     image: "assets/images/speakers/nana-aisha.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Yemi Keri",
+    title: "CEO,",
+    company: "Heckerbella",
+    image: "assets/images/speakers/yemi-keri.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
