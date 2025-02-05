@@ -196,6 +196,13 @@ const speakers = [
     image: "assets/images/speakers/ayo-oyaleke.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Nana Aisha Salaudeen",
+    title: "Managing Editor,",
+    company: "Paystack",
+    image: "assets/images/speakers/nana-aisha.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
