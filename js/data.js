@@ -217,6 +217,13 @@ const speakers = [
     image: "assets/images/speakers/mfonobong-umana.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Omolara Dada",
+    title: "Growth & Marketing Lead,",
+    company: "Anchor",
+    image: "assets/images/speakers/omolara-dada.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
