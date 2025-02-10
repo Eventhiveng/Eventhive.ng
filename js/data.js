@@ -224,6 +224,20 @@ const speakers = [
     image: "assets/images/speakers/omolara-dada.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Ngozi Chukwu",
+    title: "Reporter,",
+    company: "TechCabal",
+    image: "assets/images/speakers/ngozi-chukwu.png",
+    linkedIn: "#",
+  },
+  {
+    name: "Onothoja Ogheneruona (Ron)",
+    title: "Director of Product,",
+    company: "Juicyway",
+    image: "assets/images/speakers/ron.png",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
