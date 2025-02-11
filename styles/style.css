@@ -905,6 +905,15 @@
   line-height: 1.2;
 }
 
+#speakers-section
+  .speakers-section-wrapper
+  .speakers-slider
+  .speaker-box
+  .speaker-info
+  .company {
+  font-weight: 700;
+}
+
 #speakers-section .speakers-section-wrapper .speakers-slider .slick-arrow {
   all: unset;
   position: absolute;
@@ -1020,6 +1029,10 @@
 #speakers-section .lightbox-overlay .speaker-box .speaker-info .name {
   font-size: 1.1rem;
   color: var(--primary-color);
+}
+
+#speakers-section .lightbox-overlay .speaker-box .speaker-info .company {
+  font-weight: 700;
 }
 
 #speakers-section .lightbox-overlay .close-btn {
