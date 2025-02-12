@@ -385,8 +385,8 @@
   right: -4px;
 }
 
-/* Location Section */
-.location-section {
+/* countdown Section */
+.countdown-section {
   background: var(--black);
   color: var(--white);
   width: 100%;
@@ -396,7 +396,7 @@
   /* border-top: 0.5px solid #ff9e9e; */
 }
 
-.location-section .location-slide {
+.countdown-section .countdown-slide {
   display: flex;
   align-items: center;
   padding: 20px 0;
@@ -405,22 +405,22 @@
   font-size: 16px;
 }
 
-.location-section .location-slide div {
+.countdown-section .countdown-slide div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.location-section .location-slide div span {
+.countdown-section .countdown-slide div span {
   padding: 0 35px;
 }
 
-.location-section .location-slide .icon {
+.countdown-section .countdown-slide .icon {
   height: 30px;
   width: 30px !important;
 }
 
-.location-section .location-slide .icon img {
+.countdown-section .countdown-slide .icon img {
   filter: grayscale(100%);
 }
 
