@@ -405,6 +405,10 @@
   font-size: 16px;
 }
 
+.countdown-section:hover .countdown-slide {
+  animation-play-state: paused;
+}
+
 .countdown-section .countdown-slide div {
   display: flex;
   align-items: center;
