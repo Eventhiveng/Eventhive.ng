@@ -208,13 +208,13 @@ $(document).ready(function () {
   };
 
   // Event Countdown
-  const eventDateNairobi = new Date("February 20, 2025 00:00:00").getTime();
+  const techFestDate = new Date("February 20, 2025 00:00:00").getTime();
 
   const countdownFunction = setInterval(function () {
     const now = new Date().getTime();
 
-    // Calculate the time remaining for Nairobi
-    const distanceNairobi = eventDateNairobi - now;
+    // Calculate the time remaining for Tech Fest
+    const distanceNairobi = techFestDate - now;
     const daysNairobi = Math.floor(distanceNairobi / (1000 * 60 * 60 * 24));
     const hoursNairobi = Math.floor(
       (distanceNairobi % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
