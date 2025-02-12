@@ -207,6 +207,45 @@ $(document).ready(function () {
     });
   };
 
+  // Event Countdown
+  const eventDateNairobi = new Date("February 20, 2025 00:00:00").getTime();
+
+  const countdownFunction = setInterval(function () {
+    const now = new Date().getTime();
+
+    // Calculate the time remaining for Nairobi
+    const distanceNairobi = eventDateNairobi - now;
+    const daysNairobi = Math.floor(distanceNairobi / (1000 * 60 * 60 * 24));
+    const hoursNairobi = Math.floor(
+      (distanceNairobi % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutesNairobi = Math.floor(
+      (distanceNairobi % (1000 * 60 * 60)) / (1000 * 60)
+    );
+    const secondsNairobi = Math.floor((distanceNairobi % (1000 * 60)) / 1000);
+
+    // Display countdown for Nairobi
+    if (distanceNairobi > 0) {
+      $(".countdown-timer").html(
+        daysNairobi +
+          "d " +
+          hoursNairobi +
+          "h " +
+          minutesNairobi +
+          "m " +
+          secondsNairobi +
+          "s "
+      );
+    } else {
+      $(".countdown-timer").html("Event is Live!");
+    }
+
+    // Stop the countdown if both events are live
+    if (distanceNairobi < 0) {
+      clearInterval(countdownFunction);
+    }
+  }, 1000);
+
   // Scroll Window Function
   const scrollWindow = () => {
     $scrollTop.on("click", function (e) {
