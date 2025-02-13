@@ -52,6 +52,69 @@ $(document).ready(function () {
   const $asideMenuLink = $(".aside-menu a");
   const $hamburger = $(".hamburger");
 
+  // // Show modal automatically on page load
+  // $("#infoModal").fadeIn();
+
+  // // Hide modal and show main content when clicking close
+  // $("#closeModal").click(function () {
+  //   $("#infoModal").fadeOut();
+  //   $("#mainContent").fadeIn();
+  // });
+
+  // Get the current date and time
+  let now = new Date().getTime();
+
+  // Set Valentine's offer start and end times
+  let startTime = new Date(new Date().getFullYear(), 1, 14, 0, 0, 0).getTime(); // Feb 14, 00:00:00
+  let endTime = new Date(new Date().getFullYear(), 1, 15, 0, 0, 0).getTime(); // Feb 15, 00:00:00
+
+  // Show the modal from now until Feb 15
+  if (now < endTime) {
+    $("#valentineModal").fadeIn();
+
+    // Hide "Claim Now" button if before Feb 14
+    if (now < startTime) {
+      $("#claimOffer").hide();
+      $("#countdownMessage").text("Offer starts in:");
+    } else {
+      $("#claimOffer").show();
+      $("#countdownMessage").text("Offer ends in:");
+    }
+
+    // Countdown Timer
+    function updateCountdown() {
+      let timer = setInterval(function () {
+        let now = new Date().getTime();
+        let targetTime = now < startTime ? startTime : endTime;
+        let remaining = targetTime - now;
+
+        if (remaining <= 0) {
+          clearInterval(timer);
+          $("#countdown").text("Expired!");
+        } else {
+          let hours = Math.floor(remaining / (1000 * 60 * 60));
+          let minutes = Math.floor(
+            (remaining % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          let seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+          $("#countdown").text(`${hours}h ${minutes}m ${seconds}s`);
+        }
+      }, 1000);
+    }
+
+    updateCountdown();
+  } else {
+    // Hide modal after Feb 15
+    $("#valentineModal").hide();
+    $("#mainContent").fadeIn();
+  }
+
+  // Close modal when clicking "Claim Now" or "Close"
+  $("#claimOffer, #closeModal").click(function () {
+    $("#valentineModal").fadeOut();
+    $("#mainContent").fadeIn();
+  });
+
   const date = new Date().getFullYear();
   $year.html(date);
 
