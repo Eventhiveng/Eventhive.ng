@@ -176,10 +176,44 @@ section {
 
 .modal-overlay #claimOffer {
   color: white;
-  background: red;
+  background: gray;
 }
 
 .modal-overlay #closeModal {
-  background: gray;
   color: white;
+  background: red;
 }
+
+/* Fixed cta */
+/* #fixed-cta {
+  position: fixed;
+  top: 150px;
+  right: 50px;
+  width: 250px;
+  background: var(--primary-color);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cta-content {
+  text-align: center;
+}
+
+.cta-button {
+  display: block;
+  background: white;
+  color: var(--primary-color-light);
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.hidden {
+  transform: translateX(150%);
+} */
