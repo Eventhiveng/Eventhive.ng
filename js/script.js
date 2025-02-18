@@ -505,7 +505,7 @@ $(document).ready(function () {
   const typeLocation = () => {
     const events = [
       "20th, February, 2025 | Landmark Event Center, VI, Lagos",
-      "19th, February, 2025 | Maison Fahrenheit Roof Top, VI, Lagos",
+      "19th, February, 2025 | Clubhouse, Landmark Towers, Victoria Island, Lagos",
       "19th, February, 2025 | Fourpoints by Sheraton, VI, Lagos",
     ];
 
