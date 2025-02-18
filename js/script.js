@@ -490,9 +490,9 @@ $(document).ready(function () {
   // Type Location
   const typeLocation = () => {
     const events = [
-      "20th, February, 2025 | Main Event",
-      "19th, February, 2025 | Pre-Event Happy Hour",
-      "19th, February, 2025 | Nigeria's Tech Leadership Roundtable",
+      "20th, February, 2025 | Landmark Event Center, VI, Lagos",
+      "19th, February, 2025 | Maison Fahrenheit Roof Top, VI, Lagos",
+      "19th, February, 2025 | Fourpoints by Sheraton, VI, Lagos",
     ];
 
     let eventIndex = 0;
