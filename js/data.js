@@ -396,7 +396,7 @@ const speakers = [
     name: "Reni Onafeko",
     title: "Chief Growth Officer,",
     company: "Glovo Nigeria",
-    image: "assets/images/speakers/daniel-adeyemi.jpg",
+    image: "assets/images/speakers/reni-onafeko.jpg",
     linkedIn: "#",
   },
 ];
