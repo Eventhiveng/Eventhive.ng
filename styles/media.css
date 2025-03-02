@@ -92,6 +92,7 @@
     flex-direction: column;
   }
 
+  /* Testimonial */
   #testimonial .testimonial-subwrapper {
     flex-direction: column-reverse;
   }
