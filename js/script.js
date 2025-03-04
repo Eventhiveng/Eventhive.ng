@@ -4,7 +4,7 @@ $(function () {
     // Fade out the preloader
     $("#preloader").fadeOut("500", function () {
       // Show the main content
-      $("#main-container").fadeIn("500", function () {
+      $(".main-container").fadeIn("500", function () {
         AOS.init({
           duration: 800,
         });
