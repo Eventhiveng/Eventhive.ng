@@ -1,3 +1,38 @@
+/* Preloader Styles */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#preloader .crypto-loader {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+/* Crypto Coin Effect */
+#preloader .coin {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffcc00, #d4a500);
+  box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+  animation: spin 1.5s linear infinite, glow 1.5s ease-in-out infinite alternate;
+}
+
 /* Header */
 /* Navbar */
 #navbar .nav-container {

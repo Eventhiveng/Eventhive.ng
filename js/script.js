@@ -1,3 +1,18 @@
+$(function () {
+  // Simulate loading delay for 1 second
+  setTimeout(function () {
+    // Fade out the preloader
+    $("#preloader").fadeOut("500", function () {
+      // Show the main content
+      $("#main-container").fadeIn("500", function () {
+        AOS.init({
+          duration: 800,
+        });
+      });
+    });
+  }, 1000); // Delay of 1 second
+});
+
 $(document).ready(function () {
   const $hamburger = $(".hamburger");
   const $asideMenu = $(".aside-container");
