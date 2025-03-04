@@ -7,6 +7,7 @@ $(function () {
       $(".main-container").fadeIn("500", function () {
         AOS.init({
           duration: 1000,
+          offset: 20,
         });
       });
     });
@@ -166,6 +167,8 @@ $(document).ready(function () {
         }
       }
     });
+
+    AOS.refresh();
   });
 
   toggleNav();
