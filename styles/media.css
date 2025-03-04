@@ -65,4 +65,12 @@
 /* Mobile */
 @media only screen and (max-width: 568px) {
   /* Hero */
+  #hero .hero-wrapper .icon.icon-1 {
+    left: 2%;
+    top: -15%;
+  }
+  #hero .hero-wrapper .icon.icon-2 {
+    right: 2%;
+    top: -13%;
+  }
 }
