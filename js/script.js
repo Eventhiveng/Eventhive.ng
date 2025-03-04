@@ -6,7 +6,7 @@ $(function () {
       // Show the main content
       $(".main-container").fadeIn("500", function () {
         AOS.init({
-          duration: 800,
+          duration: 1000,
         });
       });
     });
