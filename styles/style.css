@@ -217,7 +217,7 @@
 }
 
 #hero .hero-wrapper .hero-description {
-  margin: 40px auto;
+  margin: 20px auto;
   width: 80%;
 }
 
@@ -260,14 +260,14 @@
 #hero .hero-wrapper .icon.icon-1 {
   width: 60px;
   height: 60px;
-  left: -5%;
-  top: -5%;
+  left: 10px;
+  top: -12px;
 }
 #hero .hero-wrapper .icon.icon-2 {
   width: 80px;
   height: 80px;
-  right: -10%;
-  top: -3%;
+  right: -10px;
+  top: -10px;
 }
 #hero .hero-wrapper .icon.icon-3 {
   width: 70px;

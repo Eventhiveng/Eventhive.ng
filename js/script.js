@@ -7,7 +7,6 @@ $(function () {
       $(".main-container").fadeIn("500", function () {
         AOS.init({
           duration: 1000,
-          offset: 0,
         });
       });
     });
