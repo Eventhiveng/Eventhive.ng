@@ -73,4 +73,8 @@
     right: 2%;
     top: -13%;
   }
+
+  #hero .hero-wrapper .hero-buttons {
+    flex-direction: column;
+  }
 }
