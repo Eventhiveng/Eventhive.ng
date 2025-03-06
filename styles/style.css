@@ -255,6 +255,7 @@
 
 #hero .hero-wrapper .icon {
   position: absolute;
+  z-index: -1;
 }
 
 #hero .hero-wrapper .icon.icon-1 {
