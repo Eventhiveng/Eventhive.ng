@@ -4,17 +4,17 @@ const MarqueeBanner = () => {
   const marqueeData = [
     {
       ann: "Eventhive at 5: Celebrating 5years of excellence",
-      upcoming: "Upcoming event: Nigeria Telecoms Forum",
+      upcoming: "Upcoming event: UK-Africa Business Outlook",
       icon: "/favicon.ico",
     },
     {
       ann: "Eventhive at 5: Celebrating 5years of excellence",
-      upcoming: "Upcoming event: Nigeria Telecoms Forum",
+      upcoming: "Upcoming event: UK-Africa Business Outlook",
       icon: "/favicon.ico",
     },
     {
       ann: "Eventhive at 5: Celebrating 5years of excellence",
-      upcoming: "Upcoming event: Nigeria Telecoms Forum",
+      upcoming: "Upcoming event: UK-Africa Business Outlook",
       icon: "/favicon.ico",
     },
   ];
