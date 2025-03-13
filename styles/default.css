@@ -152,11 +152,7 @@ section {
   cursor: pointer;
 }
 
-.modal-overlay h2 {
-  margin-bottom: 20px;
-}
-
-.modal-overlay p {
+.modal-overlay :is(h2, h3, p) {
   margin-bottom: 20px;
 }
 

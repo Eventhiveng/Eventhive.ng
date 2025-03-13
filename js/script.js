@@ -1,5 +1,19 @@
-$(window).on("load", function () {
-  // Simulate loading delay
+// $(window).on("load", function () {
+//   // Simulate loading delay
+//   setTimeout(function () {
+//     // Fade out the preloader
+//     $("#preloader").fadeOut("500", function () {
+//       // Show the main content
+//       $("#main-container").fadeIn("500", function () {
+//         AOS.init({
+//           duration: 800,
+//         });
+//       });
+//     });
+//   }, 500);
+// });
+$(function () {
+  // Simulate loading delay for 1 second
   setTimeout(function () {
     // Fade out the preloader
     $("#preloader").fadeOut("500", function () {
@@ -10,7 +24,7 @@ $(window).on("load", function () {
         });
       });
     });
-  }, 500);
+  }, 1000); // Delay of 1 second
 });
 $(document).ready(function () {
   const $window = $(window);
