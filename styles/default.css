@@ -119,5 +119,5 @@ section {
 
 .modal-overlay #closeModal {
   color: white;
-  background: red;
+  background: var(--bg-black);
 }
