@@ -28,6 +28,15 @@ $(document).ready(function () {
     },
   });
 
+  // Show modal automatically on page load
+  $("#announcementModal").fadeIn();
+
+  // Hide modal and show main content when clicking close
+  $("#closeModal").click(function () {
+    $("#announcementModal").fadeOut();
+    // $("#mainContent").fadeIn();
+  });
+
   // Count Up Function
   const countUp = (scrollTop, windowHeight) => {
     $odometer.each(function () {
