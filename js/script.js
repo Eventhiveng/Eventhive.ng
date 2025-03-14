@@ -19,6 +19,15 @@ $(document).ready(function () {
   // Set current year
   $(".year").html(year);
 
+  // Show modal automatically on page load
+  $("#announcementModal").fadeIn();
+
+  // Hide modal and show main content when clicking close
+  $("#closeModal").click(function () {
+    $("#announcementModal").fadeOut();
+    // $("#mainContent").fadeIn();
+  });
+
   // Initialize highlights slider
   $(".highlights-slider").slick({
     infinite: true,
