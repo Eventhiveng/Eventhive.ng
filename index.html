@@ -52,13 +52,36 @@
         <p>Secure your pass at <strong>50%</strong> off standard price now!</p>
         <p>Hurry while the offer lasts!</p>
 
-        <a
+        <!-- <a
           href="https://www.eventbrite.com/e/africa-fintech-live-2025-tickets-1068949499729"
           target="_blank"
         >
           <button id="claimOffer">Get Ticket</button>
-        </a>
+        </a> -->
+        <button id="claimOffer" class="get-ticket-btn">Get Ticket</button>
         <button id="closeModal">Close</button>
+      </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="ticket-popup" class="popup">
+      <div class="popup-container">
+        <div class="popup-content">
+          <span class="close-btn">&times;</span>
+          <h2>Select Your Ticketing Platform</h2>
+          <a
+            href="https://example-ticket1.com"
+            target="_blank"
+            class="btn btn-pry"
+            >Get a Ticket (Tix)
+          </a>
+          <a
+            href="https://www.eventbrite.com/e/africa-fintech-live-2025-tickets-1068949499729"
+            target="_blank"
+            class="btn btn-sec"
+            >Get a Ticket (Eventbrite)</a
+          >
+        </div>
       </div>
     </div>
 
@@ -76,10 +99,8 @@
               </div>
 
               <div class="button mobile-btn">
-                <a
-                  href="https://www.eventbrite.com/e/africa-fintech-live-2025-tickets-1068949499729"
-                  target="_blank"
-                  class="btn btn-pry"
+                <div
+                  class="btn btn-pry get-ticket-btn"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
@@ -90,7 +111,7 @@
                   <span class="icon back">
                     <iconify-icon icon="ph:ticket"></iconify-icon>
                   </span>
-                </a>
+                </div>
               </div>
               <div class="nav-links">
                 <ul data-aos="fade-up" data-aos-delay="200">
@@ -106,10 +127,22 @@
                 </a>
               </div>
               <div class="button">
-                <a
-                  href="https://www.eventbrite.com/e/africa-fintech-live-2025-tickets-1068949499729"
-                  target="_blank"
-                  class="btn btn-pry"
+                <div
+                  class="btn btn-pry get-ticket-btn"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <span class="icon front">
+                    <iconify-icon icon="ph:ticket"></iconify-icon>
+                  </span>
+                  <span class="text">Ticket </span>
+                  <span class="icon back">
+                    <iconify-icon icon="ph:ticket"></iconify-icon>
+                  </span>
+                </div>
+                <!-- <a
+                  href="#"
+                  class="btn btn-pry get-ticket-btn"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
@@ -120,7 +153,7 @@
                   <span class="icon back">
                     <iconify-icon icon="ph:ticket"></iconify-icon>
                   </span>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -1374,11 +1407,20 @@
                   </div>
                 </div>
                 <div class="button" data-aos="fade-up" data-aos-delay="150">
-                  <a
-                    href="https://www.eventbrite.com/e/africa-fintech-live-2025-tickets-1068949499729"
-                    target="_blank"
-                    class="btn btn-pry"
+                  <div
+                    class="btn btn-pry get-ticket-btn"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
                   >
+                    <span class="icon front">
+                      <iconify-icon icon="ph:ticket"></iconify-icon>
+                    </span>
+                    <span class="text">Ticket </span>
+                    <span class="icon back">
+                      <iconify-icon icon="ph:ticket"></iconify-icon>
+                    </span>
+                  </div>
+                  <!-- <a href="#" class="btn btn-pry get-ticket-btn">
                     <span class="icon front">
                       <iconify-icon icon="ph:ticket"></iconify-icon>
                     </span>
@@ -1386,7 +1428,7 @@
                     <span class="icon back">
                       <iconify-icon icon="ph:ticket"></iconify-icon>
                     </span>
-                  </a>
+                  </a> -->
                 </div>
               </div>
               <div class="right">
@@ -1485,7 +1527,6 @@
                   <li>
                     <a
                       href="https://www.facebook.com/share/JqRxmCpGDEoj8RZM/?mibextid=LQQJ4d"
-                      target="_blank"
                       ><iconify-icon icon="fa:facebook"></iconify-icon>
                     </a>
                   </li>
