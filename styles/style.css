@@ -22,15 +22,6 @@
   animation: spin 1s linear infinite;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /* Navbar */
 #nav .nav-container {
   background: var(--primary-color);
@@ -728,12 +719,18 @@
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 #contact .contact-wrapper h2 {
   font-size: clamp(24px, 3vw, 48px);
 }
+
+/* #contact .contact-wrapper .cct {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+} */
 
 #contact .contact-wrapper p {
   font-size: 20px;
