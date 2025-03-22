@@ -37,7 +37,12 @@
 #nav .nav-wrapper .logo {
   display: flex;
   align-items: center;
+  gap: 5px;
+}
+
+#nav .nav-wrapper .logo a img {
   width: 100px;
+  object-fit: contain;
 }
 
 #nav .nav-wrapper .nav-links ul {
