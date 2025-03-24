@@ -377,7 +377,7 @@
 }
 
 #why-attend .why-attend-wrapper .why-attend-box p {
-  text-align: justify;
+  /* text-align: justify; */
   color: #333;
 }
 
@@ -467,7 +467,7 @@
 }
 
 #partner .partner-wrapper .partner-box p {
-  text-align: justify;
+  /* text-align: justify; */
   color: #333;
 }
 
