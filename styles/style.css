@@ -230,6 +230,10 @@
   color: var(--white);
 }
 
+#hero .hero-container .hero-wrapper .floating-loc .date-loc .date {
+  margin-bottom: 10px;
+}
+
 #hero .hero-container .hero-wrapper .floating-logo {
   position: absolute;
   top: 0;
