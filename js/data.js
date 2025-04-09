@@ -1,5 +1,12 @@
 const speakers = [
   {
+    name: "Odunayo Ojo",
+    title: "CEO,",
+    company: "Updc Plc",
+    image: "assets/images/speakers/odunayo-ojo.png",
+    linkedIn: "#",
+  },
+  {
     name: "Tobi Akerele",
     title: "Group Chief Executive Officer,",
     company: "GIDI AFRICA",
@@ -25,13 +32,6 @@ const speakers = [
     title: "Managing Director,",
     company: "M&E Kaiser Limited",
     image: "assets/images/speakers/jamila-faniyi.jpeg",
-    linkedIn: "#",
-  },
-  {
-    name: "Odunayo Ojo",
-    title: "CEO,",
-    company: "Updc Plc",
-    image: "assets/images/speakers/odunayo-ojo.png",
     linkedIn: "#",
   },
   {
