@@ -55,6 +55,20 @@ const speakers = [
     image: "assets/images/speakers/femi-akintunde.jpg",
     linkedIn: "#",
   },
+  {
+    name: "John Oamen",
+    title: "CEO,",
+    company: "CutStruct",
+    image: "assets/images/speakers/john-oamen.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Deji Ali",
+    title: "CEO ,",
+    company: "MixtaAfrica",
+    image: "assets/images/speakers/deji-alli.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
