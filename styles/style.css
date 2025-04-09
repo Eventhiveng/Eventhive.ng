@@ -1158,7 +1158,9 @@
 #speakers-section .lightbox-overlay .speaker-box .image img {
   max-width: 200px;
   max-height: 200px;
+  aspect-ratio: 1;
   border-radius: 50%;
+  object-position: top;
 }
 
 #speakers-section .lightbox-overlay .speaker-box .speaker-info {
