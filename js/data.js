@@ -7,6 +7,13 @@ const speakers = [
     linkedIn: "#",
   },
   {
+    name: "Sade Hughes",
+    title: "Country Manager,",
+    company: "Mixta Nigeria",
+    image: "assets/images/speakers/sade-hughes.jpeg",
+    linkedIn: "#",
+  },
+  {
     name: "Tobi Akerele",
     title: "Group Chief Executive Officer,",
     company: "GIDI AFRICA",
