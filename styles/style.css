@@ -247,7 +247,7 @@
   height: 100%;
   width: 100%;
   background: linear-gradient(to right, #011556cc, #00000080),
-    url(/assets/section-img/76.jpg) no-repeat center/cover;
+    url(/assets/section-img/hero-image.jpg) no-repeat center/cover;
   position: relative;
   z-index: -1;
 }
