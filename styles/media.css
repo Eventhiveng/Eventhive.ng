@@ -13,6 +13,11 @@
   #partner .partner-wrapper .partner-box {
     flex: 0 0 calc((100% - 30px) / 2);
   }
+
+  /* Speakers */
+  #speakers .speakers-box-container .speaker-box {
+    flex: 0 0 calc((100% - 60px) / 3);
+  }
 }
 
 /* Tablet */
@@ -52,6 +57,11 @@
     flex: 0 0 100%;
   }
 
+  /* Speakers */
+  #speakers .speakers-box-container .speaker-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
   /* Footer */
   #footer .footer-wrapper .top {
     flex-direction: column;
@@ -76,5 +86,14 @@
 
   #hero .hero-wrapper .hero-buttons {
     flex-direction: column;
+  }
+
+  /* Speakers */
+  #speakers .speakers-box-container .speaker-box {
+    flex: 0 0 100%;
+  }
+
+  #speakers .speakers-box-container .speaker-box .speaker-image {
+    height: auto;
   }
 }
