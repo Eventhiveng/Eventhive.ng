@@ -828,7 +828,22 @@
 }
 
 /* Event Recap */
-#event-recap-section .event-recap-wrapper .video-container {
+#event-recap .event-recap-container {
+  position: relative;
+}
+
+#event-recap .event-recap-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #0073ff8f, #00ff8000);
+  filter: blur(120px);
+  animation: moveBackground 5s infinite alternate;
+}
+#event-recap .event-recap-wrapper .video-container {
   width: 100%;
   height: 700px;
   max-height: 700px;
@@ -836,14 +851,81 @@
   overflow: hidden;
 }
 
-#event-recap-section .event-recap-wrapper .video-container iframe {
+#event-recap .event-recap-wrapper .video-container iframe {
   width: 100%;
   height: 100%;
 }
 
-#event-recap-section .button {
+#event-recap .button {
   margin-top: 30px;
   text-align: center;
+}
+
+/* Timeline */
+#timeline .timeline-wrapper {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* text-align: center; */
+  gap: 50px;
+}
+
+#timeline .timeline-wrapper h2 {
+  font-size: clamp(24px, 3vw, 48px);
+}
+
+#timeline .timeline-subwrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 2rem;
+  border-left: 3px solid #007bff;
+}
+
+#timeline .timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem 0;
+  position: relative;
+}
+
+#timeline .timeline-item .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: -9px;
+  top: 4px;
+}
+
+#timeline .dot.blue {
+  background-color: blue;
+}
+#timeline .dot.yellow {
+  background-color: gold;
+}
+#timeline .dot.green {
+  background-color: limegreen;
+}
+#timeline .dot.pink {
+  background-color: deeppink;
+}
+
+#timeline .text {
+  margin-left: 1.5rem;
+}
+
+#timeline .text h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#timeline .text p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
 }
 
 /* Contact */
