@@ -166,3 +166,13 @@
     box-shadow: 0px 0px 20px rgba(255, 204, 0, 1);
   }
 }
+
+/* Shine */
+@keyframes shine {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
