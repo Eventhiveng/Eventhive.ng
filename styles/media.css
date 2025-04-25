@@ -1,5 +1,13 @@
 /* Big screen */
 @media only screen and (max-width: 1200px) {
+  /* Who attends */
+  #who-attends .who-attends-cards {
+    flex: 1 1 calc((100% - 30px) / 2);
+  }
+
+  #who-attends .who-attends-cards .image {
+    height: 300px;
+  }
 }
 
 /* Tap Pro */
@@ -98,6 +106,11 @@
   /* Why attend */
   #why-attend .why-attend-box-container .why-attend-box {
     flex: 0 0 100%;
+  }
+
+  /* Who attends */
+  #who-attends .who-attends-cards {
+    flex: 1 1 100%;
   }
 
   /* Partner */

@@ -508,6 +508,91 @@
   color: #fefefef8;
 }
 
+/* Who-attend */
+#who-attends .section-header h2 {
+  color: transparent;
+  background: linear-gradient(45deg, #990099, #e6007e);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#who-attends .section-header h2 span {
+  color: #e6007e;
+}
+
+#who-attends .who-attends-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#who-attends .who-attends-cards {
+  flex: 1 1 calc((100% - 90px) / 4);
+  /* max-width: 300px; */
+  /* background: #f2f2f2; */
+  border-radius: 8px;
+  padding: 30px 10px 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  /* text-align: left; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#who-attends .who-attends-cards h3 {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#who-attends .who-attends-cards ul {
+  padding-left: 1.5rem;
+}
+
+#who-attends .who-attends-cards ul li {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 90%;
+}
+
+#who-attends .who-attends-cards ul li::before {
+  content: "–";
+  position: absolute;
+  left: -20px;
+  /* padding-left: 1.5rem; */
+}
+
+#who-attends .who-attends-cards .image {
+  height: 250px;
+}
+
+#who-attends .who-attends-cards .image img {
+  border-radius: 4px;
+  object-position: 10%;
+}
+
+#who-attends .who-attends-cards.blue {
+  background: #c2f4ff;
+  background: linear-gradient(to bottom right, #56ccf2, #2f80ed);
+}
+
+#who-attends .who-attends-cards.orange {
+  background: linear-gradient(to bottom right, #ff7043, #ffab91);
+  background: linear-gradient(to bottom right, #ff9966, #ff5e62);
+}
+
+#who-attends .who-attends-cards.green {
+  background: #a3f7b5;
+  background: linear-gradient(to bottom right, #7ee8a7, #4caf50);
+}
+
+#who-attends .who-attends-cards.purple {
+  background: linear-gradient(to bottom right, #6a1b9a, #ab47bc);
+  background: linear-gradient(to bottom, #b06ab3, #4568dc);
+}
+
 /* Partner */
 #partner .partner-wrapper {
   display: flex;
