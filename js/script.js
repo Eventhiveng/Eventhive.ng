@@ -28,8 +28,8 @@ $(document).ready(function () {
     },
   });
 
-  // Show modal automatically on page load
-  $("#announcementModal").fadeIn();
+  // // Show modal automatically on page load
+  // $("#announcementModal").fadeIn();
 
   // Hide modal and show main content when clicking close
   $("#closeModal").click(function () {
