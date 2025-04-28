@@ -71,9 +71,16 @@ const speakers = [
   },
   {
     name: "Deji Ali",
-    title: "CEO ,",
+    title: "CEO,",
     company: "MixtaAfrica",
     image: "assets/images/speakers/deji-alli.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Oyindamola Bode-Olumodeji",
+    title: "CEO,",
+    company: "SezaPro",
+    image: "assets/images/speakers/oyindamola-bode-olumodeji.jpeg",
     linkedIn: "#",
   },
 ];
