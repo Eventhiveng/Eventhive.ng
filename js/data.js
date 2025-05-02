@@ -83,6 +83,13 @@ const speakers = [
     image: "assets/images/speakers/oyindamola-bode-olumodeji.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Akpor Ikogho",
+    title: "Head,",
+    company: "Real Estate Practice Mark Renee Legal Practitioners",
+    image: "assets/images/speakers/akpor-ikogho.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
