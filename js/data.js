@@ -31,7 +31,7 @@ const speakers = [
     name: "Bolanle Ibitola",
     title: "Managing Director",
     company: "Crayon Development",
-    image: "assets/images/speakers/bolanle-ibitola.jpeg",
+    image: "assets/images/speakers/bolanle-ibitola.jpg",
     linkedIn: "#",
   },
   {
@@ -70,10 +70,10 @@ const speakers = [
     linkedIn: "#",
   },
   {
-    name: "Deji Ali",
-    title: "CEO,",
-    company: "MixtaAfrica",
-    image: "assets/images/speakers/deji-alli.jpg",
+    name: "Ejide Akinbiyi",
+    title: "Co-Founder,",
+    company: "MaterialsPro",
+    image: "assets/images/speakers/ejide-akinbiyi.jpg",
     linkedIn: "#",
   },
   {
@@ -88,6 +88,20 @@ const speakers = [
     title: "Head,",
     company: "Real Estate Practice Mark Renee Legal Practitioners",
     image: "assets/images/speakers/akpor-ikogho.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Dr Alo Ayobami",
+    title: "CEO,",
+    company: "Axial Pacific Realty",
+    image: "assets/images/speakers/ayobami-alo.png",
+    linkedIn: "#",
+  },
+  {
+    name: "Paul Foh",
+    title: "CEO,",
+    company: "Sales Factory Global",
+    image: "assets/images/speakers/paul-foh.jpg",
     linkedIn: "#",
   },
 ];
