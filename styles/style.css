@@ -658,9 +658,10 @@
 }
 
 /* Sponsors */
-/* #sponsors .sponsors-container {
+#sponsors .sponsors-container {
   background: var(--white);
-} */
+}
+
 #sponsors .sponsors-grid-container {
   display: flex;
   flex-direction: column;
@@ -690,7 +691,7 @@
   font-size: 32px;
   letter-spacing: 2px;
   color: #ffffff;
-  background: linear-gradient(90deg, #00ffe7, #8e2de2);
+  background: linear-gradient(90deg, #3f3939, #8e2de2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
