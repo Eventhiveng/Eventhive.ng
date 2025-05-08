@@ -104,6 +104,10 @@
   color: var(--white);
 }
 
+.section-header.black h2 {
+  color: var(--black);
+}
+
 /*  */
 .text-sec {
   color: var(--secondary-color);

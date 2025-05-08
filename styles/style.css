@@ -882,9 +882,10 @@
 }
 
 /* Sponsors */
-/* #sponsors .sponsors-container {
+#sponsors .sponsors-container {
   background: var(--white);
-} */
+}
+
 #sponsors .sponsors-grid-container {
   display: flex;
   flex-direction: column;
@@ -898,12 +899,12 @@
 }
 
 #sponsors .sponsors-grid .sponsors-grid-header {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 900;
   font-size: 28px;
   margin-bottom: 20px;
   letter-spacing: 3px;
-  background: linear-gradient(#ffffff, #a49898);
+  background: linear-gradient(#393434, #a49898);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
