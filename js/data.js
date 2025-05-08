@@ -104,6 +104,27 @@ const speakers = [
     image: "assets/images/speakers/paul-foh.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Azubike Emodi",
+    title: "MD/CEO,",
+    company: "Afriland Properties Plc",
+    image: "assets/images/speakers/azubike-emodi.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Uzoma James",
+    title: "Regional Manager, West Africa,",
+    company: "Yellowcard",
+    image: "assets/images/speakers/uzoma-james.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Lerato Lekena-Okoro",
+    title: "",
+    company: "Realtor, Property Broker, Author & Community Builder",
+    image: "assets/images/speakers/lerato-lekena-okoro.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
