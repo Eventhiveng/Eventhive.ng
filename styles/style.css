@@ -688,7 +688,7 @@
 #sponsors .sponsors-grid .sponsors-grid-header {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 32px;
+  font-size: clamp(20px, 3vw, 32px);
   letter-spacing: 2px;
   color: #ffffff;
   background: linear-gradient(90deg, #3f3939, #8e2de2);
