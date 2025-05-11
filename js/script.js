@@ -1,12 +1,12 @@
-// $(window).on("load", function () {
-//   $("#preloader").fadeOut(500, () => {
-//     $(".main-container").fadeIn(500, () => {
-//       AOS.init({
-//         duration: 1000,
-//       });
-//     });
-//   });
-// });
+$(window).on("load", function () {
+  $("#preloader").fadeOut(500, () => {
+    $(".main-container").fadeIn(500, () => {
+      AOS.init({
+        duration: 1000,
+      });
+    });
+  });
+});
 
 $(document).ready(function () {
   const $window = $(window);
