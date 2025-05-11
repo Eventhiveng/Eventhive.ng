@@ -33,14 +33,14 @@
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
-    /* Agenda */
-    #agenda .agenda-item {
-      min-height: auto;
-    }
-  
-    #agenda .agenda-item .right {
-      display: none;
-    }
+  /* Agenda */
+  #agenda .agenda-item {
+    min-height: auto;
+  }
+
+  #agenda .agenda-item .right {
+    display: none;
+  }
 
   /* Footer */
   #footer .footer-wrapper .footer-box-container .box {
@@ -61,6 +61,10 @@
 
   #navbar .nav-wrapper .hamburger-icons {
     display: block !important;
+  }
+
+  #hero .hero-wrapper {
+    width: 100%;
   }
 
   /* About */
