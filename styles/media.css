@@ -1,134 +1,124 @@
 /* Big screen */
 @media only screen and (max-width: 1200px) {
+  /* Count up */
+  #countup .countup-wrapper .countup-box {
+    flex: 0 0 calc((100% - 90px) / 3);
+  }
 }
 
 /* Tap Pro */
 @media only screen and (max-width: 991px) {
-  /* Nav */
-  #nav .nav-wrapper .nav-links {
+  /* About */
+  #about .about-wrapper .content ~ .image {
     display: none;
   }
 
-  #nav .nav-wrapper .hamburger {
-    display: flex;
-  }
-
-  #nav .nav-wrapper .logo {
-    margin-left: 50px;
-  }
-
-  /* Hero */
-  #hero .hero-wrapper .hero-header {
-    width: 100%;
-  }
-
-  #hero .hero-wrapper .hero-description {
-    width: 100%;
-    text-align: justify;
-  }
-
-  /* Testimonial */
-  #testimonial .testimonial-container {
-    height: auto;
-  }
-
-  #testimonial .testimonial-wrapper {
-    flex-direction: column;
-  }
-
-  /* What's new */
-  #whats-new .whats-new-wrapper .whats-new-box {
+  /* Whats new */
+  #whats-new .whats-new-box-container .whats-new-box {
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
-  /* Key */
-  #key .key-wrapper .key-box {
-    flex: 0 0 calc((100% - 90px) / 4);
+  /* Objectives */
+  #objectives .top {
+    flex-direction: column;
   }
 
   /* Partner */
-  #partner .partner-wrapper .partner-box {
+  #partner .partner-box-container .partner-box {
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
-  /* Speakers */
-  #speakers .speakers-wrapper .speaker-box {
+  /* Speaker */
+  #speakers .speakers-box-container .speaker-box {
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
-  /* Contact */
-  #contact .contact-container {
-    height: auto;
+    /* Agenda */
+    #agenda .agenda-item {
+      min-height: auto;
+    }
+  
+    #agenda .agenda-item .right {
+      display: none;
+    }
+
+  /* Footer */
+  #footer .footer-wrapper .footer-box-container .box {
+    flex: 0 0 calc((100% - 30px) / 2);
   }
 
-  #contact .contact-wrapper {
-    flex-direction: column;
+  #footer .footer-wrapper .footer-box-container :is(.email, .logo) {
+    align-items: flex-end;
   }
 }
 
 /* Tablet */
 @media only screen and (max-width: 768px) {
   /* Nav */
-  #nav .nav-wrapper .button {
+  #navbar .nav-wrapper .nav-links {
     display: none;
   }
 
-  #nav .nav-wrapper .mobile-btn {
-    display: block;
+  #navbar .nav-wrapper .hamburger-icons {
+    display: block !important;
   }
 
   /* About */
   #about .about-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
-  /* Highlight */
-  #highlight .highlight-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  /* What's new */
-  #whats-new .whats-new-wrapper .whats-new-box {
+  /* Whats new */
+  #whats-new .whats-new-box-container .whats-new-box {
     flex: 0 0 100%;
   }
 
-  /* Key */
-  #key .key-wrapper .key-box {
+  /* Key themes */
+  #key .key-box-container .key-box {
     flex: 0 0 calc((100% - 60px) / 3);
   }
 
   /* Partner */
-  #partner .partner-wrapper .partner-box {
+  #partner .partner-box-container .partner-box {
     flex: 0 0 100%;
   }
 
-  /* Speakers */
-  #speakers .speakers-wrapper .speaker-box {
+  /* Speaker */
+  #speakers .speakers-box-container .speaker-box {
     flex: 0 0 100%;
-  }
-
-  /* Footer */
-  #footer .footer-wrapper .top {
-    flex-direction: column;
   }
 }
 
 /* Mobile */
 @media only screen and (max-width: 568px) {
-  /* Highlight */
-  #highlight .highlight-wrapper .v-stretch {
-    grid-row: span 1;
-  }
-  #highlight .highlight-wrapper .h-stretch {
-    grid-column: span 1;
+  /* Count up */
+  #countup .countup-wrapper .countup-box {
+    flex: 0 0 100%;
   }
 
-  /* Key */
-  #key .key-wrapper .key-box {
+  /* Key themes */
+  #key .key-box-container .key-box {
     flex: 0 0 calc((100% - 30px) / 2);
   }
-  /* #highlight .highlight-wrapper .big-stretch {
-    grid-column: span 1;
-    grid-row: span 1;
-  } */
+
+  /* Footer */
+  #footer .footer-wrapper h3 {
+    width: 100%;
+  }
+
+  #footer .footer-wrapper .footer-box-container .box {
+    flex: 0 0 100%;
+  }
+
+  #footer .footer-wrapper .footer-box-container .phone {
+    border: none;
+  }
+
+  #footer .footer-wrapper .footer-box-container :is(.email, .logo) {
+    align-items: flex-start;
+  }
+
+  #footer .footer-wrapper .footer-box-container .email {
+    padding: 0;
+  }
 }
