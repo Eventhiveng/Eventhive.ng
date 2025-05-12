@@ -125,6 +125,13 @@ const speakers = [
     image: "assets/images/speakers/lerato-lekena-okoro.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Suzanne Oluwole",
+    title: "Director",
+    company: "Trillium Real Estate Partners",
+    image: "assets/images/speakers/suzanne-oluwole.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
