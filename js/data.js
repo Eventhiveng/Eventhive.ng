@@ -132,6 +132,13 @@ const speakers = [
     image: "assets/images/speakers/suzanne-oluwole.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Johnson Owoeye",
+    title: "COO,",
+    company: "Sysserve",
+    image: "assets/images/speakers/johnson-owoeye.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
