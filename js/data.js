@@ -139,6 +139,13 @@ const speakers = [
     image: "assets/images/speakers/johnson-owoeye.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Adeyinka Adekoya",
+    title: "Vice President, Energy & Real Estate Ecosystem,",
+    company: "Interswitch Group",
+    image: "assets/images/speakers/adeyinka-adekoya.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const box1Images = [
