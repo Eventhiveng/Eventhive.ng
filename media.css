@@ -1,0 +1,118 @@
+/* Big screen */
+@media only screen and (max-width: 1200px) {
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 calc((100% - 60px) / 3);
+  }
+  #countup .key-stats-grid {
+    flex-direction: column;
+  }
+}
+
+/* Responsive */
+/* @media (max-width: 900px) {
+  .key-stats-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .key-stats-center {
+    margin: 30px 0;
+  }
+} */
+
+/* Tap Pro */
+@media only screen and (max-width: 991px) {
+  /* About */
+  #about .about-wrapper {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  #about .about-wrapper .left .image {
+    height: auto;
+  }
+
+  /* Objectives */
+  #objectives .top {
+    flex-direction: column;
+  }
+
+  /* Countup */
+  #countup .key-stats-center {
+    display: none;
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Agenda */
+  #agenda .agenda-item {
+    min-height: auto;
+  }
+
+  #agenda .agenda-item .right {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  /* Nav */
+  #nav .nav-wrapper .nav-links {
+    display: none;
+  }
+
+  #nav .nav-wrapper .hamburger {
+    display: flex;
+  }
+
+  #nav .nav-wrapper .button {
+    display: none;
+  }
+
+  /* Hero */
+  #hero .hero-wrapper .right {
+    display: none;
+  }
+
+  #hero .left .button {
+    display: block;
+  }
+
+  #hero .hero-socials {
+    display: none;
+  }
+
+  /* Partner */
+  #partner .partner-box-container .partner-box {
+    flex: 0 0 100%;
+  }
+
+  #partner .buttons {
+    flex-direction: column;
+  }
+
+  /* Footer */
+  #footer .footer-wrapper .top {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  #footer .footer-wrapper .top .quick-links {
+    display: block;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 568px) {
+  /* Speakers */
+  #speakers .speakers-box-container .speaker-box .speaker-image {
+    height: auto;
+  }
+
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 100%;
+  }
+}
