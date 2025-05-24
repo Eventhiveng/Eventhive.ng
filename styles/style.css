@@ -347,7 +347,7 @@
   gap: 15px;
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); */
   transform: perspective(1000px) rotateY(-5deg);
   transition: transform 0.3s ease;
 }
