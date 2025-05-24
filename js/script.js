@@ -7,15 +7,15 @@
 //   }, 500);
 // });
 
-$(window).on("load", function () {
-  $("#preloader").fadeOut(500, () => {
-    $("main").fadeIn(500, () => {
-      AOS.init({
-        duration: 1000,
-      });
-    });
-  });
-});
+// $(window).on("load", function () {
+//   $("#preloader").fadeOut(500, () => {
+//     $("main").fadeIn(500, () => {
+//       AOS.init({
+//         duration: 1000,
+//       });
+//     });
+//   });
+// });
 
 $(function () {
   // Simulate loading delay for 1 second
