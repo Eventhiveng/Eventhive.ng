@@ -1,12 +1,21 @@
-// $(window).on("load", function () {
-//   $("#preloader").fadeOut(500, () => {
-//     $("main").fadeIn(500, () => {
-//       AOS.init({
-//         duration: 1000,
-//       });
-//     });
-//   });
+// Preloader
+// window.addEventListener("load", function () {
+//   const preloader = document.getElementById("preloader");
+//   preloader.style.opacity = "0";
+//   setTimeout(() => {
+//     preloader.style.display = "none";
+//   }, 500);
 // });
+
+$(window).on("load", function () {
+  $("#preloader").fadeOut(500, () => {
+    $("main").fadeIn(500, () => {
+      AOS.init({
+        duration: 1000,
+      });
+    });
+  });
+});
 
 $(function () {
   // Simulate loading delay for 1 second
@@ -26,19 +35,74 @@ $(function () {
 $(document).ready(function () {
   const $hamburger = $(".hamburger");
   const $asideMenu = $(".aside-container");
-  const $asideMenuLink = $(".aside-container a");
+  const $navLinks = $("#nav .nav-links a");
+  const $asideLinks = $("#aside .nav-links a");
+  const $nav = $("#nav");
 
-  const $attendeeSlideOne = $(".who-attends-slide-1");
-  const $attendeeSlideTwo = $(".who-attends-slide-2");
-  const $attendeeSlideThree = $(".who-attends-slide-3");
+  // const $attendeeSlideOne = $(".who-attends-slide-1");
+  // const $attendeeSlideTwo = $(".who-attends-slide-2");
+  // const $attendeeSlideThree = $(".who-attends-slide-3");
 
-  const $highlightSlideOne = $(".highlight-slider-1");
-  const $highlightSlideTwo = $(".highlight-slider-2");
-  const $highlightSlideThree = $(".highlight-slider-3");
+  // const $highlightSlideOne = $(".highlight-slider-1");
+  // const $highlightSlideTwo = $(".highlight-slider-2");
+  // const $highlightSlideThree = $(".highlight-slider-3");
 
-  const $slides = $(
-    ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
-  );
+  // const $slides = $(
+  //   ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
+  // );
+
+  // Handle navbar scroll
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 200) {
+      $nav.addClass("fixed");
+      $("#nav .logo img").attr("src", "/assets/logo/nmto-blue-logo.png");
+    } else {
+      $nav.removeClass("fixed");
+      $("#nav .logo img").attr("src", "/assets/logo/nmto-white-logo.png");
+    }
+  });
+
+  // Handle active class for navigation links
+  function setActiveLink($link) {
+    // Remove active class from all links
+    $navLinks.parent().removeClass("active");
+    $asideLinks.parent().removeClass("active");
+
+    // Add active class to clicked link's parent li
+    $link.parent().addClass("active");
+
+    // Find corresponding link in other menu and make it active
+    const href = $link.attr("href");
+    if (href) {
+      if ($link.parent().parent().hasClass("aside-container")) {
+        $navLinks.filter(`[href="${href}"]`).parent().addClass("active");
+      } else {
+        $asideLinks.filter(`[href="${href}"]`).parent().addClass("active");
+      }
+    }
+  }
+
+  // Handle click on main nav links
+  $navLinks.on("click", function (e) {
+    e.preventDefault();
+    setActiveLink($(this));
+    const href = $(this).attr("href");
+    if (href) {
+      window.location.href = href;
+    }
+  });
+
+  // Handle click on aside nav links
+  $asideLinks.on("click", function (e) {
+    e.preventDefault();
+    setActiveLink($(this));
+    $asideMenu.removeClass("open");
+    $hamburger.removeClass("open");
+    const href = $(this).attr("href");
+    if (href) {
+      window.location.href = href;
+    }
+  });
 
   // Toggle Nav
   const toggleNav = () => {
@@ -48,12 +112,7 @@ $(document).ready(function () {
       $asideMenu.toggleClass("open");
     });
 
-    // Close the aside menu when a link is clicked
-    $asideMenuLink.on("click", function () {
-      $asideMenu.removeClass("open");
-      $hamburger.removeClass("open");
-    });
-
+    // Close the aside menu when clicking outside
     $(document).on("click", function (event) {
       if (
         !$asideMenu.is(event.target) &&
@@ -67,118 +126,118 @@ $(document).ready(function () {
     });
   };
 
-  const attendeeComp = () => {
-    // Function to calculate slidesToShow based on window width
-    function getSlidesToShow() {
-      return Math.ceil($(window).width() / 250);
-    }
+  // const attendeeComp = () => {
+  //   // Function to calculate slidesToShow based on window width
+  //   function getSlidesToShow() {
+  //     return Math.ceil($(window).width() / 250);
+  //   }
 
-    const slickSettings1 = {
-      infinite: true,
-      speed: 2000,
-      autoplay: true,
-      autoplaySpeed: 10,
-      slidesToShow: getSlidesToShow(),
-      slidesToScroll: 1,
-      lazyLoad: "ondemand",
-      arrows: false,
-      cssEase: "linear",
-      pauseOnHover: false,
-      pauseOnFocus: false,
-      draggable: false,
-    };
+  //   const slickSettings1 = {
+  //     infinite: true,
+  //     speed: 2000,
+  //     autoplay: true,
+  //     autoplaySpeed: 10,
+  //     slidesToShow: getSlidesToShow(),
+  //     slidesToScroll: 1,
+  //     lazyLoad: "ondemand",
+  //     arrows: false,
+  //     cssEase: "linear",
+  //     pauseOnHover: false,
+  //     pauseOnFocus: false,
+  //     draggable: false,
+  //   };
 
-    const slickSettings2 = $.extend({}, slickSettings1, {
-      speed: 3000,
-      rtl: true,
-    });
+  //   const slickSettings2 = $.extend({}, slickSettings1, {
+  //     speed: 3000,
+  //     rtl: true,
+  //   });
 
-    const slickSettings3 = $.extend({}, slickSettings1, {
-      speed: 6000,
-    });
+  //   const slickSettings3 = $.extend({}, slickSettings1, {
+  //     speed: 6000,
+  //   });
 
-    $attendeeSlideOne.slick(slickSettings1);
-    $attendeeSlideTwo.slick(slickSettings2);
-    $attendeeSlideThree.slick(slickSettings3);
+  //   $attendeeSlideOne.slick(slickSettings1);
+  //   $attendeeSlideTwo.slick(slickSettings2);
+  //   $attendeeSlideThree.slick(slickSettings3);
 
-    // Throttle function to optimize resize event handling
-    let resizeTimeout;
-    $(window).on("resize", function () {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(function () {
-        const newSlidesToShow = getSlidesToShow();
-        $slides.slick("slickSetOption", "slidesToShow", newSlidesToShow, true);
-      }, 200); // Delay to prevent excessive updates during resizing
-    });
-  };
+  //   // Throttle function to optimize resize event handling
+  //   let resizeTimeout;
+  //   $(window).on("resize", function () {
+  //     clearTimeout(resizeTimeout);
+  //     resizeTimeout = setTimeout(function () {
+  //       const newSlidesToShow = getSlidesToShow();
+  //       $slides.slick("slickSetOption", "slidesToShow", newSlidesToShow, true);
+  //     }, 200); // Delay to prevent excessive updates during resizing
+  //   });
+  // };
 
-  const highlightComp = () => {
-    const highlightSettings1 = {
-      infinite: true,
-      speed: 4000,
-      autoplay: true,
-      autoplaySpeed: 10,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      lazyLoad: "ondemand",
-      arrows: false,
-      cssEase: "linear",
+  // const highlightComp = () => {
+  //   const highlightSettings1 = {
+  //     infinite: true,
+  //     speed: 4000,
+  //     autoplay: true,
+  //     autoplaySpeed: 10,
+  //     slidesToShow: 4,
+  //     slidesToScroll: 1,
+  //     lazyLoad: "ondemand",
+  //     arrows: false,
+  //     cssEase: "linear",
 
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 567,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
-    };
+  //     responsive: [
+  //       {
+  //         breakpoint: 991,
+  //         settings: {
+  //           slidesToShow: 3,
+  //         },
+  //       },
+  //       {
+  //         breakpoint: 767,
+  //         settings: {
+  //           slidesToShow: 2,
+  //         },
+  //       },
+  //       {
+  //         breakpoint: 567,
+  //         settings: {
+  //           slidesToShow: 1,
+  //         },
+  //       },
+  //     ],
+  //   };
 
-    const highlightSettings2 = $.extend({}, highlightSettings1, {
-      speed: 3000,
-      rtl: true,
-    });
+  //   const highlightSettings2 = $.extend({}, highlightSettings1, {
+  //     speed: 3000,
+  //     rtl: true,
+  //   });
 
-    const highlightSettings3 = $.extend({}, highlightSettings1, {
-      speed: 6000,
-    });
+  //   const highlightSettings3 = $.extend({}, highlightSettings1, {
+  //     speed: 6000,
+  //   });
 
-    $highlightSlideOne.slick(highlightSettings1);
-    $highlightSlideTwo.slick(highlightSettings2);
-    $highlightSlideThree.slick(highlightSettings3);
-  };
+  //   $highlightSlideOne.slick(highlightSettings1);
+  //   $highlightSlideTwo.slick(highlightSettings2);
+  //   $highlightSlideThree.slick(highlightSettings3);
+  // };
 
-  const accordionFunc = () => {
-    // Open the first accordion item by default and set the icon to minus
-    $(".accordion-content").first().show();
-    $(".accordion-header").first().find(".icon").text("-");
+  // const accordionFunc = () => {
+  //   // Open the first accordion item by default and set the icon to minus
+  //   $(".accordion-content").first().show();
+  //   $(".accordion-header").first().find(".icon").text("-");
 
-    $(".accordion-header").on("click", function () {
-      const $icon = $(this).find(".icon");
-      const $content = $(this).next(".accordion-content");
+  //   $(".accordion-header").on("click", function () {
+  //     const $icon = $(this).find(".icon");
+  //     const $content = $(this).next(".accordion-content");
 
-      // Toggle this section's visibility and icon
-      $content.slideToggle(200, function () {
-        $icon.text($content.is(":visible") ? "-" : "+");
-      });
+  //     // Toggle this section's visibility and icon
+  //     $content.slideToggle(200, function () {
+  //       $icon.text($content.is(":visible") ? "-" : "+");
+  //     });
 
-      // Hide other sections and set their icons to plus
-      $(".accordion-content").not($content).slideUp(200);
-      $(".accordion-header").not($(this)).find(".icon").text("+");
-    });
-  };
+  //     // Hide other sections and set their icons to plus
+  //     $(".accordion-content").not($content).slideUp(200);
+  //     $(".accordion-header").not($(this)).find(".icon").text("+");
+  //   });
+  // };
 
   $(window).scroll(function () {
     $(".odometer").each(function () {
