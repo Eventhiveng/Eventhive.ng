@@ -779,6 +779,53 @@
   background: var(--white);
 }
 
+/* Speakers */
+#speakers .speakers-container {
+  /* color: var(--black); */
+}
+
+#speakers .speakers-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 30px;
+}
+
+#speakers .speakers-box-container .speaker-box {
+  flex: 0 0 calc((100% - 90px) / 4);
+  background-color: #0c124f2d;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#speakers .speakers-box-container .speaker-box .speaker-image {
+  height: 250px;
+  border-radius: calc(15px - 10px);
+  overflow: hidden;
+}
+
+#speakers .speakers-box-container .speaker-box .speaker-image img {
+  object-position: top;
+}
+
+#speakers .speakers-box-container .speaker-box .speaker-info {
+  padding: 30px 0px 20px;
+  line-height: 1.2;
+}
+
+#speakers .speakers-box-container .speaker-box .speaker-info .name {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+#speakers .speakers-box-container .speaker-box .speaker-info .designation {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+#speakers .speakers-box-container .speaker-box .speaker-info .company {
+  font-size: 18px;
+}
+
 /* Testimonial */
 #testimonial .testimonial-container {
   background: var(--black);

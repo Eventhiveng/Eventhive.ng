@@ -8,6 +8,11 @@
   #who-attends .who-attends-cards .image {
     height: 300px;
   }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 calc((100% - 60px) / 3);
+  }
 }
 
 /* Tap Pro */
@@ -32,6 +37,11 @@
 
   /* Why attend */
   #why-attend .why-attend-box-container .why-attend-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
@@ -120,6 +130,15 @@
   /* Whats new */
   #whatsnew .whatsnew-wrapper .whatsnew-box {
     flex: 0 0 100%;
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 100%;
+  }
+
+  #speakers .speakers-box-container .speaker-box .speaker-image {
+    height: 400px;
   }
 
   /* Testimonial */
