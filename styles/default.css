@@ -61,3 +61,58 @@ p {
 section {
   scroll-margin-top: 50px;
 }
+
+/* Ticket */
+/* Popup Background */
+.popup {
+  display: none;
+}
+
+.popup .popup-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000dd;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Popup Content */
+.popup .popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+}
+
+/* Close Button */
+.popup .close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: -30px;
+  color: var(--white);
+}
+
+.popup h2 {
+  margin-bottom: 30px;
+  font-size: clamp(20px, 5vw, 24px);
+}
+
+/* Ticket Links */
+.popup .btn-sec {
+  margin-top: 20px;
+}
+
+/* .popup .btn-sec:hover {
+  color: var(--white);
+} */

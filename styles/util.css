@@ -85,6 +85,10 @@
   color: var(--white);
 }
 
+.get-ticket-btn {
+  cursor: pointer;
+}
+
 /* Section header */
 .section-header {
   width: 70%;

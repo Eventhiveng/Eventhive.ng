@@ -47,6 +47,28 @@
     <title>Payments Live</title>
   </head>
   <body>
+    <!-- Popup Modal -->
+    <div id="ticket-popup" class="popup">
+      <div class="popup-container">
+        <div class="popup-content">
+          <span class="close-btn">&times;</span>
+          <h2>Select Your Ticketing Platform</h2>
+          <a
+            href="https://tix.africa/discover/payments_live"
+            target="_blank"
+            class="btn btn-pry"
+            >Get a Ticket (Tix)
+          </a>
+          <a
+            href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
+            target="_blank"
+            class="btn btn-sec"
+            >Get a Ticket (Eventbrite)</a
+          >
+        </div>
+      </div>
+    </div>
+
     <!-- Preloader -->
     <div id="preloader">
       <div class="loader">
@@ -88,12 +110,13 @@
                   </ul>
                 </div>
                 <div class="button">
-                  <a
+                  <!-- <a
                     href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
                     class="btn btn-sec"
                     href=""
                     >Register</a
-                  >
+                  > -->
+                  <div class="btn btn-sec get-ticket-btn">Register</div>
                 </div>
                 <div class="hamburger">
                   <span></span>
@@ -130,11 +153,13 @@
                     >
                   </li>
                   <li>
-                    <a
+                    <!-- <a
                       href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
                       >Tickets</a
-                    >
+                    > -->
+                    <p class="get-ticket-btn">Tickets</p>
                   </li>
+
                   <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
@@ -217,11 +242,12 @@
                         data-aos-delay="1000"
                         data-aos-offset="0"
                       >
-                        <a
+                        <!-- <a
                           class="btn btn-pry"
                           href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
                           >Register</a
-                        >
+                        > -->
+                        <div class="btn btn-pry get-ticket-btn">Register</div>
                       </div>
                     </div>
                   </div>
@@ -1503,7 +1529,7 @@
                   <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#partnership">Partership</a></li>
+                    <li><a href="#partner">Partership</a></li>
                     <li>
                       <a
                         href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20%20Exhibition%20Deck"
@@ -1511,10 +1537,11 @@
                       >
                     </li>
                     <li>
-                      <a
+                      <!-- <a
                         href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
                         >Tickets</a
-                      >
+                      > -->
+                      <p class="get-ticket-btn">Tickets</p>
                     </li>
                     <li><a href="#contact">Contact</a></li>
                   </ul>

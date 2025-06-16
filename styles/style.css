@@ -54,8 +54,8 @@
 }
 
 #navbar .nav-wrapper .logo .logo-icon {
-  /* width: 100px; */
-  height: 40px;
+  max-width: 200px;
+  /* height: 40px; */
 }
 
 #navbar .nav-wrapper .logo .logo-icon img {

@@ -22,6 +22,7 @@ $(function () {
     });
   }, 500); // Delay of 1 second
 });
+
 $(document).ready(function () {
   const $hamburger = $(".hamburger");
   const $asideMenu = $(".aside-container");
@@ -39,6 +40,24 @@ $(document).ready(function () {
   const $slides = $(
     ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
   );
+
+  // Ticket
+  // Show popup when any "Get a Ticket" button is clicked
+  $(".get-ticket-btn").click(function () {
+    $("#ticket-popup").fadeIn();
+  });
+
+  // Hide popup when close button is clicked
+  $(".close-btn").click(function () {
+    $("#ticket-popup").fadeOut();
+  });
+
+  // Hide popup when clicking outside the content
+  $(document).click(function (event) {
+    if (!$(event.target).closest(".popup-content, .get-ticket-btn").length) {
+      $("#ticket-popup").fadeOut();
+    }
+  });
 
   // Toggle Nav
   const toggleNav = () => {
