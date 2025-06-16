@@ -1,5 +1,10 @@
 /* Big screen */
 @media only screen and (max-width: 1200px) {
+  /* Hero */
+  #hero .hero-wrapper .hero-buttons {
+    flex-direction: column;
+  }
+
   /* Who attends */
   #who-attends .who-attends-cards {
     flex: 1 1 calc((100% - 30px) / 2);
@@ -15,7 +20,7 @@
   }
 }
 
-/* Tap Pro */
+/* Tab Pro */
 @media only screen and (max-width: 991px) {
   /* #counter .count-wrapper .top {
     display: block;
