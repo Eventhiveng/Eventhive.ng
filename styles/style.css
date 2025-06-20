@@ -194,19 +194,20 @@
   height: 100%;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
-/*
-#hero .sliders .sliders-wrapper {
-  display: flex;
-  width: 100%;
+#hero .sliders .sliders-wrapper,
+#hero .sliders .sliders-wrapper .slick-list,
+#hero .sliders .sliders-wrapper .slick-list .slick-track {
   height: 100%;
+  w100p
 }
-*/
 
 #hero .sliders .sliders-wrapper .slide {
   position: relative;
-  height: 100vh;
 }
 
 #hero .sliders .sliders-wrapper .slide::after {
