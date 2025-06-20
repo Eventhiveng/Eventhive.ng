@@ -203,7 +203,7 @@
 #hero .sliders .sliders-wrapper .slick-list,
 #hero .sliders .sliders-wrapper .slick-list .slick-track {
   height: 100%;
-  w100p
+  width: 100%;
 }
 
 #hero .sliders .sliders-wrapper .slide {
