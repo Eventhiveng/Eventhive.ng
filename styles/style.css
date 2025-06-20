@@ -180,7 +180,7 @@
 /* Hero Section */
 #hero .hero-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: linear-gradient(to right, #000000ca, #00000010),
     url(../assets/section-img/mining-excavator.jpeg) no-repeat center/cover;
