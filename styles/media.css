@@ -1,0 +1,170 @@
+/* Big screen */
+@media only screen and (max-width: 1200px) {
+  .padding {
+    padding: 60px 0;
+  }
+}
+
+/* Tab Pro */
+@media only screen and (max-width: 991px) {
+  /* Hero */
+  #hero {
+    .hero-container {
+      .hero-wrapper {
+        .hero-contents {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+
+  /* Why attend */
+  #why-attend,
+  #whats-new {
+    .why-attend-container,
+    .whats-new-container {
+      .why-attend-box-container,
+      .whats-new-box-container {
+        .why-attend-box,
+        .whats-new-box {
+          flex: 0 0 calc((100% - 30px) / 2);
+        }
+      }
+    }
+  }
+
+  /* Agenda */
+  #agenda .agenda-item {
+    min-height: auto;
+  }
+
+  #agenda .agenda-item .right {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  /* Padding */
+  .padding {
+    padding: 40px 0;
+  }
+
+  /* Header */
+  /* Nav */
+  #navbar {
+    .nav-container {
+      .nav-wrapper {
+        .nav-links,
+        .nav-button {
+          display: none;
+        }
+
+        .hamburger-menu {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  #aside {
+    .mobile-menu {
+      display: flex;
+    }
+  }
+
+  /* Hero */
+  #hero {
+    .hero-container {
+      .hero-wrapper {
+        .hero-contents {
+          max-width: 100%;
+
+          .hero-buttons {
+            display: none;
+          }
+
+          .hero-mobile-buttons {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  #about {
+    .about-container {
+      .about-wrapper {
+        .content-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+
+  /* Objectives */
+  #objectives {
+    .objectives-container {
+      .objectives-subwrapper {
+        flex-direction: column;
+      }
+    }
+  }
+
+  /* Testimonial */
+  #testimonial {
+    .testimonial-container {
+      .testimonial-slides {
+        .testimonial-subwrapper {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+
+  /* Why attend */
+  #why-attend,
+  #whats-new {
+    .why-attend-container,
+    .whats-new-container {
+      .why-attend-box-container,
+      .whats-new-box-container {
+        .why-attend-box,
+        .whats-new-box {
+          flex: 0 0 100%;
+        }
+      }
+    }
+  }
+
+  /* Footer */
+  #footer .footer-container {
+    .top {
+      flex-direction: column;
+
+      .quick-links {
+        display: block;
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 568px) {
+  #about {
+    .about-container {
+      .about-wrapper {
+        .content-grid {
+          .text-content {
+            .focus-areas {
+              grid-template-columns: 1fr;
+            }
+          }
+        }
+      }
+    }
+  }
+  .focus-areas {
+    grid-template-columns: 1fr;
+  }
+}
