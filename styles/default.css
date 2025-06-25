@@ -57,5 +57,6 @@ p {
 
 section {
   scroll-margin-top: 50px;
+  overflow: hidden;
   /* overflow-x: hidden; */
 }

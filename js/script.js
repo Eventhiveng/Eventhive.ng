@@ -84,6 +84,23 @@ $(document).ready(function () {
     });
 
     AOS.refresh();
+
+    // Add fixed navbar functionality
+    let lastScrollTop = 0;
+    const navbar = $("#navbar");
+    const scrollThreshold = 150;
+
+    // $(window).scroll(function () {
+    const scrollTop = $(this).scrollTop();
+
+    if (scrollTop > scrollThreshold) {
+      navbar.addClass("fixed-nav");
+    } else {
+      navbar.removeClass("fixed-nav");
+    }
+
+    lastScrollTop = scrollTop;
+    // });
   });
 
   const accordionFunc = () => {

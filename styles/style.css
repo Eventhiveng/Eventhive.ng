@@ -357,7 +357,35 @@
       }
     }
   }
+
+  /* Fixed Navigation Styles */
+  &.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background: rgba(10, 11, 15, 0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    animation: slideDown 0.3s ease-out;
+    z-index: 999999;
+
+    /* .nav-container {
+      padding: 12px 0;
+      background: transparent;
+    }
+
+    .nav-wrapper {
+      .logo {
+        img {
+          height: 35px;
+        }
+      }
+    } */
+  }
 }
+
 /* Mobile Menu Aside */
 #aside {
   .mobile-menu {
