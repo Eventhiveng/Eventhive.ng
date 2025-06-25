@@ -1323,7 +1323,9 @@ a:hover {
 #new .testimonial_box-highlight img {
   flex-shrink: 0;
   min-width: 100%;
-  min-height: 100%;
+  /* min-height: 100%; */
+  display: none;
+  max-height: 600px;
   object-fit: cover;
 }
 #new .testimonial_box-icon {
@@ -1386,6 +1388,16 @@ a:hover {
 }
 #new .testimonial-link:hover {
   color: #2596be;
+}
+
+#new .w3-section {
+  margin-bottom: 30px;
+}
+
+#new .w3-section img {
+  max-height: 600px;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 /*  */
