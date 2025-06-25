@@ -83,7 +83,10 @@ $(document).ready(function () {
       }
     });
 
-    AOS.refresh();
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      AOS.refresh();
+    }, 150);
 
     // Add fixed navbar functionality
     let lastScrollTop = 0;
