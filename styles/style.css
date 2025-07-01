@@ -1045,11 +1045,10 @@
 }
 
 #sponsors .sponsors-grid .sponsors-grid-header {
-  text-transform: uppercase;
-  color: transparent;
+  /* color: transparent;
   -webkit-text-stroke: 1px var(--primary-color);
   stroke: 1px var(--primary-color);
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   font-weight: 900;
   font-size: 24px;
   margin-bottom: 20px;
