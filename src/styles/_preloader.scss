@@ -1,6 +1,6 @@
 .pre-loader {
-  // position: fixed;
-  // z-index: 9999999999999;
+  position: fixed;
+  z-index: 9999999999999;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +45,7 @@
         }
 
         50% {
-          transform: translate(-50%, -50%) rotate(180deg)  scale(1.2);
+          transform: translate(-50%, -50%) rotate(180deg) scale(1.2);
         }
 
         100% {

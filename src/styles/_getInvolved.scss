@@ -1,5 +1,5 @@
 .get-involved {
-  background: url(../assets/img/involved-bg.png) no-repeat center/cover;
+  background: url(/images/section-img/involved-bg.png) no-repeat center/cover;
   @include padding;
 
   .container {
@@ -86,14 +86,12 @@
   @include mid-screen {
     background-position: 35%;
     .container {
-        flex-direction: column;
-        .right {
-            .image {
-                height: 600px !important;
-            }
+      flex-direction: column;
+      .right {
+        .image {
+          height: 600px !important;
         }
+      }
     }
   }
 }
-
-

@@ -27,7 +27,7 @@
     flex-direction: column;
     transition: all 0.3s ease-in-out;
     background: linear-gradient(#00000060, #00000060),
-      url(../assets/img/sector-hover-bg.png) no-repeat right/cover;
+      url(/images/section-img/sector-hover-bg.png) no-repeat right/cover;
     background-size: 0%;
     text-align: justify;
 
@@ -65,7 +65,7 @@
     &:hover {
       box-shadow: $color-boxShadow;
       background: linear-gradient(#00000060, #00000060),
-        url(../assets/img/sector-hover-bg.png) no-repeat center/cover;
+        url(/images/section-img/sector-hover-bg.png) no-repeat center/cover;
       .icon {
         background-color: $color-white;
         color: $color-primary;

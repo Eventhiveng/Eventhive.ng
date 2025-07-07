@@ -1,0 +1,25 @@
+{
+  "name": "Eventhive - Nigeria's Premier Event Management Platform",
+  "short_name": "Eventhive",
+  "description": "Nigeria's number one event hosting platform organizing premium corporate events and conferences.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FFA600",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "en-NG"
+}

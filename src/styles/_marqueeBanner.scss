@@ -1,11 +1,11 @@
 .marquee-section {
+  position: fixed !important;
   background: $color-secondary;
   border-top: 1px solid $color-white;
   color: $color-white;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  position: fixed;
   bottom: 0;
   z-index: 499;
 
