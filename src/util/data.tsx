@@ -307,7 +307,7 @@ const data = {
       "/images/brand/emergency-response.png",
       "/images/brand/smart-money.png",
       "/images/brand/talking-drum.png",
-      "/images/brand/bentP.png",
+      "/images/brand/bentp.png",
       "/images/brand/businessday.png",
       "/images/brand/nimbus.png",
       "/images/brand/fintech-review.png",

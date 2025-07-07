@@ -175,8 +175,8 @@ export default function RootLayout({
           <ConditionalMarquee />
         </ClientOnly>
         <div className="main-content">
+          <Nav />
           <div className="animate-content">
-            <Nav />
             {children}
             <Footer />
           </div>
