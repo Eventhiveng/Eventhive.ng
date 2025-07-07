@@ -4,9 +4,10 @@
 
 [context.production]
   command = "pnpm build"
-  publish = ".next"
+  publish = "server/app"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  conditions = {Branch = ["master"]}
