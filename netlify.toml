@@ -5,7 +5,7 @@
 
 # Specific context for the master branch (React/Vite)
 [context.production]  # This is equivalent to [context."master"]
-  command = "npm run build"
+  command = "pnpm build"
   publish = ".next"
 
 [[redirects]]
