@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import SectionHeader from "./SectionHeader";
 import Link from "next/link";
+// import Image from "next/image";
 
 const GetInvolved = () => {
   return (

@@ -1,7 +1,7 @@
 export type CarouselData = {
   useFor: string;
-  settings: {};
-  info: any[];
+  settings: Record<string, unknown>;
+  info: EventPageData[] | BlogPageData[] | string[];
 };
 
 export type BlogPageData = {

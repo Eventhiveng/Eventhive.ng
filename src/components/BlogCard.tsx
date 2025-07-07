@@ -1,12 +1,19 @@
 import { BlogPageData } from "@/util/types";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import Image from "next/image";
 
 const BlogCard = ({ data }: { data: BlogPageData }) => {
   return (
     <div className="blog-card">
       <div className="image">
-        <img src={data.imgLink} alt={data.title} />
+        <Image
+          src={data.imgLink}
+          alt={data.title}
+          width={400}
+          height={250}
+          className="blog-image"
+        />
       </div>
       <div className="card-content">
         <div className="author text-pry">

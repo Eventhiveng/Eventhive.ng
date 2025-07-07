@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -58,7 +59,13 @@ const Preloader = () => {
       }}
     >
       <div className="pre-loader-image">
-        <img src="/logo/logo.svg" alt="Eventhive" />
+        <Image
+          src="/logo/logo.svg"
+          alt="Eventhive"
+          width={200}
+          height={60}
+          priority
+        />
         <div className="line"></div>
       </div>
 

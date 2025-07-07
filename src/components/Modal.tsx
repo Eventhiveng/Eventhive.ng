@@ -1,4 +1,14 @@
-const Modal = ({ show, onClose, children }) => {
+import { ReactNode } from "react";
+
+const Modal = ({
+  show,
+  onClose,
+  children,
+}: {
+  show: boolean;
+  onClose: () => void;
+  children: ReactNode;
+}) => {
   if (!show) {
     return null;
   }

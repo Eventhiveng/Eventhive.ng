@@ -3,6 +3,7 @@
 import { useMemo } from "react";
 import CountUp from "react-countup";
 import data from "@/util/data";
+import Image from "next/image";
 
 const CountUpComp = () => {
   const enableScrollSpy = useMemo(() => true, []);
@@ -14,7 +15,12 @@ const CountUpComp = () => {
           {data.counterData.map((item, index) => (
             <div key={index} className="countup-box">
               <div className="image">
-                <img src={item.imgLink} alt={item.description} />
+                <Image
+                  src={item.imgLink}
+                  alt={item.description}
+                  width={60}
+                  height={60}
+                />
               </div>
               <h2>
                 <CountUp

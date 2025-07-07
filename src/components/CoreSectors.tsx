@@ -2,9 +2,7 @@ import { Icon } from "@iconify/react";
 import data from "@/util/data";
 
 const CoreSectors = ({ all }: { all: boolean }) => {
-  let items;
-
-  items = all ? data.sectorData : data.sectorData.slice(0, 6);
+  const items = all ? data.sectorData : data.sectorData.slice(0, 6);
 
   return (
     <div className="core-sectors">

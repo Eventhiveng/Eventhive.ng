@@ -1,4 +1,5 @@
 import SectionHeader from "./SectionHeader";
+import Image from "next/image";
 
 const WhoWeAre = () => {
   return (
@@ -19,9 +20,9 @@ const WhoWeAre = () => {
             <p>
               <b className="text-pry">Eventhive</b> is one of the fastest
               growing PR Firm in Nigeria with core competencies in developing
-              Africa's businesses via face-to-face events. We work very hard to
-              bring stakeholders together, creating opportunities for them to
-              network, learn and do business.
+              Africa&apos;s businesses via face-to-face events. We work very
+              hard to bring stakeholders together, creating opportunities for
+              them to network, learn and do business.
             </p>
             <p>
               We operate in the heart of knowledge and information economy
@@ -57,7 +58,12 @@ const WhoWeAre = () => {
           data-aos-duration="800"
           data-aos-delay="100"
         >
-          <img src="/images/section-img/about-img.png" alt="About EventHive" />
+          <Image
+            src="/images/section-img/about-img.png"
+            alt="About EventHive"
+            width={500}
+            height={400}
+          />
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BlogPageData } from "@/util/types";
+import Image from "next/image";
 
 const BlogPagination = ({
   prevBlog,
@@ -17,7 +18,12 @@ const BlogPagination = ({
         </h2>
       </div>
       <div className="image">
-        <img src="/images/section-img/prev-next.png" alt="prev-next" />
+        <Image
+          src="/images/section-img/prev-next.png"
+          alt="prev-next"
+          width={50}
+          height={50}
+        />
       </div>
       <div className="next">
         <p>Next Post</p>

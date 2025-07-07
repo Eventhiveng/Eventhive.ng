@@ -16,7 +16,7 @@ const Page = () => {
       />
       <div className="sector-page-container">
         <div className="container">
-          <CoreSectors />
+          <CoreSectors all={true} />
         </div>
       </div>
       <CountUpComp />

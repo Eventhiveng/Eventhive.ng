@@ -34,8 +34,10 @@ const CustomCursor = () => {
   }, []);
 
   React.useEffect(() => {
+    const posRef = positionRef.current;
+
     const followMouse = () => {
-      positionRef.current.key = requestAnimationFrame(followMouse);
+      posRef.key = requestAnimationFrame(followMouse);
       const {
         mouseX,
         mouseY,
@@ -43,23 +45,19 @@ const CustomCursor = () => {
         destinationY,
         distanceX,
         distanceY,
-      } = positionRef.current;
+      } = posRef;
       if (!destinationX || !destinationY) {
-        positionRef.current.destinationX = mouseX;
-        positionRef.current.destinationY = mouseY;
+        posRef.destinationX = mouseX;
+        posRef.destinationY = mouseY;
       } else {
-        positionRef.current.distanceX = (mouseX - destinationX) * 0.1;
-        positionRef.current.distanceY = (mouseY - destinationY) * 0.1;
-        if (
-          Math.abs(positionRef.current.distanceX) +
-            Math.abs(positionRef.current.distanceY) <
-          0.1
-        ) {
-          positionRef.current.destinationX = mouseX;
-          positionRef.current.destinationY = mouseY;
+        posRef.distanceX = (mouseX - destinationX) * 0.1;
+        posRef.distanceY = (mouseY - destinationY) * 0.1;
+        if (Math.abs(posRef.distanceX) + Math.abs(posRef.distanceY) < 0.1) {
+          posRef.destinationX = mouseX;
+          posRef.destinationY = mouseY;
         } else {
-          positionRef.current.destinationX += distanceX;
-          positionRef.current.destinationY += distanceY;
+          posRef.destinationX += distanceX;
+          posRef.destinationY += distanceY;
         }
       }
 
@@ -71,8 +69,8 @@ const CustomCursor = () => {
     followMouse();
 
     return () => {
-      if (positionRef.current.key !== -1) {
-        cancelAnimationFrame(positionRef.current.key);
+      if (posRef.key !== -1) {
+        cancelAnimationFrame(posRef.key);
       }
     };
   }, []);

@@ -24,7 +24,9 @@ const Hero = () => {
               <span></span>5 Years — 40+ Events
             </div>
             <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-              <span className="text-pry">Developing Africa's Businesses </span>
+              <span className="text-pry">
+                Developing Africa&apos;s Businesses{" "}
+              </span>
               via face-to-face events
             </h2>
             <div

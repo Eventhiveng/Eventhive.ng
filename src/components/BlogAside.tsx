@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import datum from "@/util/data";
 import { BlogPageData } from "@/util/types";
 import Link from "next/link";
+import Image from "next/image";
 
 const BlogAside = ({ data }: { data: BlogPageData[] }) => {
   const { eventPageData } = datum;
@@ -38,7 +39,12 @@ const BlogAside = ({ data }: { data: BlogPageData[] }) => {
               <Link href={`/blog/${post.slug}`}>
                 <div className="blog-box">
                   <div className="image">
-                    <img src={post.imgLink} alt={post.title} />
+                    <Image
+                      src={post.imgLink}
+                      alt={post.title}
+                      width={80}
+                      height={60}
+                    />
                   </div>
                   <div className="title black-sec">{post.title}</div>
                 </div>

@@ -1,12 +1,18 @@
 import { EventPageData } from "@/util/types";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import Image from "next/image";
 
 const EventComp = ({ element }: { element: EventPageData }) => {
   return (
     <div className="event-comp">
       <div className="image">
-        <img src={element.banner} alt={element.event} />
+        <Image
+          src={element.banner}
+          alt={element.event}
+          width={350}
+          height={200}
+        />
       </div>
       <div className="info">
         <h4 className="black-sec">

@@ -1,5 +1,6 @@
 import SectionHeader from "./SectionHeader";
 import data from "@/util/data";
+import Image from "next/image";
 
 const Cities = () => {
   return (
@@ -21,7 +22,14 @@ const Cities = () => {
               data-aos-delay={`${100 * (index + 1)}`}
             >
               <div className="image">
-                <img src={city.cityImg} alt={city.city} />
+                <Image
+                  src={city.cityImg}
+                  alt={city.city}
+                  width={300}
+                  height={200}
+                  style={{ width: "100%", height: "auto" }}
+                  priority
+                />
               </div>
               <div className="city">
                 <h2>{city.city}</h2>

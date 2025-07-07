@@ -1,4 +1,5 @@
 import SectionHeader from "./SectionHeader";
+import Image from "next/image";
 
 const WhatWeDo = () => {
   return (
@@ -42,9 +43,12 @@ const WhatWeDo = () => {
             data-aos-duration="800"
             data-aos-delay="100"
           >
-            <img
+            <Image
               src="/images/section-img/focus-img.jpg"
               alt="What we do at EventHive"
+              width={500}
+              height={400}
+              priority
             />
           </div>
         </div>

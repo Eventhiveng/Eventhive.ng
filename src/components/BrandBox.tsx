@@ -1,7 +1,16 @@
-const BrandBox = ({ brandLogo }) => {
+import Image from "next/image";
+
+const BrandBox = ({ brandLogo }: { brandLogo: string }) => {
   return (
     <div className="brand-box">
-      <img src={brandLogo} title="" alt="" />
+      <Image
+        src={brandLogo}
+        title=""
+        alt="Brand logo"
+        width={120}
+        height={60}
+        className="brand-logo"
+      />
     </div>
   );
 };

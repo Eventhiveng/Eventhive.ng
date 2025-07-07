@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import data from "@/util/data";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://eventhive.ng";
   const { blogPageData, eventPageData } = data;

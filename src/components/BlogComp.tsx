@@ -1,12 +1,19 @@
 import { BlogPageData } from "@/util/types";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import Image from "next/image";
 
 const BlogComp = ({ element }: { element: BlogPageData }) => {
   return (
     <div className="blog-comp">
       <div className="image">
-        <img src={element.imgLink} alt={element.title} />
+        <Image
+          src={element.imgLink}
+          alt={element.title}
+          width={300}
+          height={200}
+          className="blog-image"
+        />
       </div>
       <div className="blog-info">
         <div className="author">

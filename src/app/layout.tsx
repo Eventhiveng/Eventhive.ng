@@ -10,8 +10,8 @@ import CustomCursor from "@/components/CustomCursor";
 import Preloader from "@/components/Preloader";
 import PreloaderManager from "@/components/PreloaderManager";
 import ClientOnly from "@/components/ClientOnly";
-import HydrationFix from "@/components/HydrationFix";
 import ConditionalMarquee from "@/components/ConditionalMarquee";
+import AOSInit from "@/components/AOSInit";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -166,6 +166,7 @@ export default function RootLayout({
 
       <body className="antialiased" suppressHydrationWarning={true}>
         {/* <HydrationFix /> */}
+        <AOSInit />
         <Preloader />
         <PreloaderManager />
         <ClientOnly>

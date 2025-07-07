@@ -8,7 +8,7 @@ import BlogComp from "./BlogComp";
 import BrandBox from "./BrandBox";
 import { useEffect } from "react";
 import { useState } from "react";
-import { CarouselData } from "@/util/types";
+import { CarouselData, EventPageData, BlogPageData } from "@/util/types";
 
 const Carousel = ({ data }: { data: CarouselData }) => {
   const { useFor, info, settings } = data;
@@ -38,7 +38,7 @@ const Carousel = ({ data }: { data: CarouselData }) => {
   if (useFor === "event") {
     return (
       <Slider {...settings}>
-        {info.map((element, index) => (
+        {(info as EventPageData[]).map((element, index) => (
           <EventComp element={element} key={index} />
         ))}
       </Slider>
@@ -46,7 +46,7 @@ const Carousel = ({ data }: { data: CarouselData }) => {
   } else if (useFor === "blog") {
     return (
       <Slider {...settings}>
-        {info.map((element, index) => (
+        {(info as BlogPageData[]).map((element, index) => (
           <BlogComp element={element} key={index} />
         ))}
       </Slider>
@@ -59,7 +59,7 @@ const Carousel = ({ data }: { data: CarouselData }) => {
 
     return (
       <Slider {...updatedSettings}>
-        {info.map((element, index) => (
+        {(info as string[]).map((element, index) => (
           <BrandBox key={index} brandLogo={element} />
         ))}
       </Slider>
@@ -72,7 +72,7 @@ const Carousel = ({ data }: { data: CarouselData }) => {
 
     return (
       <Slider {...updatedSettings}>
-        {info.map((element, index) => (
+        {(info as string[]).map((element, index) => (
           <BrandBox key={index} brandLogo={element} />
         ))}
       </Slider>

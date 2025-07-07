@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Nav = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -107,7 +108,13 @@ const Nav = () => {
         <div className="container">
           <div className="md-logo">
             <Link href="/">
-              <img src="/logo/logo.svg" alt="Eventhive" />
+              <Image
+                src="/logo/logo.svg"
+                alt="Eventhive"
+                width={140}
+                height={40}
+                priority
+              />
             </Link>
           </div>
           <div className="nav-links">
