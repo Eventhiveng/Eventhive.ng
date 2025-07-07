@@ -8,8 +8,3 @@
   command = "npm run build"
   publish = "dist"
 
-# Redirects for Next.js routing (only for production branch)
-[[context.production.redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server"
-  status = 200
