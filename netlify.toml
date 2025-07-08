@@ -2,12 +2,9 @@
   publish = "/"
   command = ""
 
-[context.production]
+[context.master]
   command = "pnpm build"
   publish = ".next"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Branch = ["master"]}
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
