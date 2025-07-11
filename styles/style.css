@@ -197,6 +197,7 @@
   height: 200px;
   background: #00ff802c;
   filter: blur(100px);
+  z-index: -1;
 }
 
 #hero .hero-wrapper {
