@@ -1,485 +1,619 @@
-// $(window).on("load", function () {
-//   // Simulate loading delay
-//   setTimeout(function () {
-//     // Fade out the preloader
-//     $("#preloader").fadeOut("500", function () {
-//       // Show the main content
-//       $("#main-container").fadeIn("500", function () {
-//         AOS.init({
-//           duration: 800,
-//         });
-//       });
-//     });
-//   }, 500);
-// });
-$(function () {
-  // Simulate loading delay for 1 second
-  setTimeout(function () {
-    // Fade out the preloader
-    $("#preloader").fadeOut("500", function () {
-      // Show the main content
-      $("#main-container").fadeIn("500", function () {
-        AOS.init({
-          duration: 800,
+// AREF Website JavaScript
+$(document).ready(function () {
+  // Preloader
+  //   setTimeout(function () {
+  //     $("#preloader").fadeOut("500", function () {
+  //       $("#main-container").fadeIn("500", function () {
+  //         // Initialize AOS animations
+  //         AOS.init({
+  //           duration: 800,
+  //           easing: "ease-in-out",
+  //           once: true,
+  //           mirror: false,
+  //         });
+  //       });
+  //     });
+  //   }, 1500);
+  AOS.init({
+    duration: 1000,
+    easing: "ease-in-out",
+    // once: true,
+    // mirror: false,
+  });
+
+  // Navigation scroll effect
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 180) {
+      $("#nav").addClass("scrolled");
+    } else {
+      $("#nav").removeClass("scrolled");
+    }
+  });
+
+  // Mobile menu toggle
+  $(".hamburger").click(function () {
+    $(this).toggleClass("active");
+    $("#aside-menu").toggleClass("active");
+    $("body").toggleClass("menu-open");
+  });
+
+  // Close mobile menu when clicking on a link
+  $("#aside-menu a").click(function () {
+    $(".hamburger").removeClass("active");
+    $("#aside-menu").removeClass("active");
+    $("body").removeClass("menu-open");
+  });
+
+  $(document).on("click", function (event) {
+    if (
+      !$("#aside-menu").is(event.target) &&
+      !$("#aside-menu").has(event.target).length &&
+      !$(".hamburger").is(event.target) &&
+      !$(".hamburger").has(event.target).length
+    ) {
+      //   console.log(event);
+      $("#aside-menu").removeClass("active");
+      $(".hamburger").removeClass("active");
+    }
+  });
+
+  // Smooth scrolling for navigation links
+  $('a[href^="#"]').click(function (e) {
+    e.preventDefault();
+    var target = $(this.getAttribute("href"));
+    if (target.length) {
+      $("html, body").animate(
+        {
+          scrollTop: target.offset().top - 80,
+        },
+        1000
+      );
+    }
+  });
+
+  // Scroll to top button
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      $("#scroll-top").addClass("visible");
+    } else {
+      $("#scroll-top").removeClass("visible");
+    }
+  });
+
+  $("#scroll-top").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      800
+    );
+  });
+
+  // Animated counters for event numbers
+  function animateCounter(element, target, duration = 2000, suffix = "+") {
+    let start = 0;
+    const increment = target / (duration / 16);
+    const timer = setInterval(function () {
+      start += increment;
+      if (start >= target) {
+        start = target;
+        clearInterval(timer);
+      }
+      element.text(Math.floor(start) + suffix);
+    }, 16);
+  }
+
+  // Trigger counters when hero stats come into view
+  let countersTriggered = false;
+  $(window).scroll(function () {
+    if (!countersTriggered) {
+      const eventNumbers = $("#event-numbers-section");
+      if (eventNumbers.length && isElementInViewport(eventNumbers[0])) {
+        countersTriggered = true;
+
+        // Animate the event numbers with proper selectors
+        const numberCards = $(".event-number-stat");
+
+        // 1000+ attendees
+        animateCounter(numberCards.eq(0), 1000, 2000, "+");
+
+        // 45% C-level
+        animateCounter(numberCards.eq(1), 45, 2000, "%");
+
+        // 30+ speakers
+        animateCounter(numberCards.eq(2), 30, 2000, "+");
+
+        // 30+ exhibitors
+        animateCounter(numberCards.eq(3), 30, 2000, "+");
+      }
+    }
+  });
+
+  // Check if element is in viewport
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Throttled AOS refresh for scroll events
+  const throttledAOSRefresh = throttle(() => {
+    AOS.refresh();
+  }, 250);
+
+  // Parallax effect for hero section
+  $(window).scroll(function () {
+    const scrolled = $(window).scrollTop();
+    const heroSection = $("#hero-section");
+    const heroContent = $(".hero-content");
+
+    if (heroSection.length) {
+      const rate = scrolled * -0.5;
+      heroContent.css("transform", `translateY(${rate}px)`);
+    }
+
+    // Refresh AOS on scroll to catch any new elements
+    throttledAOSRefresh();
+  });
+
+  // Add hover effects to cards
+  $(".about-feature, .partner-benefit, .contact-card, .speaker-card").hover(
+    function () {
+      $(this).addClass("animate-float");
+    },
+    function () {
+      $(this).removeClass("animate-float");
+    }
+  );
+
+  // Dynamic text animation for hero title
+  const heroTitle = $(".hero-title");
+  if (heroTitle.length) {
+    // Hide the hero title initially for smooth animation
+    heroTitle.css("opacity", "0");
+
+    const originalHtml = heroTitle.html();
+
+    // Check if we have the gradient span
+    if (originalHtml.includes("text-gradient")) {
+      // Handle the gradient span specially
+      const beforeGradient = originalHtml.split(
+        '<span class="text-gradient">'
+      )[0];
+      const gradientContent = originalHtml
+        .split('<span class="text-gradient">')[1]
+        .split("</span>")[0];
+      const afterGradient = originalHtml.split("</span>")[1] || "";
+
+      heroTitle.empty();
+
+      let currentIndex = 0;
+
+      // Animate the text before the gradient (trim to remove extra spaces)
+      const beforeText = beforeGradient.trim();
+      if (beforeText) {
+        beforeText.split("").forEach((char, index) => {
+          const span = $("<span>").text(char === " " ? "\u00A0" : char);
+          span.css({
+            "animation-delay": `${currentIndex * 0.1}s`,
+            display: "inline-block",
+            opacity: "0",
+            "animation-fill-mode": "forwards",
+          });
+          span.addClass("fade-in-up");
+          heroTitle.append(span);
+          currentIndex++;
         });
+
+        // Add exactly one space after the text before gradient
+        const spaceSpan = $("<span>").text("\u00A0");
+        spaceSpan.css({
+          "animation-delay": `${currentIndex * 0.1}s`,
+          display: "inline-block",
+          opacity: "0",
+          "animation-fill-mode": "forwards",
+        });
+        spaceSpan.addClass("fade-in-up");
+        heroTitle.append(spaceSpan);
+        currentIndex++;
+      }
+
+      // Animate each character of the gradient content with gradient class
+      if (gradientContent.trim()) {
+        gradientContent.split("").forEach((char, index) => {
+          const span = $("<span>").text(char === " " ? "\u00A0" : char);
+          span.addClass("text-gradient");
+          span.css({
+            "animation-delay": `${currentIndex * 0.1}s`,
+            display: "inline-block",
+            opacity: "0",
+            "animation-fill-mode": "forwards",
+          });
+          span.addClass("fade-in-up");
+          heroTitle.append(span);
+          currentIndex++;
+        });
+      }
+
+      // Animate the text after the gradient (if any)
+      if (afterGradient.trim()) {
+        afterGradient.split("").forEach((char, index) => {
+          const span = $("<span>").text(char === " " ? "\u00A0" : char);
+          span.css({
+            "animation-delay": `${currentIndex * 0.1}s`,
+            display: "inline-block",
+            opacity: "0",
+            "animation-fill-mode": "forwards",
+          });
+          span.addClass("fade-in-up");
+          heroTitle.append(span);
+          currentIndex++;
+        });
+      }
+    } else {
+      // Original logic for text without gradient
+      const text = heroTitle.text();
+      heroTitle.empty();
+
+      // Split text into individual characters
+      text.split("").forEach((char, index) => {
+        const span = $("<span>").text(char === " " ? "\u00A0" : char);
+        span.css({
+          "animation-delay": `${index * 0.1}s`,
+          display: "inline-block",
+          opacity: "0",
+          "animation-fill-mode": "forwards",
+        });
+        span.addClass("fade-in-up");
+        heroTitle.append(span);
+      });
+    }
+
+    // Show the hero title container and start the animation
+    heroTitle.css("opacity", "1");
+  }
+
+  // Form submission for contact
+  $('a[href^="mailto:"]').click(function () {
+    // Track email clicks (analytics can be added here)
+    // console.log("Email link clicked:", $(this).attr("href"));
+  });
+
+  // Add loading effect to buttons
+  $(".btn").click(function () {
+    const button = $(this);
+
+    // Skip loading animation for gallery view more button
+    if (button.hasClass("no-loading") || button.hasClass("gallery-view-more")) {
+      return;
+    }
+
+    const originalText = button.text();
+
+    // Add loading state
+    button.addClass("loading");
+    button.text("Loading...");
+
+    // Reset after 2 seconds (simulated)
+    setTimeout(() => {
+      button.removeClass("loading");
+      button.text(originalText);
+    }, 2000);
+  });
+
+  // Intersection Observer for scroll animations
+  if ("IntersectionObserver" in window) {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -10% 0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in");
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll("section").forEach((section) => {
+      observer.observe(section);
+    });
+  }
+
+  // Add ripple effect to buttons
+  $(".btn").click(function (e) {
+    const button = $(this);
+
+    // Skip ripple effect for gallery view more button
+    if (button.hasClass("gallery-view-more")) {
+      return;
+    }
+
+    const ripple = $('<span class="ripple"></span>');
+
+    const rect = this.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const x = e.clientX - rect.left - size / 2;
+    const y = e.clientY - rect.top - size / 2;
+
+    ripple.css({
+      width: size,
+      height: size,
+      left: x,
+      top: y,
+      position: "absolute",
+      borderRadius: "50%",
+      background: "rgba(255, 255, 255, 0.3)",
+      transform: "scale(0)",
+      animation: "ripple 0.6s linear",
+      pointerEvents: "none",
+    });
+
+    button.append(ripple);
+
+    setTimeout(() => {
+      ripple.remove();
+    }, 600);
+  });
+
+  // Add CSS for ripple animation
+  $("<style>")
+    .prop("type", "text/css")
+    .html(
+      `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+            .btn {
+                position: relative;
+                overflow: hidden;
+            }
+            .loading {
+                pointer-events: none;
+                opacity: 0.7;
+            }
+        `
+    )
+    .appendTo("head");
+
+  // Keyboard navigation support
+  $(document).keydown(function (e) {
+    // ESC key closes mobile menu
+    if (e.keyCode === 27) {
+      $(".hamburger").removeClass("active");
+      $("#aside-menu").removeClass("active");
+      $("body").removeClass("menu-open");
+    }
+  });
+
+  // Resize handler for responsive adjustments
+  $(window).resize(function () {
+    // Reset mobile menu on resize
+    if ($(window).width() > 768) {
+      $(".hamburger").removeClass("active");
+      $("#aside-menu").removeClass("active");
+      $("body").removeClass("menu-open");
+    }
+  });
+
+  // Log page load time for performance monitoring
+  $(window).on("load", function () {
+    const loadTime = performance.now();
+    // console.log("Page loaded in:", Math.round(loadTime), "ms");
+  });
+
+  // Set current year in footer
+  const currentYear = new Date().getFullYear();
+  $(".footer-bottom p").html(
+    $(".footer-bottom p").html().replace("2025", currentYear)
+  );
+
+  // Add focus management for accessibility
+  $(".btn, .nav-links a, .footer-social")
+    .on("focus", function () {
+      $(this).addClass("focus-visible");
+    })
+    .on("blur", function () {
+      $(this).removeClass("focus-visible");
+    });
+
+  // Lazy loading for images (if needed)
+  const lazyImages = document.querySelectorAll("img[data-src]");
+  if (lazyImages.length > 0 && "IntersectionObserver" in window) {
+    const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.removeAttribute("data-src");
+          imageObserver.unobserve(img);
+        }
       });
     });
-  }, 1000); // Delay of 1 second
-});
-$(document).ready(function () {
-  const $window = $(window);
-  const $document = $(document);
-  const $carouselContainer = $(".speakers-slider");
-  const $imageRight = $(".image-right");
-  const $imageLeft = $(".image-left .inner-image");
-  const $first = $(".first");
-  const $second = $(".second");
-  const $third = $(".third");
-  const $aboutSection = $("#about-section");
-  const $scrollTop = $("#scroll-top");
-  const $heroSection = $("#hero-section");
-  const $whatsNewSection = $("#whats-new-section");
-  const $box = $(".box");
-  const $lightboxOverlay = $("#lightbox-overlay");
-  const $allSpeakers = $("#all-speakers");
-  const $dot = $("#scroll-top .line .dot");
-  const $navbar = $("#nav");
-  const $year = $(".year");
-  const $partnersSlide1 = $(".partners-slide-1");
-  const $partnersSlide2 = $(".partners-slide-2");
-  const $logo = $("#nav-logo");
-  const $asideMenu = $(".aside-menu");
-  const $asideMenuLink = $(".aside-menu a");
-  const $hamburger = $(".hamburger");
-  const $testimonialSlide = $(".testimonial-slides");
 
-  const date = new Date().getFullYear();
-  $year.html(date);
+    lazyImages.forEach((img) => imageObserver.observe(img));
+  }
 
-  // Show modal automatically on page load
-  // $("#announcementModal").fadeIn();
+  // Gallery View More functionality
+  $(".gallery-view-more")
+    .off("click")
+    .on("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
 
-  // Hide modal and show main content when clicking close
-  // $("#closeModal").click(function () {
-  //   $("#announcementModal").fadeOut();
-  //   // $("#mainContent").fadeIn();
-  // });
+      const hiddenItems = $(".gallery-hidden");
+      const button = $(this);
 
-  // Generate speakers
-  const generateSpeakers = () => {
-    const speakerBox = (speaker) => `
-      <div class="speaker-box">
-        <a href="${speaker.linkedIn}">
-          <div class="image">
-            <img src="${speaker.image}" alt="${speaker.name}">
-          </div>
-          <div class="speaker-info">
-            <h3 class="name">${speaker.name}</h3>
-            <p class="title">${speaker.title}</p>
-            <p class="company">${speaker.company}</p>
-          </div>
-        </a>
+      //   console.log("Gallery button clicked");
+      //   console.log("Hidden items count:", hiddenItems.length);
+      //   console.log("Button current text:", button.text().trim());
+      //   console.log(
+      //     "Has gallery-shown class:",
+      //     hiddenItems.hasClass("gallery-shown")
+      //   );
+
+      // Prevent the default button loading animation
+      button.addClass("no-loading");
+
+      if (hiddenItems.hasClass("gallery-shown")) {
+        // Hide additional items
+        // console.log("Hiding items");
+        hiddenItems.slideUp(300, function () {
+          $(this).removeClass("gallery-shown");
+        });
+        setTimeout(() => {
+          button.text("View More");
+          //   console.log("Button text changed to:", button.text().trim());
+        }, 50);
+      } else {
+        // Show additional items
+        // console.log("Showing items");
+        hiddenItems.slideDown(300, function () {
+          $(this).addClass("gallery-shown");
+          // Reinitialize AOS for the newly shown items
+          AOS.refresh();
+        });
+        setTimeout(() => {
+          button.text("View Less");
+          //   console.log("Button text changed to:", button.text().trim());
+        }, 50);
+      }
+    });
+
+  // Speakers section functionality
+  let currentSpeakersCount = 0;
+  const speakersPerLoad = 10; // Show 9 speakers initially, then 6 more each time
+
+  function createSpeakerCard(speaker, index) {
+    const delay = (index % speakersPerLoad) * 100; // Stagger animations
+
+    return `
+      <div class="speaker-card" data-aos="fade-up" data-aos-delay="${delay}">
+        <div class="speaker-image">
+          <img src="${speaker.image}" alt="${speaker.name}" />
+        </div>
+        <h3 class="speaker-name">${speaker.name}</h3>
+        <p class="speaker-title">${speaker.title}</p>
+        <p class="speaker-company">${speaker.company}</p>
       </div>
     `;
+  }
 
-    $carouselContainer.html(speakers.map(speakerBox).join(""));
+  function loadSpeakers(loadMore = false) {
+    const speakersGrid = $("#speakers-grid");
+    const loadMoreBtn = $("#load-more-speakers");
+    const showLessBtn = $("#show-less-speakers");
 
-    $("#view-all-speakers").on("click", function () {
-      $allSpeakers.html(speakers.map(speakerBox).join(""));
-      $lightboxOverlay.fadeIn();
-    });
+    let speakersToLoad = loadMore ? 6 : speakersPerLoad;
+    let startIndex = currentSpeakersCount;
+    let endIndex = Math.min(startIndex + speakersToLoad, speakers.length);
 
-    $(".close-btn").on("click", function () {
-      $lightboxOverlay.fadeOut();
-    });
-
-    // Initialize slick slider
-    $carouselContainer.slick({
-      speed: 4000,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      lazyLoad: "ondemand",
-      autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: true,
-      prevArrow: "<button class='slick-prev slick-arrow'>&larr;</button>",
-      nextArrow: "<button class='slick-next slick-arrow'>&rarr;</button>",
-      responsive: [
-        { breakpoint: 1200, settings: { slidesToShow: 2, slidesToScroll: 2 } },
-        { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-      ],
-    });
-  };
-
-  // Generate Sponsors
-  const generateSponsors = () => {
-    const sponsorImage = (sponsor) => `
-      <img src="${sponsor}" alt="eventhive">
-    `;
-
-    $partnersSlide1.html(sponsorsSlideOne.map(sponsorImage).join(""));
-    $partnersSlide2.html(sposnorsSlideTwo.map(sponsorImage).join(""));
-
-    let sts = Math.ceil($(window).width() / 150);
-
-    $partnersSlide1.slick({
-      infinite: true,
-      speed: 2000,
-      autoplay: true,
-      autoplaySpeed: 10,
-      slidesToShow: sts,
-      slidesToScroll: 1,
-      lazyLoad: "ondemand",
-      arrows: false,
-      cssEase: "linear",
-      pauseOnHover: false,
-      pauseOnFocus: false,
-      draggable: false,
-    });
-
-    $partnersSlide2.slick({
-      infinite: true,
-      speed: 3000,
-      autoplay: true,
-      autoplaySpeed: 10,
-      slidesToShow: sts,
-      slidesToScroll: 1,
-      lazyLoad: "ondemand",
-      arrows: false,
-      cssEase: "linear",
-      pauseOnHover: false,
-      pauseOnFocus: false,
-      draggable: false,
-      rtl: true,
-    });
-
-    $(window).on("resize", function () {
-      let sts = Math.ceil($(window).width() / 150);
-
-      $($partnersSlide1, $partnersSlide2).slick(
-        "slickSetOption",
-        "slidesToShow",
-        sts,
-        true
-      );
-    });
-  };
-
-  // Toggle Nav
-  const toggleNav = () => {
-    // Toggle hamburger and aside menu
-    $hamburger.on("click", function () {
-      $(this).toggleClass("active");
-      $asideMenu.toggleClass("active");
-    });
-
-    // Close the aside menu when a link is clicked
-    $asideMenuLink.on("click", function () {
-      $asideMenu.removeClass("active");
-      $hamburger.removeClass("active");
-    });
-
-    $(document).on("click", function (event) {
-      if (
-        !$asideMenu.is(event.target) &&
-        !$asideMenu.has(event.target).length &&
-        !$hamburger.is(event.target) &&
-        !$hamburger.has(event.target).length
-      ) {
-        $asideMenu.removeClass("active");
-        $hamburger.removeClass("active");
-      }
-    });
-  };
-
-  // Count Up Function
-  const countUp = (scrollTop, windowHeight) => {
-    $(".odometer").each(function () {
-      const $this = $(this);
-      const $eventContainer = $this.closest(".event-container");
-      const parentSectionTop = $eventContainer.length
-        ? $eventContainer.offset().top
-        : 0;
-
-      // Ensure parentSectionTop is valid
-      if (parentSectionTop === 0) return;
-
-      if (scrollTop > parentSectionTop - (windowHeight - 200)) {
-        if ($this.data("status") === "yes") {
-          const count = $this.data("count");
-
-          if (typeof count === "number" || !isNaN(parseFloat(count))) {
-            $this.html(count); // Update the HTML content
-            $this.data("status", "no"); // Update the data attribute
-          }
-        }
-      }
-    });
-  };
-
-  // Scroll Window Function
-  const scrollWindow = () => {
-    $scrollTop.on("click", function (e) {
-      e.preventDefault();
-      $("html, body").animate({ scrollTop: 0 }, 800);
-    });
-
-    $(document).on("scroll", function () {
-      const scrollTop = $window.scrollTop();
-      const scrollHeight = $document.height() - $window.height();
-      const scrollPercentage = scrollTop / scrollHeight;
-
-      // Move the dot based on the scroll percentage
-      const lineHeight = 60;
-      const dotPosition = scrollPercentage * lineHeight;
-      $dot.css("transform", `translateY(-${dotPosition}px)`);
-    });
-  };
-
-  // Rotate SVG Function
-  const rotateSvg = (scrollTop, windowHeight) => {
-    const heroSectionOffset = $heroSection.offset().top;
-    const heroSectionHeight = $heroSection.outerHeight();
-
-    if (
-      scrollTop > heroSectionOffset - windowHeight &&
-      scrollTop < heroSectionOffset + heroSectionHeight
-    ) {
-      const rotation = (scrollTop - heroSectionOffset) / 3;
-      $(".circle-svg").css("transform", `rotate(${rotation}deg)`);
-    }
-  };
-
-  // Testimonial
-  const testimonialComp = () => {
-    const testimonialSettings = {
-      infinite: true,
-      speed: 2000,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      lazyLoad: "ondemand",
-      arrows: false,
-      cssEase: "linear",
-      fade: true,
-      pauseOnHover: false,
-      pauseOnFocus: false,
-    };
-
-    $testimonialSlide.slick(testimonialSettings);
-  };
-
-  // Move Box Function
-  const moveBox = () => {
-    $box.on("mousemove", function (e) {
-      const $this = $(this);
-      const boxRect = $this[0].getBoundingClientRect();
-      const centerX = boxRect.left + boxRect.width / 2;
-      const centerY = boxRect.top + boxRect.height / 2;
-      const mouseX = e.clientX - centerX;
-      const mouseY = e.clientY - centerY;
-      const rotateX = (mouseY / boxRect.height) * 15;
-      const rotateY = -(mouseX / boxRect.width) * 15;
-      $this.css("transform", `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`);
-    });
-
-    $box.on("mouseleave", function () {
-      $(this).css("transform", `rotateX(0deg) rotateY(0deg)`);
-    });
-  };
-
-  // Parallax Picture Function
-  const parallaxPic = (scrollTop, windowHeight) => {
-    const aboutSectionOffset = $aboutSection.offset().top;
-    const aboutSectionHeight = $aboutSection.outerHeight();
-
-    // Define range for parallax effect
-    const parallaxRange = 60;
-    const smallRange = 80;
-    const minY = -parallaxRange;
-    const maxY = parallaxRange;
-
-    const minSmallY = smallRange;
-    const maxSmallY = -smallRange;
-
-    const sectionTop = aboutSectionOffset - windowHeight;
-    const sectionBottom = aboutSectionOffset + aboutSectionHeight;
-    const sectionHeight = sectionBottom - sectionTop;
-
-    let translateY = maxY;
-    let smallY = maxSmallY;
-
-    if (scrollTop > sectionTop && scrollTop < sectionBottom) {
-      const scrollInSection = scrollTop - sectionTop;
-      translateY = minY + (scrollInSection / sectionHeight) * (maxY - minY);
-      smallY =
-        minSmallY + (scrollInSection / sectionHeight) * (maxSmallY - minSmallY);
+    // Generate speaker cards
+    for (let i = startIndex; i < endIndex; i++) {
+      const speakerHtml = createSpeakerCard(speakers[i], i);
+      speakersGrid.append(speakerHtml);
     }
 
-    $imageRight.css("transform", `translateY(${translateY}px)`);
-    $imageLeft.css("transform", `translateY(${smallY}px)`);
-  };
+    currentSpeakersCount = endIndex;
 
-  // Rotate Images
-  const rotateImages = () => {
-    let currentIndex1 = 0;
-    let currentIndex2 = 0;
-
-    // Function to change images in Box 1 with fade animation
-    function changeImageBox1() {
-      $("#box1 img").fadeOut(500, function () {
-        // Fade out the current image
-        $(this).attr("src", box1Images[currentIndex1]); // Change image source
-        $(this).fadeIn(500); // Fade in the new image
-      });
-      currentIndex1 = (currentIndex1 + 1) % box1Images.length; // Update index
-    }
-
-    // Function to change images in Box 2 with fade animation
-    function changeImageBox2() {
-      $("#box2 img").fadeOut(500, function () {
-        // Fade out the current image
-        $(this).attr("src", box2Images[currentIndex2]); // Change image source
-        $(this).fadeIn(500); // Fade in the new image
-      });
-      currentIndex2 = (currentIndex2 + 1) % box2Images.length; // Update index
-    }
-
-    // Initial image setup with immediate fade in
-    $("#box1 img").attr("src", box1Images[0]).fadeIn(500).addClass("active");
-    $("#box2 img").attr("src", box2Images[0]).fadeIn(500).addClass("active");
-
-    // Change images in Box 1 every 2 seconds with fade animation
-    setInterval(changeImageBox1, 2000);
-
-    // Change images in Box 2 every 3.5 seconds with fade animation
-    setInterval(changeImageBox2, 3500);
-  };
-
-  // Parallax Location
-  const parallaxLocation = (scrollTop, windowHeight) => {
-    const whatsNewSectionOffset = $whatsNewSection.offset().top;
-    const whatsNewSectionHeight = $whatsNewSection.outerHeight();
-
-    // Define range for parallax effect
-    const parallaxRange = 80;
-    // const smallRange = 80;
-    const minY = -parallaxRange;
-    const maxY = 0;
-
-    const minSmallY = parallaxRange;
-    const maxSmallY = 0;
-
-    const minScale = 1;
-    const maxScale = 1.2;
-
-    const sectionTop = whatsNewSectionOffset - windowHeight;
-    const sectionBottom = whatsNewSectionOffset + whatsNewSectionHeight;
-    const sectionHeight = sectionBottom - sectionTop;
-
-    let translateY = maxY;
-    let smallY = maxSmallY;
-    let scale = 1;
-
-    if (scrollTop > sectionTop && scrollTop < sectionBottom) {
-      const scrollInSection = scrollTop - sectionTop;
-      translateY =
-        minY + (scrollInSection / (sectionHeight / 2)) * (maxY - minY);
-      smallY =
-        minSmallY +
-        (scrollInSection / (sectionHeight / 2)) * (maxSmallY - minSmallY);
-      scale =
-        minScale +
-        (scrollInSection / sectionHeight / 1.5) * (maxScale - minScale);
-    }
-
-    $first.css("transform", `translateY(${translateY}px)`);
-    $second.css("transform", `translate(-50%, -50%) scale(${scale})`);
-    $third.css("transform", `translateY(${smallY}px)`);
-  };
-
-  // Sticky nav
-  let lastScrollTop = 0;
-  const stickyNav = (scrollTop) => {
-    if (scrollTop < lastScrollTop && scrollTop > 200) {
-      // Scrolling up
-      $navbar.addClass("sticky");
-      $logo.attr("src", "/assets/images/logo/lref-icon.png");
+    // Show/hide buttons based on current state
+    if (currentSpeakersCount < speakers.length) {
+      loadMoreBtn.show();
+      showLessBtn.hide();
     } else {
-      // Scrolling down
-      $navbar.removeClass("sticky");
-      $logo.attr("src", "/assets/images/logo/lref-icon.png");
+      loadMoreBtn.hide();
+      showLessBtn.show();
     }
 
-    lastScrollTop = scrollTop;
-  };
-
-  // Type Location
-  const typeLocation = () => {
-    const events = [
-      "28th May, 2025 | Main Event | Landmark Event Centre, VI, Lagos",
-      "27th May, 2025 | Pre-Event Happy Hour | Fourpoints by Sheraton, VI, Lagos",
-      "27th May, 2025 | Nigeria's Real Estate Leadership Roundtable | Maison Fahrenheit Roof Top, VI, Lagos",
-    ];
-
-    let eventIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let currentEvent = "";
-
-    const typeEffect = () => {
-      // Determine the current event text to display
-      currentEvent = events[eventIndex];
-
-      // Update the text based on whether we are typing or deleting
-      if (isDeleting) {
-        charIndex--;
-      } else {
-        charIndex++;
-      }
-
-      // Display the part of the current event text up to the current character index
-      $("#event-text").text(currentEvent.substring(0, charIndex));
-
-      // Control the speed of typing and deleting
-      let typingSpeed = isDeleting ? 20 : 100;
-
-      // Once the full text is typed, start deleting after a pause
-      if (!isDeleting && charIndex === currentEvent.length) {
-        typingSpeed = 2000; // Pause before deleting
-        isDeleting = true;
-      }
-      // Once the text is deleted, move to the next event
-      else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        eventIndex = (eventIndex + 1) % events.length; // Loop back to the first event
-        typingSpeed = 500; // Pause before typing the next event
-      }
-
-      setTimeout(typeEffect, typingSpeed);
-    };
-
-    // Start the typing effect
-    typeEffect();
-  };
-
-  // Initialize all functions
-  generateSpeakers();
-  generateSponsors();
-  scrollWindow();
-  moveBox();
-  rotateImages();
-  toggleNav();
-  testimonialComp();
-  // typeLocation();
-  $window.on("scroll", function () {
-    const scrollTop = $window.scrollTop();
-    const windowHeight = $window.height();
-    countUp(scrollTop, windowHeight);
-    rotateSvg(scrollTop, windowHeight);
-    parallaxPic(scrollTop, windowHeight);
-    parallaxLocation(scrollTop, windowHeight);
-    stickyNav(scrollTop);
-
+    // Refresh AOS animations for new elements
     AOS.refresh();
+  }
+
+  function showLessSpeakers() {
+    const speakersGrid = $("#speakers-grid");
+    const loadMoreBtn = $("#load-more-speakers");
+    const showLessBtn = $("#show-less-speakers");
+
+    // Clear all speakers
+    speakersGrid.empty();
+
+    // Reset counter
+    currentSpeakersCount = 0;
+
+    // Load initial speakers
+    loadSpeakers();
+  }
+
+  // Load initial speakers
+  loadSpeakers();
+
+  // Load more speakers when button is clicked
+  $("#load-more-speakers").click(function () {
+    loadSpeakers(true);
+  });
+
+  // Show less speakers when button is clicked
+  $("#show-less-speakers").click(function () {
+    showLessSpeakers();
   });
 });
+
+// Additional utility functions
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+// Throttle function for scroll events
+function throttle(func, limit) {
+  let inThrottle;
+  return function () {
+    const args = arguments;
+    const context = this;
+    if (!inThrottle) {
+      func.apply(context, args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+
+// Check if device supports touch
+function isTouchDevice() {
+  return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+}
+
+// Add touch device class
+if (isTouchDevice()) {
+  $("body").addClass("touch-device");
+}
+
+// Performance monitoring
+const perfObserver = new PerformanceObserver((list) => {
+  for (const entry of list.getEntries()) {
+    if (entry.entryType === "navigation") {
+      //   console.log("Navigation timing:", entry);
+    }
+  }
+});
+
+if ("PerformanceObserver" in window) {
+  perfObserver.observe({ entryTypes: ["navigation"] });
+}

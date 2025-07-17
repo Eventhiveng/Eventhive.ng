@@ -1,5 +1,5 @@
-media
-.vscode
-todo.txt
+.vs_code
+node_modules/
 .DS_Store
-node_modules
+*.env
+        

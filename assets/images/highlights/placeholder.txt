@@ -1,0 +1,11 @@
+Placeholder file for highlights images. 
+
+Required images for highlights section:
+- highlight-1.jpg - Panel Discussion
+- highlight-2.jpg - Networking
+- highlight-3.jpg - Property Showcase
+- highlight-4.jpg - Awards
+- highlight-5.jpg - Technology
+- highlight-6.jpg - Investment
+
+Each image should be approximately 400x200 pixels for optimal display.

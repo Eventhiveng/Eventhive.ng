@@ -1,0 +1,32 @@
+Placeholder file for gallery images. 
+
+Required images for gallery highlights section:
+- moment-1.jpg through moment-50.jpg (or more up to 60)
+- Each image should be square format (1:1 aspect ratio) for optimal display
+- Recommended size: 400x400 pixels
+- Use JPG format for best performance
+- Images should be high quality and professional
+
+Gallery should include moments from:
+- Keynote speeches and presentations
+- Networking sessions and meetups
+- Panel discussions and Q&A sessions
+- Awards ceremonies and recognitions
+- Exhibition halls and booths
+- Property tours and site visits
+- Business meetings and deal signings
+- Tech showcases and innovations
+- VIP receptions and gala dinners
+- Workshop sessions and training
+- Media interviews and press coverage
+- Opening and closing ceremonies
+- Coffee breaks and lunch networking
+- Sponsor activations and partnerships
+- Behind-the-scenes moments
+- Audience engagement and participation
+- Group photos and team building
+- Contract signings and handshakes
+- Welcome receptions and registration
+- Happy hour and social events
+
+Each image should capture the energy, professionalism, and impact of the real estate event.

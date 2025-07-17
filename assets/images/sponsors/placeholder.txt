@@ -1,0 +1,16 @@
+Placeholder file for partner logos. 
+
+Required images for trusted partners section:
+- partner-1.png through partner-60.png
+- Each logo should be approximately 150x60 pixels for optimal display
+- Use PNG format with transparent background for best results
+- Logos should be professional and high quality
+
+Partner logos should include:
+- Real estate companies
+- Construction companies
+- Financial institutions
+- Government agencies
+- Technology companies
+- Media partners
+- Professional services firms
