@@ -1,25 +1,25 @@
 // AREF Website JavaScript
 $(document).ready(function () {
   // Preloader
-  //   setTimeout(function () {
-  //     $("#preloader").fadeOut("500", function () {
-  //       $("#main-container").fadeIn("500", function () {
-  //         // Initialize AOS animations
-  //         AOS.init({
-  //           duration: 800,
-  //           easing: "ease-in-out",
-  //           once: true,
-  //           mirror: false,
-  //         });
-  //       });
-  //     });
-  //   }, 1500);
-  AOS.init({
-    duration: 1000,
-    easing: "ease-in-out",
-    // once: true,
-    // mirror: false,
-  });
+  setTimeout(function () {
+    $("#preloader").fadeOut("500", function () {
+      $("#main-container").fadeIn("500", function () {
+        // Initialize AOS animations
+        AOS.init({
+          duration: 800,
+          easing: "ease-in-out",
+          once: true,
+          mirror: false,
+        });
+      });
+    });
+  }, 1500);
+  // AOS.init({
+  //   duration: 1000,
+  //   easing: "ease-in-out",
+  //   // once: true,
+  //   // mirror: false,
+  // });
 
   // Navigation scroll effect
   $(window).scroll(function () {
