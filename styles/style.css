@@ -415,6 +415,18 @@ aside.active {
   /* flex: 1; */
 }
 
+#whats-new .whats-new-box-container .whats-new-box .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ffffff1e;
+  padding: 20px;
+}
+
+#whats-new .whats-new-box-container .whats-new-box img {
+  object-fit: contain;
+}
+
 #whats-new .whats-new-box-container .whats-new-box h4 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -443,6 +455,10 @@ aside.active {
 
 #key .key-box-container .key-box .icon {
   width: 60px;
+}
+
+#key .key-box-container .key-box .icon img {
+  object-fit: contain;
 }
 
 #key .key-box-container .key-box .theme {
@@ -474,11 +490,8 @@ aside.active {
   padding: 20px;
 }
 
-#partner .partner-box-container .partner-box svg {
-  width: 100%;
-  height: 100%;
-  /* fill: #fff; */
-  fill: #33cc66;
+#partner .partner-box-container .partner-box img {
+  object-fit: contain;
 }
 
 #partner .partner-box-container .partner-box h4 {
@@ -606,6 +619,75 @@ aside.active {
 
 #spons .spons-container .spons-slide .slick-track div {
   margin: 0 10px;
+}
+
+/* More About Eventhive  */
+#more-about .more-container {
+  position: relative;
+}
+
+#more-about .more-container::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 0;
+  background: #00ff8040;
+  background: #3000ab7f;
+  height: 300px;
+  width: 300px;
+  filter: blur(100px);
+  z-index: -1;
+}
+
+#more-about {
+  font-size: 16px;
+}
+
+#more-about .more-logo {
+  margin-bottom: 30px;
+}
+#more-about .more-logo .logos {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#more-about .more-logo .logo-separator {
+  width: 2px;
+  height: 50px;
+  background: var(--white);
+}
+
+#more-about .more-logo .logo {
+  width: 100px;
+}
+
+#more-about .more-logo .logo img {
+  object-fit: contain;
+}
+
+#more-about p {
+  margin-bottom: 10px;
+}
+
+#more-about .indus-cities h4 {
+  margin-bottom: 5px;
+}
+
+#more-about .indus-cities {
+  margin-bottom: 20px;
+}
+
+#more-about .indus-cities {
+  word-wrap: break-word;
+  /* word-break: break-all; */
+}
+
+#more-about .indus-cities span {
+  display: inline-block;
+  margin-right: 10px;
+  /* word-wrap: break-word; */
+  white-space: normal;
 }
 
 /* Footer */
