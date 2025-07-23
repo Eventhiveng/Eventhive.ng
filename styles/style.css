@@ -1,3 +1,152 @@
+/* Preloader */
+#preloader .preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #1a365d 0%,
+    /* Deep blue */ #2d5016 25%,
+    /* Forest green */ #b7791f 50%,
+    /* Golden yellow */ #c53030 75%,
+    /* Sunset red */ #553c9a 100% /* Royal purple */
+  );
+  background: linear-gradient(
+    135deg,
+    #1e3a8a 0%,
+    /* Deep blue matching your theme */ #1e40af 25%,
+    /* Medium blue */ #2563eb 50%,
+    /* Bright blue */ #3b82f6 75%,
+    /* Light blue */ #1e3a8a 100% /* Back to deep blue */
+  );
+  background-size: 400% 400%;
+  animation: gradientFlow 8s ease infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#preloader .logo-container {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#preloader .africa-shape {
+  width: 80px;
+  height: 80px;
+  /* background: linear-gradient(45deg, #f6ad55, #ed8936);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+  box-shadow: 0 0 30px rgba(246, 173, 85, 0.5); */
+  animation: pulse 2s ease-in-out infinite;
+}
+
+#preloader .africa-shape img {
+  object-fit: contain;
+}
+
+#preloader .orbit-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  animation: rotate 12s linear infinite;
+}
+
+#preloader .fintech-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  animation: counterRotate 12s linear infinite;
+}
+
+#preloader .fintech-icon:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 0s;
+}
+
+#preloader .fintech-icon:nth-child(2) {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  animation-delay: -3s;
+}
+
+#preloader .fintech-icon:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: -6s;
+}
+
+#preloader .fintech-icon:nth-child(4) {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  animation-delay: -9s;
+}
+
+#preloader .title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+#preloader .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#preloader .loading-container {
+  width: 300px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#preloader .loading-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #f6ad55, #ed8936, #dd6b20, #c05621);
+  background-size: 200% 100%;
+  animation: loadProgress 4s ease-in-out infinite,
+    shimmer 1.5s ease-in-out infinite;
+  border-radius: 3px;
+}
+
+#preloader .loading-text {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.8;
+  animation: textFade 2s ease-in-out infinite;
+}
+
 /* Nav */
 #navbar {
   position: absolute;
@@ -622,7 +771,7 @@ aside.active {
 }
 
 /* More About Eventhive  */
-#more-about .more-container {
+/* #more-about .more-container {
   position: relative;
 }
 
@@ -637,7 +786,7 @@ aside.active {
   width: 300px;
   filter: blur(100px);
   z-index: -1;
-}
+} */
 
 #more-about {
   font-size: 16px;

@@ -9,6 +9,37 @@ $(document).ready(function () {
   // Set current year
   $(".year").html(year);
 
+  const loadingTexts = [
+    "Connecting Africa's Financial Future...",
+    "Building Digital Financial Ecosystems...",
+    "Empowering African Innovation...",
+    "Bridging Technology & Finance...",
+    "Loading Revolutionary Ideas...",
+  ];
+
+  let textIndex = 0;
+
+  // Change loading text every 2 seconds with fade effect
+  const textRotation = setInterval(function () {
+    $("#loadingText").fadeOut(300, function () {
+      textIndex = (textIndex + 1) % loadingTexts.length;
+      $(this).text(loadingTexts[textIndex]).fadeIn(300);
+    });
+  }, 300);
+
+  function hidePreloader() {
+    $("#preloader").fadeOut(1000, function () {
+      $(this).remove(); // Remove from DOM after fade out
+    });
+    clearInterval(textRotation); // Stop text rotation
+  }
+
+  $(window).on("load", function () {
+    hidePreloader();
+  });
+
+  // clearInterval(textRotation);
+
   // Initialize highlights slider
   $(".highlights-slider").slick({
     infinite: true,
