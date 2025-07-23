@@ -5,6 +5,16 @@
     flex-direction: column;
   }
 
+  /* Hero */
+
+  #hero .hero-wrapper {
+    width: 80%;
+  }
+
+  #hero .hero-wrapper .hero-description {
+    width: 100%;
+  }
+
   /* Who attends */
   #who-attends .who-attends-cards {
     flex: 1 1 calc((100% - 30px) / 2);
@@ -25,6 +35,19 @@
   /* #counter .count-wrapper .top {
     display: block;
   } */
+
+  /* Navbar */
+  #navbar .nav-wrapper .nav-links {
+    display: none;
+  }
+
+  #navbar .nav-wrapper .hamburger {
+    display: flex;
+  }
+
+  #navbar .nav-wrapper .button {
+    display: none;
+  }
 
   /* Counter */
   #counter .count-wrapper .bottom .count-box:nth-child(5) {
@@ -63,19 +86,6 @@
 
 /* Tablet */
 @media only screen and (max-width: 768px) {
-  /* Navbar */
-  #navbar .nav-wrapper .nav-links {
-    display: none;
-  }
-
-  #navbar .nav-wrapper .hamburger {
-    display: flex;
-  }
-
-  #navbar .nav-wrapper .button {
-    display: none;
-  }
-
   /* Hero */
   #hero .hero-wrapper {
     width: 100%;

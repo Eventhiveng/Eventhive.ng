@@ -56,13 +56,13 @@
 
 #navbar .nav-wrapper .nav-links ul {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
 }
 
 #navbar .nav-wrapper .nav-links ul li {
   position: relative;
-  padding: 5px 10px;
+  padding: 5px;
 }
 
 #navbar .nav-wrapper .nav-links ul li::after {

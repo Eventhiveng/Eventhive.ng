@@ -32,6 +32,22 @@ $(document).ready(function () {
 
   const $testimonialSlide = $(".testimonial-slides");
 
+  // Show modal automatically on page load
+  $("#announcementModal").fadeIn();
+
+  // Hide modal and show main content when clicking close
+  $("#closeModal").click(function () {
+    $("#announcementModal").fadeOut();
+    // $("#mainContent").fadeIn();
+  });
+
+  // Hide popup when clicking outside the content
+  $(document).click(function (event) {
+    if (!$(event.target).closest(".modal-content, .get-ticket-btn").length) {
+      $("#announcementModal").fadeOut();
+    }
+  });
+
   // Toggle Nav
   const toggleNav = () => {
     // Toggle hamburger and aside menu
