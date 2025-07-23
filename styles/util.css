@@ -160,6 +160,71 @@
 
 /* Modal Box */
 .modal-overlay .modal-content {
+  background: linear-gradient(135deg, #ffffff, #f9f9ff);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+  color: #222;
+  position: relative;
+}
+
+.modal-overlay :is(h2, h3, p) {
+  margin-bottom: 20px;
+}
+
+/* Heading Styling */
+.modal-overlay h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+
+  background: linear-gradient(45deg, #2563eb, #9333ea, #ec4899);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientText 3s ease infinite;
+}
+
+.modal-overlay h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Button Styles */
+.modal-overlay button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.modal-overlay button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay #claimOffer {
+  background: linear-gradient(135deg, #ff8c00, #ffa500);
+  color: white;
+}
+
+.modal-overlay #closeModal {
+  background: #333366;
+  color: white;
+}
+
+/* Modal Box */
+/* .modal-overlay .modal-content {
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -168,10 +233,10 @@
   max-width: 400px;
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
   color: var(--black);
-}
+} */
 
 /* Button Styles */
-.modal-overlay button {
+/* .modal-overlay button {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
@@ -198,7 +263,7 @@
 .modal-overlay #closeModal {
   color: white;
   background: var(--primary-color);
-}
+} */
 
 @keyframes moveBackground {
   from {
@@ -217,5 +282,15 @@
   }
   40% {
     transform: scale(1);
+  }
+}
+
+@keyframes gradientText {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
 }
