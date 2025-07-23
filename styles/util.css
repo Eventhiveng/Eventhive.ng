@@ -7,12 +7,13 @@
   margin-left: auto;
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .container {
     padding-right: 30px;
     padding-left: 30px;
   }
-}
+} */
+
 @media (min-width: 576px) {
   .container {
     max-width: 566px;
@@ -124,7 +125,6 @@
   justify-content: center;
   margin-top: 40px;
 }
-
 
 @keyframes fade-down {
   from {

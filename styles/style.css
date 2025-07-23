@@ -220,7 +220,6 @@ aside.active {
 #hero .hero-wrapper {
   height: 100%;
   display: flex;
-  text-transform: uppercase;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -228,9 +227,15 @@ aside.active {
 }
 
 #hero .hero-wrapper .hero-heading {
-  font-size: clamp(48px, 5vw, 72px);
+  font-size: clamp(32px, 5vw, 72px);
   font-weight: 900;
   margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#hero .hero-sub-header {
+  margin-bottom: 10px;
+  font-size: clamp(18px, 7vw, 20px);
 }
 
 #hero .hero-wrapper .hero-loc-date {
