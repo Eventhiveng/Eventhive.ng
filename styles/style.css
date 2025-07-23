@@ -474,6 +474,17 @@ aside.active {
   margin-right: 10px;
 }
 
+#countup .stat-card div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: -3px;
+}
+
+#countup .stat-card div:nth-child(2) span.plus {
+  margin-left: -5px;
+  font-size: 1.5rem;
+}
+
 #countup .stat-number {
   font-size: clamp(24px, 3vw, 36px);
   font-weight: 800;

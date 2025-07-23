@@ -91,6 +91,10 @@
     flex: 0 0 100%;
   }
 
+  #countup .stat-card {
+    padding: 10px 20px;
+  }
+
   /* Key themes */
   #key .key-box-container .key-box {
     flex: 0 0 calc((100% - 30px) / 2);
