@@ -34,11 +34,23 @@ $(document).ready(function () {
     clearInterval(textRotation); // Stop text rotation
   }
 
-  $(window).on("load", function () {
-    hidePreloader();
-  });
+  // $(window).on("load", function () {
+  //   hidePreloader();
+  // });
 
-  // clearInterval(textRotation);
+  // Simulate loading delay for 1 second
+  setTimeout(function () {
+    // Fade out the preloader
+    // $("#preloader").fadeOut("500", function () {
+    //   // Show the main content
+    //   $(".main-container").fadeIn("500", function () {
+    //     // AOS.init({
+    //     //   duration: 800,
+    //     // });
+    //   });
+    // });
+    hidePreloader();
+  }, 1000); // Delay of 1 second
 
   // Initialize highlights slider
   $(".highlights-slider").slick({
