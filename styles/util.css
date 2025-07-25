@@ -160,14 +160,25 @@
 
 /* Modal Box */
 .modal-overlay .modal-content {
-  background: linear-gradient(135deg, #ffffff, #f9f9ff);
+  /* background: linear-gradient(135deg, #ffffff, #f9f9ff); */
+  background: linear-gradient(
+      45deg,
+      #010005,
+      #0b062ef3,
+      #201237e1,
+      #201237,
+      #0b062ef3,
+      #201237e1
+    ),
+    url(../assets/highlights/11.jpg) no-repeat center/cover;
+
   padding: 30px;
   border-radius: 20px;
   text-align: center;
   width: 80%;
   max-width: 400px;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
-  color: #222;
+  color: #fff;
   position: relative;
 }
 
@@ -181,7 +192,15 @@
   font-weight: 600;
   color: var(--primary-color);
 
-  background: linear-gradient(45deg, #2563eb, #9333ea, #ec4899);
+  /* background: linear-gradient(45deg, #2563eb, #9333ea, #ec4899); */
+  background: linear-gradient(
+    45deg,
+    #00ff7f,
+    #0073ff,
+    #00ff7f,
+    #0073ff,
+    #00ff7f
+  );
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -192,7 +211,20 @@
 .modal-overlay h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #444;
+  /* color: #444; */
+}
+
+.modal-overlay .text-primary {
+  color: var(--secondary-color);
+}
+
+.modal-overlay .our-agenda {
+  font-size: clamp(2.5rem, 7vw, 3rem);
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0 #00008b, 4px 4px 0 #060663, 6px 6px 0 #08083c,
+    8px 8px 0 #07072e;
 }
 
 /* Button Styles */
