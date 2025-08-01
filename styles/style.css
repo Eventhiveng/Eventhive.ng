@@ -1,5 +1,5 @@
 /* Preloader */
-#preloader .preloader-container {
+/* #preloader .preloader-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,18 +8,18 @@
   background: linear-gradient(
     135deg,
     #1a365d 0%,
-    /* Deep blue */ #2d5016 25%,
-    /* Forest green */ #b7791f 50%,
-    /* Golden yellow */ #c53030 75%,
-    /* Sunset red */ #553c9a 100% /* Royal purple */
+    #2d5016 25%,
+    #b7791f 50%,
+    #c53030 75%,
+    #553c9a 100%
   );
   background: linear-gradient(
     135deg,
     #1e3a8a 0%,
-    /* Deep blue matching your theme */ #1e40af 25%,
-    /* Medium blue */ #2563eb 50%,
-    /* Bright blue */ #3b82f6 75%,
-    /* Light blue */ #1e3a8a 100% /* Back to deep blue */
+    #1e40af 25%,
+    #2563eb 50%,
+    #3b82f6 75%,
+    #1e3a8a 100%
   );
   background-size: 400% 400%;
   animation: gradientFlow 8s ease infinite;
@@ -38,10 +38,10 @@
 #preloader .africa-shape {
   width: 80px;
   height: 80px;
-  /* background: linear-gradient(45deg, #f6ad55, #ed8936);
+  background: linear-gradient(45deg, #f6ad55, #ed8936);
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   position: relative;
-  box-shadow: 0 0 30px rgba(246, 173, 85, 0.5); */
+  box-shadow: 0 0 30px rgba(246, 173, 85, 0.5);
   animation: pulse 2s ease-in-out infinite;
 }
 
@@ -145,7 +145,7 @@
   text-align: center;
   opacity: 0.8;
   animation: textFade 2s ease-in-out infinite;
-}
+} */
 
 /* Nav */
 #navbar {
@@ -460,7 +460,7 @@ aside.active {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #c2b0b0;
+  background: #483838;
   box-shadow: 0 4px 24px #0001;
   object-fit: contain;
   z-index: 2;

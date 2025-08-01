@@ -9,48 +9,48 @@ $(document).ready(function () {
   // Set current year
   $(".year").html(year);
 
-  const loadingTexts = [
-    "Connecting Africa's Financial Future...",
-    "Building Digital Financial Ecosystems...",
-    "Empowering African Innovation...",
-    "Bridging Technology & Finance...",
-    "Loading Revolutionary Ideas...",
-  ];
+  // const loadingTexts = [
+  //   "Connecting Africa's Financial Future...",
+  //   "Building Digital Financial Ecosystems...",
+  //   "Empowering African Innovation...",
+  //   "Bridging Technology & Finance...",
+  //   "Loading Revolutionary Ideas...",
+  // ];
 
-  let textIndex = 0;
+  // let textIndex = 0;
 
   // Change loading text every 2 seconds with fade effect
-  const textRotation = setInterval(function () {
-    $("#loadingText").fadeOut(300, function () {
-      textIndex = (textIndex + 1) % loadingTexts.length;
-      $(this).text(loadingTexts[textIndex]).fadeIn(300);
-    });
-  }, 300);
+  // const textRotation = setInterval(function () {
+  //   $("#loadingText").fadeOut(300, function () {
+  //     textIndex = (textIndex + 1) % loadingTexts.length;
+  //     $(this).text(loadingTexts[textIndex]).fadeIn(300);
+  //   });
+  // }, 300);
 
-  function hidePreloader() {
-    $("#preloader").fadeOut(1000, function () {
-      $(this).remove(); // Remove from DOM after fade out
-    });
-    clearInterval(textRotation); // Stop text rotation
-  }
+  // function hidePreloader() {
+  //   $("#preloader").fadeOut(1000, function () {
+  //     $(this).remove(); // Remove from DOM after fade out
+  //   });
+  //   clearInterval(textRotation); // Stop text rotation
+  // }
 
   // $(window).on("load", function () {
   //   hidePreloader();
   // });
 
   // Simulate loading delay for 1 second
-  setTimeout(function () {
-    // Fade out the preloader
-    // $("#preloader").fadeOut("500", function () {
-    //   // Show the main content
-    //   $(".main-container").fadeIn("500", function () {
-    //     // AOS.init({
-    //     //   duration: 800,
-    //     // });
-    //   });
-    // });
-    hidePreloader();
-  }, 1000); // Delay of 1 second
+  // setTimeout(function () {
+  //   // Fade out the preloader
+  //   // $("#preloader").fadeOut("500", function () {
+  //   //   // Show the main content
+  //   //   $(".main-container").fadeIn("500", function () {
+  //   //     // AOS.init({
+  //   //     //   duration: 800,
+  //   //     // });
+  //   //   });
+  //   // });
+  //   hidePreloader();
+  // }, 1000); // Delay of 1 second
 
   // Initialize highlights slider
   $(".highlights-slider").slick({
