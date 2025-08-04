@@ -1609,18 +1609,59 @@ a:hover {
   letter-spacing: 3px;
   margin: 0px;
 }
+
 #speakers .infos b {
   color: #ffb000;
   font-size: 13px;
   margin: 0px;
 }
 
-/* #speakers img {
-  height: 100%;
-  background-color: red;
-  padding: 30px;
-} */
+#speakers .spe-con {
+  padding-inline: 15px;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
+#speakers .spe-con .colon {
+  flex: 0 0 calc((100% - 120px) / 5);
+}
+
+#speakers .spe-con .colon figure {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+#speakers img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  /* aspect-ratio: 1/1; */
+}
+
+@media screen and (max-width: 992px) {
+  #speakers .spe-con .colon {
+    flex: 0 0 calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #speakers .spe-con .colon {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  #speakers .spe-con .colon {
+    flex: 0 0 100%;
+  }
+
+  #speakers img {
+    height: 300px;
+  }
+}
 /* PARTNERS SECTION */
 .partners {
   background-color: #fff;
