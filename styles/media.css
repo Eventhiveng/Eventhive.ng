@@ -3,6 +3,11 @@
   .padding {
     padding: 60px 0;
   }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 calc((100% - 60px) / 3);
+  }
 }
 
 /* Tab Pro */
@@ -40,6 +45,11 @@
 
   #agenda .agenda-item .right {
     display: none;
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 calc((100% - 30px) / 2);
   }
 }
 
@@ -166,5 +176,14 @@
   }
   .focus-areas {
     grid-template-columns: 1fr;
+  }
+
+  /* Speakers */
+  #speakers .speakers-box-container .speaker-box .speaker-image {
+    height: 300px;
+  }
+
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 100%;
   }
 }
