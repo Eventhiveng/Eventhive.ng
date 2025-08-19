@@ -875,12 +875,17 @@
   margin-bottom: 20px;
 }
 
-.sponsors-grid {
+/* .sponsors-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
   align-items: center;
   place-items: center;
+  justify-content: center;
+} */
+.sponsors-grid {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 

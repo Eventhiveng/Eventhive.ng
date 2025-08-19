@@ -311,6 +311,13 @@ const speakers = [
     image: "assets/images/speakers/oleka-udenze.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Oleka Udenze Richard",
+    title: "Managing Director/CEO,",
+    company: "Polo Residences",
+    image: "assets/images/speakers/oleka-udenze.jpeg",
+    linkedIn: "#",
+  },
   // {
   //   name: "Odunayo Ojo",
   //   title: "CEO,",
