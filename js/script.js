@@ -490,13 +490,14 @@ $(document).ready(function () {
 
   // Speakers section functionality
   let currentSpeakersCount = 0;
-  const speakersPerLoad = 10; // Show 9 speakers initially, then 6 more each time
+  const speakersPerLoad = 10; // Show 10 speakers initially, then 6 more each time
 
   function createSpeakerCard(speaker, index) {
-    const delay = (index % speakersPerLoad) * 100; // Stagger animations
+    const delay = (index % speakersPerLoad) * 50; // Stagger animations
 
+    // <div class="speaker-card" data-aos="fade-up" data-aos-delay="${delay}">
     return `
-      <div class="speaker-card" data-aos="fade-up" data-aos-delay="${delay}">
+      <div class="speaker-card">
         <div class="speaker-image">
           <img src="${speaker.image}" alt="${speaker.name}" />
         </div>

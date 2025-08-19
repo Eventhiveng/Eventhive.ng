@@ -42,6 +42,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .sponsors-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+
   .trusted-partners-grid {
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
@@ -95,6 +100,11 @@
 
   .partner-benefits {
     grid-template-columns: 1fr;
+  }
+
+  .sponsors-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
   }
 
   .trusted-partners-grid {
@@ -192,6 +202,11 @@
 
   .partner-benefit {
     padding: 1.5rem;
+  }
+
+  .sponsors-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
   }
 
   .trusted-partners-grid {
@@ -325,6 +340,11 @@
   .speaker-image {
     width: 100px;
     height: 100px;
+  }
+
+  .sponsors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .trusted-partners-grid {
