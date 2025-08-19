@@ -609,7 +609,7 @@
 /* Section header */
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 32px;
 }
 
 .section-header .title {

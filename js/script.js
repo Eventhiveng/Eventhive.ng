@@ -490,7 +490,7 @@ $(document).ready(function () {
 
   // Speakers section functionality
   let currentSpeakersCount = 0;
-  const speakersPerLoad = 10; // Show 10 speakers initially, then 6 more each time
+  const speakersPerLoad = 12; // Show 12 speakers initially, then 6 more each time
 
   function createSpeakerCard(speaker, index) {
     const delay = (index % speakersPerLoad) * 50; // Stagger animations
@@ -517,6 +517,8 @@ $(document).ready(function () {
     let startIndex = currentSpeakersCount;
     let endIndex = Math.min(startIndex + speakersToLoad, speakers.length);
 
+    console.log(endIndex);
+
     // Generate speaker cards
     for (let i = startIndex; i < endIndex; i++) {
       const speakerHtml = createSpeakerCard(speakers[i], i);
@@ -526,7 +528,10 @@ $(document).ready(function () {
     currentSpeakersCount = endIndex;
 
     // Show/hide buttons based on current state
-    if (currentSpeakersCount < speakers.length) {
+    if (currentSpeakersCount < speakersPerLoad) {
+      loadMoreBtn.hide();
+      showLessBtn.hide();
+    } else if (currentSpeakersCount < speakers.length) {
       loadMoreBtn.show();
       showLessBtn.hide();
     } else {

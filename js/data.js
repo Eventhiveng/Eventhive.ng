@@ -312,10 +312,10 @@ const speakers = [
     linkedIn: "#",
   },
   {
-    name: "Oleka Udenze Richard",
-    title: "Managing Director/CEO,",
-    company: "Polo Residences",
-    image: "assets/images/speakers/oleka-udenze.jpeg",
+    name: "Dr Alo Ayobami",
+    title: "CEO,",
+    company: "Axial Pacific Realty",
+    image: "assets/images/speakers/ayobami-alo.png",
     linkedIn: "#",
   },
   // {
