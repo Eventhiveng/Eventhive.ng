@@ -1,41 +1,55 @@
 /* Big screen */
 @media only screen and (max-width: 1200px) {
-  .padding {
-    padding: 60px 0;
-  }
-
   /* Speakers */
   #speakers .speakers-wrapper .speaker-box {
     flex: 0 0 calc((100% - 60px) / 3);
   }
+  #countup .key-stats-grid {
+    flex-direction: column;
+  }
 }
 
-/* Tab Pro */
+/* Responsive */
+/* @media (max-width: 900px) {
+  .key-stats-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .key-stats-center {
+    margin: 30px 0;
+  }
+} */
+
+/* Tap Pro */
 @media only screen and (max-width: 991px) {
-  /* Hero */
-  #hero {
-    .hero-container {
-      .hero-wrapper {
-        .hero-contents {
-          max-width: 80%;
-        }
-      }
-    }
+  /* Nav */
+  #nav .nav-wrapper .button {
+    display: none;
   }
 
-  /* Why attend */
-  #why-attend,
-  #whats-new {
-    .why-attend-container,
-    .whats-new-container {
-      .why-attend-box-container,
-      .whats-new-box-container {
-        .why-attend-box,
-        .whats-new-box {
-          flex: 0 0 calc((100% - 30px) / 2);
-        }
-      }
-    }
+  /* About */
+  #about .about-wrapper {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  /* #about .about-wrapper .left .image {
+    height: auto;
+  } */
+
+  /* Objectives */
+  #objectives .top {
+    flex-direction: column;
+  }
+
+  /* Countup */
+  #countup .key-stats-center {
+    display: none;
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 calc((100% - 30px) / 2);
   }
 
   /* Agenda */
@@ -47,143 +61,155 @@
     display: none;
   }
 
-  /* Speakers */
-  #speakers .speakers-wrapper .speaker-box {
-    flex: 0 0 calc((100% - 30px) / 2);
+  #about .about-main {
+    grid-template-columns: 1fr;
+  }
+
+  #about .about-image {
+    order: -1;
   }
 }
 
 /* Tablet */
 @media only screen and (max-width: 768px) {
-  /* Padding */
-  .padding {
-    padding: 40px 0;
-  }
-
-  /* Header */
   /* Nav */
-  #navbar {
-    .nav-container {
-      .nav-wrapper {
-        .nav-links,
-        .nav-button {
-          display: none;
-        }
-
-        .hamburger-menu {
-          display: flex;
-        }
-      }
-    }
+  #nav .nav-wrapper .nav-links {
+    display: none;
   }
 
-  #aside {
-    .mobile-menu {
-      display: flex;
-    }
+  #nav .nav-wrapper .hamburger {
+    display: flex;
   }
 
   /* Hero */
-  #hero {
-    .hero-container {
-      .hero-wrapper {
-        .hero-contents {
-          max-width: 100%;
-
-          .hero-buttons {
-            display: none;
-          }
-
-          .hero-mobile-buttons {
-            display: flex;
-          }
-        }
-      }
-    }
+  #hero .hero-wrapper .right {
+    display: none;
   }
 
-  #about {
-    .about-container {
-      .about-wrapper {
-        .content-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    }
+  #hero .left .button {
+    display: block;
   }
 
-  /* Objectives */
-  #objectives {
-    .objectives-container {
-      .objectives-subwrapper {
-        flex-direction: column;
-      }
-    }
+  #hero .hero-socials {
+    display: none;
   }
 
-  /* Testimonial */
-  #testimonial {
-    .testimonial-container {
-      .testimonial-slides {
-        .testimonial-subwrapper {
-          flex-direction: column-reverse;
-        }
-      }
-    }
+  /* Partner */
+  #partner .partner-box-container .partner-box {
+    flex: 0 0 100%;
   }
 
-  /* Why attend */
-  #why-attend,
-  #whats-new {
-    .why-attend-container,
-    .whats-new-container {
-      .why-attend-box-container,
-      .whats-new-box-container {
-        .why-attend-box,
-        .whats-new-box {
-          flex: 0 0 100%;
-        }
-      }
-    }
+  #partner .buttons {
+    flex-direction: column;
   }
 
   /* Footer */
-  #footer .footer-container {
-    .top {
-      flex-direction: column;
+  #footer .footer-wrapper .top {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 
-      .quick-links {
-        display: block;
-      }
-    }
+  #footer .footer-wrapper .top .quick-links {
+    display: block;
+  }
+
+  #about .about-text h3 {
+    font-size: 2rem;
+  }
+
+  #about .about-text p {
+    font-size: 1rem;
+  }
+
+  /* Key Focus Sectors */
+  #key-focus-sectors .key-focus-sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Mobile */
 @media only screen and (max-width: 568px) {
-  #about {
-    .about-container {
-      .about-wrapper {
-        .content-grid {
-          .text-content {
-            .focus-areas {
-              grid-template-columns: 1fr;
-            }
-          }
-        }
-      }
-    }
-  }
-  .focus-areas {
-    grid-template-columns: 1fr;
-  }
-
   /* Speakers */
-  #speakers .speakers-box-container .speaker-box .speaker-image {
-    height: 300px;
+  #speakers .speakers-box-container .speaker-image {
+    height: auto;
   }
 
   #speakers .speakers-wrapper .speaker-box {
     flex: 0 0 100%;
   }
+
+  /* Key Focus Sectors */
+  #key-focus-sectors .key-focus-sectors-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
+
+/* @media (max-width: 900px) {
+  #who-you-will-meet .who-meet-box {
+    min-width: 180px;
+    font-size: 1rem;
+    padding: 18px 16px;
+  }
+  #who-you-will-meet .who-meet-title {
+    font-size: 2rem;
+  }
+  #who-you-will-meet .who-meet-subtitle {
+    font-size: 1.1rem;
+  }
+} */
+
+/* @media (max-width: 991px) {
+  #nav .nav-links {
+    display: none;
+  }
+
+  #nav .hamburger {
+    display: flex;
+  }
+
+  #nav .button {
+    display: none;
+  }
+
+  #hero .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero .hero-wrapper .left {
+    max-width: 100%;
+  }
+
+  #hero .hero-header h5 {
+    justify-content: center;
+  }
+
+  #hero .hero-buttons {
+    justify-content: center;
+  }
+
+  #hero .hero-wrapper .right {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  #hero .hero-wrapper .right .image {
+    transform: none;
+  }
+
+  #hero .hero-wrapper .right .image:hover {
+    transform: none;
+  }
+} */
+
+/* @media (max-width: 576px) {
+  #hero .hero-buttons {
+    flex-direction: column;
+  }
+
+  #hero .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+} */
