@@ -53,7 +53,7 @@ $(document).ready(function () {
   const $hamburger = $(".hamburger");
 
   // Show modal automatically on page load
-  $("#valentineModal").fadeIn();
+  // $("#valentineModal").fadeIn();
 
   // Hide modal and show main content when clicking close
   $("#closeModal").click(function () {
