@@ -257,7 +257,6 @@
     padding: 12px 0;
     animation: scroll 34s linear 0s infinite normal both;
     animation-play-state: running;
-    font-size: 16px;
 
     div {
       display: flex;
@@ -267,6 +266,7 @@
       span {
         padding: 0 35px;
         text-transform: uppercase;
+        font-size: clamp(0.8rem, 5vw, 1rem);
       }
       .icon {
         height: 30px;
