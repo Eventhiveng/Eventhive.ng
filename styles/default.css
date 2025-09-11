@@ -1,12 +1,22 @@
 /* Variables */
 :root {
-  --white: #fff;
-  --black: #000;
-  --nav-bgd-color: #bcaeae73;
+  --white: #ffffff;
+  --black: #000000;
   --primary-color: #000066;
+  --primary-hover-color: #2626c840;
   --primary-color-light: #0a133a;
   --secondary-color: #ffa600;
+  --radius: 4px;
 }
+
+/* :root {
+    --primary-color: #000066;
+    --secondary-color: #ffa600;
+    --nav-bgd-color: #bcaeae73;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --dark-gray: #333333;
+} */
 
 /* Reset */
 * {
@@ -32,18 +42,23 @@ a {
 }
 
 img,
-video {
+video,
+iframe {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /* General Style */
 body {
-  font-family: "Cabin", sans-serif;
-  color: #7b7979;
+  font-family: "Nunito", sans-serif;
+  color: var(--white);
+  color: var(--black);
   font-size: 0.9375rem;
-  background: #020512;
+  /* background: #e6e6e6; */
+  background: #ccc;
+  background: var(--white);
 }
 
 h1,
@@ -52,7 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cambay", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -62,158 +77,3 @@ p {
 section {
   scroll-margin-top: 50px;
 }
-
-/* Keyframes */
-@keyframes fade-down {
-  from {
-    opacity: 0;
-    top: 0px;
-  }
-  to {
-    opacity: 1;
-    top: 30px;
-  }
-}
-
-@-webkit-keyframes stretchdelay {
-  0%,
-  40%,
-  100% {
-    -webkit-transform: scaleY(0.4);
-  }
-  20% {
-    -webkit-transform: scaleY(1);
-  }
-}
-
-@keyframes stretchdelay {
-  0%,
-  40%,
-  100% {
-    transform: scaleY(0.4);
-    -webkit-transform: scaleY(0.4);
-  }
-  20% {
-    transform: scaleY(1);
-    -webkit-transform: scaleY(1);
-  }
-}
-
-.blinking-cursor {
-  font-weight: 900;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-/* Full-screen overlay */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-/* Modal Box */
-.modal-overlay .modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  width: 80%;
-  max-width: 400px;
-  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
-  color: var(--black);
-}
-
-/* Button Styles */
-.modal-overlay button {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.modal-overlay h2 {
-  margin-bottom: 20px;
-}
-
-.modal-overlay p {
-  margin-bottom: 20px;
-}
-
-.modal-overlay #countdown {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.modal-overlay #claimOffer {
-  color: white;
-  background: gray;
-}
-
-.modal-overlay #closeModal {
-  color: white;
-  background: red;
-}
-
-/* Fixed cta */
-/* #fixed-cta {
-  position: fixed;
-  top: 150px;
-  right: 50px;
-  width: 250px;
-  background: var(--primary-color);
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  transition: transform 0.3s ease-in-out;
-}
-
-.cta-content {
-  text-align: center;
-}
-
-.cta-button {
-  display: block;
-  background: white;
-  color: var(--primary-color-light);
-  padding: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.hidden {
-  transform: translateX(150%);
-} */
