@@ -1064,7 +1064,7 @@
 }
 
 #speakers .speakers-box-container .speaker-box .speaker-image {
-  height: 250px;
+  height: 300px;
   border-radius: calc(15px - 10px);
   overflow: hidden;
 }
