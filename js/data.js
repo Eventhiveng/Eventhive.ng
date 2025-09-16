@@ -353,4 +353,18 @@ const speakers = [
     image: "assets/images/speakers/ibrahim-abdullahi.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Saadiyah Aliyu,",
+    title: "CEO",
+    company: "Urban Shelter",
+    image: "assets/images/speakers/saadiya-aliyu.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Temitope Runsewe,",
+    title: "CEO",
+    company: "Dutum Construction",
+    image: "assets/images/speakers/temitope-runsewe.jpg",
+    linkedIn: "#",
+  },
 ];
