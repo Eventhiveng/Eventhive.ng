@@ -145,7 +145,7 @@ $(document).ready(function () {
 
   const countdownFunction = setInterval(function () {
     const now = new Date().getTime();
-    const eventDate = new Date("October 23, 2025 00:00:00").getTime();
+    const eventDate = new Date("October 21, 2025 00:00:00").getTime();
 
     // Calculate the time remaining
     const distance = eventDate - now;
