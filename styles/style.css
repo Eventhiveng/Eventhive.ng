@@ -133,7 +133,9 @@
   height: 100vh;
   width: 100%;
   background: linear-gradient(#0c114bf5, #040822be),
-    url(../assets/section-bg/hero.jpg) no-repeat center/cover;
+    url(../assets/highlight/25.jpg) no-repeat center/cover;
+  /* background: linear-gradient(#0c114bf5, #040822be),
+    url(../assets/section-bg/hero.jpg) no-repeat center/cover; */
 
   transition: transform 0.7s ease-in-out;
 }

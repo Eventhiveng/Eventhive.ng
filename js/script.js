@@ -55,26 +55,39 @@ $(document).ready(function () {
   });
 
   // Count Up Function
-  const countUp = (scrollTop, windowHeight) => {
-    $odometer.each(function () {
-      const $this = $(this);
-      const $eventContainer = $this.closest(".event-box");
-      const parentSectionTop = $eventContainer.length
-        ? $eventContainer.offset().top
-        : 0;
-
+  const countUp = () => {
+    $(".odometer").each(function () {
+      let parent_section_postion = $(this).closest(".event-box").position();
+      let parent_section_top = parent_section_postion.top;
       if (
-        parentSectionTop &&
-        scrollTop > parentSectionTop - (windowHeight - 200)
+        $(window).scrollTop() >
+        parent_section_top - ($(window).height() - 200)
       ) {
-        if ($this.data("status") === "yes") {
-          const count = $this.data("count");
-          if (!isNaN(parseFloat(count))) {
-            $this.html(count).data("status", "no");
-          }
+        if ($(this).data("status") == "yes") {
+          $(this).html($(this).data("count"));
+          $(this).data("status", "no");
         }
       }
     });
+    // $odometer.each(function () {
+    //   const $this = $(this);
+    //   const $eventContainer = $this.closest(".event-box");
+    //   const parentSectionTop = $eventContainer.length
+    //     ? $eventContainer.offset().top
+    //     : 0;
+
+    //   if (
+    //     parentSectionTop &&
+    //     scrollTop > parentSectionTop - (windowHeight - 200)
+    //   ) {
+    //     if ($this.data("status") === "yes") {
+    //       const count = $this.data("count");
+    //       if (!isNaN(parseFloat(count))) {
+    //         $this.html(count).data("status", "no");
+    //       }
+    //     }
+    //   }
+    // });
   };
 
   // Who Participates Slides
@@ -117,7 +130,7 @@ $(document).ready(function () {
   };
 
   // Countdown Timer
-  const eventDateNairobi = new Date("April 30, 2025 00:00:00").getTime();
+  const eventDateNairobi = new Date("April 25, 2026 00:00:00").getTime();
   setInterval(() => {
     const now = new Date().getTime();
     const distance = eventDateNairobi - now;
