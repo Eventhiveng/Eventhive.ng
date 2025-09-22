@@ -4,17 +4,17 @@ const MarqueeBanner = () => {
   const marqueeData = [
     {
       ann: "Eventhive at 5: Celebrating 5years of excellence",
-      upcoming: "Upcoming event: Nigeria Fintech Forum",
+      upcoming: "Upcoming event: Fintech Without Borders Forum",
       icon: "favicon.ico",
     },
     {
       ann: "Eventhive at 5: Celebrating 5years of excellence",
-      upcoming: "Upcoming event: Nigeria Fintech Forum",
+      upcoming: "Upcoming event: Fintech Without Borders Forum",
       icon: "favicon.ico",
     },
     {
       ann: "Eventhive at 5: Celebrating 5years of excellence",
-      upcoming: "Upcoming event: Nigeria Fintech Forum",
+      upcoming: "Upcoming event: Fintech Without Borders Forum",
       icon: "favicon.ico",
     },
   ];
