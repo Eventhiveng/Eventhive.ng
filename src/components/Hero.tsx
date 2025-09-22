@@ -49,7 +49,7 @@ const Hero = () => {
             </div>
 
             <a
-              href="/calendar/2025-events-calendar.pdf"
+              href="/calendar/2026-eventhive-calender.pdf"
               download
               className="btn btn-pry"
               data-aos="fade-up"
@@ -57,7 +57,7 @@ const Hero = () => {
               data-aos-delay="300"
               data-aos-offset="-100"
             >
-              Dowload 2025 Event Calendar
+              Dowload 2026 Event Calendar
             </a>
           </div>
         </div>

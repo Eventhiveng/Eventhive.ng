@@ -42,14 +42,14 @@ const WhoWeAre = () => {
           </div>
 
           <a
-            href="/calendar/2025-events-calendar.pdf"
+            href="/calendar/2026-eventhive-calender.pdf"
             download
             className="btn btn-pry"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delat="300"
           >
-            Download 2025 Event Calendar
+            Download 2026 Event Calendar
           </a>
         </div>
         <div
