@@ -69,13 +69,13 @@ const Preloader = () => {
         <div className="line"></div>
       </div>
 
-      <div className="ann">
+      {/* <div className="ann">
         <h4>
           <em>
             celebrating <span>5years</span> of excellence...
           </em>
         </h4>
-      </div>
+      </div> */}
     </div>
   );
 };

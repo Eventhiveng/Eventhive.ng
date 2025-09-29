@@ -3,17 +3,17 @@ import Marquee from "react-fast-marquee";
 const MarqueeBanner = () => {
   const marqueeData = [
     {
-      ann: "Eventhive at 5: Celebrating 5years of excellence",
+      ann: "Developing Africa's Businesses via face-to-face events",
       upcoming: "Upcoming event: Fintech Without Borders Forum",
       icon: "favicon.ico",
     },
     {
-      ann: "Eventhive at 5: Celebrating 5years of excellence",
+      ann: "Developing Africa's Businesses via face-to-face events",
       upcoming: "Upcoming event: Fintech Without Borders Forum",
       icon: "favicon.ico",
     },
     {
-      ann: "Eventhive at 5: Celebrating 5years of excellence",
+      ann: "Developing Africa's Businesses via face-to-face events",
       upcoming: "Upcoming event: Fintech Without Borders Forum",
       icon: "favicon.ico",
     },
