@@ -374,4 +374,18 @@ const speakers = [
     image: "assets/images/speakers/frank.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Dr Roland Igbinoba",
+    title: "Founder",
+    company: "Pison Housing Company",
+    image: "assets/images/speakers/roland.png",
+    linkedIn: "#",
+  },
+  {
+    name: "Tunde Balogun",
+    title: "CEO",
+    company: "Small Small",
+    image: "assets/images/speakers/tunde-balogun.jpeg",
+    linkedIn: "#",
+  },
 ];
