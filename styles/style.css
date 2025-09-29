@@ -892,8 +892,7 @@
 
 .sponsors-logo {
   background: #ffffff0d;
-  /* background: #ffffff20; */
-  /* background: #ffffff35; */
+  background: #ffffff;
   background-blend-mode: difference;
   border-radius: 10px;
   padding: 20px;
@@ -906,14 +905,14 @@
 
 .sponsors-logo:hover {
   transform: scale(1.05);
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
 }
 
 .sponsors-logo img {
   width: 200px;
   height: 70px;
   object-fit: contain;
-  filter: brightness(0.8);
+  /* filter: brightness(0.8); */
   transition: filter 0.3s ease;
 }
 
