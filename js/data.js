@@ -1,3 +1,111 @@
+const speakers = [
+  {
+    name: "Oleka Udenze Richard",
+    title: "Managing Director/CEO,",
+    company: "Polo Residences",
+    image: "assets/images/speakers/olekaa.jpg",
+    linkedIn: "#",
+  },
+  // {
+  //   name: "Oleka Udenze Richard",
+  //   title: "Managing Director/CEO,",
+  //   company: "Polo Residences",
+  //   image: "assets/images/speakers/oleka-udenze.jpeg",
+  //   linkedIn: "#",
+  // },
+  {
+    name: "Dr Alo Ayobami",
+    title: "CEO,",
+    company: "Axial Pacific Realty",
+    image: "assets/images/speakers/dr-alo.jpg",
+    linkedIn: "#",
+  },
+  // {
+  //   name: "Dr. Ayo Alo",
+  //   title: "Real Estate Business Expert,",
+  //   company: "",
+  //   image: "assets/images/speakers/dr-alo.jpg",
+  //   linkedIn: "#",
+  // },
+  {
+    name: "Sadiq Suleiman,",
+    title: "Chairman,",
+    company: "Bilaad Realty",
+    image: "assets/images/speakers/sadiq-suleiman.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Abdulmalik Mahdi,",
+    title: "Managing Director,",
+    company: "Modern Shelter Systems",
+    image: "assets/images/speakers/abdulmalik-mahdi.png",
+    linkedIn: "#",
+  },
+  {
+    name: "Ibrahim Abdullahi,",
+    title: "CEO",
+    company: "NASIDA",
+    image: "assets/images/speakers/ibrahim-abdullahi.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Saadiyah Aliyu,",
+    title: "CEO",
+    company: "Urban Shelter",
+    image: "assets/images/speakers/saadiya-aliyu.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Temitope Runsewe,",
+    title: "CEO",
+    company: "Dutum Construction",
+    image: "assets/images/speakers/temitope-runsewe.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Frank Okosun",
+    title: "CEO",
+    company: "Knight Frank Nigeria",
+    image: "assets/images/speakers/frank.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Dr Roland Igbinoba",
+    title: "Founder",
+    company: "Pison Housing Company",
+    image: "assets/images/speakers/roland.png",
+    linkedIn: "#",
+  },
+  {
+    name: "Tunde Balogun",
+    title: "CEO",
+    company: "Small Small",
+    image: "assets/images/speakers/tunde-balogun.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Ayo Olowookere",
+    title: "CEO",
+    company: "Imperial Mortgage Bank",
+    image: "assets/images/speakers/ayo-olowookere.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Paul Foh",
+    title: "CEO",
+    company: "Sales Factory Global",
+    image: "assets/images/speakers/paul-foh.png",
+    linkedIn: "#",
+  },
+  {
+    name: "Emmanuel Ilaboya",
+    title: "Head of Innovation & Product Development",
+    company: "Lafarge Africa Plc",
+    image: "assets/images/speakers/emmanuel-ilaboya.jpg",
+    linkedIn: "#",
+  },
+];
+
 // AREF Website Data
 // const AREF_DATA = {
 //     event: {
@@ -303,89 +411,3 @@
 
 // // Make available globally
 // window.AREF_DATA = AREF_DATA;
-const speakers = [
-  {
-    name: "Oleka Udenze Richard",
-    title: "Managing Director/CEO,",
-    company: "Polo Residences",
-    image: "assets/images/speakers/olekaa.jpg",
-    linkedIn: "#",
-  },
-  // {
-  //   name: "Oleka Udenze Richard",
-  //   title: "Managing Director/CEO,",
-  //   company: "Polo Residences",
-  //   image: "assets/images/speakers/oleka-udenze.jpeg",
-  //   linkedIn: "#",
-  // },
-  {
-    name: "Dr Alo Ayobami",
-    title: "CEO,",
-    company: "Axial Pacific Realty",
-    image: "assets/images/speakers/dr-alo.jpg",
-    linkedIn: "#",
-  },
-  // {
-  //   name: "Dr. Ayo Alo",
-  //   title: "Real Estate Business Expert,",
-  //   company: "",
-  //   image: "assets/images/speakers/dr-alo.jpg",
-  //   linkedIn: "#",
-  // },
-  {
-    name: "Sadiq Suleiman,",
-    title: "Chairman,",
-    company: "Bilaad Realty",
-    image: "assets/images/speakers/sadiq-suleiman.jpeg",
-    linkedIn: "#",
-  },
-  {
-    name: "Abdulmalik Mahdi,",
-    title: "Managing Director,",
-    company: "Modern Shelter Systems",
-    image: "assets/images/speakers/abdulmalik-mahdi.png",
-    linkedIn: "#",
-  },
-  {
-    name: "Ibrahim Abdullahi,",
-    title: "CEO",
-    company: "NASIDA",
-    image: "assets/images/speakers/ibrahim-abdullahi.jpg",
-    linkedIn: "#",
-  },
-  {
-    name: "Saadiyah Aliyu,",
-    title: "CEO",
-    company: "Urban Shelter",
-    image: "assets/images/speakers/saadiya-aliyu.jpg",
-    linkedIn: "#",
-  },
-  {
-    name: "Temitope Runsewe,",
-    title: "CEO",
-    company: "Dutum Construction",
-    image: "assets/images/speakers/temitope-runsewe.jpg",
-    linkedIn: "#",
-  },
-  {
-    name: "Frank Okosun",
-    title: "CEO",
-    company: "Knight Frank Nigeria",
-    image: "assets/images/speakers/frank.jpg",
-    linkedIn: "#",
-  },
-  {
-    name: "Dr Roland Igbinoba",
-    title: "Founder",
-    company: "Pison Housing Company",
-    image: "assets/images/speakers/roland.png",
-    linkedIn: "#",
-  },
-  {
-    name: "Tunde Balogun",
-    title: "CEO",
-    company: "Small Small",
-    image: "assets/images/speakers/tunde-balogun.jpeg",
-    linkedIn: "#",
-  },
-];
