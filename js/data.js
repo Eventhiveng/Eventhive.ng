@@ -104,6 +104,27 @@ const speakers = [
     image: "assets/images/speakers/emmanuel-ilaboya.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Kola Ashiru-Balogun",
+    title: "Managing Director",
+    company: "Terra Developers",
+    image: "assets/images/speakers/kola-ashiru.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Ayotunde Adesulu",
+    title: "CEO",
+    company: "Novare Fund Manager Nigeria Limited",
+    image: "assets/images/speakers/ayotunde-adesulu.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Daniella Ajala",
+    title: "CEO",
+    company: "Spleet",
+    image: "assets/images/speakers/daniella-ajala.jpg",
+    linkedIn: "#",
+  },
 ];
 
 // AREF Website Data
