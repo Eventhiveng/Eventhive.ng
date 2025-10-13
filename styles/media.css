@@ -1,0 +1,129 @@
+/* Responsive Design */
+/* Tab pro */
+@media (max-width: 1024px) {
+  #about .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  #navbar .nav-menu {
+    display: none;
+  }
+
+  #navbar .nav-toggle {
+    display: flex;
+  }
+
+  #hero .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expectations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partnership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .logo-item {
+    width: 150px;
+    height: 90px;
+    padding: 1rem;
+  }
+
+  .gallery-img {
+    width: 300px !important;
+    height: 220px;
+  }
+
+  .partnership-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .preloader-text {
+    font-size: 1.5rem;
+  }
+
+  .loading-bar {
+    width: 220px;
+  }
+
+  /* Footer */
+  #footer .footer-wrapper .top {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  #footer .footer-wrapper .top .quick-links {
+    display: block;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .countup-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .attendees-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-points {
+    grid-template-columns: 1fr;
+  }
+
+  .thematic-areas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-item {
+    width: 130px;
+    height: 80px;
+    padding: 0.8rem;
+  }
+
+  .gallery-img {
+    width: 280px !important;
+    height: 200px;
+  }
+
+  .logos-track {
+    gap: 1.5rem;
+  }
+
+  .preloader-text {
+    font-size: 1.4rem;
+  }
+
+  .loading-bar {
+    width: 200px;
+  }
+
+  .solar-loader {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sun {
+    width: 50px;
+    height: 50px;
+  }
+
+  .planet {
+    width: 16px;
+    height: 16px;
+  }
+}
