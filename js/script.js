@@ -7,17 +7,28 @@
 // PRELOADER
 // ========================================
 // $(window).on("load", function () {
-//   $("#preloader").addClass("fade-out");
-//   setTimeout(() => $("#preloader").remove(), 500);
+//   $("#preloader").fadeOut(500, () => {
+//     $(".main-container").fadeIn(500, () => {
+//       AOS.init({
+//         duration: 1000,
+//       });
+//     });
+//   });
 // });
-$(window).on("load", function () {
-  $("#preloader").fadeOut(500, () => {
-    $(".main-container").fadeIn(500, () => {
-      AOS.init({
-        duration: 1000,
+
+$(function () {
+  // Simulate loading delay for 1 second
+  setTimeout(function () {
+    // Fade out the preloader
+    $("#preloader").fadeOut("500", function () {
+      // Show the main content
+      $(".main-container").fadeIn("500", function () {
+        AOS.init({
+          duration: 1000,
+        });
       });
     });
-  });
+  }, 500); // Delay of 1 second
 });
 
 // ========================================
