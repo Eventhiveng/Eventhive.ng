@@ -125,6 +125,13 @@ const speakers = [
     image: "assets/images/speakers/daniella-ajala.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Monsurat Muhammed",
+    title: "Head, Help-To-Own Fund",
+    company: "Family Homes Fund",
+    image: "assets/images/speakers/monsurat-muhammed.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 // AREF Website Data
