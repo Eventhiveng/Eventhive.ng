@@ -155,6 +155,9 @@
   width: 100%;
   background: linear-gradient(#00000080, #00000080),
     url(/assets/section-bg/johans.jpg) no-repeat center/cover;
+
+  background: linear-gradient(#00000080, #00000080),
+    url(/assets/section-bg/trade.png) no-repeat center/cover;
   padding: 50px 0px;
 }
 
@@ -377,6 +380,63 @@
 }
 
 #why-attend .why-attend-wrapper .why-attend-box p {
+  /* text-align: justify; */
+  color: #333;
+}
+
+/* Expect */
+#expect .expect-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+}
+
+#expect .expect-wrapper .expect-box {
+  display: flex;
+  color: var(--black);
+  gap: 30px;
+  flex: 0 0 calc((100% - 30px) / 2);
+  min-width: 300px;
+  /* position: relative; */
+  padding: 40px 30px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* #expect .expect-wrapper .expect-box::before {
+  width: 100%;
+  height: 100%;
+
+  background: #011137ec;
+} */
+
+#expect .expect-wrapper .expect-box .icon {
+  /* flex: 1; */
+  width: 60px;
+  height: 60px;
+  /* filter: grayscale(90%); */
+  border-radius: 50%;
+  padding: 15px;
+  overflow: hidden;
+  border: 1px solid var(--black);
+}
+
+#expect .expect-wrapper .expect-box .icon img {
+  object-fit: contain;
+}
+
+#expect .expect-wrapper .expect-box .content {
+  flex: 1;
+}
+
+#expect .expect-wrapper .expect-box h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#expect .expect-wrapper .expect-box p {
   /* text-align: justify; */
   color: #333;
 }

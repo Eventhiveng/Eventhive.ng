@@ -74,6 +74,11 @@
     flex: 0 0 100%;
   }
 
+  /* Expect */
+  #expect .expect-wrapper .expect-box {
+    flex: 0 0 100%;
+  }
+
   /* Key */
   #key .key-wrapper .key-box {
     flex: 0 0 calc((100% - 60px) / 3);
@@ -92,6 +97,13 @@
   /* Speakers */
   #speakers .speakers-wrapper .speaker-box {
     flex: 0 0 100%;
+  }
+  #speakers .speakers-wrapper .speaker-box .speaker-image {
+    height: auto;
+    /* max-height: 300px; */
+  }
+  #speakers .speakers-wrapper .speaker-box .speaker-image img {
+    aspect-ratio: 1/1;
   }
   /* Footer */
   #footer .footer-wrapper .top {
