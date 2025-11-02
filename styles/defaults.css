@@ -1,0 +1,77 @@
+/* :root {
+  --bg: #0c1430;
+  --bg-soft: #0f1a46;
+  --text: #e8eefc;
+  --muted: #9ab1e0;
+  --primary: #19b14a;  
+  --accent: #ffb800;
+  --pink: #ff2e83;
+  --orange: #ff8a00;
+  --card: #0d1c4d;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  } */
+:root {
+  --primary: #023b84;
+  --primary-light: #146de1;
+  --secondary: #fbb30c;
+  --text: #e8eefc;
+  --bg: #0c1430;
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+p {
+  /* color: var(--text); */
+  opacity: 0.95;
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+  /* margin: 0 0 18px; */
+}
+h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 800;
+}
+
+/* h3 {
+  font-size: 20px;
+  font-weight: 700;
+} */
