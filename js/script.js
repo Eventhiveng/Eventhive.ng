@@ -20,7 +20,7 @@ $(document).ready(function () {
   $(".year").html(year);
 
   // Show modal automatically on page load
-  $("#announcementModal").fadeIn();
+  // $("#announcementModal").fadeIn();
 
   // Hide modal and show main content when clicking close
   $("#closeModal").click(function () {
