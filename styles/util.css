@@ -1,13 +1,19 @@
 /* Container style */
 .container {
-  width: 100%;
+  max-width: 95%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 1580px) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+/* @media (max-width: 576px) {
   .container {
     padding-right: 30px;
     padding-left: 30px;
@@ -32,7 +38,7 @@
   .container {
     max-width: 1190px;
   }
-}
+} */
 
 /* Section Padding */
 .padding {

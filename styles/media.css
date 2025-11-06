@@ -16,6 +16,7 @@
 
   #about .about-wrapper .left .image {
     height: auto;
+    aspect-ratio: auto;
   }
 
   /* Objectives */
