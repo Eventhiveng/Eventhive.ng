@@ -17,9 +17,9 @@ $(document).ready(function () {
   // const $attendeeSlideTwo = $(".who-attends-slide-2");
   // const $attendeeSlideThree = $(".who-attends-slide-3");
 
-  // const $highlightSlideOne = $(".highlight-slider-1");
-  // const $highlightSlideTwo = $(".highlight-slider-2");
-  // const $highlightSlideThree = $(".highlight-slider-3");
+  const $highlightSlideOne = $(".highlight-slider-1");
+  const $highlightSlideTwo = $(".highlight-slider-2");
+  const $highlightSlideThree = $(".highlight-slider-3");
 
   // const $slides = $(
   //   ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
@@ -97,53 +97,53 @@ $(document).ready(function () {
   //   });
   // };
 
-  // const highlightComp = () => {
-  //   const highlightSettings1 = {
-  //     infinite: true,
-  //     speed: 4000,
-  //     autoplay: true,
-  //     autoplaySpeed: 10,
-  //     slidesToShow: 4,
-  //     slidesToScroll: 1,
-  //     lazyLoad: "ondemand",
-  //     arrows: false,
-  //     cssEase: "linear",
+  const highlightComp = () => {
+    const highlightSettings1 = {
+      infinite: true,
+      speed: 4000,
+      autoplay: true,
+      autoplaySpeed: 10,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      lazyLoad: "ondemand",
+      arrows: false,
+      cssEase: "linear",
 
-  //     responsive: [
-  //       {
-  //         breakpoint: 991,
-  //         settings: {
-  //           slidesToShow: 3,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 767,
-  //         settings: {
-  //           slidesToShow: 2,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 567,
-  //         settings: {
-  //           slidesToShow: 1,
-  //         },
-  //       },
-  //     ],
-  //   };
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 567,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    };
 
-  //   const highlightSettings2 = $.extend({}, highlightSettings1, {
-  //     speed: 3000,
-  //     rtl: true,
-  //   });
+    const highlightSettings2 = $.extend({}, highlightSettings1, {
+      speed: 3000,
+      rtl: true,
+    });
 
-  //   const highlightSettings3 = $.extend({}, highlightSettings1, {
-  //     speed: 6000,
-  //   });
+    const highlightSettings3 = $.extend({}, highlightSettings1, {
+      speed: 6000,
+    });
 
-  //   $highlightSlideOne.slick(highlightSettings1);
-  //   $highlightSlideTwo.slick(highlightSettings2);
-  //   $highlightSlideThree.slick(highlightSettings3);
-  // };
+    $highlightSlideOne.slick(highlightSettings1);
+    $highlightSlideTwo.slick(highlightSettings2);
+    $highlightSlideThree.slick(highlightSettings3);
+  };
 
   const accordionFunc = () => {
     // Open the first accordion item by default and set the icon to minus
@@ -185,5 +185,5 @@ $(document).ready(function () {
   toggleNav();
   accordionFunc();
   // attendeeComp();
-  // highlightComp();
+  highlightComp();
 });

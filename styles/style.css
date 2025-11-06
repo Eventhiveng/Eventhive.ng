@@ -491,6 +491,38 @@
   justify-content: center;
 }
 
+/* Guide */
+#guide .guide-container {
+  /* background: var(--white); */
+  border-bottom: 1px solid var(--shadow);
+}
+
+#guide .guide-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#guide .guide-wrapper p {
+  margin-bottom: 30px;
+}
+
+#guide .guide-wrapper ul li {
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  width: 600px;
+  min-height: 100px;
+  max-width: 90%;
+  margin: auto;
+}
+
+#guide .guide-wrapper ul li::marker {
+  color: var(--bg-black);
+}
+
 /* Agenda */
 #agenda .agenda-item {
   display: flex;
