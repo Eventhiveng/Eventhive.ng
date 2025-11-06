@@ -447,13 +447,13 @@
 #partner .partner-box-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
   row-gap: 60px;
   justify-content: center;
 }
 
 #partner .partner-box-container .partner-box {
-  flex: 0 0 calc((100% - 50px) / 2);
+  flex: 0 0 calc((100% - 60px) / 3);
   min-width: 250px;
   background: #04074680;
   padding: 50px 30px;

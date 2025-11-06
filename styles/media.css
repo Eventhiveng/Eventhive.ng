@@ -4,6 +4,10 @@
   #speakers .speakers-wrapper .speaker-box {
     flex: 0 0 calc((100% - 60px) / 3);
   }
+
+  #partner .partner-box-container .partner-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
 }
 
 /* Tap Pro */
