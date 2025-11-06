@@ -239,14 +239,28 @@ aside.active {
 /* Hero */
 #hero .hero-container {
   height: 100vh;
+  position: relative;
   width: 100%;
-  background-image: linear-gradient(#00000080, #000000dd),
-    url(../assets/section-img/hero.jpg);
+  /* background-image: linear-gradient(#00000080, #000000dd),
+    url(../assets/section-img/hero.jpg); */
+  /* background-image: linear-gradient(#000000cc, #000000cc),
+    url(../assets/highlights/27.jpg); */
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+#hero .hero-bg {
+  position: absolute;
+  inset: -10%;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(#000000cc, #000000cc),
+    url(/assets/highlights/26.jpg) #000000 no-repeat center/cover;
+  z-index: 0;
 }
 
 #hero .hero-wrapper {
@@ -339,6 +353,26 @@ aside.active {
   text-transform: uppercase;
   font-weight: 700;
 }
+/* #countup .objectives {
+  margin-top: 50px;
+}
+
+#countup .objectives ul li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 20px;
+}
+
+#countup .objectives ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#countup .objectives ul li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--primary-light);
+} */
 
 /* What's New */
 #whats-new .content {
@@ -493,9 +527,14 @@ aside.active {
 
 #agenda .agenda-item {
   display: flex;
-  min-height: 100vh;
   gap: 50px;
   margin-bottom: 50px;
+  /* position: sticky;
+  top: 0; */
+}
+
+#agenda .agenda-item:not(:last-child) {
+  min-height: 80vh;
 }
 
 #agenda .agenda-item:nth-child(even) {
@@ -532,8 +571,9 @@ aside.active {
 #agenda .agenda-item .right .image {
   height: 500px;
   /* position: sticky; */
-  top: calc(50% - (600px / 2));
-  top: 50%;
+  /* top: 50%; */
+  /* top: calc(50% - (500px / 2)); */
+
   border-radius: 10px;
   overflow: hidden;
 }
@@ -723,8 +763,8 @@ aside.active {
 
 /* More About Eventhive  */
 #more-about .more-container {
-  background: linear-gradient(#000000a1, #000000a7),
-    url(/assets/section-img/overlay.jpg) no-repeat center/cover fixed;
+  background: linear-gradient(#000000dd, #000000dd),
+    url(/assets/highlights/29.jpg) no-repeat center/cover fixed;
 }
 
 #more-about {

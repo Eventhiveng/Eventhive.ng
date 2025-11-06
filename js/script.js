@@ -155,8 +155,30 @@ $(document).ready(function () {
         }
       }
     });
+
+    AOS.refresh();
   });
+
+  // Initialize Rellax for parallax effects
+  let rellax;
+  function initRellax() {
+    if (typeof Rellax !== "undefined") {
+      rellax = new Rellax(".rellax", {
+        speed: -7,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false,
+      });
+    }
+  }
+
+  // Initialize on DOM ready
+  // $(function () {
+  // });
 
   // Initialize function
   accordionFunc();
+  initRellax();
 });
