@@ -521,6 +521,11 @@
   margin-bottom: 50px;
 }
 
+#agenda .agenda-subwrapper .left .agenda-item:last-child {
+  min-height: auto;
+  margin-bottom: calc(50% / 2);
+}
+
 #agenda .agenda-subwrapper .agenda-item .title {
   margin-bottom: 20px;
   font-size: 24px;
@@ -754,6 +759,7 @@
 #more-about .more-container {
   background: linear-gradient(#000060aa, #00006095),
     #0611899c url(../assets/section-bg/hero1.png) no-repeat center/cover;
+  overflow: hidden;
 }
 
 #more-about {

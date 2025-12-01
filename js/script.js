@@ -25,6 +25,10 @@ $(document).ready(function () {
     ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
   );
 
+  const year = $(".year");
+
+  year.text(new Date().getFullYear());
+
   // Toggle Nav
   const toggleNav = () => {
     // Toggle hamburger and aside menu
@@ -228,7 +232,7 @@ $(document).ready(function () {
 
   const countdownFunction = setInterval(function () {
     const now = new Date().getTime();
-    const eventDate = new Date("March 27, 2025 00:00:00").getTime();
+    const eventDate = new Date("March 26, 2026 00:00:00").getTime();
 
     // Calculate the time remaining
     const distance = eventDate - now;
