@@ -828,6 +828,7 @@
           }
 
           .sponsor-card {
+            display: block;
             width: 100%;
             background: var(--white);
             border-radius: calc(var(--radius) * 3);
@@ -837,6 +838,9 @@
             position: relative;
             overflow: hidden;
             border: 2px solid transparent;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
 
             &::before {
               content: "";
