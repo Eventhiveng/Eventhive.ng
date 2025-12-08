@@ -97,6 +97,27 @@ const speakers = [
     image: "assets/images/speakers/chichi-nwoko.webp",
     linkedIn: "#",
   },
+  {
+    name: "Mrs Victoria Fabunmi",
+    title: "National Coordinator",
+    company: "Nigerian Digital Innovation, NITDA",
+    image: "assets/images/speakers/victoria-fabunmi.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Tayo Oviosu",
+    title: "CEO,",
+    company: "Paga",
+    image: "assets/images/speakers/tayo-oviosu.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Adedeji Olowe",
+    title: "Founder,",
+    company: "Lendsqr",
+    image: "assets/images/speakers/adedeji-olowe.webp",
+    linkedIn: "#",
+  },
 ];
 
 const speakersOld = [
