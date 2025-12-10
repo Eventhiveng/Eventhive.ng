@@ -94,11 +94,11 @@ const speakers = [
     name: "Chichi Nwoko",
     title: "CEO",
     company: "What Media Group",
-    image: "assets/images/speakers/chichi-nwoko.webp",
+    image: "assets/images/speakers/chichi-nwoko.jpg",
     linkedIn: "#",
   },
   {
-    name: "Mrs Victoria Fabunmi",
+    name: "Victoria Fabunmi",
     title: "National Coordinator",
     company: "Nigerian Digital Innovation, NITDA",
     image: "assets/images/speakers/victoria-fabunmi.jpg",
@@ -116,6 +116,13 @@ const speakers = [
     title: "Founder,",
     company: "Lendsqr",
     image: "assets/images/speakers/adedeji-olowe.webp",
+    linkedIn: "#",
+  },
+  {
+    name: "Napa Onwusah",
+    title: "Managing Partner,",
+    company: "PlacidCode Labs",
+    image: "assets/images/speakers/napa-onwusah.jpg",
     linkedIn: "#",
   },
 ];
