@@ -28,6 +28,13 @@ const speakers = [
     linkedIn: "#",
   },
   {
+    name: "Uzoma Dozie",
+    title: "CEO",
+    company: "Sparkle",
+    image: "assets/images/speakers/uzoma-dozie.png",
+    linkedIn: "#",
+  },
+  {
     name: "Abasi Ene-Obong",
     title: "CEO",
     company: "Syndicate Bio",
@@ -124,6 +131,21 @@ const speakers = [
     title: "Managing Partner,",
     company: "PlacidCode Labs",
     image: "assets/images/speakers/napa-onwusah.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Emeka Ajene",
+    title: "Founder & CEO",
+    company: "Afridigest",
+    image: "assets/images/speakers/emeka-ajene.jpg",
+    linkedIn: "#",
+  },
+
+  {
+    name: "Akpor Ikogho",
+    title: "Managing Partner",
+    company: "Mark Renee LP",
+    image: "assets/images/speakers/akpor-ikogho.jpg",
     linkedIn: "#",
   },
 ];
