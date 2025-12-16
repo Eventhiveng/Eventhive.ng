@@ -785,6 +785,13 @@
               border: 2px solid var(--primary-color);
               opacity: 0.9;
             }
+
+            &.startup-exhibitor-badge {
+              background: var(--primary-color);
+              color: var(--white);
+              border: 2px solid var(--primary-color);
+              opacity: 0.85;
+            }
           }
         }
 
@@ -919,6 +926,25 @@
             }
 
             &.exhibitor-card {
+              background: rgba(0, 0, 102, 0.03);
+              border-color: rgba(0, 0, 102, 0.15);
+
+              &::before {
+                background: var(--primary-color);
+              }
+
+              &:hover {
+                background: rgba(0, 0, 102, 0.06);
+                border-color: var(--primary-color);
+                box-shadow: 0 12px 40px rgba(0, 0, 102, 0.2);
+              }
+
+              .sponsor-logo .sponsor-name {
+                color: var(--primary-color);
+              }
+            }
+
+            &.startup-exhibitor-card {
               background: rgba(0, 0, 102, 0.03);
               border-color: rgba(0, 0, 102, 0.15);
 
