@@ -152,7 +152,14 @@ const speakers = [
     name: "Adesuwa Omoruyi",
     title: "Co-Founder, ",
     company: "Accrue",
-    image: "assets/images/speakers/akpor-ikogho.jpg",
+    image: "assets/images/speakers/adesuwa-omoruyi.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Wale Oyewo",
+    title: "CEO & Co-Founder,",
+    company: "TetradPay",
+    image: "assets/images/speakers/wale-oyewo.jpg",
     linkedIn: "#",
   },
 ];
