@@ -162,6 +162,20 @@ const speakers = [
     image: "assets/images/speakers/wale-oyewo.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Oluwadunni Fanibe",
+    title: "Accelerator Portfolio Manager,",
+    company: "Google for Startups, SSA",
+    image: "assets/images/speakers/oluwadunni-fanibe.png",
+    linkedIn: "#",
+  },
+  {
+    name: "Olawale Samuel",
+    title: "CEO,",
+    company: "Axia Africa",
+    image: "assets/images/speakers/olawale-olakanmi.jpg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
