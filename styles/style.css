@@ -792,6 +792,13 @@
               border: 2px solid var(--primary-color);
               opacity: 0.85;
             }
+
+            &.media-partner-badge {
+              background: var(--primary-color);
+              color: var(--white);
+              border: 2px solid var(--primary-color);
+              opacity: 0.9;
+            }
           }
         }
 
@@ -831,6 +838,22 @@
 
             @media (min-width: 768px) {
               grid-template-columns: repeat(2, 1fr);
+            }
+          }
+
+          &.media-partner-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+
+            @media (min-width: 768px) {
+              grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (min-width: 1024px) {
+              grid-template-columns: repeat(4, 1fr);
             }
           }
 
@@ -883,6 +906,14 @@
                 object-fit: contain;
                 filter: grayscale(0);
                 transition: all 0.3s ease;
+                display: block;
+              }
+
+              img[src$=".svg"] {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 80px;
               }
 
               .sponsor-name {
@@ -945,6 +976,44 @@
             }
 
             &.startup-exhibitor-card {
+              background: rgba(0, 0, 102, 0.03);
+              border-color: rgba(0, 0, 102, 0.15);
+
+              &::before {
+                background: var(--primary-color);
+              }
+
+              &:hover {
+                background: rgba(0, 0, 102, 0.06);
+                border-color: var(--primary-color);
+                box-shadow: 0 12px 40px rgba(0, 0, 102, 0.2);
+              }
+
+              .sponsor-logo .sponsor-name {
+                color: var(--primary-color);
+              }
+            }
+
+            &.media-partner-card {
+              background: rgba(0, 0, 102, 0.03);
+              border-color: rgba(0, 0, 102, 0.15);
+
+              &::before {
+                background: var(--primary-color);
+              }
+
+              &:hover {
+                background: rgba(0, 0, 102, 0.06);
+                border-color: var(--primary-color);
+                box-shadow: 0 12px 40px rgba(0, 0, 102, 0.2);
+              }
+
+              .sponsor-logo .sponsor-name {
+                color: var(--primary-color);
+              }
+            }
+
+            &.media-partner-card {
               background: rgba(0, 0, 102, 0.03);
               border-color: rgba(0, 0, 102, 0.15);
 
