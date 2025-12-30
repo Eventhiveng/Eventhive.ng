@@ -176,6 +176,13 @@ const speakers = [
     image: "assets/images/speakers/olawale-olakanmi.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Omoruyi Edoigiawerie",
+    title: "Founder,",
+    company: "EandC Legal",
+    image: "assets/images/speakers/omoruyi-edoigiawerie.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
