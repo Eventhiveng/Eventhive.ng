@@ -767,6 +767,12 @@
               font-size: 1.5rem;
             }
 
+            &.platinum-badge {
+              background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+              color: var(--black);
+              border: 2px solid #c0c0c0;
+            }
+
             &.gold-badge {
               background: var(--secondary-color);
               color: var(--black);
@@ -806,6 +812,16 @@
           display: grid;
           gap: 30px;
           justify-items: center;
+
+          &.platinum-grid {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            max-width: 800px;
+            margin: 0 auto;
+
+            @media (min-width: 768px) {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
 
           &.gold-grid {
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -929,6 +945,21 @@
                 color: var(--primary-color);
                 letter-spacing: 0.5px;
                 line-height: 1.4;
+              }
+            }
+
+            &.platinum-card {
+              background: rgba(192, 192, 192, 0.05);
+              border-color: rgba(192, 192, 192, 0.3);
+
+              &::before {
+                background: linear-gradient(90deg, #c0c0c0, #e8e8e8);
+              }
+
+              &:hover {
+                background: rgba(192, 192, 192, 0.1);
+                border-color: #c0c0c0;
+                box-shadow: 0 12px 40px rgba(192, 192, 192, 0.25);
               }
             }
 
