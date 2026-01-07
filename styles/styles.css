@@ -727,6 +727,157 @@
   font-size: 1rem;
 }
 
+/* Speakers Section */
+.speakers {
+  padding: 5rem 0;
+  background: white;
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.speaker-item {
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.speaker-image {
+  width: 100%;
+  /* height: 350px; */
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background: #e0e0e0;
+}
+
+.speaker-image img {
+  /* transition: transform 0.3s ease; */
+  object-position: top;
+}
+
+/* .speaker-item:hover .speaker-image img {
+  transform: scale(1.1);
+} */
+
+.speaker-info {
+  padding: 2rem 1.5rem;
+}
+
+.speaker-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c1810;
+  margin-bottom: 0.5rem;
+}
+
+.speaker-designation {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.speaker-company {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Sponsors Section */
+.sponsors {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+.sponsors-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.sponsor-tier {
+  text-align: center;
+}
+
+.sponsor-tier-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.sponsor-tier-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.sponsor-tier-title.gold {
+  color: #d4af37;
+}
+
+.sponsor-tier-title.gold::after {
+  background: #d4af37;
+}
+
+.sponsor-tier-title.associate {
+  color: #2c1810;
+}
+
+.sponsor-tier-title.associate::after {
+  background: var(--primary-color);
+}
+
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.sponsor-logo-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-logo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sponsor-logo-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 /* Partnership Section */
 .partnership {
   padding: 5rem 0;
@@ -942,6 +1093,7 @@
     var(--primary-color) url(../assets/background/solar-cell.jpg) no-repeat
       center/cover fixed;
   color: var(--white);
+  overflow-x: hidden;
 }
 
 #more-about {

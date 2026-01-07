@@ -26,6 +26,20 @@
     grid-template-columns: 1fr;
   }
 
+  .speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .sponsor-logos {
+    gap: 2rem;
+  }
+
+  .sponsor-logo-item {
+    width: 200px;
+    height: 120px;
+  }
+
   .partnership-grid {
     grid-template-columns: 1fr;
   }
@@ -78,6 +92,25 @@
 
   .attendees-grid {
     grid-template-columns: 1fr;
+  }
+
+  .speakers-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .speaker-image {
+    height: 300px;
+  }
+
+  .sponsor-logo-item {
+    width: 180px;
+    height: 100px;
+    padding: 1.5rem;
+  }
+
+  .sponsor-tier-title {
+    font-size: 1.5rem;
   }
 
   .focus-points {
