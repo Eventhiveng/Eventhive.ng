@@ -183,6 +183,13 @@ const speakers = [
     image: "assets/images/speakers/omoruyi-edoigiawerie.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Ayotunde Alabi",
+    title: "Country Manager,",
+    company: "Luno Nigeria",
+    image: "assets/images/speakers/ayotunde-alabi.jpg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
