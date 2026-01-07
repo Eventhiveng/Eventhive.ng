@@ -736,7 +736,7 @@
 .speakers-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
+  gap: 1rem;
 }
 
 .speaker-item {
@@ -865,6 +865,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .sponsor-logo-item:hover {
