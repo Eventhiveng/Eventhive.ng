@@ -218,6 +218,13 @@ const speakers = [
     image: "assets/images/speakers/oswald-osaretin.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Ashwin Ravichandran",
+    title: "Head of Product,",
+    company: "BMONI",
+    image: "assets/images/speakers/ashwin-ravichandran.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
