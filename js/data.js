@@ -211,6 +211,13 @@ const speakers = [
     image: "assets/images/speakers/anil-atmaramani.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Oswald Osaretin Guobadia",
+    title: "Managing Partner,",
+    company: "DigitA",
+    image: "assets/images/speakers/oswald-osaretin.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
