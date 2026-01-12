@@ -190,6 +190,20 @@ const speakers = [
     image: "assets/images/speakers/ayotunde-alabi.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Tayo Mustapha",
+    title: "Senior Counsel,",
+    company: "Moniepoint",
+    image: "assets/images/speakers/tayo-mustapha.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Amanda Etuk",
+    title: "Program Director,",
+    company: "Cascador",
+    image: "assets/images/speakers/amanda-etuk.jpg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
