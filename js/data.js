@@ -204,6 +204,13 @@ const speakers = [
     image: "assets/images/speakers/amanda-etuk.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Anil Atmaramani",
+    title: "Partner,",
+    company: "Antler",
+    image: "assets/images/speakers/anil-atmaramani.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
