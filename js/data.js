@@ -41,13 +41,13 @@ const speakers = [
     image: "assets/images/speakers/abasi-ene-obong.jpg",
     linkedIn: "#",
   },
-  {
-    name: "Abdelaziz Saidu",
-    title: "Country General Manager, Nigeria & Ghana",
-    company: "Cisco",
-    image: "assets/images/speakers/abdelaziz-saidu.jpg",
-    linkedIn: "#",
-  },
+  // {
+  //   name: "Abdelaziz Saidu",
+  //   title: "Country General Manager, Nigeria & Ghana",
+  //   company: "Cisco",
+  //   image: "assets/images/speakers/abdelaziz-saidu.jpg",
+  //   linkedIn: "#",
+  // },
   {
     name: "Tosin Faniro-Dada",
     title: "Partner",
@@ -223,6 +223,20 @@ const speakers = [
     title: "Head of Product,",
     company: "BMONI",
     image: "assets/images/speakers/ashwin-ravichandran.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Nonye Ujam",
+    title: "Director Government Affairs, West Africa",
+    company: "Microsoft",
+    image: "assets/images/speakers/nonye-ujam.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Stephaine Kosisochukwu David",
+    title: "Growth and Marketing Lead,",
+    company: "Monica Technologies",
+    image: "assets/images/speakers/stephaine-kosisochukwu.jpeg",
     linkedIn: "#",
   },
 ];

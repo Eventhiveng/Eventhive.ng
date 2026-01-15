@@ -76,8 +76,10 @@
   z-index: 10001;
   animation: modalFadeIn 0.4s ease-out;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
 }
 
 .announcement-image-wrapper {
@@ -85,7 +87,7 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 90vh;
+  max-height: calc(90vh - 100px);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
@@ -96,7 +98,7 @@
 
 .announcement-image-wrapper img {
   max-width: 100%;
-  max-height: 90vh;
+  max-height: calc(90vh - 100px);
   width: auto;
   height: auto;
   object-fit: contain;
@@ -136,6 +138,23 @@
   color: var(--white);
 }
 
+.announcement-download {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.announcement-download .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.announcement-download .btn i {
+  font-size: 1.1rem;
+}
+
 @keyframes modalFadeIn {
   from {
     opacity: 0;
@@ -153,16 +172,17 @@
     max-width: calc(95vw - 40px);
     max-height: 95vh;
     padding: 20px;
+    gap: 1rem;
   }
 
   .announcement-image-wrapper {
     max-width: 100%;
-    max-height: calc(95vh - 40px);
+    max-height: calc(95vh - 120px);
   }
 
   .announcement-image-wrapper img {
     max-width: 100%;
-    max-height: calc(95vh - 40px);
+    max-height: calc(95vh - 120px);
   }
 
   .announcement-modal-close {
@@ -182,17 +202,27 @@
     max-width: calc(100vw - 30px);
     max-height: calc(100vh - 30px);
     padding: 15px;
+    gap: 1rem;
+  }
+
+  .announcement-download {
+    margin-top: 0.5rem;
+  }
+
+  .announcement-download .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .announcement-image-wrapper {
     max-width: 100%;
-    max-height: calc(100vh - 60px);
+    max-height: calc(100vh - 140px);
     border-radius: 8px;
   }
 
   .announcement-image-wrapper img {
     max-width: 100%;
-    max-height: calc(100vh - 60px);
+    max-height: calc(100vh - 140px);
   }
 
   .announcement-modal-close {
