@@ -4,17 +4,17 @@ const MarqueeBanner = () => {
   const marqueeData = [
     {
       ann: "Developing Africa's Businesses via face-to-face events",
-      upcoming: "Upcoming event: Fintech Without Borders Forum",
+      upcoming: "Upcoming event: Nigeria Economic Breakfast Meeting",
       icon: "favicon.ico",
     },
     {
       ann: "Developing Africa's Businesses via face-to-face events",
-      upcoming: "Upcoming event: Fintech Without Borders Forum",
+      upcoming: "Upcoming event: Nigeria Economic Breakfast Meeting",
       icon: "favicon.ico",
     },
     {
       ann: "Developing Africa's Businesses via face-to-face events",
-      upcoming: "Upcoming event: Fintech Without Borders Forum",
+      upcoming: "Upcoming event: Nigeria Economic Breakfast Meeting",
       icon: "favicon.ico",
     },
   ];
