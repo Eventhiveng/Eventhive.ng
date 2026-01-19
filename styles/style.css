@@ -415,6 +415,11 @@
       overflow: clip;
     }
   }
+
+  .download-agenda {
+    margin-top: 40px;
+    text-align: center;
+  }
 }
 
 /* Testimonial */
