@@ -813,6 +813,13 @@
               border: 2px solid var(--primary-color);
               opacity: 0.9;
             }
+
+            &.community-partner-badge {
+              background: var(--primary-color);
+              color: var(--white);
+              border: 2px solid var(--primary-color);
+              opacity: 0.9;
+            }
           }
         }
 
@@ -884,6 +891,18 @@
 
             @media (min-width: 1024px) {
               grid-template-columns: repeat(4, 1fr);
+            }
+          }
+
+          &.community-partner-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            max-width: 800px;
+            margin: 0 auto;
+            gap: 30px;
+
+            @media (min-width: 768px) {
+              grid-template-columns: repeat(2, 1fr);
             }
           }
 
@@ -1059,6 +1078,25 @@
             }
 
             &.media-partner-card {
+              background: rgba(0, 0, 102, 0.03);
+              border-color: rgba(0, 0, 102, 0.15);
+
+              &::before {
+                background: var(--primary-color);
+              }
+
+              &:hover {
+                background: rgba(0, 0, 102, 0.06);
+                border-color: var(--primary-color);
+                box-shadow: 0 12px 40px rgba(0, 0, 102, 0.2);
+              }
+
+              .sponsor-logo .sponsor-name {
+                color: var(--primary-color);
+              }
+            }
+
+            &.community-partner-card {
               background: rgba(0, 0, 102, 0.03);
               border-color: rgba(0, 0, 102, 0.15);
 

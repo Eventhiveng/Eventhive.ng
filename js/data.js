@@ -239,6 +239,13 @@ const speakers = [
     image: "assets/images/speakers/stephaine-kosisochukwu.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Atinuke Olalafe",
+    title: "Managing Director,",
+    company: "SDM communications",
+    image: "assets/images/speakers/atinuke-olalafe.png",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
