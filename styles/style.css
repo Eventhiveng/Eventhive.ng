@@ -820,6 +820,12 @@
               border: 2px solid var(--primary-color);
               opacity: 0.9;
             }
+
+            &.after-dark-badge {
+              background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+              color: var(--white);
+              border: 2px solid #1a1a2e;
+            }
           }
         }
 
@@ -904,6 +910,14 @@
             @media (min-width: 768px) {
               grid-template-columns: repeat(2, 1fr);
             }
+          }
+
+          &.after-dark-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            max-width: 600px;
+            margin: 0 auto;
+            gap: 30px;
           }
 
           .sponsor-card {
@@ -1112,6 +1126,25 @@
 
               .sponsor-logo .sponsor-name {
                 color: var(--primary-color);
+              }
+            }
+
+            &.after-dark-card {
+              background: rgba(26, 26, 46, 0.05);
+              border-color: rgba(26, 26, 46, 0.2);
+
+              &::before {
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+              }
+
+              &:hover {
+                background: rgba(26, 26, 46, 0.1);
+                border-color: #1a1a2e;
+                box-shadow: 0 12px 40px rgba(26, 26, 46, 0.3);
+              }
+
+              .sponsor-logo .sponsor-name {
+                color: #1a1a2e;
               }
             }
           }
