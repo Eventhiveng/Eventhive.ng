@@ -720,6 +720,7 @@
 #contact {
   background: linear-gradient(#000060e4, #000060d9),
     #0611899c url(../assets/section-img/1.jpg) no-repeat center/cover fixed;
+    overflow: hidden;
 }
 
 #contact .contact-wrapper {
