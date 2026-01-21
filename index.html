@@ -1,459 +1,332 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lagos Tech Fest 2026</title>
 
-    <link
-      rel="shortcut icon"
-      href="/assets/images/logo/tech-logo-icon.svg"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lagos Tech Fest 2026</title>
 
-    <!-- Slick css -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
+  <link rel="shortcut icon" href="/assets/images/logo/tech-logo-icon.svg" type="image/x-icon" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+  <!-- Slick css -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
-    <!-- Jarallax CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/jarallax/dist/jarallax.css"
-    />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Odometer -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css"
-    />
+  <!-- Jarallax CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jarallax/dist/jarallax.css" />
 
-    <!-- Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <!-- Odometer -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="/styles/index.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
 
-    <!-- Google Analytics tag -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1QG78VR9MY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="/styles/index.css" />
 
-      gtag("config", "G-1QG78VR9MY");
-    </script>
-  </head>
-  <body>
-    <!-- Preloader (Simple) -->
-    <div class="preloader">
-      <div class="simple-spinner"></div>
+  <!-- Google Analytics tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1QG78VR9MY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-      <!-- <div class="p-logo">
+    gtag("config", "G-1QG78VR9MY");
+  </script>
+</head>
+
+<body>
+  <!-- Preloader (Simple) -->
+  <div class="preloader">
+    <div class="simple-spinner"></div>
+
+    <!-- <div class="p-logo">
         <img src="/assets/images/logo/logo-white-svg.svg" alt="" />
       </div> -->
-      <!-- <div class="simple-loading-text">Loading...</div> -->
-    </div>
+    <!-- <div class="simple-loading-text">Loading...</div> -->
+  </div>
 
-    <!-- Announcement Modal -->
-    <div id="announcement-modal" class="announcement-modal">
-      <div class="announcement-modal-overlay"></div>
-      <div class="announcement-modal-content">
-        <button
-          class="announcement-modal-close"
-          aria-label="Close announcement"
-        >
-          <i class="fas fa-times"></i>
-        </button>
-        <div class="announcement-image-wrapper">
-          <img
-            src="/assets/images/announcement/prices-up-nxt.jpg"
-            alt="Prices going up tomorrow - Register now and save 50% off"
-          />
-        </div>
-        <div class="announcement-download">
-          <a
-            href="/assets/files/2026 - AGENDA + Speakers + Portfolio.pdf"
-            download
-            class="btn btn-sec"
-          >
-            <i class="fas fa-download"></i>
-            <span>Download Agenda</span>
-          </a>
-        </div>
+  <!-- Announcement Modal -->
+  <div id="announcement-modal" class="announcement-modal">
+    <div class="announcement-modal-overlay"></div>
+    <div class="announcement-modal-content">
+      <button class="announcement-modal-close" aria-label="Close announcement">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="announcement-image-wrapper">
+        <img src="/assets/images/announcement/prices-up-nxt.jpg"
+          alt="Prices going up tomorrow - Register now and save 50% off" />
+      </div>
+      <div class="announcement-download">
+        <a href="/assets/files/2026 - AGENDA + Speakers + Portfolio.pdf" download class="btn btn-sec">
+          <i class="fas fa-download"></i>
+          <span>Download Agenda</span>
+        </a>
       </div>
     </div>
+  </div>
 
-    <!-- Announcement Marquee -->
-    <section id="announcement-marquee" class="announcement-marquee">
-      <div class="marquee-inner">
+  <!-- Announcement Marquee -->
+  <section id="announcement-marquee" class="announcement-marquee">
+    <div class="marquee-inner">
+      <div>
         <div>
-          <div>
-            <span
-              >Book your pass at our special launch rate | Get 50% off!</span
-            >
-          </div>
-          <div class="icon">
-            <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
-          </div>
+          <span>Book your pass at our special launch rate | Get 50% off!</span>
         </div>
-        <div>
-          <div>
-            <span
-              >Book your pass at our special launch rate | Get 50% off!</span
-            >
-          </div>
-          <div class="icon">
-            <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <span
-              >Book your pass at our special launch rate | Get 50% off!</span
-            >
-          </div>
-          <div class="icon">
-            <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <span
-              >Book your pass at our special launch rate | Get 50% off!</span
-            >
-          </div>
-          <div class="icon">
-            <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <span
-              >Book your pass at our special launch rate | Get 50% off!</span
-            >
-          </div>
-          <div class="icon">
-            <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
-          </div>
+        <div class="icon">
+          <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
         </div>
       </div>
-      <div class="marquee-inner">
+      <div>
         <div>
-          <div>
-            <span
-              >Book your pass at our special launch rate | Get 50% off!</span
-            >
-          </div>
-          <div class="icon">
-            <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
-          </div>
+          <span>Book your pass at our special launch rate | Get 50% off!</span>
         </div>
-        <div>
-          <div>
-            <span
-              >Book your pass at our special launch rate | Get 50% off!</span
-            >
-          </div>
-          <div class="icon">
-            <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <span
-              >Book your pass at our special launch rate | Get 50% off!</span
-            >
-          </div>
-          <div class="icon">
-            <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <span
-              >Book your pass at our special launch rate | Get 50% off!</span
-            >
-          </div>
-          <div class="icon">
-            <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <span
-              >Book your pass at our special launch rate | Get 50% off!</span
-            >
-          </div>
-          <div class="icon">
-            <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
-          </div>
+        <div class="icon">
+          <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
         </div>
       </div>
-    </section>
+      <div>
+        <div>
+          <span>Book your pass at our special launch rate | Get 50% off!</span>
+        </div>
+        <div class="icon">
+          <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>Book your pass at our special launch rate | Get 50% off!</span>
+        </div>
+        <div class="icon">
+          <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>Book your pass at our special launch rate | Get 50% off!</span>
+        </div>
+        <div class="icon">
+          <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="marquee-inner">
+      <div>
+        <div>
+          <span>Book your pass at our special launch rate | Get 50% off!</span>
+        </div>
+        <div class="icon">
+          <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>Book your pass at our special launch rate | Get 50% off!</span>
+        </div>
+        <div class="icon">
+          <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>Book your pass at our special launch rate | Get 50% off!</span>
+        </div>
+        <div class="icon">
+          <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>Book your pass at our special launch rate | Get 50% off!</span>
+        </div>
+        <div class="icon">
+          <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>Book your pass at our special launch rate | Get 50% off!</span>
+        </div>
+        <div class="icon">
+          <img src="/assets/images/logo/tech-logo-icon-yellow.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Main container -->
-    <div class="main-container">
-      <!-- Header -->
-      <header>
-        <nav id="navbar">
-          <div class="container">
-            <div class="nav-wrapper">
-              <div class="ham">
-                <div class="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-
-              <div class="nav-links">
-                <ul class="el-container">
-                  <li><a href="#hero">Home</a></li>
-                  <!-- <li><a href="#about">About</a></li> -->
-                  <!-- <li><a href="#partner">Partner</a></li> -->
-                  <li>
-                    <a
-                      href="/assets/files/2026 - AGENDA + Speakers + Portfolio.pdf"
-                      download
-                      >Agenda</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Exhibition%20Deck"
-                      >Exhibit</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Sponsorship%20Deck"
-                      >Sponsor</a
-                    >
-                  </li>
-                  <li><a href="#speakers">Speakers</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-              <a href="/" class="logo">
-                <img
-                  id="nav-logo"
-                  src="/assets/images/logo/logo-blue-svg.svg"
-                  alt="Lagos Tech Fest"
-                />
-                <div class="edition">6th Edition</div>
-              </a>
-
-              <div class="button">
-                <div class="button-cont">
-                  <div class="lg">
-                    <a
-                      class="btn btn-pry"
-                      href="https://tix.africa/lagos-tech-fest-26"
-                      target="_blank"
-                    >
-                      <span> Tickets </span>
-                    </a>
-                  </div>
-
-                  <div class="sm">
-                    <a
-                      href="https://tix.africa/lagos-tech-fest-26"
-                      target="_blank"
-                    >
-                      <iconify-icon
-                        icon="famicons:ticket-outline"
-                      ></iconify-icon>
-                    </a>
-                  </div>
-                </div>
+  <!-- Main container -->
+  <div class="main-container">
+    <!-- Header -->
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <div class="nav-wrapper">
+            <div class="ham">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
-          </div>
-        </nav>
 
-        <!-- Aside -->
-        <aside id="aside-menu" class="aside-menu">
-          <div class="aside-menu-container">
-            <div class="cancel-menu">&times;</div>
-
-            <div class="menu">
-              <ul class="">
+            <div class="nav-links">
+              <ul class="el-container">
                 <li><a href="#hero">Home</a></li>
-                <li>
-                  <a href="https://tix.africa/lagos-tech-fest-26">Tickets</a>
-                </li>
+                <!-- <li><a href="#about">About</a></li> -->
                 <!-- <li><a href="#partner">Partner</a></li> -->
                 <li>
-                  <a
-                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Exhibition%20Deck"
-                    >Exhibit</a
-                  >
+                  <a href="/assets/files/2026 - AGENDA + Speakers + Portfolio.pdf" download>Agenda</a>
                 </li>
                 <li>
                   <a
-                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Sponsorship%20Deck"
-                    >Sponsor</a
-                  >
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Exhibition%20Deck">Exhibit</a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Sponsorship%20Deck">Sponsor</a>
                 </li>
                 <li><a href="#speakers">Speakers</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
+            <a href="/" class="logo">
+              <img id="nav-logo" src="/assets/images/logo/logo-blue-svg.svg" alt="Lagos Tech Fest" />
+              <div class="edition">6th Edition</div>
+            </a>
 
-            <div class="socials">
-              <ul>
-                <li>
-                  <a
-                    href="https://www.facebook.com/share/JqRxmCpGDEoj8RZM/?mibextid=LQQJ4d"
-                    target="_blank"
-                    ><iconify-icon icon="fa:facebook"></iconify-icon>
+            <div class="button">
+              <div class="button-cont">
+                <div class="lg">
+                  <a class="btn btn-pry" href="https://tix.africa/lagos-tech-fest-26" target="_blank">
+                    <span> Tickets </span>
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="https://x.com/afritechseries?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ"
-                    target="_blank"
-                    ><iconify-icon icon="ri:twitter-x-fill"></iconify-icon
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/africa-tech-series/"
-                    target="_blank"
-                    ><iconify-icon icon="formkit:linkedin"></iconify-icon
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/afritechseries?igsh=MWVwajkyYjNyYW8zZw=="
-                    target="_blank"
-                    ><iconify-icon icon="mdi:instagram"></iconify-icon
-                  ></a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="pass">
-              <a
-                class="btn btn-sec"
-                href="/assets/files/2026 - AGENDA + Speakers + Portfolio.pdf"
-                download
-                >Download Agenda</a
-              >
-              <a
-                class="btn btn-pry"
-                href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Exhibition%20Deck"
-                >Book Expo Booth</a
-              >
-            </div>
-          </div>
-        </aside>
-      </header>
-
-      <!-- Main -->
-      <main>
-        <!-- Hero -->
-        <section id="hero">
-          <div class="hero" data-aos="zoom-out">
-            <div class="container" style="height: 100%">
-              <div class="hero-wrapper">
-                <div class="vid-container">
-                  <video
-                    class="hero-video"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    poster="assets/images/background/hero.jpg"
-                    src="assets/videos/hero.mp4"
-                  >
-                    <source src="assets/videos/hero.mp4" type="video/mp4" />
-                  </video>
                 </div>
 
-                <!-- Overlay content -->
-                <div class="hero-overlay">
-                  <div class="inner-container" style="height: 100%">
-                    <div class="hero-subwrapper">
-                      <div class="hero-content">
-                        <div class="o-hidden">
-                          <h3
-                            class="date"
-                            data-aos="fade-up"
-                            data-aos-delay="200"
-                          >
-                            17th - 18th February, 2026 - Lagos Nigeria
-                          </h3>
-                        </div>
-                        <div class="o-hidden">
-                          <h1
-                            class="heading"
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                          >
-                            Leading gathering of players across Nigeria's tech
-                            ecosystem
-                          </h1>
-                        </div>
-                        <!-- <p class="description">
+                <div class="sm">
+                  <a href="https://tix.africa/lagos-tech-fest-26" target="_blank">
+                    <iconify-icon icon="famicons:ticket-outline"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Aside -->
+      <aside id="aside-menu" class="aside-menu">
+        <div class="aside-menu-container">
+          <div class="cancel-menu">&times;</div>
+
+          <div class="menu">
+            <ul class="">
+              <li><a href="#hero">Home</a></li>
+              <li>
+                <a href="https://tix.africa/lagos-tech-fest-26">Tickets</a>
+              </li>
+              <!-- <li><a href="#partner">Partner</a></li> -->
+              <li>
+                <a
+                  href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Exhibition%20Deck">Exhibit</a>
+              </li>
+              <li>
+                <a
+                  href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Sponsorship%20Deck">Sponsor</a>
+              </li>
+              <li><a href="#speakers">Speakers</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="socials">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/share/JqRxmCpGDEoj8RZM/?mibextid=LQQJ4d" target="_blank"><iconify-icon
+                    icon="fa:facebook"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/afritechseries?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ" target="_blank"><iconify-icon
+                    icon="ri:twitter-x-fill"></iconify-icon></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/africa-tech-series/" target="_blank"><iconify-icon
+                    icon="formkit:linkedin"></iconify-icon></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/afritechseries?igsh=MWVwajkyYjNyYW8zZw=="
+                  target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pass">
+            <a class="btn btn-sec" href="/assets/files/2026 - AGENDA + Speakers + Portfolio.pdf" download>Download
+              Agenda</a>
+            <a class="btn btn-pry"
+              href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Exhibition%20Deck">Book Expo
+              Booth</a>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero" data-aos="zoom-out">
+          <div class="container" style="height: 100%">
+            <div class="hero-wrapper">
+              <div class="vid-container">
+                <video class="hero-video" autoplay muted loop playsinline poster="assets/images/background/hero.jpg"
+                  src="assets/videos/hero.mp4">
+                  <source src="assets/videos/hero.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <!-- Overlay content -->
+              <div class="hero-overlay">
+                <div class="inner-container" style="height: 100%">
+                  <div class="hero-subwrapper">
+                    <div class="hero-content">
+                      <div class="o-hidden">
+                        <h3 class="date" data-aos="fade-up" data-aos-delay="200">
+                          17th - 18th February, 2026 - Lagos Nigeria
+                        </h3>
+                      </div>
+                      <div class="o-hidden">
+                        <h1 class="heading" data-aos="fade-up" data-aos-delay="400">
+                          Leading gathering of players across Nigeria's tech
+                          ecosystem
+                        </h1>
+                      </div>
+                      <!-- <p class="description">
                         Shaping the Future of Nigeria's Tech Ecosystem
                       </p> -->
-                        <div class="o-hidden">
-                          <div
-                            class="hero-buttons"
-                            data-aos="fade-up"
-                            data-aos-delay="500"
-                            data-aos-offset="100"
-                          >
-                            <a
-                              href="https://tix.africa/lagos-tech-fest-26"
-                              class="btn btn-sec md"
-                              >Get a Ticket</a
-                            >
-                            <a
-                              href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Sponsorship%20Deck"
-                              class="btn btn-pry"
-                              >Request Sponsorship Deck</a
-                            >
-                            <a
-                              href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Exhibition%20Deck"
-                              class="btn btn-sec lg"
-                              >Request Exhibition Deck
-                            </a>
-                          </div>
+                      <div class="o-hidden">
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500" data-aos-offset="100">
+                          <a href="https://tix.africa/lagos-tech-fest-26" class="btn btn-sec md">Get a Ticket</a>
+                          <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Sponsorship%20Deck"
+                            class="btn btn-pry">Request Sponsorship Deck</a>
+                          <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Exhibition%20Deck"
+                            class="btn btn-sec lg">Request Exhibition Deck
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -462,71 +335,60 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- About Section -->
-        <section id="about">
-          <div class="about padding">
-            <div class="container">
-              <div class="about-wrapper">
-                <div class="section-header">
-                  <div class="section-badge" data-aos="fade-up">
-                    The Future of Tech
-                  </div>
-                  <h2
-                    class="section-title"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    Best of Nigeria's tech ecosystem? Join us as we set the
-                    industry's future
-                  </h2>
+      <!-- About Section -->
+      <section id="about">
+        <div class="about padding">
+          <div class="container">
+            <div class="about-wrapper">
+              <div class="section-header">
+                <div class="section-badge" data-aos="fade-up">
+                  The Future of Tech
                 </div>
-                <div class="about-content">
-                  <div class="about-text">
-                    <p data-aos="fade-up" data-aos-delay="200">
-                      Now in its 6th year, Lagos Tech Fest annually gathers to
-                      shape the future of Nigeria's tech ecosystem.
-                    </p>
-                    <p data-aos="fade-up" data-aos-delay="250">
-                      Convening enterprise tech leaders, emerging startups,
-                      innovators, investors, tech enthusiasts, global tech
-                      giants, new entrants and government representatives, this
-                      is where we define our tech ecosystem future, address key
-                      developments and uncover countless opportunities within
-                      the Nigerian and African tech market.
-                    </p>
-                    <p data-aos="fade-up" data-aos-delay="300">
-                      Combining conferences, roundtables, industry party, pitch
-                      live, exhibitions and networking, the event annually
-                      creates a veritable platform that seeks to drive
-                      investments into the ecosystem.
-                    </p>
-                  </div>
-                  <div
-                    class="about-img"
-                    data-aos="zoom-in"
-                    data-aos-delay="200"
-                  >
-                    <img src="/assets/images/section/about.jpg" alt="" />
-                  </div>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                  Best of Nigeria's tech ecosystem? Join us as we set the
+                  industry's future
+                </h2>
+              </div>
+              <div class="about-content">
+                <div class="about-text">
+                  <p data-aos="fade-up" data-aos-delay="200">
+                    Now in its 6th year, Lagos Tech Fest annually gathers to
+                    shape the future of Nigeria's tech ecosystem.
+                  </p>
+                  <p data-aos="fade-up" data-aos-delay="250">
+                    Convening enterprise tech leaders, emerging startups,
+                    innovators, investors, tech enthusiasts, global tech
+                    giants, new entrants and government representatives, this
+                    is where we define our tech ecosystem future, address key
+                    developments and uncover countless opportunities within
+                    the Nigerian and African tech market.
+                  </p>
+                  <p data-aos="fade-up" data-aos-delay="300">
+                    Combining conferences, roundtables, industry party, pitch
+                    live, exhibitions and networking, the event annually
+                    creates a veritable platform that seeks to drive
+                    investments into the ecosystem.
+                  </p>
                 </div>
+                <div class="about-img" data-aos="zoom-in" data-aos-delay="200">
+                  <img src="/assets/images/section/about.jpg" alt="" />
+                </div>
+              </div>
 
-                <div class="download-agenda">
-                  <a
-                    href="/assets/files/2026 - AGENDA + Speakers + Portfolio.pdf"
-                    download
-                    class="btn btn-pry"
-                    >Download Agenda</a
-                  >
-                </div>
+              <div class="download-agenda">
+                <a href="/assets/files/2026 - AGENDA + Speakers + Portfolio.pdf" download class="btn btn-pry">Download
+                  Agenda</a>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Mastercard -->
-        <!-- <section id="mastercard">
+      <!-- Mastercard -->
+      <!-- <section id="mastercard">
           <div class="mastercard padding bg-fixed">
             <div class="container">
               <div class="mastercard-wrapper">
@@ -565,687 +427,453 @@
           </div>
         </section> -->
 
-        <!-- Venue -->
-        <section id="venue">
-          <div class="venue padding">
-            <div class="container">
-              <div class="section-header">
-                <div class="section-badge" data-aos="fade-up">Venue</div>
-                <h2
-                  class="section-title"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  Where It’s Happening
-                </h2>
+      <!-- Venue -->
+      <section id="venue">
+        <div class="venue padding">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-badge" data-aos="fade-up">Venue</div>
+              <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                Where It’s Happening
+              </h2>
+            </div>
+            <div class="venue-wrapper">
+              <div class="venue-header-row" data-aos="zoom-in" data-aos-delay="100">
+                <h2 class="venue-title">VENUES</h2>
+                <h2 class="venue-date">17th - 18th February, 2026</h2>
               </div>
-              <div class="venue-wrapper">
-                <div
-                  class="venue-header-row"
-                  data-aos="zoom-in"
-                  data-aos-delay="100"
-                >
-                  <h2 class="venue-title">VENUES</h2>
-                  <h2 class="venue-date">17th - 18th February, 2026</h2>
-                </div>
-                <div class="venue-cards">
-                  <div
-                    class="venue-card"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <div class="top">
-                      <div
-                        class="venue-img"
-                        style="
+              <div class="venue-cards">
+                <div class="venue-card" data-aos="fade-up" data-aos-delay="100">
+                  <div class="top">
+                    <div class="venue-img" style="
                           background-image: url('assets/images/section/fourpoints.jpg');
-                        "
-                      ></div>
-                      <div class="venue-card-label venue-orange">
-                        NIGERIA’S TECH LEADERSHIP ROUNDTABLE
-                      </div>
-                    </div>
-
-                    <div class="venue-card-details">
-                      <div class="venue-card-location">
-                        Fourpoints By Sheraton, VI, Lagos
-                      </div>
-                      <div class="venue-card-date">17th February, 2026</div>
+                        "></div>
+                    <div class="venue-card-label venue-orange">
+                      NIGERIA’S TECH LEADERSHIP ROUNDTABLE
                     </div>
                   </div>
-                  <div
-                    class="venue-card"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <div class="top">
-                      <div
-                        class="venue-img"
-                        style="
+
+                  <div class="venue-card-details">
+                    <div class="venue-card-location">
+                      Fourpoints By Sheraton, VI, Lagos
+                    </div>
+                    <div class="venue-card-date">17th February, 2026</div>
+                  </div>
+                </div>
+                <div class="venue-card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="top">
+                    <div class="venue-img" style="
                           background-image: url('assets/images/section/thegarden.jpg');
-                        "
-                      ></div>
-                      <div class="venue-card-label venue-green">
-                        AFTER DARK HOURS
-                      </div>
-                    </div>
-
-                    <div class="venue-card-details">
-                      <div class="venue-card-location">
-                        The Garden, Ikoyi, Lagos
-                      </div>
-                      <div class="venue-card-date">17th February, 2026</div>
+                        "></div>
+                    <div class="venue-card-label venue-green">
+                      AFTER DARK HOURS
                     </div>
                   </div>
-                  <div
-                    class="venue-card"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <div class="top">
-                      <div
-                        class="venue-img"
-                        style="
-                          background-image: url('assets/images/section/landmark.jpg');
-                        "
-                      ></div>
-                      <div class="venue-card-label venue-blue">MAIN EVENT</div>
-                    </div>
 
-                    <div class="venue-card-details">
-                      <div class="venue-card-location">
-                        Landmark Event Centre, VI, Lagos
-                      </div>
-                      <div class="venue-card-date">18th February, 2026</div>
+                  <div class="venue-card-details">
+                    <div class="venue-card-location">
+                      The Garden, Ikoyi, Lagos
                     </div>
+                    <div class="venue-card-date">17th February, 2026</div>
+                  </div>
+                </div>
+                <div class="venue-card" data-aos="fade-up" data-aos-delay="300">
+                  <div class="top">
+                    <div class="venue-img" style="
+                          background-image: url('assets/images/section/landmark.jpg');
+                        "></div>
+                    <div class="venue-card-label venue-blue">MAIN EVENT</div>
+                  </div>
+
+                  <div class="venue-card-details">
+                    <div class="venue-card-location">
+                      Landmark Event Centre, VI, Lagos
+                    </div>
+                    <div class="venue-card-date">18th February, 2026</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Look Back Section -->
-        <section id="lookback">
-          <div class="lookback padding">
-            <div class="container">
-              <div class="section-header">
+      <!-- Look Back Section -->
+      <section id="lookback">
+        <div class="lookback padding">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-badge" data-aos="fade-up">
+                Mashup Highlight
+              </div>
+              <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                A Lookback at the 2025 Edition
+              </h2>
+            </div>
+            <div class="video-container" data-aos="zoom-in" data-aos-delay="200">
+              <!-- src="https://www.youtube.com/embed/qxYs46P2KXs?si=F_W5H6HBhK32sQyd" -->
+              <iframe src="https://www.youtube.com/embed/P8fIaqMh0LM" frameborder="0" width="100%" height="100%"
+                allow="autoplay; encrypted-media; accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share"
+                allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sponsors25 Section -->
+      <section id="sponsors-25">
+        <div class="sponsors-25 padding">
+          <div class="container">
+            <div class="sponsors-25-wrapper">
+              <div class="section-header dark">
                 <div class="section-badge" data-aos="fade-up">
-                  Mashup Highlight
+                  Who Sponsors?
                 </div>
-                <h2
-                  class="section-title"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  A Lookback at the 2025 Edition
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="00">
+                  Our 2025 Sponsors
                 </h2>
               </div>
-              <div
-                class="video-container"
-                data-aos="zoom-in"
-                data-aos-delay="200"
-              >
-                <!-- src="https://www.youtube.com/embed/qxYs46P2KXs?si=F_W5H6HBhK32sQyd" -->
-                <iframe
-                  src="https://www.youtube.com/embed/P8fIaqMh0LM"
-                  frameborder="0"
-                  width="100%"
-                  height="100%"
-                  allow="autoplay; encrypted-media; accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                  referrerpolicy="strict-origin-when-cross-origin"
-                ></iframe>
-              </div>
             </div>
           </div>
-        </section>
+          <div class="sponsors-25-subwrapper" data-aos="zoom-out" data-aos-delay="400">
+            <div class="sponsors-25-slide-1"></div>
+            <div class="sponsors-25-slide-2" dir="rtl"></div>
+            <div class="sponsors-25-slide-3"></div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sponsors25 Section -->
-        <section id="sponsors-25">
-          <div class="sponsors-25 padding">
-            <div class="container">
-              <div class="sponsors-25-wrapper">
+      <!-- <div class="dark-divider"></div> -->
+
+      <!-- Testimonials Section -->
+      <section id="testimonials">
+        <div class="testimonials padding">
+          <div class="container">
+            <div class="testimonials-container bg-dark radius p-block">
+              <div class="inner-container">
                 <div class="section-header dark">
                   <div class="section-badge" data-aos="fade-up">
-                    Who Sponsors?
+                    Testimonials
                   </div>
-                  <h2
-                    class="section-title"
-                    data-aos="fade-up"
-                    data-aos-delay="00"
-                  >
-                    Our 2025 Sponsors
+                  <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                    Real Stories. Real Impact.
                   </h2>
                 </div>
-              </div>
-            </div>
-            <div
-              class="sponsors-25-subwrapper"
-              data-aos="zoom-out"
-              data-aos-delay="400"
-            >
-              <div class="sponsors-25-slide-1"></div>
-              <div class="sponsors-25-slide-2" dir="rtl"></div>
-              <div class="sponsors-25-slide-3"></div>
-            </div>
-          </div>
-        </section>
-
-        <!-- <div class="dark-divider"></div> -->
-
-        <!-- Testimonials Section -->
-        <section id="testimonials">
-          <div class="testimonials padding">
-            <div class="container">
-              <div class="testimonials-container bg-dark radius p-block">
-                <div class="inner-container">
-                  <div class="section-header dark">
-                    <div class="section-badge" data-aos="fade-up">
-                      Testimonials
-                    </div>
-                    <h2
-                      class="section-title"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
-                    >
-                      Real Stories. Real Impact.
-                    </h2>
-                  </div>
-                  <div class="testimonials-slider">
-                    <div class="swiper testimonial-swiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <div class="testimonial-slide">
-                            <div class="testimonial-image">
-                              <div class="image">
-                                <img
-                                  src="/assets/images/testimonials/folasade.jpg"
-                                  alt="Folasade Femi-Lawal"
-                                />
-                              </div>
-                            </div>
-                            <div class="testimonial-content">
-                              <p>
-                                Our experience has been simply unforgettable, we
-                                are delighted to be headlining Lagos Tech Fest,
-                                since its launch, the event has grown to become
-                                a very important meeng for players across
-                                Nigeria and Africa's tech ecosystem providing us
-                                with an opportunity to connect with key industry
-                                players and enthusiasts.
-                              </p>
-                              <h4>Folasade Femi-Lawal</h4>
-                              <div class="designation">
-                                Country Manager, Nigeria
-                              </div>
-                              <div class="company">MasterCard</div>
+                <div class="testimonials-slider">
+                  <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                          <div class="testimonial-image">
+                            <div class="image">
+                              <img src="/assets/images/testimonials/folasade.jpg" alt="Folasade Femi-Lawal" />
                             </div>
                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-slide">
-                            <div class="testimonial-image">
-                              <div class="image">
-                                <img
-                                  src="/assets/images/testimonials/tolu-osho.jpg"
-                                  alt="Tolu Osho"
-                                />
-                              </div>
+                          <div class="testimonial-content">
+                            <p>
+                              Our experience has been simply unforgettable, we
+                              are delighted to be headlining Lagos Tech Fest,
+                              since its launch, the event has grown to become
+                              a very important meeng for players across
+                              Nigeria and Africa's tech ecosystem providing us
+                              with an opportunity to connect with key industry
+                              players and enthusiasts.
+                            </p>
+                            <h4>Folasade Femi-Lawal</h4>
+                            <div class="designation">
+                              Country Manager, Nigeria
                             </div>
-                            <div class="testimonial-content">
-                              <p>
-                                I don't usually go for conferences, but coming
-                                to this place, I think this is really good, I am
-                                really impressed and I really look forward to
-                                our team returning next year.
-                              </p>
-                              <h4>Tolu Osho</h4>
-                              <div class="designation">CEO</div>
-                              <div class="company">Pesa</div>
-                            </div>
+                            <div class="company">MasterCard</div>
                           </div>
                         </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-slide">
-                            <div class="testimonial-image">
-                              <div class="image">
-                                <img
-                                  src="/assets/images/testimonials/khalil-suleiman.jpg"
-                                  alt="Khalil Halilu"
-                                />
-                              </div>
-                            </div>
-                            <div class="testimonial-content">
-                              <p>
-                                The opportunity to connect with so many dynamic
-                                innovators and key industry players has been a
-                                core highlight from NASENi's participation at
-                                the Lagos Tech Fest, we are really looking
-                                forward to returning next year
-                              </p>
-                              <h4>Khalil Halilu</h4>
-                              <div class="designation">CEO</div>
-                              <div class="company">
-                                National Agency for Science and Enginnering
-                                Infrastructure
-                              </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                          <div class="testimonial-image">
+                            <div class="image">
+                              <img src="/assets/images/testimonials/tolu-osho.jpg" alt="Tolu Osho" />
                             </div>
                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-slide">
-                            <div class="testimonial-image">
-                              <div class="image">
-                                <img
-                                  src="/assets/images/testimonials/ayo-adewuyi.jpg"
-                                  alt="Ayo Adewuyi"
-                                />
-                              </div>
-                            </div>
-                            <div class="testimonial-content">
-                              <p>
-                                The quality of conversations at the Lagos Tech
-                                Fest is really exciting, I have been to so many
-                                conferences but Lagos Tech Fest is definitely
-                                one to partner with and our team are looking
-                                forward to returning next year.
-                              </p>
-                              <h4>Ayo Adewuyi</h4>
-                              <div class="designation">Head of Product</div>
-                              <div class="company">Prestmit</div>
-                            </div>
+                          <div class="testimonial-content">
+                            <p>
+                              I don't usually go for conferences, but coming
+                              to this place, I think this is really good, I am
+                              really impressed and I really look forward to
+                              our team returning next year.
+                            </p>
+                            <h4>Tolu Osho</h4>
+                            <div class="designation">CEO</div>
+                            <div class="company">Pesa</div>
                           </div>
                         </div>
-                        <div class="swiper-slide">
-                          <div class="testimonial-slide">
-                            <div class="testimonial-image">
-                              <div class="image">
-                                <img
-                                  src="/assets/images/testimonials/adekanbi-oluwaseun.jpg"
-                                  alt="Adekanbi Oluwaseun"
-                                />
-                              </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                          <div class="testimonial-image">
+                            <div class="image">
+                              <img src="/assets/images/testimonials/khalil-suleiman.jpg" alt="Khalil Halilu" />
                             </div>
-                            <div class="testimonial-content">
-                              <p>
-                                Our experience has been simply unforgettable, we
-                                are delighted to be headlining Lagos Tech Fest,
-                                since its launch, the event has grown to become
-                                a very important meeng for players across
-                                Nigeria and Africa's tech ecosystem providing us
-                                with an opportunity to connect with key industry
-                                players and enthusiasts.
-                              </p>
-                              <h4>Adekanbi Oluwaseun</h4>
-                              <div class="designation">Growth Lead</div>
-                              <div class="company">Cleva</div>
+                          </div>
+                          <div class="testimonial-content">
+                            <p>
+                              The opportunity to connect with so many dynamic
+                              innovators and key industry players has been a
+                              core highlight from NASENi's participation at
+                              the Lagos Tech Fest, we are really looking
+                              forward to returning next year
+                            </p>
+                            <h4>Khalil Halilu</h4>
+                            <div class="designation">CEO</div>
+                            <div class="company">
+                              National Agency for Science and Enginnering
+                              Infrastructure
                             </div>
                           </div>
                         </div>
                       </div>
-
-                      <!-- Pagination Dots -->
-                      <div
-                        class="swiper-pagination testimonials-pagination"
-                      ></div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                          <div class="testimonial-image">
+                            <div class="image">
+                              <img src="/assets/images/testimonials/ayo-adewuyi.jpg" alt="Ayo Adewuyi" />
+                            </div>
+                          </div>
+                          <div class="testimonial-content">
+                            <p>
+                              The quality of conversations at the Lagos Tech
+                              Fest is really exciting, I have been to so many
+                              conferences but Lagos Tech Fest is definitely
+                              one to partner with and our team are looking
+                              forward to returning next year.
+                            </p>
+                            <h4>Ayo Adewuyi</h4>
+                            <div class="designation">Head of Product</div>
+                            <div class="company">Prestmit</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                          <div class="testimonial-image">
+                            <div class="image">
+                              <img src="/assets/images/testimonials/adekanbi-oluwaseun.jpg" alt="Adekanbi Oluwaseun" />
+                            </div>
+                          </div>
+                          <div class="testimonial-content">
+                            <p>
+                              Our experience has been simply unforgettable, we
+                              are delighted to be headlining Lagos Tech Fest,
+                              since its launch, the event has grown to become
+                              a very important meeng for players across
+                              Nigeria and Africa's tech ecosystem providing us
+                              with an opportunity to connect with key industry
+                              players and enthusiasts.
+                            </p>
+                            <h4>Adekanbi Oluwaseun</h4>
+                            <div class="designation">Growth Lead</div>
+                            <div class="company">Cleva</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+
+                    <!-- Pagination Dots -->
+                    <div class="swiper-pagination testimonials-pagination"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Speakers Section -->
-        <section id="speakers">
-          <div class="speakers padding bg-dark bg-fixed">
-            <div class="container">
-              <div class="speakers-wrapper">
-                <div class="section-header dark">
-                  <div class="section-badge" data-aos="fade-up">Speakers</div>
-                  <h2
-                    class="section-title"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    Lagos Tech Fest 2026 Speakers
-                  </h2>
-                </div>
-
-                <div class="speakers-prev">&larr;</div>
-                <div class="speakers-next">&rarr;</div>
-
-                <!-- Carousel container -->
-                <div class="speakers-carousel swiper">
-                  <div
-                    class="swiper-wrapper"
-                    id="speakers-carousel-wrapper"
-                  ></div>
-                </div>
-
-                <!-- View All button -->
-                <div class="speaker-button">
-                  <button id="view-all-speakers" class="btn btn-sec">
-                    View All Speakers
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Lightbox / Modal -->
-        <div id="speakers-modal" class="speakers-modal">
-          <!-- <div> -->
-          <div class="speakers-modal-overlay">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <div class="section-header">
+      <!-- Speakers Section -->
+      <section id="speakers">
+        <div class="speakers padding bg-dark bg-fixed">
+          <div class="container">
+            <div class="speakers-wrapper">
+              <div class="section-header dark">
                 <div class="section-badge" data-aos="fade-up">Speakers</div>
-                <h2
-                  class="section-title"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
                   Lagos Tech Fest 2026 Speakers
                 </h2>
               </div>
-              <div class="speakers-grid" id="speakers-grid"></div>
+
+              <div class="speakers-prev">&larr;</div>
+              <div class="speakers-next">&rarr;</div>
+
+              <!-- Carousel container -->
+              <div class="speakers-carousel swiper">
+                <div class="swiper-wrapper" id="speakers-carousel-wrapper"></div>
+              </div>
+
+              <!-- View All button -->
+              <div class="speaker-button">
+                <button id="view-all-speakers" class="btn btn-sec">
+                  View All Speakers
+                </button>
+              </div>
             </div>
           </div>
-          <!-- </div> -->
         </div>
+      </section>
 
-        <!-- Sponsors 2026 Section -->
-        <section id="sponsors-26">
-          <div class="sponsors-26 padding">
-            <div class="container">
-              <div class="sponsors-26-wrapper">
-                <div class="section-header">
-                  <div class="section-badge" data-aos="fade-up">
-                    2026 Sponsors
-                  </div>
-                  <h2
-                    class="section-title"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    Lagos Tech Fest 2026 Sponsors
-                  </h2>
+      <!-- Lightbox / Modal -->
+      <div id="speakers-modal" class="speakers-modal">
+        <!-- <div> -->
+        <div class="speakers-modal-overlay">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="section-header">
+              <div class="section-badge" data-aos="fade-up">Speakers</div>
+              <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                Lagos Tech Fest 2026 Speakers
+              </h2>
+            </div>
+            <div class="speakers-grid" id="speakers-grid"></div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <!-- Sponsors 2026 Section -->
+      <section id="sponsors-26">
+        <div class="sponsors-26 padding">
+          <div class="container">
+            <div class="sponsors-26-wrapper">
+              <div class="section-header">
+                <div class="section-badge" data-aos="fade-up">
+                  2026 Sponsors
                 </div>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                  Lagos Tech Fest 2026 Sponsors
+                </h2>
+              </div>
 
-                <!-- Platinum Sponsors -->
-                <div
-                  class="sponsor-tier platinum-tier"
-                  data-aos="fade-up"
-                  data-aos-delay="150"
-                >
-                  <div class="tier-header">
-                    <div class="tier-badge platinum-badge">
-                      <iconify-icon icon="mdi:trophy"></iconify-icon>
-                      <span>Platinum Sponsor</span>
-                    </div>
-                  </div>
-                  <div class="sponsor-grid platinum-grid">
-                    <a
-                      href="https://www.luno.com/en-ng/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card platinum-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="200"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/luno.avif"
-                          alt="Luno"
-                        />
-                      </div>
-                    </a>
+              <!-- Platinum Sponsors -->
+              <div class="sponsor-tier platinum-tier" data-aos="fade-up" data-aos-delay="150">
+                <div class="tier-header">
+                  <div class="tier-badge platinum-badge">
+                    <iconify-icon icon="mdi:trophy"></iconify-icon>
+                    <span>Platinum Sponsor</span>
                   </div>
                 </div>
-
-                <!-- Gold Sponsors -->
-                <div
-                  class="sponsor-tier gold-tier"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <div class="tier-header">
-                    <div class="tier-badge gold-badge">
-                      <iconify-icon icon="mdi:medal"></iconify-icon>
-                      <span>Gold Sponsors</span>
+                <div class="sponsor-grid platinum-grid">
+                  <a href="https://www.luno.com/en-ng/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card platinum-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/luno.avif" alt="Luno" />
                     </div>
-                  </div>
-                  <div class="sponsor-grid gold-grid">
-                    <a
-                      href="https://www.odoo.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card gold-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="250"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/odoo.svg"
-                          alt="Odoo"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://openaccessdc.net/com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card gold-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="300"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/oadc.png"
-                          alt="OADC"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://monica.cash/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card gold-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="300"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/monica.png"
-                          alt="Monica"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://bmoni.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card gold-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="300"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/bmoni-black.png"
-                          alt="Bmoni"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://prestmit.io/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card gold-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="300"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/prestmit.svg"
-                          alt="Prestmit"
-                        />
-                      </div>
-                    </a>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Gold Sponsors -->
+              <div class="sponsor-tier gold-tier" data-aos="fade-up" data-aos-delay="200">
+                <div class="tier-header">
+                  <div class="tier-badge gold-badge">
+                    <iconify-icon icon="mdi:medal"></iconify-icon>
+                    <span>Gold Sponsors</span>
                   </div>
                 </div>
-
-                <!-- Associate Sponsors -->
-                <div
-                  class="sponsor-tier associate-tier"
-                  data-aos="fade-up"
-                  data-aos-delay="350"
-                >
-                  <div class="tier-header">
-                    <div class="tier-badge associate-badge">
-                      <iconify-icon icon="mdi:star"></iconify-icon>
-                      <span>Associate Sponsors</span>
+                <div class="sponsor-grid gold-grid">
+                  <a href="https://www.odoo.com" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card gold-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/odoo.png" alt="Odoo" />
                     </div>
+                  </a>
+                  <a href="https://openaccessdc.net/com" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card gold-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/oadc.png" alt="OADC" />
+                    </div>
+                  </a>
+                  <a href="https://monica.cash/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card gold-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/monica.png" alt="Monica" />
+                    </div>
+                  </a>
+                  <a href="https://bmoni.com/" target="_blank" rel="noopener noreferrer" class="sponsor-card gold-card"
+                    data-aos="zoom-in" data-aos-delay="300">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/bmoni-black.png" alt="Bmoni" />
+                    </div>
+                  </a>
+                  <a href="https://prestmit.io/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card gold-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/prestmit.svg" alt="Prestmit" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Associate Sponsors -->
+              <div class="sponsor-tier associate-tier" data-aos="fade-up" data-aos-delay="350">
+                <div class="tier-header">
+                  <div class="tier-badge associate-badge">
+                    <iconify-icon icon="mdi:star"></iconify-icon>
+                    <span>Associate Sponsors</span>
                   </div>
-                  <div class="sponsor-grid associate-grid">
-                    <a
-                      href="https://www.mypaga.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="550"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/paga.png"
-                          alt="Paga"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://tetradpay.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="400"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/tetradpay.png"
-                          alt="Tetradpay"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://www.getcleva.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="450"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/cleva.svg"
-                          alt="Cleva"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://www.keystonebankng.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="500"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/keystone.png"
-                          alt="Keystone Bank"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://useaccrue.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="500"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/accrue.png"
-                          alt="Accrue"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://markrenee.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="500"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/mark-renee.png"
-                          alt="Mark Renee"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://axia.africa/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="500"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/axia-africa.svg"
-                          alt="Axia Africa"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://www.eandclegal.africa/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="500"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/eandc.webp"
-                          alt="E&C Legal"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://alatpay.ng/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="500"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/alatpay.png"
-                          alt="ALAT Pay"
-                        />
-                      </div>
-                    </a>
-                    <!-- <a
+                </div>
+                <div class="sponsor-grid associate-grid">
+                  <a href="https://www.mypaga.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="550">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/paga.png" alt="Paga" />
+                    </div>
+                  </a>
+                  <a href="https://tetradpay.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/tetradpay.png" alt="Tetradpay" />
+                    </div>
+                  </a>
+                  <a href="https://www.getcleva.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/cleva.svg" alt="Cleva" />
+                    </div>
+                  </a>
+                  <a href="https://www.keystonebankng.com" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/keystone.png" alt="Keystone Bank" />
+                    </div>
+                  </a>
+                  <a href="https://useaccrue.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/accrue.png" alt="Accrue" />
+                    </div>
+                  </a>
+                  <a href="https://markrenee.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/mark-renee.png" alt="Mark Renee" />
+                    </div>
+                  </a>
+                  <a href="https://axia.africa/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/axia-africa.svg" alt="Axia Africa" />
+                    </div>
+                  </a>
+                  <a href="https://www.eandclegal.africa/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/eandc.webp" alt="E&C Legal" />
+                    </div>
+                  </a>
+                  <a href="https://alatpay.ng/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/alatpay.png" alt="ALAT Pay" />
+                    </div>
+                  </a>
+                  <!-- <a
                       href="https://cornerstone.com.ng/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -1260,99 +888,55 @@
                         />
                       </div>
                     </a> -->
-                    <a
-                      href="https://radiantmoney.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="650"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/radiant-money.png"
-                          alt="Radiant Money"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://www.oxygenx.africa/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="650"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/oxygen-finance.png"
-                          alt="OxygenX Africa"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://https://client.i-investng.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card associate-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="650"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/i-invest.svg"
-                          alt="I-Invest"
-                        />
-                      </div>
-                    </a>
+                  <a href="https://radiantmoney.com" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="650">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/radiant-money.png" alt="Radiant Money" />
+                    </div>
+                  </a>
+                  <a href="https://www.oxygenx.africa/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="650">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/oxygen-finance.png" alt="OxygenX Africa" />
+                    </div>
+                  </a>
+                  <a href="https://https://client.i-investng.com" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card associate-card" data-aos="zoom-in" data-aos-delay="650">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/i-invest.svg" alt="I-Invest" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- After Dark Hour Sponsor -->
+              <div class="sponsor-tier after-dark-tier" data-aos="fade-up" data-aos-delay="550">
+                <div class="tier-header">
+                  <div class="tier-badge after-dark-badge">
+                    <iconify-icon icon="mdi:weather-night"></iconify-icon>
+                    <span>After Dark Hour Sponsor</span>
                   </div>
                 </div>
-
-                <!-- After Dark Hour Sponsor -->
-                <div
-                  class="sponsor-tier after-dark-tier"
-                  data-aos="fade-up"
-                  data-aos-delay="550"
-                >
-                  <div class="tier-header">
-                    <div class="tier-badge after-dark-badge">
-                      <iconify-icon icon="mdi:weather-night"></iconify-icon>
-                      <span>After Dark Hour Sponsor</span>
+                <div class="sponsor-grid after-dark-grid">
+                  <a href="https://redbiller.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card after-dark-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/redbiller.svg" alt="Redbiller" />
                     </div>
-                  </div>
-                  <div class="sponsor-grid after-dark-grid">
-                    <a
-                      href="https://redbiller.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card after-dark-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="600"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/redbiller.svg"
-                          alt="Redbiller"
-                        />
-                      </div>
-                    </a>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Exhibitors -->
+              <div class="sponsor-tier exhibitor-tier" data-aos="fade-up" data-aos-delay="600">
+                <div class="tier-header">
+                  <div class="tier-badge exhibitor-badge">
+                    <iconify-icon icon="mdi:store"></iconify-icon>
+                    <span>Exhibitors</span>
                   </div>
                 </div>
-
-                <!-- Exhibitors -->
-                <div
-                  class="sponsor-tier exhibitor-tier"
-                  data-aos="fade-up"
-                  data-aos-delay="600"
-                >
-                  <div class="tier-header">
-                    <div class="tier-badge exhibitor-badge">
-                      <iconify-icon icon="mdi:store"></iconify-icon>
-                      <span>Exhibitors</span>
-                    </div>
-                  </div>
-                  <div class="sponsor-grid exhibitor-grid">
-                    <!-- <a
+                <div class="sponsor-grid exhibitor-grid">
+                  <!-- <a
                       href="https://radiantdigilog.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -1367,322 +951,149 @@
                         />
                       </div>
                     </a> -->
-                    <a
-                      href="https://www.zentstores.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card exhibitor-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/zent.svg"
-                          alt="Zent"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://scrella.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card exhibitor-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/scrella.svg"
-                          alt="Scrella"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://hrpayhub.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card exhibitor-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/hrpayhub.png"
-                          alt="HR PayHub"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://finecore.co"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card exhibitor-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/finecore.svg"
-                          alt="Finecore"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://numoni.io/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card exhibitor-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/numoni.png"
-                          alt="NuMoni"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://pocketfood.io/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card exhibitor-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/pockectfood.svg"
-                          alt="Pocket Food"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://www.artech2000solutions.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card exhibitor-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/artech2000.webp"
-                          alt="Artech 2000 Solutions"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://instict.ai"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card exhibitor-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/instict.png"
-                          alt="Instict"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://isn.ng/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card exhibitor-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    >
-                      <div class="sponsor-logo">
-                        <img src="/assets/images/sponsors/isn.png" alt="ISN" />
-                      </div>
-                    </a>
-                    <a
-                      href="https://www.komkomwallet.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card exhibitor-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="800"
-                    >
-                      <div class="sponsor-logo">
-                        <img src="/assets/images/sponsors/komkom.png" alt="KomKom Wallet" />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Media Partners -->
-                <div
-                  class="sponsor-tier media-partner-tier"
-                  data-aos="fade-up"
-                  data-aos-delay="850"
-                >
-                  <div class="tier-header">
-                    <div class="tier-badge media-partner-badge">
-                      <iconify-icon icon="mdi:newspaper-variant"></iconify-icon>
-                      <span>Media Partners</span>
+                  <a href="https://www.zentstores.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card exhibitor-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/zent.svg" alt="Zent" />
                     </div>
-                  </div>
-                  <div class="sponsor-grid media-partner-grid">
-                    <a
-                      href="https://techpoint.africa"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card media-partner-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="900"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/techpoint.svg"
-                          alt="Techpoint"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://technext24.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card media-partner-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="950"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/technext.webp"
-                          alt="Technext"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://thecondia.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card media-partner-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="1000"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/condia.png"
-                          alt="Condia"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://ffnews.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card media-partner-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="1050"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/ffnews.svg"
-                          alt="FF News"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://www.cryptonewsz.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card media-partner-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="1050"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/cryptonewsz.svg"
-                          alt="CryptoNewsZ"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://sdm.ng/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card media-partner-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="1050"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/sdm-comms.png"
-                          alt="SDM Communications"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://nimbus.com.ng/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card media-partner-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="1050"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/nimbus-media.png"
-                          alt="Nimbus Media"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Community Partners -->
-                <div
-                  class="sponsor-tier community-partner-tier"
-                  data-aos="fade-up"
-                  data-aos-delay="1100"
-                >
-                  <div class="tier-header">
-                    <div class="tier-badge community-partner-badge">
-                      <iconify-icon icon="mdi:account-group"></iconify-icon>
-                      <span>Community Partners</span>
+                  </a>
+                  <a href="https://scrella.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card exhibitor-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/scrella.svg" alt="Scrella" />
                     </div>
-                  </div>
-                  <div class="sponsor-grid community-partner-grid">
-                    <a
-                      href="https://allies.co/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card community-partner-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="1150"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/allies.png"
-                          alt="Allies"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href="https://impacthub.net/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="sponsor-card community-partner-card"
-                      data-aos="zoom-in"
-                      data-aos-delay="1200"
-                    >
-                      <div class="sponsor-logo">
-                        <img
-                          src="/assets/images/sponsors/impact-hub.png"
-                          alt="Impact Hub"
-                        />
-                      </div>
-                    </a>
+                  </a>
+                  <a href="https://hrpayhub.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card exhibitor-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/hrpayhub.png" alt="HR PayHub" />
+                    </div>
+                  </a>
+                  <a href="https://finecore.co" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card exhibitor-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/finecore.svg" alt="Finecore" />
+                    </div>
+                  </a>
+                  <a href="https://numoni.io/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card exhibitor-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/numoni.png" alt="NuMoni" />
+                    </div>
+                  </a>
+                  <a href="https://pocketfood.io/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card exhibitor-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/pockectfood.svg" alt="Pocket Food" />
+                    </div>
+                  </a>
+                  <a href="https://www.artech2000solutions.com" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card exhibitor-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/artech2000.webp" alt="Artech 2000 Solutions" />
+                    </div>
+                  </a>
+                  <a href="https://instict.ai" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card exhibitor-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/instict.png" alt="Instict" />
+                    </div>
+                  </a>
+                  <a href="https://isn.ng/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card exhibitor-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/isn.png" alt="ISN" />
+                    </div>
+                  </a>
+                  <a href="https://www.komkomwallet.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card exhibitor-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/komkom.png" alt="KomKom Wallet" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Media Partners -->
+              <div class="sponsor-tier media-partner-tier" data-aos="fade-up" data-aos-delay="850">
+                <div class="tier-header">
+                  <div class="tier-badge media-partner-badge">
+                    <iconify-icon icon="mdi:newspaper-variant"></iconify-icon>
+                    <span>Media Partners</span>
                   </div>
                 </div>
+                <div class="sponsor-grid media-partner-grid">
+                  <a href="https://techpoint.africa" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card media-partner-card" data-aos="zoom-in" data-aos-delay="900">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/techpoint.svg" alt="Techpoint" />
+                    </div>
+                  </a>
+                  <a href="https://technext24.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card media-partner-card" data-aos="zoom-in" data-aos-delay="950">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/technext.webp" alt="Technext" />
+                    </div>
+                  </a>
+                  <a href="https://thecondia.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card media-partner-card" data-aos="zoom-in" data-aos-delay="1000">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/condia.png" alt="Condia" />
+                    </div>
+                  </a>
+                  <a href="https://ffnews.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card media-partner-card" data-aos="zoom-in" data-aos-delay="1050">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/ffnews.svg" alt="FF News" />
+                    </div>
+                  </a>
+                  <a href="https://www.cryptonewsz.com/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card media-partner-card" data-aos="zoom-in" data-aos-delay="1050">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/cryptonewsz.svg" alt="CryptoNewsZ" />
+                    </div>
+                  </a>
+                  <a href="https://sdm.ng/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card media-partner-card" data-aos="zoom-in" data-aos-delay="1050">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/sdm-comms.png" alt="SDM Communications" />
+                    </div>
+                  </a>
+                  <a href="https://nimbus.com.ng/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card media-partner-card" data-aos="zoom-in" data-aos-delay="1050">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/nimbus-media.png" alt="Nimbus Media" />
+                    </div>
+                  </a>
+                </div>
+              </div>
 
-                <!-- Startup Exhibitor -->
-                <!-- <div
+              <!-- Community Partners -->
+              <div class="sponsor-tier community-partner-tier" data-aos="fade-up" data-aos-delay="1100">
+                <div class="tier-header">
+                  <div class="tier-badge community-partner-badge">
+                    <iconify-icon icon="mdi:account-group"></iconify-icon>
+                    <span>Community Partners</span>
+                  </div>
+                </div>
+                <div class="sponsor-grid community-partner-grid">
+                  <a href="https://allies.co/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card community-partner-card" data-aos="zoom-in" data-aos-delay="1150">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/allies.png" alt="Allies" />
+                    </div>
+                  </a>
+                  <a href="https://impacthub.net/" target="_blank" rel="noopener noreferrer"
+                    class="sponsor-card community-partner-card" data-aos="zoom-in" data-aos-delay="1200">
+                    <div class="sponsor-logo">
+                      <img src="/assets/images/sponsors/impact-hub.png" alt="Impact Hub" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Startup Exhibitor -->
+              <!-- <div
                   class="sponsor-tier startup-exhibitor-tier"
                   data-aos="fade-up"
                   data-aos-delay="750"
@@ -1711,469 +1122,383 @@
                     </a>
                   </div>
                 </div> -->
-              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Highlight -->
-        <section id="highlight">
-          <div class="highlight-container padding">
-            <div class="container">
+      <!-- Highlight -->
+      <section id="highlight">
+        <div class="highlight-container padding">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-badge" data-aos="fade-up">2025 Gallery</div>
+              <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                Highlights From Previous Edition
+              </h2>
+            </div>
+          </div>
+          <div class="slide-container" data-aos="zoom-out" data-aos-delay="300">
+            <script>
+              // Shuffle array utility
+              function shuffle(array) {
+                let currentIndex = array.length,
+                  randomIndex;
+                while (currentIndex !== 0) {
+                  randomIndex = Math.floor(Math.random() * currentIndex);
+                  currentIndex--;
+                  [array[currentIndex], array[randomIndex]] = [
+                    array[randomIndex],
+                    array[currentIndex],
+                  ];
+                }
+                return array;
+              }
+              // Generate image paths
+              let highlightImages = [];
+              for (let i = 1; i <= 120; i++) {
+                highlightImages.push(`/assets/images/highlights/${i}.jpg`);
+              }
+              shuffle(highlightImages);
+              const slider1 = highlightImages.slice(0, 40);
+              const slider2 = highlightImages.slice(40, 80);
+              const slider3 = highlightImages.slice(80, 120);
+              function renderSlider(images, sliderClass, rtl = false) {
+                const slider = document.createElement("div");
+                slider.className = `slider ${sliderClass}`;
+                if (rtl) slider.setAttribute("dir", "rtl");
+                images.forEach((src) => {
+                  const img = document.createElement("img");
+                  img.src = src;
+                  img.alt = "";
+                  slider.appendChild(img);
+                });
+                return slider;
+              }
+              document.addEventListener("DOMContentLoaded", function () {
+                const container = document.querySelector(".slide-container");
+                container.innerHTML = "";
+                container.appendChild(
+                  renderSlider(slider1, "highlight-slider-1")
+                );
+                container.appendChild(
+                  renderSlider(slider2, "highlight-slider-2", true)
+                );
+                container.appendChild(
+                  renderSlider(slider3, "highlight-slider-3")
+                );
+              });
+            </script>
+            <div class="slider highlight-slider-1"></div>
+            <div class="slider highlight-slider-2" dir="rtl"></div>
+            <div class="slider highlight-slider-3"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expect Section -->
+      <section id="expect">
+        <div class="expect padding bg-fixed">
+          <div class="container">
+            <div class="expect-container">
               <div class="section-header">
-                <div class="section-badge" data-aos="fade-up">2025 Gallery</div>
-                <h2
-                  class="section-title"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  Highlights From Previous Edition
+                <div class="section-badge" data-aos="fade-up" data-aos-delay="100">
+                  The Road Ahead
+                </div>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                  What to expect in 2026.
                 </h2>
               </div>
-            </div>
-            <div
-              class="slide-container"
-              data-aos="zoom-out"
-              data-aos-delay="300"
-            >
-              <script>
-                // Shuffle array utility
-                function shuffle(array) {
-                  let currentIndex = array.length,
-                    randomIndex;
-                  while (currentIndex !== 0) {
-                    randomIndex = Math.floor(Math.random() * currentIndex);
-                    currentIndex--;
-                    [array[currentIndex], array[randomIndex]] = [
-                      array[randomIndex],
-                      array[currentIndex],
-                    ];
-                  }
-                  return array;
-                }
-                // Generate image paths
-                let highlightImages = [];
-                for (let i = 1; i <= 120; i++) {
-                  highlightImages.push(`/assets/images/highlights/${i}.jpg`);
-                }
-                shuffle(highlightImages);
-                const slider1 = highlightImages.slice(0, 40);
-                const slider2 = highlightImages.slice(40, 80);
-                const slider3 = highlightImages.slice(80, 120);
-                function renderSlider(images, sliderClass, rtl = false) {
-                  const slider = document.createElement("div");
-                  slider.className = `slider ${sliderClass}`;
-                  if (rtl) slider.setAttribute("dir", "rtl");
-                  images.forEach((src) => {
-                    const img = document.createElement("img");
-                    img.src = src;
-                    img.alt = "";
-                    slider.appendChild(img);
-                  });
-                  return slider;
-                }
-                document.addEventListener("DOMContentLoaded", function () {
-                  const container = document.querySelector(".slide-container");
-                  container.innerHTML = "";
-                  container.appendChild(
-                    renderSlider(slider1, "highlight-slider-1")
-                  );
-                  container.appendChild(
-                    renderSlider(slider2, "highlight-slider-2", true)
-                  );
-                  container.appendChild(
-                    renderSlider(slider3, "highlight-slider-3")
-                  );
-                });
-              </script>
-              <div class="slider highlight-slider-1"></div>
-              <div class="slider highlight-slider-2" dir="rtl"></div>
-              <div class="slider highlight-slider-3"></div>
+
+              <div class="count-container">
+                <div class="count-box" data-aos="zoom-in" data-aos-delay="300">
+                  <h2>
+                    <span class="odometer" data-status="yes" data-count="3000">0</span><span class="plus">+</span>
+                  </h2>
+                  <p>Attendees (1 in 4 are C-suites)</p>
+                </div>
+                <div class="count-box" data-aos="zoom-in" data-aos-delay="350">
+                  <h2>
+                    <span class="odometer" data-status="yes" data-count="70">0</span><span class="plus">+</span>
+                  </h2>
+                  <p>Speakers (Industry leading speakers)</p>
+                </div>
+                <div class="count-box" data-aos="zoom-in" data-aos-delay="400">
+                  <h2>
+                    <span class="odometer" data-status="yes" data-count="80">0</span><span class="plus">+</span>
+                  </h2>
+                  <p>Sponsors</p>
+                </div>
+                <div class="count-box" data-aos="zoom-in" data-aos-delay="450">
+                  <h2>
+                    <span class="odometer" data-status="yes" data-count="1000">0</span><span class="plus">+</span>
+                  </h2>
+                  <p>Companies (From 25+ Countries)</p>
+                </div>
+                <div class="count-box" data-aos="zoom-in" data-aos-delay="450">
+                  <h2>
+                    <span class="odometer" data-status="yes" data-count="40">0</span><span class="plus">+</span>
+                  </h2>
+                  <p>Media</p>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Expect Section -->
-        <section id="expect">
-          <div class="expect padding bg-fixed">
-            <div class="container">
-              <div class="expect-container">
-                <div class="section-header">
-                  <div
-                    class="section-badge"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    The Road Ahead
+      <!-- Key Highlight -->
+      <section id="key-highlight">
+        <div class="key-highlight padding">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-badge" data-aos="fade-up">Insights</div>
+              <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                2026 Key Highlights
+              </h2>
+            </div>
+            <div class="key-highlight-container">
+              <div class="key-highlight-grid">
+                <div class="key-box first" data-aos="fade-up" data-aos-delay="100">
+                  <div class="image">
+                    <img src="/assets/images/section/pav1.png" alt="" />
+                    <img src="/assets/images/section/pav2.png" alt="" />
+                    <div class="dual">
+                      <img src="/assets/images/section/pav3.png" alt="" />
+                      <img src="/assets/images/section/pav4.png" alt="" />
+                    </div>
+                    <div class="dual">
+                      <img src="/assets/images/section/pav5.png" alt="" />
+                      <img src="/assets/images/section/pav6.png" alt="" />
+                    </div>
+                    <img src="/assets/images/section/pav7.png" alt="" />
                   </div>
-                  <h2
-                    class="section-title"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    What to expect in 2026.
+
+                  <div class="key-info">
+                    <h2>Nigeria State's Pavilion</h2>
+                    <p>
+                      Get an insider look into tech ecosystem across multiple
+                      Nigeria cities, showcasing the best of Nigeria's tech.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="key-box second" data-aos="fade-up" data-aos-delay="150">
+                  <div class="image">
+                    <img src="/assets/images/section/after1.png" alt="" />
+                    <img src="/assets/images/section/after2.png" alt="" />
+                    <img src="/assets/images/section/after3.png" alt="" />
+                    <img src="/assets/images/section/after4.png" alt="" />
+                  </div>
+
+                  <div class="key-info">
+                    <h2>After dark hours</h2>
+                    <p>
+                      Unwind after a busy day on the floor with great food,
+                      drinks, and the vibes you need to build new
+                      partnerships.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="key-box third" data-aos="fade-up" data-aos-delay="200">
+                  <div class="image">
+                    <img src="/assets/images/section/roundtable.jpg" alt="" />
+                  </div>
+
+                  <div class="key-info">
+                    <h2>Nigeria's tech leadership roundtable</h2>
+                    <p>
+                      Ahead of the Lagos Tech Fest, our annual Nigeria's tech
+                      leadership roundtable returns on the 17th of February,
+                      bringing together strictly C-level executives and
+                      government representatives for one-on-one engagement,
+                      providing an exclusive opportunity to chart the future
+                      of the ecosystem.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="key-box fourth" data-aos="fade-up" data-aos-delay="250">
+                  <div class="image">
+                    <img src="/assets/images/section/stage1.jpg" alt="" />
+                    <img src="/assets/images/section/stage2.jpg" alt="" />
+                    <img src="/assets/images/section/stage3.jpg" alt="" />
+                    <img src="/assets/images/section/stage4.jpg" alt="" />
+                  </div>
+
+                  <div class="key-info">
+                    <h2>4 Stages of Content</h2>
+                    <p>
+                      To build individual experience at the Lagos Tech Fest,
+                      we are introducing four statges of contents with new
+                      categories of conversations at this year's edition of
+                      the event.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="key-box fifth" data-aos="fade-up" data-aos-delay="300">
+                  <div class="image">
+                    <img src="/assets/images/section/c1.jpg" alt="" />
+                    <img src="/assets/images/section/c2.jpg" alt="" />
+                    <img src="/assets/images/section/c3.jpg" alt="" />
+                    <img src="/assets/images/section/c4.jpg" alt="" />
+                    <img src="/assets/images/section/c5.jpg" alt="" />
+                    <img src="/assets/images/section/c6.jpg" alt="" />
+                  </div>
+
+                  <div class="key-info">
+                    <h2>Connections Lounge</h2>
+                    <p>
+                      A dedicated area on the show floor for building
+                      long-lasting connections with key influencers and
+                      decision-makers.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="key-box sixth" data-aos="fade-up" data-aos-delay="350">
+                  <div class="image">
+                    <img src="/assets/images/section/e1.jpg" alt="" />
+                    <img src="/assets/images/section/e2.jpg" alt="" />
+                    <img src="/assets/images/section/e3.jpg" alt="" />
+                    <img src="/assets/images/section/e4.jpg" alt="" />
+                    <img src="/assets/images/section/e5.jpg" alt="" />
+                    <img src="/assets/images/section/e6.jpg" alt="" />
+                    <img src="/assets/images/section/e7.jpg" alt="" />
+                    <img src="/assets/images/section/e8.jpg" alt="" />
+                    <img src="/assets/images/section/e9.jpg" alt="" />
+                  </div>
+
+                  <div class="key-info">
+                    <h2>Larger expo</h2>
+                    <p>
+                      Beyond conferences, we are expanding our exhibitions,
+                      showcasing transformative solutions that are defining
+                      the next decade of Nigeria's tech ecosystem
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Sponsor -->
+      <section id="why-sponsor">
+        <div class="why-sponsor padding">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-badge" data-aos="fade-up">Why Sponsor</div>
+              <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                Build your pipeline for 2026
+              </h2>
+            </div>
+
+            <div class="why-sponsor-container">
+              <div class="content">
+                <div>
+                  <p data-aos="fade-up" data-aos-delay="150">
+                    Becoming a Lagos Tech Fest sponsor delivers you unrivaled
+                    impact and visibility with thousands of players, decision
+                    makers, government representatives, enthusiasts and media,
+                    from Nigeria and beyond. Through our branded opportunities
+                    and experiences, you will engage, educate, captivate and
+                    collaborate with the audience building what's next in
+                    Nigeria's tech.
+                  </p>
+                  <p data-aos="fade-up" data-aos-delay="200">
+                    Sponsoring Lagos Tech Fest puts your brand at the
+                    epicenter of Nigeria's tech. First in, best placed, Lets
+                    talk
+                  </p>
+                </div>
+
+                <a data-aos="fade-up" data-aos-delay="250"
+                  href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Sponsorship%20Deck"
+                  class="btn btn-pry">Request Sponsorship Deck</a>
+              </div>
+
+              <div class="sponsor-list">
+                <div class="section-header">
+                  <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                    Why Sponsor?
                   </h2>
                 </div>
 
-                <div class="count-container">
-                  <div
-                    class="count-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="300"
-                  >
-                    <h2>
-                      <span class="odometer" data-status="yes" data-count="3000"
-                        >0</span
-                      ><span class="plus">+</span>
-                    </h2>
-                    <p>Attendees (1 in 4 are C-suites)</p>
-                  </div>
-                  <div
-                    class="count-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="350"
-                  >
-                    <h2>
-                      <span class="odometer" data-status="yes" data-count="70"
-                        >0</span
-                      ><span class="plus">+</span>
-                    </h2>
-                    <p>Speakers (Industry leading speakers)</p>
-                  </div>
-                  <div
-                    class="count-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="400"
-                  >
-                    <h2>
-                      <span class="odometer" data-status="yes" data-count="80"
-                        >0</span
-                      ><span class="plus">+</span>
-                    </h2>
-                    <p>Sponsors</p>
-                  </div>
-                  <div
-                    class="count-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="450"
-                  >
-                    <h2>
-                      <span class="odometer" data-status="yes" data-count="1000"
-                        >0</span
-                      ><span class="plus">+</span>
-                    </h2>
-                    <p>Companies (From 25+ Countries)</p>
-                  </div>
-                  <div
-                    class="count-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="450"
-                  >
-                    <h2>
-                      <span class="odometer" data-status="yes" data-count="40"
-                        >0</span
-                      ><span class="plus">+</span>
-                    </h2>
-                    <p>Media</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Key Highlight -->
-        <section id="key-highlight">
-          <div class="key-highlight padding">
-            <div class="container">
-              <div class="section-header">
-                <div class="section-badge" data-aos="fade-up">Insights</div>
-                <h2
-                  class="section-title"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  2026 Key Highlights
-                </h2>
-              </div>
-              <div class="key-highlight-container">
-                <div class="key-highlight-grid">
-                  <div
-                    class="key-box first"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <div class="image">
-                      <img src="/assets/images/section/pav1.png" alt="" />
-                      <img src="/assets/images/section/pav2.png" alt="" />
-                      <div class="dual">
-                        <img src="/assets/images/section/pav3.png" alt="" />
-                        <img src="/assets/images/section/pav4.png" alt="" />
-                      </div>
-                      <div class="dual">
-                        <img src="/assets/images/section/pav5.png" alt="" />
-                        <img src="/assets/images/section/pav6.png" alt="" />
-                      </div>
-                      <img src="/assets/images/section/pav7.png" alt="" />
-                    </div>
-
-                    <div class="key-info">
-                      <h2>Nigeria State's Pavilion</h2>
-                      <p>
-                        Get an insider look into tech ecosystem across multiple
-                        Nigeria cities, showcasing the best of Nigeria's tech.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="key-box second"
-                    data-aos="fade-up"
-                    data-aos-delay="150"
-                  >
-                    <div class="image">
-                      <img src="/assets/images/section/after1.png" alt="" />
-                      <img src="/assets/images/section/after2.png" alt="" />
-                      <img src="/assets/images/section/after3.png" alt="" />
-                      <img src="/assets/images/section/after4.png" alt="" />
-                    </div>
-
-                    <div class="key-info">
-                      <h2>After dark hours</h2>
-                      <p>
-                        Unwind after a busy day on the floor with great food,
-                        drinks, and the vibes you need to build new
-                        partnerships.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="key-box third"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <div class="image">
-                      <img src="/assets/images/section/roundtable.jpg" alt="" />
-                    </div>
-
-                    <div class="key-info">
-                      <h2>Nigeria's tech leadership roundtable</h2>
-                      <p>
-                        Ahead of the Lagos Tech Fest, our annual Nigeria's tech
-                        leadership roundtable returns on the 17th of February,
-                        bringing together strictly C-level executives and
-                        government representatives for one-on-one engagement,
-                        providing an exclusive opportunity to chart the future
-                        of the ecosystem.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="key-box fourth"
-                    data-aos="fade-up"
-                    data-aos-delay="250"
-                  >
-                    <div class="image">
-                      <img src="/assets/images/section/stage1.jpg" alt="" />
-                      <img src="/assets/images/section/stage2.jpg" alt="" />
-                      <img src="/assets/images/section/stage3.jpg" alt="" />
-                      <img src="/assets/images/section/stage4.jpg" alt="" />
-                    </div>
-
-                    <div class="key-info">
-                      <h2>4 Stages of Content</h2>
-                      <p>
-                        To build individual experience at the Lagos Tech Fest,
-                        we are introducing four statges of contents with new
-                        categories of conversations at this year's edition of
-                        the event.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="key-box fifth"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <div class="image">
-                      <img src="/assets/images/section/c1.jpg" alt="" />
-                      <img src="/assets/images/section/c2.jpg" alt="" />
-                      <img src="/assets/images/section/c3.jpg" alt="" />
-                      <img src="/assets/images/section/c4.jpg" alt="" />
-                      <img src="/assets/images/section/c5.jpg" alt="" />
-                      <img src="/assets/images/section/c6.jpg" alt="" />
-                    </div>
-
-                    <div class="key-info">
-                      <h2>Connections Lounge</h2>
-                      <p>
-                        A dedicated area on the show floor for building
-                        long-lasting connections with key influencers and
-                        decision-makers.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="key-box sixth"
-                    data-aos="fade-up"
-                    data-aos-delay="350"
-                  >
-                    <div class="image">
-                      <img src="/assets/images/section/e1.jpg" alt="" />
-                      <img src="/assets/images/section/e2.jpg" alt="" />
-                      <img src="/assets/images/section/e3.jpg" alt="" />
-                      <img src="/assets/images/section/e4.jpg" alt="" />
-                      <img src="/assets/images/section/e5.jpg" alt="" />
-                      <img src="/assets/images/section/e6.jpg" alt="" />
-                      <img src="/assets/images/section/e7.jpg" alt="" />
-                      <img src="/assets/images/section/e8.jpg" alt="" />
-                      <img src="/assets/images/section/e9.jpg" alt="" />
-                    </div>
-
-                    <div class="key-info">
-                      <h2>Larger expo</h2>
-                      <p>
-                        Beyond conferences, we are expanding our exhibitions,
-                        showcasing transformative solutions that are defining
-                        the next decade of Nigeria's tech ecosystem
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Why Sponsor -->
-        <section id="why-sponsor">
-          <div class="why-sponsor padding">
-            <div class="container">
-              <div class="section-header">
-                <div class="section-badge" data-aos="fade-up">Why Sponsor</div>
-                <h2
-                  class="section-title"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  Build your pipeline for 2026
-                </h2>
-              </div>
-
-              <div class="why-sponsor-container">
-                <div class="content">
-                  <div>
-                    <p data-aos="fade-up" data-aos-delay="150">
-                      Becoming a Lagos Tech Fest sponsor delivers you unrivaled
-                      impact and visibility with thousands of players, decision
-                      makers, government representatives, enthusiasts and media,
-                      from Nigeria and beyond. Through our branded opportunities
-                      and experiences, you will engage, educate, captivate and
-                      collaborate with the audience building what's next in
-                      Nigeria's tech.
+                <ul>
+                  <li data-aos="fade-left" data-aos-delay="250">
+                    <h3 data-aos="fade-left" data-aos-delay="150">
+                      Thought Leadership
+                    </h3>
+                    <p data-aos="fade-left" data-aos-delay="200">
+                      Unique platform to set the agenda at Nigeria's leading
+                      tech event. Share the stage with leaders from
+                      enterprise, startups, government and benefit from the
+                      widespread press coverage which Lagos Tech Fest
+                      attracts.
                     </p>
-                    <p data-aos="fade-up" data-aos-delay="200">
-                      Sponsoring Lagos Tech Fest puts your brand at the
-                      epicenter of Nigeria's tech. First in, best placed, Lets
-                      talk
+                  </li>
+                  <li data-aos="fade-left" data-aos-delay="300">
+                    <h3 data-aos="fade-left" data-aos-delay="200">
+                      Reaching New Audiences
+                    </h3>
+                    <p data-aos="fade-left" data-aos-delay="250">
+                      Deliver your message to the whole of the tech ecosystem
+                      or to a specific segment of our audience, we've got
+                      multiple stages to get this done.
                     </p>
-                  </div>
+                  </li>
+                  <li data-aos="fade-left" data-aos-delay="350">
+                    <h3 data-aos="fade-left" data-aos-delay="250">
+                      High Impact Branding
+                    </h3>
+                    <p data-aos="fade-left" data-aos-delay="300">
+                      Ensure your brand is seen by everyone at Lagos Tech
+                      Fest.
+                    </p>
+                  </li>
+                  <li data-aos="fade-left" data-aos-delay="400">
+                    <h3 data-aos="fade-left" data-aos-delay="300">
+                      Making Connections
+                    </h3>
+                    <p data-aos="fade-left" data-aos-delay="350">
+                      Meet new customers and generate leads with your presence
+                      at the Lagos Tech Fest expo floor. An unrivalled
+                      opportunity to connect with the high quality audience of
+                      enterprise tech leaders, enthusiasts, product users,
+                      startups and investors.
+                    </p>
+                  </li>
+                  <li data-aos="fade-left" data-aos-delay="450">
+                    <h3 data-aos="fade-left" data-aos-delay="300">
+                      Exhibition
+                    </h3>
+                    <p data-aos="fade-left" data-aos-delay="350">
+                      Showcase your products/solutions through your carved out
+                      space designed to host your most valuable
+                      current/prospective clients & lead critical
+                      conversations that will shape your business for the
+                      year.
+                    </p>
+                  </li>
+                  <li data-aos="fade-left" data-aos-delay="500">
+                    <h3 data-aos="fade-left" data-aos-delay="350">
+                      Media Visibility
+                    </h3>
+                    <p data-aos="fade-left" data-aos-delay="400">
+                      We leverage multiple media platforms to ensure your
+                      brand messages gets to the right audience before, during
+                      and after the event. We have done this multiple times
+                      for multiple brands.
+                    </p>
+                  </li>
+                </ul>
+              </div>
 
-                  <a
-                    data-aos="fade-up"
-                    data-aos-delay="250"
-                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Sponsorship%20Deck"
-                    class="btn btn-pry"
-                    >Request Sponsorship Deck</a
-                  >
-                </div>
-
-                <div class="sponsor-list">
-                  <div class="section-header">
-                    <h2
-                      class="section-title"
-                      data-aos="fade-up"
-                      data-aos-delay="200"
-                    >
-                      Why Sponsor?
-                    </h2>
-                  </div>
-
-                  <ul>
-                    <li data-aos="fade-left" data-aos-delay="250">
-                      <h3 data-aos="fade-left" data-aos-delay="150">
-                        Thought Leadership
-                      </h3>
-                      <p data-aos="fade-left" data-aos-delay="200">
-                        Unique platform to set the agenda at Nigeria's leading
-                        tech event. Share the stage with leaders from
-                        enterprise, startups, government and benefit from the
-                        widespread press coverage which Lagos Tech Fest
-                        attracts.
-                      </p>
-                    </li>
-                    <li data-aos="fade-left" data-aos-delay="300">
-                      <h3 data-aos="fade-left" data-aos-delay="200">
-                        Reaching New Audiences
-                      </h3>
-                      <p data-aos="fade-left" data-aos-delay="250">
-                        Deliver your message to the whole of the tech ecosystem
-                        or to a specific segment of our audience, we've got
-                        multiple stages to get this done.
-                      </p>
-                    </li>
-                    <li data-aos="fade-left" data-aos-delay="350">
-                      <h3 data-aos="fade-left" data-aos-delay="250">
-                        High Impact Branding
-                      </h3>
-                      <p data-aos="fade-left" data-aos-delay="300">
-                        Ensure your brand is seen by everyone at Lagos Tech
-                        Fest.
-                      </p>
-                    </li>
-                    <li data-aos="fade-left" data-aos-delay="400">
-                      <h3 data-aos="fade-left" data-aos-delay="300">
-                        Making Connections
-                      </h3>
-                      <p data-aos="fade-left" data-aos-delay="350">
-                        Meet new customers and generate leads with your presence
-                        at the Lagos Tech Fest expo floor. An unrivalled
-                        opportunity to connect with the high quality audience of
-                        enterprise tech leaders, enthusiasts, product users,
-                        startups and investors.
-                      </p>
-                    </li>
-                    <li data-aos="fade-left" data-aos-delay="450">
-                      <h3 data-aos="fade-left" data-aos-delay="300">
-                        Exhibition
-                      </h3>
-                      <p data-aos="fade-left" data-aos-delay="350">
-                        Showcase your products/solutions through your carved out
-                        space designed to host your most valuable
-                        current/prospective clients & lead critical
-                        conversations that will shape your business for the
-                        year.
-                      </p>
-                    </li>
-                    <li data-aos="fade-left" data-aos-delay="500">
-                      <h3 data-aos="fade-left" data-aos-delay="350">
-                        Media Visibility
-                      </h3>
-                      <p data-aos="fade-left" data-aos-delay="400">
-                        We leverage multiple media platforms to ensure your
-                        brand messages gets to the right audience before, during
-                        and after the event. We have done this multiple times
-                        for multiple brands.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- <div
+              <!-- <div
                   class="sponsor-timeline inner-container p-block radius bg-dark"
                 >
                   <div class="section-header dark">
@@ -2296,447 +1621,313 @@
                     </div>
                   </div>
                 </div> -->
-              </div>
             </div>
           </div>
-        </section>
-
-        <!-- Expect & Track -->
-        <div class="ex-con bg-fixed">
-          <!-- Track Section -->
-          <section id="track">
-            <div class="track padding">
-              <div class="container">
-                <div class="track-wrapper">
-                  <div class="section-header dark">
-                    <div
-                      class="section-badge"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
-                    >
-                      Content track
-                    </div>
-                    <h2
-                      class="section-title"
-                      data-aos="fade-up"
-                      data-aos-delay="200"
-                    >
-                      Wherever you sit in Nigeria's tech, Our content tracks
-                      resonates with your industry. We will explore
-                      conversations across;
-                    </h2>
-                  </div>
-
-                  <div class="tracks">
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="50"
-                    >
-                      <img src="/assets/images/icons/tech.svg" alt="" />
-                      Big Tech & Enterprise
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                    >
-                      <img
-                        src="/assets/images/icons/capital-venture.svg"
-                        alt=""
-                      />
-                      VC/PE & Debt Funding
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="150"
-                    >
-                      <img
-                        src="/assets/images/icons/cryptocurrency.svg"
-                        alt=""
-                      />
-                      Stablecoins & Crypto
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="200"
-                    >
-                      <img src="/assets/images/icons/economy.svg" alt="" />
-                      Creative Economy & New Media
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="250"
-                    >
-                      <img src="/assets/images/icons/ecommerce.svg" alt="" />
-                      Future of Commerce
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="300"
-                    >
-                      <img src="/assets/images/icons/payment.svg" alt="" />
-                      Payments & Banking
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="350"
-                    >
-                      <img src="/assets/images/icons/fintech.svg" alt="" />
-                      Fintech
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="400"
-                    >
-                      <img src="/assets/images/icons/startup.svg" alt="" />
-                      Founder & Startup
-                    </div>
-
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="50"
-                    >
-                      <img src="/assets/images/icons/ai.svg" alt="" />
-                      Emerging Technologies & AI
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="100"
-                    >
-                      <img src="/assets/images/icons/governance.svg" alt="" />
-                      Government, Regulation and Policy
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="150"
-                    >
-                      <img src="/assets/images/icons/financial.svg" alt="" />
-                      Financial Inclusion
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="200"
-                    >
-                      <img src="/assets/images/icons/talent.svg" alt="" />
-                      Talent & Workforce
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="250"
-                    >
-                      <img src="/assets/images/icons/climate.svg" alt="" />
-                      Climate Tech & Renewables
-                    </div>
-                    <div
-                      class="icon-box"
-                      data-aos="zoom-in"
-                      data-aos-delay="300"
-                    >
-                      <img src="/assets/images/icons/digital.svg" alt="" />
-                      Digital Infrastructure
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
+      </section>
 
-        <!-- Who attends -->
-        <section id="who-attends">
-          <div class="who-attends-container padding bg-dark">
+      <!-- Expect & Track -->
+      <div class="ex-con bg-fixed">
+        <!-- Track Section -->
+        <section id="track">
+          <div class="track padding">
             <div class="container">
-              <div class="who-attends-wrapper">
+              <div class="track-wrapper">
                 <div class="section-header dark">
-                  <div
-                    class="section-badge"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    Powered By
+                  <div class="section-badge" data-aos="fade-up" data-aos-delay="100">
+                    Content track
                   </div>
-                  <h2
-                    class="section-title"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    Sponsored by leading players across Nigeria's tech ecosystem
+                  <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                    Wherever you sit in Nigeria's tech, Our content tracks
+                    resonates with your industry. We will explore
+                    conversations across;
                   </h2>
                 </div>
-              </div>
-            </div>
-            <div
-              class="who-attends-subwrapper"
-              data-aos="zoom-out"
-              data-aos-delay="400"
-            >
-              <div class="who-attends-slide-1"></div>
-              <div class="who-attends-slide-2" dir="rtl"></div>
-              <div class="who-attends-slide-3"></div>
-            </div>
-          </div>
-        </section>
 
-        <!-- Contact -->
-        <section id="contact">
-          <div class="contact-container padding">
-            <div class="container mist">
-              <div class="contact-wrapper">
-                <h2 data-aos="fade-up">Speak to our team</h2>
-
-                <p data-aos="fade-up" data-aos-delay="100">
-                  If you are interested in learning more about our available
-                  sponsorship, speaking, exhibitions and other partnership
-                  opportunities, please speak to our team.
-                </p>
-
-                <div class="contact-box-container">
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="150"
-                  >
-                    <h4>Jamiu Ijaodola</h4>
-                    <a href="tel: +2347016673316">+234 701 667 3316</a>
-                    <a href="mailto: jamiu@eventhive.ng">jamiu@eventhive.ng</a>
+                <div class="tracks">
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                    <img src="/assets/images/icons/tech.svg" alt="" />
+                    Big Tech & Enterprise
                   </div>
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="250"
-                  >
-                    <h4>Malik Kazeem</h4>
-                    <a href="tel: +2349028112744">+234 902 811 2744</a>
-                    <a href="mailto: malik@eventhive.ng">malik@eventhive.ng</a>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="/assets/images/icons/capital-venture.svg" alt="" />
+                    VC/PE & Debt Funding
                   </div>
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="250"
-                  >
-                    <h4>Arole Mustapha</h4>
-                    <a href="tel: +2348086081614">+234 808 608 1614</a>
-                    <a href="mailto: arole@eventhive.ng">arole@eventhive.ng</a>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="/assets/images/icons/cryptocurrency.svg" alt="" />
+                    Stablecoins & Crypto
                   </div>
-                </div>
-
-                <div class="become">
-                  <a
-                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Sponsorship%20Deck"
-                    class="btn btn-sec"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    >Become a Sponsor</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- More About Eventhive -->
-        <section id="more-about">
-          <div class="more-container padding">
-            <div class="container">
-              <div class="more-wrapper aos-init" data-aos="fade-left">
-                <div class="more-logo">
-                  <span>An event by:</span>
-                  <div class="logos">
-                    <div class="logo">
-                      <img
-                        src="assets/images/logo/ats-series-blue.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="logo-separator"></div>
-                    <div class="logo">
-                      <img src="assets/images/logo/logo.svg" alt="" />
-                    </div>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="/assets/images/icons/economy.svg" alt="" />
+                    Creative Economy & New Media
                   </div>
-                </div>
-
-                <p>
-                  Africa Tech Series is a subsidiary of Eventhive, Eventhive is
-                  Africa's leading B2B2C event servicing company with event
-                  portfolios across Lagos, London, Nairobi, Kigali, Johannesburg
-                  and New York.
-                </p>
-                <p>
-                  Eventhive operates in the heart of the knowledge and
-                  information economy across major sectors in Africa. We enable
-                  businesses to grow through connecting them with knowledge,
-                  ideas and opportunities.
-                </p>
-
-                <div class="indus-cities">
-                  <h4 class="text-sec">Industries We Operate In:</h4>
-                  <div>
-                    <span>Oil &amp; Gas</span><span>.</span><span>Energy</span
-                    ><span>.</span><span>Tech</span><span>.</span
-                    ><span>Mining</span><span>.</span><span>Finance</span
-                    ><span>.</span><span>Transport</span><span>.</span
-                    ><span>Telecoms</span><span>.</span><span>Aviation</span
-                    ><span>.</span><span>Real Estate</span><span>.</span
-                    ><span>International Trade</span><span>.</span
-                    ><span>Agribusiness</span> <span>.</span
-                    ><span>Private Equity/VC</span><span>.</span
-                    ><span>Creative Economy</span> <span>.</span
-                    ><span>Power</span><span>.</span
-                    ><span>Business of Entertainment</span>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="/assets/images/icons/ecommerce.svg" alt="" />
+                    Future of Commerce
                   </div>
-                </div>
-                <div class="indus-cities">
-                  <h4 class="text-sec">Cities We Operate In:</h4>
-                  <div>
-                    <span>Lagos</span><span>.</span><span>London</span
-                    ><span>.</span><span>New York</span><span>.</span
-                    ><span>Kigali</span><span>.</span><span>Nairobi</span
-                    ><span>.</span><span>Johannesburg</span>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="/assets/images/icons/payment.svg" alt="" />
+                    Payments & Banking
+                  </div>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
+                    <img src="/assets/images/icons/fintech.svg" alt="" />
+                    Fintech
+                  </div>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="/assets/images/icons/startup.svg" alt="" />
+                    Founder & Startup
+                  </div>
+
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                    <img src="/assets/images/icons/ai.svg" alt="" />
+                    Emerging Technologies & AI
+                  </div>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="/assets/images/icons/governance.svg" alt="" />
+                    Government, Regulation and Policy
+                  </div>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="/assets/images/icons/financial.svg" alt="" />
+                    Financial Inclusion
+                  </div>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="/assets/images/icons/talent.svg" alt="" />
+                    Talent & Workforce
+                  </div>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="/assets/images/icons/climate.svg" alt="" />
+                    Climate Tech & Renewables
+                  </div>
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="/assets/images/icons/digital.svg" alt="" />
+                    Digital Infrastructure
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </main>
+      </div>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="footer-container padding">
+      <!-- Who attends -->
+      <section id="who-attends">
+        <div class="who-attends-container padding bg-dark">
           <div class="container">
-            <div class="footer-wrapper">
-              <div class="top">
-                <div class="logo">
-                  <div class="logo-icon">
-                    <img
-                      src="/assets/images/logo/ltf-white-yellow-logo.png"
-                      alt=""
-                    />
-                  </div>
+            <div class="who-attends-wrapper">
+              <div class="section-header dark">
+                <div class="section-badge" data-aos="fade-up" data-aos-delay="100">
+                  Powered By
                 </div>
-                <div class="quick-links">
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li>
-                      <a href="https://tix.africa/lagos-tech-fest-26"
-                        >Tickets</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Exhibition%20Deck"
-                        >Exhibition</a
-                      >
-                    </li>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                  Sponsored by leading players across Nigeria's tech ecosystem
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="who-attends-subwrapper" data-aos="zoom-out" data-aos-delay="400">
+            <div class="who-attends-slide-1"></div>
+            <div class="who-attends-slide-2" dir="rtl"></div>
+            <div class="who-attends-slide-3"></div>
+          </div>
+        </div>
+      </section>
 
-                    <li><a href="#contact">Contact</a></li>
-                  </ul>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="contact-container padding">
+          <div class="container mist">
+            <div class="contact-wrapper">
+              <h2 data-aos="fade-up">Speak to our team</h2>
+
+              <p data-aos="fade-up" data-aos-delay="100">
+                If you are interested in learning more about our available
+                sponsorship, speaking, exhibitions and other partnership
+                opportunities, please speak to our team.
+              </p>
+
+              <div class="contact-box-container">
+                <div class="contact-box" data-aos="zoom-in" data-aos-delay="150">
+                  <h4>Jamiu Ijaodola</h4>
+                  <a href="tel: +2347016673316">+234 701 667 3316</a>
+                  <a href="mailto: jamiu@eventhive.ng">jamiu@eventhive.ng</a>
                 </div>
-                <div class="socials">
-                  <h3>Lagos Tech Fest 2026</h3>
-                  <p>February 17th - 18th, 2025 | Lagos, Nigeria</p>
-                  <ul>
-                    <li>
-                      <a
-                        href="https://www.facebook.com/share/JqRxmCpGDEoj8RZM/?mibextid=LQQJ4d"
-                        target="_blank"
-                        ><iconify-icon icon="fa:facebook"></iconify-icon>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://x.com/afritechseries?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ"
-                        target="_blank"
-                        ><iconify-icon icon="ri:twitter-x-fill"></iconify-icon
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/company/africa-tech-series/"
-                        target="_blank"
-                        ><iconify-icon icon="formkit:linkedin"></iconify-icon
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/afritechseries?igsh=MWVwajkyYjNyYW8zZw=="
-                        target="_blank"
-                        ><iconify-icon icon="mdi:instagram"></iconify-icon
-                      ></a>
-                    </li>
-                  </ul>
+                <div class="contact-box" data-aos="zoom-in" data-aos-delay="250">
+                  <h4>Malik Kazeem</h4>
+                  <a href="tel: +2349028112744">+234 902 811 2744</a>
+                  <a href="mailto: malik@eventhive.ng">malik@eventhive.ng</a>
+                </div>
+                <div class="contact-box" data-aos="zoom-in" data-aos-delay="250">
+                  <h4>Arole Mustapha</h4>
+                  <a href="tel: +2348086081614">+234 808 608 1614</a>
+                  <a href="mailto: arole@eventhive.ng">arole@eventhive.ng</a>
                 </div>
               </div>
-              <div class="center">
-                <div id="countdown-timer" class="timer"></div>
-              </div>
-              <div class="divider"></div>
-              <div class="bottom">
-                <p>
-                  &copy; <span class="year">2025</span> Lagos Tech Fest. All
-                  Rights Reserved.
-                </p>
+
+              <div class="become">
+                <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Sponsorship%20Deck"
+                  class="btn btn-sec" data-aos="fade-up" data-aos-delay="300">Become a Sponsor</a>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
 
-    <!-- Scripts -->
+      <!-- More About Eventhive -->
+      <section id="more-about">
+        <div class="more-container padding">
+          <div class="container">
+            <div class="more-wrapper aos-init" data-aos="fade-left">
+              <div class="more-logo">
+                <span>An event by:</span>
+                <div class="logos">
+                  <div class="logo">
+                    <img src="assets/images/logo/ats-series-blue.png" alt="" />
+                  </div>
+                  <div class="logo-separator"></div>
+                  <div class="logo">
+                    <img src="assets/images/logo/logo.svg" alt="" />
+                  </div>
+                </div>
+              </div>
 
-    <!-- Jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+              <p>
+                Africa Tech Series is a subsidiary of Eventhive, Eventhive is
+                Africa's leading B2B2C event servicing company with event
+                portfolios across Lagos, London, Nairobi, Kigali, Johannesburg
+                and New York.
+              </p>
+              <p>
+                Eventhive operates in the heart of the knowledge and
+                information economy across major sectors in Africa. We enable
+                businesses to grow through connecting them with knowledge,
+                ideas and opportunities.
+              </p>
 
-    <!-- Aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+              <div class="indus-cities">
+                <h4 class="text-sec">Industries We Operate In:</h4>
+                <div>
+                  <span>Oil &amp;
+                    Gas</span><span>.</span><span>Energy</span><span>.</span><span>Tech</span><span>.</span><span>Mining</span><span>.</span><span>Finance</span><span>.</span><span>Transport</span><span>.</span><span>Telecoms</span><span>.</span><span>Aviation</span><span>.</span><span>Real
+                    Estate</span><span>.</span><span>International Trade</span><span>.</span><span>Agribusiness</span>
+                  <span>.</span><span>Private Equity/VC</span><span>.</span><span>Creative Economy</span>
+                  <span>.</span><span>Power</span><span>.</span><span>Business of Entertainment</span>
+                </div>
+              </div>
+              <div class="indus-cities">
+                <h4 class="text-sec">Cities We Operate In:</h4>
+                <div>
+                  <span>Lagos</span><span>.</span><span>London</span><span>.</span><span>New
+                    York</span><span>.</span><span>Kigali</span><span>.</span><span>Nairobi</span><span>.</span><span>Johannesburg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <!-- <script
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-container padding">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="top">
+              <div class="logo">
+                <div class="logo-icon">
+                  <img src="/assets/images/logo/ltf-white-yellow-logo.png" alt="" />
+                </div>
+              </div>
+              <div class="quick-links">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li>
+                    <a href="https://tix.africa/lagos-tech-fest-26">Tickets</a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Lagos%20Tech%20Fest%20Exhibition%20Deck">Exhibition</a>
+                  </li>
+
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="socials">
+                <h3>Lagos Tech Fest 2026</h3>
+                <p>February 17th - 18th, 2025 | Lagos, Nigeria</p>
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/share/JqRxmCpGDEoj8RZM/?mibextid=LQQJ4d"
+                      target="_blank"><iconify-icon icon="fa:facebook"></iconify-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/afritechseries?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ" target="_blank"><iconify-icon
+                        icon="ri:twitter-x-fill"></iconify-icon></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/africa-tech-series/" target="_blank"><iconify-icon
+                        icon="formkit:linkedin"></iconify-icon></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/afritechseries?igsh=MWVwajkyYjNyYW8zZw=="
+                      target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="center">
+              <div id="countdown-timer" class="timer"></div>
+            </div>
+            <div class="divider"></div>
+            <div class="bottom">
+              <p>
+                &copy; <span class="year">2025</span> Lagos Tech Fest. All
+                Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
       integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script> -->
 
-    <!-- Swiper  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Swiper  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Slick Carousel -->
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+  <!-- Slick Carousel -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <!-- Odometer -->
-    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
+  <!-- Odometer -->
+  <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
 
-    <!-- Jarrlax -->
-    <script src="https://cdn.jsdelivr.net/npm/jarallax/dist/jarallax.min.js"></script>
+  <!-- Jarrlax -->
+  <script src="https://cdn.jsdelivr.net/npm/jarallax/dist/jarallax.min.js"></script>
 
-    <!-- Iconify -->
-    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
-    <!-- Custom -->
-    <script src="/js/data.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Custom -->
+  <script src="/js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
 
 <!-- <video
