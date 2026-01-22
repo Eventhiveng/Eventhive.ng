@@ -577,6 +577,7 @@
 /* Who attends */
 #who-attends .who-attends-container {
   background: #0611899c;
+  overflow: hidden;
 }
 
 #who-attends .who-attends-subwrapper {
