@@ -246,6 +246,13 @@ const speakers = [
     image: "assets/images/speakers/atinuke-olalafe.png",
     linkedIn: "#",
   },
+  {
+    name: "Gbolade Okeowo",
+    title: "Vice President,",
+    company: "Kuramo Capital",
+    image: "assets/images/speakers/gbolade-okeowo.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
