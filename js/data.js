@@ -253,6 +253,34 @@ const speakers = [
     image: "assets/images/speakers/gbolade-okeowo.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Pearlé Nwaezeigwe",
+    title: "Platform Policy Expert",
+    company: "Wae Collective",
+    image: "assets/images/speakers/pearlé-nwaezeigwe.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Tobi Olusoga",
+    title: "Chief Operating Officer,",
+    company: "i-invest",
+    image: "assets/images/speakers/tobi-olusoga.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Chukwuemeka Ajanah",
+    title: "Group Founder and CEO,",
+    company: "Parkfirst Group and The Parkpay Technology Limited.",
+    image: "assets/images/speakers/chukwuemeka-ajanah.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Dr. Adetola Salau",
+    title: "Special Adviser to the Honorable Minister of Education; on Science Technology Engineering Mathematics and Medical Sciences (STEMM)  and Corporate Sector Engagement,",
+    company: "",
+    image: "assets/images/speakers/dr-adetola-salau.png",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
