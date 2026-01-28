@@ -281,7 +281,15 @@ const speakers = [
     image: "assets/images/speakers/dr-adetola-salau.png",
     linkedIn: "#",
   },
+  {
+    name: "Mr. Goodness Okpani",
+    title: "Chief Security Officer,",
+    company: "Ethnos Cyber Limited",
+    image: "assets/images/speakers/goodness-okpani.jpg",
+    linkedIn: "#",
+  },
 ];
+
 
 // const speakersOld = [
 //   {
