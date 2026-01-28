@@ -826,6 +826,12 @@
               color: var(--white);
               border: 2px solid #1a1a2e;
             }
+
+            &.leadership-roundtable-badge {
+              background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+              color: var(--white);
+              border: 2px solid #2c3e50;
+            }
           }
         }
 
@@ -913,6 +919,14 @@
           }
 
           &.after-dark-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            max-width: 600px;
+            margin: 0 auto;
+            gap: 30px;
+          }
+
+          &.leadership-roundtable-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             max-width: 600px;
@@ -1145,6 +1159,25 @@
 
               .sponsor-logo .sponsor-name {
                 color: #1a1a2e;
+              }
+            }
+
+            &.leadership-roundtable-card {
+              background: rgba(44, 62, 80, 0.05);
+              border-color: rgba(44, 62, 80, 0.2);
+
+              &::before {
+                background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+              }
+
+              &:hover {
+                background: rgba(44, 62, 80, 0.1);
+                border-color: #2c3e50;
+                box-shadow: 0 12px 40px rgba(44, 62, 80, 0.3);
+              }
+
+              .sponsor-logo .sponsor-name {
+                color: #2c3e50;
               }
             }
           }
