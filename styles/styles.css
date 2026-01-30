@@ -846,6 +846,14 @@
   background: var(--primary-color);
 }
 
+.sponsor-tier-title.exhibitor {
+  color: #2c1810;
+}
+
+.sponsor-tier-title.exhibitor::after {
+  background: var(--primary-color);
+}
+
 .sponsor-logos {
   display: flex;
   flex-wrap: wrap;
