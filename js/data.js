@@ -288,6 +288,20 @@ const speakers = [
     image: "assets/images/speakers/goodness-okpani.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Omodolapo Ekundayo",
+    title: "Operations Lead,",
+    company: "Prestmit",
+    image: "assets/images/speakers/omodolapo-ekundayo.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Nader Salam",
+    title: "CEO/CTO,",
+    company: "Epic Pay",
+    image: "assets/images/speakers/nader-salam.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 
