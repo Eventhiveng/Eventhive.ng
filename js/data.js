@@ -302,6 +302,13 @@ const speakers = [
     image: "assets/images/speakers/nader-salam.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Osikhena Dirisu",
+    title: "Programmes Director,",
+    company: "The Beat 99.9FM Lagos",
+    image: "assets/images/sponsors/osikhena-dirisu.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 
