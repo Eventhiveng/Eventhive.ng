@@ -486,9 +486,9 @@
   object-position: top;
 }
 
-#speakers .speakers-subwrapper .speaker-box .speaker-info {
+/* #speakers .speakers-subwrapper .speaker-box .speaker-info {
   padding: 20px;
-}
+} */
 
 #speakers .speakers-subwrapper .speaker-box .speaker-info .name {
   color: var(--primary-light-color);
