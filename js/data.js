@@ -309,6 +309,55 @@ const speakers = [
     image: "assets/images/sponsors/osikhena-dirisu.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Kevin Wamae",
+    title: "Business Analyst & Implementation Specialist,",
+    company: "Odoo Kenya",
+    image: "assets/images/speakers/kevin-wamae.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Abayomi Adebanjo",
+    title: "Director, Legal (Global & Regional Business Affairs),",
+    company: "Equinix West Africa",
+    image: "assets/images/speakers/abayomi-adebanjo.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Douglas Kendyson",
+    title: "CEO,",
+    company: "Selar",
+    image: "assets/images/speakers/douglas-kendyson.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Jennie Nwokoye",
+    title: "CEO,",
+    company: "Clafiya",
+    image: "assets/images/speakers/jennie-nwokoye.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Chidiebere Ihejirika",
+    title: "Head IT Operations,",
+    company: "Oxygen X",
+    image: "assets/images/speakers/chidiebere-ihejirika.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Elsie Godwin",
+    title: "Cofounder/COO,",
+    company: "Cashwise Finance",
+    image: "assets/images/speakers/elsie-godwin.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Dolapo Olusesi",
+    title: "Startup Advisor,",
+    company: "",
+    image: "assets/images/speakers/dolapo-olusesi.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 
