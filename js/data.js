@@ -276,7 +276,8 @@ const speakers = [
   },
   {
     name: "Dr. Adetola Salau",
-    title: "Special Adviser to the Honorable Minister of Education; on Science Technology Engineering Mathematics and Medical Sciences (STEMM)  and Corporate Sector Engagement,",
+    title:
+      "Special Adviser to the Honorable Minister of Education; on Science Technology Engineering Mathematics and Medical Sciences (STEMM)  and Corporate Sector Engagement,",
     company: "",
     image: "assets/images/speakers/dr-adetola-salau.png",
     linkedIn: "#",
@@ -358,8 +359,21 @@ const speakers = [
     image: "assets/images/speakers/dolapo-olusesi.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Maxime Calot",
+    title: "Founder & CEO,",
+    company: "Welcome Tomorrow",
+    image: "assets/images/speakers/maxime-calot.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Alero Boyo",
+    title: "Founder & Director of Partnerships",
+    company: "AlexBoyo World (ABW)",
+    image: "assets/images/speakers/alero-boyo.jpeg",
+    linkedIn: "#",
+  },
 ];
-
 
 // const speakersOld = [
 //   {
