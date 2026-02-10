@@ -92,9 +92,9 @@ const speakers = [
   },
   {
     name: "Francis Sani",
-    title: "Programme Director, 3MTT Adviser",
-    company: "HMFCIDE",
-    image: "assets/images/speakers/francis-sani.jpg",
+    title: "Technical Adviser HM FMCIDE",
+    company: "3MTT Nigeria Programme Director9",
+    image: "assets/images/speakers/francis-sani.jpeg",
     linkedIn: "#",
   },
   {
@@ -371,6 +371,27 @@ const speakers = [
     title: "Founder & Director of Partnerships",
     company: "AlexBoyo World (ABW)",
     image: "assets/images/speakers/alero-boyo.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Oladipupo Salu",
+    title: "Head of Growth,",
+    company: "Rabafast Technologies Inc",
+    image: "assets/images/speakers/oladipupo-salu.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Promise Alade",
+    title: "Head of Product,",
+    company: "Rabafast Technologies Inc",
+    image: "assets/images/speakers/promise-alade.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Victor Oluwole",
+    title: "Head & Editor,",
+    company: "Business Insider Africa",
+    image: "assets/images/speakers/victor-oluwole.png",
     linkedIn: "#",
   },
 ];
