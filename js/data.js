@@ -35,6 +35,14 @@ const speakers = [
     linkedIn: "#",
   },
   {
+    name: "Unwana Esang",
+    title:
+      "Vice President and Principal Consultant, Services Business Development,",
+    company: "Mastercard",
+    image: "assets/images/speakers/unwana-esang.png",
+    linkedIn: "#",
+  },
+  {
     name: "Abasi Ene-Obong",
     title: "CEO",
     company: "Syndicate Bio",
