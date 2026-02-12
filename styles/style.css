@@ -623,6 +623,36 @@
             color: #444;
             font-size: 1rem;
           }
+          .venue-card-info {
+            margin-top: 1rem;
+            padding: 12px 16px;
+            border-radius: 10px;
+            text-align: center;
+            .venue-info-time {
+              display: block;
+              font-weight: 800;
+              font-size: 1.15rem;
+              letter-spacing: 0.03em;
+              margin-bottom: 4px;
+            }
+            .venue-info-access {
+              display: block;
+              font-weight: 700;
+              font-size: 0.9rem;
+            }
+          }
+          .venue-info-orange {
+            background: rgba(255, 152, 0, 0.12);
+            color: #e08600;
+          }
+          .venue-info-green {
+            background: rgba(0, 156, 59, 0.12);
+            color: #007a2e;
+          }
+          .venue-info-blue {
+            background: rgba(0, 91, 234, 0.12);
+            color: #004bbf;
+          }
         }
       }
     }

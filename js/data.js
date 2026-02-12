@@ -1,11 +1,11 @@
 const speakers = [
-  {
-    name: "Olumide Balogun",
-    title: "Director- West Africa",
-    company: "Google",
-    image: "assets/images/speakers/olumide-balogun.jpg",
-    linkedIn: "#",
-  },
+  // {
+  //   name: "Olumide Balogun",
+  //   title: "Director- West Africa",
+  //   company: "Google",
+  //   image: "assets/images/speakers/olumide-balogun.jpg",
+  //   linkedIn: "#",
+  // },
   {
     name: "Takuma Terakubo",
     title: "CEO & General Partner",
@@ -83,13 +83,13 @@ const speakers = [
     image: "assets/images/speakers/kazeem-tewogbade.jpg",
     linkedIn: "#",
   },
-  {
-    name: "Ojoma Ochai",
-    title: "Managing Director",
-    company: "CcHub Africa",
-    image: "assets/images/speakers/ojoma-ochai.png",
-    linkedIn: "#",
-  },
+  // {
+  //   name: "Ojoma Ochai",
+  //   title: "Managing Director",
+  //   company: "CcHub Africa",
+  //   image: "assets/images/speakers/ojoma-ochai.png",
+  //   linkedIn: "#",
+  // },
   {
     name: "Francis Sani",
     title: "Technical Adviser HM FMCIDE",
@@ -97,13 +97,13 @@ const speakers = [
     image: "assets/images/speakers/francis-sani.jpeg",
     linkedIn: "#",
   },
-  {
-    name: "Adekanbi Oluwaseun",
-    title: "Growth Lead",
-    company: "Cleva",
-    image: "assets/images/speakers/adekanbi-oluwaseun.jpg",
-    linkedIn: "#",
-  },
+  // {
+  //   name: "Adekanbi Oluwaseun",
+  //   title: "Growth Lead",
+  //   company: "Cleva",
+  //   image: "assets/images/speakers/adekanbi-oluwaseun.jpg",
+  //   linkedIn: "#",
+  // },
   {
     name: "Chichi Nwoko",
     title: "CEO",
@@ -118,14 +118,13 @@ const speakers = [
     image: "assets/images/speakers/victoria-fabunmi.jpg",
     linkedIn: "#",
   },
-
-  {
-    name: "Adedeji Olowe",
-    title: "Founder,",
-    company: "Lendsqr",
-    image: "assets/images/speakers/adedeji-olowe.webp",
-    linkedIn: "#",
-  },
+  // {
+  //   name: "Adedeji Olowe",
+  //   title: "Founder,",
+  //   company: "Lendsqr",
+  //   image: "assets/images/speakers/adedeji-olowe.webp",
+  //   linkedIn: "#",
+  // },
   {
     name: "Napa Onwusah",
     title: "Managing Partner,",
@@ -162,13 +161,13 @@ const speakers = [
     image: "assets/images/speakers/wale-oyewo.jpg",
     linkedIn: "#",
   },
-  {
-    name: "Oluwadunni Fanibe",
-    title: "Accelerator Portfolio Manager,",
-    company: "Google for Startups, SSA",
-    image: "assets/images/speakers/oluwadunni-fanibe.png",
-    linkedIn: "#",
-  },
+  // {
+  //   name: "Oluwadunni Fanibe",
+  //   title: "Accelerator Portfolio Manager,",
+  //   company: "Google for Startups, SSA",
+  //   image: "assets/images/speakers/oluwadunni-fanibe.png",
+  //   linkedIn: "#",
+  // },
   {
     name: "Olawale Samuel",
     title: "CEO,",
@@ -225,13 +224,13 @@ const speakers = [
     image: "assets/images/speakers/ashwin-ravichandran.jpeg",
     linkedIn: "#",
   },
-  {
-    name: "Nonye Ujam",
-    title: "Director Government Affairs, West Africa",
-    company: "Microsoft",
-    image: "assets/images/speakers/nonye-ujam.jpeg",
-    linkedIn: "#",
-  },
+  // {
+  //   name: "Nonye Ujam",
+  //   title: "Director Government Affairs, West Africa",
+  //   company: "Microsoft",
+  //   image: "assets/images/speakers/nonye-ujam.jpeg",
+  //   linkedIn: "#",
+  // },
   {
     name: "Stephaine Kosisochukwu David",
     title: "Growth and Marketing Lead,",
@@ -387,13 +386,13 @@ const speakers = [
     image: "assets/images/speakers/promise-alade.jpeg",
     linkedIn: "#",
   },
-  {
-    name: "Victor Oluwole",
-    title: "Head & Editor,",
-    company: "Business Insider Africa",
-    image: "assets/images/speakers/victor-oluwole.png",
-    linkedIn: "#",
-  },
+  // {
+  //   name: "Victor Oluwole",
+  //   title: "Head & Editor,",
+  //   company: "Business Insider Africa",
+  //   image: "assets/images/speakers/victor-oluwole.png",
+  //   linkedIn: "#",
+  // },
   {
     name: "Adekunle Agbetiloye",
     title: "Senior Editor,",
