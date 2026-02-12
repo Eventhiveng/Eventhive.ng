@@ -394,6 +394,20 @@ const speakers = [
     image: "assets/images/speakers/victor-oluwole.png",
     linkedIn: "#",
   },
+  {
+    name: "Adekunle Agbetiloye",
+    title: "Senior Editor,",
+    company: "Business Insider Africa",
+    image: "assets/images/speakers/adekunle-agbetiloye.png",
+    linkedIn: "#",
+  },
+  {
+    name: "Osose Abraham",
+    title: "Head of Strategy,",
+    company: "Pulse Marketing Nigeria",
+    image: "assets/images/speakers/osose-abraham.png",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
