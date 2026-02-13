@@ -415,6 +415,13 @@ const speakers = [
     image: "assets/images/speakers/osose-abraham.png",
     linkedIn: "#",
   },
+  {
+    name: "Sola Okeowo",
+    title: "Director, Account Management,",
+    company: " Mastercard",
+    image: "assets/images/speakers/sola-okeowo.jpg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
