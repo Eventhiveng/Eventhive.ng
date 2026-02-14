@@ -422,6 +422,20 @@ const speakers = [
     image: "assets/images/speakers/sola-okeowo.jpg",
     linkedIn: "#",
   },
+  {
+    name: "Adejoke Haastrup",
+    title: "Developer Relations Lead,",
+    company: "Alatpay",
+    image: "assets/images/speakers/adejoke-haastrup.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Abayomi Olomu",
+    title: "Head of Payments Business,",
+    company: "Wema Bank",
+    image: "assets/images/speakers/abayomi-olomu.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakersOld = [
