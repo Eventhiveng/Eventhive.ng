@@ -2,6 +2,12 @@
   publish = "/"
   command = ""
 
+[build.environment]
+  NODE_VERSION = "20"
+
+[image]
+  name = "ubuntu/jammy"
+
 [context.master]
   command = "pnpm build"
   publish = ".next"
