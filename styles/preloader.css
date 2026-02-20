@@ -1,0 +1,238 @@
+/* Simple Preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.simple-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #444;
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  animation: simple-spin 1s linear infinite;
+  margin-bottom: 18px;
+}
+
+.simple-loading-text {
+  color: #eee;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+
+/* Announcement Modal */
+.announcement-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.announcement-modal.active {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.announcement-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.announcement-modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  z-index: 10001;
+  animation: modalFadeIn 0.4s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.announcement-image-wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(90vh - 100px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-image-wrapper img {
+  max-width: 100%;
+  max-height: calc(90vh - 100px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.announcement-modal-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10002;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.announcement-modal-close:hover {
+  transform: rotate(90deg);
+  background: var(--primary-color);
+}
+
+.announcement-modal-close i {
+  font-size: 20px;
+  color: var(--quaternary-color);
+  transition: color 0.3s ease;
+}
+
+.announcement-modal-close:hover i {
+  color: var(--white);
+}
+
+.announcement-download {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.announcement-download .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.announcement-download .btn i {
+  font-size: 1.1rem;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive styles for announcement modal */
+@media (max-width: 768px) {
+  .announcement-modal-content {
+    max-width: calc(95vw - 40px);
+    max-height: 95vh;
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .announcement-image-wrapper {
+    max-width: 100%;
+    max-height: calc(95vh - 120px);
+  }
+
+  .announcement-image-wrapper img {
+    max-width: 100%;
+    max-height: calc(95vh - 120px);
+  }
+
+  .announcement-modal-close {
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .announcement-modal-close i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-modal-content {
+    max-width: calc(100vw - 30px);
+    max-height: calc(100vh - 30px);
+    padding: 15px;
+    gap: 1rem;
+  }
+
+  .announcement-download {
+    margin-top: 0.5rem;
+  }
+
+  .announcement-download .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .announcement-image-wrapper {
+    max-width: 100%;
+    max-height: calc(100vh - 140px);
+    border-radius: 8px;
+  }
+
+  .announcement-image-wrapper img {
+    max-width: 100%;
+    max-height: calc(100vh - 140px);
+  }
+
+  .announcement-modal-close {
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+  }
+
+  .announcement-modal-close i {
+    font-size: 16px;
+  }
+}

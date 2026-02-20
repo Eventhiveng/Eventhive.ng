@@ -211,35 +211,7 @@ const speakers = [
   },
 ];
 
-const box1Images = [
-  "/assets/images/highlights/1.jpg",
-  "/assets/images/highlights/11.jpg",
-  "/assets/images/highlights/13.jpg",
-  "/assets/images/highlights/29.jpg",
-  "/assets/images/highlights/22.jpg",
-  "/assets/images/highlights/24.jpg",
-  "/assets/images/highlights/27.jpg",
-  "/assets/images/highlights/30.jpg",
-  "/assets/images/highlights/18.jpg",
-  "/assets/images/highlights/20.jpg",
-  "/assets/images/highlights/16.jpg",
-];
-
-const box2Images = [
-  "/assets/images/highlights/17.jpg",
-  "/assets/images/highlights/4.jpg",
-  "/assets/images/highlights/26.jpg",
-  "/assets/images/highlights/25.jpg",
-  "/assets/images/highlights/12.jpg",
-  "/assets/images/highlights/14.jpg",
-  "/assets/images/highlights/28.jpg",
-  "/assets/images/highlights/15.jpg",
-  "/assets/images/highlights/23.jpg",
-  "/assets/images/highlights/21.jpg",
-  "/assets/images/highlights/7.jpg",
-];
-
-const sponsorsSlideOne = [
+const attSlideOne = [
   "assets/images/sponsors/octo5.png",
   "assets/images/sponsors/flinx.png",
   "assets/images/sponsors/facibus.png",
@@ -259,7 +231,7 @@ const sponsorsSlideOne = [
   "assets/images/sponsors/noblegrounds.png",
 ];
 
-const sposnorsSlideTwo = [
+const attSlideTwo = [
   "assets/images/sponsors/meristem.png",
   "assets/images/sponsors/cobblestone.png",
   "assets/images/sponsors/polymath.png",
@@ -278,4 +250,25 @@ const sposnorsSlideTwo = [
   "assets/images/sponsors/strongmas.png",
   "assets/images/sponsors/stonetrust.png",
   "assets/images/sponsors/infinitytrust.png",
+];
+
+const attSlideThree = [
+  "assets/images/sponsors/octo5.png",
+  "assets/images/sponsors/flinx.png",
+  "assets/images/sponsors/facibus.png",
+  "assets/images/sponsors/updc.png",
+  "assets/images/sponsors/cutstruct.png",
+  "assets/images/sponsors/rebar.png",
+  "assets/images/sponsors/urbanshelter.png",
+  "assets/images/sponsors/pinnacleprime.png",
+  "assets/images/sponsors/abbey.png",
+  "assets/images/sponsors/joe.png",
+  "assets/images/sponsors/novare.png",
+  "assets/images/sponsors/periwinkle.png",
+  "assets/images/sponsors/finebricks.png",
+  "assets/images/sponsors/gridcrux.png",
+  "assets/images/sponsors/bedrock.png",
+  "assets/images/sponsors/noblegrounds.png",
+  "assets/images/sponsors/cobblestone.png",
+  "assets/images/sponsors/polymath.png",
 ];
