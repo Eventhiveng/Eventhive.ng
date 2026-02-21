@@ -130,7 +130,7 @@ $(document).ready(() => {
   $(".sponsors-25-slide-3").slick(sponsSettings3);
 
   const $sponsSlide = $(
-    ".sponsors-25-slide-1, .sponsors-25-slide-2, .sponsors-25-slide-3"
+    ".sponsors-25-slide-1, .sponsors-25-slide-2, .sponsors-25-slide-3",
   );
 
   // Throttle function to optimize resize event handling
@@ -143,7 +143,7 @@ $(document).ready(() => {
         "slickSetOption",
         "slidesToShow",
         newSlidesToShow,
-        true
+        true,
       );
     }, 200); // Delay to prevent excessive updates during resizing
   });
@@ -361,7 +361,7 @@ $(document).ready(() => {
   $(".who-attends-slide-3").slick(slickSettings3);
 
   const $slides = $(
-    ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
+    ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3",
   );
 
   // Throttle function to optimize resize event handling
@@ -396,13 +396,13 @@ $(document).ready(() => {
   // Countdown
   const countdownFunction = setInterval(function () {
     const now = new Date().getTime();
-    const eventDate = new Date("May 27, 2026 00:00:00").getTime();
+    const eventDate = new Date("May 26, 2026 00:00:00").getTime();
 
     // Calculate the time remaining
     const distance = eventDate - now;
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
     );
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
@@ -410,7 +410,7 @@ $(document).ready(() => {
     // Display countdown
     if (distance > 0) {
       $("#countdown-timer").html(
-        days + "d " + hours + "h " + minutes + "m " + seconds + "s "
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ",
       );
     } else {
       $("#countdown-timer").html("Event is Live!");
