@@ -10,7 +10,9 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
 }
 
 #preloader.fade-out {
@@ -39,7 +41,10 @@
   height: 60px;
   background: #e67e22;
   border-radius: 50%;
-  box-shadow: 0 0 30px #e67e22, 0 0 60px #e67e22, 0 0 90px #e67e22;
+  box-shadow:
+    0 0 30px #e67e22,
+    0 0 60px #e67e22,
+    0 0 90px #e67e22;
   animation: pulse-sun 2s ease-in-out infinite;
 }
 
@@ -226,7 +231,8 @@
   /* background: linear-gradient(135deg, #2c1810 0%, #8b4513 50%, #cd853f 100%); */
   /* background: linear-gradient(135deg, #2c1810 0%, #8b4513 50%, #cd853f 100%),
     url(./assets/background/solar-cell.jpg) center/cover no-repeat; */
-  background: linear-gradient(#00000080, #00000080),
+  background:
+    linear-gradient(#00000080, #00000080),
     url(../assets/background/solar-cell.jpg) center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -744,7 +750,9 @@
   background: #f8f9fa;
   border-radius: 20px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -850,6 +858,14 @@
   color: #2c1810;
 }
 
+.sponsor-tier-title.media-partner {
+  color: #2c1810;
+}
+
+.sponsor-tier-title.media-partner::after {
+  background: var(--primary-color);
+}
+
 .sponsor-tier-title.exhibitor::after {
   background: var(--primary-color);
 }
@@ -867,7 +883,9 @@
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   width: 250px;
   height: 150px;
   display: flex;
@@ -1029,7 +1047,9 @@
 #highlight .highlight-container .slide-container .slider img {
   margin: 10px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #3e3c3c5d, inset -1px -1px 10px #31333653;
+  box-shadow:
+    1px 1px 10px #3e3c3c5d,
+    inset -1px -1px 10px #31333653;
   object-position: top;
 }
 
@@ -1100,7 +1120,8 @@
 
 /* More About Eventhive  */
 #more-about .more-container {
-  background: linear-gradient(#00000080, #00000080),
+  background:
+    linear-gradient(#00000080, #00000080),
     var(--primary-color) url(../assets/background/solar-cell.jpg) no-repeat
       center/cover fixed;
   color: var(--white);
