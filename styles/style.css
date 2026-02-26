@@ -210,6 +210,7 @@
 
 #hero .hero-wrapper .hero-header h1 {
   font-size: clamp(28px, 5vw, 48px);
+  font-weight: 900;
 }
 
 #hero .hero-wrapper .hero-description {
@@ -218,7 +219,7 @@
 }
 
 #hero .hero-wrapper .hero-description p {
-  font-size: clamp(16px, 3vw, 18px);
+  font-size: clamp(16px, 3vw, 20px);
 }
 
 #hero .hero-wrapper .hero-buttons {
@@ -228,11 +229,11 @@
 }
 
 #hero .hero-wrapper .date-loc {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 #hero .hero-wrapper .date-loc h4 {
-  margin-bottom: 10px;
+  font-weight: 900;
 }
 
 #hero .hero-image {
@@ -325,13 +326,6 @@
 #event-intro .event-intro-wrapper .right .event-intro-description p {
   margin-bottom: 20px;
   color: #f2f4ff;
-}
-
-@media only screen and (max-width: 767px) {
-  #event-intro .event-intro-wrapper {
-    flex-direction: column;
-    gap: 30px;
-  }
 }
 
 /* About */
@@ -472,25 +466,37 @@
 }
 
 #engage-leaders .engage-wrapper {
-  text-align: center;
-  max-width: 980px;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  align-items: start;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  background-color: red;
 }
 
+/* #engage-leaders .engage-wrapper .engage-left {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+} */
+
 #engage-leaders .engage-wrapper .section-header {
-  margin-bottom: 24px;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 #engage-leaders .engage-wrapper .section-header h2 {
   line-height: 1.2;
 }
 
-#engage-leaders .engage-wrapper .engage-description {
-  max-width: 760px;
-  margin: 0 auto;
-}
+/* #engage-leaders .engage-wrapper .engage-description {
+  grid-column: 2;
+  grid-row: 1;
+} */
 
 #engage-leaders .engage-wrapper .engage-description p {
   margin-bottom: 16px;
@@ -501,7 +507,15 @@
 }
 
 #engage-leaders .engage-wrapper .engage-action {
-  margin-top: 28px;
+  margin-top: 40px;
+}
+
+#engage-leaders .engage-wrapper .engage-action-desktop {
+  display: block;
+}
+
+#engage-leaders .engage-wrapper .engage-action-mobile {
+  display: none;
 }
 
 /* Key */

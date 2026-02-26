@@ -78,6 +78,27 @@
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
+  /* Engage Leaders */
+  #engage-leaders .engage-wrapper {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  #engage-leaders .engage-wrapper .engage-left,
+  #engage-leaders .engage-wrapper .engage-right,
+  #engage-leaders .engage-wrapper .engage-action {
+    width: 100%;
+  }
+
+  #engage-leaders .engage-wrapper .engage-action-desktop {
+    display: none;
+  }
+
+  #engage-leaders .engage-wrapper .engage-action-mobile {
+    display: block;
+    margin-top: 24px;
+  }
+
   /* Event Recap */
   #event-recap-section .event-recap-wrapper .video-container {
     height: 500px;
@@ -102,6 +123,12 @@
   /* About */
   #about .about-wrapper {
     flex-direction: column;
+  }
+
+  /* Event Intro */
+  #event-intro .event-intro-wrapper {
+    flex-direction: column;
+    gap: 30px;
   }
 
   /* Counter */
