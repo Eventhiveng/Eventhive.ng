@@ -78,6 +78,11 @@
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
+  /* Whats new */
+  #whatsnew .whatsnew-wrapper .whatsnew-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
   /* Engage Leaders */
   #engage-leaders .engage-wrapper {
     flex-direction: column;

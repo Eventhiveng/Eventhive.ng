@@ -168,6 +168,48 @@ $(document).ready(function () {
     $highlightSlideThree.slick(highlightSettings3);
   };
 
+  const populateHighlightSlides = () => {
+    const TOTAL_HIGHLIGHT_IMAGES = 137;
+
+    const shuffle = (array) => {
+      let currentIndex = array.length;
+      let randomIndex;
+
+      while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex],
+          array[currentIndex],
+        ];
+      }
+
+      return array;
+    };
+
+    const highlightImages = Array.from(
+      { length: TOTAL_HIGHLIGHT_IMAGES },
+      (_, index) => `/assets/highlights/${index + 1}.jpg`
+    );
+
+    const shuffledHighlights = shuffle(highlightImages);
+    const slider1 = [];
+    const slider2 = [];
+    const slider3 = [];
+
+    shuffledHighlights.forEach((imagePath, index) => {
+      if (index % 3 === 0) slider1.push(imagePath);
+      if (index % 3 === 1) slider2.push(imagePath);
+      if (index % 3 === 2) slider3.push(imagePath);
+    });
+
+    const imageTag = (src) => `<img src="${src}" alt="" loading="lazy" />`;
+
+    $highlightSlideOne.html(slider1.map(imageTag).join(""));
+    $highlightSlideTwo.html(slider2.map(imageTag).join(""));
+    $highlightSlideThree.html(slider3.map(imageTag).join(""));
+  };
+
   const testimonialComp = () => {
     const testimonialSettings = {
       infinite: true,
@@ -206,6 +248,7 @@ $(document).ready(function () {
 
   toggleNav();
   attendeeComp();
+  populateHighlightSlides();
   highlightComp();
   testimonialComp();
 });
