@@ -130,6 +130,14 @@
     flex-direction: column;
   }
 
+  #about .about-wrapper .right {
+    flex-direction: column;
+  }
+
+  #about .about-wrapper .right .hidden-image {
+    display: block;
+  }
+
   /* Event Intro */
   #event-intro .event-intro-wrapper {
     flex-direction: column;

@@ -220,6 +220,8 @@
 
 #hero .hero-wrapper .hero-description p {
   font-size: clamp(16px, 3vw, 20px);
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 #hero .hero-wrapper .hero-buttons {
@@ -383,11 +385,17 @@
 
 #about .about-wrapper .right {
   flex: 1;
+  display: flex;
+  gap: 10px;
 }
 
 #about .about-wrapper .right .image {
   border-radius: 20px;
   overflow: hidden;
+}
+
+#about .about-wrapper .right .hidden-image {
+  display: none;
 }
 
 /* Counter */
