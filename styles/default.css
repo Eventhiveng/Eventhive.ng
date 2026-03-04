@@ -2,8 +2,17 @@
 :root {
   --white: #fff;
   --black: #000;
-  --primary-color: #160e33;
-  --secondary-color: #00ffa0;
+  --primary-color: #0b0a16;
+  --secondary-color: #1da1c9;
+  --crypto-red: #c81f3a;
+  --crypto-purple: #7a5c9e;
+  --crypto-cyan: #1da1c9;
+  --crypto-gradient: linear-gradient(
+    90deg,
+    #c81f3a 0%,
+    #7a5c9e 50%,
+    #1da1c9 100%
+  );
 }
 
 /* Reset */
@@ -39,7 +48,7 @@ video {
 
 /* General Style */
 body {
-  font-family: "Roboto", serif;
+  font-family: "Open Sans", sans-serif;
   background: var(--primary-color);
   color: var(--white);
 }
@@ -50,8 +59,9 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Space Grotesk", sans-serif;
   line-height: 1.1;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p {

@@ -74,8 +74,8 @@
 
 .btn-pry {
   border: 2px solid var(--secondary-color);
-  background: var(--secondary-color);
-  color: var(--black);
+  background: var(--crypto-gradient);
+  color: var(--white);
 }
 
 /* Section header */
@@ -91,7 +91,7 @@
   text-transform: uppercase;
   font-weight: 600;
   padding: 5px 10px;
-  background: #00ff801f;
+  background: rgba(122, 92, 158, 0.2);
   letter-spacing: 1px;
   border-radius: 20px;
 }
@@ -104,6 +104,11 @@
   margin: 20px 0 0;
   font-size: clamp(24px, 3vw, 48px);
   font-weight: 500;
+  color: transparent;
+  background: var(--crypto-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-header.white h2 {
@@ -129,7 +134,12 @@
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(0, 255, 127, 0.3), transparent);
+  background: radial-gradient(
+    circle,
+    rgba(122, 92, 158, 0.28),
+    rgba(29, 161, 201, 0.18),
+    transparent
+  );
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -139,11 +149,13 @@
 }
 
 .box {
-  transition: transform 1s ease, box-shadow 0.3s ease;
+  transition:
+    transform 1s ease,
+    box-shadow 0.3s ease;
 }
 .box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 20px #00ff7f66;
+  box-shadow: 0 0 20px rgba(29, 161, 201, 0.35);
 }
 
 @keyframes moveBackground {
@@ -168,10 +180,10 @@
 /* Glow Effect */
 @keyframes glow {
   0% {
-    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(122, 92, 158, 0.55);
   }
   100% {
-    box-shadow: 0px 0px 20px rgba(255, 204, 0, 1);
+    box-shadow: 0px 0px 20px rgba(29, 161, 201, 0.9);
   }
 }
 
