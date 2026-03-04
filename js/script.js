@@ -25,7 +25,6 @@ $(document).ready(function () {
   const $highlightSlideOne = $(".highlight-slider-1");
   const $highlightSlideTwo = $(".highlight-slider-2");
   const $highlightSlideThree = $(".highlight-slider-3");
-  const $mixerSlider = $(".mixer-slider");
   const $whatsNextSlider = $(".whats-next-slider");
 
   const $slides = $(
@@ -184,40 +183,6 @@ $(document).ready(function () {
     });
   };
 
-  const mixerComp = () => {
-    if (!$mixerSlider.length) return;
-
-    $mixerSlider.slick({
-      infinite: true,
-      speed: 3200,
-      autoplay: true,
-      autoplaySpeed: 0,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      lazyLoad: "ondemand",
-      arrows: false,
-      dots: false,
-      cssEase: "linear",
-      pauseOnHover: false,
-      pauseOnFocus: false,
-      draggable: false,
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-        {
-          breakpoint: 567,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-  };
-
   $(window).scroll(function () {
     $(".odometer").each(function () {
       let parent_section_postion = $(this)
@@ -241,6 +206,5 @@ $(document).ready(function () {
   toggleNav();
   attendeeComp();
   highlightComp();
-  mixerComp();
   whatsNextComp();
 });
