@@ -1,561 +1,455 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="shortcut icon"
-      href="/assets/logo/p-icon.png"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="shortcut icon" href="/assets/logo/p-icon.png" type="image/x-icon" />
 
-    <!-- Slick css -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
 
-    <!-- Aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Slick css -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-    <!-- Odometer -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css"
-    />
+  <!-- Aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/util.css" />
-    <link rel="stylesheet" href="styles/media.css" />
-    <link rel="stylesheet" href="styles/default.css" />
+  <!-- Odometer -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css" />
 
-    <title>Payments Live</title>
-  </head>
-  <body>
-    <!-- Popup Modal -->
-    <div id="ticket-popup" class="popup">
-      <div class="popup-container">
-        <div class="popup-content">
-          <span class="close-btn">&times;</span>
-          <h2>Select Your Ticketing Platform</h2>
-          <a
-            href="https://tix.africa/payments-live-johannesburg-2026"
-            target="_blank"
-            class="btn btn-pry"
-            >Get a Ticket (Tix)
-          </a>
-          <a
-            href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
-            target="_blank"
-            class="btn btn-sec"
-            >Get a Ticket (Eventbrite)</a
-          >
-        </div>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/util.css" />
+  <link rel="stylesheet" href="styles/media.css" />
+  <link rel="stylesheet" href="styles/default.css" />
+
+  <title>Payments Live</title>
+</head>
+
+<body>
+  <!-- Popup Modal -->
+  <div id="ticket-popup" class="popup">
+    <div class="popup-container">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Select Your Ticketing Platform</h2>
+        <a href="https://tix.africa/payments-live-johannesburg-2026" target="_blank" class="btn btn-pry">Get a Ticket
+          (Tix)
+        </a>
+        <a href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator" target="_blank" class="btn btn-sec">Get a
+          Ticket (Eventbrite)</a>
       </div>
     </div>
+  </div>
 
-    <!-- Preloader -->
-    <div id="preloader">
-      <div class="loader">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+  </div>
 
-    <!-- Main Container -->
-    <div class="main-container">
-      <!-- header -->
-      <header>
-        <nav id="navbar">
-          <div class="nav-container">
-            <div class="external-container">
-              <div class="nav-wrapper">
-                <a href="/">
-                  <div class="logo">
-                    <div class="logo-icon">
-                      <img src="/assets/logo/payments-lv-black.png" alt="" />
-                    </div>
-                    <!-- <div class="logo-name">
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- header -->
+    <header>
+      <nav id="navbar">
+        <div class="nav-container">
+          <div class="external-container">
+            <div class="nav-wrapper">
+              <a href="/">
+                <div class="logo">
+                  <div class="logo-icon">
+                    <img src="/assets/logo/payments-lv-black.png" alt="" />
+                  </div>
+                  <!-- <div class="logo-name">
                       <h4>PaymentsLive</h4>
                     </div> -->
-                  </div>
-                </a>
-                <div class="nav-links">
-                  <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#partner">Partnership</a></li>
-                    <li>
-                      <a
-                        href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20%20Exhibition%20Deck"
-                        >Exhibition</a
-                      >
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                  </ul>
                 </div>
-                <div class="button">
-                  <!-- <a
+              </a>
+              <div class="nav-links">
+                <ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#partner">Partnership</a></li>
+                  <li>
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20%20Exhibition%20Deck">Exhibition</a>
+                  </li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="button">
+                <!-- <a
                     href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
                     class="btn btn-sec"
                     href=""
                     >Register</a
                   > -->
-                  <div class="btn btn-sec get-ticket-btn">Register</div>
-                </div>
-                <div class="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+                <div class="btn btn-sec get-ticket-btn">Register</div>
+              </div>
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
 
-        <!-- Aside -->
-        <aside id="aside">
-          <div class="aside-container">
-            <!-- <div class="close-icon">X</div> -->
-            <div class="aside-wrapper">
-              <div class="logo">
-                <a href="/">
-                  <img
-                    src="/assets/logo/paymentslivelogo.png"
-                    alt="Payments Live"
-                  />
-                </a>
-              </div>
+      <!-- Aside -->
+      <aside id="aside">
+        <div class="aside-container">
+          <!-- <div class="close-icon">X</div> -->
+          <div class="aside-wrapper">
+            <div class="logo">
+              <a href="/">
+                <img src="/assets/logo/paymentslivelogo.png" alt="Payments Live" />
+              </a>
+            </div>
 
-              <div class="nav-links">
-                <ul>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#partnership">Partner</a></li>
-                  <li>
-                    <a
-                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20%20Exhibition%20Deck"
-                      >Exhibition</a
-                    >
-                  </li>
-                  <li>
-                    <!-- <a
+            <div class="nav-links">
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#partnership">Partner</a></li>
+                <li>
+                  <a
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20%20Exhibition%20Deck">Exhibition</a>
+                </li>
+                <li>
+                  <!-- <a
                       href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
                       >Tickets</a
                     > -->
-                    <p class="get-ticket-btn">Tickets</p>
-                  </li>
+                  <p class="get-ticket-btn">Tickets</p>
+                </li>
 
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-              <div>
-                <small
-                  >&copy; Payments Live <span class="year">2025</span>. An event
-                  by eventhive</small
-                >
-              </div>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <small>&copy; Payments Live <span class="year">2025</span>. An event
+                by eventhive</small>
             </div>
           </div>
-        </aside>
-      </header>
+        </div>
+      </aside>
+    </header>
 
-      <!-- Contents. -->
-      <main>
-        <!-- Hero Section -->
-        <section id="hero">
-          <div class="external-container">
-            <div class="hero-container" data-aos="zoom-out">
-              <div class="container">
-                <div class="hero-wrapper">
-                  <div class="floating-logo">
-                    <div class="e-logo" data-aos="zoom-in" data-aos-delay="300">
-                      <img
-                        class="r-img"
-                        src="/assets/logo/e-icon-white.png"
-                        alt=""
-                      />
-                      <!-- <img src="/assets/logo/eventhive-white.png" alt="" /> -->
+    <!-- Main Contents -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="external-container">
+          <div class="hero-container" data-aos="zoom-out">
+            <div class="container">
+              <div class="hero-wrapper">
+                <div class="floating-logo">
+                  <div class="e-logo" data-aos="zoom-in" data-aos-delay="300">
+                    <img class="r-img" src="/assets/logo/e-icon-white.png" alt="" />
+                    <!-- <img src="/assets/logo/eventhive-white.png" alt="" /> -->
+                  </div>
+                </div>
+
+                <div class="floating-loc" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="images">
+                    <div class="image img1">
+                      <img src="assets/section-img/atm-holder.jpg" alt="" />
+                    </div>
+                    <div class="image img2">
+                      <img src="assets/section-img/poshand.jpg" alt="" />
                     </div>
                   </div>
 
-                  <div
-                    class="floating-loc"
-                    data-aos="zoom-in"
-                    data-aos-delay="400"
-                  >
-                    <div class="images">
-                      <div class="image img1">
-                        <img src="assets/section-img/atm-holder.jpg" alt="" />
-                      </div>
-                      <div class="image img2">
-                        <img src="assets/section-img/poshand.jpg" alt="" />
-                      </div>
+                  <div class="date-loc">
+                    <div class="date">
+                      <h3>25th June, 2026</h3>
                     </div>
-
-                    <div class="date-loc">
-                      <div class="date"><h3>25th June, 2026</h3></div>
-                      <div class="loc">
-                        <p>
-                          Pivot Hotel Montecasino, Johannesburg,<br />South
-                          Africa
-                        </p>
-                      </div>
+                    <div class="loc">
+                      <p>
+                        Pivot Hotel Montecasino, Johannesburg,<br />South
+                        Africa
+                      </p>
                     </div>
                   </div>
+                </div>
 
-                  <div class="hero-content">
-                    <div class="left">
-                      <div class="hero-heading">
-                        <h2 data-aos="fade-up" data-aos-delay="500">
-                          Africa’s Payments Industry Meeting Place
-                        </h2>
-                      </div>
-                      <div class="hero-description">
-                        <p
-                          data-aos="fade-up"
-                          data-aos-delay="800"
-                          data-aos-offset="0"
-                        >
-                          Where Africa's payments industry leaders connect
-                        </p>
-                      </div>
+                <div class="hero-content">
+                  <div class="left">
+                    <div class="hero-heading">
+                      <h2 data-aos="fade-up" data-aos-delay="500">
+                        Africa’s Payments Industry Meeting Place
+                      </h2>
                     </div>
-                    <div class="right">
-                      <div
-                        class="button"
-                        data-aos="fade-up"
-                        data-aos-delay="1000"
-                        data-aos-offset="0"
-                      >
-                        <!-- <a
+                    <div class="hero-description">
+                      <p data-aos="fade-up" data-aos-delay="800" data-aos-offset="0">
+                        Where Africa's payments industry leaders connect
+                      </p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="button" data-aos="fade-up" data-aos-delay="1000" data-aos-offset="0">
+                      <!-- <a
                           class="btn btn-pry"
                           href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
                           >Register</a
                         > -->
-                        <div class="btn btn-pry get-ticket-btn">Register</div>
-                      </div>
+                      <div class="btn btn-pry get-ticket-btn">Register</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- About -->
-        <section id="about">
-          <div class="about-container padding">
+      <!-- About -->
+      <section id="about">
+        <div class="about-container padding">
+          <div class="container">
+            <div class="about-wrapper">
+              <div class="left">
+                <div class="about-heading">
+                  <h3 data-aos="fade-up">
+                    Bringing Africa’s Payment Leaders Together Under One Roof
+                  </h3>
+                </div>
+                <div class="about-description">
+                  <p data-aos="fade-up" data-aos-delay="100">
+                    As part of Africa Tech Series, Payments Live anually
+                    gathers senior payments executives, merchants, fintechs
+                    and fraud leaders to shape Africa's payments future.
+                  </p>
+                  <p data-aos="fade-up" data-aos-delay="200">
+                    This is an unrivaled opportunity for leaders that oversee
+                    payments and fraud strategy, payments schemes, developing
+                    payments architecture and infrastructure to explore key
+                    trends and opportunities across Africa's payments
+                    ecosustem.
+                  </p>
+                  <p data-aos="fade-up" data-aos-delay="300">
+                    Payments Live is your gateway to new opportunities across
+                    Africa's payments market, an unmissable platform to learn,
+                    network and showcase your payments solutions.
+                  </p>
+                </div>
+              </div>
+              <div class="right">
+                <div class="image" data-aos="zoom-in">
+                  <img src="assets/section-img/about.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Event by numbers -->
+      <section id="event">
+        <div class="external-container">
+          <div class="event-container padding">
             <div class="container">
-              <div class="about-wrapper">
-                <div class="left">
-                  <div class="about-heading">
-                    <h3 data-aos="fade-up">
-                      Bringing Africa’s Payment Leaders Together Under One Roof
-                    </h3>
+              <div class="event-wrapper">
+                <div class="event-box" data-aos="fade-up" data-aos-delay="50">
+                  <div class="icon">
+                    <img src="/assets/icons/delegates.png" alt="" />
                   </div>
-                  <div class="about-description">
-                    <p data-aos="fade-up" data-aos-delay="100">
-                      As part of Africa Tech Series, Payments Live anually
-                      gathers senior payments executives, merchants, fintechs
-                      and fraud leaders to shape Africa's payments future.
-                    </p>
-                    <p data-aos="fade-up" data-aos-delay="200">
-                      This is an unrivaled opportunity for leaders that oversee
-                      payments and fraud strategy, payments schemes, developing
-                      payments architecture and infrastructure to explore key
-                      trends and opportunities across Africa's payments
-                      ecosustem.
-                    </p>
-                    <p data-aos="fade-up" data-aos-delay="300">
-                      Payments Live is your gateway to new opportunities across
-                      Africa's payments market, an unmissable platform to learn,
-                      network and showcase your payments solutions.
-                    </p>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="400">0</span><span class="plus">+</span>
+                    </h2>
+                    <p>Delegates</p>
                   </div>
                 </div>
-                <div class="right">
-                  <div class="image" data-aos="zoom-in">
-                    <img src="assets/section-img/about.jpg" alt="" />
+                <div class="event-box" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon">
+                    <img src="/assets/icons/c-level.png" alt="" />
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="60">0</span><span class="plus">%</span>
+                    </h2>
+                    <p>C-level, Director, VP or Head of Level</p>
+                  </div>
+                </div>
+                <div class="event-box" data-aos="fade-up" data-aos-delay="150">
+                  <div class="icon">
+                    <img src="/assets/icons/financial.png" alt="" />
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="40">0</span><span class="plus">%</span>
+                    </h2>
+                    <p>Financial Institutions</p>
+                  </div>
+                </div>
+                <div class="event-box" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon">
+                    <img src="/assets/icons/speakers.png" alt="" />
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="30">0</span><span class="plus">+</span>
+                    </h2>
+                    <p>Speakers</p>
+                  </div>
+                </div>
+                <div class="event-box" data-aos="fade-up" data-aos-delay="250">
+                  <div class="icon">
+                    <img src="/assets/icons/exhibitors.png" alt="" />
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="20">0</span><span class="plus">+</span>
+                    </h2>
+                    <p>Exhibtors</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Event by numbers -->
-        <section id="event">
-          <div class="external-container">
-            <div class="event-container padding">
-              <div class="container">
-                <div class="event-wrapper">
-                  <div class="event-box" data-aos="fade-up" data-aos-delay="50">
-                    <div class="icon">
-                      <img src="/assets/icons/delegates.png" alt="" />
-                    </div>
-                    <div class="count-box">
-                      <h2>
-                        <span
-                          class="odometer"
-                          data-status="yes"
-                          data-count="400"
-                          >0</span
-                        ><span class="plus">+</span>
-                      </h2>
-                      <p>Delegates</p>
-                    </div>
-                  </div>
-                  <div
-                    class="event-box"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <div class="icon">
-                      <img src="/assets/icons/c-level.png" alt="" />
-                    </div>
-                    <div class="count-box">
-                      <h2>
-                        <span class="odometer" data-status="yes" data-count="60"
-                          >0</span
-                        ><span class="plus">%</span>
-                      </h2>
-                      <p>C-level, Director, VP or Head of Level</p>
-                    </div>
-                  </div>
-                  <div
-                    class="event-box"
-                    data-aos="fade-up"
-                    data-aos-delay="150"
-                  >
-                    <div class="icon">
-                      <img src="/assets/icons/financial.png" alt="" />
-                    </div>
-                    <div class="count-box">
-                      <h2>
-                        <span class="odometer" data-status="yes" data-count="40"
-                          >0</span
-                        ><span class="plus">%</span>
-                      </h2>
-                      <p>Financial Institutions</p>
-                    </div>
-                  </div>
-                  <div
-                    class="event-box"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <div class="icon">
-                      <img src="/assets/icons/speakers.png" alt="" />
-                    </div>
-                    <div class="count-box">
-                      <h2>
-                        <span class="odometer" data-status="yes" data-count="30"
-                          >0</span
-                        ><span class="plus">+</span>
-                      </h2>
-                      <p>Speakers</p>
-                    </div>
-                  </div>
-                  <div
-                    class="event-box"
-                    data-aos="fade-up"
-                    data-aos-delay="250"
-                  >
-                    <div class="icon">
-                      <img src="/assets/icons/exhibitors.png" alt="" />
-                    </div>
-                    <div class="count-box">
-                      <h2>
-                        <span class="odometer" data-status="yes" data-count="20"
-                          >0</span
-                        ><span class="plus">+</span>
-                      </h2>
-                      <p>Exhibtors</p>
-                    </div>
-                  </div>
+      <!-- Why attend -->
+      <section id="why-attend">
+        <div class="why-attend-container padding">
+          <div class="container">
+            <div class="section-header">
+              <div class="tiny-header o-hidden">
+                <span data-aos="fade-up" data-aos-delay="100">- Why Attend</span>
+              </div>
+              <div class="big-header o-hidden">
+                <h2 data-aos="fade-left" data-aos-delay="200">
+                  Discover Insights, Connections, and Opportunities in
+                  Payments
+                </h2>
+              </div>
+            </div>
+            <div class="why-attend-wrapper">
+              <div class="why-attend-box" data-aos="fade-left" data-aos-delay="100">
+                <div class="icon">
+                  <img src="/assets/icons/network.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Network with senior payments leaders</h4>
+                  <p>
+                    Network with senior payments leaders in a relaxed and
+                    business-driven environment
+                  </p>
+                </div>
+              </div>
+              <div class="why-attend-box" data-aos="fade-left" data-aos-delay="200">
+                <div class="icon">
+                  <img src="/assets/icons/money.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Hear and learn from payments innovators</h4>
+                  <p>
+                    Join conversations that keeps you ahead of Africa's fast
+                    growing payments industry
+                  </p>
+                </div>
+              </div>
+              <div class="why-attend-box" data-aos="fade-left" data-aos-delay="400">
+                <div class="icon">
+                  <img src="/assets/icons/governance.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4>
+                    Explore payments strategies and engage with regulators
+                  </h4>
+                  <p>
+                    Keep up with how Africa's payment landscape and regulatory
+                    environment is evolving
+                  </p>
+                </div>
+              </div>
+              <div class="why-attend-box" data-aos="fade-left" data-aos-delay="500">
+                <div class="icon">
+                  <img src="/assets/icons/roundtable.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Engage in Payments Roundtables</h4>
+                  <p>
+                    Take part in vertical-based roundtable discussion across
+                    Africa's payments ecosystem
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Why attend -->
-        <section id="why-attend">
-          <div class="why-attend-container padding">
-            <div class="container">
-              <div class="section-header">
-                <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100"
-                    >- Why Attend</span
-                  >
+      <!-- Expect -->
+      <section id="expect">
+        <div class="expect-container padding">
+          <div class="container">
+            <div class="section-header">
+              <div class="tiny-header o-hidden">
+                <span data-aos="fade-up" data-aos-delay="100">- Expectations</span>
+              </div>
+              <div class="big-header o-hidden">
+                <h2 data-aos="fade-left" data-aos-delay="200">
+                  What you can expect in 2026
+                </h2>
+              </div>
+            </div>
+            <div class="expect-wrapper">
+              <div class="expect-box" data-aos="fade-left" data-aos-delay="200">
+                <div class="icon">
+                  <img src="/assets/icons/exhibition.svg" alt="" />
                 </div>
-                <div class="big-header o-hidden">
-                  <h2 data-aos="fade-left" data-aos-delay="200">
-                    Discover Insights, Connections, and Opportunities in
-                    Payments
-                  </h2>
+                <div class="content">
+                  <h4>Live Expo</h4>
+                  <p>
+                    We are introducing exhibitions at the 2026 edition of
+                    Payments Livel providing our partners with an opportunity
+                    to showcase their latest solutions, services and products
+                    to the entire value chain of the Africa's payments
+                    industry.
+                  </p>
                 </div>
               </div>
-              <div class="why-attend-wrapper">
-                <div
-                  class="why-attend-box"
-                  data-aos="fade-left"
-                  data-aos-delay="100"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/network.png" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Network with senior payments leaders</h4>
-                    <p>
-                      Network with senior payments leaders in a relaxed and
-                      business-driven environment
-                    </p>
-                  </div>
+              <div class="expect-box" data-aos="fade-left" data-aos-delay="250">
+                <div class="icon">
+                  <img src="/assets/icons/pre-event.svg" alt="" />
                 </div>
-                <div
-                  class="why-attend-box"
-                  data-aos="fade-left"
-                  data-aos-delay="200"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/money.png" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Hear and learn from payments innovators</h4>
-                    <p>
-                      Join conversations that keeps you ahead of Africa's fast
-                      growing payments industry
-                    </p>
-                  </div>
+                <div class="content">
+                  <h4>Pre-Event Happy Hour</h4>
+                  <p>
+                    As a prelude to Payments Live, we are convening attendees
+                    for a night of networking, fun, and revelry that you won't
+                    want to miss. We are looking forward to delivering a truly
+                    unforgettable evening!
+                  </p>
                 </div>
-                <div
-                  class="why-attend-box"
-                  data-aos="fade-left"
-                  data-aos-delay="400"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/governance.png" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>
-                      Explore payments strategies and engage with regulators
-                    </h4>
-                    <p>
-                      Keep up with how Africa's payment landscape and regulatory
-                      environment is evolving
-                    </p>
-                  </div>
+              </div>
+              <div class="expect-box" data-aos="fade-left" data-aos-delay="300">
+                <div class="icon">
+                  <img src="/assets/icons/networking.svg" alt="" />
                 </div>
-                <div
-                  class="why-attend-box"
-                  data-aos="fade-left"
-                  data-aos-delay="500"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/roundtable.png" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Engage in Payments Roundtables</h4>
-                    <p>
-                      Take part in vertical-based roundtable discussion across
-                      Africa's payments ecosystem
-                    </p>
-                  </div>
+                <div class="content">
+                  <h4>Networking</h4>
+                  <p>
+                    To aid 1-2-1 networkingk we are designing lounges that
+                    cater to optimum value for quick discussions amongst
+                    stakeholders participating at the event.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <!-- Expect -->
-        <section id="expect">
-          <div class="expect-container padding">
-            <div class="container">
-              <div class="section-header">
-                <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100"
-                    >- Expectations</span
-                  >
-                </div>
-                <div class="big-header o-hidden">
-                  <h2 data-aos="fade-left" data-aos-delay="200">
-                    What you can expect in 2026
-                  </h2>
-                </div>
-              </div>
-              <div class="expect-wrapper">
-                <div
-                  class="expect-box"
-                  data-aos="fade-left"
-                  data-aos-delay="200"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/exhibition.svg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Live Expo</h4>
-                    <p>
-                      We are introducing exhibitions at the 2026 edition of
-                      Payments Livel providing our partners with an opportunity
-                      to showcase their latest solutions, services and products
-                      to the entire value chain of the Africa's payments
-                      industry.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="expect-box"
-                  data-aos="fade-left"
-                  data-aos-delay="250"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/pre-event.svg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Pre-Event Happy Hour</h4>
-                    <p>
-                      As a prelude to Payments Live, we are convening attendees
-                      for a night of networking, fun, and revelry that you won't
-                      want to miss. We are looking forward to delivering a truly
-                      unforgettable evening!
-                    </p>
-                  </div>
-                </div>
-                <div
-                  class="expect-box"
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/networking.svg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Networking</h4>
-                    <p>
-                      To aid 1-2-1 networkingk we are designing lounges that
-                      cater to optimum value for quick discussions amongst
-                      stakeholders participating at the event.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="button" data-aos="fade-up" data-aos-delay="100">
+            <!-- <div class="button" data-aos="fade-up" data-aos-delay="100">
                 <a
                   href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20Sponsorship%20Deck"
                   class="btn btn-pry"
@@ -563,232 +457,179 @@
                   Request Sponsorship Deck
                 </a>
               </div> -->
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Key content focus -->
-        <section id="key">
-          <div class="external-container">
-            <div class="key-container padding">
-              <div class="container">
-                <div class="section-header white">
-                  <div class="tiny-header o-hidden">
-                    <span data-aos="fade-up" data-aos-delay="100"
-                      >- 9 Content Streams</span
-                    >
-                  </div>
-                  <div class="big-header o-hidden">
-                    <h2 data-aos="fade-left" data-aos-delay="200">
-                      Tracks of content will span across
-                    </h2>
-                  </div>
-                </div>
-                <div class="key-wrapper">
-                  <div class="key-box" data-aos="flip-left" data-aos-delay="10">
-                    <img src="/assets/icons/instant.png" alt="" />
-                    Instant & Cross-border
-                  </div>
-                  <div class="key-box" data-aos="flip-left" data-aos-delay="30">
-                    <img src="/assets/icons/financial-fraud.png" alt="" />
-                    Financial Fraud & FnCrime
-                  </div>
-                  <div class="key-box" data-aos="flip-left" data-aos-delay="50">
-                    <img src="/assets/icons/merchant-payments.png" alt="" />
-                    Merchant Payments
-                  </div>
-                  <div class="key-box" data-aos="flip-left" data-aos-delay="70">
-                    <img src="/assets/icons/payments-regulation.png" alt="" />
-                    Payments Regulation & Policy
-                  </div>
-                  <div
-                    class="key-box"
-                    data-aos="flip-left"
-                    data-aos-delay="100"
-                  >
-                    <img
-                      src="/assets/icons/payment-infrastructure.png"
-                      alt=""
-                    />
-                    Payments Infrastructure
-                  </div>
-                  <div
-                    class="key-box"
-                    data-aos="flip-left"
-                    data-aos-delay="120"
-                  >
-                    <img src="/assets/icons/open-banking.png" alt="" />
-                    Open Banking
-                  </div>
-                  <div
-                    class="key-box"
-                    data-aos="flip-left"
-                    data-aos-delay="150"
-                  >
-                    <img src="/assets/icons/financial-inclusion.png" alt="" />
-                    Financial Inclusion
-                  </div>
-                  <div
-                    class="key-box"
-                    data-aos="flip-left"
-                    data-aos-delay="170"
-                  >
-                    <img src="/assets/icons/digital.png" alt="" />
-                    Digital Currencies & Crypto
-                  </div>
-                  <div
-                    class="key-box"
-                    data-aos="flip-left"
-                    data-aos-delay="200"
-                  >
-                    <img src="/assets/icons/payments-innovation.png" alt="" />
-                    Payments Innovation
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Partner -->
-        <section id="partner">
-          <div class="partner-container padding">
+      <!-- Key content focus -->
+      <section id="key">
+        <div class="external-container">
+          <div class="key-container padding">
             <div class="container">
-              <div class="section-header">
+              <div class="section-header white">
                 <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100"
-                    >- Partnersip</span
-                  >
+                  <span data-aos="fade-up" data-aos-delay="100">- 9 Content Streams</span>
                 </div>
                 <div class="big-header o-hidden">
                   <h2 data-aos="fade-left" data-aos-delay="200">
-                    Partner with Us
+                    Tracks of content will span across
                   </h2>
                 </div>
               </div>
-              <div class="partner-wrapper">
-                <div
-                  class="partner-box"
-                  data-aos="fade-left"
-                  data-aos-delay="200"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/exhibition.svg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Exhibition</h4>
-                    <p>
-                      We provide you with unrivlaed opportunites of reaching
-                      your target market and demonstrating your soultions in
-                      Africa's fast growing payments industry.
-                    </p>
-                  </div>
+              <div class="key-wrapper">
+                <div class="key-box" data-aos="flip-left" data-aos-delay="10">
+                  <img src="/assets/icons/instant.png" alt="" />
+                  Instant & Cross-border
                 </div>
-                <div
-                  class="partner-box"
-                  data-aos="fade-left"
-                  data-aos-delay="250"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/brand.svg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Brand awareness</h4>
-                    <p>
-                      Payments Live plays host to senior industry leaders,
-                      exploring partnership provides you with an opportuninty
-                      for raising your brand awareness and positioning it for
-                      growth.
-                    </p>
-                  </div>
+                <div class="key-box" data-aos="flip-left" data-aos-delay="30">
+                  <img src="/assets/icons/financial-fraud.png" alt="" />
+                  Financial Fraud & FnCrime
                 </div>
-                <div
-                  class="partner-box"
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/media.svg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Media visibility</h4>
-                    <p>
-                      We leverage multiple media platforms to ensure your brand
-                      messages gets to the right audience before, during and
-                      after the event. We have done this multiple times for the
-                      multiple brands.
-                    </p>
-                  </div>
+                <div class="key-box" data-aos="flip-left" data-aos-delay="50">
+                  <img src="/assets/icons/merchant-payments.png" alt="" />
+                  Merchant Payments
                 </div>
-                <div
-                  class="partner-box"
-                  data-aos="fade-left"
-                  data-aos-delay="350"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/thought.svg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Thought leadership</h4>
-                    <p>
-                      Joining panel sessions, fireside chats, breakout sessions
-                      and keynote sessions are some of the ways to profile your
-                      brand as a leader through demonstration of thought
-                      leadership to a unique audience across the Africa's
-                      payment industry.
-                    </p>
-                  </div>
+                <div class="key-box" data-aos="flip-left" data-aos-delay="70">
+                  <img src="/assets/icons/payments-regulation.png" alt="" />
+                  Payments Regulation & Policy
                 </div>
-                <div
-                  class="partner-box"
-                  data-aos="fade-left"
-                  data-aos-delay="400"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/lead.svg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Lead generation</h4>
-                    <p>
-                      We bring industry leaders, merchants and clients to
-                      Payments Live, providing you with an opportunity to
-                      generate qualified leads and network with key
-                      stakeholders.
-                    </p>
-                  </div>
+                <div class="key-box" data-aos="flip-left" data-aos-delay="100">
+                  <img src="/assets/icons/payment-infrastructure.png" alt="" />
+                  Payments Infrastructure
                 </div>
-                <div
-                  class="partner-box"
-                  data-aos="fade-left"
-                  data-aos-delay="450"
-                >
-                  <div class="icon">
-                    <img src="/assets/icons/industry.svg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h4>Industry leadership</h4>
-                    <p>
-                      We provide you with an opportunity to demonstrate
-                      leadership across the Africa's payments industry, through
-                      our sponsorship opportunities.
-                    </p>
-                  </div>
+                <div class="key-box" data-aos="flip-left" data-aos-delay="120">
+                  <img src="/assets/icons/open-banking.png" alt="" />
+                  Open Banking
                 </div>
-              </div>
-              <div class="button" data-aos="fade-up" data-aos-delay="100">
-                <a
-                  href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20Sponsorship%20Deck"
-                  class="btn btn-pry"
-                >
-                  Request Sponsorship Deck
-                </a>
+                <div class="key-box" data-aos="flip-left" data-aos-delay="150">
+                  <img src="/assets/icons/financial-inclusion.png" alt="" />
+                  Financial Inclusion
+                </div>
+                <div class="key-box" data-aos="flip-left" data-aos-delay="170">
+                  <img src="/assets/icons/digital.png" alt="" />
+                  Digital Currencies & Crypto
+                </div>
+                <div class="key-box" data-aos="flip-left" data-aos-delay="200">
+                  <img src="/assets/icons/payments-innovation.png" alt="" />
+                  Payments Innovation
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Testimonial -->
-        <!-- <section id="testimonial">
+      <!-- Partner -->
+      <section id="partner">
+        <div class="partner-container padding">
+          <div class="container">
+            <div class="section-header">
+              <div class="tiny-header o-hidden">
+                <span data-aos="fade-up" data-aos-delay="100">- Partnersip</span>
+              </div>
+              <div class="big-header o-hidden">
+                <h2 data-aos="fade-left" data-aos-delay="200">
+                  Partner with Us
+                </h2>
+              </div>
+            </div>
+            <div class="partner-wrapper">
+              <div class="partner-box" data-aos="fade-left" data-aos-delay="200">
+                <div class="icon">
+                  <img src="/assets/icons/exhibition.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Exhibition</h4>
+                  <p>
+                    We provide you with unrivlaed opportunites of reaching
+                    your target market and demonstrating your soultions in
+                    Africa's fast growing payments industry.
+                  </p>
+                </div>
+              </div>
+              <div class="partner-box" data-aos="fade-left" data-aos-delay="250">
+                <div class="icon">
+                  <img src="/assets/icons/brand.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Brand awareness</h4>
+                  <p>
+                    Payments Live plays host to senior industry leaders,
+                    exploring partnership provides you with an opportuninty
+                    for raising your brand awareness and positioning it for
+                    growth.
+                  </p>
+                </div>
+              </div>
+              <div class="partner-box" data-aos="fade-left" data-aos-delay="300">
+                <div class="icon">
+                  <img src="/assets/icons/media.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Media visibility</h4>
+                  <p>
+                    We leverage multiple media platforms to ensure your brand
+                    messages gets to the right audience before, during and
+                    after the event. We have done this multiple times for the
+                    multiple brands.
+                  </p>
+                </div>
+              </div>
+              <div class="partner-box" data-aos="fade-left" data-aos-delay="350">
+                <div class="icon">
+                  <img src="/assets/icons/thought.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Thought leadership</h4>
+                  <p>
+                    Joining panel sessions, fireside chats, breakout sessions
+                    and keynote sessions are some of the ways to profile your
+                    brand as a leader through demonstration of thought
+                    leadership to a unique audience across the Africa's
+                    payment industry.
+                  </p>
+                </div>
+              </div>
+              <div class="partner-box" data-aos="fade-left" data-aos-delay="400">
+                <div class="icon">
+                  <img src="/assets/icons/lead.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Lead generation</h4>
+                  <p>
+                    We bring industry leaders, merchants and clients to
+                    Payments Live, providing you with an opportunity to
+                    generate qualified leads and network with key
+                    stakeholders.
+                  </p>
+                </div>
+              </div>
+              <div class="partner-box" data-aos="fade-left" data-aos-delay="450">
+                <div class="icon">
+                  <img src="/assets/icons/industry.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Industry leadership</h4>
+                  <p>
+                    We provide you with an opportunity to demonstrate
+                    leadership across the Africa's payments industry, through
+                    our sponsorship opportunities.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="button" data-aos="fade-up" data-aos-delay="100">
+              <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20Sponsorship%20Deck"
+                class="btn btn-pry">
+                Request Sponsorship Deck
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial -->
+      <!-- <section id="testimonial">
           <div class="testimonial-container padding">
             <div class="container">
               <div class="section-header">
@@ -1023,72 +864,67 @@
           </div>
         </section> -->
 
-        <!-- Speakers Section -->
-        <section id="speakers">
-          <div class="speakers-container padding">
-            <div class="container">
-              <div class="speakers-wrapper">
-                <div class="section-header">
-                  <div class="tiny-header o-hidden">
-                    <span data-aos="fade-up" data-aos-delay="100"
-                      >- Speakers</span
-                    >
+      <!-- Speakers Section -->
+      <section id="speakers">
+        <div class="speakers-container padding">
+          <div class="container">
+            <div class="speakers-wrapper">
+              <div class="section-header">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100">- Speakers</span>
+                </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    Who speaks at Payments Live?
+                  </h2>
+                </div>
+              </div>
+              <div class="speakers-box-container">
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/nkosana-roda.jpeg" alt="" />
                   </div>
-                  <div class="big-header o-hidden">
-                    <h2 data-aos="fade-left" data-aos-delay="200">
-                      Who speaks at Payments Live?
-                    </h2>
+                  <div class="speaker-info">
+                    <h4 class="name">Nkosana Roda</h4>
+                    <p class="designation">
+                      Head, Payments Platform Services,
+                    </p>
+                    <p class="company">Standard Bank Group</p>
                   </div>
                 </div>
-                <div class="speakers-box-container">
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/nkosana-roda.jpeg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Nkosana Roda</h4>
-                      <p class="designation">
-                        Head, Payments Platform Services,
-                      </p>
-                      <p class="company">Standard Bank Group</p>
-                    </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/kumaran-selvaranju.jpeg" alt="" />
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img
-                        src="/assets/speakers/kumaran-selvaranju.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Kumaran Selvaranju</h4>
-                      <p class="designation">Senior General Manager,</p>
-                      <p class="company">
-                        Payments Banking Association of South Africa
-                      </p>
-                    </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Kumaran Selvaranju</h4>
+                    <p class="designation">Senior General Manager,</p>
+                    <p class="company">
+                      Payments Banking Association of South Africa
+                    </p>
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/karen.jpg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Karen Nasaden</h4>
-                      <p class="designation">CEO,</p>
-                      <p class="company">PayU Africa</p>
-                    </div>
+                </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/karen.jpg" alt="" />
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/cindy-sieberts.jpg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Cindy Sieberts</h4>
-                      <p class="designation">Manager, Banking & FX,</p>
-                      <p class="company">Onafriq</p>
-                    </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Karen Nasaden</h4>
+                    <p class="designation">CEO,</p>
+                    <p class="company">PayU Africa</p>
                   </div>
-                  <!-- <div class="speaker-box">
+                </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/cindy-sieberts.jpg" alt="" />
+                  </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Cindy Sieberts</h4>
+                    <p class="designation">Manager, Banking & FX,</p>
+                    <p class="company">Onafriq</p>
+                  </div>
+                </div>
+                <!-- <div class="speaker-box">
                     <div class="speaker-image">
                       <img src="/assets/speakers/chantal-maritz.jpeg" alt="" />
                     </div>
@@ -1108,58 +944,52 @@
                       <p class="company">RealPay</p>
                     </div>
                   </div> -->
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/hamish-houston.png" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Hamish Houston</h4>
-                      <p class="designation">Co-Founder,</p>
-                      <p class="company">enza</p>
-                    </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/hamish-houston.png" alt="" />
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img
-                        src="/assets/speakers/nkahiseng-ralepeli.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Nkahiseng Ralepeli</h4>
-                      <p class="designation">
-                        VP of Product: Digital Assets- Tokenisation &
-                        Stablecoins,
-                      </p>
-                      <p class="company">Absa Group</p>
-                    </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Hamish Houston</h4>
+                    <p class="designation">Co-Founder,</p>
+                    <p class="company">enza</p>
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/doreen-mokoena.jpeg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Doreen Mokoena</h4>
-                      <p class="designation">
-                        Chief Information Security Officer,
-                      </p>
-                      <p class="company">Cybersec Clinique</p>
-                    </div>
+                </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/nkahiseng-ralepeli.jpeg" alt="" />
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img
-                        src="/assets/speakers/danielle-du-toit.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Danielle du Toit</h4>
-                      <p class="designation">President: Sub-Saharan Africa,</p>
-                      <p class="company">African Women in Fintech & Payments</p>
-                    </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Nkahiseng Ralepeli</h4>
+                    <p class="designation">
+                      VP of Product: Digital Assets- Tokenisation &
+                      Stablecoins,
+                    </p>
+                    <p class="company">Absa Group</p>
                   </div>
-                  <!-- <div class="speaker-box">
+                </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/doreen-mokoena.jpeg" alt="" />
+                  </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Doreen Mokoena</h4>
+                    <p class="designation">
+                      Chief Information Security Officer,
+                    </p>
+                    <p class="company">Cybersec Clinique</p>
+                  </div>
+                </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/danielle-du-toit.jpeg" alt="" />
+                  </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Danielle du Toit</h4>
+                    <p class="designation">President: Sub-Saharan Africa,</p>
+                    <p class="company">African Women in Fintech & Payments</p>
+                  </div>
+                </div>
+                <!-- <div class="speaker-box">
                     <div class="speaker-image">
                       <img src="/assets/speakers/darren-franks.png" alt="" />
                     </div>
@@ -1169,72 +999,66 @@
                       <p class="company">titc.io</p>
                     </div>
                   </div> -->
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/jill-wilmans.jpg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Jill Wilmans</h4>
-                      <p class="designation">Managing Director: Africa,</p>
-                      <p class="company">SecureFX</p>
-                    </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/jill-wilmans.jpg" alt="" />
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/wiza-jalakasi.jpeg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Wiza Jalakasi</h4>
-                      <p class="designation">
-                        Director, Africa Expansion & Market Development,
-                      </p>
-                      <p class="company">EBANX</p>
-                    </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Jill Wilmans</h4>
+                    <p class="designation">Managing Director: Africa,</p>
+                    <p class="company">SecureFX</p>
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img
-                        src="/assets/speakers/sindiswa-makhubalo.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Sindiswa Makhubalo</h4>
-                      <p class="designation">
-                        Head of Banks and Payment Providers Supervision
-                        Department,
-                      </p>
-                      <p class="company">
-                        Financial Services Conduct Authority, South Africa
-                      </p>
-                    </div>
+                </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/wiza-jalakasi.jpeg" alt="" />
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img
-                        src="/assets/speakers/matalane-ngobeni.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Matalane Ngobeni</h4>
-                      <p class="designation">Manager,</p>
-                      <p class="company">
-                        Digital and New Media, Brand South Africa
-                      </p>
-                    </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Wiza Jalakasi</h4>
+                    <p class="designation">
+                      Director, Africa Expansion & Market Development,
+                    </p>
+                    <p class="company">EBANX</p>
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/prelin-scale.jpeg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Prelin Perumal</h4>
-                      <p class="designation">Co-Founder/CPO,</p>
-                      <p class="company">Scale</p>
-                    </div>
+                </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/sindiswa-makhubalo.jpg" alt="" />
                   </div>
-                  <!-- <div class="speaker-box">
+                  <div class="speaker-info">
+                    <h4 class="name">Sindiswa Makhubalo</h4>
+                    <p class="designation">
+                      Head of Banks and Payment Providers Supervision
+                      Department,
+                    </p>
+                    <p class="company">
+                      Financial Services Conduct Authority, South Africa
+                    </p>
+                  </div>
+                </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/matalane-ngobeni.jpeg" alt="" />
+                  </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Matalane Ngobeni</h4>
+                    <p class="designation">Manager,</p>
+                    <p class="company">
+                      Digital and New Media, Brand South Africa
+                    </p>
+                  </div>
+                </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/prelin-scale.jpeg" alt="" />
+                  </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Prelin Perumal</h4>
+                    <p class="designation">Co-Founder/CPO,</p>
+                    <p class="company">Scale</p>
+                  </div>
+                </div>
+                <!-- <div class="speaker-box">
                     <div class="speaker-image">
                       <img
                         src="/assets/speakers/gabriel-swanepoel.jpg"
@@ -1249,540 +1073,481 @@
                       <p class="company">Mastercard</p>
                     </div>
                   </div> -->
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img
-                        src="/assets/speakers/lineshree-moodley.jpeg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Lineshree Moodley</h4>
-                      <p class="designation">Country Head for Visa,</p>
-                      <p class="company">South Africa</p>
-                    </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/lineshree-moodley.jpeg" alt="" />
                   </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/tendai-tizirai.jpg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Tendai Tizirai</h4>
-                      <p class="designation">Head of Expansion,</p>
-                      <p class="company">Mukuru</p>
-                    </div>
-                  </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/julie-neogy.png" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Julie Neogy</h4>
-                      <p class="designation">Co-CEO,</p>
-                      <p class="company">Expand in Africa</p>
-                    </div>
-                  </div>
-                  <div class="speaker-box">
-                    <div class="speaker-image">
-                      <img src="/assets/speakers/kudzai-chaka.jpeg" alt="" />
-                    </div>
-                    <div class="speaker-info">
-                      <h4 class="name">Kudzai Chaka</h4>
-                      <p class="designation">CEO,</p>
-                      <p class="company">KC Compliance</p>
-                    </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Lineshree Moodley</h4>
+                    <p class="designation">Country Head for Visa,</p>
+                    <p class="company">South Africa</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Sponsors -->
-        <section id="sponsors">
-          <div class="sponsors-container padding">
-            <div class="container">
-              <div class="sponsors-wrapper">
-                <div class="section-header black">
-                  <h2 data-aos="fade-up">2025 Sponsors and Partners</h2>
-                </div>
-
-                <div class="sponsors-grid-container">
-                  <div class="sponsors-grid">
-                    <div class="sponsors-grid-header">Sponsored By</div>
-                    <div class="sponsors-grid-wrapper">
-                      <a href="">
-                        <img src="/assets/sponsors/brandsa.png" alt="" />
-                      </a>
-                      <!-- <a href="">
-                        <img src="/assets/sponsors/realpay.png" alt="" />
-                      </a> -->
-                    </div>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/tendai-tizirai.jpg" alt="" />
                   </div>
-                  <div class="sponsors-grid">
-                    <div class="sponsors-grid-header">Media Partners</div>
-                    <div class="sponsors-grid-wrapper">
-                      <a href="#">
-                        <img src="/assets/sponsors/techcentral.jpg" alt="" />
-                      </a>
-                      <a href="#">
-                        <img src="/assets/sponsors/financial-it.png" alt="" />
-                      </a>
-                      <a href="#">
-                        <img src="/assets/sponsors/ffnews.png" alt="" />
-                      </a>
-                      <a href="#">
-                        <img src="/assets/sponsors/coinpedia.png" alt="" />
-                      </a>
-                      <a href="#">
-                        <img src="/assets/sponsors/the-paypers.png" alt="" />
-                      </a>
-                    </div>
+                  <div class="speaker-info">
+                    <h4 class="name">Tendai Tizirai</h4>
+                    <p class="designation">Head of Expansion,</p>
+                    <p class="company">Mukuru</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Who attends -->
-        <section id="who-attends">
-          <div class="who-attends-container padding">
-            <div class="container">
-              <div class="who-attends-wrapper">
-                <div class="section-header white">
-                  <div class="tiny-header o-hidden">
-                    <span data-aos="fade-up" data-aos-delay="100"
-                      >- Attendees</span
-                    >
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/julie-neogy.png" alt="" />
                   </div>
-                  <div class="big-header o-hidden">
-                    <h2 data-aos="fade-left" data-aos-delay="200">
-                      Who participates at our events?
-                    </h2>
+                  <div class="speaker-info">
+                    <h4 class="name">Julie Neogy</h4>
+                    <p class="designation">Co-CEO,</p>
+                    <p class="company">Expand in Africa</p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div
-              class="who-attends-subwrapper"
-              data-aos="zoom-out"
-              data-aos-delay="400"
-            >
-              <div class="who-attends-slide-1">
-                <img src="assets/who-attends-logo/mastercard.png" alt="" />
-                <img src="assets/who-attends-logo/swift.png" alt="" />
-                <img src="assets/who-attends-logo/flutterwave.png" alt="" />
-                <img src="assets/who-attends-logo/paystack.jpg" alt="" />
-                <img src="assets/who-attends-logo/financial-house.jpg" alt="" />
-                <img src="assets/who-attends-logo/moneycorp.png" alt="" />
-                <img src="assets/who-attends-logo/revolut.png" alt="" />
-                <img src="assets/who-attends-logo/visa.png" alt="" />
-                <img src="assets/who-attends-logo/citi.png" alt="" />
-                <img src="assets/who-attends-logo/aza.png" alt="" />
-                <img src="assets/who-attends-logo/unlimit.png" alt="" />
-                <img src="assets/who-attends-logo/transunion.png" alt="" />
-                <img src="assets/who-attends-logo/ey.png" alt="" />
-                <img src="assets/who-attends-logo/nala.png" alt="" />
-                <img src="assets/who-attends-logo/up.jpg" alt="" />
-                <img src="assets/who-attends-logo/interswitch.png" alt="" />
-                <img src="assets/who-attends-logo/9psb.jpg" alt="" />
-                <img src="assets/who-attends-logo/dpopay.png" alt="" />
-                <img src="assets/who-attends-logo/palmpay.png" alt="" />
-                <img src="assets/who-attends-logo/freshworks.png" alt="" />
-                <img src="assets/who-attends-logo/zoho.jpg" alt="" />
-                <img src="assets/who-attends-logo/vfd.png" alt="" />
-                <img src="assets/who-attends-logo/octa.png" alt="" />
-                <img src="assets/who-attends-logo/rackcenter.jpg" alt="" />
-                <img src="assets/who-attends-logo/moniepoint.png" alt="" />
-                <img src="assets/who-attends-logo/maplerad.png" alt="" />
-                <img src="assets/who-attends-logo/payaza.png" alt="" />
-                <img src="assets/who-attends-logo/termii.png" alt="" />
-              </div>
-              <div class="who-attends-slide-2" dir="rtl">
-                <img src="assets/who-attends-logo/uber.png" alt="" />
-                <img src="assets/who-attends-logo/yellowcard.png" alt="" />
-                <img src="assets/who-attends-logo/qwid.png" alt="" />
-                <img src="assets/who-attends-logo/cleva.jpg" alt="" />
-                <img src="assets/who-attends-logo/anchoria.png" alt="" />
-                <img src="assets/who-attends-logo/bitmama.png" alt="" />
-                <img src="assets/who-attends-logo/servercore.png" alt="" />
-                <img src="assets/who-attends-logo/bolt.png" alt="" />
-                <img src="assets/who-attends-logo/zone.jpg" alt="" />
-                <img src="assets/who-attends-logo/identitypass.png" alt="" />
-                <img src="assets/who-attends-logo/migo.png" alt="" />
-                <img src="assets/who-attends-logo/scrella.png" alt="" />
-                <img src="assets/who-attends-logo/africastalking.png" alt="" />
-                <img src="assets/who-attends-logo/anchor.jpg" alt="" />
-                <img src="assets/who-attends-logo/i-invest.jpg" alt="" />
-                <img src="assets/who-attends-logo/cellulant.jpg" alt="" />
-                <img src="assets/who-attends-logo/scalex.png" alt="" />
-                <img src="assets/who-attends-logo/mycoverai.png" alt="" />
-                <img src="assets/who-attends-logo/infobip.jpg" alt="" />
-                <img src="assets/who-attends-logo/zitra.png" alt="" />
-                <img src="assets/who-attends-logo/uba.jpg" alt="" />
-                <img src="assets/who-attends-logo/ami.png" alt="" />
-                <img src="assets/who-attends-logo/nownow.png" alt="" />
-                <img src="assets/who-attends-logo/credo.jpg" alt="" />
-                <img src="assets/who-attends-logo/flincap.png" alt="" />
-                <img src="assets/who-attends-logo/seerbit.png" alt="" />
-              </div>
-              <div class="who-attends-slide-3">
-                <img src="assets/who-attends-logo/alx.png" alt="" />
-                <img src="assets/who-attends-logo/pocketfood.jpg" alt="" />
-                <img src="assets/who-attends-logo/ayo.jpg" alt="" />
-                <img src="assets/who-attends-logo/africadate.jpg" alt="" />
-                <img src="assets/who-attends-logo/fifthlab.png" alt="" />
-                <img src="assets/who-attends-logo/zerocomplex.png" alt="" />
-                <img src="assets/who-attends-logo/flick.png" alt="" />
-                <img src="assets/who-attends-logo/garamart.jpg" alt="" />
-                <img src="assets/who-attends-logo/prembly.jpg" alt="" />
-                <img src="assets/who-attends-logo/chamsaccess.jpg" alt="" />
-                <img src="assets/who-attends-logo/bunce.png" alt="" />
-                <img src="assets/who-attends-logo/3line.png" alt="" />
-                <img src="assets/who-attends-logo/turaco.png" alt="" />
-                <img src="assets/who-attends-logo/shortlet.png" alt="" />
-                <img src="assets/who-attends-logo/arca.jpg" alt="" />
-                <img src="assets/who-attends-logo/tekexperts.png" alt="" />
-                <img src="assets/who-attends-logo/upperlink.jpg" alt="" />
-                <img src="assets/who-attends-logo/pfs.jpg" alt="" />
-                <img src="assets/who-attends-logo/furex.png" alt="" />
-                <img src="assets/who-attends-logo/cent.png" alt="" />
-                <img src="assets/who-attends-logo/inlaks.png" alt="" />
-                <img src="assets/who-attends-logo/pawapay.png" alt="" />
-                <img src="assets/who-attends-logo/businessinsider.png" alt="" />
-                <img src="assets/who-attends-logo/pesc-choice.jpg" alt="" />
-                <img src="assets/who-attends-logo/techstars.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Highlight -->
-        <section id="highlight">
-          <div class="highlight-container padding">
-            <div class="container">
-              <div class="section-header">
-                <h2 data-aos="fade-up">Highlights from previous events</h2>
-              </div>
-            </div>
-            <div
-              class="slide-container"
-              data-aos="zoom-out"
-              data-aos-delay="300"
-            >
-              <div class="slider highlight-slider-1">
-                <img src="/assets/highlights/1.jpg" alt="" />
-                <img src="/assets/highlights/2.jpg" alt="" />
-                <img src="/assets/highlights/3.jpg" alt="" />
-                <img src="/assets/highlights/4.jpg" alt="" />
-                <img src="/assets/highlights/5.jpg" alt="" />
-                <img src="/assets/highlights/6.jpg" alt="" />
-                <img src="/assets/highlights/7.jpg" alt="" />
-                <img src="/assets/highlights/8.jpg" alt="" />
-                <img src="/assets/highlights/9.jpg" alt="" />
-                <img src="/assets/highlights/10.jpg" alt="" />
-                <img src="/assets/highlights/11.jpg" alt="" />
-                <img src="/assets/highlights/12.jpg" alt="" />
-                <img src="/assets/highlights/13.jpg" alt="" />
-                <img src="/assets/highlights/14.jpg" alt="" />
-                <img src="/assets/highlights/15.jpg" alt="" />
-                <img src="/assets/highlights/16.jpg" alt="" />
-                <img src="/assets/highlights/17.jpg" alt="" />
-                <img src="/assets/highlights/18.jpg" alt="" />
-                <img src="/assets/highlights/19.jpg" alt="" />
-                <img src="/assets/highlights/20.jpg" alt="" />
-                <img src="/assets/highlights/21.jpg" alt="" />
-                <img src="/assets/highlights/22.jpg" alt="" />
-                <img src="/assets/highlights/23.jpg" alt="" />
-                <img src="/assets/highlights/24.jpg" alt="" />
-              </div>
-              <div class="slider highlight-slider-2" dir="rtl">
-                <img src="/assets/highlights/25.jpg" alt="" />
-                <img src="/assets/highlights/26.jpg" alt="" />
-                <img src="/assets/highlights/27.jpg" alt="" />
-                <img src="/assets/highlights/28.jpg" alt="" />
-                <img src="/assets/highlights/29.jpg" alt="" />
-                <img src="/assets/highlights/30.jpg" alt="" />
-                <img src="/assets/highlights/31.jpg" alt="" />
-                <img src="/assets/highlights/32.jpg" alt="" />
-                <img src="/assets/highlights/33.jpg" alt="" />
-                <img src="/assets/highlights/34.jpg" alt="" />
-                <img src="/assets/highlights/35.jpg" alt="" />
-                <img src="/assets/highlights/36.jpg" alt="" />
-                <img src="/assets/highlights/37.jpg" alt="" />
-                <img src="/assets/highlights/38.jpg" alt="" />
-                <img src="/assets/highlights/39.jpg" alt="" />
-                <img src="/assets/highlights/40.jpg" alt="" />
-                <img src="/assets/highlights/41.jpg" alt="" />
-                <img src="/assets/highlights/42.jpg" alt="" />
-                <img src="/assets/highlights/43.jpg" alt="" />
-                <img src="/assets/highlights/44.jpg" alt="" />
-                <img src="/assets/highlights/45.jpg" alt="" />
-                <img src="/assets/highlights/46.jpg" alt="" />
-                <img src="/assets/highlights/47.jpg" alt="" />
-                <img src="/assets/highlights/48.jpg" alt="" />
-              </div>
-              <div class="slider highlight-slider-3">
-                <img src="/assets/highlights/49" alt="" />
-                <img src="/assets/highlights/50" alt="" />
-                <img src="/assets/highlights/51" alt="" />
-                <img src="/assets/highlights/52" alt="" />
-                <img src="/assets/highlights/53" alt="" />
-                <img src="/assets/highlights/54" alt="" />
-                <img src="/assets/highlights/55" alt="" />
-                <img src="/assets/highlights/56" alt="" />
-                <img src="/assets/highlights/57" alt="" />
-                <img src="/assets/highlights/58" alt="" />
-                <img src="/assets/highlights/59" alt="" />
-                <img src="/assets/highlights/60" alt="" />
-                <img src="/assets/highlights/61" alt="" />
-                <img src="/assets/highlights/62" alt="" />
-                <img src="/assets/highlights/63" alt="" />
-                <img src="/assets/highlights/64" alt="" />
-                <img src="/assets/highlights/65" alt="" />
-                <img src="/assets/highlights/66" alt="" />
-                <img src="/assets/highlights/67" alt="" />
-                <img src="/assets/highlights/68" alt="" />
-                <img src="/assets/highlights/69" alt="" />
-                <img src="/assets/highlights/70" alt="" />
-                <img src="/assets/highlights/71" alt="" />
-                <img src="/assets/highlights/72" alt="" />
-                <img src="/assets/highlights/73" alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-          <div class="contact-container padding">
-            <div class="container">
-              <div class="contact-wrapper">
-                <h2 data-aos="fade-up">
-                  To learn more about sponsorship, speaking and other
-                  partnership opportunities,
-                </h2>
-
-                <div class="contact-box-container">
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="150"
-                  >
-                    <h4>Jamiu Ijaodola</h4>
-                    <a href="tel: +2347016673316">+234 701 667 3316</a>
-                    <a href="mailto: jamiu@eventhive.ng">jamiu@eventhive.ng</a>
+                <div class="speaker-box">
+                  <div class="speaker-image">
+                    <img src="/assets/speakers/kudzai-chaka.jpeg" alt="" />
                   </div>
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="250"
-                  >
-                    <h4>Malik Kazeem</h4>
-                    <a href="tel: +2349028112744">+234 902 811 2744</a>
-                    <a href="mailto: malik@eventhive.ng">malik@eventhive.ng</a>
-                  </div>
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="250"
-                  >
-                    <h4>Arole Mustapha</h4>
-                    <a href="tel: +2348086081614">+234 808 608 1614</a>
-                    <a href="mailto: arole@eventhive.ng">arole@eventhive.ng</a>
+                  <div class="speaker-info">
+                    <h4 class="name">Kudzai Chaka</h4>
+                    <p class="designation">CEO,</p>
+                    <p class="company">KC Compliance</p>
                   </div>
                 </div>
-
-                <div class="become">
-                  <a
-                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20Sponsorship%20Deck"
-                    class="btn btn-sec"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    >Become a Sponsor</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- More About Eventhive -->
-        <section id="more-about">
-          <div class="more-container padding">
-            <div class="container">
-              <div class="more-wrapper aos-init" data-aos="fade-left">
-                <div class="more-logo">
-                  <span>An event by:</span>
-                  <div class="logos">
-                    <div class="logo">
-                      <img
-                        src="assets/logo/africa-techseries-blue.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="logo-separator"></div>
-                    <div class="logo">
-                      <img src="assets/logo/logo.svg" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <p>
-                  Africa Tech Series is a subsidiary of Eventhive, Eventhive is
-                  Africa's leading B2B2C event servicing company with event
-                  portfolios across Lagos, London, Nairobi, Kigali and New York.
-                </p>
-                <p>
-                  Eventhive operates in the heart of the knowledge and
-                  information economy across major sectors in Africa. We enable
-                  businesses to grow through connecting them with knowledge,
-                  ideas and opportunities.
-                </p>
-
-                <div class="indus-cities">
-                  <h4 class="text-sec">Industries We Operate In:</h4>
-                  <div>
-                    <span>Oil &amp; Gas</span><span>.</span><span>Energy</span
-                    ><span>.</span><span>Tech</span><span>.</span
-                    ><span>Real Estate</span><span>.</span><span>Finance</span
-                    ><span>.</span><span>Transport</span><span>.</span
-                    ><span>Telecoms</span><span>.</span><span>Aviation</span
-                    ><span>.</span><span>Mining</span><span>.</span
-                    ><span>International Trade</span><span>.</span
-                    ><span>Agribusiness</span> <span>.</span
-                    ><span>Private Equity/VC</span><span>.</span
-                    ><span>Creative Economy</span> <span>.</span
-                    ><span>Power</span><span>.</span
-                    ><span>Business of Entertainment</span>
-                  </div>
-                </div>
-                <div class="indus-cities">
-                  <h4 class="text-sec">Cities We Operate In:</h4>
-                  <div>
-                    <span>Lagos</span><span>.</span><span>London</span
-                    ><span>.</span><span>New York</span><span>.</span
-                    ><span>Kigali</span><span>.</span><span>Nairobi</span
-                    ><span>.</span><span>Johannesburg</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="footer-container padding">
-          <div class="container">
-            <div class="footer-wrapper">
-              <div class="top">
-                <div class="logo">
-                  <div class="logo-icon">
-                    <img src="/assets/logo/eventhive-logo-white.png" alt="" />
-                  </div>
-                </div>
-                <div class="quick-links">
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#partner">Partership</a></li>
-                    <li>
-                      <a
-                        href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20%20Exhibition%20Deck"
-                        >Exhibition</a
-                      >
-                    </li>
-                    <li>
-                      <!-- <a
-                        href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
-                        >Tickets</a
-                      > -->
-                      <p class="get-ticket-btn">Tickets</p>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                  </ul>
-                </div>
-                <div class="socials">
-                  <h3>Payments Live 2026</h3>
-                  <p>
-                    June 25th, 2026 | Pivot Hotel Montecasino Johannesburg,
-                    South Africa
-                  </p>
-                  <ul>
-                    <li>
-                      <a
-                        href="https://www.facebook.com/eventhive.ng"
-                        target="_blank"
-                        ><iconify-icon icon="fa:facebook"></iconify-icon>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://x.com/eventhivedotng?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ"
-                        target="_blank"
-                        ><iconify-icon icon="ri:twitter-x-fill"></iconify-icon
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/company/eventhive-ng/"
-                        target="_blank"
-                        ><iconify-icon icon="formkit:linkedin"></iconify-icon
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/eventhivedotng?igsh=MWJzbmVpOWxoMHkzYg=="
-                        target="_blank"
-                        ><iconify-icon icon="mdi:instagram"></iconify-icon
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="center">
-                <div id="countdown-timer" class="timer"></div>
-              </div>
-              <div class="divider"></div>
-              <div class="bottom">
-                <p>
-                  &copy; <span class="year">2025</span> Payments Live. All
-                  Rights Reserved.
-                </p>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
 
-    <!-- Scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+      <!-- Sponsors -->
+      <section id="sponsors">
+        <div class="sponsors-container padding">
+          <div class="container">
+            <div class="sponsors-wrapper">
+              <div class="section-header black">
+                <h2 data-aos="fade-up">2025 Sponsors and Partners</h2>
+              </div>
 
-    <!-- Odometer -->
-    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
+              <div class="sponsors-grid-container">
+                <div class="sponsors-grid">
+                  <div class="sponsors-grid-header">Sponsored By</div>
+                  <div class="sponsors-grid-wrapper">
+                    <a href="">
+                      <img src="/assets/sponsors/brandsa.png" alt="" />
+                    </a>
+                    <!-- <a href="">
+                        <img src="/assets/sponsors/realpay.png" alt="" />
+                      </a> -->
+                  </div>
+                </div>
+                <div class="sponsors-grid">
+                  <div class="sponsors-grid-header">Media Partners</div>
+                  <div class="sponsors-grid-wrapper">
+                    <a href="#">
+                      <img src="/assets/sponsors/techcentral.jpg" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="/assets/sponsors/financial-it.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="/assets/sponsors/ffnews.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="/assets/sponsors/coinpedia.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="/assets/sponsors/the-paypers.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Iconify -->
-    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+      <!-- Who attends -->
+      <section id="who-attends">
+        <div class="who-attends-container padding">
+          <div class="container">
+            <div class="who-attends-wrapper">
+              <div class="section-header white">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100">- Attendees</span>
+                </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    Who participates at our events?
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="who-attends-subwrapper" data-aos="zoom-out" data-aos-delay="400">
+            <div class="who-attends-slide-1">
+              <img src="assets/who-attends-logo/mastercard.png" alt="" />
+              <img src="assets/who-attends-logo/swift.png" alt="" />
+              <img src="assets/who-attends-logo/flutterwave.png" alt="" />
+              <img src="assets/who-attends-logo/paystack.jpg" alt="" />
+              <img src="assets/who-attends-logo/financial-house.jpg" alt="" />
+              <img src="assets/who-attends-logo/moneycorp.png" alt="" />
+              <img src="assets/who-attends-logo/revolut.png" alt="" />
+              <img src="assets/who-attends-logo/visa.png" alt="" />
+              <img src="assets/who-attends-logo/citi.png" alt="" />
+              <img src="assets/who-attends-logo/aza.png" alt="" />
+              <img src="assets/who-attends-logo/unlimit.png" alt="" />
+              <img src="assets/who-attends-logo/transunion.png" alt="" />
+              <img src="assets/who-attends-logo/ey.png" alt="" />
+              <img src="assets/who-attends-logo/nala.png" alt="" />
+              <img src="assets/who-attends-logo/up.jpg" alt="" />
+              <img src="assets/who-attends-logo/interswitch.png" alt="" />
+              <img src="assets/who-attends-logo/9psb.jpg" alt="" />
+              <img src="assets/who-attends-logo/dpopay.png" alt="" />
+              <img src="assets/who-attends-logo/palmpay.png" alt="" />
+              <img src="assets/who-attends-logo/freshworks.png" alt="" />
+              <img src="assets/who-attends-logo/zoho.jpg" alt="" />
+              <img src="assets/who-attends-logo/vfd.png" alt="" />
+              <img src="assets/who-attends-logo/octa.png" alt="" />
+              <img src="assets/who-attends-logo/rackcenter.jpg" alt="" />
+              <img src="assets/who-attends-logo/moniepoint.png" alt="" />
+              <img src="assets/who-attends-logo/maplerad.png" alt="" />
+              <img src="assets/who-attends-logo/payaza.png" alt="" />
+              <img src="assets/who-attends-logo/termii.png" alt="" />
+            </div>
+            <div class="who-attends-slide-2" dir="rtl">
+              <img src="assets/who-attends-logo/uber.png" alt="" />
+              <img src="assets/who-attends-logo/yellowcard.png" alt="" />
+              <img src="assets/who-attends-logo/qwid.png" alt="" />
+              <img src="assets/who-attends-logo/cleva.jpg" alt="" />
+              <img src="assets/who-attends-logo/anchoria.png" alt="" />
+              <img src="assets/who-attends-logo/bitmama.png" alt="" />
+              <img src="assets/who-attends-logo/servercore.png" alt="" />
+              <img src="assets/who-attends-logo/bolt.png" alt="" />
+              <img src="assets/who-attends-logo/zone.jpg" alt="" />
+              <img src="assets/who-attends-logo/identitypass.png" alt="" />
+              <img src="assets/who-attends-logo/migo.png" alt="" />
+              <img src="assets/who-attends-logo/scrella.png" alt="" />
+              <img src="assets/who-attends-logo/africastalking.png" alt="" />
+              <img src="assets/who-attends-logo/anchor.jpg" alt="" />
+              <img src="assets/who-attends-logo/i-invest.jpg" alt="" />
+              <img src="assets/who-attends-logo/cellulant.jpg" alt="" />
+              <img src="assets/who-attends-logo/scalex.png" alt="" />
+              <img src="assets/who-attends-logo/mycoverai.png" alt="" />
+              <img src="assets/who-attends-logo/infobip.jpg" alt="" />
+              <img src="assets/who-attends-logo/zitra.png" alt="" />
+              <img src="assets/who-attends-logo/uba.jpg" alt="" />
+              <img src="assets/who-attends-logo/ami.png" alt="" />
+              <img src="assets/who-attends-logo/nownow.png" alt="" />
+              <img src="assets/who-attends-logo/credo.jpg" alt="" />
+              <img src="assets/who-attends-logo/flincap.png" alt="" />
+              <img src="assets/who-attends-logo/seerbit.png" alt="" />
+            </div>
+            <div class="who-attends-slide-3">
+              <img src="assets/who-attends-logo/alx.png" alt="" />
+              <img src="assets/who-attends-logo/pocketfood.jpg" alt="" />
+              <img src="assets/who-attends-logo/ayo.jpg" alt="" />
+              <img src="assets/who-attends-logo/africadate.jpg" alt="" />
+              <img src="assets/who-attends-logo/fifthlab.png" alt="" />
+              <img src="assets/who-attends-logo/zerocomplex.png" alt="" />
+              <img src="assets/who-attends-logo/flick.png" alt="" />
+              <img src="assets/who-attends-logo/garamart.jpg" alt="" />
+              <img src="assets/who-attends-logo/prembly.jpg" alt="" />
+              <img src="assets/who-attends-logo/chamsaccess.jpg" alt="" />
+              <img src="assets/who-attends-logo/bunce.png" alt="" />
+              <img src="assets/who-attends-logo/3line.png" alt="" />
+              <img src="assets/who-attends-logo/turaco.png" alt="" />
+              <img src="assets/who-attends-logo/shortlet.png" alt="" />
+              <img src="assets/who-attends-logo/arca.jpg" alt="" />
+              <img src="assets/who-attends-logo/tekexperts.png" alt="" />
+              <img src="assets/who-attends-logo/upperlink.jpg" alt="" />
+              <img src="assets/who-attends-logo/pfs.jpg" alt="" />
+              <img src="assets/who-attends-logo/furex.png" alt="" />
+              <img src="assets/who-attends-logo/cent.png" alt="" />
+              <img src="assets/who-attends-logo/inlaks.png" alt="" />
+              <img src="assets/who-attends-logo/pawapay.png" alt="" />
+              <img src="assets/who-attends-logo/businessinsider.png" alt="" />
+              <img src="assets/who-attends-logo/pesc-choice.jpg" alt="" />
+              <img src="assets/who-attends-logo/techstars.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Highlight -->
+      <section id="highlight">
+        <div class="highlight-container padding">
+          <div class="container">
+            <div class="section-header">
+              <h2 data-aos="fade-up">Highlights from previous events</h2>
+            </div>
+          </div>
+          <div class="slide-container" data-aos="zoom-out" data-aos-delay="300">
+            <div class="slider highlight-slider-1">
+              <img src="/assets/highlights/1.jpg" alt="" />
+              <img src="/assets/highlights/2.jpg" alt="" />
+              <img src="/assets/highlights/3.jpg" alt="" />
+              <img src="/assets/highlights/4.jpg" alt="" />
+              <img src="/assets/highlights/5.jpg" alt="" />
+              <img src="/assets/highlights/6.jpg" alt="" />
+              <img src="/assets/highlights/7.jpg" alt="" />
+              <img src="/assets/highlights/8.jpg" alt="" />
+              <img src="/assets/highlights/9.jpg" alt="" />
+              <img src="/assets/highlights/10.jpg" alt="" />
+              <img src="/assets/highlights/11.jpg" alt="" />
+              <img src="/assets/highlights/12.jpg" alt="" />
+              <img src="/assets/highlights/13.jpg" alt="" />
+              <img src="/assets/highlights/14.jpg" alt="" />
+              <img src="/assets/highlights/15.jpg" alt="" />
+              <img src="/assets/highlights/16.jpg" alt="" />
+              <img src="/assets/highlights/17.jpg" alt="" />
+              <img src="/assets/highlights/18.jpg" alt="" />
+              <img src="/assets/highlights/19.jpg" alt="" />
+              <img src="/assets/highlights/20.jpg" alt="" />
+              <img src="/assets/highlights/21.jpg" alt="" />
+              <img src="/assets/highlights/22.jpg" alt="" />
+              <img src="/assets/highlights/23.jpg" alt="" />
+              <img src="/assets/highlights/24.jpg" alt="" />
+            </div>
+            <div class="slider highlight-slider-2" dir="rtl">
+              <img src="/assets/highlights/25.jpg" alt="" />
+              <img src="/assets/highlights/26.jpg" alt="" />
+              <img src="/assets/highlights/27.jpg" alt="" />
+              <img src="/assets/highlights/28.jpg" alt="" />
+              <img src="/assets/highlights/29.jpg" alt="" />
+              <img src="/assets/highlights/30.jpg" alt="" />
+              <img src="/assets/highlights/31.jpg" alt="" />
+              <img src="/assets/highlights/32.jpg" alt="" />
+              <img src="/assets/highlights/33.jpg" alt="" />
+              <img src="/assets/highlights/34.jpg" alt="" />
+              <img src="/assets/highlights/35.jpg" alt="" />
+              <img src="/assets/highlights/36.jpg" alt="" />
+              <img src="/assets/highlights/37.jpg" alt="" />
+              <img src="/assets/highlights/38.jpg" alt="" />
+              <img src="/assets/highlights/39.jpg" alt="" />
+              <img src="/assets/highlights/40.jpg" alt="" />
+              <img src="/assets/highlights/41.jpg" alt="" />
+              <img src="/assets/highlights/42.jpg" alt="" />
+              <img src="/assets/highlights/43.jpg" alt="" />
+              <img src="/assets/highlights/44.jpg" alt="" />
+              <img src="/assets/highlights/45.jpg" alt="" />
+              <img src="/assets/highlights/46.jpg" alt="" />
+              <img src="/assets/highlights/47.jpg" alt="" />
+              <img src="/assets/highlights/48.jpg" alt="" />
+            </div>
+            <div class="slider highlight-slider-3">
+              <img src="/assets/highlights/49" alt="" />
+              <img src="/assets/highlights/50" alt="" />
+              <img src="/assets/highlights/51" alt="" />
+              <img src="/assets/highlights/52" alt="" />
+              <img src="/assets/highlights/53" alt="" />
+              <img src="/assets/highlights/54" alt="" />
+              <img src="/assets/highlights/55" alt="" />
+              <img src="/assets/highlights/56" alt="" />
+              <img src="/assets/highlights/57" alt="" />
+              <img src="/assets/highlights/58" alt="" />
+              <img src="/assets/highlights/59" alt="" />
+              <img src="/assets/highlights/60" alt="" />
+              <img src="/assets/highlights/61" alt="" />
+              <img src="/assets/highlights/62" alt="" />
+              <img src="/assets/highlights/63" alt="" />
+              <img src="/assets/highlights/64" alt="" />
+              <img src="/assets/highlights/65" alt="" />
+              <img src="/assets/highlights/66" alt="" />
+              <img src="/assets/highlights/67" alt="" />
+              <img src="/assets/highlights/68" alt="" />
+              <img src="/assets/highlights/69" alt="" />
+              <img src="/assets/highlights/70" alt="" />
+              <img src="/assets/highlights/71" alt="" />
+              <img src="/assets/highlights/72" alt="" />
+              <img src="/assets/highlights/73" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Slick Carousel -->
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="contact-container padding">
+          <div class="container">
+            <div class="contact-wrapper">
+              <h2 data-aos="fade-up">
+                To learn more about sponsorship, speaking and other
+                partnership opportunities,
+              </h2>
 
-    <!-- Custom script -->
-    <script src="/js/script.js"></script>
-  </body>
+              <div class="contact-box-container">
+                <div class="contact-box" data-aos="zoom-in" data-aos-delay="150">
+                  <h4>Jamiu Ijaodola</h4>
+                  <a href="tel: +2347016673316">+234 701 667 3316</a>
+                  <a href="mailto: jamiu@eventhive.ng">jamiu@eventhive.ng</a>
+                </div>
+                <div class="contact-box" data-aos="zoom-in" data-aos-delay="250">
+                  <h4>Malik Kazeem</h4>
+                  <a href="tel: +2349028112744">+234 902 811 2744</a>
+                  <a href="mailto: malik@eventhive.ng">malik@eventhive.ng</a>
+                </div>
+                <div class="contact-box" data-aos="zoom-in" data-aos-delay="250">
+                  <h4>Arole Mustapha</h4>
+                  <a href="tel: +2348086081614">+234 808 608 1614</a>
+                  <a href="mailto: arole@eventhive.ng">arole@eventhive.ng</a>
+                </div>
+              </div>
+
+              <div class="become">
+                <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20Sponsorship%20Deck"
+                  class="btn btn-sec" data-aos="fade-up" data-aos-delay="300">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- More About Eventhive -->
+      <section id="more-about">
+        <div class="more-container padding">
+          <div class="container">
+            <div class="more-wrapper aos-init" data-aos="fade-left">
+              <div class="more-logo">
+                <span>An event by:</span>
+                <div class="logos">
+                  <div class="logo">
+                    <img src="assets/logo/africa-techseries-blue.png" alt="" />
+                  </div>
+                  <div class="logo-separator"></div>
+                  <div class="logo">
+                    <img src="assets/logo/logo.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Africa Tech Series is a subsidiary of Eventhive, Eventhive is
+                Africa's leading B2B2C event servicing company with event
+                portfolios across Lagos, London, Nairobi, Kigali and New York.
+              </p>
+              <p>
+                Eventhive operates in the heart of the knowledge and
+                information economy across major sectors in Africa. We enable
+                businesses to grow through connecting them with knowledge,
+                ideas and opportunities.
+              </p>
+
+              <div class="indus-cities">
+                <h4 class="text-sec">Industries We Operate In:</h4>
+                <div>
+                  <span>Oil &amp;
+                    Gas</span><span>.</span><span>Energy</span><span>.</span><span>Tech</span><span>.</span><span>Real
+                    Estate</span><span>.</span><span>Finance</span><span>.</span><span>Transport</span><span>.</span><span>Telecoms</span><span>.</span><span>Aviation</span><span>.</span><span>Mining</span><span>.</span><span>International
+                    Trade</span><span>.</span><span>Agribusiness</span> <span>.</span><span>Private
+                    Equity/VC</span><span>.</span><span>Creative Economy</span>
+                  <span>.</span><span>Power</span><span>.</span><span>Business of Entertainment</span>
+                </div>
+              </div>
+              <div class="indus-cities">
+                <h4 class="text-sec">Cities We Operate In:</h4>
+                <div>
+                  <span>Lagos</span><span>.</span><span>London</span><span>.</span><span>New
+                    York</span><span>.</span><span>Kigali</span><span>.</span><span>Nairobi</span><span>.</span><span>Johannesburg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-container padding">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="top">
+              <div class="logo">
+                <div class="logo-icon">
+                  <img src="/assets/logo/eventhive-logo-white.png" alt="" />
+                </div>
+              </div>
+              <div class="quick-links">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#partner">Partership</a></li>
+                  <li>
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Payments%20Live%20%20Exhibition%20Deck">Exhibition</a>
+                  </li>
+                  <li>
+                    <!-- <a
+                        href="https://www.eventbrite.com/e/1297729717519?aff=oddtdtcreator"
+                        >Tickets</a
+                      > -->
+                    <p class="get-ticket-btn">Tickets</p>
+                  </li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="socials">
+                <h3>Payments Live 2026</h3>
+                <p>
+                  June 25th, 2026 | Pivot Hotel Montecasino Johannesburg,
+                  South Africa
+                </p>
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/eventhive.ng" target="_blank"><iconify-icon
+                        icon="fa:facebook"></iconify-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/eventhivedotng?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ" target="_blank"><iconify-icon
+                        icon="ri:twitter-x-fill"></iconify-icon></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/eventhive-ng/" target="_blank"><iconify-icon
+                        icon="formkit:linkedin"></iconify-icon></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/eventhivedotng?igsh=MWJzbmVpOWxoMHkzYg=="
+                      target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="center">
+              <div id="countdown-timer" class="timer"></div>
+            </div>
+            <div class="divider"></div>
+            <div class="bottom">
+              <p>
+                &copy; <span class="year">2025</span> Payments Live. All
+                Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+  <!-- Odometer -->
+  <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
+
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+  <!-- Aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Slick Carousel -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Custom script -->
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
