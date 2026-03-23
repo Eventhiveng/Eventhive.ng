@@ -1,9 +1,9 @@
 import { SampleNextArrow, SamplePrevArrow } from "./arrow";
-import { BlogPageData, EventPageData } from "./types";
+import { DataStore } from "./types";
 
 // const sts = () => Math.ceil(window.innerWidth / 150);
 
-const data = {
+const data: DataStore = {
   sectorData: [
     {
       icon: "fluent:vehicle-car-profile-ltr-20-regular",
@@ -140,7 +140,7 @@ const data = {
         },
       ],
     },
-    info: [] as EventPageData[],
+    info: [],
   },
   counterData: [
     {
@@ -704,7 +704,7 @@ const data = {
         },
       ],
     },
-    info: [] as BlogPageData[],
+    info: [],
   },
   blogPageData: [
     {
@@ -1027,11 +1027,11 @@ const data = {
     {
       banner: "/images/events/banner/economy.jpg",
       event: "Nigeria Economy Breakfast Meeting",
-      date: "January",
+      eventDate: "January 23, 2025",
+      eventMonth: "January",
       slug: "nigeria-economy-breakfast",
       title: "Nigeria Economic Breakfast Meeting 2025",
-      location:
-        "23rd of January, 2025 | Fourpoints by Sheraton, Victoria Island, Lagos",
+      location: "Fourpoints by Sheraton, Victoria Island, Lagos",
       extLink: "https://economy.eventhive.ng",
       pic1: "/images/events/event-pics/economy-1.png",
       pic2: "/images/events/event-pics/economy-2.png",

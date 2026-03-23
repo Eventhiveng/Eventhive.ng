@@ -1,8 +1,9 @@
-export type CarouselData = {
-  useFor: string;
-  settings: Record<string, unknown>;
-  info: EventPageData[] | BlogPageData[] | string[];
-};
+export type CarouselData<TInfo = EventPageData[] | BlogPageData[] | string[]> =
+  {
+    useFor: string;
+    settings: Record<string, unknown>;
+    info: TInfo;
+  };
 
 export type BlogPageData = {
   id: number;
@@ -17,7 +18,9 @@ export type BlogPageData = {
 export type EventPageData = {
   banner: string;
   event: string;
-  date: string;
+  // date: string;
+  eventMonth: string;
+  eventDate: string;
   slug: string;
   title: string;
   location: string;
@@ -34,4 +37,39 @@ export type SectionHeaderType = {
   type: "single" | "double";
   title: string;
   heading: string;
+};
+
+export type SectorDataItem = {
+  icon: string;
+  title: string;
+  description: string;
+};
+
+export type CityDataItem = {
+  city: string;
+  cityImg: string;
+};
+
+export type CounterDataItem = {
+  imgLink: string;
+  number: number;
+  description: string;
+};
+
+export type GalleryDataItem = {
+  category: string;
+  pictures: string[];
+};
+
+export type DataStore = {
+  sectorData: SectorDataItem[];
+  citiesData: CityDataItem[];
+  eventData: CarouselData<EventPageData[]>;
+  counterData: CounterDataItem[];
+  slideOneData: CarouselData<string[]>;
+  slideTwoData: CarouselData<string[]>;
+  galleryData: GalleryDataItem[];
+  blogData: CarouselData<BlogPageData[]>;
+  blogPageData: BlogPageData[];
+  eventPageData: EventPageData[];
 };
