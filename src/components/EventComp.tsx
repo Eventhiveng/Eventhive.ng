@@ -16,7 +16,7 @@ const EventComp = ({ element }: { element: EventPageData }) => {
       </div>
       <div className="info">
         <h4 className="black-sec">
-          {element.event} <br /> -{element.date}
+          {element.event} <br /> - {element.eventMonth}
         </h4>
 
         <Link href={`/events/${element.slug}`}>

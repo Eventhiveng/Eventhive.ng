@@ -15,16 +15,20 @@ export type BlogPageData = {
   description: string;
 };
 
+// eventshedule, eventtimeline, eventstatus
+
 export type EventPageData = {
   banner: string;
   event: string;
   // date: string;
   eventMonth: string;
   eventDate: string;
+  eventStatus: "active" | "inactive";
+  // eventTimeline: "upcoming" | "past";
   slug: string;
   title: string;
   location: string;
-  extLink: string;
+  externalLink: string;
   pic1: string;
   pic2: string;
   pic3: string;

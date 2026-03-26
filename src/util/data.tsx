@@ -1,5 +1,7 @@
 import { SampleNextArrow, SamplePrevArrow } from "./arrow";
 import { DataStore } from "./types";
+import { sortEventsByOccurrence } from "./eventSort";
+import { blogPageData } from "./blogData";
 
 // const sts = () => Math.ceil(window.innerWidth / 150);
 
@@ -706,7 +708,8 @@ const data: DataStore = {
     },
     info: [],
   },
-  blogPageData: [
+  blogPageData,
+  /* blogPageData: [
     {
       id: 1,
       imgLink: "/images/blog/blogcomp_7.jpg",
@@ -1022,17 +1025,18 @@ const data: DataStore = {
         </p>
       `,
     },
-  ],
+  ], */
   eventPageData: [
     {
       banner: "/images/events/banner/economy.jpg",
       event: "Nigeria Economy Breakfast Meeting",
-      eventDate: "January 23, 2025",
+      eventDate: "January 29, 2026",
       eventMonth: "January",
+      eventStatus: "active",
       slug: "nigeria-economy-breakfast",
-      title: "Nigeria Economic Breakfast Meeting 2025",
+      title: "Nigeria Economic Breakfast Meeting 2026",
       location: "Fourpoints by Sheraton, Victoria Island, Lagos",
-      extLink: "https://economy.eventhive.ng",
+      externalLink: "https://economy.eventhive.ng",
       pic1: "/images/events/event-pics/economy-1.png",
       pic2: "/images/events/event-pics/economy-2.png",
       pic3: "/images/events/event-pics/economy-3.png",
@@ -1060,12 +1064,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/ntf.jpg",
       event: "Nigeria Telecoms Forum",
-      date: "January",
+      eventMonth: "April",
+      eventDate: "April 09, 2026",
+      eventStatus: "active",
       slug: "nigeria-telecoms-forum",
-      title: "Nigeria Telecoms Forum 2025",
-      location:
-        "13th of February, 2025 | Fourpoints by Sheraton, Victoria Island, Lagos",
-      extLink: "https://ntf.eventhive.ng",
+      title: "Nigeria Telecoms Forum 2026",
+      location: "Fourpoints by Sheraton, Victoria Island, Lagos",
+      externalLink: "https://ntf.eventhive.ng",
       pic1: "/images/events/event-pics/economy-1.png",
       pic2: "/images/events/event-pics/economy-2.png",
       pic3: "/images/events/event-pics/economy-3.png",
@@ -1094,12 +1099,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/tech.jpg",
       event: "Lagos Tech Fest",
-      date: "February",
+      eventMonth: "February",
+      eventDate: "February 17-18, 2026",
+      eventStatus: "active",
       slug: "lagos-tech-fest",
-      title: "Lagos Tech Fest 2025",
-      location:
-        "20th of February, 2025 | Landmark Event Center, Victoria Island, Lagos",
-      extLink: "https://tech.eventhive.ng",
+      title: "Lagos Tech Fest 2026",
+      location: "Landmark Event Center, Victoria Island, Lagos",
+      externalLink: "https://tech.eventhive.ng",
       pic1: "/images/events/event-pics/tech-1.png",
       pic2: "/images/events/event-pics/tech-2.png",
       pic3: "/images/events/event-pics/tech-3.png",
@@ -1126,12 +1132,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/insurance.jpg",
       event: "Nigeria Insurance Forum",
-      date: "March",
+      eventMonth: "April",
+      eventDate: "10th of April, 2025",
+      eventStatus: "inactive",
       slug: "nigeria-insurance-forum",
       title: "Nigeria Insurance Forum 2025",
-      location:
-        "13th of March, 2025 | Fourpoints by Sheraton, Victoria Island, Lagos",
-      extLink: "https://insurance.eventhive.ng",
+      location: "Fourpoints by Sheraton, Victoria Island, Lagos",
+      externalLink: "https://insurance.eventhive.ng",
       pic1: "/images/events/event-pics/uk-1.png",
       pic2: "/images/events/event-pics/uk-2.png",
       pic3: "/images/events/event-pics/uk-3.png",
@@ -1159,11 +1166,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/uk.jpg",
       event: "UK-Africa Business Outlook",
-      date: "March",
+      eventMonth: "March",
+      eventDate: "March 26, 2026",
+      eventStatus: "active",
       slug: "uk-africa-business-outlook",
-      title: "UK-Africa Business Outlook 2025",
-      location: "26th of March, 2025 | London, United Kingdom",
-      extLink: "https://uk.eventhive.ng",
+      title: "UK-Africa Business Outlook 2026",
+      location: "London, United Kingdom",
+      externalLink: "https://uk.eventhive.ng",
       pic1: "/images/events/event-pics/uk-1.png",
       pic2: "/images/events/event-pics/uk-2.png",
       pic3: "/images/events/event-pics/uk-3.png",
@@ -1190,11 +1199,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/mining.jpg",
       event: "Africa Mining Investment Outlook",
-      date: "March",
+      eventMonth: "March",
+      eventDate: "28th of March, 2025",
+      eventStatus: "inactive",
       slug: "africa-mining-investment-outlook",
       title: "Africa Mining Investment Outlook 2025",
-      location: "28th of March, 2025 | London, United Kingdom",
-      extLink: "https://uk.eventhive.ng",
+      location: "London, United Kingdom",
+      externalLink: "https://uk.eventhive.ng",
       pic1: "/images/events/event-pics/uk-1.png",
       pic2: "/images/events/event-pics/uk-2.png",
       pic3: "/images/events/event-pics/uk-3.png",
@@ -1222,11 +1233,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/af.jpg",
       event: "Africa Fintech Live",
-      date: "April",
+      eventMonth: "May",
+      eventDate: "May 07, 2026",
+      eventStatus: "active",
       slug: "africa-fintech-live",
-      title: "Africa Fintech Live 2025",
-      location: "30th of April, 2025 | Sarit Expo Center, Nairobi, Kenya",
-      extLink: "https://af.eventhive.ng",
+      title: "Africa Fintech Live 2026",
+      location: "Sarit Expo Center, Nairobi, Kenya",
+      externalLink: "https://af.eventhive.ng",
       pic1: "/images/events/event-pics/power-1.png",
       pic2: "/images/events/event-pics/power-2.png",
       pic3: "/images/events/event-pics/power-3.png",
@@ -1254,11 +1267,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/power.jpg",
       event: "Nigeria Power Outlook",
-      date: "May",
+      eventMonth: "May",
+      eventDate: "17th of May, 2025",
+      eventStatus: "inactive",
       slug: "nigeria-power-outlook",
       title: "Nigeria Power Outlook 2025",
-      location: "17th of May, 2025 | Civic Center, Victoria Island, Lagos",
-      extLink: "https://power.eventhive.ng",
+      location: "Civic Center, Victoria Island, Lagos",
+      externalLink: "https://power.eventhive.ng",
       pic1: "/images/events/event-pics/power-1.png",
       pic2: "/images/events/event-pics/power-2.png",
       pic3: "/images/events/event-pics/power-3.png",
@@ -1287,12 +1302,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/lref.jpg",
       event: "Lagos Real Estate Fest",
-      date: "May",
+      eventMonth: "May",
+      eventDate: "May 27-28, 2026",
+      eventStatus: "active",
       slug: "lagos-real-estate-fest",
-      title: "Lagos Real Estate Fest 2024",
-      location:
-        "28th of May, 2025 | Landmark Event Center, Victoria Island, Lagos",
-      extLink: "https://re.eventhive.ng",
+      title: "Lagos Real Estate Fest 2026",
+      location: "Landmark Event Center, Victoria Island, Lagos",
+      externalLink: "https://re.eventhive.ng",
       pic1: "/images/events/event-pics/re-1.png",
       pic2: "/images/events/event-pics/re-2.png",
       pic3: "/images/events/event-pics/re-3.png",
@@ -1320,11 +1336,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/fintech.jpg",
       event: "Nigeria Fintech Forum",
-      date: "August",
+      eventMonth: "July",
+      eventDate: "July 30, 2026",
+      eventStatus: "active",
       slug: "nigeria-fintech-forum",
-      title: "Nigeria Fintech Forum 2025",
-      location: "06th of August, 2025 | Lagos, Nigeria",
-      extLink: "https://fintech.eventhive.ng",
+      title: "Nigeria Fintech Forum 2026",
+      location: "Lagos, Nigeria",
+      externalLink: "https://fintech.eventhive.ng",
       pic1: "/images/events/event-pics/fintech-1.png",
       pic2: "/images/events/event-pics/fintech-2.png",
       pic3: "/images/events/event-pics/fintech-3.png",
@@ -1358,11 +1376,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/og.jpg",
       event: "Nigeria Oil and Gas Outlook",
-      date: "August",
+      eventMonth: "August",
+      eventDate: "August 27, 2026",
+      eventStatus: "active",
       slug: "nigeria-oil-and-gas-outlook",
-      title: "Nigeria Oil & Gas Outlook 2025",
-      location: "28th of August, 2025 | Lagos, Nigeria",
-      extLink: "https://og.eventhive.ng",
+      title: "Nigeria Oil & Gas Outlook 2026",
+      location: "Lagos, Nigeria",
+      externalLink: "https://og.eventhive.ng",
       pic1: "/images/events/event-pics/og-1.png",
       pic2: "/images/events/event-pics/og-2.png",
       pic3: "/images/events/event-pics/og-3.png",
@@ -1393,11 +1413,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/us.jpg",
       event: "US-Nigeria Business Outlook",
-      date: "September",
+      eventMonth: "September",
+      eventDate: "25th of September, 2025",
+      eventStatus: "inactive",
       slug: "us-nigeria-business-outlook",
       title: "US-Nigeria Business Outlook 2025",
-      location: "25th of September, 2025 | New York, U.S.A",
-      extLink: "https://us.eventhive.ng",
+      location: "New York, U.S.A",
+      externalLink: "https://us.eventhive.ng",
       pic1: "/images/events/event-pics/us-1.png",
       pic2: "/images/events/event-pics/us-2.png",
       pic3: "/images/events/event-pics/us-3.png",
@@ -1428,11 +1450,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/fb.jpg",
       event: "Fintech Without Borders Forum",
-      date: "October",
+      eventMonth: "October",
+      eventDate: "October 28, 2026",
+      eventStatus: "active",
       slug: "fintech-without-borders-forum",
-      title: "Fintech Without Borders Forum 2024",
-      location: "23rd of October, 2025 | London, United Kingdom",
-      extLink: "https://fb.eventhive.ng",
+      title: "Fintech Without Borders Forum 2026",
+      location: "London, United Kingdom",
+      externalLink: "https://fb.eventhive.ng",
       pic1: "/images/events/event-pics/economy-1.png",
       pic2: "/images/events/event-pics/economy-2.png",
       pic3: "/images/events/event-pics/economy-3.png",
@@ -1460,11 +1484,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/ae.jpg",
       event: "Africa Energy Investment Outlook",
-      date: "October",
-      slug: "fintech-without-borders-forum",
+      eventMonth: "October",
+      eventDate: "October 29, 2026",
+      eventStatus: "active",
+      slug: "africa-energy-investment-outlook",
       title: "Africa Energy Investment Outlook 2025",
-      location: "30th of October, 2025 | London, United Kingdom",
-      extLink: "https://ae.eventhive.ng",
+      location: "London, United Kingdom",
+      externalLink: "https://ae.eventhive.ng",
       pic1: "/images/events/event-pics/economy-1.png",
       pic2: "/images/events/event-pics/economy-2.png",
       pic3: "/images/events/event-pics/economy-3.png",
@@ -1492,11 +1518,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/atf.jpg",
       event: "Africa Tech Forum",
-      date: "November",
+      eventMonth: "November",
+      eventDate: "6th of November, 2025",
+      eventStatus: "inactive",
       slug: "africa-tech-forum",
       title: "Africa Tech forum 2024",
-      location: "06th of November, 2025 | Kigali Convention Center, Rwanda",
-      extLink: "https://atf.eventhive.ng",
+      location: "Kigali Convention Center, Rwanda",
+      externalLink: "https://atf.eventhive.ng",
       pic1: "/images/events/event-pics/atf-1.jpg",
       pic2: "/images/events/event-pics/atf-2.jpg",
       pic3: "/images/events/event-pics/atf-3.jpg",
@@ -1524,11 +1552,13 @@ const data: DataStore = {
     {
       banner: "/images/events/banner/transport.jpg",
       event: "Lagos Transport Fest",
-      date: "December",
+      eventMonth: "December",
+      eventDate: "December 10, 2026",
+      eventStatus: "active",
       slug: "lagos-transport-fest",
-      title: "Lagos Transport Fest 2024",
-      location: "04th of December, 2024 | Lagos, Nigeria",
-      extLink: "https://transport.eventhive.ng",
+      title: "Lagos Transport Fest 2026",
+      location: "Lagos, Nigeria",
+      externalLink: "https://transport.eventhive.ng",
       pic1: "/images/events/event-pics/transport-1.png",
       pic2: "/images/events/event-pics/transport-2.png",
       pic3: "/images/events/event-pics/transport-3.png",
@@ -1553,10 +1583,310 @@ const data: DataStore = {
         "Adapt your strategies to the latest economic and geopolitical trends",
       ],
     },
+    {
+      banner: "/images/events/banner/solar.jpg",
+      event: "Nigeria Solar Forum",
+      eventMonth: "March",
+      eventDate: "March 12, 2026",
+      eventStatus: "active",
+      slug: "nigeria-solar-forum",
+      title: "Nigeria Solar Forum 2026",
+      location: "Lagos, Nigeria",
+      externalLink: "https://solar.eventhive.ng",
+      pic1: "/images/events/event-pics/power-1.png",
+      pic2: "/images/events/event-pics/power-2.png",
+      pic3: "/images/events/event-pics/power-3.png",
+      majorDesc: `
+        <p>
+          Nigeria Solar Forum convenes developers, investors, regulators, and solution providers to explore the growth of solar and distributed energy solutions across Nigeria.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          The forum combines thought leadership and networking to support project development, partnerships, and market expansion across Nigeria’s solar value chain.
+        </p>
+      `,
+      whyParticipate: [
+        "Meet key stakeholders across Nigeria’s solar ecosystem",
+        "Explore partnerships and project opportunities",
+        "Learn from market insights and policy discussions",
+        "Showcase solutions to decision makers",
+      ],
+    },
+    {
+      banner: "/images/events/banner/banking.jpg",
+      event: "Nigeria Banking Outlook",
+      eventMonth: "April",
+      eventDate: "April 30, 2026",
+      eventStatus: "active",
+      slug: "nigeria-banking-outlook",
+      title: "Nigeria Banking Outlook 2026",
+      location: "Lagos, Nigeria",
+      externalLink: "https://banking.eventhive.ng",
+      pic1: "/images/events/event-pics/fintech-1.png",
+      pic2: "/images/events/event-pics/fintech-2.png",
+      pic3: "/images/events/event-pics/fintech-3.png",
+      majorDesc: `
+        <p>
+          Nigeria Banking Outlook brings together leaders across banking and financial services to discuss strategy, regulation, innovation, and the future of financial intermediation.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          Delegates engage in high-level conversations on digital transformation, risk, compliance, and growth opportunities across Nigeria’s banking sector.
+        </p>
+      `,
+      whyParticipate: [
+        "Access C-level banking and fintech stakeholders",
+        "Understand regulatory and market trends",
+        "Explore partnership and investment opportunities",
+        "Strengthen market visibility through thought leadership",
+      ],
+    },
+    {
+      banner: "/images/events/banner/crypto.jpg",
+      event: "Crypto & DeFI Forum",
+      eventMonth: "June",
+      eventDate: "June 10, 2026",
+      eventStatus: "active",
+      slug: "crypto-defi-forum",
+      title: "Crypto & DeFI Forum 2026",
+      location: "Lagos, Nigeria",
+      externalLink: "https://crypto.eventhive.ng",
+      pic1: "/images/events/event-pics/fintech-1.png",
+      pic2: "/images/events/event-pics/fintech-2.png",
+      pic3: "/images/events/event-pics/fintech-3.png",
+      majorDesc: `
+        <p>
+          Crypto &amp; DeFI Forum convenes builders, investors, regulators, and institutions to discuss the evolution of digital assets and decentralized finance across Africa.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          The forum explores adoption, regulation, security, and use cases shaping the next phase of crypto and DeFi growth.
+        </p>
+      `,
+      whyParticipate: [
+        "Meet top founders and ecosystem leaders",
+        "Explore product and partnership opportunities",
+        "Learn from regulatory and compliance insights",
+        "Connect with investors and institutions",
+      ],
+    },
+    {
+      banner: "/images/events/banner/energy.jpg",
+      event: "Africa Energy Outlook",
+      eventMonth: "June",
+      eventDate: "June 24, 2026",
+      eventStatus: "active",
+      slug: "africa-energy-outlook",
+      title: "Africa Energy Outlook 2026",
+      location: "Johannesburg, South Africa",
+      externalLink: "https://energy.eventhive.ng",
+      pic1: "/images/events/event-pics/power-1.png",
+      pic2: "/images/events/event-pics/power-2.png",
+      pic3: "/images/events/event-pics/power-3.png",
+      majorDesc: `
+        <p>
+          Africa Energy Outlook is a platform for stakeholders across power, renewables, gas, and infrastructure to evaluate investment priorities and policy directions shaping Africa’s energy transition.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          Hosted in Johannesburg, the event supports cross-border collaboration, project development, and investor engagement.
+        </p>
+      `,
+      whyParticipate: [
+        "Engage with investors and policymakers",
+        "Explore regional energy transition opportunities",
+        "Build partnerships for projects and financing",
+        "Gain insights on market and technology trends",
+      ],
+    },
+    {
+      banner: "/images/events/banner/payments.jpg",
+      event: "Payments Live",
+      eventMonth: "June",
+      eventDate: "June 25, 2026",
+      eventStatus: "active",
+      slug: "payments-live",
+      title: "Payments Live 2026",
+      location: "Johannesburg, South Africa",
+      externalLink: "https://payments.eventhive.ng",
+      pic1: "/images/events/event-pics/fintech-1.png",
+      pic2: "/images/events/event-pics/fintech-2.png",
+      pic3: "/images/events/event-pics/fintech-3.png",
+      majorDesc: `
+        <p>
+          Payments Live brings together payment networks, banks, fintechs, and regulators to discuss interoperability, rails modernization, fraud, and cross-border payments.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          The event connects industry leaders to accelerate collaboration and innovation across the payments ecosystem.
+        </p>
+      `,
+      whyParticipate: [
+        "Connect with payment leaders and decision makers",
+        "Explore partnerships across rails and infrastructure",
+        "Learn best practices in risk and fraud prevention",
+        "Showcase solutions to enterprise buyers",
+      ],
+    },
+    {
+      banner: "/images/events/banner/trade.jpg",
+      event: "Nigeria Trade & Manufacturing Outlook",
+      eventMonth: "August",
+      eventDate: "August 12, 2026",
+      eventStatus: "active",
+      slug: "nigeria-trade-manufacturing-outlook",
+      title: "Nigeria Trade & Manufacturing Outlook 2026",
+      location: "Lagos, Nigeria",
+      externalLink: "https://trade.eventhive.ng",
+      pic1: "/images/events/event-pics/economy-1.png",
+      pic2: "/images/events/event-pics/economy-2.png",
+      pic3: "/images/events/event-pics/economy-3.png",
+      majorDesc: `
+        <p>
+          Nigeria Trade &amp; Manufacturing Outlook convenes stakeholders across industry, logistics, trade facilitation, and policy to discuss competitiveness and growth.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          The event explores trade policy, manufacturing value chains, infrastructure, and investment opportunities across Nigeria.
+        </p>
+      `,
+      whyParticipate: [
+        "Connect with industry leaders and policymakers",
+        "Explore supply chain and trade opportunities",
+        "Understand regulatory updates and market outlook",
+        "Build partnerships for expansion and growth",
+      ],
+    },
+    {
+      banner: "/images/events/banner/pevc.jpg",
+      event: "Nigeria PE/Venture Capital Outlook",
+      eventMonth: "September",
+      eventDate: "September 10, 2026",
+      eventStatus: "active",
+      slug: "nigeria-pe-vc-outlook",
+      title: "Nigeria PE/Venture Capital Outlook 2026",
+      location: "Lagos, Nigeria",
+      externalLink: "https://pevc.eventhive.ng",
+      pic1: "/images/events/event-pics/fintech-1.png",
+      pic2: "/images/events/event-pics/fintech-2.png",
+      pic3: "/images/events/event-pics/fintech-3.png",
+      majorDesc: `
+        <p>
+          Nigeria PE/Venture Capital Outlook brings together investors, fund managers, founders, and corporates to discuss deal flow, exits, and capital formation.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          Delegates explore investment themes and strategies shaping Nigeria’s private capital markets.
+        </p>
+      `,
+      whyParticipate: [
+        "Meet leading investors and fund managers",
+        "Explore capital raising and partnership opportunities",
+        "Learn about market trends and exit dynamics",
+        "Network with high-growth founders and corporates",
+      ],
+    },
+    {
+      banner: "/images/events/banner/aviation.jpg",
+      event: "Nigeria Aviation Forum",
+      eventMonth: "September",
+      eventDate: "September 24, 2026",
+      eventStatus: "active",
+      slug: "nigeria-aviation-forum",
+      title: "Nigeria Aviation Forum 2026",
+      location: "Lagos, Nigeria",
+      externalLink: "https://aviation.eventhive.ng",
+      pic1: "/images/events/event-pics/economy-1.png",
+      pic2: "/images/events/event-pics/economy-2.png",
+      pic3: "/images/events/event-pics/economy-3.png",
+      majorDesc: `
+        <p>
+          Nigeria Aviation Forum convenes airlines, airports, regulators, and service providers to discuss infrastructure, safety, financing, and operational excellence.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          The forum supports strategic collaboration across Nigeria’s aviation sector with a focus on growth and modernization.
+        </p>
+      `,
+      whyParticipate: [
+        "Engage with key aviation stakeholders",
+        "Explore partnerships and investment opportunities",
+        "Understand regulatory and operational priorities",
+        "Network with decision makers across the value chain",
+      ],
+    },
+    {
+      banner: "/images/events/banner/east-africa-tech.jpg",
+      event: "East Africa Tech Forum",
+      eventMonth: "November",
+      eventDate: "November 05, 2026",
+      eventStatus: "active",
+      slug: "east-africa-tech-forum",
+      title: "East Africa Tech Forum 2026",
+      location: "Nairobi, Kenya",
+      externalLink: "https://ea.eventhive.ng",
+      pic1: "/images/events/event-pics/atf-1.jpg",
+      pic2: "/images/events/event-pics/atf-2.jpg",
+      pic3: "/images/events/event-pics/atf-3.jpg",
+      majorDesc: `
+        <p>
+          East Africa Tech Forum connects founders, investors, corporates, and regulators to accelerate collaboration and investment across East Africa’s technology ecosystem.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          Hosted in Nairobi, the forum spotlights innovation, scaling, and ecosystem development across the region.
+        </p>
+      `,
+      whyParticipate: [
+        "Connect with East Africa’s tech leaders",
+        "Explore funding and partnership opportunities",
+        "Learn from market insights and case studies",
+        "Showcase solutions to key stakeholders",
+      ],
+    },
+    {
+      banner: "/images/events/banner/abuja-re.jpg",
+      event: "Abuja Real Estate Fest",
+      eventMonth: "November",
+      eventDate: "November 19, 2026",
+      eventStatus: "active",
+      slug: "abuja-real-estate-fest",
+      title: "Abuja Real Estate Fest 2026",
+      location: "Abuja, Nigeria",
+      externalLink: "https://abuja.eventhive.ng",
+      pic1: "/images/events/event-pics/re-1.png",
+      pic2: "/images/events/event-pics/re-2.png",
+      pic3: "/images/events/event-pics/re-3.png",
+      majorDesc: `
+        <p>
+          Abuja Real Estate Fest convenes developers, investors, financiers, and regulators to explore opportunities and challenges within Nigeria’s property market with a focus on the FCT.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          The event combines conferences and exhibitions, enabling stakeholders to network, learn, and transact.
+        </p>
+      `,
+      whyParticipate: [
+        "Network with leading property stakeholders",
+        "Showcase projects and solutions to buyers and investors",
+        "Access market insights and policy discussions",
+        "Build partnerships for deal making and growth",
+      ],
+    },
   ],
 };
 
-data.blogData.info = data.blogPageData;
-data.eventData.info = data.eventPageData;
+data.blogData.info = data.blogPageData; // No ambiguity or sort needed here; direct assignment
+data.eventData.info = sortEventsByOccurrence(data.eventPageData);
 
 export default data;

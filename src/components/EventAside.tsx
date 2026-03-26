@@ -38,7 +38,7 @@ const EventAside = ({
         </p>
 
         <div className="buttons">
-          <a href={selected.extLink} className="btn">
+          <a href={selected.externalLink} className="btn">
             <Icon icon="fa-solid:link" /> Visit Site
           </a>
           <a href="#" className="btn">

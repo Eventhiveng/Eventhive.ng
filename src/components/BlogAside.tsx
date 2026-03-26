@@ -3,9 +3,11 @@ import datum from "@/util/data";
 import { BlogPageData } from "@/util/types";
 import Link from "next/link";
 import Image from "next/image";
+import { sortEventsByOccurrence } from "@/util/eventSort";
 
 const BlogAside = ({ data }: { data: BlogPageData[] }) => {
   const { eventPageData } = datum;
+  const sortedEvents = sortEventsByOccurrence(eventPageData);
   return (
     <aside className="blog-aside">
       <div className="top">
@@ -56,7 +58,7 @@ const BlogAside = ({ data }: { data: BlogPageData[] }) => {
       <div className="bottom">
         <h4 className="black-sec">Visit Our Events</h4>
         <ul className="event-page-links">
-          {eventPageData?.map((event, index) => (
+          {sortedEvents?.map((event, index) => (
             <li key={index}>
               <Link href={`/events/${event?.slug}`}>
                 <Icon icon="flowbite:caret-right-solid" />

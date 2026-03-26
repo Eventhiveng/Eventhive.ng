@@ -1,20 +1,29 @@
 import Marquee from "react-fast-marquee";
+import data from "@/util/data";
+import { getNextUpcomingEvent } from "@/util/eventSort";
 
 const MarqueeBanner = () => {
+  const nextEvent = getNextUpcomingEvent(
+    data.eventPageData.filter((e) => e.eventStatus === "active")
+  );
+  const nextEventText = nextEvent
+    ? `Upcoming event: ${nextEvent.event} (${nextEvent.eventDate}).`
+    : "Upcoming event: TBA.";
+
   const marqueeData = [
     {
       ann: "Developing Africa's Businesses via face-to-face events",
-      upcoming: "Upcoming event: Lagos Tech Fest.",
+      upcoming: nextEventText,
       icon: "favicon.ico",
     },
     {
       ann: "Developing Africa's Businesses via face-to-face events",
-      upcoming: "Upcoming event: Lagos Tech Fest.",
+      upcoming: nextEventText,
       icon: "favicon.ico",
     },
     {
       ann: "Developing Africa's Businesses via face-to-face events",
-      upcoming: "Upcoming event: Lagos Tech Fest.",
+      upcoming: nextEventText,
       icon: "favicon.ico",
     },
   ];

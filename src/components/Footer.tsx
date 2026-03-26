@@ -1,9 +1,11 @@
 import { Icon } from "@iconify/react";
 import data from "@/util/data";
 import Link from "next/link";
+import { sortEventsByOccurrence } from "@/util/eventSort";
 
 const Footer = () => {
   const { eventPageData } = data;
+  const sortedEvents = sortEventsByOccurrence(eventPageData);
   return (
     <footer id="footer">
       <div className="footer-container">
@@ -60,9 +62,9 @@ const Footer = () => {
               </div>
               <div className="event-links">
                 <ul>
-                  {eventPageData.map((event, index) => (
+                  {sortedEvents.map((event, index) => (
                     <li key={index}>
-                      <Link href={event.extLink}>
+                      <Link href={event.externalLink}>
                         <Icon icon="mingcute:right-line" /> {event.event}
                       </Link>
                     </li>
