@@ -248,7 +248,7 @@ export const blogPageData: BlogPageData[] = [
             The expected outcome of the conference and exhibition is to help industry stakeholders network, learn and define the future of the energy ecosystem towards implementing policies that promote growth in Nigeria and Africa at large.
         </blockquote>
       `,
-    createdAt: "2026-03-27",
+    createdAt: "2022-08-25",
   },
   {
     id: 6,
@@ -368,10 +368,89 @@ export const blogPageData: BlogPageData[] = [
       "Africa’s leading B2BC event servicing company, Eventhive, has announced its partnership with Prestmit as the Headline sponsor of its Inaugral Crypto & DEFI Forum scheduled to be held on Wednesday,11th of June, 2025 at Oriental Hotel, Victoria Island Lagos, Nigeria.",
     description: `
     <p>
-      
+      <strong>Africa’s leading B2BC event servicing company, Eventhive, has announced its partnership with Prestmit as the Headline sponsor of its Inaugral Crypto & DEFI Forum scheduled to be held on Wednesday,11th of June, 2025 at Oriental Hotel, Victoria Island Lagos, Nigeria.</strong>
+      <br><br>
+      With SEC licensing crypto exchange companies in Nigeria, attention now shifts from crypto’s speculative nature to its utility value, real-world applications for blockchain are gaining prominence.
+      <br><br>
+      Questions abound regarding blockchain’s role in financial markets, the potential of Bitcoin ETFs, and the path toward comprehensive industry regulation.
+      <br><br>
+      Crypto and DEFI Forum will convene Nigeria’s largest gathering for traditional financial players, regulators, policymakers, and digital asset innovators.
+      <br><br>
+      Industry players will engage in keynote interviews, networking sessions, and debates, exploring strategies for navigating institutional tokenization, expanding blockchain applications, and addressing regulatory challenges.
+      <br><br>
+      In a statement by <strong>Jamiu Ijaodola, CEO at Eventhive, said</strong>: ‘At the core of our Eventhive, we spotlight opportunities across various markets through our B2B2C event, we are thrilled to launch our inaugural crypto event as this is an industry that cannot be overlooked considering its potential impact on Nigeria’s digital finance market, we are mostly excited to be partnering with Prestmit as the Headline Sponsor of the event.’.
+      <br><br>
+      Speaking ahead of Prestmit’ participation as the Headline sponsor of the Crypto & DEFI Forum, Ayo Adewuyi, Head of Product, Prestmit said “At Prestmit, we believe the future of finance in Africa is not just digital. It is decentralized, accessible, and deeply practical. We are proud to headline this conversation with Eventhive, and we are ready to unlocking more avenues and opportunities to shape the next chapter of blockchain in Africa, to the world.”
+      <br><br>
+      Crypto & DEFI Forum will explore conversations across eight content tracks, focusing on Blockchain & Web3 Innovations, Policy & Regulation, Market trends and investments, financial inclusion and accessibility, security and risk management, building the ecosystem, education and awareness, use cases and applications.
+      <br><br>
+      Crypto & DEFI Forum will equally provide an unrivaled opportunity for crypto solutions providers to showcase their offerings to industry leaders, investors, and end-users. For more information about the event or to discuss partnership opportunities, please visit <a className="text-pry" href="https://crypto.eventhive.ng/">https://crypto.eventhive.ng</a>.
     </p>
-    
     `,
     createdAt: "2025-06-03",
+  },
+  {
+    id: 10,
+    imgLink: "/images/blog/uk-africa-business-outlook.jpg",
+    title:
+      "Eventhive partners Addleshaw Goddard as UK-Africa Business Outlook 2025 returns to London",
+    author: "Eventhive",
+    slug: "eventhive-partners-addleshaw-goddard-as-uk-africa-business-outlook-2025-returns-to-london",
+    excerpt:
+      "Africa’s leading B2BC event servicing company, Eventhive, has announced the launch of the 4th edition of UK-Africa Business Outlook scheduled to be held on Wednesday, 26th of March, 2025 in London, This year’s edition of the event is holding in partnership with Addleshaw Goddard as the Host Partner.",
+    description: `
+    <p>
+      Africa’s leading B2BC event servicing company, Eventhive, has announced the launch of the 4th edition of UK-Africa Business Outlook scheduled to be held on Wednesday, 26th of March, 2025 in London, This year’s edition of the event is holding in partnership with Addleshaw Goddard as the Host Partner.
+      <br><br>
+      UK-Africa Business Outlook fourth edition will focus on spotlighting opportunities across Africa, and UK trade corridor.
+      <br><br>
+      The 2025 edition will explore means of connecting UK investors with Africa’s business leaders, with the key objectives of fostering partnerships, promoting market expansion, and accelerating bilateral and economic trade relationships across the African Continent.
+      <br><br>
+      The event will play host to key representatives from Africa Finance Corporation, UK Export Finance, EQ Development, SMBC Bank, Africa Merchant Capital, Africa Infrastructure Development Association, Cross Boundary, VertoFX, Sango Capital, ODBA, Standard Bank, GKB Ventures, Connect Africa Network and be part of the conversations that will influence the future of trade and investment.
+      <br><br>
+      The Chief Executive Officer at Eventhive, Jamiu Ijaodola, said expressed his delight at renewing the partnership with Addleshaw Goddard as the host partner for the 4th edition of the UK-Africa Business Outlook in London
+      <br><br>
+      He said Africa has huge infrastructure financing needs, adding that traditional financing models have not been able to meet Africa’s developmental needs.
+      <br><br>
+      Ijaodola stressed that there are clear cut need for innovative financing models to help close the gap, as recent data indicates Africa’s contribution to global trade is falling.
+      <br><br>
+      He said the UK-Africa Business Outlook event will bring these issues to fore, bringing together some of the brightest minds across Africa and the UK.
+      <br><br>
+      “UK-Africa Business Outlook will explore conversations across UK-Africa Trade partnership, financing models for Africa’s future, unlocking growth opportunities across Africa’s trade and venture capital investments in Africa.The expected outcome of the event is to help strengthen the trade and investment relationship between the UK and Africa,” he stated.
+    </p>
+    `,
+    createdAt: "2025-03-20",
+  },
+  {
+    id: 11,
+    imgLink: "/images/blog/eventhive-names-toyota-by-cfao.jpg",
+    title:
+      "Eventhive Names Toyota By CFAO As Platinum Sponsor of 7th Lagos Transport Fest",
+    author: "Eventhive",
+    slug: "eventhive-names-toyota-by-cfao-as-platinum-sponsor-of-7th-lagos-transport-fest",
+    excerpt:
+      "The Global B2B2C event servicing company, Eventhive, has announced the seventh annual Lagos Transport Fest, with Toyota by CFAO as its Platinum Sponsor.",
+    description: `
+    <p>
+      The Global B2B2C event servicing company, Eventhive, has announced the seventh annual Lagos Transport Fest, with Toyota by CFAO as its Platinum Sponsor.
+      <br><br>
+      The Lagos Transport Fest gathers stakeholders from Nigeria’s road, rail, maritime, logistics and supply chain sectors to discuss the industry’s future, address key developments and find opportunities.
+      <br><br>
+      The event, featuring panel sessions, chats, exhibitions and networking, is a platform for collaboration among industry players, investors and government regulators. 
+      <br><br>
+      It is dubbed one of the nation’s most influential platforms for connecting, sharing ideas, and exploring solutions for Nigeria’s transport system.
+      <br><br>
+      Organisers of the event announced this year’s theme as ‘The Nexus of Mobility: Innovating Finance and Technology for Nigeria’s Multi-Modal Future’, as stakeholders will be converging on the Oriental Hotel in Lagos by December 9 to chart a way forward in the industry. 
+      <br><br>
+      Commenting on the partnership, CEO and Founder of Eventhive, Jamiu Ijaodola, said: “We are absolutely thrilled to launch the 7th edition of the Lagos Transport Fest. This year’s theme is a direct call to action. The future of Nigeria’s economic growth is intrinsically tied to the efficiency of its transport sector, and that efficiency is driven by the convergence of smart technology and strategic finance.
+      <br><br>
+      “Our partnership with Toyota by CFAO as the Platinum Sponsor is a testament to this vision. Their leading position in the automotive sector and commitment to sustainable mobility perfectly aligns with our goal to move the conversation from dialogue to tangible, implementable solutions. We look forward to a gathering that will not only redefine road, rail and maritime strategies but will also unlock billions in investment and innovation for a truly multi-modal Nigerian future.”
+      <br><br>
+      Also speaking, the Managing Director of Toyota by CFAO, Boye Ajayi, reiterated the organisation’s dedication to driving mobility innovation and supporting a transport environment that can elevate Nigeria’s economy.
+      <br><br>
+      “Toyota by CFAO’s partnership with the Lagos Transport Fest is an extension of our commitment to shaping a more efficient, sustainable, and technology-driven transport landscape in Nigeria. This event aligns with our vision of enabling safer journeys and creating mobility solutions that meet the evolving needs of Nigerians,” Ajayi said.,
+    </p>
+    `,
+    createdAt: "2025-11-20",
   },
 ];

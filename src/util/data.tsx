@@ -5,6 +5,10 @@ import { blogPageData } from "./blogData";
 
 // const sts = () => Math.ceil(window.innerWidth / 150);
 
+const blogPageDataByDateDesc = [...blogPageData].sort((a, b) =>
+  b.createdAt.localeCompare(a.createdAt)
+);
+
 const data: DataStore = {
   sectorData: [
     {
@@ -1886,7 +1890,8 @@ const data: DataStore = {
   ],
 };
 
-data.blogData.info = data.blogPageData; // No ambiguity or sort needed here; direct assignment
+data.blogPageData = blogPageDataByDateDesc;
+data.blogData.info = data.blogPageData; // Keep carousel in sync with blog list order
 data.eventData.info = sortActiveEventsByOccurrence(data.eventPageData);
 
 export default data;
