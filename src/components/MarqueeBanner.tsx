@@ -1,11 +1,9 @@
 import Marquee from "react-fast-marquee";
 import data from "@/util/data";
-import { getNextUpcomingEvent } from "@/util/eventSort";
+import { filterActiveEvents, getNextUpcomingEvent } from "@/util/eventSort";
 
 const MarqueeBanner = () => {
-  const nextEvent = getNextUpcomingEvent(
-    data.eventPageData.filter((e) => e.eventStatus === "active")
-  );
+  const nextEvent = getNextUpcomingEvent(filterActiveEvents(data.eventPageData));
   const nextEventText = nextEvent
     ? `Upcoming event: ${nextEvent.event} (${nextEvent.eventDate}).`
     : "Upcoming event: TBA.";

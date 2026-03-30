@@ -1,11 +1,11 @@
 import { Icon } from "@iconify/react";
 import data from "@/util/data";
 import Link from "next/link";
-import { sortEventsByOccurrence } from "@/util/eventSort";
+import { sortActiveEventsByOccurrence } from "@/util/eventSort";
 
 const Footer = () => {
   const { eventPageData } = data;
-  const sortedEvents = sortEventsByOccurrence(eventPageData);
+  const sortedEvents = sortActiveEventsByOccurrence(eventPageData);
   return (
     <footer id="footer">
       <div className="footer-container">

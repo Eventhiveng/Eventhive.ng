@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import data from "@/util/data";
+import { filterActiveEvents } from "@/util/eventSort";
 
 export const dynamic = "force-static";
 
@@ -50,13 +51,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog pages
   const blogPages = blogPageData.map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,
-    lastModified: new Date(),
+    lastModified: new Date(blog.createdAt),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
   // Event pages
-  const eventPages = eventPageData.map((event) => ({
+  const eventPages = filterActiveEvents(eventPageData).map((event) => ({
     url: `${baseUrl}/events/${event.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,

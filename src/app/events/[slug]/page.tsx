@@ -2,7 +2,7 @@ import PageHeader from "@/components/PageHeader";
 import EventAside from "@/components/EventAside";
 import EventContent from "@/components/EventContent";
 import data from "@/util/data";
-import { sortEventsByOccurrence } from "@/util/eventSort";
+import { sortActiveEventsByOccurrence } from "@/util/eventSort";
 // import { useParams } from "next/navigation";
 
 export const metadata = {
@@ -15,7 +15,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params; // Use useParams from next/navigation
 
   const { eventPageData } = data;
-  const sortedEvents = sortEventsByOccurrence(eventPageData);
+  const sortedEvents = sortActiveEventsByOccurrence(eventPageData);
   const selectedEvent = eventPageData.find((event) => event.slug === slug);
 
   if (!selectedEvent) {

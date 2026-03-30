@@ -13,6 +13,8 @@ export type BlogPageData = {
   slug: string;
   excerpt: string;
   description: string;
+  /** ISO 8601 date (e.g. YYYY-MM-DD) — parse with `new Date(createdAt)` when you need a Date */
+  createdAt: string;
 };
 
 // eventshedule, eventtimeline, eventstatus

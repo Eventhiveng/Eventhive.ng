@@ -1,6 +1,6 @@
 import { SampleNextArrow, SamplePrevArrow } from "./arrow";
 import { DataStore } from "./types";
-import { sortEventsByOccurrence } from "./eventSort";
+import { sortActiveEventsByOccurrence } from "./eventSort";
 import { blogPageData } from "./blogData";
 
 // const sts = () => Math.ceil(window.innerWidth / 150);
@@ -1010,7 +1010,7 @@ const data: DataStore = {
           Mastercard,</b>	 said,	 "This	 year,	 Mastercard	 proudly	 takes	 center	 stage	 as	 the	 Platinum	 Sponsor	 of	
           Lagos	Tech	Fest,	solidifying	our	commitment	to	spearheading	innovation	and	digital	transformation	
           in	 Africa's	 vibrant	 tech	 ecosystem.	 At	 the	 event,	 we	 aim	 to	 foster	 collaboration,	 showcase	 digital	
-          payment	advancements,	and	contribute	to	financial	and	digital	inclusion	efforts—empowering	one	
+          payment	advancements,	and	contribute	to financial	and	digital	inclusion	efforts—empowering	one	
           billion	people,	50	million	small	businesses,	with	a	focus	on	uplifting	25	million	women	entrepreneurs.	
           Our	 commitment	 extends	 beyond	 the	 event,	 as	 we	 contribute	 to	 propelling	 the	 Nigeria’s	 tech	
           landscape	to	new	heights.
@@ -1887,6 +1887,6 @@ const data: DataStore = {
 };
 
 data.blogData.info = data.blogPageData; // No ambiguity or sort needed here; direct assignment
-data.eventData.info = sortEventsByOccurrence(data.eventPageData);
+data.eventData.info = sortActiveEventsByOccurrence(data.eventPageData);
 
 export default data;

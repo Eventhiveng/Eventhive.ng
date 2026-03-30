@@ -55,6 +55,16 @@ export function parseEventStartDate(event: EventPageData): Date | null {
   return Number.isNaN(fallback.getTime()) ? null : fallback;
 }
 
+export function filterActiveEvents(events: EventPageData[]): EventPageData[] {
+  return events.filter((e) => e.eventStatus === "active");
+}
+
+export function sortActiveEventsByOccurrence(
+  events: EventPageData[]
+): EventPageData[] {
+  return sortEventsByOccurrence(filterActiveEvents(events));
+}
+
 export function sortEventsByOccurrence(events: EventPageData[]): EventPageData[] {
   return [...events].sort((a, b) => {
     const da = parseEventStartDate(a);

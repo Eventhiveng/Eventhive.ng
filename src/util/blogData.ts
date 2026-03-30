@@ -61,6 +61,7 @@ export const blogPageData: BlogPageData[] = [
             </p>
         </div>
       `,
+    createdAt: "2024-12-03",
   },
   {
     id: 2,
@@ -135,6 +136,7 @@ export const blogPageData: BlogPageData[] = [
             </p>
         </div>
       `,
+    createdAt: "2022-12-10",
   },
   {
     id: 3,
@@ -178,6 +180,7 @@ export const blogPageData: BlogPageData[] = [
             Interested delegates can register to attend via <b><a href="https://economy.eventhive.ng/">economy.eventhive.ng</a></b>.
         </blockquote>
       `,
+    createdAt: "2023-01-10",
   },
   {
     id: 4,
@@ -215,6 +218,7 @@ export const blogPageData: BlogPageData[] = [
             We at <b><a href="https://www.interswitchgroup.com/">Interswitch</a></b> remain committed to supporting and participating at platforms that share our vision to drive greater financial inclusion and prosperity across Nigeria and indeed, Africa.
         </blockquote>
       `,
+    createdAt: "2022-07-20",
   },
   {
     id: 5,
@@ -244,6 +248,7 @@ export const blogPageData: BlogPageData[] = [
             The expected outcome of the conference and exhibition is to help industry stakeholders network, learn and define the future of the energy ecosystem towards implementing policies that promote growth in Nigeria and Africa at large.
         </blockquote>
       `,
+    createdAt: "2026-03-27",
   },
   {
     id: 6,
@@ -271,7 +276,6 @@ export const blogPageData: BlogPageData[] = [
           This year’s edition is holding in collaboration with Mastercard as a Platinum Partner at the event, signalling the company’s commitment to connect and power an inclusive, digital economy that benefits everyone through innovations, solutions, and especially, partnerships with platforms and conferences that not only facilitate knowledge sharing, but also fuel the growth of Nigeria’s rapidly growing technology landscape.
         </p>
         <br>
-        <p>
         <p> Speaking about this year’s edition of the event, <b>Founder/CEO of Eventhive, Jamiu Ijaodola,</b> said</p>
         <blockquote>
           “Considering their leading position in the technology industry and their documented efforts to fostering its growth, we are delighted to have Mastercard supporting the 4th edition of the Lagos Tech Fest. The experience of attendees and partners will now be significantly advanced, as we are introducing new activities which will include workshops, an executive lounge, an after-party and an expansive exhibition platform offering these companies and founders the opportunity to showcase their capabilities and successes in front of key companies, to scale their brands’ growth and access unrivaled market penetration.”
@@ -285,6 +289,89 @@ export const blogPageData: BlogPageData[] = [
           You can book your pass and learn more about the event here <a className="text-pry" href="https://tech.eventhive.ng/">Lagos Tech Fest</a>
         </p>
       `,
+    createdAt: "2024-02-10",
+  },
+  {
+    id: 7,
+    imgLink: "/images/blog/eventhive-set-to-host.webp",
+    title:
+      "Eventhive Set to Host 3,000+ Global Attendees at 6th Lagos Tech Fest",
+    author: "Eventhive",
+    slug: "eventhive-set-to-host-3000-global-attendees-at-6th-lagos-tech-fest",
+    excerpt:
+      "Eventhive, Africa’s leading B2B2C event servicing company with a strong portfolio across key sectors and six major cities, is thrilled to announce the sixth edition of its flagship event, the Lagos Tech Fest.",
+    description: `
+    <p>
+      Eventhive, Africa’s leading B2B2C event servicing company with a strong portfolio across key sectors and six major cities, is thrilled to announce the sixth edition of its flagship event, the Lagos Tech Fest.
+      <br><br>
+      The event is part of the Africa Tech Series, Eventhive’s pan-African platform for technology and innovation dialogue, which hosts fintech-focused gatherings in Lagos, London, Nairobi, Kigali, and Johannesburg.
+      <br><br>
+      The Lagos Tech Fest returns to convene tech leaders, emerging startups, innovators, investors, global tech giants, and government representatives to define the future of Nigeria’s tech ecosystem, address key developments, and uncover countless opportunities within the Nigerian and African tech market.
+      <br><br>
+      Combining conferences, roundtables, an industry party, live pitch events, exhibitions, and networking, the event annually creates a veritable platform that seeks to drive investment into the ecosystem. 
+      <br><br>
+      The 2026 edition promises to be the largest yet, with projections of over 3,000 attendees, 70 industry-leading speakers, and representation from more than 1,000 companies across 25 countries, supported by over 80 sponsors and 40 media partners. This year, the event will feature four distinct stages, each designed to cater to diverse interests and facilitate deeper, focused discussions: the Money Stage, Off the Record Stage, Innovation Stage, and Founder Stage. 
+      <br><br>
+      The Lagos Tech Fest 2026 is set to take place across three major venues in Lagos: Four Points by Sheraton and The Garden in Ikoyi/VI on February 17, 2026, and the Landmark Event Centre in Victoria Island, Lagos, on February 18, 2026. Ahead of the main event, the annual Nigeria Tech Leadership Roundtable returns on February 17, 2026, bringing together exclusively C-level executives and government representatives at Four Points by Sheraton, VI, Lagos, for high-level engagement to chart the future of the ecosystem. 
+      <br><br>
+      Key highlights also include the Nigeria State’s Pavilion, which will showcase the vibrant tech ecosystems across multiple Nigerian cities, and a Larger Expo focused on showcasing transformative solutions defining the next decade of Nigeria’s tech ecosystem. An industry party, After Dark Hours, will provide a dedicated networking session at The Garden, Ikoyi, Lagos, on the evening of February 17, 2026.
+      <br><br>  
+      Commenting on the launch of the sixth edition, Jamiu Ijaodola, CEO of Eventhive, said:  “Lagos Tech Fest is the annual engine room where the blueprint for Nigeria’s digital future is drawn. As we launch our sixth edition, we are seeing unprecedented convergence of finance, talent, and innovation. The introduction of our four focused stages will ensure every participant leaves with actionable insights and valuable connections. We are committed to not only hosting Nigeria’s best but also creating the crucial platform that drives billions of dollars in investment and collaboration needed to solidify Nigeria’s position as Africa’s undisputed tech leader.”
+      <br><br>
+      The 2026 edition boasts a powerhouse line-up of confirmed speakers, including Uzoma Dozie (CEO, Sparkle), Tayo Oviosu (CEO, Paga), Olumide Balogun (Director, West Africa, Google), Tosin Faniro-Dada (Partner, Breega), Takuma Terakubo (CEO & General Partner, Uncovered Fund Inc.), Kazeem Tewogbade (CEO, Bluechip Technologies), Emeka Ajene (Founder & CEO, Afridigest), Ojoma Ochai (MD, CcHub Africa), and Adedeji Olowe (Founder, Lendsqr).
+      <br><br>
+      Others include Napa Onwusah (Managing Partner, PlacidCode Labs), Dr. Abasi Ene-Obong (CEO, Syndicate Bio), Lexi Novitske (General Partner, Norrsken22), Victoria Fabunmi (National Coordinator, Nigerian Digital Innovation, NITDA), Olaniyi Yusuf (Managing Partner, Verraki Partners), Abdelaziz Saidu (Country General Manager, Nigeria & Ghana, Cisco), Dr Ayotunde Coker (CEO, Open Access Data Centers), Adekanbi Oluwaseun (Growth Lead, Cleva), Chichi Nwoko (CEO, What Media Group), Francis Sani (Programme Director, 3MTT), Adesuwa Omoruyi (Co-founder, Accrue), and Akpor Ikogho (Managing Partner, Mark Renee LP).
+      <br><br>
+      The event is made possible by the strong support of confirmed sponsors, including Odoo, Open Access Data Centre, Paga, Tetrad, Cleva, Keystone Bank, Accrue, Radiant Money, Radiant Digilog, and Mark Renee LP.
+      <br><br>
+      For more information about Lagos Tech Fest or to explore partnership opportunities, please visit <a className="text-pry" href="https://tech.eventhive.ng/">https://tech.eventhive.ng</a>. 
+    </p>
+
+
+    `,
+    createdAt: "2025-12-24",
+  },
+  {
+    id: 8,
+    imgLink: "/images/blog/eventhive-x-luno.jpg",
+    title: "Luno joins Crypto & DEFI Forum 2025 as Platinum Sponsor",
+    author: "Eventhive",
+    slug: "luno-joins-crypto-defi-forum-2025-as-platinum-sponsor",
+    excerpt:
+      "Africa’s leading B2BC event servicing company, Eventhive, has announced its partnership with Luno as the Platinum sponsor of its Inaugral Crypto & DEFI Forum scheduled to be held on Wednesday,11th of June, 2025 at Oriental Hotel, Victoria Island Lagos, Nigeria.",
+    description: `
+    <p>
+      Africa’s leading B2BC event servicing company, Eventhive, has announced its partnership with Luno as the Platinum sponsor of its Inaugral Crypto & DEFI Forum scheduled to be held on Wednesday,11th of June, 2025 at Oriental Hotel, Victoria Island Lagos, Nigeria.
+      <br><br>
+      With SEC licensing crypto exchange companies in Nigeria, attention now shifts from crypto’s speculative nature to its utility value, real-world applications for blockchain are gaining prominence. Questions abound regarding blockchain’s role in financial markets, the potential of Bitcoin ETFs, and the path toward comprehensive industry regulation.
+      <br><br>
+      Crypto and DEFI Forum will convene Nigeria’s largest gathering for traditional financial players, regulators, policymakers, and digital asset innovators. Industry players will engage in keynote interviews, networking sessions, and debates, exploring strategies for navigating institutional tokenization, expanding blockchain applications, and addressing regulatory challenges.
+      <br><br>
+      <stong>In a statement by Jamiu Ijaodola, CEO at Eventhive, He said</stong> ‘At the core of our Eventhive, we spotlight opportunities across various markets through our B2B2C event, we are thrilled to launch our inaugural crypto event as this is an industry that cannot be overlooked considering its potential impact on Nigeria’s digital finance market, we are mostly excited to be partnering with Luno as the Platinum Sponsor of the event.’.
+      <br><br>
+      Speaking ahead of Luno’ participation as the Platinum sponsor of the Crypto & DEFI Forum, <strong>Ayotunde Alabi, CEO, Luno Nigeria said</strong> “Nigeria is at a critical juncture when it comes to decentralised finance – will it continue on its path to being a world leader when it comes to adoption and innovation? Luno is thrilled to support this important new event, with an array of huge industry names set to address key challenges and explore emerging opportunities in order to shape the future of crypto and digital assets in the country.”
+      <br><br>
+      Crypto & DEFI Forum will explore conversations across eight content tracks, focusing on Blockchain & Web3 Innovations, Policy & Regulation, Market trends and investments, financial inclusion and accessibility, security and risk management, building the ecosystem, education and awareness, use cases and applications.
+      <br><br>
+      Crypto & DEFI Forum will equally provide an unrivaled opportunity for crypto solutions providers to showcase their offerings to industry leaders, investors, and end-users. For more information about the event or to discuss partnership opportunities, please visit here: <a className="text-pry" href="https://crypto.eventhive.ng/">https://crypto.eventhive.ng</a>.
+    </p>
+    `,
+    createdAt: "2025-06-05",
+  },
+  {
+    id: 9,
+    imgLink: "/images/blog/crypto-defi-forum-by-prestmit.jpg",
+    title: "Prestmit to headline Crypto & DEFI Forum 2025 in Lagos",
+    author: "Eventhive",
+    slug: "prestmit-to-headline-crypto-defi-forum-2025-in-lagos",
+    excerpt:
+      "Africa’s leading B2BC event servicing company, Eventhive, has announced its partnership with Prestmit as the Headline sponsor of its Inaugral Crypto & DEFI Forum scheduled to be held on Wednesday,11th of June, 2025 at Oriental Hotel, Victoria Island Lagos, Nigeria.",
+    description: `
+    <p>
+      
+    </p>
+    
+    `,
+    createdAt: "2025-06-03",
   },
 ];
-
