@@ -118,6 +118,13 @@ const speakers = [
     image: "assets/images/speakers/eizu-uwaoma.png",
     linkedIn: "#",
   },
+  {
+    name: "Osariase Idubor",
+    title: "CEO,",
+    company: "Prive Living",
+    image: "assets/images/speakers/osariase-idubor.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 const attSlideOne = [
