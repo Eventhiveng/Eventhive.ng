@@ -48,7 +48,9 @@ const EventContent = ({ data }: { data: EventPageData }) => {
         <h2>
           <a href={data?.externalLink}>{data?.title}</a>
         </h2>
-        <h4 className="text-up black-sec">{data?.location}</h4>
+        <h4 className="text-up black-sec">
+          {data?.eventDate} | {data?.location}
+        </h4>
         {data && parser(data?.majorDesc)}
         <div className="image-text">
           <div className="text">{data && parser(data?.minorDesc)}</div>

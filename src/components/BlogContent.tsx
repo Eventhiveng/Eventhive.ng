@@ -1,4 +1,3 @@
-import React from "react";
 import BlogCard from "./BlogCard";
 import { BlogPageData } from "@/util/types";
 

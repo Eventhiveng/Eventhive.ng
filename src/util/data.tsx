@@ -6,7 +6,7 @@ import { blogPageData } from "./blogData";
 // const sts = () => Math.ceil(window.innerWidth / 150);
 
 const blogPageDataByDateDesc = [...blogPageData].sort((a, b) =>
-  b.createdAt.localeCompare(a.createdAt)
+  b.createdAt.localeCompare(a.createdAt),
 );
 
 const data: DataStore = {
@@ -1597,17 +1597,19 @@ const data: DataStore = {
       title: "Nigeria Solar Forum 2026",
       location: "Lagos, Nigeria",
       externalLink: "https://solar.eventhive.ng",
-      pic1: "/images/events/event-pics/power-1.png",
-      pic2: "/images/events/event-pics/power-2.png",
-      pic3: "/images/events/event-pics/power-3.png",
+      pic1: "/images/events/event-pics/solar-1.jpg",
+      pic2: "/images/events/event-pics/solar-2.jpg",
+      pic3: "/images/events/event-pics/solar-3.jpg",
       majorDesc: `
         <p>
-          Nigeria Solar Forum convenes developers, investors, regulators, and solution providers to explore the growth of solar and distributed energy solutions across Nigeria.
+         For years, Eventhive's Nigeria Power Outlook was the premier platform for shaping dialogue on Nigeria's energy sector, where policymakers, investors, and innovators met to address power challenges and unlock opportunities. Now, as Nigeria's energy priorities evolve, so does the platform. Reborn as the Nigeria Solar Forum, this event reflects the country's sharp focus on renewable energy, and specifically, on the solar revolution powering homes, industries, and communities nationwide.
         </p>
       `,
       minorDesc: `
         <p>
-          The forum combines thought leadership and networking to support project development, partnerships, and market expansion across Nigeria’s solar value chain.
+          The Nigeria Solar Forum is a strategy and solutions hub. Built on years of convening decision-makers at Nigeria Power Outlook, it provides both the market intelligence and the deal-making environment to accelerate Nigeria's clean energy transition. Nigeria has set ambitious targets: 30 GW by 2030, half from renewables, and over $9 billion projected in off-grid solar investment. This makes the country not just a market, but West Africa's most dynamic frontier for solar innovation and investment.
+          <br><br>
+          At the Forum, you'll engage with the entire solar value chain, from developers scaling commercial and industrial projects, to financiers driving bankable deals, to government agencies building enabling frameworks, and innovators redefining reliability through storage and digital solutions.
         </p>
       `,
       whyParticipate: [
