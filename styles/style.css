@@ -39,7 +39,7 @@
   left: 0;
   backdrop-filter: blur(2px);
   width: 100%;
-  top: 30px;
+  top: 20px;
   z-index: 10;
 }
 
@@ -198,7 +198,8 @@
       #000060d7
     ),
     url(/assets/section-img/hero1.jpg) no-repeat center/cover; */
-  background: linear-gradient(to top, #000060, #000060c9, #00006097),
+  background:
+    linear-gradient(to top, #000060, #000060c9, #00006097),
     url(/assets/section-img/hero1.jpg) no-repeat center/cover;
   display: flex;
   align-items: center;
@@ -684,7 +685,9 @@
 #highlight .highlight-container .slide-container .slider img {
   margin: 10px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #3e3c3c5d, inset -1px -1px 10px #31333653;
+  box-shadow:
+    1px 1px 10px #3e3c3c5d,
+    inset -1px -1px 10px #31333653;
   object-position: top;
 }
 
