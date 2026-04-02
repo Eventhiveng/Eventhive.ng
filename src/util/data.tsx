@@ -1588,7 +1588,7 @@ const data: DataStore = {
       ],
     },
     {
-      banner: "/images/events/banner/solar.jpg",
+      banner: "/images/events/banner/eventhive-banner-blue.png",
       event: "Nigeria Solar Forum",
       eventMonth: "March",
       eventDate: "March 12, 2026",

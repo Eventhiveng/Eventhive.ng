@@ -1,6 +1,7 @@
 .events {
   .events-container {
-    background: linear-gradient(#00000060, #00000060),
+    background:
+      linear-gradient(#00000060, #00000060),
       url(/images/section-img/events-bg.png) no-repeat center/cover;
     position: relative;
     // padding: 100px 0;
@@ -30,6 +31,10 @@
             .event-comp {
               position: relative;
               margin: 15px;
+
+              .image {
+                aspect-ratio: 1;
+              }
 
               .info {
                 position: absolute;
