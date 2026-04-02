@@ -113,6 +113,23 @@ h6 {
   background: var(--primary-color);
 }
 
+.modal-overlay .modal-download-agenda {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  background: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.modal-overlay .modal-download-agenda:hover {
+  opacity: 0.92;
+}
+
 /* Ticket */
 /* Popup Background */
 .popup {
@@ -151,6 +168,7 @@ h6 {
 }
 
 .popup h2 {
+  font-size: 20px;
   margin-bottom: 30px;
 }
 
