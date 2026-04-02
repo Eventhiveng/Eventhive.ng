@@ -125,6 +125,20 @@ const speakers = [
     image: "assets/images/speakers/osariase-idubor.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Akin Opatola",
+    title: "Chapter President,",
+    company: "Fiabci Nigeria",
+    image: "assets/images/speakers/akin-opatola.jpg",
+    linkedIn: "#",
+  },
+  {
+    name: "Obi Ezenwa",
+    title: "Director,",
+    company: "Skein Nigeria Limited",
+    image: "assets/images/speakers/obi-ezenwa.jpg",
+    linkedIn: "#",
+  },
 ];
 
 const attSlideOne = [
