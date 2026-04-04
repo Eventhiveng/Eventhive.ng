@@ -1041,20 +1041,22 @@ const data: DataStore = {
       title: "Nigeria Economic Breakfast Meeting 2026",
       location: "Fourpoints by Sheraton, Victoria Island, Lagos",
       externalLink: "https://economy.eventhive.ng",
-      pic1: "/images/events/event-pics/economy-1.png",
-      pic2: "/images/events/event-pics/economy-2.png",
-      pic3: "/images/events/event-pics/economy-3.png",
+      pic1: "/images/events/event-pics/economy-1.jpg",
+      pic2: "/images/events/event-pics/economy-2.jpg",
+      pic3: "/images/events/event-pics/economy-3.jpg",
       majorDesc: `
         <p>
-          The Nigeria Economic Breakfast Meeting will host C-level executives across Nigeria, providing them with an opportunity to access key insights, intelligence and data regarding the state of Nigeria’s economy, how it affects their businesses and how to navigate the situation. The event will highlight available opportunities whilst providing clear context of the economic situation in the country.
+          As Nigeria enters 2026, its economy stands at a critical inflection point, defined by ongoing reforms, macroeconomic recalibration, and renewed investor optimism. According to the World Bank (October 2025), Nigeria’s economy expanded by 3.9% year-on-year in the first half of 2025, up from 3.5% the previous year, driven by growth in services, trade, and telecommunications.
         </p>
       `,
       minorDesc: `
         <p>
-          As Nigeria settles into a new leadership, Nigeria Economic Breakfast Meeting will set the agenda for the new leadership and chart discussions on the future of Nigeria’s economy. Delegates at the breakfast meeting will be exposed to unrivaled high level B2B networking and knowledge sharing opportunities. The event is scheduled to be held on the 23rd of January, 2025 at the Four Points By Sheraton, Victoria Island, Lagos, Nigeria.
+          However, challenges persist: high inflation, exchange rates, and energy constraints continue to test business resilience. Against this backdrop, the Nigeria Economic Breakfast Meeting (NEBM) returns in 2026 as the definitive business breakfast platform where CEOs, investors, policymakers, and development partners gather to set the tone for the business year, discussing Nigeria’s reform trajectory, investment outlook, and sectoral opportunities.
+          <br><br>
+          NEBM 2026 will serve as a one-stop engagement for all sectors — energy, manufacturing, finance, agriculture, trade, real estate, digital, and infrastructure — oﬀering participants insight, connection, and collaboration opportunities to navigate and shape Nigeria’s 2026 business environment.
         </p>
         <p>
-          Nigeria Economic Breakfast Meeting is organized by Eventhive, Nigeria’s leading B2B event servicing company with event portfolios across Oil & Gas, Power, Transport, Real Estate, Tech across Nigeria, UK and the USA.
+          Beyond the discussions, the event provides an opportunity for cross-industry networking opportunities as week to bring together the most important players working across various sectors of the Nigerian economy.
         </p>
       `,
       whyParticipate: [
@@ -1075,20 +1077,22 @@ const data: DataStore = {
       title: "Nigeria Telecoms Forum 2026",
       location: "Fourpoints by Sheraton, Victoria Island, Lagos",
       externalLink: "https://ntf.eventhive.ng",
-      pic1: "/images/events/event-pics/economy-1.png",
-      pic2: "/images/events/event-pics/economy-2.png",
-      pic3: "/images/events/event-pics/economy-3.png",
+      pic1: "/images/events/event-pics/telecoms-1.jpg",
+      pic2: "/images/events/event-pics/telecoms-2.jpg",
+      pic3: "/images/events/event-pics/telecoms-3.jpg",
       majorDesc: `
         <p>
-          The Nigeria Telecoms Forum brings together key players in Nigeria’s telecommunications industry, including regulatory bodies, operators, and technology providers. This event is designed to provide a platform for sharing insights on the state of Nigeria’s telecoms sector, exploring growth opportunities, and discussing challenges that affect businesses and consumers.
+          Following a successful inaugural edition in 2025, the Nigeria Telecoms Forum returns for its 2nd edition, continuing its role as the country’s foremost platform for dialogue, investment, and policy insight across the telecommunications ecosystem.
+          <br><br>
+          As Nigeria’s telecoms industry remains a vital contributor to national GDP and the digital economy, it faces a transformative decade shaped by 5G deployment, AI adoption, subsea connectivity, and the rapid growth of data infrastructure. At the same time, operators continue to grapple with persistent challenges — from forex volatility and energy costs to infrastructure gaps and evolving regulation.
         </p>
       `,
       minorDesc: `
         <p>
-          As Nigeria continues to embrace digital transformation, the Nigeria Telecoms Forum will lead discussions on connectivity, innovation, and the role of technology in driving economic growth. Attendees will gain access to valuable data and strategies for thriving in this dynamic industry. Scheduled for the 15th of March, 2024, the event will take place at the Radisson Blu, Victoria Island, Lagos.
+          Nigeria Telecoms Forum 2026 will gather senior telecom executives, policymakers, investors, and technology partners to examine how the sector can build resilient, intelligent, and sustainable networks for the future. Discussions will explore the intersection of connectivity, cloud computing, artificial intelligence, cybersecurity, and infrastructure finance, with a focus on actionable insights that can drive the next phase of telecom-led growth in Nigeria.
         </p>
         <p>
-          Organized by Eventhive, Nigeria’s foremost B2B event servicing company, this forum will foster high-level networking and collaboration among the country's top telecoms decision-makers.
+          The event will serve as a strategic convergence point for industry leaders, policymakers, investors, and innovators shaping the nation’s telecom and digital infrastructure agenda. Through curated sessions and forward-looking insights, the Forum will advance a collective vision for resilient, intelligent, and inclusive telecom growth, positioning Nigeria as a leader in Africa’s connected future.
         </p>
       
       `,
@@ -1110,20 +1114,20 @@ const data: DataStore = {
       title: "Lagos Tech Fest 2026",
       location: "Landmark Event Center, Victoria Island, Lagos",
       externalLink: "https://tech.eventhive.ng",
-      pic1: "/images/events/event-pics/tech-1.png",
-      pic2: "/images/events/event-pics/tech-2.png",
-      pic3: "/images/events/event-pics/tech-3.png",
+      pic1: "/images/events/event-pics/tech-1.jpg",
+      pic2: "/images/events/event-pics/tech-2.jpg",
+      pic3: "/images/events/event-pics/tech-3.jpg",
       majorDesc: `
         <p>
-          Does your work resonate with Nigeria's Tech Ecosystem? This is where you should be.
-          </p>
+          Now in its 6th year, Lagos Tech Fest annually gathers to shape the future of Nigeria's tech ecosystem.
+        </p>
       `,
       minorDesc: `
         <p>
-          Now in its 4th year, Lagos Tech Fest annually gathers to shape the future of Nigeria's tech ecosystem. Convening emerging startups, innovators, investors, tech enthusiasts, global tech giants, new entrants, and government representatives, this is where we define our tech ecosystem, address key developments and uncover countless opportunities within the Nigerian, and African tech market.
+         Convening enterprise tech leaders, emerging startups, innovators, investors, tech enthusiasts, global tech giants, new entrants and government representatives, this is where we define our tech ecosystem future, address key developments and uncover countless opportunities within the Nigerian and African tech market.
         </p>
         <p>
-          Combining conferences, exhibitions, and networking, the event annually creates a veritable platform that seeks to drive investments into the ecosystem.
+          Combining conferences, roundtables, industry party, pitch live, exhibitions and networking, the event annually creates a veritable platform that seeks to drive investments into the ecosystem.
         </p>
       `,
       whyParticipate: [
@@ -1143,9 +1147,9 @@ const data: DataStore = {
       title: "Nigeria Insurance Forum 2025",
       location: "Fourpoints by Sheraton, Victoria Island, Lagos",
       externalLink: "https://insurance.eventhive.ng",
-      pic1: "/images/events/event-pics/uk-1.png",
-      pic2: "/images/events/event-pics/uk-2.png",
-      pic3: "/images/events/event-pics/uk-3.png",
+      pic1: "/images/events/event-pics/insurance-1.jpg",
+      pic2: "/images/events/event-pics/insurance-2.jpg",
+      pic3: "/images/events/event-pics/insurance-3.jpg",
       majorDesc: `
         <p>
           The Nigeria Insurance Forum will gather leading insurers, brokers, and policymakers to discuss the future of Nigeria’s insurance industry. This event will provide an essential platform for dialogue on innovation, regulation, and economic impacts on the sector.
@@ -1177,11 +1181,11 @@ const data: DataStore = {
       title: "UK-Africa Business Outlook 2026",
       location: "London, United Kingdom",
       externalLink: "https://uk.eventhive.ng",
-      pic1: "/images/events/event-pics/uk-1.png",
-      pic2: "/images/events/event-pics/uk-2.png",
-      pic3: "/images/events/event-pics/uk-3.png",
+      pic1: "/images/events/event-pics/uk-1.jpg",
+      pic2: "/images/events/event-pics/uk-2.jpg",
+      pic3: "/images/events/event-pics/uk-3.jpg",
       majorDesc: `
-        <p>Nigeria and Africa at large, are confronted by multiple challenges which are tied to inability to attract and retain investments across their most important industries. Months into a new leadership, the country is witnessing implementation of a raft of reforms long sought by investors, bankers and business stakeholders to revive Africa’s biggest economy. In a bid to set the investment agenda for the new leadership, We are delighted to announce the return of the 3rd edition of the UK-Nigeria Business Outlook.</p>
+        <pAdvancing Investment, Partnership, and Growth Across the UK–Africa Corridor</p>
         <p>This year’s edition of the event will create a platform for partnerships and collaboration amongst Uk and Nigerian businesses. With investments at its core, The event will focus on those who are investing in the country’s future, highlighting the opportunities and obstacles that are impeding investments. Trade & Investments, Energy, Fintech and the Creative economy are expected to headline discussions at this year’s edition of the event scheduled to hold on the 18th of March, 2024 at the Addleshaw Goddard, London.</p>
       `,
       minorDesc: `
@@ -1244,20 +1248,23 @@ const data: DataStore = {
       title: "Africa Fintech Live 2026",
       location: "Sarit Expo Center, Nairobi, Kenya",
       externalLink: "https://af.eventhive.ng",
-      pic1: "/images/events/event-pics/power-1.png",
-      pic2: "/images/events/event-pics/power-2.png",
-      pic3: "/images/events/event-pics/power-3.png",
+      pic1: "/images/events/event-pics/af-1.jpg",
+      pic2: "/images/events/event-pics/af-2.jpg",
+      pic3: "/images/events/event-pics/af-3.jpg",
       majorDesc: `
         <p>
-          Africa Fintech Live is the continent's premier gathering of fintech leaders, innovators, investors, and policymakers. The event showcases cutting-edge innovations, discusses regulatory trends, and highlights opportunities in Africa’s growing financial technology ecosystem.
+          Driving Financial Innovation Across Africa
+          <br><br>
+          Join Africa's leading gathering of stakeholders working across various verticals of finance and banking, as they explore cutting-edge trends, innovations, and opportunities in fintech, driving progress across the continent's financial ecosystem.
+
         </p>
-      `,
+        `,
       minorDesc: `
         <p>
-          As Africa emerges as a global hub for fintech innovation, Africa Fintech Live will lead conversations on the technologies, partnerships, and strategies reshaping financial services across the continent. Delegates will explore new trends such as mobile money, blockchain, and AI-driven financial solutions. The event is scheduled for the 18th of November, 2024, at the Sarit Expo Center, Nairobi, Kenya.
+          Empowering Africa's fintech ecosystem
         </p>
         <p>
-          Organized by Eventhive, Africa Fintech Live ensures attendees access unrivaled networking and knowledge-sharing opportunities while gaining critical insights to navigate the fintech landscape.
+          Africa Fintech Live is the premier annual gathering that brings together the brightest minds and innovators from payments, telcos, banking, fintech, and e-commerce. Now in its second year, it’s the ultimate platform for collaboration, insights, and shaping the future of financial technology across the continent.
         </p>
       `,
       whyParticipate: [
@@ -1313,28 +1320,30 @@ const data: DataStore = {
       title: "Lagos Real Estate Fest 2026",
       location: "Landmark Event Center, Victoria Island, Lagos",
       externalLink: "https://re.eventhive.ng",
-      pic1: "/images/events/event-pics/re-1.png",
-      pic2: "/images/events/event-pics/re-2.png",
-      pic3: "/images/events/event-pics/re-3.png",
+      pic1: "/images/events/event-pics/re-1.jpg",
+      pic2: "/images/events/event-pics/re-2.jpg",
+      pic3: "/images/events/event-pics/re-3.jpg",
       majorDesc: `
         <p>
-          Lagos Real Estate Fest is an annual gathering of the most influential and knowledgeable public and private sector stakeholders, within Nigeria's property ecosystem. The event, now in its 4th year, is West Africa’s leading marketplace for property stakeholders combining conferences and exhibitions.
+          From property developers to architects, project financiers, investors, policy makers and regulators — this is where we unite Nigeria's real estate market.
+          <br><br>
+          Now in its 7th year, Lagos Real Estate Fest brings together key stakeholders to shape Nigeria's real estate market.
         </p>
       `,
       minorDesc: `
         <p>
-          Lagos Real Estate Fest is a property-focused forum that harmonizes stakeholders in the property industry for learning, knowledge transfer and peer-to-peer networking. Keynote and specialist session content will be unique to the conference as it is the result of public and private sector collaboration.
+          Convening property developers, architects, project financiers, investors, policy makers, regulators and industry leaders, this is where we define the future of Nigeria's real estate market, address key developments and uncover countless opportunities within the Nigerian and African real estate sectors.
         </p>
         <p>
-          Lagos Real Estate Fest puts strategy, policy and thought leadership at the heart of its sessions ensuring a delegate audience of key decision makers and c-suite directors. Join 500+ delegates from real estate, design, finance, developers,construction architecture and other property players to network, learn, transact and discuss opportunities and issues within Nigeria's real estate ecosystem.
+          Combining conferences, exhibitions, networking and property showcases, the event annually creates a veritable platform that seeks to drive investments into the real estate sector.
         </p>
       `,
       whyParticipate: [
-        "Email- Targeting a database of 7000+ key sector stakeholders drawn from various industries.",
-        "Exhibition- Providing you with a rightly positioned booth to showcase your real estate offerings/solutions to industry stakeholders.",
-        "Media Campaign- A carefully curated pre,on and post event media campaign targeting digital and physical media platforms.",
-        "Branding- Embedding your brand logos and materials across our event showcase platforms.",
-        "Thought Leadership- Strengthening your market position via carefully designed presentations/fireside chats during the event.",
+        "Email - Targeting a database of 7000+ key sector stakeholders drawn from various industries.",
+        "Exhibition - Providing you with a rightly positioned booth to showcase your real estate offerings/solutions to industry stakeholders.",
+        "Media Campaign - A carefully curated pre,on and post event media campaign targeting digital and physical media platforms.",
+        "Branding - Embedding your brand logos and materials across our event showcase platforms.",
+        "Thought Leadership - Strengthening your market position via carefully designed presentations/fireside chats during the event.",
       ],
     },
     {
@@ -1485,6 +1494,7 @@ const data: DataStore = {
         "Explore partnership opportunities to expand your business globally.",
       ],
     },
+
     {
       banner: "/images/events/banner/ae.jpg",
       event: "Africa Energy Investment Outlook",
@@ -1620,7 +1630,7 @@ const data: DataStore = {
       ],
     },
     {
-      banner: "/images/events/banner/banking.jpg",
+      banner: "/images/events/banner/eventhive-banner-white.png",
       event: "Nigeria Banking Outlook",
       eventMonth: "April",
       eventDate: "April 30, 2026",
@@ -1629,17 +1639,19 @@ const data: DataStore = {
       title: "Nigeria Banking Outlook 2026",
       location: "Lagos, Nigeria",
       externalLink: "https://banking.eventhive.ng",
-      pic1: "/images/events/event-pics/fintech-1.png",
-      pic2: "/images/events/event-pics/fintech-2.png",
-      pic3: "/images/events/event-pics/fintech-3.png",
+      pic1: "/images/events/event-pics/banking-1.jpg",
+      pic2: "/images/events/event-pics/banking-2.jpg",
+      pic3: "/images/events/event-pics/banking-3.jpg",
       majorDesc: `
         <p>
-          Nigeria Banking Outlook brings together leaders across banking and financial services to discuss strategy, regulation, innovation, and the future of financial intermediation.
+          Nigeria’s financial services sector is entering a transformative phase led by recapitalisation reforms, rapid digitisation, and the increasing influence of AI, open banking, and fintech collaboration. Banks are navigating an environment of high interest rates, inflation, currency volatility, and shifting consumer expectations.
         </p>
       `,
       minorDesc: `
         <p>
-          Delegates engage in high-level conversations on digital transformation, risk, compliance, and growth opportunities across Nigeria’s banking sector.
+          Returning for its second edition in 2026, the Nigeria Banking Outlook will convene CEOs, regulators, fintech leaders, investors, and analysts to explore strategies for stability, innovation, and growth in a redefined banking landscape. Discussions will focus on how institutions can adapt business models, strengthen risk management, and leverage technology to create more inclusive financial ecosystems.
+          <br><br>
+          The Nigeria Banking Outlook 2026 will provide a 360° view of the country’s financial future, from capital reform to digital transformation. By convening thought leaders and innovators, the event will advance a shared vision for a resilient, technology-driven, and inclusive banking system that underpins Nigeria’s economic growth.
         </p>
       `,
       whyParticipate: [
@@ -1650,7 +1662,7 @@ const data: DataStore = {
       ],
     },
     {
-      banner: "/images/events/banner/crypto.jpg",
+      banner: "/images/events/banner/eventhive-banner-blue.png",
       event: "Crypto & DeFI Forum",
       eventMonth: "June",
       eventDate: "June 10, 2026",
@@ -1659,9 +1671,9 @@ const data: DataStore = {
       title: "Crypto & DeFI Forum 2026",
       location: "Lagos, Nigeria",
       externalLink: "https://crypto.eventhive.ng",
-      pic1: "/images/events/event-pics/fintech-1.png",
-      pic2: "/images/events/event-pics/fintech-2.png",
-      pic3: "/images/events/event-pics/fintech-3.png",
+      pic1: "/images/events/event-pics/crypto-2.jpg",
+      pic2: "/images/events/event-pics/crypto-1.jpg",
+      pic3: "/images/events/event-pics/crypto-3.jpg",
       majorDesc: `
         <p>
           Crypto &amp; DeFI Forum convenes builders, investors, regulators, and institutions to discuss the evolution of digital assets and decentralized finance across Africa.
