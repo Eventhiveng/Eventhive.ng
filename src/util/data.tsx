@@ -1356,34 +1356,32 @@ const data: DataStore = {
       title: "Nigeria Fintech Forum 2026",
       location: "Lagos, Nigeria",
       externalLink: "https://fintech.eventhive.ng",
-      pic1: "/images/events/event-pics/fintech-1.png",
-      pic2: "/images/events/event-pics/fintech-2.png",
-      pic3: "/images/events/event-pics/fintech-3.png",
+      pic1: "/images/events/event-pics/fintech-1.jpg",
+      pic2: "/images/events/event-pics/fintech-2.jpg",
+      pic3: "/images/events/event-pics/fintech-3.jpg",
       majorDesc: `
         <p>
-          Nigeria Fintech Forum is a premium conference, exhibition and networking platform catering to public and private sector stakeholders across Nigeria’s financial technology industry. The forum featured presentations, keynote speeches, panel sessions, exhibitions and fireside chats.
-        </p>
-        <p>
-          In the last few years, Nigeria’s fintech Industry has attracted significant attention from investors and stakeholders. In 2021 African fintechs raised up to $1.4 billion with Nigeria taking the center stage, raising almost $800 Million. At the intersection of these developments, is the need to constantly create engagements and exhibition platforms targeted at ensuring accelerated growth of the ecosystem.
+         Drive your business growth at the leading gathering of Nigeria's fintech players
+         <br><br>
+         Nigeria Fintech Forum has become the gathering point for over 1,700 professionals and 450 companies, blending diverse expertise from payments, fintech, banking, e-commerce and retail industries.
         </p>
       `,
       minorDesc: `
         <p>
-          From the accelerated rise in adoption of crypto across Africa, To the funding boom across the fintech ecosystem , to the launch of CBN’s digital currency, and the dominance of mobile money, the industry is positioned to take a center stage in Nigeria’s economy.
+          As a hub of innovation, we harness the power of diverse ideas and solutions, creating a melting pot where the latest trends and forward-thinking strategies take shape.
         </p>
         <p>
-          Nigeria Fintech Forum is designed to bring together public and private sector stakeholders who are revolutionizing and changing the face of Nigeria’s financial industry. The event created an unrivaled platform to debate, examine and discuss issues and opportunities shaping the future of the industry.
+          Nigeria Fintech Forum sets the agenda for the future of fintech, payments and banking.
+          <br><br>
+          Hosted in the FinTech capital of Africa, this is the leading fintech, payments and banking event uniting industry leaders at the top of their game.
         </p>
       `,
       whyParticipate: [
-        "Telco’s, banks, fintechs; who will win the digital payments war in Nigeria?",
-        "Neo banks- what next for the new challengers of Nigerian legacy banking?",
-        "Nigeria’s future of payments; the role of digital currencies for a digital future.",
-        "Future of banking; exploring the intersection of mobile banking, retail banking and digital banking.",
-        "Deepening financial inclusion in Nigeria.",
-        "Investing in Nigerian fintech; scaling for growth, what next?",
-        "Examining best practices for fintech regulation in Nigeria.",
-        "Shining light on adoption of crypto in Nigeria.",
+        "Network with the country’s leading fintech innovators and decision makers",
+        "Explore new business opportunities in an environment conducive to transactions",
+        "Learn from analysis of consultants from leading consultancy firms to guide or reinforce your strategy",
+        "Learn about the country’s most promising investments projects",
+        "Adapt your strategies to the latest economic and geopolitical trends",
       ],
     },
     {
@@ -1396,23 +1394,20 @@ const data: DataStore = {
       title: "Nigeria Oil & Gas Outlook 2026",
       location: "Lagos, Nigeria",
       externalLink: "https://og.eventhive.ng",
-      pic1: "/images/events/event-pics/og-1.png",
-      pic2: "/images/events/event-pics/og-2.png",
-      pic3: "/images/events/event-pics/og-3.png",
+      pic1: "/images/events/event-pics/og-1.jpg",
+      pic2: "/images/events/event-pics/og-2.jpg",
+      pic3: "/images/events/event-pics/og-3.jpg",
       majorDesc: `
         <p>
-          The Nigeria Oil & Gas Outlook Conference & Exhibition returned to Lagos for its second edition. Building on the successes recorded from the flagship edition of the event in 2021 which was the first energy event since the PIB became an Act, the event has grown to become a very important meeting place for Nigeria’s Oil & Gas stakeholders.
-        </p>
-        <p>
-          Against the backdrop from the pandemic, the need to demonstrate longstanding commitment to investment in Nigeria’s energy industry has become extremely important, NOGO 2022 provided a premier platform to debate, discuss and examine very important challenges as the country works to close the gap of decline in production, oil theft, expand and promote exploration, reach fuel-independency via large scale investments in refining capacity, diversify her economy and ensure a just energy transition by developing its natural gas resources and other alternative energy resources.
+          Nigeria's oil and gas sector is witnessing significant shifts with IOCs divesting assets and a new wave of ambitious indigenous players stepping in. Are you in the room where the future is being shaped?
         </p>
       `,
       minorDesc: `
         <p>
-          Attendees at last year’s edition of the event benefited from a wide range of industry-advancing panel sessions, in-conversations, keynote sessions, presentations, unrivaled networking, investor/government/private sector deal rooms, as the event promoted opportunities in Nigeria’s Oil & Gas Industry.
+          Over the past four years, Nigeria Oil & Gas Outlook has positioned itself as a foremost meeting place of industry leaders, innovators, and policymakers in Nigeria's Oil and Gas sector. With each annual edition, NOGO has solidified its role in shaping the future of Nigeria's oil and gas industry, fostering global investment and innovation.
         </p>
         <p>
-          The event tackled topics spanning across Local content; Energy Transition; Gas Market; Petroleum Industry Act; Women in Energy amongst other latest developments aimed at strengthening the development of Africa’s largest producer of oil - Nigeria.
+          Nigeria Oil & Gas Outlook unites the country's government and energy companies with global operators and investors. Building on t h e momentum and success o f previous editions, Nigeria Oil & Gas Outlook offers unparalleled opportunities for financiers, project developers, international operators and service partners.
         </p>
       `,
       whyParticipate: [
@@ -1468,30 +1463,31 @@ const data: DataStore = {
       eventStatus: "active",
       slug: "fintech-without-borders-forum",
       title: "Fintech Without Borders Forum 2026",
-      location: "London, United Kingdom",
+      location: "Arbor, 255 Blackfriars Rd, London SE1 9AX, United Kingdom",
       externalLink: "https://fb.eventhive.ng",
-      pic1: "/images/events/event-pics/economy-1.png",
-      pic2: "/images/events/event-pics/economy-2.png",
-      pic3: "/images/events/event-pics/economy-3.png",
+      pic1: "/images/events/event-pics/fb-1.jpg",
+      pic2: "/images/events/event-pics/fb-2.jpg",
+      pic3: "/images/events/event-pics/fb-3.jpg",
       majorDesc: `
         <p>
-          The Fintech Without Borders Forum brings together fintech innovators, investors, and regulators from around the globe to explore the latest trends in financial technology and cross-border innovation. This event is designed to drive collaboration and foster growth in the fintech ecosystem.
+          Meeting place for stakeholders working across various verticals of the borderless fintech ecosystem
+          <br><br>
+          Fintech Without Borders Forum is dedicated to showcasing the important role of borderless fintech in the global fintech ecosystem. The event annually focuses on important issues facing global cross-border payments landscape-best approaches in achieving faster, safer, more transparent cross-boder payments, global fintech infrastructure, FX liquidity challenges, Impact of fraud and compliance on cross- border payments, evolving border financial services and fintech industry in Africa, amongst focus discussions.
         </p>
       `,
       minorDesc: `
         <p>
-          As the world becomes more interconnected, the Fintech Without Borders Forum will highlight opportunities in cross-border payments, blockchain, and AI-driven financial solutions. Scheduled for the 12th of September, 2024, in Dubai, UAE, this event will attract global leaders in the fintech industry.
-        </p>
-        <p>
-          Organized by Eventhive, the forum will provide a unique opportunity for networking and collaboration among fintech leaders and stakeholders worldwide.
+         The event will provide an unrivaled opportunity for companies in cross-border payments, B2B payments, banks, consulting, technology providers, governments representatives to network, discover new partnerships and discuss the most relevant topics across the borderless fintech industry. Industry leaders will gather to share insights and best practices on developing more efficient cross-boder payment systems to support global economic activity.
+         <br><br>
+         Our mission is targeted at fostering growth and innovation in the cross-border payments space and help companies stay ahead of the curve.
         </p>
       `,
       whyParticipate: [
-        "Engage with global leaders driving fintech innovation.",
-        "Discover the latest trends in cross-border payments and blockchain technology.",
-        "Network with top decision-makers in the global fintech ecosystem.",
-        "Gain insights into regulatory frameworks shaping cross-border fintech.",
-        "Explore partnership opportunities to expand your business globally.",
+        "Access high-level networking with the country’s leading business decision makers",
+        "Explore new business opportunities in an environment conducive to transactions",
+        "Learn from analysis of consultants from leading consultancy firms to guide or reinforce your strategy",
+        "Learn about the country’s most promising investments projects",
+        "Adapt your strategies to the latest economic and geopolitical trends",
       ],
     },
 
@@ -1503,22 +1499,26 @@ const data: DataStore = {
       eventStatus: "active",
       slug: "africa-energy-investment-outlook",
       title: "Africa Energy Investment Outlook 2025",
-      location: "London, United Kingdom",
+      location:
+        "Charles Russell Speechlys, 5 Fleet Place, London, EC4M 7RD, United Kingdom",
       externalLink: "https://ae.eventhive.ng",
-      pic1: "/images/events/event-pics/economy-1.png",
-      pic2: "/images/events/event-pics/economy-2.png",
-      pic3: "/images/events/event-pics/economy-3.png",
+      pic1: "/images/events/event-pics/ae-1.jpg",
+      pic2: "/images/events/event-pics/ae-2.jpg",
+      pic3: "/images/events/event-pics/ae-3.jpg",
       majorDesc: `
         <p>
-          The Africa Energy Investment Outlook will unite key stakeholders in Africa’s energy sector to discuss investment opportunities, challenges, and the future of energy in Africa. This event focuses on renewable energy, sustainability, and innovative solutions to power the continent.
+          Bringing African Energy Closer to the World
         </p>
       `,
       minorDesc: `
         <p>
-          As Africa seeks to address its energy challenges, the Africa Energy Investment Outlook will provide insights into sustainable energy solutions and investment strategies. The event is set for the 25th of October, 2024, in Accra, Ghana.
-        </p>
-        <p>
-          Organized by Eventhive, this forum will foster collaboration between investors, energy companies, and policymakers in Africa’s energy sector.
+          Focused on showcasing Africa's role in the global energy mix, Africa Energy Investment Outlook brings together top financers, investors, consultants and players across Africa and European energy markets. The event will address the dynamic landscape of the Africa Energy industry, focusing on four key themes:
+          <br><br>
+          -Energy Finance
+          -Africa's Upstream Investment Landscape
+          -Africa's LNG for Global Market
+          -Renewable Energy
+          Africa Energy Investment Outlook will present an unrivaled opportunity to engage key stakeholders in the African energy industry, and equally explore investment opportunities in the market. From an experienced energy executive, to investors, to government representatives, to advisors and consultants, the event offers a dynamic platform to learn, collaborate, network and do deals.
         </p>
       `,
       whyParticipate: [
@@ -1605,7 +1605,7 @@ const data: DataStore = {
       eventStatus: "active",
       slug: "nigeria-solar-forum",
       title: "Nigeria Solar Forum 2026",
-      location: "Lagos, Nigeria",
+      location: "Oriental Hotel, Victoria Island, Lagos, Nigeria",
       externalLink: "https://solar.eventhive.ng",
       pic1: "/images/events/event-pics/solar-1.jpg",
       pic2: "/images/events/event-pics/solar-2.jpg",
@@ -1637,7 +1637,7 @@ const data: DataStore = {
       eventStatus: "active",
       slug: "nigeria-banking-outlook",
       title: "Nigeria Banking Outlook 2026",
-      location: "Lagos, Nigeria",
+      location: "Fourpoints by Sheraton, Victoria Island, Lagos",
       externalLink: "https://banking.eventhive.ng",
       pic1: "/images/events/event-pics/banking-1.jpg",
       pic2: "/images/events/event-pics/banking-2.jpg",
@@ -1669,30 +1669,35 @@ const data: DataStore = {
       eventStatus: "active",
       slug: "crypto-defi-forum",
       title: "Crypto & DeFI Forum 2026",
-      location: "Lagos, Nigeria",
+      location: "Oriental Hotel, Victoria Island, Lagos",
       externalLink: "https://crypto.eventhive.ng",
       pic1: "/images/events/event-pics/crypto-2.jpg",
       pic2: "/images/events/event-pics/crypto-1.jpg",
       pic3: "/images/events/event-pics/crypto-3.jpg",
       majorDesc: `
         <p>
-          Crypto &amp; DeFI Forum convenes builders, investors, regulators, and institutions to discuss the evolution of digital assets and decentralized finance across Africa.
+          Your front-row seat to Nigeria's crypto & DeFi meeting place.
+          <br><br>
+          Now in its 2nd edition, Crypto & DeFi Forum has established itself as Nigeria's premier platform for showcasing the latest innovations and disruptions in blockchain and cryptocurrency.
         </p>
       `,
       minorDesc: `
         <p>
-          The forum explores adoption, regulation, security, and use cases shaping the next phase of crypto and DeFi growth.
+          Experience how global innovators, policymakers, and digital assets executives are transforming blockchain from concept to impact - reshaping finance, for a more trusted digital economy.
+          <br><br>
+          This is where Nigeria's most influential voices in blockchain, Web3, and AI come together to drive innovation forward.
         </p>
       `,
       whyParticipate: [
-        "Meet top founders and ecosystem leaders",
-        "Explore product and partnership opportunities",
-        "Learn from regulatory and compliance insights",
-        "Connect with investors and institutions",
+        "Access unrivaled networking with the country’s leading business decision makers",
+        "Explore new business opportunities in an environment conducive to transactions",
+        "Learn from analysis of consultants from leading consultancy firms to guide or reinforce your strategy",
+        "Learn about the country’s most promising investments projects",
+        "Adapt your strategies to the latest economic and geopolitical trends",
       ],
     },
     {
-      banner: "/images/events/banner/energy.jpg",
+      banner: "/images/events/banner/eventhive-banner-white.png",
       event: "Africa Energy Outlook",
       eventMonth: "June",
       eventDate: "June 24, 2026",
@@ -1722,7 +1727,7 @@ const data: DataStore = {
       ],
     },
     {
-      banner: "/images/events/banner/payments.jpg",
+      banner: "/images/events/banner/eventhive-banner-blue.png",
       event: "Payments Live",
       eventMonth: "June",
       eventDate: "June 25, 2026",
@@ -1730,108 +1735,125 @@ const data: DataStore = {
       slug: "payments-live",
       title: "Payments Live 2026",
       location: "Johannesburg, South Africa",
-      externalLink: "https://payments.eventhive.ng",
-      pic1: "/images/events/event-pics/fintech-1.png",
-      pic2: "/images/events/event-pics/fintech-2.png",
-      pic3: "/images/events/event-pics/fintech-3.png",
+      externalLink: "https://paymentslive.co.za",
+      pic1: "/images/events/event-pics/payments-1.jpg",
+      pic2: "/images/events/event-pics/payments-2.jpg",
+      pic3: "/images/events/event-pics/payments-3.jpg",
       majorDesc: `
         <p>
-          Payments Live brings together payment networks, banks, fintechs, and regulators to discuss interoperability, rails modernization, fraud, and cross-border payments.
+          Bringing Africa’s Payment Leaders Together Under One Roof
+          <br><br>
+          As part of Africa Tech Series, Payments Live annually gathers senior payments executives, merchants, fintechs and fraud leaders to shape Africa's payments future.
         </p>
       `,
       minorDesc: `
         <p>
-          The event connects industry leaders to accelerate collaboration and innovation across the payments ecosystem.
+          This is an unrivaled opportunity for leaders that oversee payments and fraud strategy, payments schemes, developing payments architecture and infrastructure to explore key trends and opportunities across Africa's payments ecosustem.
+          <br><br>
+          Payments Live is your gateway to new opportunities across Africa's payments market, an unmissable platform to learn, network and showcase your payments solutions.
         </p>
       `,
       whyParticipate: [
-        "Connect with payment leaders and decision makers",
-        "Explore partnerships across rails and infrastructure",
-        "Learn best practices in risk and fraud prevention",
-        "Showcase solutions to enterprise buyers",
+        "Network with senior payments, fintech, and fraud leaders shaping Africa's payments landscape",
+        "Explore partnership and business opportunities across Africa’s payments ecosystem",
+        "Gain actionable insights from industry experts and thought leaders on payments innovation",
+        "Showcase your payments solutions to decision makers and leading merchants",
+        "Stay ahead of trends in payments infrastructure, strategy, fraud, and regulation",
       ],
     },
     {
-      banner: "/images/events/banner/trade.jpg",
+      banner: "/images/events/banner/eventhive-banner-white.png",
       event: "Nigeria Trade & Manufacturing Outlook",
       eventMonth: "August",
       eventDate: "August 12, 2026",
       eventStatus: "active",
       slug: "nigeria-trade-manufacturing-outlook",
       title: "Nigeria Trade & Manufacturing Outlook 2026",
-      location: "Lagos, Nigeria",
-      externalLink: "https://trade.eventhive.ng",
-      pic1: "/images/events/event-pics/economy-1.png",
-      pic2: "/images/events/event-pics/economy-2.png",
-      pic3: "/images/events/event-pics/economy-3.png",
+      location: "Oriental Hotel, Victoria Island, Lagos, Nigeria",
+      externalLink: "https://mnf.eventhive.ng",
+      pic1: "/images/events/event-pics/manufacturing-1.jpg",
+      pic2: "/images/events/event-pics/manufacturing-2.jpg",
+      pic3: "/images/events/event-pics/manufacturing-3.jpg",
       majorDesc: `
         <p>
-          Nigeria Trade &amp; Manufacturing Outlook convenes stakeholders across industry, logistics, trade facilitation, and policy to discuss competitiveness and growth.
+          Nigeria's manufacturing industry navigates a complex landscape of challenges and opportunities. Despite immense potential from a large domestic market and abundant resources, it faces hurdles like infrastructural deficits, inconsistent policies, and limited finance access. However, strategic initiatives such as the African Continental Free Trade Area (AfCFTA) present significant opportunities for manufacturers to expand globally.
         </p>
       `,
       minorDesc: `
         <p>
-          The event explores trade policy, manufacturing value chains, infrastructure, and investment opportunities across Nigeria.
+          The Nigeria Manufacturing and Trade Outlook event serves as a crucial platform to address these challenges, capitalize on opportunities, and drive industrial growth. Focusing on pivotal sectors like Automotive, Pharmaceuticals, Consumer Goods, and Chemicals & Petrochemicals, the summit connects local capabilities with global trade opportunities. 
+          <br><br>
+          Through expert-led sessions, panel discussions, and networking, attendees will gain insights into technological advancements, trade policies, sustainable practices, and regulatory frameworks to empower Nigerian manufacturers for both domestic and international success.
         </p>
       `,
       whyParticipate: [
-        "Connect with industry leaders and policymakers",
-        "Explore supply chain and trade opportunities",
-        "Understand regulatory updates and market outlook",
-        "Build partnerships for expansion and growth",
+        "Network with industry leaders and policymakers shaping Nigeria's manufacturing and trade landscape",
+        "Explore investment and trade opportunities across key sectors",
+        "Learn from expert-led sessions on technological advancements and regulatory frameworks",
+        "Access a platform to showcase your solutions to decision makers and industry leaders",
+        "Stay ahead of trends in manufacturing, trade, and investment",
       ],
     },
     {
-      banner: "/images/events/banner/pevc.jpg",
+      banner: "/images/events/banner/eventhive-banner-blue.png",
       event: "Nigeria PE/Venture Capital Outlook",
       eventMonth: "September",
       eventDate: "September 10, 2026",
       eventStatus: "active",
       slug: "nigeria-pe-vc-outlook",
       title: "Nigeria PE/Venture Capital Outlook 2026",
-      location: "Lagos, Nigeria",
-      externalLink: "https://pevc.eventhive.ng",
-      pic1: "/images/events/event-pics/fintech-1.png",
-      pic2: "/images/events/event-pics/fintech-2.png",
-      pic3: "/images/events/event-pics/fintech-3.png",
+      location: "Oriental Hotel, Victoria Island, Lagos, Nigeria",
+      externalLink: "https://capital.eventhive.ng",
+      pic1: "/images/events/event-pics/capital-1.jpg",
+      pic2: "/images/events/event-pics/capital-2.jpg",
+      pic3: "/images/events/event-pics/capital-3.jpg",
       majorDesc: `
         <p>
-          Nigeria PE/Venture Capital Outlook brings together investors, fund managers, founders, and corporates to discuss deal flow, exits, and capital formation.
+          Nigeria's meeting place for private capital stakeholders
+          <br><br>
+          Dive into expert-led discussions, strategic networking, and deep insights at the premier event designed to drive private equity and venture capital growth across Nigeria’s most promising sectors.
         </p>
       `,
       minorDesc: `
         <p>
-          Delegates explore investment themes and strategies shaping Nigeria’s private capital markets.
+          Nigeria PE/VC Outlook is designed to provide critical insights into the evolving private equity and venture capital landscape in Nigeria. This event will bring together key stakeholders—from venture capitalists to fun d managers—to explore investment opportunities, address market challenges, and chart a course for sustainable growth.
+          <br><br>
+          Themed 'Strategic Capital, Sustainable Growth: Investing for Nigeria's Next Chapter', The event will feature expert analyses, interactive panel discussions, and networking, focusing on the sectors driving investment, the impact of regulatory changes, and the strategies for maximizing returns in Nigeria's dynamic market.
         </p>
       `,
       whyParticipate: [
-        "Meet leading investors and fund managers",
-        "Explore capital raising and partnership opportunities",
-        "Learn about market trends and exit dynamics",
-        "Network with high-growth founders and corporates",
+        "Access unrivaled networking with the country’s leading business decision makers",
+        "Explore new business opportunities in an environment conducive to transactions",
+        "Learn from analysis of consultants from leading consultancy firms to guide or reinforce your strategy",
+        "Learn about the country’s most promising investments projects",
+        "Adapt your strategies to the latest economic and geopolitical trends",
       ],
     },
     {
-      banner: "/images/events/banner/aviation.jpg",
+      banner: "/images/events/banner/eventhive-banner-white.png",
       event: "Nigeria Aviation Forum",
       eventMonth: "September",
       eventDate: "September 24, 2026",
       eventStatus: "active",
       slug: "nigeria-aviation-forum",
       title: "Nigeria Aviation Forum 2026",
-      location: "Lagos, Nigeria",
+      location: "Oriental Hotel, Victoria Island, Lagos, Nigeria",
       externalLink: "https://aviation.eventhive.ng",
-      pic1: "/images/events/event-pics/economy-1.png",
-      pic2: "/images/events/event-pics/economy-2.png",
-      pic3: "/images/events/event-pics/economy-3.png",
+      pic1: "/images/events/event-pics/economy-1.jpg",
+      pic2: "/images/events/event-pics/economy-2.jpg",
+      pic3: "/images/events/event-pics/economy-3.jpg",
       majorDesc: `
         <p>
-          Nigeria Aviation Forum convenes airlines, airports, regulators, and service providers to discuss infrastructure, safety, financing, and operational excellence.
+          Charting the Future: Innovation, Resilience & Sustainability in Nigeria's Aviation Sector
+          <br><br>
+          The Nigeria Aviation Forum is designed as a high-impact breakfast meeting that brings together key. stakeholders in Nigeria's aviation sector, including policymakers, airlines, regulators, investors, and technology innovators, to address the evolving challenges and opportunities shaping the industry. As air travel and logistics rapidly expand in West Africa, Nigeria's aviation industry sits at a crucial crossroads navigating post-pandemic recovery, infrastructural modernization, safety imperatives, environmental sustainability, and shifts in consumer behavior. This event offers a focused platform for expert insights, strategic networking, and collaborative solutions to propel the sector forward.
         </p>
       `,
       minorDesc: `
         <p>
-          The forum supports strategic collaboration across Nigeria’s aviation sector with a focus on growth and modernization.
+          The Forum seeks to foster candid dialogue on overcoming operational hurdles, such as airport infrastructure gaps, regulatory bottlenecks, and high operating costs, while also spotlighting new investment opportunities, technological advancements, and regional integration. Through interactive discussions, participants will explore practical strategies to enhance safety standards, adopt green aviation practices, and build global competitiveness. The event also aims to support government reform efforts and private sector innovation, driving value across the aviation value chain and strengthening Nigeria's position as a regional aviation hub.
+          <br><br>
+          The Nigeria Aviation Forum will facilitate high-level connection and actionable takeaways. Its outcomes are intended to foster impactful partnerships, influence policy decisions, and accelerate sustainable growth in Nigeria's aviation ecosystem.
         </p>
       `,
       whyParticipate: [
@@ -1842,7 +1864,7 @@ const data: DataStore = {
       ],
     },
     {
-      banner: "/images/events/banner/east-africa-tech.jpg",
+      banner: "/images/events/banner/atf.jpg",
       event: "East Africa Tech Forum",
       eventMonth: "November",
       eventDate: "November 05, 2026",
@@ -1856,23 +1878,27 @@ const data: DataStore = {
       pic3: "/images/events/event-pics/atf-3.jpg",
       majorDesc: `
         <p>
-          East Africa Tech Forum connects founders, investors, corporates, and regulators to accelerate collaboration and investment across East Africa’s technology ecosystem.
+          As technology continues to grow across Africa, the Africa Tech Forum stands as a vital gathering place for startups, regulators, investors, enthusiasts, disruptors, and everyone working across various layers of the ecosystem. With a mission to foster collaboration, innovation, and growth, the forum is a beacon of progress in the ever-evolving landscape of African technology.
         </p>
       `,
       minorDesc: `
         <p>
-          Hosted in Nairobi, the forum spotlights innovation, scaling, and ecosystem development across the region.
+          The Africa Tech Forum provides an unparalleled platform for startups to showcase their innovations and connect with key stakeholders. Entrepreneurs from diverse backgrounds come together to share their ideas, learn from industry leaders, and gain valuable insights that can propel their ventures to new heights. With access to mentorship, funding opportunities, and exposure to potential partners, startups find the resources they need to thrive in a competitive market.
+        </p>
+        <p>
+          The Africa Tech Forum is organized by Eventhive, Nigeria’s leading B2B event servicing company with event portfolios across Oil & Gas, Power, Transport, Real Estate, Tech across Nigeria, UK and the USA
         </p>
       `,
       whyParticipate: [
-        "Connect with East Africa’s tech leaders",
-        "Explore funding and partnership opportunities",
-        "Learn from market insights and case studies",
-        "Showcase solutions to key stakeholders",
+        "Connect with key industry players.",
+        "Access funding opportunities.",
+        "Stay ahead of the curve.",
+        "Collaborate on innovative solutions.",
+        "Enhance your brand's visibility.",
       ],
     },
     {
-      banner: "/images/events/banner/abuja-re.jpg",
+      banner: "/images/events/banner/eventhive-banner-blue.png",
       event: "Abuja Real Estate Fest",
       eventMonth: "November",
       eventDate: "November 19, 2026",
@@ -1880,18 +1906,20 @@ const data: DataStore = {
       slug: "abuja-real-estate-fest",
       title: "Abuja Real Estate Fest 2026",
       location: "Abuja, Nigeria",
-      externalLink: "https://abuja.eventhive.ng",
-      pic1: "/images/events/event-pics/re-1.png",
-      pic2: "/images/events/event-pics/re-2.png",
-      pic3: "/images/events/event-pics/re-3.png",
+      externalLink: "https://are.eventhive.ng",
+      pic1: "/images/events/event-pics/re-1.jpg",
+      pic2: "/images/events/event-pics/re-2.jpg",
+      pic3: "/images/events/event-pics/re-3.jpg",
       majorDesc: `
         <p>
-          Abuja Real Estate Fest convenes developers, investors, financiers, and regulators to explore opportunities and challenges within Nigeria’s property market with a focus on the FCT.
+          Building across Nigeria and Abuja's real estate market? Join us as we define the industry's future
         </p>
       `,
       minorDesc: `
         <p>
-          The event combines conferences and exhibitions, enabling stakeholders to network, learn, and transact.
+          Abuja Real Estate Fest is designed to provide a platform for key stakeholders to shape the future of Nigeria's real estate market, with a key spotlight on Abuja's real estate market. From property developers to architects, projects financiers, builders, policymakers and regulators, the event will define what's next for Nigeria's real estate market.
+          <br><br>
+          The event will feature conferences, exhibitions, networking, and property showcases, driving investment and uncovering opportunities in Nigeria and Africa's real estate sector.
         </p>
       `,
       whyParticipate: [
