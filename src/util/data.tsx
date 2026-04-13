@@ -1354,7 +1354,7 @@ const data: DataStore = {
       eventStatus: "active",
       slug: "nigeria-fintech-forum",
       title: "Nigeria Fintech Forum 2026",
-      location: "Lagos, Nigeria",
+      location: "Civic Centre, Victoria Island, Lagos",
       externalLink: "https://fintech.eventhive.ng",
       pic1: "/images/events/event-pics/fintech-1.jpg",
       pic2: "/images/events/event-pics/fintech-2.jpg",
