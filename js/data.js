@@ -139,6 +139,13 @@ const speakers = [
     image: "assets/images/speakers/obi-ezenwa.jpg",
     linkedIn: "#",
   },
+  {
+    name: "ESV. Bashir Oladunni (FNIVS, PMP),",
+    title: "Managing Director/Chief Executive Officer,",
+    company: "Wemabod Limited",
+    image: "assets/images/speakers/bashir-oladunni.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 const attSlideOne = [
