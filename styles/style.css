@@ -1254,7 +1254,7 @@
   object-position: center;
   display: block;
   filter: saturate(1.02) contrast(1.05);
-  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: none;
 }
 
 /* Theme variants */
