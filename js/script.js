@@ -1,13 +1,3 @@
-// $(window).on("load", function () {
-//   $("#preloader").fadeOut(500, () => {
-//     $("main").fadeIn(500, () => {
-//       AOS.init({
-//         duration: 1000,
-//       });
-//     });
-//   });
-// });
-
 $(function () {
   // Simulate loading delay for 1 second
   setTimeout(function () {
@@ -16,7 +6,7 @@ $(function () {
       // Show the main content
       $(".main-container").fadeIn("500", function () {
         AOS.init({
-          duration: 800,
+          duration: 1000,
         });
       });
     });
@@ -28,17 +18,35 @@ $(document).ready(function () {
   const $asideMenu = $(".aside-container");
   const $asideMenuLink = $(".aside-container a");
 
-  const $attendeeSlideOne = $(".who-attends-slide-1");
-  const $attendeeSlideTwo = $(".who-attends-slide-2");
-  const $attendeeSlideThree = $(".who-attends-slide-3");
+  const $attendeeSlideOne = $(".who-participates-slide-1");
+  const $attendeeSlideTwo = $(".who-participates-slide-2");
+  const $attendeeSlideThree = $(".who-participates-slide-3");
 
   const $highlightSlideOne = $(".highlight-slider-1");
   const $highlightSlideTwo = $(".highlight-slider-2");
   const $highlightSlideThree = $(".highlight-slider-3");
 
   const $slides = $(
-    ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
+    ".who-participates-slide-1, .who-participates-slide-2, .who-participates-slide-3",
   );
+
+  const $testimonialSlide = $(".testimonial-slides");
+
+  // Show modal automatically on page load
+  $("#announcementModal").fadeIn();
+
+  // Hide modal and show main content when clicking close
+  $("#closeModal").click(function () {
+    $("#announcementModal").fadeOut();
+    // $("#mainContent").fadeIn();
+  });
+
+  // Hide popup when clicking outside the content
+  $(document).click(function (event) {
+    if (!$(event.target).closest(".modal-content, .get-ticket-btn").length) {
+      $("#announcementModal").fadeOut();
+    }
+  });
 
   // Toggle Nav
   const toggleNav = () => {
@@ -160,29 +168,69 @@ $(document).ready(function () {
     $highlightSlideThree.slick(highlightSettings3);
   };
 
-  const accordionFunc = () => {
-    // Open the first accordion item by default and set the icon to minus
-    $(".accordion-content").first().show();
-    $(".accordion-header").first().find(".icon").text("-");
+  const populateHighlightSlides = () => {
+    const TOTAL_HIGHLIGHT_IMAGES = 120;
 
-    $(".accordion-header").on("click", function () {
-      const $icon = $(this).find(".icon");
-      const $content = $(this).next(".accordion-content");
+    const shuffle = (array) => {
+      let currentIndex = array.length;
+      let randomIndex;
 
-      // Toggle this section's visibility and icon
-      $content.slideToggle(200, function () {
-        $icon.text($content.is(":visible") ? "-" : "+");
-      });
+      while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex],
+          array[currentIndex],
+        ];
+      }
 
-      // Hide other sections and set their icons to plus
-      $(".accordion-content").not($content).slideUp(200);
-      $(".accordion-header").not($(this)).find(".icon").text("+");
+      return array;
+    };
+
+    const highlightImages = Array.from(
+      { length: TOTAL_HIGHLIGHT_IMAGES },
+      (_, index) => `/assets/highlights/${index + 1}.jpg`,
+    );
+
+    const shuffledHighlights = shuffle(highlightImages);
+    const slider1 = [];
+    const slider2 = [];
+    const slider3 = [];
+
+    shuffledHighlights.forEach((imagePath, index) => {
+      if (index % 3 === 0) slider1.push(imagePath);
+      if (index % 3 === 1) slider2.push(imagePath);
+      if (index % 3 === 2) slider3.push(imagePath);
     });
+
+    const imageTag = (src) => `<img src="${src}" alt="" loading="lazy" />`;
+
+    $highlightSlideOne.html(slider1.map(imageTag).join(""));
+    $highlightSlideTwo.html(slider2.map(imageTag).join(""));
+    $highlightSlideThree.html(slider3.map(imageTag).join(""));
+  };
+
+  const testimonialComp = () => {
+    const testimonialSettings = {
+      infinite: true,
+      speed: 2000,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      lazyLoad: "ondemand",
+      arrows: false,
+      cssEase: "linear",
+      dots: true,
+      fade: true,
+    };
+
+    $testimonialSlide.slick(testimonialSettings);
   };
 
   $(window).scroll(function () {
     $(".odometer").each(function () {
-      let parent_section_postion = $(this).closest(".stat-card").position();
+      let parent_section_postion = $(this)
+        .closest(".count-container")
+        .position();
       let parent_section_top = parent_section_postion.top;
       if (
         $(window).scrollTop() >
@@ -194,11 +242,13 @@ $(document).ready(function () {
         }
       }
     });
+
+    AOS.refresh();
   });
 
-  // Initialize all functions
   toggleNav();
-  accordionFunc();
   attendeeComp();
+  populateHighlightSlides();
   highlightComp();
+  testimonialComp();
 });

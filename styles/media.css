@@ -1,45 +1,67 @@
 /* Big screen */
 @media only screen and (max-width: 1200px) {
+  /* Hero */
+  #hero .hero-wrapper .hero-buttons {
+    flex-direction: column;
+  }
+
+  /* Hero */
+
+  #hero .hero-wrapper {
+    width: 80%;
+  }
+
+  #hero .hero-wrapper .hero-description {
+    width: 100%;
+  }
+
+  /* Who attends */
+  #who-attends .who-meet-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   /* Speakers */
   #speakers .speakers-wrapper .speaker-box {
     flex: 0 0 calc((100% - 60px) / 3);
   }
-  #countup .key-stats-grid {
-    flex-direction: column;
-  }
 }
 
-/* Responsive */
-/* @media (max-width: 900px) {
-  .key-stats-grid {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .key-stats-center {
-    margin: 30px 0;
-  }
-} */
-
-/* Tap Pro */
+/* Tab Pro */
 @media only screen and (max-width: 991px) {
-  /* About */
-  #about .about-wrapper {
-    flex-direction: column;
-    gap: 60px;
-  }
+  /* #counter .count-wrapper .top {
+    display: block;
+  } */
 
-  #about .about-wrapper .left .image {
-    height: auto;
-  }
-
-  /* Objectives */
-  #objectives .top {
-    flex-direction: column;
-  }
-
-  /* Countup */
-  #countup .key-stats-center {
+  /* Navbar */
+  #navbar .nav-wrapper .nav-links {
     display: none;
+  }
+
+  #navbar .nav-wrapper .hamburger {
+    display: flex;
+  }
+
+  #navbar .nav-wrapper .button {
+    display: none;
+  }
+
+  /* Counter */
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .logo {
+    flex: 0 0 100%;
+    border-bottom: 3px solid var(--white);
+  }
+
+  /* Why attend */
+  #why-attend .why-attend-box-container .why-attend-box {
+    flex: 0 0 calc((100% - 30px) / 2);
   }
 
   /* Speakers */
@@ -47,57 +69,194 @@
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
-  /* Agenda */
-  #agenda .agenda-item {
-    min-height: auto;
+  /* Partner */
+  #partner .partner-wrapper .partner-box {
+    flex: 0 0 calc((100% - 30px) / 2);
   }
 
-  #agenda .agenda-item .right {
+  /* Whats new */
+  #whatsnew .whatsnew-wrapper .whatsnew-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Engage Leaders */
+  #engage-leaders .engage-wrapper {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  #engage-leaders .engage-wrapper .engage-left,
+  #engage-leaders .engage-wrapper .engage-right,
+  #engage-leaders .engage-wrapper .engage-action {
+    width: 100%;
+  }
+
+  #engage-leaders .engage-wrapper .engage-action-desktop {
     display: none;
+  }
+
+  #engage-leaders .engage-wrapper .engage-action-mobile {
+    display: block;
+    margin-top: 24px;
+  }
+
+  /* Event Recap */
+  #event-recap-section .event-recap-wrapper .video-container {
+    height: 500px;
   }
 }
 
 /* Tablet */
 @media only screen and (max-width: 768px) {
-  /* Nav */
-  #nav .nav-wrapper .nav-links {
-    display: none;
-  }
-
-  #nav .nav-wrapper .hamburger {
-    display: flex;
-  }
-
-  #nav .nav-wrapper .button {
-    display: none;
-  }
-
   /* Hero */
-  #hero .hero-wrapper .right {
+  #hero .hero-wrapper {
+    width: 100%;
+  }
+
+  #hero .hero-wrapper .hero-description {
+    width: 100%;
+  }
+
+  #hero .hero-image {
     display: none;
   }
 
-  #hero .left .button {
+  /* About */
+  #about .about-wrapper {
+    flex-direction: column;
+  }
+
+  #about .about-wrapper .right {
+    flex-direction: column;
+  }
+
+  #about .about-wrapper .right .hidden-image {
     display: block;
   }
 
-  #hero .hero-socials {
-    display: none;
+  /* Event Intro */
+  #event-intro .event-intro-wrapper {
+    flex-direction: column;
+    gap: 30px;
   }
 
-  /* Partner */
-  #partner .partner-box-container .partner-box {
+  /* Counter */
+  #counter .count-wrapper {
+    border-radius: 32px;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(4) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(5),
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
+  }
+
+  /* Key */
+  #key .key-box-container .key-box {
+    flex: 0 0 100%;
+    flex-direction: column;
+  }
+
+  /* Content tracks */
+  #key .content-tracks-card {
+    padding: 40px 28px;
+    background:
+      linear-gradient(90deg, rgba(0, 0, 102, 0.92) 0%, rgba(0, 0, 102, 0.82) 70%, rgba(0, 0, 102, 0.55) 100%),
+      url("../assets/highlights/1.jpg") no-repeat right center / cover;
+  }
+
+  #key .content-tracks-title {
+    font-size: 22px;
+  }
+
+  #key .content-tracks-list li {
+    font-size: 16px;
+  }
+
+  /* Why attend */
+  #why-attend .why-attend-box-container .why-attend-box {
     flex: 0 0 100%;
   }
 
-  #partner .buttons {
+  /* Partners */
+  #partners .partner-box {
+    flex: 0 0 100%;
     flex-direction: column;
+  }
+
+  /* Who attends */
+  #who-attends .who-meet-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #who-attends .seniority-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  #who-attends .seniority-label {
+    text-align: left;
+  }
+
+  #who-attends .seniority-pct {
+    text-align: left;
+  }
+
+  /* Partner */
+  #partner .partner-wrapper .partner-box {
+    flex: 0 0 100%;
+  }
+  /* Whats new */
+  #whatsnew .whatsnew-wrapper .whatsnew-box {
+    flex: 0 0 100%;
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 100%;
+  }
+
+  #speakers .speakers-box-container .speaker-box .speaker-image {
+    height: 400px;
+  }
+
+  /* Testimonial */
+  #testimonial .testimonial-card {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+
+  #testimonial .testimonial-card-left {
+    padding: 38px 28px 32px;
+  }
+
+  #testimonial .testimonial-card-left::after {
+    display: none;
+  }
+
+  #testimonial .testimonial-card-right {
+    height: 320px;
+  }
+
+  #testimonial .testimonial-card-right img {
+    clip-path: none;
+  }
+
+  /* Event Recap */
+  #event-recap-section .event-recap-wrapper .video-container {
+    height: 400px;
   }
 
   /* Footer */
   #footer .footer-wrapper .top {
     flex-direction: column;
-    flex-wrap: nowrap;
   }
 
   #footer .footer-wrapper .top .quick-links {
@@ -107,12 +266,53 @@
 
 /* Mobile */
 @media only screen and (max-width: 568px) {
-  /* Speakers */
-  #speakers .speakers-box-container .speaker-box .speaker-image {
-    height: auto;
+  /* Hero */
+  #hero .hero-wrapper .icon.icon-1 {
+    left: 2%;
+    top: -15%;
+  }
+  #hero .hero-wrapper .icon.icon-2 {
+    right: 2%;
+    top: -13%;
   }
 
-  #speakers .speakers-wrapper .speaker-box {
-    flex: 0 0 100%;
+  #hero .hero-wrapper .hero-buttons {
+    flex-direction: column;
+  }
+
+  /* Counter */
+  #counter .count-wrapper .bottom .count-box:nth-child(3),
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(4),
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(4) {
+    border-right: 3px solid var(--white);
+  }
+
+  /* Content tracks */
+  #key .content-tracks-card {
+    padding: 32px 20px;
+    background:
+      linear-gradient(180deg, rgba(0, 0, 102, 0.93) 0%, rgba(0, 0, 102, 0.86) 60%, rgba(0, 0, 102, 0.72) 100%),
+      url("../assets/highlights/1.jpg") no-repeat center / cover;
+  }
+
+  #key .content-tracks-left {
+    max-width: 100%;
+  }
+
+  #key .content-tracks-subtitle {
+    margin-bottom: 18px;
+  }
+
+  #key .content-tracks-list li {
+    padding: 14px 0;
+    font-size: 15px;
   }
 }
