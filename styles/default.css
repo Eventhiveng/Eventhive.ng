@@ -146,7 +146,7 @@ h6 {
   background: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 100001;
 }
 
 /* Popup Content */
@@ -281,7 +281,7 @@ h6 {
 
 .announcement-modal-close i {
   font-size: 20px;
-  color: var(--quaternary-color);
+  color: var(--black);
   transition: color 0.3s ease;
 }
 
