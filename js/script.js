@@ -8,7 +8,7 @@ $(document).ready(function () {
   const $sections = $("section");
   const $navLinks = $(".nav-links a");
   const $slides = $(
-    ".who-participates-slide-1, .who-participates-slide-2, .who-participates-slide-3"
+    ".who-participates-slide-1, .who-participates-slide-2, .who-participates-slide-3",
   );
 
   window.scrollTo(0, 0);
@@ -29,7 +29,7 @@ $(document).ready(function () {
   });
 
   // // Show modal automatically on page load
-  // $("#announcementModal").fadeIn();
+  $("#announcementModal").fadeIn();
 
   // Hide modal and show main content when clicking close
   $("#closeModal").click(function () {
@@ -123,7 +123,7 @@ $(document).ready(function () {
           "slickSetOption",
           "slidesToShow",
           getSlidesToShow(),
-          true
+          true,
         );
       }, 200);
     });
@@ -137,7 +137,7 @@ $(document).ready(function () {
     if (distance > 0) {
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
       );
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
