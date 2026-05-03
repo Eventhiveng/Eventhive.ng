@@ -55,9 +55,9 @@ $(document).ready(function () {
   });
 
   // Show announcement modal when page loads
-  $(window).on("load", function () {
-    $("#announcement-modal").addClass("active");
-  });
+  // $(window).on("load", function () {
+  //   $("#announcement-modal").addClass("active");
+  // });
 
   // Announcement Modal
   // Close announcement modal when close button is clicked
