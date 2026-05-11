@@ -1314,7 +1314,7 @@ const data: DataStore = {
       banner: "/images/events/banner/lref.jpg",
       event: "Lagos Real Estate Fest",
       eventMonth: "May",
-      eventDate: "May 27-28, 2026",
+      eventDate: "May 25-26, 2026",
       eventStatus: "active",
       slug: "lagos-real-estate-fest",
       title: "Lagos Real Estate Fest 2026",
