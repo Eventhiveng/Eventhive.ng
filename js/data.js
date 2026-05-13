@@ -140,10 +140,17 @@ const speakers = [
     linkedIn: "#",
   },
   {
-    name: "ESV. Bashir Oladunni (FNIVS, PMP),",
+    name: "ESV. Bashir Oladunni (FNIVS, PMP)",
     title: "Managing Director/Chief Executive Officer,",
     company: "Wemabod Limited",
     image: "assets/images/speakers/bashir-oladunni.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Obinna M. Udeagha,",
+    title: "MD,",
+    company: "ONL Group",
+    image: "assets/images/speakers/obinna-m-udeagha.jpeg",
     linkedIn: "#",
   },
 ];
