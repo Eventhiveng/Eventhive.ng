@@ -195,6 +195,13 @@ const speakers = [
     image: "assets/images/speakers/kevin-mloughlin.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Filipe Nuno Lopes",
+    title: "Executive Manager – Strategic Business Development,",
+    company: "Julius Berger Nigeria Plc",
+    image: "assets/images/speakers/filipe-nuno-lopes.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 const attSlideOne = [
