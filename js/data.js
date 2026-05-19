@@ -202,6 +202,20 @@ const speakers = [
     image: "assets/images/speakers/filipe-nuno-lopes.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Olubiyi Adekunbi",
+    title: "Head of Real Estate Investment,",
+    company: "ARM Investment Managers",
+    image: "assets/images/speakers/olubiyi-adekunbi.jpeg",
+    linkedIn: "#",
+  },
+  {
+    name: "Gbemisola Ajiboye",
+    title: "Manager, Business Development,",
+    company: "AMCE",
+    image: "assets/images/speakers/gbemisola-ajiboye.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 const attSlideOne = [
