@@ -552,7 +552,7 @@
       rgba(0, 0, 102, 0.78) 55%,
       rgba(0, 0, 102, 0.35) 100%
     ),
-    url("../assets/highlights/1.jpg") no-repeat right center / cover;
+    url("../assets/highlights/22.jpg") no-repeat right center / cover;
   overflow: hidden;
   z-index: 1;
 }
@@ -803,14 +803,14 @@
   height: 72px;
   margin: 0 auto 14px;
   border-radius: 50%;
-  background: #fff;
+  background: #422727;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-#who-attends .who-meet-icon svg {
+#who-attends .who-meet-icon img {
   width: 36px;
   height: 36px;
 }
