@@ -216,6 +216,13 @@ const speakers = [
     image: "assets/images/speakers/gbemisola-ajiboye.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Oluwatobi Osonuga",
+    title: "Managing Director,",
+    company: "Chateau-Royal Real Estate Limited",
+    image: "assets/images/speakers/oluwatobi-osonuga.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 const attSlideOne = [
