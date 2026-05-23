@@ -11,9 +11,9 @@ $(function () {
       });
 
       // Show announcement modal after preloader finishes
-      setTimeout(function () {
-        $("#announcement-modal").addClass("active");
-      }, 300); // Small delay after preloader fade out
+      // setTimeout(function () {
+      //   $("#announcement-modal").addClass("active");
+      // }, 300); // Small delay after preloader fade out
     });
   }, 1000); // Delay of 1 second
 });
