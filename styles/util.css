@@ -70,6 +70,9 @@
 .btn {
   padding: 10px 30px;
   border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 

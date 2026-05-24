@@ -153,10 +153,12 @@
   border-radius: 20px;
   height: calc(100vh - 80px);
   width: 100%;
-  background: linear-gradient(#00000080, #00000080),
+  background:
+    linear-gradient(#00000080, #00000080),
     url(/assets/section-bg/johans.jpg) no-repeat center/cover;
 
-  background: linear-gradient(#00000080, #00000080),
+  background:
+    linear-gradient(#00000080, #00000080),
     url(/assets/section-bg/trade.png) no-repeat center/cover;
   padding: 50px 0px;
 }
@@ -200,6 +202,16 @@
 #hero .hero-container .hero-wrapper .hero-content .left .hero-description p {
   font-size: 18px;
 }
+
+#hero .hero-container .hero-wrapper .hero-content .right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* #hero .hero-container .hero-wrapper .hero-content .right .btn {
+  width: max-content;
+} */
 
 #hero .hero-container .hero-wrapper .floating-loc {
   background: #ffffff7b;
@@ -814,7 +826,9 @@
 #highlight .highlight-container .slide-container .slider img {
   margin: 10px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #3e3c3c5d, inset -1px -1px 10px #31333653;
+  box-shadow:
+    1px 1px 10px #3e3c3c5d,
+    inset -1px -1px 10px #31333653;
   object-position: top;
 }
 
@@ -830,7 +844,8 @@
 
 /* Contact */
 #contact {
-  background: linear-gradient(#00000080, #00000080),
+  background:
+    linear-gradient(#00000080, #00000080),
     var(--black) url(../assets/section-img/mining-excavator.jpeg) no-repeat
       center/cover fixed;
   color: var(--white);
