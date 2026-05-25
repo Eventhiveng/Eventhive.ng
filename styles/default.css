@@ -109,8 +109,12 @@ section {
 }
 
 /* Ticket Links */
-.popup .btn-sec {
+/* .popup .btn-sec {
   margin-top: 20px;
+} */
+
+.popup .popup-content .btn {
+  margin-bottom: 20px;
 }
 
 /* .popup .btn-sec:hover {
