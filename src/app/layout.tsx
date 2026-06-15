@@ -168,7 +168,7 @@ export default function RootLayout({
                 addressCountry: "NG",
               },
               description:
-                "Nigeria's premier event management platform organizing corporate events, conferences, and networking sessions.",
+                "Africa's leading B2B2C event servicing company with event portfolios across various sectors in Lagos, London, Johannesburg, Kigali, Nairobi and Abuja",
             }),
           }}
         />
