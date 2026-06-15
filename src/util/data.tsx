@@ -1730,7 +1730,7 @@ const data: DataStore = {
       banner: "/images/events/banner/eventhive-banner-blue.png",
       event: "Payments Live",
       eventMonth: "June",
-      eventDate: "June 25, 2026",
+      eventDate: "June 26, 2026",
       eventStatus: "active",
       slug: "payments-live",
       title: "Payments Live 2026",
