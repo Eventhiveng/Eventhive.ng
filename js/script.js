@@ -27,7 +27,7 @@ $(document).ready(function () {
   const $highlightSlideThree = $(".highlight-slider-3");
 
   const $slides = $(
-    ".who-participates-slide-1, .who-participates-slide-2, .who-participates-slide-3"
+    ".who-participates-slide-1, .who-participates-slide-2, .who-participates-slide-3",
   );
 
   const $testimonialSlide = $(".testimonial-slides");
@@ -74,6 +74,34 @@ $(document).ready(function () {
       }
     });
   };
+
+  // Show announcement modal when page loads
+  $(window).on("load", function () {
+    $("#announcement-modal").addClass("active");
+  });
+
+  // Announcement Modal
+  // Close announcement modal when close button is clicked
+  $(".announcement-modal-close").click(function () {
+    $("#announcement-modal").removeClass("active");
+  });
+
+  // Close announcement modal when overlay is clicked
+  $(".announcement-modal-overlay").click(function () {
+    $("#announcement-modal").removeClass("active");
+  });
+
+  // Prevent modal content from closing when clicked
+  $(".announcement-modal-content").click(function (e) {
+    e.stopPropagation();
+  });
+
+  // Close announcement modal when Escape key is pressed
+  $(document).keydown(function (e) {
+    if (e.key === "Escape" && $("#announcement-modal").hasClass("active")) {
+      $("#announcement-modal").removeClass("active");
+    }
+  });
 
   const attendeeComp = () => {
     // Function to calculate slidesToShow based on window width
@@ -189,7 +217,7 @@ $(document).ready(function () {
 
     const highlightImages = Array.from(
       { length: TOTAL_HIGHLIGHT_IMAGES },
-      (_, index) => `/assets/highlights/${index + 1}.jpg`
+      (_, index) => `/assets/highlights/${index + 1}.jpg`,
     );
 
     const shuffledHighlights = shuffle(highlightImages);
