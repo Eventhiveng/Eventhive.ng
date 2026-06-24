@@ -1,175 +1,79 @@
-// $(function () {
-//   // Simulate loading delay for 1 second
-//   setTimeout(function () {
-//     // Fade out the preloader
-//     $("#preloader").fadeOut("1000", function () {
-//       // Show the main content
-//       $(".main-container").fadeIn("500", function () {
-//         AOS.init({
-//           duration: 1000,
-//         });
-//       });
-//     });
-//   }, 1000); // Delay of 1 second
-// });
-
-$(document).ready(function () {
-  $hamburger = $("#hamburgerMenu");
-  $mobileNav = $(".mobile-menu");
-  $testimonialSlide = $(".testimonial-slides");
-  $attendeeSlideOne = $(".who-participates-slide-1");
-  $attendeeSlideTwo = $(".who-participates-slide-2");
-  $attendeeSlideThree = $(".who-participates-slide-3");
-  $slides = $(
-    ".who-participates-slide-1, .who-participates-slide-2, .who-participates-slide-3"
-  );
-  $highlightSlideOne = $(".highlight-slider-1");
-  $highlightSlideTwo = $(".highlight-slider-2");
-  $highlightSlideThree = $(".highlight-slider-3");
-
+$(function () {
   // Simulate loading delay for 1 second
   setTimeout(function () {
     // Fade out the preloader
     $("#preloader").fadeOut("1000", function () {
       // Show the main content
-      $(".main-container").fadeIn(function () {
+      $(".main-container").fadeIn("500", function () {
         AOS.init({
           duration: 1000,
         });
       });
     });
   }, 1000); // Delay of 1 second
+});
 
-  $hamburger.on("click", function () {
-    // Add pulse effect
-    $(this).addClass("clicked");
-    setTimeout(() => $(this).removeClass("clicked"), 300);
+$(document).ready(function () {
+  const $hamburger = $(".hamburger");
+  const $asideMenu = $(".aside-container");
+  const $asideMenuLink = $(".aside-container a");
 
-    // Toggle active state for both hamburger and menu
-    $(this).toggleClass("active");
-    $mobileNav.toggleClass("active");
+  const $attendeeSlideOne = $(".who-participates-slide-1");
+  const $attendeeSlideTwo = $(".who-participates-slide-2");
+  const $attendeeSlideThree = $(".who-participates-slide-3");
+
+  const $highlightSlideOne = $(".highlight-slider-1");
+  const $highlightSlideTwo = $(".highlight-slider-2");
+  const $highlightSlideThree = $(".highlight-slider-3");
+
+  const $slides = $(
+    ".who-participates-slide-1, .who-participates-slide-2, .who-participates-slide-3",
+  );
+
+  const $testimonialSlide = $(".testimonial-slides");
+
+  // Show modal automatically on page load
+  $("#announcementModal").fadeIn();
+
+  // Hide modal and show main content when clicking close
+  $("#closeModal").click(function () {
+    $("#announcementModal").fadeOut();
+    // $("#mainContent").fadeIn();
   });
 
-  // Close menu with close button
-  $("#closeMenu").on("click", function () {
-    $("#hamburgerMenu").removeClass("active");
-    $mobileNav.removeClass("active");
+  // Hide popup when clicking outside the content
+  $(document).click(function (event) {
+    if (!$(event.target).closest(".modal-content, .get-ticket-btn").length) {
+      $("#announcementModal").fadeOut();
+    }
   });
 
-  // Close menu when clicking on links
-  $("#navMobile a").on("click", function () {
-    $("#hamburgerMenu").removeClass("active");
-    $mobileNav.removeClass("active");
-  });
+  // Toggle Nav
+  const toggleNav = () => {
+    // Toggle hamburger and aside menu
+    $hamburger.on("click", function () {
+      $(this).toggleClass("open");
+      $asideMenu.toggleClass("open");
+    });
 
-  $(window).scroll(function () {
-    $(".odometer").each(function () {
-      let parent_section_postion = $(this).closest(".stat-item").position();
-      let parent_section_top = parent_section_postion.top;
+    // Close the aside menu when a link is clicked
+    $asideMenuLink.on("click", function () {
+      $asideMenu.removeClass("open");
+      $hamburger.removeClass("open");
+    });
+
+    $(document).on("click", function (event) {
       if (
-        $(window).scrollTop() >
-        parent_section_top - ($(window).height() - 200)
+        !$asideMenu.is(event.target) &&
+        !$asideMenu.has(event.target).length &&
+        !$hamburger.is(event.target) &&
+        !$hamburger.has(event.target).length
       ) {
-        if ($(this).data("status") == "yes") {
-          $(this).html($(this).data("count") + "+");
-
-          // Add + after the odometer
-          if (!$(this).next(".plus-sign").length) {
-            $(this).after('<span class="plus-sign">+</span>');
-          }
-
-          $(this).data("status", "no");
-        }
+        $asideMenu.removeClass("open");
+        $hamburger.removeClass("open");
       }
     });
-
-    // const scrollTimeout = setTimeout(() => {
-    AOS.refresh();
-    // }, 150);
-
-    // clearTimeout(scrollTimeout);
-
-    // Add fixed navbar functionality
-    let lastScrollTop = 0;
-    const navbar = $("#navbar");
-    const scrollThreshold = 150;
-
-    // $(window).scroll(function () {
-    const scrollTop = $(this).scrollTop();
-
-    if (scrollTop > scrollThreshold) {
-      navbar.addClass("fixed-nav");
-    } else {
-      navbar.removeClass("fixed-nav");
-    }
-
-    lastScrollTop = scrollTop;
-    // });
-  });
-
-  const accordionFunc = () => {
-    // Open the first accordion item by default and set the icon to minus
-    $(".accordion-content").first().show();
-    $(".accordion-header").first().find(".icon").text("-");
-
-    $(".accordion-header").on("click", function () {
-      const $icon = $(this).find(".icon");
-      const $content = $(this).next(".accordion-content");
-
-      // Toggle this section's visibility and icon
-      $content.slideToggle(200, function () {
-        $icon.text($content.is(":visible") ? "-" : "+");
-      });
-
-      // Hide other sections and set their icons to plus
-      $(".accordion-content").not($content).slideUp(200);
-      $(".accordion-header").not($(this)).find(".icon").text("+");
-    });
   };
-
-  const testimonialComp = () => {
-    const testimonialSettings = {
-      infinite: true,
-      speed: 2000,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      lazyLoad: "ondemand",
-      arrows: false,
-      cssEase: "linear",
-      dots: true,
-      fade: true,
-    };
-
-    $testimonialSlide.slick(testimonialSettings);
-  };
-
-  const countdownFunction = setInterval(function () {
-    const now = new Date().getTime();
-    const eventDate = new Date("October 21, 2025 00:00:00").getTime();
-
-    // Calculate the time remaining
-    const distance = eventDate - now;
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display countdown
-    if (distance > 0) {
-      $("#countdown-timer").html(
-        days + "d " + hours + "h " + minutes + "m " + seconds + "s "
-      );
-    } else {
-      $("#countdown-timer").html("Event is Live!");
-    }
-
-    // Stop the countdown if both events are live
-    if (distance < 0) {
-      clearInterval(countdownFunction);
-    }
-  }, 1000);
 
   const attendeeComp = () => {
     // Function to calculate slidesToShow based on window width
@@ -264,10 +168,87 @@ $(document).ready(function () {
     $highlightSlideThree.slick(highlightSettings3);
   };
 
-  attendeeComp();
-  testimonialComp();
-  accordionFunc();
-  highlightComp();
+  const populateHighlightSlides = () => {
+    const TOTAL_HIGHLIGHT_IMAGES = 120;
 
-  // countdownFunction();
+    const shuffle = (array) => {
+      let currentIndex = array.length;
+      let randomIndex;
+
+      while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex],
+          array[currentIndex],
+        ];
+      }
+
+      return array;
+    };
+
+    const highlightImages = Array.from(
+      { length: TOTAL_HIGHLIGHT_IMAGES },
+      (_, index) => `/assets/highlights/${index + 1}.jpg`,
+    );
+
+    const shuffledHighlights = shuffle(highlightImages);
+    const slider1 = [];
+    const slider2 = [];
+    const slider3 = [];
+
+    shuffledHighlights.forEach((imagePath, index) => {
+      if (index % 3 === 0) slider1.push(imagePath);
+      if (index % 3 === 1) slider2.push(imagePath);
+      if (index % 3 === 2) slider3.push(imagePath);
+    });
+
+    const imageTag = (src) => `<img src="${src}" alt="" loading="lazy" />`;
+
+    $highlightSlideOne.html(slider1.map(imageTag).join(""));
+    $highlightSlideTwo.html(slider2.map(imageTag).join(""));
+    $highlightSlideThree.html(slider3.map(imageTag).join(""));
+  };
+
+  const testimonialComp = () => {
+    const testimonialSettings = {
+      infinite: true,
+      speed: 2000,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      lazyLoad: "ondemand",
+      arrows: false,
+      cssEase: "linear",
+      dots: true,
+      fade: true,
+    };
+
+    $testimonialSlide.slick(testimonialSettings);
+  };
+
+  $(window).scroll(function () {
+    $(".odometer").each(function () {
+      let parent_section_postion = $(this)
+        .closest(".count-container")
+        .position();
+      let parent_section_top = parent_section_postion.top;
+      if (
+        $(window).scrollTop() >
+        parent_section_top - ($(window).height() - 200)
+      ) {
+        if ($(this).data("status") == "yes") {
+          $(this).html($(this).data("count"));
+          $(this).data("status", "no");
+        }
+      }
+    });
+
+    AOS.refresh();
+  });
+
+  toggleNav();
+  attendeeComp();
+  populateHighlightSlides();
+  highlightComp();
+  testimonialComp();
 });
