@@ -453,4 +453,51 @@ export const blogPageData: BlogPageData[] = [
     `,
     createdAt: "2025-11-20",
   },
+  {
+    id: 12,
+    imgLink: "/images/blog/payments-live-2026.jpg",
+    title: "Payments Live returns to Johannesburg for 2nd edition",
+    author: "Eventhive",
+    slug: "payments-live-returns-to-johannesburg-for-2nd-edition",
+    excerpt:
+      "Eventhive, Africa’s leading B2B2C event servicing company with a strong portfolio across key sectors and six major cities, is excited to announce the second edition of Payments Live as part of Africa Tech Series. The event is scheduled to take place on Friday, 26 June 2026, at Investec, Sandton, Johannesburg.",
+    description: `
+    <p>
+      <strong>Eventhive, Africa’s leading</strong> B2B2C event servicing company with a strong portfolio across key sectors and six major cities, is excited to announce the second edition of Payments Live as part of Africa Tech Series. The event is scheduled to take place on Friday, 26 June 2026, at Investec, Sandton, Johannesburg.
+      <br><br>
+      Payments Live is the premier gathering for senior executives driving the future of payments across the African continent. Convened as part of the Africa Tech Series by Eventhive, the event brings together payments leaders, merchants, banks, policymakers, fintech companies and fraud prevention experts to explore the critical trends and opportunities shaping Africa’s rapidly evolving payments ecosystem.
+      <br><br>
+      Now in its second edition, Payments Live explores conversations across digital payments, interoperability, cross-border transactions, embedded finance, digital currencies and the regulatory frameworks that govern them all. It offers a strategic platform for payments solutions providers to showcase their offerings to a highly targeted audience of industry decision-makers, investors and end users.
+      <br><br>
+      <h2>‘Invaluable platform’</h2>
+      <br><br>
+      Speaking on the second edition, Jamiu Ijaodola, CEO of Eventhive said: “We are delighted to return to Johannesburg this year. The event underscores our commitment to fostering collaboration and knowledge-sharing among the leaders who are actively building the future of payments in Africa- Africa’s cross-border payments market was worth approximately US$329-billion in 2025 and is projected to reach $1 trillion by 2035.
+      <br><br>
+      “We believe Payments Live provides an invaluable platform to address the critical issues and unlock the immense potential within the African payments ecosystem,” he said.
+      <br><br>
+      Confirmed speakers participating at the event include:
+      <br><br>
+      
+      <ul>
+        <li>Wayne Cook, executive director: payments, sub-Saharan Africa, JPMorgan</li>
+        <li>Chipo Mushwana, executive, payments & technology, Nedbank</li>
+        <li>Kagiso Mothibi, CEO: fintech, MTN South Africa</li>
+        <li>Rashi Gupta, group chief strategy officer, Onafriq</li>
+        <li>Hamish Houston, co-founder, Enza</li>
+        <li>Nkahiseng Ralepeli, co-founder, IdeaToola</li>
+        <li>Drisha Kirkman, head of alliance banking, Lesaka Technologies</li>
+        <li>Calvin Christopher, partner: regulatory & compliance, Spencer West</li>
+        <li>Thanusha Govender, CEO, X-Link</li>
+        <li>Wiza Jalakasi, director: country growth, sub-Saharan Africa, Ebanx</li>
+        <li>Jonathan Allback, CEO, NjiaPay</li>
+        <li>Lesley Langton, senior legal and regulatory specialist, Ebanx</li>
+        <li>Julie Neogy, co-CEO, Expand in Africa</li>
+        <li>Alicia Kamfer, senior compliance specialist, Masthead</li>
+      </ul>
+      <br><br>
+      For more information about the event or to discuss partnership opportunities, please visit <a href='https://paymentslive.co.za'>paymentslive.co.za</a>.
+    </p>
+    `,
+    createdAt: "2026-06-04",
+  },
 ];
