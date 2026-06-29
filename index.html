@@ -1,44 +1,63 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nigeria Oil and Gas Outlook - The Premier Energy Conference"
+    />
+    <meta
+      name="keywords"
+      content="oil and gas, energy, petroleum, Nigeria, energy conference, oil industry, gas industry, energy outlook"
+    />
 
-  <meta name="description" content="Nigeria Oil and Gas Outlook - The Premier Energy Conference" />
-  <meta name="keywords"
-    content="oil and gas, energy, petroleum, Nigeria, energy conference, oil industry, gas industry, energy outlook" />
+    <link
+      rel="shortcut icon"
+      href="/assets/logo/nogo-icon-white-yellow.png"
+      type="image/x-icon"
+    />
 
+    <!-- Slick css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
-  <link rel="shortcut icon" href="/assets/logo/nogo-icon-white-yellow.png" type="image/x-icon" />
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- Slick css -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Odometer -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css"
+    />
 
-  <!-- Aos -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Odometer -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/util.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <link rel="stylesheet" href="styles/default.css" />
+    <title>Nigeria Oil & Gas Outlook</title>
+  </head>
 
-  <!-- Google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/util.css" />
-  <link rel="stylesheet" href="styles/media.css" />
-  <link rel="stylesheet" href="styles/default.css" />
-  <title>Nigeria Oil & Gas Outlook</title>
-
-</head>
-
-<body>
-  <!-- Preloader -->
-  <!-- <div id="preloader">
+  <body>
+    <!-- Preloader -->
+    <!-- <div id="preloader">
     <div class="loader">
       <span></span>
       <span></span>
@@ -46,19 +65,19 @@
     </div>
   </div> -->
 
-  <div id="preloader">
-    <div class="oil-drop-ripple-loader">
-      <div class="oil-drop-ripple"></div>
-      <div class="oil-drop-ripple"></div>
-      <div class="oil-drop-ripple"></div>
-      <div class="oil-drop-center"></div>
+    <div id="preloader">
+      <div class="oil-drop-ripple-loader">
+        <div class="oil-drop-ripple"></div>
+        <div class="oil-drop-ripple"></div>
+        <div class="oil-drop-ripple"></div>
+        <div class="oil-drop-center"></div>
+      </div>
     </div>
-  </div>
 
-  <!-- Main-Content -->
-  <div class="main-container">
-    <!-- Announcement -->
-    <!-- <div id="announcementModal" class="modal-overlay">
+    <!-- Main-Content -->
+    <div class="main-container">
+      <!-- Announcement -->
+      <!-- <div id="announcementModal" class="modal-overlay">
       <div class="modal-content">
         <h2>- Announcement -</h2>
         <h3>Ready . Set . <span class="text-primary">Live</span></h3>
@@ -79,130 +98,165 @@
       </div>
     </div> -->
 
-    <!-- Header -->
-    <header>
-      <!-- Nav -->
-      <nav id="navbar">
-        <div class="nav-container">
-          <div class="external-container">
-            <div class="nav-wrapper">
+      <!-- Header -->
+      <header>
+        <!-- Nav -->
+        <nav id="navbar">
+          <div class="nav-container">
+            <div class="external-container">
+              <div class="nav-wrapper">
+                <div class="logo">
+                  <a href="/">
+                    <div class="logo-icon">
+                      <img src="assets/logo/nogo-white-logo.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="nav-links">
+                  <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#partners">Partnership</a></li>
+
+                    <li>
+                      <a
+                        href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Exhibition%20Deck"
+                        >Exhibition</a
+                      >
+                    </li>
+                    <li>
+                      <!-- <a href="/assets/agenda/Agenda-Brief-NFF2025.pdf" target="_blank"> -->
+                      <a href="#" target="_blank"> Agenda </a>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="button">
+                  <a
+                    target="_blank"
+                    class="btn btn-sec"
+                    href="https://tix.africa/discover/nigeria-oil-gas-outlook-2026"
+                    >Get a Ticket</a
+                  >
+                </div>
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Aside -->
+        <aside id="aside">
+          <div class="aside-container">
+            <!-- <div class="close-icon">X</div> -->
+            <div class="aside-wrapper">
               <div class="logo">
                 <a href="/">
-                  <div class="logo-icon">
-                    <img src="assets/logo/nogo-white-logo.png" alt="" />
-                  </div>
+                  <img
+                    src="/assets/logo/nogo-white-logo.png"
+                    alt="Nigeria Oil & Gas Outlook"
+                  />
                 </a>
               </div>
+
               <div class="nav-links">
                 <ul>
+                  <li class="active"><a href="#">Home</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#partners">Partnership</a></li>
-
                   <li>
                     <a
-                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Exhibition%20Deck">Exhibition</a>
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Exhibition%20Deck"
+                      >Exhibition</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://tix.africa/discover/nigeria-oil-gas-outlook-2026"
+                      target="_blank"
+                      >Tickets</a
+                    >
                   </li>
                   <li>
                     <!-- <a href="/assets/agenda/Agenda-Brief-NFF2025.pdf" target="_blank"> -->
-                    <a href="#" target="_blank">
-                      Agenda
-                    </a>
+                    <a href="#" target="_blank"> Agenda </a>
                   </li>
                   <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
-              <div class="button">
-                <a target="_blank" class="btn btn-sec"
-                  href="https://tix.africa/discover/nigeria-oil-gas-outlook-2026">Get
-                  a Ticket</a>
-              </div>
-              <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+              <div>
+                <small
+                  >&copy; <span class="year">2026</span>. An event by
+                  Eventhive</small
+                >
               </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </aside>
+      </header>
 
-      <!-- Aside -->
-      <aside id="aside">
-        <div class="aside-container">
-          <!-- <div class="close-icon">X</div> -->
-          <div class="aside-wrapper">
-            <div class="logo">
-              <a href="/">
-                <img src="/assets/logo/nogo-white-logo.png" alt="Nigeria Oil & Gas Outlook" />
-              </a>
-            </div>
-
-            <div class="nav-links">
-              <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#partners">Partnership</a></li>
-                <li>
-                  <a
-                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Exhibition%20Deck">Exhibition</a>
-                </li>
-                <li>
-                  <a href="https://tix.africa/discover/nigeria-oil-gas-outlook-2026" target="_blank">Tickets</a>
-                </li>
-                <li>
-                  <!-- <a href="/assets/agenda/Agenda-Brief-NFF2025.pdf" target="_blank"> -->
-                  <a href="#" target="_blank">
-                    Agenda
-                  </a>
-                </li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <small>&copy; <span class="year">2026</span>. An event by
-                Eventhive</small>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </header>
-
-    <!-- Content -->
-    <main>
-      <section id="hero">
-        <div class="hero-container">
-          <div class="container">
-            <div class="hero-wrapper">
-              <!-- <div class="hero-header">
+      <!-- Content -->
+      <main>
+        <section id="hero">
+          <div class="hero-container">
+            <div class="container">
+              <div class="hero-wrapper">
+                <!-- <div class="hero-header">
                 <h1 data-aos="fade-up" data-aos-delay="100">
                   <span>Nigeria's #1 Oil & Gas Show</span>
                 </h1>
               </div> -->
-              <div class="hero-description">
-                <p data-aos="fade-up" data-aos-delay="200">
-                  Meeting place for stakeholders working across various verticals of upstream, midstream and downstream
-                  sectors of Nigeria's Oil & Gas industry.
-                </p>
-              </div>
-              <div class="date-loc" data-aos="fade-up" data-aos-delay="300">
-                <h4 class="date">
-                  27th August, 2026 | Civic Centre, Victoria Island, Lagos
-                </h4>
-              </div>
+                <div class="hero-description">
+                  <p data-aos="fade-up" data-aos-delay="200">
+                    Meeting place for stakeholders working across various
+                    verticals of upstream, midstream and downstream sectors of
+                    Nigeria's Oil & Gas industry.
+                  </p>
+                </div>
+                <div class="date-loc" data-aos="fade-up" data-aos-delay="300">
+                  <h4 class="date">
+                    27th August, 2026 | Civic Centre, Victoria Island, Lagos
+                  </h4>
+                </div>
 
-              <div class="hero-buttons" data-aos="fade-up" data-aos-delay="350" data-aos-offset="0">
-                <div class="button" data-aos="fade-up" data-aos-delay="350" data-aos-offset="0">
-                  <!-- Previous CTA label (kept for reference): Get a Ticket -->
-                  <a href="https://tix.africa/discover/nigeria-oil-gas-outlook-2026" target="_blank"
-                    class="btn btn-pry">Buy tickets</a>
-                </div>
-                <div class="button" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
-                  <!-- Previous CTA label (kept for reference): Request Sponsorship Deck -->
-                  <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Sponsorship%20Deck"
-                    class="btn btn-sec">Request sponsorship deck</a>
-                </div>
-                <!-- Previous third CTA (kept for reference)
+                <div
+                  class="hero-buttons"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                  data-aos-offset="0"
+                >
+                  <div
+                    class="button"
+                    data-aos="fade-up"
+                    data-aos-delay="350"
+                    data-aos-offset="0"
+                  >
+                    <!-- Previous CTA label (kept for reference): Get a Ticket -->
+                    <a
+                      href="https://tix.africa/discover/nigeria-oil-gas-outlook-2026"
+                      target="_blank"
+                      class="btn btn-pry"
+                      >Buy tickets</a
+                    >
+                  </div>
+                  <div
+                    class="button"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-offset="0"
+                  >
+                    <!-- Previous CTA label (kept for reference): Request Sponsorship Deck -->
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Sponsorship%20Deck"
+                      class="btn btn-sec"
+                      >Request sponsorship deck</a
+                    >
+                  </div>
+                  <!-- Previous third CTA (kept for reference)
                   <div
                     class="button"
                     data-aos="fade-up"
@@ -216,595 +270,915 @@
                 >
               </div>
                   -->
-              </div>
-            </div>
-          </div>
-          <div class="hero-image">
-            <div class="image">
-              <!-- <img src="assets/section-img/76.jpg" alt="" /> -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="event-intro">
-        <div class="event-intro-container padding mist">
-          <div class="container">
-            <div class="event-intro-wrapper">
-              <div class="left">
-                <div class="image" data-aos="zoom-in" data-aos-delay="250">
-                  <img src="assets/section-img/engage.jpg" alt="Nigeria Oil & Gas Outlook audience" />
-                </div>
-              </div>
-              <div class="right">
-                <div class="event-intro-heading">
-                  <h3 data-aos="fade-left">
-                    The leading minds across Nigeria's oil & gas industry don't just discuss change, they drive it.
-                  </h3>
-                </div>
-                <div class="event-intro-description">
-                  <p data-aos="fade-left" data-aos-delay="150">
-                    At the Nigeria Oil & Gas Outlook, stategies sharpen, partnerships gain momentum, and real
-                    innovations takes flight.
-                  </p>
-                  <p data-aos="fade-left" data-aos-delay="250">
-                    If you want to unlock new ventures across Nigeria's Oil and Gas landscape, this is where it begins.
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section id="about">
-        <div class="about-container padding">
-          <div class="container">
-            <div class="about-wrapper mist">
-              <div class="left">
-                <div class="about-heading">
-                  <h3 data-aos="fade-right">
-                    Be part of Nigeria's thriving Oil & Gas Future
-                  </h3>
-                </div>
-                <div class="about-description">
-                  <p data-aos="fade-right" data-aos-delay="200">
-                    Nigeria Oil & Gas Outlook (NOGO) unites financiers, operators, regulators, high-profile project
-                    developers and key stakeholders from both the Nigerian and global oil and gas landscape to explore
-                    opportunities across the country's oil & gas market.
-                  </p>
-                  <p data-aos="fade-right" data-aos-delay="300">
-                    Back for its 6th edition, Nigeria Oil & Gas Outlook will showcase Nigeria's commitment to driving
-                    forward its oil and gas industry and highlights the collaborative efforts between government bodies
-                    and the private sector to foster growth and innovation. This exclusive event offers unparalleled
-                    opportunities to engage with influential leaders, gain insights into the latest industry trends and
-                    explore potential business opportunities within Nigeria's rich oil and gas sector.
-                  </p>
-                </div>
-              </div>
-              <div class="right">
-                <div class="image" data-aos="zoom-in" data-aos-delay="300">
-                  <img src="assets/section-img/crowd.jpg" alt="" />
-                </div>
-
-                <div class="image hidden-image" data-aos="zoom-in" data-aos-delay="350">
-                  <img src="assets/section-img/executive.jpg" alt="" />
-                </div>
+            <div class="hero-image">
+              <div class="image">
+                <!-- <img src="assets/section-img/76.jpg" alt="" /> -->
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="counter">
-        <div class="count-container padding mist">
-          <div class="container">
-            <div class="count-wrapper" data-aos="zoom-in">
-              <div class="bottom">
-                <div class="logo">
-                  <div class="image">
-                    <img src="assets/logo/nogo-white-logo.png" alt="" />
+        <section id="event-intro">
+          <div class="event-intro-container padding mist">
+            <div class="container">
+              <div class="event-intro-wrapper">
+                <div class="left">
+                  <div class="image" data-aos="zoom-in" data-aos-delay="250">
+                    <img
+                      src="assets/section-img/engage.jpg"
+                      alt="Nigeria Oil & Gas Outlook audience"
+                    />
                   </div>
                 </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="30">0</span><span class="plus">+</span>
-                  </h2>
-                  <p>Speakers</p>
+                <div class="right">
+                  <div class="event-intro-heading">
+                    <h3 data-aos="fade-left">
+                      The leading minds across Nigeria's oil & gas industry
+                      don't just discuss change, they drive it.
+                    </h3>
+                  </div>
+                  <div class="event-intro-description">
+                    <p data-aos="fade-left" data-aos-delay="150">
+                      At the Nigeria Oil & Gas Outlook, stategies sharpen,
+                      partnerships gain momentum, and real innovations takes
+                      flight.
+                    </p>
+                    <p data-aos="fade-left" data-aos-delay="250">
+                      If you want to unlock new ventures across Nigeria's Oil
+                      and Gas landscape, this is where it begins.
+                    </p>
+                  </div>
                 </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="750">0</span><span class="plus">+</span>
-                  </h2>
-                  <p>C-level Attendees</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+          <div class="about-container padding">
+            <div class="container">
+              <div class="about-wrapper mist">
+                <div class="left">
+                  <div class="about-heading">
+                    <h3 data-aos="fade-right">
+                      Be part of Nigeria's thriving Oil & Gas Future
+                    </h3>
+                  </div>
+                  <div class="about-description">
+                    <p data-aos="fade-right" data-aos-delay="200">
+                      Nigeria Oil & Gas Outlook (NOGO) unites financiers,
+                      operators, regulators, high-profile project developers and
+                      key stakeholders from both the Nigerian and global oil and
+                      gas landscape to explore opportunities across the
+                      country's oil & gas market.
+                    </p>
+                    <p data-aos="fade-right" data-aos-delay="300">
+                      Back for its 6th edition, Nigeria Oil & Gas Outlook will
+                      showcase Nigeria's commitment to driving forward its oil
+                      and gas industry and highlights the collaborative efforts
+                      between government bodies and the private sector to foster
+                      growth and innovation. This exclusive event offers
+                      unparalleled opportunities to engage with influential
+                      leaders, gain insights into the latest industry trends and
+                      explore potential business opportunities within Nigeria's
+                      rich oil and gas sector.
+                    </p>
+                  </div>
                 </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="25">0</span><span class="plus">+</span>
-                  </h2>
-                  <p>Exhibitors</p>
+                <div class="right">
+                  <div class="image" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="assets/section-img/crowd.jpg" alt="" />
+                  </div>
+
+                  <div
+                    class="image hidden-image"
+                    data-aos="zoom-in"
+                    data-aos-delay="350"
+                  >
+                    <img src="assets/section-img/executive.jpg" alt="" />
+                  </div>
                 </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="250">0</span><span class="plus">+</span>
-                  </h2>
-                  <p>Companies</p>
-                </div>
-                <!-- <div class="count-box">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="counter">
+          <div class="count-container padding mist">
+            <div class="container">
+              <div class="count-wrapper" data-aos="zoom-in">
+                <div class="bottom">
+                  <div class="logo">
+                    <div class="image">
+                      <img src="assets/logo/nogo-white-logo.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="30"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>Speakers</p>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="750"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>C-level Attendees</p>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="25"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>Exhibitors</p>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="250"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>Companies</p>
+                  </div>
+                  <!-- <div class="count-box">
                   <h2>
                     <span class="odometer" data-status="yes" data-count="60">0</span><span class="plus">%</span>
                   </h2>
                   <p>C-level, Director, VP or Head-of-level</p>
                 </div> -->
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="engage-leaders">
-        <div class="engage-container padding mist">
-          <div class="container">
-            <div class="engage-wrapper">
-              <div class="engage-left">
+        <section id="engage-leaders">
+          <div class="engage-container padding mist">
+            <div class="container">
+              <div class="engage-wrapper">
+                <div class="engage-left">
+                  <div class="section-header">
+                    <div class="big-header o-hidden">
+                      <h2 data-aos="fade-right" data-aos-delay="100">
+                        ENGAGE NIGERIA's OIL &amp; GAS LEADERS
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="engage-action engage-action-desktop"
+                    data-aos="fade-right"
+                    data-aos-delay="250"
+                  >
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Sponsorship%20Deck"
+                      class="btn btn-pry"
+                    >
+                      Request Sponsorship Deck
+                    </a>
+                  </div>
+                </div>
+
+                <div class="engage-right engage-description">
+                  <p data-aos="fade-left" data-aos-delay="200">
+                    The organisations and teams shaping the future of oil & gas,
+                    upstream, midstream and downstream meet in Lagos this
+                    August.
+                  </p>
+                  <p data-aos="fade-left" data-aos-delay="300">
+                    Where Nigeria's oil & gas partnerships begin.
+                  </p>
+                  <div
+                    class="engage-action engage-action-mobile"
+                    data-aos="fade-up"
+                    data-aos-delay="350"
+                  >
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Sponsorship%20Deck"
+                      class="btn btn-pry"
+                    >
+                      Request Sponsorship Deck
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="key">
+          <div class="key-container padding mist">
+            <div class="container">
+              <div class="key-wrapper">
                 <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100"
+                      >- Insights</span
+                    >
+                  </div>
                   <div class="big-header o-hidden">
-                    <h2 data-aos="fade-right" data-aos-delay="100">
-                      ENGAGE NIGERIA's OIL &amp; GAS LEADERS
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      2026 Content Tracks
                     </h2>
                   </div>
                 </div>
-                <div class="engage-action engage-action-desktop" data-aos="fade-right" data-aos-delay="250">
-                  <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Sponsorship%20Deck"
-                    class="btn btn-pry">
-                    Request Sponsorship Deck
-                  </a>
+                <div
+                  class="content-tracks-card box"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <div class="content-tracks-left">
+                    <!-- <h3 class="content-tracks-title">CONTENTS TRACKS</h3> -->
+                    <p class="content-tracks-subtitle">
+                      You can expect us to cover...
+                    </p>
+                    <ul class="content-tracks-list" role="list">
+                      <li>Indigenous Capacity &amp; Local Content</li>
+                      <li>Production, Governance &amp; Infrastructure</li>
+                      <li>The Gas Revolution</li>
+                      <li>The Downstream Economy</li>
+                      <li>Deepwater Growth &amp; ESG Strategies</li>
+                      <li>
+                        Energy Finance, Capital Markets &amp; Global Investment
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
 
-              <div class="engage-right engage-description">
-                <p data-aos="fade-left" data-aos-delay="200">
-                  The organisations and teams shaping the future of oil & gas,
-                  upstream, midstream and downstream meet in Lagos this August.
+        <!-- Why attend Section -->
+        <section id="why-attend">
+          <div class="why-attend-container padding mist">
+            <div class="container">
+              <div class="why-attend-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100"
+                      >- Why attend</span
+                    >
+                  </div>
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      No better place to be
+                    </h2>
+                  </div>
+                </div>
+                <p class="content" data-aos="fade-up" data-aos-delay="50">
+                  750+ oil &amp; gas leaders, investors, operators, service
+                  providers and regulators gather for a day of focused insights,
+                  networking and deal-making on what’s now &amp; next across
+                  Nigeria’s oil &amp; gas value chain.
                 </p>
-                <p data-aos="fade-left" data-aos-delay="300">
-                  Where Nigeria's oil & gas partnerships begin.
-                </p>
-                <div class="engage-action engage-action-mobile" data-aos="fade-up" data-aos-delay="350">
-                  <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Sponsorship%20Deck"
-                    class="btn btn-pry">
-                    Request Sponsorship Deck
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="key">
-        <div class="key-container padding mist">
-          <div class="container">
-            <div class="key-wrapper">
-              <div class="section-header">
-                <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100">- Insights</span>
-                </div>
-                <div class="big-header o-hidden">
-                  <h2 data-aos="fade-left" data-aos-delay="200">
-                    2026 Content Tracks
-                  </h2>
-                </div>
-              </div>
-              <div class="content-tracks-card box" data-aos="fade-up" data-aos-delay="150">
-                <div class="content-tracks-left">
-                  <!-- <h3 class="content-tracks-title">CONTENTS TRACKS</h3> -->
-                  <p class="content-tracks-subtitle">You can expect us to cover...</p>
-                  <ul class="content-tracks-list" role="list">
-                    <li>Indigenous Capacity &amp; Local Content</li>
-                    <li>Production, Governance &amp; Infrastructure</li>
-                    <li>The Gas Revolution</li>
-                    <li>The Downstream Economy</li>
-                    <li>Deepwater Growth &amp; ESG Strategies</li>
-                    <li>Energy Finance, Capital Markets &amp; Global Investment</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why attend Section -->
-      <section id="why-attend">
-        <div class="why-attend-container padding mist">
-          <div class="container">
-            <div class="why-attend-wrapper">
-              <div class="section-header">
-                <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100">- Why attend</span>
-                </div>
-                <div class="big-header o-hidden">
-                  <h2 data-aos="fade-left" data-aos-delay="200">
-                    No better place to be
-                  </h2>
-                </div>
-              </div>
-              <p class="content" data-aos="fade-up" data-aos-delay="50">
-                750+ oil &amp; gas leaders, investors, operators, service
-                providers and regulators gather for a day of focused insights,
-                networking and deal-making on what’s now &amp; next across
-                Nigeria’s oil &amp; gas value chain.
-              </p>
-              <div class="why-attend-box-container">
-                <div class="why-attend-box box" data-aos="flip-left" data-aos-delay="100">
-                  <div class="icon">
-                    <img src="/assets/icons/search.png" alt="" />
-                  </div>
-                  <h4>Explore New Frontiers</h4>
-                  <p>
-                    Nigeria Oil &amp; Gas Outlook is one of the country’s
-                    leading oil &amp; gas gatherings, providing unparalleled
-                    opportunities for networking, insights sharing and
-                    engagement. Gain exclusive insights on the latest projects,
-                    innovations and policy changes while securing your
-                    competitive edge in this dynamic market.
-                  </p>
-                </div>
-                <div class="why-attend-box box" data-aos="flip-left" data-aos-delay="200">
-                  <div class="icon">
-                    <img src="/assets/icons/forge.png" alt="" />
-                  </div>
-                  <h4>Forge New Ventures</h4>
-                  <p>
-                    Network with industry leaders and connect with
-                    forward-thinking individuals and organizations. Build
-                    lasting relationships that will advance your growth across
-                    Nigeria’s oil &amp; gas market.
-                  </p>
-                </div>
-                <div class="why-attend-box box" data-aos="flip-left" data-aos-delay="300">
-                  <div class="icon">
-                    <img src="/assets/icons/deal.png" alt="" />
-                  </div>
-                  <h4>Fast-track Deals</h4>
-                  <p>
-                    Leverage the vibrant atmosphere to present your solutions
-                    and services to over 750 key professionals, accelerating
-                    your path to impactful deals and collaborations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Partner With Us -->
-      <section id="partners">
-        <div class="partners-container padding mist">
-          <div class="container">
-            <div class="partners-wrapper">
-              <div class="section-header">
-                <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100">Partner with us</span>
-                </div>
-                <div class="big-header o-hidden">
-                  <h2 data-aos="fade-left" data-aos-delay="200">
-                    Drive your brand's commercial growth at the
-                    <span class="text-pry">Nigeria Oil &amp; Gas Outlook 2026</span>
-                  </h2>
-                </div>
-              </div>
-
-              <div class="partners-grid">
-                <div class="partner-box box" data-aos="flip-left" data-aos-delay="150">
-                  <div class="icon">
-                    <img src="/assets/icons/exp.png" alt="Shape the industry narrative" />
-                  </div>
-                  <div class="content">
-                    <h4>Shape the Industry Narrative</h4>
+                <div class="why-attend-box-container">
+                  <div
+                    class="why-attend-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="100"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/search.png" alt="" />
+                    </div>
+                    <h4>Explore New Frontiers</h4>
                     <p>
-                      Position your company as a thought leader by sponsoring keynote
-                      presentations, panel discussions, or workshops. Contribute to
-                      shaping the future of Nigeria’s oil and gas industry and
-                      demonstrate your commitment to its growth.
+                      Nigeria Oil &amp; Gas Outlook is one of the country’s
+                      leading oil &amp; gas gatherings, providing unparalleled
+                      opportunities for networking, insights sharing and
+                      engagement. Gain exclusive insights on the latest
+                      projects, innovations and policy changes while securing
+                      your competitive edge in this dynamic market.
                     </p>
                   </div>
-                </div>
-
-                <div class="partner-box box" data-aos="flip-left" data-aos-delay="200">
-                  <div class="icon">
-                    <img src="/assets/icons/customer.png" alt="Access senior decision-makers" />
-                  </div>
-                  <div class="content">
-                    <h4>Access Senior Decision-Makers</h4>
+                  <div
+                    class="why-attend-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/forge.png" alt="" />
+                    </div>
+                    <h4>Forge New Ventures</h4>
                     <p>
-                      Network and build relationships with key government officials,
-                      national oil companies, and regulatory bodies directly
-                      influencing Nigeria’s oil and gas sector. Forge valuable
-                      connections that can lead to lucrative contracts and project
-                      involvement.
+                      Network with industry leaders and connect with
+                      forward-thinking individuals and organizations. Build
+                      lasting relationships that will advance your growth across
+                      Nigeria’s oil &amp; gas market.
                     </p>
                   </div>
-                </div>
-
-                <div class="partner-box box" data-aos="flip-left" data-aos-delay="250">
-                  <div class="icon">
-                    <img src="/assets/icons/regulation.png" alt="Unparalleled brand exposure" />
-                  </div>
-                  <div class="content">
-                    <h4>Unparalleled Brand Exposure</h4>
+                  <div
+                    class="why-attend-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="300"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/deal.png" alt="" />
+                    </div>
+                    <h4>Fast-track Deals</h4>
                     <p>
-                      Maximize your visibility amongst a highly targeted audience of
-                      global investors, government officials, project developers, and
-                      senior stakeholders in the sector. Nigeria Oil &amp; Gas Outlook
-                      provides exceptional branding opportunities to showcase your
-                      company’s expertise and solutions.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="partner-box box" data-aos="flip-left" data-aos-delay="300">
-                  <div class="icon">
-                    <img src="/assets/icons/wealth.png" alt="Targeted lead generation" />
-                  </div>
-                  <div class="content">
-                    <h4>Targeted Lead Generation</h4>
-                    <p>
-                      Maximize your lead generation potential through dedicated
-                      exhibition booths, networking events, and pre-arranged meetings
-                      with senior decision-makers. Nigeria Oil &amp; Gas Outlook connects
-                      you directly with potential clients and partners actively seeking
-                      solutions within the Nigeria market.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="partner-box box" data-aos="flip-left" data-aos-delay="350">
-                  <div class="icon">
-                    <img src="/assets/icons/deal.png" alt="Exhibition" />
-                  </div>
-                  <div class="content">
-                    <h4>Exhibition</h4>
-                    <p>
-                      Nigeria Oil &amp; Gas Outlook is a testament to innovation,
-                      digitalization, and the pivotal role of local enterprises in
-                      Nigeria’s oil and gas industry. Showcasing cutting-edge
-                      technologies and forward-thinking solutions, the exhibition
-                      provides a platform for project developers, service providers,
-                      and local companies to engage in one-on-one exchanges.
+                      Leverage the vibrant atmosphere to present your solutions
+                      and services to over 750 key professionals, accelerating
+                      your path to impactful deals and collaborations.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Who attends -->
-      <section id="who-attends">
-        <div class="who-attends-container padding mist">
-          <div class="container">
-            <div class="who-attends-wrapper">
-              <div class="section-header">
-                <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100">- Who attends</span>
+        <!-- Partner With Us -->
+        <section id="partners">
+          <div class="partners-container padding mist">
+            <div class="container">
+              <div class="partners-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100"
+                      >Partner with us</span
+                    >
+                  </div>
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      Drive your brand's commercial growth at the
+                      <span class="text-pry"
+                        >Nigeria Oil &amp; Gas Outlook 2026</span
+                      >
+                    </h2>
+                  </div>
                 </div>
-                <div class="big-header o-hidden">
-                  <h2 data-aos="fade-left" data-aos-delay="200">Who you will meet</h2>
-                </div>
-              </div>
 
-              <div class="who-meet-grid" data-aos="fade-up" data-aos-delay="150">
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="16" cy="14" r="4" stroke="#4a148c" stroke-width="2" />
-                      <circle cx="32" cy="14" r="4" stroke="#4a148c" stroke-width="2" />
-                      <circle cx="24" cy="22" r="4" stroke="#4a148c" stroke-width="2" />
-                      <path d="M12 38v-6h24v6" stroke="#4a148c" stroke-width="2" stroke-linecap="round" />
-                    </svg>
+                <div class="partners-grid">
+                  <div
+                    class="partner-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="150"
+                  >
+                    <div class="icon">
+                      <img
+                        src="/assets/icons/exp.png"
+                        alt="Shape the industry narrative"
+                      />
+                    </div>
+                    <div class="content">
+                      <h4>Shape the Industry Narrative</h4>
+                      <p>
+                        Position your company as a thought leader by sponsoring
+                        keynote presentations, panel discussions, or workshops.
+                        Contribute to shaping the future of Nigeria’s oil and
+                        gas industry and demonstrate your commitment to its
+                        growth.
+                      </p>
+                    </div>
                   </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">Government</span> leaders
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18 12h12v10H18z" stroke="#4a148c" stroke-width="2" />
-                      <path d="M22 16c0-1 4-1 4 0v2h-4v-2zM24 24v6M20 34h8" stroke="#4a148c" stroke-width="2"
-                        stroke-linecap="round" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">Investors</span> and financiers
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M24 8l4 20h-8l4-20z" stroke="#4a148c" stroke-width="2" stroke-linejoin="round" />
-                      <path d="M16 36h16" stroke="#4a148c" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">E&amp;P</span> companies
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 32h28" stroke="#4a148c" stroke-width="2" />
-                      <path d="M14 32V18l6-4h8l6 4v14" stroke="#4a148c" stroke-width="2" />
-                      <path d="M22 14v-4h4v4" stroke="#4a148c" stroke-width="2" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">IOCs</span> and NOCs
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 34V16h8v18M28 34V12h8v22" stroke="#4a148c" stroke-width="2" />
-                      <path d="M8 34h32" stroke="#4a148c" stroke-width="2" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">Banks</span> and insurance firms
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="14" y="18" width="20" height="14" stroke="#4a148c" stroke-width="2" />
-                      <path d="M18 18v-4h12v4M20 12h8" stroke="#4a148c" stroke-width="2" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">Midstream</span> and downstream companies
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 30h20M18 30V20l6-6h4l6 6v10" stroke="#4a148c" stroke-width="2" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">Legal</span> firms
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="24" cy="22" r="10" stroke="#4a148c" stroke-width="2" />
-                      <circle cx="24" cy="22" r="4" fill="#4a148c" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">Technology</span> providers
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="12" y="14" width="24" height="16" rx="2" stroke="#4a148c" stroke-width="2" />
-                      <path d="M16 22h16M16 26h10" stroke="#4a148c" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">Media</span> &amp; advocacy
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="18" cy="20" r="4" stroke="#4a148c" stroke-width="2" />
-                      <circle cx="30" cy="20" r="4" stroke="#4a148c" stroke-width="2" />
-                      <path d="M14 34c4-6 16-6 20 0" stroke="#4a148c" stroke-width="2" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">Consultancy</span> firms
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 32h24M14 32V22h6v10M22 32V18h6v14M30 32V24h6v8" stroke="#4a148c" stroke-width="2" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">Trade</span> associations
-                  </p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="10" y="22" width="28" height="10" rx="2" stroke="#4a148c" stroke-width="2" />
-                      <circle cx="16" cy="36" r="3" stroke="#4a148c" stroke-width="2" />
-                      <circle cx="32" cy="36" r="3" stroke="#4a148c" stroke-width="2" />
-                    </svg>
-                  </div>
-                  <p class="who-meet-label">
-                    <span class="who-meet-accent">Transportation</span> and logistics companies
-                  </p>
-                </div>
-              </div>
 
-              <div class="seniority-section" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="seniority-title">
-                  <span class="who-meet-accent">Seniority</span> of attendees
-                </h3>
-                <div class="seniority-rows">
-                  <div class="seniority-row">
-                    <span class="seniority-label">Director / Head of department / General manager</span>
-                    <div class="seniority-bar-wrap">
-                      <div class="seniority-bar-track">
-                        <div class="seniority-bar-fill" style="width: 25%"></div>
-                      </div>
+                  <div
+                    class="partner-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="icon">
+                      <img
+                        src="/assets/icons/customer.png"
+                        alt="Access senior decision-makers"
+                      />
                     </div>
-                    <span class="seniority-pct">25%</span>
+                    <div class="content">
+                      <h4>Access Senior Decision-Makers</h4>
+                      <p>
+                        Network and build relationships with key government
+                        officials, national oil companies, and regulatory bodies
+                        directly influencing Nigeria’s oil and gas sector. Forge
+                        valuable connections that can lead to lucrative
+                        contracts and project involvement.
+                      </p>
+                    </div>
                   </div>
-                  <div class="seniority-row">
-                    <span class="seniority-label">C-level / President / Chairman board director</span>
-                    <div class="seniority-bar-wrap">
-                      <div class="seniority-bar-track">
-                        <div class="seniority-bar-fill" style="width: 13%"></div>
-                      </div>
+
+                  <div
+                    class="partner-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="250"
+                  >
+                    <div class="icon">
+                      <img
+                        src="/assets/icons/regulation.png"
+                        alt="Unparalleled brand exposure"
+                      />
                     </div>
-                    <span class="seniority-pct">13%</span>
+                    <div class="content">
+                      <h4>Unparalleled Brand Exposure</h4>
+                      <p>
+                        Maximize your visibility amongst a highly targeted
+                        audience of global investors, government officials,
+                        project developers, and senior stakeholders in the
+                        sector. Nigeria Oil &amp; Gas Outlook provides
+                        exceptional branding opportunities to showcase your
+                        company’s expertise and solutions.
+                      </p>
+                    </div>
                   </div>
-                  <div class="seniority-row">
-                    <span class="seniority-label">Senior manager / Manager</span>
-                    <div class="seniority-bar-wrap">
-                      <div class="seniority-bar-track">
-                        <div class="seniority-bar-fill" style="width: 20%"></div>
-                      </div>
+
+                  <div
+                    class="partner-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="300"
+                  >
+                    <div class="icon">
+                      <img
+                        src="/assets/icons/wealth.png"
+                        alt="Targeted lead generation"
+                      />
                     </div>
-                    <span class="seniority-pct">20%</span>
+                    <div class="content">
+                      <h4>Targeted Lead Generation</h4>
+                      <p>
+                        Maximize your lead generation potential through
+                        dedicated exhibition booths, networking events, and
+                        pre-arranged meetings with senior decision-makers.
+                        Nigeria Oil &amp; Gas Outlook connects you directly with
+                        potential clients and partners actively seeking
+                        solutions within the Nigeria market.
+                      </p>
+                    </div>
                   </div>
-                  <div class="seniority-row">
-                    <span class="seniority-label">Managing director / Vice president</span>
-                    <div class="seniority-bar-wrap">
-                      <div class="seniority-bar-track">
-                        <div class="seniority-bar-fill" style="width: 13%"></div>
-                      </div>
+
+                  <div
+                    class="partner-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="350"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/deal.png" alt="Exhibition" />
                     </div>
-                    <span class="seniority-pct">13%</span>
-                  </div>
-                  <div class="seniority-row">
-                    <span class="seniority-label">Government representatives</span>
-                    <div class="seniority-bar-wrap">
-                      <div class="seniority-bar-track">
-                        <div class="seniority-bar-fill" style="width: 7%"></div>
-                      </div>
+                    <div class="content">
+                      <h4>Exhibition</h4>
+                      <p>
+                        Nigeria Oil &amp; Gas Outlook is a testament to
+                        innovation, digitalization, and the pivotal role of
+                        local enterprises in Nigeria’s oil and gas industry.
+                        Showcasing cutting-edge technologies and
+                        forward-thinking solutions, the exhibition provides a
+                        platform for project developers, service providers, and
+                        local companies to engage in one-on-one exchanges.
+                      </p>
                     </div>
-                    <span class="seniority-pct">7%</span>
-                  </div>
-                  <div class="seniority-row">
-                    <span class="seniority-label">Other</span>
-                    <div class="seniority-bar-wrap">
-                      <div class="seniority-bar-track">
-                        <div class="seniority-bar-fill" style="width: 15%"></div>
-                      </div>
-                    </div>
-                    <span class="seniority-pct">15%</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Partner -->
-      <!-- <section id="partner">
+        <!-- Who attends -->
+        <section id="who-attends">
+          <div class="who-attends-container padding mist">
+            <div class="container">
+              <div class="who-attends-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100"
+                      >- Who attends</span
+                    >
+                  </div>
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      Who you will meet
+                    </h2>
+                  </div>
+                </div>
+
+                <div
+                  class="who-meet-grid"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="16"
+                          cy="14"
+                          r="4"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <circle
+                          cx="32"
+                          cy="14"
+                          r="4"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <circle
+                          cx="24"
+                          cy="22"
+                          r="4"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M12 38v-6h24v6"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Government</span> leaders
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 12h12v10H18z"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M22 16c0-1 4-1 4 0v2h-4v-2zM24 24v6M20 34h8"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Investors</span> and
+                      financiers
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24 8l4 20h-8l4-20z"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16 36h16"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">E&amp;P</span> companies
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M10 32h28" stroke="#4a148c" stroke-width="2" />
+                        <path
+                          d="M14 32V18l6-4h8l6 4v14"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M22 14v-4h4v4"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">IOCs</span> and NOCs
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 34V16h8v18M28 34V12h8v22"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <path d="M8 34h32" stroke="#4a148c" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Banks</span> and insurance
+                      firms
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="14"
+                          y="18"
+                          width="20"
+                          height="14"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M18 18v-4h12v4M20 12h8"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Midstream</span> and
+                      downstream companies
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14 30h20M18 30V20l6-6h4l6 6v10"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Legal</span> firms
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="24"
+                          cy="22"
+                          r="10"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <circle cx="24" cy="22" r="4" fill="#4a148c" />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Technology</span> providers
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="12"
+                          y="14"
+                          width="24"
+                          height="16"
+                          rx="2"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M16 22h16M16 26h10"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Media</span> &amp; advocacy
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="18"
+                          cy="20"
+                          r="4"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <circle
+                          cx="30"
+                          cy="20"
+                          r="4"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M14 34c4-6 16-6 20 0"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Consultancy</span> firms
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 32h24M14 32V22h6v10M22 32V18h6v14M30 32V24h6v8"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Trade</span> associations
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="10"
+                          y="22"
+                          width="28"
+                          height="10"
+                          rx="2"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <circle
+                          cx="16"
+                          cy="36"
+                          r="3"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                        <circle
+                          cx="32"
+                          cy="36"
+                          r="3"
+                          stroke="#4a148c"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Transportation</span> and
+                      logistics companies
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="seniority-section"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <h3 class="seniority-title">
+                    <span class="who-meet-accent">Seniority</span> of attendees
+                  </h3>
+                  <div class="seniority-rows">
+                    <div class="seniority-row">
+                      <span class="seniority-label"
+                        >Director / Head of department / General manager</span
+                      >
+                      <div class="seniority-bar-wrap">
+                        <div class="seniority-bar-track">
+                          <div
+                            class="seniority-bar-fill"
+                            style="width: 25%"
+                          ></div>
+                        </div>
+                      </div>
+                      <span class="seniority-pct">25%</span>
+                    </div>
+                    <div class="seniority-row">
+                      <span class="seniority-label"
+                        >C-level / President / Chairman board director</span
+                      >
+                      <div class="seniority-bar-wrap">
+                        <div class="seniority-bar-track">
+                          <div
+                            class="seniority-bar-fill"
+                            style="width: 13%"
+                          ></div>
+                        </div>
+                      </div>
+                      <span class="seniority-pct">13%</span>
+                    </div>
+                    <div class="seniority-row">
+                      <span class="seniority-label"
+                        >Senior manager / Manager</span
+                      >
+                      <div class="seniority-bar-wrap">
+                        <div class="seniority-bar-track">
+                          <div
+                            class="seniority-bar-fill"
+                            style="width: 20%"
+                          ></div>
+                        </div>
+                      </div>
+                      <span class="seniority-pct">20%</span>
+                    </div>
+                    <div class="seniority-row">
+                      <span class="seniority-label"
+                        >Managing director / Vice president</span
+                      >
+                      <div class="seniority-bar-wrap">
+                        <div class="seniority-bar-track">
+                          <div
+                            class="seniority-bar-fill"
+                            style="width: 13%"
+                          ></div>
+                        </div>
+                      </div>
+                      <span class="seniority-pct">13%</span>
+                    </div>
+                    <div class="seniority-row">
+                      <span class="seniority-label"
+                        >Government representatives</span
+                      >
+                      <div class="seniority-bar-wrap">
+                        <div class="seniority-bar-track">
+                          <div
+                            class="seniority-bar-fill"
+                            style="width: 7%"
+                          ></div>
+                        </div>
+                      </div>
+                      <span class="seniority-pct">7%</span>
+                    </div>
+                    <div class="seniority-row">
+                      <span class="seniority-label">Other</span>
+                      <div class="seniority-bar-wrap">
+                        <div class="seniority-bar-track">
+                          <div
+                            class="seniority-bar-fill"
+                            style="width: 15%"
+                          ></div>
+                        </div>
+                      </div>
+                      <span class="seniority-pct">15%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Partner -->
+        <!-- <section id="partner">
           <div class="partner-container padding mist">
             <div class="container">
               <div class="section-header">
@@ -940,825 +1314,833 @@
           </div>
         </section> -->
 
-      <!-- What's New -->
-      <section id="whatsnew">
-        <div class="whatsnew-container padding mist">
-          <div class="container">
-            <div class="section-header">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">What you can Expect in 2026</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Get ready for a bigger, bolder Nigeria Oil &amp; Gas Outlook
-                  experience. Here’s what’s in store:
-                </h2>
-              </div>
-            </div>
-            <div class="whatsnew-wrapper">
-              <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="200">
-                <div class="icon">
-                  <img src="/assets/icons/search.png" alt="Insights" />
-                </div>
-                <div class="content">
-                  <h4>Insights that cut through the noise</h4>
-                  <p>
-                    Explore multiple expertly curated sessions on the latest oil
-                    &amp; gas trends with dedicated sessions across energy
-                    finance, regulatory framework, local content, midstream,
-                    downstream and upstream verticals of the Nigeria oil &amp;
-                    gas industry.
-                  </p>
-                </div>
-              </div>
-              <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="300">
-                <div class="icon">
-                  <img src="/assets/icons/forge.png" alt="High-level Networking Opportunities" />
-                </div>
-                <div class="content">
-                  <h4>High-level Networking Opportunities</h4>
-                  <p>
-                    Access exclusive opportunities to connect with key players,
-                    from investors to policymakers, launch your product, and
-                    expand your brand in Nigeria's dynamic oil and gas market.
-                  </p>
-                </div>
-              </div>
-              <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="400">
-                <div class="icon">
-                  <img src="/assets/icons/roundtable.svg" alt="Leadership roundtables" />
-                </div>
-                <div class="content">
-                  <h4>Leadership Roundtables</h4>
-                  <p>
-                    Align your brand with industry decision-makers in high-level
-                    and exclusive discussions on Nigeria's oil and gas future.
-                  </p>
-                </div>
-              </div>
-              <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="500">
-                <div class="icon">
-                  <img src="/assets/icons/deal.png" alt="Exhibition floor" />
-                </div>
-                <div class="content">
-                  <h4>Exhibition Floor</h4>
-                  <p>
-                    Unveil your latest technologies and industry breakthroughs
-                    with our largest-ever exhibition floor, designed to elevate
-                    your brand and connect with a global audience.
-                  </p>
-                </div>
-              </div>
-              <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="600">
-                <div class="icon">
-                  <img src="/assets/icons/networking-mixer.svg" alt="Networking mixer" />
-                </div>
-                <div class="content">
-                  <h4>Pre-event Networking Mixer</h4>
-                  <p>
-                    Be part of a high-energy networking mixer that will set the
-                    stage for a day of game-changing discussions and insights
-                    from top oil and gas leaders.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="button" data-aos="fade-up" data-aos-delay="550">
-              <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Sponsorship%20Deck"
-                class="btn btn-pry">
-                Request Sponsorship Deck
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Who participates -->
-      <section id="who-participates">
-        <div class="who-participates-container padding o-hidden">
-          <div class="container">
-            <div class="section-header white">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">- Who attends</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Who participates at our events?
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="who-participates-wrapper" data-aos="zoom-out">
-            <div class="who-participates-slide-1">
-              <img src="assets/who-participates-logo/shell.jpg" alt="Shell Nigeria Gas" />
-              <img src="assets/who-participates-logo/seplat.jpg" alt="Seplat Energy" />
-              <img src="assets/who-participates-logo/fed-min.jpg" alt="Federal Ministry of Petroleum Resources" />
-              <img src="assets/who-participates-logo/chevron.jpg" alt="Chevron" />
-              <img src="assets/who-participates-logo/gasco.jpg" alt="GASCO Marine" />
-              <img src="assets/who-participates-logo/axxela.jpg" alt="Axxela" />
-              <img src="assets/who-participates-logo/oando.jpg" alt="Oando" />
-              <img src="assets/who-participates-logo/ncdmb.jpg" alt="NCDMB" />
-              <img src="assets/who-participates-logo/africa-oil.jpg" alt="Africa Oil" />
-              <img src="assets/who-participates-logo/viathan.jpg" alt="Viathan" />
-              <img src="assets/who-participates-logo/tradegrad.jpg" alt="TradeGrd" />
-              <img src="assets/who-participates-logo/cecom.jpg" alt="CECOM" />
-              <img src="assets/who-participates-logo/powergas.jpg" alt="PowerGas" />
-              <img src="assets/who-participates-logo/exxon.jpg" alt="ExxonMobil" />
-              <img src="assets/who-participates-logo/tetracore.jpg" alt="Tetracore" />
-              <img src="assets/who-participates-logo/lfz.jpg" alt="Lagos Free Zone" />
-              <img src="assets/who-participates-logo/oil-gas.jpg" alt="Oil &amp; Gas Free Zones Authority" />
-              <img src="assets/who-participates-logo/nga.jpg" alt="Nigerian Gas Association" />
-              <img src="assets/who-participates-logo/greenville.jpg" alt="Greenville LNG" />
-            </div>
-            <div class="who-participates-slide-2" dir="rtl">
-              <img src="assets/who-participates-logo/allon.jpg" alt="Allon" />
-              <img src="assets/who-participates-logo/ondo.jpg" alt="Ondo" />
-              <img src="assets/who-participates-logo/decade-gas.jpg" alt="Decade of Gas" />
-              <img src="assets/who-participates-logo/pcngi.png" alt="P-CNGI" />
-              <img src="assets/who-participates-logo/agpc.png" alt="AGPC" />
-              <img src="assets/who-participates-logo/autogas.jpg" alt="Autogas Nigeria" />
-              <img src="assets/who-participates-logo/ge.jpg" alt="GE" />
-              <img src="assets/who-participates-logo/nape.jpg" alt="NAPE" />
-              <img src="assets/who-participates-logo/ardova.jpg" alt="Ardova" />
-              <img src="assets/who-participates-logo/asiko.jpg" alt="Asiko" />
-              <img src="assets/who-participates-logo/rainoil.jpg" alt="Rainoil" />
-              <img src="assets/who-participates-logo/waep.jpg" alt="WAEP" />
-              <img src="assets/who-participates-logo/infra-credit.jpg" alt="InfraCredit" />
-              <img src="assets/who-participates-logo/kpmg.jpg" alt="KPMG" />
-              <img src="assets/who-participates-logo/sojits.jpg" alt="Sojitz" />
-              <img src="assets/who-participates-logo/stears.jpg" alt="Stears" />
-              <img src="assets/who-participates-logo/olaniwun-ajayi.jpg" alt="Olaniwun Ajayi" />
-              <img src="assets/who-participates-logo/africa-finance.jpg" alt="Africa Finance Corporation" />
-              <img src="assets/who-participates-logo/petan.jpg" alt="PETAN" />
-            </div>
-            <div class="who-participates-slide-3">
-              <img src="assets/who-participates-logo/prime-atlantic.jpg" alt="Prime Atlantic" />
-              <img src="assets/who-participates-logo/s&pglobal.jpg" alt="S&amp;P Global" />
-              <img src="assets/who-participates-logo/gacn.jpg" alt="GACN" />
-              <img src="assets/who-participates-logo/entec.jpg" alt="Entec" />
-              <img src="assets/who-participates-logo/nsia.jpg" alt="Nigeria Sovereign Investment Authority" />
-              <img src="assets/who-participates-logo/recon-africa.jpg" alt="ReconAfrica" />
-              <img src="assets/who-participates-logo/hsi-energies.jpg" alt="HSI Energies" />
-              <img src="assets/who-participates-logo/aggreko.jpg" alt="Aggreko" />
-              <img src="assets/who-participates-logo/fbn-quest.svg" alt="FBNQuest" />
-              <img src="assets/who-participates-logo/aradel-holdings.png" alt="Aradel Holdings" />
-              <img src="assets/who-participates-logo/bell-oil-gas.jpeg" alt="Bell Oil &amp; Gas" />
-              <img src="assets/who-participates-logo/nig-midstrem.jpg" alt="Nigerian Midstream" />
-              <img src="assets/who-participates-logo/fbn.jpg" alt="FBN" />
-              <img src="assets/who-participates-logo/assoldog.jpg" alt="ASSOLDOG" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Speakers Section -->
-      <section id="speakers">
-        <div class="speakers-container padding mist">
-          <div class="container">
-            <div class="speakers-wrapper">
+        <!-- What's New -->
+        <section id="whatsnew">
+          <div class="whatsnew-container padding mist">
+            <div class="container">
               <div class="section-header">
                 <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100">- Speakers</span>
+                  <span data-aos="fade-up" data-aos-delay="100"
+                    >What you can Expect in 2026</span
+                  >
                 </div>
                 <div class="big-header o-hidden">
                   <h2 data-aos="fade-left" data-aos-delay="200">
-                    Who speaks at Nigeria Oil &amp; Gas Outlook?
+                    Get ready for a bigger, bolder Nigeria Oil &amp; Gas Outlook
+                    experience. Here’s what’s in store:
                   </h2>
                 </div>
               </div>
-              <div class="speakers-box-container">
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/audrey-joe-ezigbo.jpeg" alt="Audrey Joe-Ezigbo" />
+              <div class="whatsnew-wrapper">
+                <div
+                  class="whatsnew-box box"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
+                  <div class="icon">
+                    <img src="/assets/icons/search.png" alt="Insights" />
                   </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Audrey Joe-Ezigbo</h4>
-                    <p class="designation">Deputy Managing Director,</p>
-                    <p class="company">Falcon Corporation</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/chikezie-nwosu.jpeg" alt="Chikezie Nwosu" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Chikezie Nwosu</h4>
-                    <p class="designation">Group CEO,</p>
-                    <p class="company">HSI Energies Limited</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/ritu-sahajwalla.png" alt="Ritu Sahajwalla" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Ritu Sahajwalla</h4>
-                    <p class="designation">MD,</p>
-                    <p class="company">GreenvilleLNG</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/olapade-durotoye.jpeg" alt="Olapade Durotoye" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Olapade Durotoye</h4>
-                    <p class="designation">Managing Director,</p>
-                    <p class="company">Savannah Energy Nigeria</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/ed-ubong.png" alt="Ed Ubong" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Ed Ubong</h4>
-                    <p class="designation">Director,</p>
-                    <p class="company">Decade Of Gas Secretariat</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/effiong-okon.png" alt="Effiong Okon" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Effiong Okon</h4>
-                    <p class="designation">Managing Director,</p>
-                    <p class="company">Anoh Gas Processing Limited</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/chido-onyilimba.jpeg" alt="Chido Onyilimba" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Chido Onyilimba</h4>
-                    <p class="designation">Head of Origination &amp; Structuring,</p>
-                    <p class="company">InfraCredit</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/kolawole-owodunni.webp" alt="Kolawole Owodunni" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Kolawole Owodunni</h4>
-                    <p class="designation">Executive Director and Chief Investment Officer,</p>
-                    <p class="company">Nigeria Sovereign Investment Authority (NSIA)</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/oladapo-akinosun.jpeg" alt="Dapo Akinosun, SAN" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Dapo Akinosun, SAN</h4>
-                    <p class="designation">Founding Partner,</p>
-                    <p class="company">SimmonsCooper Partners</p>
-                  </div>
-                </div>
-                <!-- <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/gbolahan-obanikoro.webp" alt="Gbolahan Obanikoro" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Gbolahan Obanikoro</h4>
-                    <p class="designation">CEO,</p>
-                    <p class="company">MOB Integrated Services</p>
-                  </div>
-                </div> -->
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/wole-ogunsanya.jpeg" alt="Engr Wole Ogunsanya" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Engr Wole Ogunsanya</h4>
-                    <p class="designation">Chairman,</p>
-                    <p class="company">PETAN</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/ademola-ogunbajo.webp" alt="Ademola Ogunbanjo" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Ademola Ogunbanjo</h4>
-                    <p class="designation">Executive Vice President,</p>
-                    <p class="company">Oando Clean Energy</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/oluwatobi-shofowora.jpeg" alt="Oluwatobi Shofowora" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Oluwatobi Shofowora</h4>
-                    <p class="designation">Head, Strategy and Corporate Planning</p>
-                    <p class="company">Tetracore Energy Group</p>
-                  </div>
-                </div>
-                <!-- <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/azfar-hussain.jpeg" alt="Azfar Hussain" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Azfar Hussain</h4>
-                    <p class="designation">Chief Finance Officer,</p>
-                    <p class="company">ND Western</p>
-                  </div>
-                </div> -->
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/oghale-evi-oneusah.jpeg" alt="Oghale-Evi Oneusah" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Oghale-Evi Oneusah</h4>
-                    <p class="designation">Financial Controller,</p>
-                    <p class="company">Tetracore Energy Group</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/okezi-okah-avae.jpeg" alt="Okezi Okah-Avae" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Okezi Okah-Avae</h4>
-                    <p class="designation">General Counsel,</p>
-                    <p class="company">Tetracore Energy Group</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/funmi-ogbue.webp" alt="Funmi Ogbue (Mrs)" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Funmi Ogbue (Mrs)</h4>
-                    <p class="designation">CEO Zigma,</p>
-                    <p class="company">Co-Founder &amp; Trustee, Women in Energy Institute</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/yewande-abiose.jpg" alt="Yewande Abiose" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Yewande Abiose</h4>
-                    <p class="designation">Head, Strategic Partnerships,</p>
-                    <p class="company">Energy Institute</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/nimma-jo-madugu.jpg" alt="Nimma Jo-Madugu" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Nimma Jo-Madugu</h4>
-                    <p class="designation">Partner,</p>
-                    <p class="company">Kenna Partners</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/tari-mayor.jpeg" alt="Tari Mayor-Bright" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Tari Mayor-Bright</h4>
-                    <p class="designation">
-                      Subnational and Sovereign Coordinator,
+                  <div class="content">
+                    <h4>Insights that cut through the noise</h4>
+                    <p>
+                      Explore multiple expertly curated sessions on the latest
+                      oil &amp; gas trends with dedicated sessions across energy
+                      finance, regulatory framework, local content, midstream,
+                      downstream and upstream verticals of the Nigeria oil &amp;
+                      gas industry.
                     </p>
-                    <p class="company">The Presidential CNG Initiative</p>
                   </div>
                 </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/oliver-onyekweli.png" alt="Oliver Onyekweli" />
+                <div
+                  class="whatsnew-box box"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                >
+                  <div class="icon">
+                    <img
+                      src="/assets/icons/forge.png"
+                      alt="High-level Networking Opportunities"
+                    />
                   </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Oliver Onyekweli</h4>
-                    <p class="designation">Partner,</p>
-                    <p class="company">McKinsey &amp; Company</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/sumeet-singh.png" alt="Sumeet Singh" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Sumeet Singh</h4>
-                    <p class="designation">CEO,</p>
-                    <p class="company">Powergas</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/emmanuel-omuojine.png" alt="Emmanuel Omuojine" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Emmanuel Omuojine</h4>
-                    <p class="designation">Managing Director,</p>
-                    <p class="company">RainOil Gas Limited</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/ayo-salami.png" alt="Ayo Salami" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Ayo Salami</h4>
-                    <p class="designation">
-                      Partner &amp; Head of Natural Resources,
+                  <div class="content">
+                    <h4>High-level Networking Opportunities</h4>
+                    <p>
+                      Access exclusive opportunities to connect with key
+                      players, from investors to policymakers, launch your
+                      product, and expand your brand in Nigeria's dynamic oil
+                      and gas market.
                     </p>
-                    <p class="company">KPMG West Africa</p>
                   </div>
                 </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/felix-ekundayo.jpg" alt="Felix Ekundayo" />
+                <div
+                  class="whatsnew-box box"
+                  data-aos="fade-left"
+                  data-aos-delay="400"
+                >
+                  <div class="icon">
+                    <img
+                      src="/assets/icons/roundtable.svg"
+                      alt="Leadership roundtables"
+                    />
                   </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Felix Ekundayo</h4>
-                    <p class="designation">CEO,</p>
-                    <p class="company">Asiko Energy</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/yemisi-awonuga.jpg" alt="Yemisi Awonuga" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Yemisi Awonuga</h4>
-                    <p class="designation">
-                      Team Lead, Projects | Natural Resources,
+                  <div class="content">
+                    <h4>Leadership Roundtables</h4>
+                    <p>
+                      Align your brand with industry decision-makers in
+                      high-level and exclusive discussions on Nigeria's oil and
+                      gas future.
                     </p>
-                    <p class="company">Awonuga LP</p>
                   </div>
                 </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/bassey-adie.png" alt="Bassey Alorye Adie" />
+                <div
+                  class="whatsnew-box box"
+                  data-aos="fade-left"
+                  data-aos-delay="500"
+                >
+                  <div class="icon">
+                    <img src="/assets/icons/deal.png" alt="Exhibition floor" />
                   </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Bassey Alorye Adie</h4>
-                    <p class="designation">Managing Director,</p>
-                    <p class="company">Loyz Marine Services Limited</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/ejiro-gray.png" alt="Ejiro Gray" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Ejiro Gray</h4>
-                    <p class="designation">
-                      Executive Director, Governance &amp; Sustainability,
+                  <div class="content">
+                    <h4>Exhibition Floor</h4>
+                    <p>
+                      Unveil your latest technologies and industry breakthroughs
+                      with our largest-ever exhibition floor, designed to
+                      elevate your brand and connect with a global audience.
                     </p>
-                    <p class="company">Sahara Group</p>
                   </div>
                 </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/jide-pratt.jpeg" alt="Jide Pratt" />
+                <div
+                  class="whatsnew-box box"
+                  data-aos="fade-left"
+                  data-aos-delay="600"
+                >
+                  <div class="icon">
+                    <img
+                      src="/assets/icons/networking-mixer.svg"
+                      alt="Networking mixer"
+                    />
                   </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Jide Pratt</h4>
-                    <p class="designation">Country Manager,</p>
-                    <p class="company">Tradegrid</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/dr-ayo-coker.png" alt="Dr Ayotunde Coker" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Dr Ayotunde Coker</h4>
-                    <p class="designation">CEO,</p>
-                    <p class="company">Open Access Data Centres</p>
-                  </div>
-                </div>
-                <!-- <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/uzoma-james.png" alt="Uzoma James" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Uzoma James</h4>
-                    <p class="designation">Regional Manager West Africa,</p>
-                    <p class="company">Yellowcard</p>
-                  </div>
-                </div> -->
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/taji-ogbe.jpg" alt="Taji Ogbe" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Taji Ogbe</h4>
-                    <p class="designation">Executive Secretary,</p>
-                    <p class="company">Nigerian Gas Association</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/kayode-thomas.jpeg" alt="Dr Kayode Thomas" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Dr Kayode Thomas</h4>
-                    <p class="designation">CEO,</p>
-                    <p class="company">Bell Oil &amp; Gas</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/chukwuma-nwoko.jpeg" alt="Chukwuma Nwokodinmah" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Chukwuma Nwokodinmah</h4>
-                    <p class="designation">
-                      Group CPO/Head of Function-Supply Chain Management,
+                  <div class="content">
+                    <h4>Pre-event Networking Mixer</h4>
+                    <p>
+                      Be part of a high-energy networking mixer that will set
+                      the stage for a day of game-changing discussions and
+                      insights from top oil and gas leaders.
                     </p>
-                    <p class="company">Aradel Holdings Plc</p>
                   </div>
                 </div>
-                <!-- <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/somtochukwu.png" alt="Somtochukwu (Nsofor) Nnajim" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Somtochukwu (Nsofor) Nnajim</h4>
-                    <p class="designation">Country Manager, Nigeria,</p>
-                    <p class="company">Yellowcard</p>
-                  </div>
-                </div> -->
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/tominiyi-owolabi.jpg" alt="Dr Tominiyi Owolabi" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Dr Tominiyi Owolabi</h4>
-                    <p class="designation">Managing Partner,</p>
-                    <p class="company">Olaniwun Ajayi</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/folake-elias.jpeg" alt="Folake Elias Adebowale" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Folake Elias Adebowale</h4>
-                    <p class="designation">Partner,</p>
-                    <p class="company">Udo Udoma &amp; Belo-Osagie</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/oghogho-makinde.png" alt="Oghogho Makinde" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Oghogho Makinde</h4>
-                    <p class="designation">Partner,</p>
-                    <p class="company">Aluko &amp; Oyebode</p>
-                  </div>
-                </div>
-                <!-- <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/abdulfattah-adesanya.jpg" alt="Abdulfattah Adesanya" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Abdulfattah Adesanya</h4>
-                    <p class="designation">Solutions Architect Manager,</p>
-                    <p class="company">Equinix</p>
-                  </div>
-                </div> -->
+              </div>
+              <div class="button" data-aos="fade-up" data-aos-delay="550">
+                <a
+                  href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Sponsorship%20Deck"
+                  class="btn btn-pry"
+                >
+                  Request Sponsorship Deck
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Testimonial -->
-      <section id="testimonial">
-        <div class="testimonial-container padding mist">
-          <div class="container">
-            <div class="section-header">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">- Testimonial</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  They've been here; What they had to say
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-wrapper">
-            <div class="testimonial-slides">
-              <div class="testimonial-slide">
-                <div class="container">
-                  <div class="testimonial-card t-blue">
-                    <div class="testimonial-card-left" data-aos="fade-right" data-aos-delay="150">
-                      <div class="quote-mark">
-                        <p>&quot;</p>
-                      </div>
-                      <p class="testimony">
-                        Shell Nigeria Gas is excited to be headlining the 2023
-                        edition of the Nigeria Oil &amp; Gas Outlook, the event
-                        has grown to become an important meeting place for
-                        players across Nigeria's Oil &amp; Gas market, and the
-                        quality of engagement here is unrivaled.
-                      </p>
-                      <div class="testimonial-brand">
-                        <img src="/assets/who-participates-logo/shell.jpg" alt="Shell" loading="lazy" />
-                      </div>
-                      <div class="author-details">
-                        <h3 class="name">Ed Ubong</h3>
-                        <p class="designation">Fmr MD, Shell Nigeria Gas</p>
-                        <p class="company">Director, Decade of Gas Secretariat</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card-right" data-aos="fade-left" data-aos-delay="150">
-                      <img src="/assets/testimonial/ed-ubong.jpg" alt="Ed Ubong" loading="lazy" />
-                    </div>
-                  </div>
+        <!-- Who participates -->
+        <section id="who-participates">
+          <div class="who-participates-container padding o-hidden">
+            <div class="container">
+              <div class="section-header white">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100"
+                    >- Who attends</span
+                  >
                 </div>
-              </div>
-              <div class="testimonial-slide">
-                <div class="container">
-                  <div class="testimonial-card t-purple">
-                    <div class="testimonial-card-left" data-aos="fade-right" data-aos-delay="150">
-                      <div class="quote-mark">
-                        <p>&quot;</p>
-                      </div>
-                      <p class="testimony">
-                        Tetracore is delighted to be headlining the 2024 edition
-                        of the Nigeria Oil &amp; Gas Outlook, over the years, the
-                        event has consistently brought together key players
-                        across Nigeria's oil &amp; gas market, as we continue to
-                        play our role in harnessing Nigeria's natural gas for
-                        power development, we believe #NOGO is an important
-                        platform to demonstrate this commitment.
-                      </p>
-                      <div class="testimonial-brand">
-                        <img src="/assets/who-participates-logo/tetracore.jpg" alt="Tetracore" loading="lazy" />
-                      </div>
-                      <div class="author-details">
-                        <h3 class="name">Olakunle Williams</h3>
-                        <p class="designation">CEO</p>
-                        <p class="company">Tetracore</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card-right" data-aos="fade-left" data-aos-delay="150">
-                      <img src="/assets/testimonial/olakunle-williams.jpg" alt="Olakunle Williams" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-slide">
-                <div class="container">
-                  <div class="testimonial-card t-teal">
-                    <div class="testimonial-card-left" data-aos="fade-right" data-aos-delay="150">
-                      <div class="quote-mark">
-                        <p>&quot;</p>
-                      </div>
-                      <p class="testimony">
-                        PowerGas has been sponsoring Nigeria Oil &amp; Gas Outlook
-                        for 5years, and it is always our pleasure to return to
-                        this platform, as we've annually leveraged it to share
-                        the important work we do across Nigeria's energy market.
-                      </p>
-                      <div class="testimonial-brand">
-                        <img src="/assets/who-participates-logo/powergas.jpg" alt="PowerGas" loading="lazy" />
-                      </div>
-                      <div class="author-details">
-                        <h3 class="name">Sumeet Singh</h3>
-                        <p class="designation">CEO</p>
-                        <p class="company">PowerGas</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card-right" data-aos="fade-left" data-aos-delay="150">
-                      <img src="/assets/testimonial/sumeet-singh.jpg" alt="Sumeet Singh" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-slide">
-                <div class="container">
-                  <div class="testimonial-card t-green">
-                    <div class="testimonial-card-left" data-aos="fade-right" data-aos-delay="150">
-                      <div class="quote-mark">
-                        <p>&quot;</p>
-                      </div>
-                      <p class="testimony">
-                        I have spoken at multiple editions of the Nigeria Oil
-                        &amp; Gas Outlook, and it's a pleasure to always be back,
-                        especially with ANOH participating as a Sponsor, with a
-                        key focus on discussing our work as one of Nigeria's
-                        foremost midstream gas processing company.
-                      </p>
-                      <div class="testimonial-brand">
-                        <img src="/assets/who-participates-logo/agpc.png" alt="ANOH Gas Processing" loading="lazy" />
-                      </div>
-                      <div class="author-details">
-                        <h3 class="name">Effiong Okon</h3>
-                        <p class="designation">MD</p>
-                        <p class="company">ANOH Gas Processing</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card-right" data-aos="fade-left" data-aos-delay="150">
-                      <img src="/assets/testimonial/effiong-okon.jpg" alt="Effiong Okon" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-slide">
-                <div class="container">
-                  <div class="testimonial-card t-indigo">
-                    <div class="testimonial-card-left" data-aos="fade-right" data-aos-delay="150">
-                      <div class="quote-mark">
-                        <p>&quot;</p>
-                      </div>
-                      <p class="testimony">
-                        PiCNG is thrilled to be participating at the Nigeria Oil
-                        &amp; Gas Outlook as a Gold Supporter, our country has
-                        vast gas reserves to be harnessed and we believe events
-                        like the Nigeria Oil &amp; Gas Outlook delivers an
-                        important platform to share the important work we do
-                        across this vertical with industry players.
-                      </p>
-                      <div class="testimonial-brand">
-                        <img src="/assets/who-participates-logo/pcngi.png" alt="P-CNGI" loading="lazy" />
-                      </div>
-                      <div class="author-details">
-                        <h3 class="name">Tari Mayor-Bright</h3>
-                        <p class="designation">Subnational &amp; Sovereign Coordinator</p>
-                        <p class="company">The Presidential CNG Initiative</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card-right" data-aos="fade-left" data-aos-delay="150">
-                      <img src="/assets/testimonial/tari-mayor-bright.jpg" alt="Tari Mayor-Bright" loading="lazy" />
-                    </div>
-                  </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    Who participates at our events?
+                  </h2>
                 </div>
               </div>
             </div>
+            <div class="who-participates-wrapper" data-aos="zoom-out">
+              <div class="who-participates-slide-1">
+                <img
+                  src="assets/who-participates-logo/shell.jpg"
+                  alt="Shell Nigeria Gas"
+                />
+                <img
+                  src="assets/who-participates-logo/seplat.jpg"
+                  alt="Seplat Energy"
+                />
+                <img
+                  src="assets/who-participates-logo/fed-min.jpg"
+                  alt="Federal Ministry of Petroleum Resources"
+                />
+                <img
+                  src="assets/who-participates-logo/chevron.jpg"
+                  alt="Chevron"
+                />
+                <img
+                  src="assets/who-participates-logo/gasco.jpg"
+                  alt="GASCO Marine"
+                />
+                <img
+                  src="assets/who-participates-logo/axxela.jpg"
+                  alt="Axxela"
+                />
+                <img src="assets/who-participates-logo/oando.jpg" alt="Oando" />
+                <img src="assets/who-participates-logo/ncdmb.jpg" alt="NCDMB" />
+                <img
+                  src="assets/who-participates-logo/africa-oil.jpg"
+                  alt="Africa Oil"
+                />
+                <img
+                  src="assets/who-participates-logo/viathan.jpg"
+                  alt="Viathan"
+                />
+                <img
+                  src="assets/who-participates-logo/tradegrad.jpg"
+                  alt="TradeGrd"
+                />
+                <img src="assets/who-participates-logo/cecom.jpg" alt="CECOM" />
+                <img
+                  src="assets/who-participates-logo/powergas.jpg"
+                  alt="PowerGas"
+                />
+                <img
+                  src="assets/who-participates-logo/exxon.jpg"
+                  alt="ExxonMobil"
+                />
+                <img
+                  src="assets/who-participates-logo/tetracore.jpg"
+                  alt="Tetracore"
+                />
+                <img
+                  src="assets/who-participates-logo/lfz.jpg"
+                  alt="Lagos Free Zone"
+                />
+                <img
+                  src="assets/who-participates-logo/oil-gas.jpg"
+                  alt="Oil &amp; Gas Free Zones Authority"
+                />
+                <img
+                  src="assets/who-participates-logo/nga.jpg"
+                  alt="Nigerian Gas Association"
+                />
+                <img
+                  src="assets/who-participates-logo/greenville.jpg"
+                  alt="Greenville LNG"
+                />
+              </div>
+              <div class="who-participates-slide-2" dir="rtl">
+                <img src="assets/who-participates-logo/allon.jpg" alt="Allon" />
+                <img src="assets/who-participates-logo/ondo.jpg" alt="Ondo" />
+                <img
+                  src="assets/who-participates-logo/decade-gas.jpg"
+                  alt="Decade of Gas"
+                />
+                <img
+                  src="assets/who-participates-logo/pcngi.png"
+                  alt="P-CNGI"
+                />
+                <img src="assets/who-participates-logo/agpc.png" alt="AGPC" />
+                <img
+                  src="assets/who-participates-logo/autogas.jpg"
+                  alt="Autogas Nigeria"
+                />
+                <img src="assets/who-participates-logo/ge.jpg" alt="GE" />
+                <img src="assets/who-participates-logo/nape.jpg" alt="NAPE" />
+                <img
+                  src="assets/who-participates-logo/ardova.jpg"
+                  alt="Ardova"
+                />
+                <img src="assets/who-participates-logo/asiko.jpg" alt="Asiko" />
+                <img
+                  src="assets/who-participates-logo/rainoil.jpg"
+                  alt="Rainoil"
+                />
+                <img src="assets/who-participates-logo/waep.jpg" alt="WAEP" />
+                <img
+                  src="assets/who-participates-logo/infra-credit.jpg"
+                  alt="InfraCredit"
+                />
+                <img src="assets/who-participates-logo/kpmg.jpg" alt="KPMG" />
+                <img
+                  src="assets/who-participates-logo/sojits.jpg"
+                  alt="Sojitz"
+                />
+                <img
+                  src="assets/who-participates-logo/stears.jpg"
+                  alt="Stears"
+                />
+                <img
+                  src="assets/who-participates-logo/olaniwun-ajayi.jpg"
+                  alt="Olaniwun Ajayi"
+                />
+                <img
+                  src="assets/who-participates-logo/africa-finance.jpg"
+                  alt="Africa Finance Corporation"
+                />
+                <img src="assets/who-participates-logo/petan.jpg" alt="PETAN" />
+              </div>
+              <div class="who-participates-slide-3">
+                <img
+                  src="assets/who-participates-logo/prime-atlantic.jpg"
+                  alt="Prime Atlantic"
+                />
+                <img
+                  src="assets/who-participates-logo/s&pglobal.jpg"
+                  alt="S&amp;P Global"
+                />
+                <img src="assets/who-participates-logo/gacn.jpg" alt="GACN" />
+                <img src="assets/who-participates-logo/entec.jpg" alt="Entec" />
+                <img
+                  src="assets/who-participates-logo/nsia.jpg"
+                  alt="Nigeria Sovereign Investment Authority"
+                />
+                <img
+                  src="assets/who-participates-logo/recon-africa.jpg"
+                  alt="ReconAfrica"
+                />
+                <img
+                  src="assets/who-participates-logo/hsi-energies.jpg"
+                  alt="HSI Energies"
+                />
+                <img
+                  src="assets/who-participates-logo/aggreko.jpg"
+                  alt="Aggreko"
+                />
+                <img
+                  src="assets/who-participates-logo/fbn-quest.svg"
+                  alt="FBNQuest"
+                />
+                <img
+                  src="assets/who-participates-logo/aradel-holdings.png"
+                  alt="Aradel Holdings"
+                />
+                <img
+                  src="assets/who-participates-logo/bell-oil-gas.jpeg"
+                  alt="Bell Oil &amp; Gas"
+                />
+                <img
+                  src="assets/who-participates-logo/nig-midstrem.jpg"
+                  alt="Nigerian Midstream"
+                />
+                <img src="assets/who-participates-logo/fbn.jpg" alt="FBN" />
+                <img
+                  src="assets/who-participates-logo/assoldog.jpg"
+                  alt="ASSOLDOG"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Sponsors -->
-      <section id="sponsors">
-        <div class="sponsors-container padding">
-          <div class="container">
-            <div class="sponsors-wrapper">
-              <!-- <div class="section-header black">
+        <!-- Speakers Section -->
+        <section id="speakers">
+          <div class="speakers-container padding mist">
+            <div class="container">
+              <div class="speakers-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100"
+                      >- Speakers</span
+                    >
+                  </div>
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      Who speaks at Nigeria Oil &amp; Gas Outlook?
+                    </h2>
+                  </div>
+                </div>
+                <div class="speakers-box-container">
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/olajumoke-ajayi.png"
+                        alt="Olajumoke Ajayi"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Olajumoke Ajayi</h4>
+                      <p class="designation">MD/CEO,</p>
+                      <p class="company">
+                        West African Exploration and Production Company
+                      </p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/nzan-ogbe.jpeg"
+                        alt="Nzan Ogbe"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Nzan Ogbe</h4>
+                      <p class="designation">Executive Vice Chairman,</p>
+                      <p class="company">Levene Energy</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/pade-durotoye.jpeg"
+                        alt="Pade Durotoye"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Pade Durotoye</h4>
+                      <p class="designation">Managing Director,</p>
+                      <p class="company">Nigeria Savannah Evergy</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/dr-shiela-addo.jpg"
+                        alt="Dr Sheila Addo"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Dr Sheila Addo</h4>
+                      <p class="designation">Deputy MD,</p>
+                      <p class="company">National Petroleum Authority, Ghana</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/oladimeji-bashorun.jpeg"
+                        alt="Oladimeji Bashorun"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Oladimeji Bashorun</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Energia Limited</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/oladipo-ashafa.jpeg"
+                        alt="Oladipo Ashafa"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Oladipo Ashafa</h4>
+                      <p class="designation">COO,</p>
+                      <p class="company">Chappal Energies</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/dr-abiodun-ogunjobi.jpeg"
+                        alt="Dr Abiodun Ogunjobi"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Dr Abiodun Ogunjobi</h4>
+                      <p class="designation">Group Chief Technical Officer,</p>
+                      <p class="company">NewcrossEP</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/dr-grace-orife.jpeg"
+                        alt="Dr Grace Orife"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Dr Grace Orife</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Lynx Analytics Limited</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/oliver-onyekweli.png"
+                        alt="Oliver Onyekweli"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Oliver Onyekweli</h4>
+                      <p class="designation">Partner,</p>
+                      <p class="company">McKinsey & Company</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/ejiro-gray.png"
+                        alt="Ejiro Gray"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Ejiro Gray</h4>
+                      <p class="designation">Executive Director,</p>
+                      <p class="company">Sahara Group</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/john-kadiri.jpeg"
+                        alt="John Kadiri"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">John Kadiri</h4>
+                      <p class="designation">Executive Secretary,</p>
+                      <p class="company">
+                        Association of Local Distributors of Gas(ALDG)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/dr-ayotunde-coker.png"
+                        alt="Dr Ayotunde Coker"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Dr Ayotunde Coker</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Open Access Data Centres</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section id="testimonial">
+          <div class="testimonial-container padding mist">
+            <div class="container">
+              <div class="section-header">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100"
+                    >- Testimonial</span
+                  >
+                </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    They've been here; What they had to say
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-wrapper">
+              <div class="testimonial-slides">
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-card t-blue">
+                      <div
+                        class="testimonial-card-left"
+                        data-aos="fade-right"
+                        data-aos-delay="150"
+                      >
+                        <div class="quote-mark">
+                          <p>&quot;</p>
+                        </div>
+                        <p class="testimony">
+                          Shell Nigeria Gas is excited to be headlining the 2023
+                          edition of the Nigeria Oil &amp; Gas Outlook, the
+                          event has grown to become an important meeting place
+                          for players across Nigeria's Oil &amp; Gas market, and
+                          the quality of engagement here is unrivaled.
+                        </p>
+                        <div class="testimonial-brand">
+                          <img
+                            src="/assets/who-participates-logo/shell.jpg"
+                            alt="Shell"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="author-details">
+                          <h3 class="name">Ed Ubong</h3>
+                          <p class="designation">Fmr MD, Shell Nigeria Gas</p>
+                          <p class="company">
+                            Director, Decade of Gas Secretariat
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="testimonial-card-right"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                      >
+                        <img
+                          src="/assets/testimonial/ed-ubong.jpg"
+                          alt="Ed Ubong"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-card t-purple">
+                      <div
+                        class="testimonial-card-left"
+                        data-aos="fade-right"
+                        data-aos-delay="150"
+                      >
+                        <div class="quote-mark">
+                          <p>&quot;</p>
+                        </div>
+                        <p class="testimony">
+                          Tetracore is delighted to be headlining the 2024
+                          edition of the Nigeria Oil &amp; Gas Outlook, over the
+                          years, the event has consistently brought together key
+                          players across Nigeria's oil &amp; gas market, as we
+                          continue to play our role in harnessing Nigeria's
+                          natural gas for power development, we believe #NOGO is
+                          an important platform to demonstrate this commitment.
+                        </p>
+                        <div class="testimonial-brand">
+                          <img
+                            src="/assets/who-participates-logo/tetracore.jpg"
+                            alt="Tetracore"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="author-details">
+                          <h3 class="name">Olakunle Williams</h3>
+                          <p class="designation">CEO</p>
+                          <p class="company">Tetracore</p>
+                        </div>
+                      </div>
+                      <div
+                        class="testimonial-card-right"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                      >
+                        <img
+                          src="/assets/testimonial/olakunle-williams.jpg"
+                          alt="Olakunle Williams"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-card t-teal">
+                      <div
+                        class="testimonial-card-left"
+                        data-aos="fade-right"
+                        data-aos-delay="150"
+                      >
+                        <div class="quote-mark">
+                          <p>&quot;</p>
+                        </div>
+                        <p class="testimony">
+                          PowerGas has been sponsoring Nigeria Oil &amp; Gas
+                          Outlook for 5years, and it is always our pleasure to
+                          return to this platform, as we've annually leveraged
+                          it to share the important work we do across Nigeria's
+                          energy market.
+                        </p>
+                        <div class="testimonial-brand">
+                          <img
+                            src="/assets/who-participates-logo/powergas.jpg"
+                            alt="PowerGas"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="author-details">
+                          <h3 class="name">Sumeet Singh</h3>
+                          <p class="designation">CEO</p>
+                          <p class="company">PowerGas</p>
+                        </div>
+                      </div>
+                      <div
+                        class="testimonial-card-right"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                      >
+                        <img
+                          src="/assets/testimonial/sumeet-singh.jpg"
+                          alt="Sumeet Singh"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-card t-green">
+                      <div
+                        class="testimonial-card-left"
+                        data-aos="fade-right"
+                        data-aos-delay="150"
+                      >
+                        <div class="quote-mark">
+                          <p>&quot;</p>
+                        </div>
+                        <p class="testimony">
+                          I have spoken at multiple editions of the Nigeria Oil
+                          &amp; Gas Outlook, and it's a pleasure to always be
+                          back, especially with ANOH participating as a Sponsor,
+                          with a key focus on discussing our work as one of
+                          Nigeria's foremost midstream gas processing company.
+                        </p>
+                        <div class="testimonial-brand">
+                          <img
+                            src="/assets/who-participates-logo/agpc.png"
+                            alt="ANOH Gas Processing"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="author-details">
+                          <h3 class="name">Effiong Okon</h3>
+                          <p class="designation">MD</p>
+                          <p class="company">ANOH Gas Processing</p>
+                        </div>
+                      </div>
+                      <div
+                        class="testimonial-card-right"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                      >
+                        <img
+                          src="/assets/testimonial/effiong-okon.jpg"
+                          alt="Effiong Okon"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-card t-indigo">
+                      <div
+                        class="testimonial-card-left"
+                        data-aos="fade-right"
+                        data-aos-delay="150"
+                      >
+                        <div class="quote-mark">
+                          <p>&quot;</p>
+                        </div>
+                        <p class="testimony">
+                          PiCNG is thrilled to be participating at the Nigeria
+                          Oil &amp; Gas Outlook as a Gold Supporter, our country
+                          has vast gas reserves to be harnessed and we believe
+                          events like the Nigeria Oil &amp; Gas Outlook delivers
+                          an important platform to share the important work we
+                          do across this vertical with industry players.
+                        </p>
+                        <div class="testimonial-brand">
+                          <img
+                            src="/assets/who-participates-logo/pcngi.png"
+                            alt="P-CNGI"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="author-details">
+                          <h3 class="name">Tari Mayor-Bright</h3>
+                          <p class="designation">
+                            Subnational &amp; Sovereign Coordinator
+                          </p>
+                          <p class="company">The Presidential CNG Initiative</p>
+                        </div>
+                      </div>
+                      <div
+                        class="testimonial-card-right"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                      >
+                        <img
+                          src="/assets/testimonial/tari-mayor-bright.jpg"
+                          alt="Tari Mayor-Bright"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sponsors -->
+        <section id="sponsors">
+          <div class="sponsors-container padding">
+            <div class="container">
+              <div class="sponsors-wrapper">
+                <!-- <div class="section-header black">
                 <h2 data-aos="fade-up">They trusted us</h2>
               </div> -->
 
-              <div class="sponsors-grid-container">
-                <div class="sponsors-grid">
-                  <div class="sponsors-grid-header">Previous Sponsors and Partners</div>
-                  <div class="sponsors-grid-wrapper">
-                    <a href="">
-                      <img src="/assets/who-participates-logo/shell.jpg" alt="" />
-                    </a>
-                    <a href="">
-                      <img src="/assets/who-participates-logo/tetracore.jpg" alt="" />
-                    </a>
-                    <a href="">
-                      <img src="/assets/sponsors/pcngi-gas.png" alt="" />
-                    </a>
-                    <a href="">
-                      <img src="/assets/sponsors/powergas.png" alt="" />
-                    </a>
-                    <a href="">
-                      <img src="/assets/sponsors/openaccesss-dc.png" alt="" />
-                    </a>
-                    <a href="">
-                      <img src="/assets/sponsors/yellowcard.svg" alt="" />
-                    </a>
-                    <a href="">
-                      <img src="/assets/sponsors/equinix-mainone.png" alt="" />
-                    </a>
-                    <a href="">
-                      <img src="/assets/sponsors/agpc.png" alt="" />
-                    </a>
-                    <a href="">
-                      <img src="/assets/sponsors/nga.webp" alt="" />
-                    </a>
-                    <a href="">
-                      <img src="/assets/sponsors/aldg.png" alt="" />
-                    </a>
+                <div class="sponsors-grid-container">
+                  <div class="sponsors-grid">
+                    <div class="sponsors-grid-header">
+                      Previous Sponsors and Partners
+                    </div>
+                    <div class="sponsors-grid-wrapper">
+                      <a href="">
+                        <img
+                          src="/assets/who-participates-logo/shell.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a href="">
+                        <img
+                          src="/assets/who-participates-logo/tetracore.jpg"
+                          alt=""
+                        />
+                      </a>
+                      <a href="">
+                        <img src="/assets/sponsors/pcngi-gas.png" alt="" />
+                      </a>
+                      <a href="">
+                        <img src="/assets/sponsors/powergas.png" alt="" />
+                      </a>
+                      <a href="">
+                        <img src="/assets/sponsors/openaccesss-dc.png" alt="" />
+                      </a>
+                      <a href="">
+                        <img src="/assets/sponsors/yellowcard.svg" alt="" />
+                      </a>
+                      <a href="">
+                        <img
+                          src="/assets/sponsors/equinix-mainone.png"
+                          alt=""
+                        />
+                      </a>
+                      <a href="">
+                        <img src="/assets/sponsors/agpc.png" alt="" />
+                      </a>
+                      <a href="">
+                        <img src="/assets/sponsors/nga.webp" alt="" />
+                      </a>
+                      <a href="">
+                        <img src="/assets/sponsors/aldg.png" alt="" />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="sponsors-grid">
-                  <div class="sponsors-grid-header">Strategic Communications Partner</div>
-                  <div class="sponsors-grid-wrapper">
-                    <a href="">
-                      <img src="/assets/sponsors/proally.png" alt="" />
-                    </a>
+                  <div class="sponsors-grid">
+                    <div class="sponsors-grid-header">
+                      Strategic Communications Partner
+                    </div>
+                    <div class="sponsors-grid-wrapper">
+                      <a href="">
+                        <img src="/assets/sponsors/proally.png" alt="" />
+                      </a>
+                    </div>
                   </div>
-                </div>
 
-
-
-                <!-- <div class="sponsors-grid-container">
+                  <!-- <div class="sponsors-grid-container">
                 <div class="sponsors-grid">
                   <div class="sponsors-grid-header">Associate Sponsor</div>
                   <div class="sponsors-grid-wrapper">
@@ -1808,36 +2190,43 @@
                   </div>
                 </div>
               </div> -->
+                </div>
               </div>
             </div>
           </div>
-      </section>
+        </section>
 
-      <!-- Highlight -->
-      <section id="highlight">
-        <div class="highlight-container padding mist">
-          <div class="container">
-            <div class="section-header white">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">- Highlights</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Highlights from previous editions of NOGO
-                </h2>
+        <!-- Highlight -->
+        <section id="highlight">
+          <div class="highlight-container padding mist">
+            <div class="container">
+              <div class="section-header white">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100"
+                    >- Highlights</span
+                  >
+                </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    Highlights from previous editions of NOGO
+                  </h2>
+                </div>
               </div>
             </div>
+            <div
+              class="slide-container"
+              data-aos="zoom-out"
+              data-aos-delay="300"
+            >
+              <div class="slider highlight-slider-1"></div>
+              <div class="slider highlight-slider-2" dir="rtl"></div>
+              <div class="slider highlight-slider-3"></div>
+            </div>
           </div>
-          <div class="slide-container" data-aos="zoom-out" data-aos-delay="300">
-            <div class="slider highlight-slider-1"></div>
-            <div class="slider highlight-slider-2" dir="rtl"></div>
-            <div class="slider highlight-slider-3"></div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Event Recap -->
-      <!-- <section id="event-recap">
+        <!-- Event Recap -->
+        <!-- <section id="event-recap">
         <div class="event-recap-container padding bg-white">
           <div class="container">
             <div class="section-header">
@@ -1858,248 +2247,315 @@
         </div>
       </section> -->
 
-      <!-- Timeline -->
-      <section id="timeline">
-        <div class="timeline-container padding mist">
-          <div class="container">
-            <div class="timeline-wrapper">
-              <h2 data-aos="fade-up">
-                Reach Nigeria's oil and gas sector change-makers & grow your business
-              </h2>
+        <!-- Timeline -->
+        <section id="timeline">
+          <div class="timeline-container padding mist">
+            <div class="container">
+              <div class="timeline-wrapper">
+                <h2 data-aos="fade-up">
+                  Reach Nigeria's oil and gas sector change-makers & grow your
+                  business
+                </h2>
 
-              <p data-aos="fade-up" data-aos-delay="100">
-                Partner with us to make your mark across Nigeria's Oil & Gas Market
-              </p>
-              <div class="timeline-subwrapper">
-                <div class="timeline-item">
-                  <span class="dot blue" data-aos="zoom-in" data-aos-delay="150"></span>
-                  <div class="text">
-                    <h3 data-aos="fade-left" data-aos-delay="150">
-                      Amplify.
-                    </h3>
-                    <p data-aos="fade-left" data-aos-delay="200">
-                      Your brand awareness across multiple touchpoints
-                    </p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="dot yellow" data-aos="zoom-in" data-aos-delay="200"></span>
-                  <div class="text">
-                    <h3 data-aos="fade-left" data-aos-delay="200">Engage.</h3>
-                    <p data-aos="fade-left" data-aos-delay="250">
-                      Your prospects with unrivaled thought leadership
-                    </p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="dot green" data-aos="zoom-in" data-aos-delay="250"></span>
-                  <div class="text">
-                    <h3 data-aos="fade-left" data-aos-delay="250">
-                      Connect.
-                    </h3>
-                    <p data-aos="fade-left" data-aos-delay="300">
-                      Generate relevant and qualified leads
-                    </p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="dot pink" data-aos="zoom-in" data-aos-delay="300"></span>
-                  <div class="text">
-                    <h3 data-aos="fade-left" data-aos-delay="300">
-                      Exhibit.
-                    </h3>
-                    <p data-aos="fade-left" data-aos-delay="350">
-                      Your solutions/services to hundreds of Oil & Gas executives
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact">
-        <div class="contact-container padding">
-          <div class="container mist">
-            <div class="contact-wrapper">
-              <h2 data-aos="fade-up">Speak to our team</h2>
-
-              <p data-aos="fade-up" data-aos-delay="100">
-                If you are interested in learning more about our available
-                sponsorship, speaking, exhibitions and other partnership
-                opportunities, please speak to our team.
-              </p>
-
-              <div class="contact-box-container">
-                <div class="contact-box" data-aos="zoom-in" data-aos-delay="150">
-                  <h4>Jamiu Ijaodola</h4>
-                  <a href="tel: +2347016673316">+234 701 667 3316</a>
-                  <a href="mailto: jamiu@eventhive.ng">jamiu@eventhive.ng</a>
-                </div>
-                <div class="contact-box" data-aos="zoom-in" data-aos-delay="250">
-                  <h4>Malik Kazeem</h4>
-                  <a href="tel: +2349028112744">+234 902 811 2744</a>
-                  <a href="mailto: malik@eventhive.ng">malik@eventhive.ng</a>
-                </div>
-                <div class="contact-box" data-aos="zoom-in" data-aos-delay="250">
-                  <h4>Arole Mustapha</h4>
-                  <a href="tel: +2348086081614">+234 808 608 1614</a>
-                  <a href="mailto: arole@eventhive.ng">arole@eventhive.ng</a>
-                </div>
-              </div>
-
-              <div class="become">
-                <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Sponsorship%20Deck"
-                  class="btn btn-sec" data-aos="fade-up" data-aos-delay="300">Become a Sponsor</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- More About Eventhive -->
-      <section id="more-about">
-        <div class="more-container padding">
-          <div class="container">
-            <div class="more-wrapper aos-init" data-aos="fade-left">
-              <div class="more-logo">
-                <span>An event by:</span>
-                <div class="logos">
-                  <div class="logo">
-                    <img src="assets/logo/energy-logo.png" alt="" />
-                  </div>
-                  <div class="logo-separator"></div>
-                  <div class="logo">
-                    <img src="assets/logo/logo.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-
-              <p>
-                Africa Enerygy Series is a subsidiary of Eventhive. Eventhive is
-                Africa's leading B2B2C event servicing company with event
-                portfolios across Lagos, London, Nairobi, Kigali, Johannesburg
-                and New York.
-              </p>
-              <p>
-                Eventhive operates in the heart of the knowledge and
-                information economy across major sectors in Africa. We enable
-                businesses to grow through connecting them with knowledge,
-                ideas and opportunities.
-              </p>
-
-              <div class="indus-cities">
-                <h4 class="text-sec">Industries We Operate In:</h4>
-                <div>
-                  <span>Oil &amp;
-                    Gas</span><span>.</span><span>Energy</span><span>.</span><span>Tech</span><span>.</span><span>Mining</span><span>.</span><span>Finance</span><span>.</span><span>Transport</span><span>.</span><span>Telecoms</span><span>.</span><span>Aviation</span><span>.</span><span>Real
-                    Estate</span><span>.</span><span>International Trade</span><span>.</span><span>Agribusiness</span>
-                  <span>.</span><span>Private Equity/VC</span><span>.</span><span>Creative Economy</span>
-                  <span>.</span><span>Power</span><span>.</span><span>Business of Entertainment</span>
-                </div>
-              </div>
-              <div class="indus-cities">
-                <h4 class="text-sec">Cities We Operate In:</h4>
-                <div>
-                  <span>Lagos</span><span>.</span><span>London</span><span>.</span><span>New
-                    York</span><span>.</span><span>Kigali</span><span>.</span><span>Nairobi</span><span>.</span><span>Johannesburg</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-container padding">
-        <div class="container">
-          <div class="footer-wrapper">
-            <div class="top">
-              <div class="logo">
-                <div class="logo-icon">
-                  <img src="/assets/logo/nogo-white-logo.png" alt="" />
-                </div>
-              </div>
-              <div class="quick-links">
-                <ul>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#partners">Partnership</a></li>
-                  <li>
-                    <a
-                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Exhibition%20Deck">Exhibition</a>
-                  </li>
-
-                  <li>
-                    <a href="https://tix.africa/discover/nigeria-oil-gas-outlook-2026" target="_blank">Tickets</a>
-                  </li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-              <div class="socials">
-                <h3>Nigeria Oil & Gas Outlook 2026</h3>
-                <p>
-                  August 27th, 2026 | Civic Centre, Victoria Island, Lagos
+                <p data-aos="fade-up" data-aos-delay="100">
+                  Partner with us to make your mark across Nigeria's Oil & Gas
+                  Market
                 </p>
-                <ul>
-                  <li>
-                    <a href="https://web.facebook.com/africaenergyseries" target="_blank"><iconify-icon
-                        icon="fa:facebook"></iconify-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/afenergyseries?s=20" target="_blank"><iconify-icon
-                        icon="ri:twitter-x-fill"></iconify-icon></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/africaenergyseries/" target="_blank"><iconify-icon
-                        icon="formkit:linkedin"></iconify-icon></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/afrienergyseries/" target="_blank"><iconify-icon
-                        icon="mdi:instagram"></iconify-icon></a>
-                  </li>
-                </ul>
+                <div class="timeline-subwrapper">
+                  <div class="timeline-item">
+                    <span
+                      class="dot blue"
+                      data-aos="zoom-in"
+                      data-aos-delay="150"
+                    ></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="150">
+                        Amplify.
+                      </h3>
+                      <p data-aos="fade-left" data-aos-delay="200">
+                        Your brand awareness across multiple touchpoints
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span
+                      class="dot yellow"
+                      data-aos="zoom-in"
+                      data-aos-delay="200"
+                    ></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="200">Engage.</h3>
+                      <p data-aos="fade-left" data-aos-delay="250">
+                        Your prospects with unrivaled thought leadership
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span
+                      class="dot green"
+                      data-aos="zoom-in"
+                      data-aos-delay="250"
+                    ></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="250">
+                        Connect.
+                      </h3>
+                      <p data-aos="fade-left" data-aos-delay="300">
+                        Generate relevant and qualified leads
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span
+                      class="dot pink"
+                      data-aos="zoom-in"
+                      data-aos-delay="300"
+                    ></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="300">
+                        Exhibit.
+                      </h3>
+                      <p data-aos="fade-left" data-aos-delay="350">
+                        Your solutions/services to hundreds of Oil & Gas
+                        executives
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="center">
-              <div id="countdown-timer" class="timer"></div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <div class="contact-container padding">
+            <div class="container mist">
+              <div class="contact-wrapper">
+                <h2 data-aos="fade-up">Speak to our team</h2>
+
+                <p data-aos="fade-up" data-aos-delay="100">
+                  If you are interested in learning more about our available
+                  sponsorship, speaking, exhibitions and other partnership
+                  opportunities, please speak to our team.
+                </p>
+
+                <div class="contact-box-container">
+                  <div
+                    class="contact-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="150"
+                  >
+                    <h4>Jamiu Ijaodola</h4>
+                    <a href="tel: +2347016673316">+234 701 667 3316</a>
+                    <a href="mailto: jamiu@eventhive.ng">jamiu@eventhive.ng</a>
+                  </div>
+                  <div
+                    class="contact-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="250"
+                  >
+                    <h4>Malik Kazeem</h4>
+                    <a href="tel: +2349028112744">+234 902 811 2744</a>
+                    <a href="mailto: malik@eventhive.ng">malik@eventhive.ng</a>
+                  </div>
+                  <div
+                    class="contact-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="250"
+                  >
+                    <h4>Arole Mustapha</h4>
+                    <a href="tel: +2348086081614">+234 808 608 1614</a>
+                    <a href="mailto: arole@eventhive.ng">arole@eventhive.ng</a>
+                  </div>
+                </div>
+
+                <div class="become">
+                  <a
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Sponsorship%20Deck"
+                    class="btn btn-sec"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    >Become a Sponsor</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="divider"></div>
-            <div class="bottom">
-              <p>
-                &copy; <span class="year">2026</span> Nigeria Oil & Gas Outlook.
-                All Rights Reserved.
-              </p>
+          </div>
+        </section>
+
+        <!-- More About Eventhive -->
+        <section id="more-about">
+          <div class="more-container padding">
+            <div class="container">
+              <div class="more-wrapper aos-init" data-aos="fade-left">
+                <div class="more-logo">
+                  <span>An event by:</span>
+                  <div class="logos">
+                    <div class="logo">
+                      <img src="assets/logo/energy-logo.png" alt="" />
+                    </div>
+                    <div class="logo-separator"></div>
+                    <div class="logo">
+                      <img src="assets/logo/logo.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <p>
+                  Africa Enerygy Series is a subsidiary of Eventhive. Eventhive
+                  is Africa's leading B2B2C event servicing company with event
+                  portfolios across Lagos, London, Nairobi, Kigali, Johannesburg
+                  and New York.
+                </p>
+                <p>
+                  Eventhive operates in the heart of the knowledge and
+                  information economy across major sectors in Africa. We enable
+                  businesses to grow through connecting them with knowledge,
+                  ideas and opportunities.
+                </p>
+
+                <div class="indus-cities">
+                  <h4 class="text-sec">Industries We Operate In:</h4>
+                  <div>
+                    <span>Oil &amp; Gas</span><span>.</span><span>Energy</span
+                    ><span>.</span><span>Tech</span><span>.</span
+                    ><span>Mining</span><span>.</span><span>Finance</span
+                    ><span>.</span><span>Transport</span><span>.</span
+                    ><span>Telecoms</span><span>.</span><span>Aviation</span
+                    ><span>.</span><span>Real Estate</span><span>.</span
+                    ><span>International Trade</span><span>.</span
+                    ><span>Agribusiness</span> <span>.</span
+                    ><span>Private Equity/VC</span><span>.</span
+                    ><span>Creative Economy</span> <span>.</span
+                    ><span>Power</span><span>.</span
+                    ><span>Business of Entertainment</span>
+                  </div>
+                </div>
+                <div class="indus-cities">
+                  <h4 class="text-sec">Cities We Operate In:</h4>
+                  <div>
+                    <span>Lagos</span><span>.</span><span>London</span
+                    ><span>.</span><span>New York</span><span>.</span
+                    ><span>Kigali</span><span>.</span><span>Nairobi</span
+                    ><span>.</span><span>Johannesburg</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="footer-container padding">
+          <div class="container">
+            <div class="footer-wrapper">
+              <div class="top">
+                <div class="logo">
+                  <div class="logo-icon">
+                    <img src="/assets/logo/nogo-white-logo.png" alt="" />
+                  </div>
+                </div>
+                <div class="quick-links">
+                  <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#partners">Partnership</a></li>
+                    <li>
+                      <a
+                        href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Oil%20&%20Gas%20Outlook%20Exhibition%20Deck"
+                        >Exhibition</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://tix.africa/discover/nigeria-oil-gas-outlook-2026"
+                        target="_blank"
+                        >Tickets</a
+                      >
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <h3>Nigeria Oil & Gas Outlook 2026</h3>
+                  <p>
+                    August 27th, 2026 | Civic Centre, Victoria Island, Lagos
+                  </p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://web.facebook.com/africaenergyseries"
+                        target="_blank"
+                        ><iconify-icon icon="fa:facebook"></iconify-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://x.com/afenergyseries?s=20"
+                        target="_blank"
+                        ><iconify-icon icon="ri:twitter-x-fill"></iconify-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/africaenergyseries/"
+                        target="_blank"
+                        ><iconify-icon icon="formkit:linkedin"></iconify-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/afrienergyseries/"
+                        target="_blank"
+                        ><iconify-icon icon="mdi:instagram"></iconify-icon
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="center">
+                <div id="countdown-timer" class="timer"></div>
+              </div>
+              <div class="divider"></div>
+              <div class="bottom">
+                <p>
+                  &copy; <span class="year">2026</span> Nigeria Oil & Gas
+                  Outlook. All Rights Reserved.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <!-- Odometer -->
-  <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
+    <!-- Odometer -->
+    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
 
-  <!-- Iconify -->
-  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
-  <!-- Aos -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Slick Carousel -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Slick Carousel -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
-  <!-- Custom script -->
-  <script src="/js/script.js"></script>
-</body>
-
+    <!-- Custom script -->
+    <script src="/js/script.js"></script>
+  </body>
 </html>
