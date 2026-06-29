@@ -1,57 +1,75 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nigeria Manufacturing & Trade Outlook - The Premier Manufacturing & Trade Conference"
+    />
+    <meta
+      name="keywords"
+      content="manufacturing, trade, Nigeria, industrial development, manufacturing conference, trade conference, manufacturing outlook, trade outlook, industrial growth, manufacturing sector, trade sector, business conference, economic development, industrial policy, manufacturing policy, trade policy"
+    />
 
-  <meta name="description"
-    content="Nigeria Manufacturing & Trade Outlook - The Premier Manufacturing & Trade Conference" />
-  <meta name="keywords"
-    content="manufacturing, trade, Nigeria, industrial development, manufacturing conference, trade conference, manufacturing outlook, trade outlook, industrial growth, manufacturing sector, trade sector, business conference, economic development, industrial policy, manufacturing policy, trade policy" />
+    <link
+      rel="shortcut icon"
+      href="/assets/logo/nmto-white-icon.png"
+      type="image/x-icon"
+    />
 
+    <!-- Slick css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
-  <link rel="shortcut icon" href="/assets/logo/nmto-white-icon.png" type="image/x-icon" />
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- Slick css -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Odometer -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css"
+    />
 
-  <!-- Aos -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Odometer -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/util.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <link rel="stylesheet" href="styles/default.css" />
 
-  <!-- Google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+    <title>Nigeria Manufacturing & Trade Outlook</title>
+  </head>
 
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="stylesheet" href="styles/util.css" />
-  <link rel="stylesheet" href="styles/media.css" />
-  <link rel="stylesheet" href="styles/default.css" />
-
-  <title>Nigeria Manufacturing & Trade Outlook</title>
-
-</head>
-
-<body>
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="pulse-loader">
-      <div class="pulse"></div>
-      <div class="pulse"></div>
-      <div class="pulse"></div>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="pulse-loader">
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+      </div>
     </div>
-  </div>
 
-  <!-- Main-Content -->
-  <div class="main-container">
-    <!-- Announcement -->
-    <!-- <div id="announcementModal" class="modal-overlay">
+    <!-- Main-Content -->
+    <div class="main-container">
+      <!-- Announcement -->
+      <!-- <div id="announcementModal" class="modal-overlay">
       <div class="modal-content">
         <h2>- Announcement -</h2>
         <h3>Ready . Set . <span class="text-primary">Live</span></h3>
@@ -72,614 +90,783 @@
       </div>
     </div> -->
 
-    <!-- Header -->
-    <header>
-      <!-- Nav -->
-      <nav id="navbar">
-        <div class="nav-container">
-          <div class="external-container">
-            <div class="nav-wrapper">
+      <!-- Header -->
+      <header>
+        <!-- Nav -->
+        <nav id="navbar">
+          <div class="nav-container">
+            <div class="external-container">
+              <div class="nav-wrapper">
+                <div class="logo">
+                  <a href="/">
+                    <div class="logo-icon">
+                      <img
+                        src="assets/logo/nmto-white-logo.png"
+                        alt="Nigeria Manufacturing & Trade Outlook"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="nav-links">
+                  <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#partners">Partnership</a></li>
+
+                    <li>
+                      <a
+                        href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Exhibition%20Deck"
+                        >Exhibition</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"> Agenda </a>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="button">
+                  <a
+                    target="_blank"
+                    class="btn btn-sec"
+                    href="https://tix.africa/discover/nigeria-manufacturing-trade-outlook-2026"
+                    >Get a Ticket</a
+                  >
+                </div>
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Aside -->
+        <aside id="aside">
+          <div class="aside-container">
+            <!-- <div class="close-icon">X</div> -->
+            <div class="aside-wrapper">
               <div class="logo">
                 <a href="/">
-                  <div class="logo-icon">
-                    <img src="assets/logo/nmto-white-logo.png" alt="Nigeria Manufacturing & Trade Outlook" />
-                  </div>
+                  <img
+                    src="/assets/logo/nogo-white-logo.png"
+                    alt="Nigeria Manufacturing & Trade Outlook"
+                  />
                 </a>
               </div>
+
               <div class="nav-links">
                 <ul>
+                  <li class="active"><a href="#">Home</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#partners">Partnership</a></li>
-
                   <li>
                     <a
-                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Exhibition%20Deck">Exhibition</a>
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Exhibition%20Deck"
+                      >Exhibition</a
+                    >
                   </li>
                   <li>
-                    <a href="#" target="_blank">
-                      Agenda
-                    </a>
+                    <a
+                      href="https://tix.africa/discover/nigeria-manufacturing-trade-outlook-2026"
+                      target="_blank"
+                      >Tickets</a
+                    >
+                  </li>
+                  <li>
+                    <!-- <a href="/assets/agenda/Agenda-Brief-NFF2025.pdf" target="_blank"> -->
+                    <a href="#" target="_blank"> Agenda </a>
                   </li>
                   <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
-              <div class="button">
-                <a target="_blank" class="btn btn-sec"
-                  href="https://tix.africa/discover/nigeria-manufacturing-trade-outlook-2026">Get
-                  a Ticket</a>
-              </div>
-              <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+              <div>
+                <small
+                  >&copy; <span class="year">2026</span>. An event by
+                  Eventhive</small
+                >
               </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </aside>
+      </header>
 
-      <!-- Aside -->
-      <aside id="aside">
-        <div class="aside-container">
-          <!-- <div class="close-icon">X</div> -->
-          <div class="aside-wrapper">
-            <div class="logo">
-              <a href="/">
-                <img src="/assets/logo/nogo-white-logo.png" alt="Nigeria Manufacturing & Trade Outlook" />
-              </a>
-            </div>
-
-            <div class="nav-links">
-              <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#partners">Partnership</a></li>
-                <li>
-                  <a
-                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Exhibition%20Deck">Exhibition</a>
-                </li>
-                <li>
-                  <a href="https://tix.africa/discover/nigeria-manufacturing-trade-outlook-2026"
-                    target="_blank">Tickets</a>
-                </li>
-                <li>
-                  <!-- <a href="/assets/agenda/Agenda-Brief-NFF2025.pdf" target="_blank"> -->
-                  <a href="#" target="_blank">
-                    Agenda
-                  </a>
-                </li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <small>&copy; <span class="year">2026</span>. An event by
-                Eventhive</small>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </header>
-
-    <!-- Content -->
-    <main>
-      <section id="hero">
-        <div class="hero-container">
-          <div class="container">
-            <div class="hero-wrapper">
-              <div class="hero-description">
-                <p data-aos="fade-up" data-aos-delay="200">
-                  Meeting place for senior executives and players across Nigeria's Manufacturing & Trade industry.
-                </p>
-              </div>
-              <div class="date-loc" data-aos="fade-up" data-aos-delay="300">
-                <h4 class="date">
-                  13th August, 2026 | Oriental Hotel, VI, Lagos
-                </h4>
-              </div>
-
-              <div class="hero-buttons" data-aos="fade-up" data-aos-delay="350" data-aos-offset="0">
-                <div class="button" data-aos="fade-up" data-aos-delay="350" data-aos-offset="0">
-                  <a href="https://tix.africa/discover/nigeria-manufacturing-trade-outlook-2026" target="_blank"
-                    class="btn btn-pry">Buy tickets</a>
-                </div>
-                <div class="button" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
-                  <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Sponsorship%20Deck"
-                    class="btn btn-sec">Request sponsorship deck</a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="hero-image">
-            <div class="image">
-              <!-- <img src="assets/section-img/76.jpg" alt="" /> -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="event-intro">
-        <div class="event-intro-container padding mist">
-          <div class="container">
-            <div class="event-intro-wrapper">
-              <div class="left">
-                <div class="image" data-aos="zoom-in" data-aos-delay="250">
-                  <img src="assets/section-img/engage.jpg" alt="Nigeria Manufacturing & Trade Outlook audience" />
-                </div>
-              </div>
-              <div class="right">
-                <div class="event-intro-heading">
-                  <h3 data-aos="fade-left">
-                    Turning the tide for Nigeria's manufacturing industry.
-                  </h3>
-                </div>
-                <div class="event-intro-description">
-                  <p data-aos="fade-left" data-aos-delay="150">
-                    At the Nigeria Manufacturing & Trade Outlook, stategies sharpen, partnerships gain momentum, and
-                    real
-                    innovations takes flight.
-                  </p>
-                  <p data-aos="fade-left" data-aos-delay="250">
-                    If you want to unlock new ventures across Nigeria's Manufacturing industry, this is where it begins.
+      <!-- Content -->
+      <main>
+        <section id="hero">
+          <div class="hero-container">
+            <div class="container">
+              <div class="hero-wrapper">
+                <div class="hero-description">
+                  <p data-aos="fade-up" data-aos-delay="200">
+                    Meeting place for senior executives and players across
+                    Nigeria's Manufacturing & Trade industry.
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section id="about">
-        <div class="about-container padding">
-          <div class="container">
-            <div class="about-wrapper mist">
-              <div class="left">
-                <div class="about-heading">
-                  <h3 data-aos="fade-right">
-                    Driving the next decade of Nigeria's Industrial revolution
-                  </h3>
-                </div>
-                <div class="about-description">
-                  <p data-aos="fade-right" data-aos-delay="200">
-                    Nigeria Manufacturing and Trade Outlook is a premier event designed to
-                    propel the growth and global competitiveness of Nigeria's manufacturing
-                    sector, serving as a vital bridge connecting local manufacturing capabilities
-                    with burgeoning global trade opportunities.
-                  </p>
-                  <p data-aos="fade-right" data-aos-delay="250">
-                    Back for its 2nd edition, this strategic summit will empower Nigerian
-                    manufacturers by equipping them with actionable knowledge, fostering
-                    crucial connections, and outlining effective strategies to not only meet
-                    domestic demand but also thrive in the dynamic international marketplace.
-                  </p>
-                  <p data-aos="fade-right" data-aos-delay="300">
-                    Through expert‑led sessions, interactive panel discussions, and targeted
-                    networking opportunities, attendees will gain invaluable insights into the
-                    latest technological advancements, evolving global trade policies,
-                    sustainable manufacturing practices, and the critical regulatory frameworks
-                    shaping the future of industrialization in Africa's largest economy.
-                  </p>
-                </div>
-              </div>
-              <div class="right">
-                <div class="image" data-aos="zoom-in" data-aos-delay="300">
-                  <img src="assets/section-img/crowd.jpg" alt="" />
+                <div class="date-loc" data-aos="fade-up" data-aos-delay="300">
+                  <h4 class="date">
+                    13th August, 2026 | Oriental Hotel, VI, Lagos
+                  </h4>
                 </div>
 
-                <div class="image hidden-image" data-aos="zoom-in" data-aos-delay="350">
-                  <img src="assets/section-img/executive.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="counter">
-        <div class="count-container padding mist">
-          <div class="container">
-            <div class="count-wrapper" data-aos="zoom-in">
-              <div class="bottom">
-                <div class="logo">
-                  <div class="image">
-                    <img src="assets/logo/nmto-white-logo.png" alt="" />
+                <div
+                  class="hero-buttons"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                  data-aos-offset="0"
+                >
+                  <div
+                    class="button"
+                    data-aos="fade-up"
+                    data-aos-delay="350"
+                    data-aos-offset="0"
+                  >
+                    <a
+                      href="https://tix.africa/discover/nigeria-manufacturing-trade-outlook-2026"
+                      target="_blank"
+                      class="btn btn-pry"
+                      >Buy tickets</a
+                    >
+                  </div>
+                  <div
+                    class="button"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-offset="0"
+                  >
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Sponsorship%20Deck"
+                      class="btn btn-sec"
+                      >Request sponsorship deck</a
+                    >
                   </div>
                 </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="30">0</span><span class="plus">+</span>
-                  </h2>
-                  <p>Speakers</p>
+              </div>
+            </div>
+            <div class="hero-image">
+              <div class="image">
+                <!-- <img src="assets/section-img/76.jpg" alt="" /> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="event-intro">
+          <div class="event-intro-container padding mist">
+            <div class="container">
+              <div class="event-intro-wrapper">
+                <div class="left">
+                  <div class="image" data-aos="zoom-in" data-aos-delay="250">
+                    <img
+                      src="assets/section-img/engage.jpg"
+                      alt="Nigeria Manufacturing & Trade Outlook audience"
+                    />
+                  </div>
                 </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="750">0</span><span class="plus">+</span>
-                  </h2>
-                  <p>C-level Attendees</p>
+                <div class="right">
+                  <div class="event-intro-heading">
+                    <h3 data-aos="fade-left">
+                      Turning the tide for Nigeria's manufacturing industry.
+                    </h3>
+                  </div>
+                  <div class="event-intro-description">
+                    <p data-aos="fade-left" data-aos-delay="150">
+                      At the Nigeria Manufacturing & Trade Outlook, stategies
+                      sharpen, partnerships gain momentum, and real innovations
+                      takes flight.
+                    </p>
+                    <p data-aos="fade-left" data-aos-delay="250">
+                      If you want to unlock new ventures across Nigeria's
+                      Manufacturing industry, this is where it begins.
+                    </p>
+                  </div>
                 </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="25">0</span><span class="plus">+</span>
-                  </h2>
-                  <p>Exhibitors</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+          <div class="about-container padding">
+            <div class="container">
+              <div class="about-wrapper mist">
+                <div class="left">
+                  <div class="about-heading">
+                    <h3 data-aos="fade-right">
+                      Driving the next decade of Nigeria's Industrial revolution
+                    </h3>
+                  </div>
+                  <div class="about-description">
+                    <p data-aos="fade-right" data-aos-delay="200">
+                      Nigeria Manufacturing and Trade Outlook is a premier event
+                      designed to propel the growth and global competitiveness
+                      of Nigeria's manufacturing sector, serving as a vital
+                      bridge connecting local manufacturing capabilities with
+                      burgeoning global trade opportunities.
+                    </p>
+                    <p data-aos="fade-right" data-aos-delay="250">
+                      Back for its 2nd edition, this strategic summit will
+                      empower Nigerian manufacturers by equipping them with
+                      actionable knowledge, fostering crucial connections, and
+                      outlining effective strategies to not only meet domestic
+                      demand but also thrive in the dynamic international
+                      marketplace.
+                    </p>
+                    <p data-aos="fade-right" data-aos-delay="300">
+                      Through expert‑led sessions, interactive panel
+                      discussions, and targeted networking opportunities,
+                      attendees will gain invaluable insights into the latest
+                      technological advancements, evolving global trade
+                      policies, sustainable manufacturing practices, and the
+                      critical regulatory frameworks shaping the future of
+                      industrialization in Africa's largest economy.
+                    </p>
+                  </div>
                 </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="250">0</span><span class="plus">+</span>
-                  </h2>
-                  <p>Companies</p>
+                <div class="right">
+                  <div class="image" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="assets/section-img/crowd.jpg" alt="" />
+                  </div>
+
+                  <div
+                    class="image hidden-image"
+                    data-aos="zoom-in"
+                    data-aos-delay="350"
+                  >
+                    <img src="assets/section-img/executive.jpg" alt="" />
+                  </div>
                 </div>
-                <!-- <div class="count-box">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="counter">
+          <div class="count-container padding mist">
+            <div class="container">
+              <div class="count-wrapper" data-aos="zoom-in">
+                <div class="bottom">
+                  <div class="logo">
+                    <div class="image">
+                      <img src="assets/logo/nmto-white-logo.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="30"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>Speakers</p>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="750"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>C-level Attendees</p>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="25"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>Exhibitors</p>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="250"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>Companies</p>
+                  </div>
+                  <!-- <div class="count-box">
                   <h2>
                     <span class="odometer" data-status="yes" data-count="60">0</span><span class="plus">%</span>
                   </h2>
                   <p>C-level, Director, VP or Head-of-level</p>
                 </div> -->
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="engage-leaders">
-        <div class="engage-container padding mist">
-          <div class="container">
-            <div class="engage-wrapper">
-              <div class="engage-left">
+        <section id="engage-leaders">
+          <div class="engage-container padding mist">
+            <div class="container">
+              <div class="engage-wrapper">
+                <div class="engage-left">
+                  <div class="section-header">
+                    <div class="big-header o-hidden">
+                      <h2 data-aos="fade-right" data-aos-delay="100">
+                        ENGAGE NIGERIA's MANUFACTURING &amp; TRADE LEADERS
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="engage-action engage-action-desktop"
+                    data-aos="fade-right"
+                    data-aos-delay="250"
+                  >
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%Manufacturing%20&%20Trade%20Outlook%20Sponsorship%20Deck"
+                      class="btn btn-pry"
+                    >
+                      Request Sponsorship Deck
+                    </a>
+                  </div>
+                </div>
+
+                <div class="engage-right engage-description">
+                  <p data-aos="fade-left" data-aos-delay="200">
+                    The organisations and teams shaping the future of
+                    manufacturing & trade, meet in Lagos this August.
+                  </p>
+                  <p data-aos="fade-left" data-aos-delay="300">
+                    Where Nigeria's manufacturing & trade partnerships begin.
+                  </p>
+                  <div
+                    class="engage-action engage-action-mobile"
+                    data-aos="fade-up"
+                    data-aos-delay="350"
+                  >
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Sponsorship%20Deck"
+                      class="btn btn-pry"
+                    >
+                      Request Sponsorship Deck
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="key">
+          <div class="key-container padding mist">
+            <div class="container">
+              <div class="key-wrapper">
                 <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100"
+                      >- Insights</span
+                    >
+                  </div>
                   <div class="big-header o-hidden">
-                    <h2 data-aos="fade-right" data-aos-delay="100">
-                      ENGAGE NIGERIA's MANUFACTURING &amp; TRADE LEADERS
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      2026 Content Tracks
                     </h2>
                   </div>
                 </div>
-                <div class="engage-action engage-action-desktop" data-aos="fade-right" data-aos-delay="250">
-                  <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%Manufacturing%20&%20Trade%20Outlook%20Sponsorship%20Deck"
-                    class="btn btn-pry">
-                    Request Sponsorship Deck
-                  </a>
+                <div
+                  class="content-tracks-card box"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <div class="content-tracks-left">
+                    <!-- <h3 class="content-tracks-title">CONTENTS TRACKS</h3> -->
+                    <p class="content-tracks-subtitle">
+                      You can expect us to cover...
+                    </p>
+                    <ul class="content-tracks-list" role="list">
+                      <li>
+                        Rethinking regulatory framework for driving the growth
+                        of Nigeria's Manufacturing industry
+                      </li>
+                      <li>
+                        Financing the next decade of Nigeria's manufacturing
+                        industries
+                      </li>
+                      <li>Indigenous Capacity &amp; Local Content</li>
+                      <li>
+                        Development of Critical Infrastructure as a bedrock for
+                        industrial growth
+                      </li>
+                      <li>
+                        Accelerating innovation and technological advancement
+                        across Nigeria's manufacturing industry
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
 
-              <div class="engage-right engage-description">
-                <p data-aos="fade-left" data-aos-delay="200">
-                  The organisations and teams shaping the future of manufacturing & trade,
-                  meet in Lagos this August.
+        <!-- Why attend Section -->
+        <section id="why-attend">
+          <div class="why-attend-container padding mist">
+            <div class="container">
+              <div class="why-attend-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100"
+                      >- Why attend</span
+                    >
+                  </div>
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      No better place to be
+                    </h2>
+                  </div>
+                </div>
+                <p class="content" data-aos="fade-up" data-aos-delay="50">
+                  750+ manufacturing &amp; trade leaders, investors, operators,
+                  service providers and regulators gather for a day of focused
+                  insights, networking and deal-making on what’s now &amp; next
+                  across Nigeria’s manufacturing &amp; trade value chain.
                 </p>
-                <p data-aos="fade-left" data-aos-delay="300">
-                  Where Nigeria's manufacturing & trade partnerships begin.
-                </p>
-                <div class="engage-action engage-action-mobile" data-aos="fade-up" data-aos-delay="350">
-                  <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Sponsorship%20Deck"
-                    class="btn btn-pry">
-                    Request Sponsorship Deck
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="key">
-        <div class="key-container padding mist">
-          <div class="container">
-            <div class="key-wrapper">
-              <div class="section-header">
-                <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100">- Insights</span>
-                </div>
-                <div class="big-header o-hidden">
-                  <h2 data-aos="fade-left" data-aos-delay="200">
-                    2026 Content Tracks
-                  </h2>
-                </div>
-              </div>
-              <div class="content-tracks-card box" data-aos="fade-up" data-aos-delay="150">
-                <div class="content-tracks-left">
-                  <!-- <h3 class="content-tracks-title">CONTENTS TRACKS</h3> -->
-                  <p class="content-tracks-subtitle">You can expect us to cover...</p>
-                  <ul class="content-tracks-list" role="list">
-                    <li>Rethinking regulatory framework for driving the growth of Nigeria's Manufacturing industry</li>
-                    <li>Financing the next decade of Nigeria's manufacturing industries</li>
-                    <li>Indigenous Capacity &amp; Local Content</li>
-                    <li>Development of Critical Infrastructure as a bedrock for industrial growth</li>
-                    <li>Accelerating innovation and technological advancement across Nigeria's manufacturing industry
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why attend Section -->
-      <section id="why-attend">
-        <div class="why-attend-container padding mist">
-          <div class="container">
-            <div class="why-attend-wrapper">
-              <div class="section-header">
-                <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100">- Why attend</span>
-                </div>
-                <div class="big-header o-hidden">
-                  <h2 data-aos="fade-left" data-aos-delay="200">
-                    No better place to be
-                  </h2>
-                </div>
-              </div>
-              <p class="content" data-aos="fade-up" data-aos-delay="50">
-                750+ manufacturing &amp; trade leaders, investors, operators, service
-                providers and regulators gather for a day of focused insights,
-                networking and deal-making on what’s now &amp; next across
-                Nigeria’s manufacturing &amp; trade value chain.
-              </p>
-              <div class="why-attend-box-container">
-                <div class="why-attend-box box" data-aos="flip-left" data-aos-delay="100">
-                  <div class="icon">
-                    <img src="/assets/icons/search.png" alt="" />
-                  </div>
-                  <h4>Explore New Frontiers</h4>
-                  <p>
-                    Nigeria Manufacturing and Trade Outloook is one
-                    of the country's leading manufacturing & trade
-                    gathering, providing unparalleled opportunities
-                    for networking, insights sharing and engagement.
-                    Gain exclusive insights on the latest projects,
-                    innovations and policy changes while securing
-                    your competitive edge in this dynamic market.
-                  </p>
-                </div>
-                <div class="why-attend-box box" data-aos="flip-left" data-aos-delay="200">
-                  <div class="icon">
-                    <img src="/assets/icons/forge.png" alt="" />
-                  </div>
-                  <h4>Forge New Ventures</h4>
-                  <p>
-                    Network with industry leaders from 250+
-                    companies and connect with forward‑thinking individuals and players. Build
-                    lasting relationships that will advance your
-                    growth across Nigeria Manufacturing and
-                    Trade Industry .
-                  </p>
-                </div>
-                <div class="why-attend-box box" data-aos="flip-left" data-aos-delay="300">
-                  <div class="icon">
-                    <img src="/assets/icons/deal.png" alt="" />
-                  </div>
-                  <h4>Fast-track Deals</h4>
-                  <p>
-                    Leverage the vibrant atmosphere to present your solutions/services to over 750+ key professionals,
-                    accelerating your path to impactful deals and collaborations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Partner With Us -->
-      <section id="partners">
-        <div class="partners-container padding mist">
-          <div class="container">
-            <div class="partners-wrapper">
-              <div class="section-header">
-                <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100">Partner with us</span>
-                </div>
-                <div class="big-header o-hidden">
-                  <h2 data-aos="fade-left" data-aos-delay="200">
-                    Drive your brand's commercial growth at the
-                    <span class="text-pry">Nigeria Manufacturing &amp; Trade Outlook 2026</span>
-                  </h2>
-                </div>
-              </div>
-
-              <div class="partners-grid">
-                <div class="partner-box box" data-aos="flip-left" data-aos-delay="150">
-                  <div class="icon">
-                    <img src="/assets/icons/exp.png" alt="Shape the industry narrative" />
-                  </div>
-                  <div class="content">
-                    <h4>Shape the Industry Narrative</h4>
+                <div class="why-attend-box-container">
+                  <div
+                    class="why-attend-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="100"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/search.png" alt="" />
+                    </div>
+                    <h4>Explore New Frontiers</h4>
                     <p>
-                      Position your company as a thought
-                      leader by sponsoring keynote
-                      presentations, panel discussions, or
-                      workshops. Contribute to shaping the
-                      future of Nigeria's manufacturing and
-                      trade industry and demonstrate your
-                      commitment to its growth.
+                      Nigeria Manufacturing and Trade Outloook is one of the
+                      country's leading manufacturing & trade gathering,
+                      providing unparalleled opportunities for networking,
+                      insights sharing and engagement. Gain exclusive insights
+                      on the latest projects, innovations and policy changes
+                      while securing your competitive edge in this dynamic
+                      market.
                     </p>
                   </div>
-                </div>
-
-                <div class="partner-box box" data-aos="flip-left" data-aos-delay="200">
-                  <div class="icon">
-                    <img src="/assets/icons/customer.png" alt="Access senior decision-makers" />
-                  </div>
-                  <div class="content">
-                    <h4>Access Senior Decision-Makers</h4>
+                  <div
+                    class="why-attend-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/forge.png" alt="" />
+                    </div>
+                    <h4>Forge New Ventures</h4>
                     <p>
-                      Network and build relationships with
-                      key government oﬃcials and regulatory
-                      bodies directly influencing Nigeria's
-                      manufacturing and trade industry.
+                      Network with industry leaders from 250+ companies and
+                      connect with forward‑thinking individuals and players.
+                      Build lasting relationships that will advance your growth
+                      across Nigeria Manufacturing and Trade Industry .
                     </p>
                   </div>
-                </div>
-
-                <div class="partner-box box" data-aos="flip-left" data-aos-delay="250">
-                  <div class="icon">
-                    <img src="/assets/icons/regulation.png" alt="Unparalleled brand exposure" />
-                  </div>
-                  <div class="content">
-                    <h4>Unparalleled Brand Exposure</h4>
+                  <div
+                    class="why-attend-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="300"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/deal.png" alt="" />
+                    </div>
+                    <h4>Fast-track Deals</h4>
                     <p>
-                      Maximize your visibility amongst a
-                      highly targeted audience of global
-                      investors, government oﬃcials, project
-                      developers, and senior stakeholders in
-                      the sector. Nigeria Manufacturing and
-                      Trade Outlook provides exceptional
-                      branding opportunities to showcase
-                      your company's expertise and
-                      solutions.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="partner-box box" data-aos="flip-left" data-aos-delay="300">
-                  <div class="icon">
-                    <img src="/assets/icons/wealth.png" alt="Targeted lead generation" />
-                  </div>
-                  <div class="content">
-                    <h4>Targeted Lead Generation</h4>
-                    <p>
-                      Maximize your lead generation potential
-                      through dedicated exhibition booths,
-                      networking events, and pre arranged
-                      meetings with senior decision‑makers.
-                      Nigeria Manufacturing and Trade Outlook
-                      connects you directly with potential clients
-                      and partners actively seeking solutions
-                      within the Nigeria market.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="partner-box box" data-aos="flip-left" data-aos-delay="350">
-                  <div class="icon">
-                    <img src="/assets/icons/deal.png" alt="Exhibition" />
-                  </div>
-                  <div class="content">
-                    <h4>Exhibition</h4>
-                    <p>
-                      Nigeria Manufacturing and Trade
-                      Outlook is a testament to innovation,
-                      digitalization, and the pivotal role of
-                      local enterprises in Nigeria's
-                      manufacturing and trade industry.
-                      Showcasing cutting‑edge technologies
-                      and forward‑thinking solutions, the
-                      exhibition provides a platform for
-                      project developers, service providers,
-                      and local companies to engage in one‑
-                      on one exchanges.
+                      Leverage the vibrant atmosphere to present your
+                      solutions/services to over 750+ key professionals,
+                      accelerating your path to impactful deals and
+                      collaborations.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Who attends -->
-      <section id="who-attends">
-        <div class="who-attends-container padding mist">
-          <div class="container">
-            <div class="who-attends-wrapper">
-              <div class="section-header">
-                <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100">- Who attends</span>
+        <!-- Partner With Us -->
+        <section id="partners">
+          <div class="partners-container padding mist">
+            <div class="container">
+              <div class="partners-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100"
+                      >Partner with us</span
+                    >
+                  </div>
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      Drive your brand's commercial growth at the
+                      <span class="text-pry"
+                        >Nigeria Manufacturing &amp; Trade Outlook 2026</span
+                      >
+                    </h2>
+                  </div>
                 </div>
-                <div class="big-header o-hidden">
-                  <h2 data-aos="fade-left" data-aos-delay="200">Who you will meet</h2>
+
+                <div class="partners-grid">
+                  <div
+                    class="partner-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="150"
+                  >
+                    <div class="icon">
+                      <img
+                        src="/assets/icons/exp.png"
+                        alt="Shape the industry narrative"
+                      />
+                    </div>
+                    <div class="content">
+                      <h4>Shape the Industry Narrative</h4>
+                      <p>
+                        Position your company as a thought leader by sponsoring
+                        keynote presentations, panel discussions, or workshops.
+                        Contribute to shaping the future of Nigeria's
+                        manufacturing and trade industry and demonstrate your
+                        commitment to its growth.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="partner-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="icon">
+                      <img
+                        src="/assets/icons/customer.png"
+                        alt="Access senior decision-makers"
+                      />
+                    </div>
+                    <div class="content">
+                      <h4>Access Senior Decision-Makers</h4>
+                      <p>
+                        Network and build relationships with key government
+                        oﬃcials and regulatory bodies directly influencing
+                        Nigeria's manufacturing and trade industry.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="partner-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="250"
+                  >
+                    <div class="icon">
+                      <img
+                        src="/assets/icons/regulation.png"
+                        alt="Unparalleled brand exposure"
+                      />
+                    </div>
+                    <div class="content">
+                      <h4>Unparalleled Brand Exposure</h4>
+                      <p>
+                        Maximize your visibility amongst a highly targeted
+                        audience of global investors, government oﬃcials,
+                        project developers, and senior stakeholders in the
+                        sector. Nigeria Manufacturing and Trade Outlook provides
+                        exceptional branding opportunities to showcase your
+                        company's expertise and solutions.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="partner-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="300"
+                  >
+                    <div class="icon">
+                      <img
+                        src="/assets/icons/wealth.png"
+                        alt="Targeted lead generation"
+                      />
+                    </div>
+                    <div class="content">
+                      <h4>Targeted Lead Generation</h4>
+                      <p>
+                        Maximize your lead generation potential through
+                        dedicated exhibition booths, networking events, and pre
+                        arranged meetings with senior decision‑makers. Nigeria
+                        Manufacturing and Trade Outlook connects you directly
+                        with potential clients and partners actively seeking
+                        solutions within the Nigeria market.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="partner-box box"
+                    data-aos="flip-left"
+                    data-aos-delay="350"
+                  >
+                    <div class="icon">
+                      <img src="/assets/icons/deal.png" alt="Exhibition" />
+                    </div>
+                    <div class="content">
+                      <h4>Exhibition</h4>
+                      <p>
+                        Nigeria Manufacturing and Trade Outlook is a testament
+                        to innovation, digitalization, and the pivotal role of
+                        local enterprises in Nigeria's manufacturing and trade
+                        industry. Showcasing cutting‑edge technologies and
+                        forward‑thinking solutions, the exhibition provides a
+                        platform for project developers, service providers, and
+                        local companies to engage in one‑ on one exchanges.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
 
-              <div class="who-meet-grid" data-aos="fade-up" data-aos-delay="150">
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/fmcgs.png" alt="">
+        <!-- Who attends -->
+        <section id="who-attends">
+          <div class="who-attends-container padding mist">
+            <div class="container">
+              <div class="who-attends-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100"
+                      >- Who attends</span
+                    >
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">FMCG's</span></p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/automotive.png" alt="">
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      Who you will meet
+                    </h2>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Automotive</span></p>
                 </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/logistics-transportation.png" alt="">
+
+                <div
+                  class="who-meet-grid"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/fmcgs.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">FMCG's</span>
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Logistics</span> &amp; transportation</p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/energy-utilities.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/automotive.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Automotive</span>
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Energy</span> &amp; utilities</p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/agriculture.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img
+                        src="assets/icons/logistics-transportation.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Logistics</span> &amp;
+                      transportation
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Agriculture</span></p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/heavy-industries.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/energy-utilities.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Energy</span> &amp;
+                      utilities
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Heavy industries</span></p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/machinery-equipment.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/agriculture.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Agriculture</span>
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Machinery</span> &amp; equipment</p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/pharmaceutical.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/heavy-industries.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Heavy industries</span>
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Pharmaceutical</span></p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/retail.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/machinery-equipment.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Machinery</span> &amp;
+                      equipment
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Retail</span></p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/infrastructure.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/pharmaceutical.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Pharmaceutical</span>
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Infrastructure</span></p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/mining.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/retail.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Retail</span>
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Mining</span></p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/water-utilities.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/infrastructure.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Infrastructure</span>
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Water</span> &amp; utilities</p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/construction.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/mining.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Mining</span>
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Construction</span></p>
-                </div>
-                <div class="who-meet-item">
-                  <div class="who-meet-icon" aria-hidden="true">
-                    <img src="assets/icons/chemicals.png" alt="">
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/water-utilities.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Water</span> &amp; utilities
+                    </p>
                   </div>
-                  <p class="who-meet-label"><span class="who-meet-accent">Chemicals</span></p>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/construction.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Construction</span>
+                    </p>
+                  </div>
+                  <div class="who-meet-item">
+                    <div class="who-meet-icon" aria-hidden="true">
+                      <img src="assets/icons/chemicals.png" alt="" />
+                    </div>
+                    <p class="who-meet-label">
+                      <span class="who-meet-accent">Chemicals</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <!-- <div class="seniority-section" data-aos="fade-up" data-aos-delay="200">
+                <!-- <div class="seniority-section" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="seniority-title">
                   <span class="who-meet-accent">Seniority</span> of attendees
                 </h3>
@@ -740,525 +927,739 @@
                   </div>
                 </div>
               </div> -->
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- What's New -->
-      <section id="whatsnew">
-        <div class="whatsnew-container padding mist">
-          <div class="container">
-            <div class="section-header">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">What you can Expect in 2026</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Get ready for a bigger, bolder Nigeria Manufacturing &amp; Trade Outlook
-                  experience. Here’s what’s in store:
-                </h2>
-              </div>
-            </div>
-            <div class="whatsnew-wrapper">
-              <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="200">
-                <div class="icon">
-                  <img src="/assets/icons/search.png" alt="Insights" />
-                </div>
-                <div class="content">
-                  <h4>Insights that cut through the noise</h4>
-                  <p>
-                    Explore multiple expertly curated sessions on
-                    the latest manufacturing & trade trends with
-                    dedicated sessions across driving Nigeria's
-                    industrial revolution, creating an attractive
-                    environment for investment, accelerating the
-                    development of critical infrastructure for core
-                    industries, strengthening local content, driving
-                    trade finance amongst other key themes.
-                  </p>
-                </div>
-              </div>
-              <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="300">
-                <div class="icon">
-                  <img src="/assets/icons/forge.png" alt="High-level Networking Opportunities" />
-                </div>
-                <div class="content">
-                  <h4>High-level Networking Opportunities</h4>
-                  <p>
-                    Access exclusive opportunities to
-                    connect with key players, from
-                    investors to policymakers, launch your
-                    product, and expand your brand in
-                    Nigeria's dynamic manufacturing &
-                    trade market.
-                  </p>
-                </div>
-              </div>
-              <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="400">
-                <div class="icon">
-                  <img src="/assets/icons/roundtable.svg" alt="Leadership roundtables" />
-                </div>
-                <div class="content">
-                  <h4>Leadership Roundtables</h4>
-                  <p>
-                    Align your brand with industry
-                    decision‑makers in high‑level and
-                    exclusive discussions on Nigeria's
-                    manufacturing & trade future.
-                  </p>
-                </div>
-              </div>
-              <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="500">
-                <div class="icon">
-                  <img src="/assets/icons/deal.png" alt="Exhibition floor" />
-                </div>
-                <div class="content">
-                  <h4>Exhibition Floor</h4>
-                  <p>
-                    Unveil your latest technologies and
-                    industry breakthroughs with our
-                    largest‑ever exhibition floor,
-                    designed to elevate your brand and
-                    connect with a global audience.
-                  </p>
-                </div>
-              </div>
-              <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="600">
-                <div class="icon">
-                  <img src="/assets/icons/networking-mixer.svg" alt="Networking mixer" />
-                </div>
-                <div class="content">
-                  <h4>Pre-event Networking Mixer</h4>
-                  <p>
-                    Be part of a high‑energy
-                    networking mixer that will set the
-                    stage for a day of game‑changing
-                    discussions and insights from top
-                    manufacturing & trade leaders.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="button" data-aos="fade-up" data-aos-delay="550">
-              <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Sponsorship%20Deck"
-                class="btn btn-pry">
-                Request Sponsorship Deck
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Who participates -->
-      <section id="who-participates">
-        <div class="who-participates-container padding o-hidden">
-          <div class="container">
-            <div class="section-header white">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">- Who attends</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Who participates at our events?
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="who-participates-wrapper" data-aos="zoom-out">
-            <div class="who-participates-slide-1">
-              <img src="assets/who-participates-logo/shell.jpg" alt="Shell Nigeria Gas" />
-              <img src="assets/who-participates-logo/seplat.jpg" alt="Seplat Energy" />
-              <img src="assets/who-participates-logo/fed-min.jpg" alt="Federal Ministry of Petroleum Resources" />
-              <img src="assets/who-participates-logo/chevron.jpg" alt="Chevron" />
-              <img src="assets/who-participates-logo/gasco.jpg" alt="GASCO Marine" />
-              <img src="assets/who-participates-logo/axxela.jpg" alt="Axxela" />
-              <img src="assets/who-participates-logo/oando.jpg" alt="Oando" />
-              <img src="assets/who-participates-logo/ncdmb.jpg" alt="NCDMB" />
-              <img src="assets/who-participates-logo/africa-oil.jpg" alt="Africa Oil" />
-              <img src="assets/who-participates-logo/viathan.jpg" alt="Viathan" />
-              <img src="assets/who-participates-logo/tradegrad.jpg" alt="TradeGrd" />
-              <img src="assets/who-participates-logo/cecom.jpg" alt="CECOM" />
-              <img src="assets/who-participates-logo/powergas.jpg" alt="PowerGas" />
-              <img src="assets/who-participates-logo/exxon.jpg" alt="ExxonMobil" />
-              <img src="assets/who-participates-logo/tetracore.jpg" alt="Tetracore" />
-              <img src="assets/who-participates-logo/lfz.jpg" alt="Lagos Free Zone" />
-              <img src="assets/who-participates-logo/oil-gas.jpg" alt="Oil &amp; Gas Free Zones Authority" />
-              <img src="assets/who-participates-logo/nga.jpg" alt="Nigerian Gas Association" />
-              <img src="assets/who-participates-logo/greenville.jpg" alt="Greenville LNG" />
-            </div>
-            <div class="who-participates-slide-2" dir="rtl">
-              <img src="assets/who-participates-logo/allon.jpg" alt="Allon" />
-              <img src="assets/who-participates-logo/ondo.jpg" alt="Ondo" />
-              <img src="assets/who-participates-logo/decade-gas.jpg" alt="Decade of Gas" />
-              <img src="assets/who-participates-logo/pcngi.png" alt="P-CNGI" />
-              <img src="assets/who-participates-logo/agpc.png" alt="AGPC" />
-              <img src="assets/who-participates-logo/autogas.jpg" alt="Autogas Nigeria" />
-              <img src="assets/who-participates-logo/ge.jpg" alt="GE" />
-              <img src="assets/who-participates-logo/nape.jpg" alt="NAPE" />
-              <img src="assets/who-participates-logo/ardova.jpg" alt="Ardova" />
-              <img src="assets/who-participates-logo/asiko.jpg" alt="Asiko" />
-              <img src="assets/who-participates-logo/rainoil.jpg" alt="Rainoil" />
-              <img src="assets/who-participates-logo/waep.jpg" alt="WAEP" />
-              <img src="assets/who-participates-logo/infra-credit.jpg" alt="InfraCredit" />
-              <img src="assets/who-participates-logo/kpmg.jpg" alt="KPMG" />
-              <img src="assets/who-participates-logo/sojits.jpg" alt="Sojitz" />
-              <img src="assets/who-participates-logo/stears.jpg" alt="Stears" />
-              <img src="assets/who-participates-logo/olaniwun-ajayi.jpg" alt="Olaniwun Ajayi" />
-              <img src="assets/who-participates-logo/africa-finance.jpg" alt="Africa Finance Corporation" />
-              <img src="assets/who-participates-logo/petan.jpg" alt="PETAN" />
-            </div>
-            <div class="who-participates-slide-3">
-              <img src="assets/who-participates-logo/prime-atlantic.jpg" alt="Prime Atlantic" />
-              <img src="assets/who-participates-logo/s&pglobal.jpg" alt="S&amp;P Global" />
-              <img src="assets/who-participates-logo/gacn.jpg" alt="GACN" />
-              <img src="assets/who-participates-logo/entec.jpg" alt="Entec" />
-              <img src="assets/who-participates-logo/nsia.jpg" alt="Nigeria Sovereign Investment Authority" />
-              <img src="assets/who-participates-logo/recon-africa.jpg" alt="ReconAfrica" />
-              <img src="assets/who-participates-logo/hsi-energies.jpg" alt="HSI Energies" />
-              <img src="assets/who-participates-logo/aggreko.jpg" alt="Aggreko" />
-              <img src="assets/who-participates-logo/fbn-quest.svg" alt="FBNQuest" />
-              <img src="assets/who-participates-logo/aradel-holdings.png" alt="Aradel Holdings" />
-              <img src="assets/who-participates-logo/bell-oil-gas.jpeg" alt="Bell Oil &amp; Gas" />
-              <img src="assets/who-participates-logo/nig-midstrem.jpg" alt="Nigerian Midstream" />
-              <img src="assets/who-participates-logo/fbn.jpg" alt="FBN" />
-              <img src="assets/who-participates-logo/assoldog.jpg" alt="ASSOLDOG" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Speakers Section -->
-      <section id="speakers">
-        <div class="speakers-container padding mist">
-          <div class="container">
-            <div class="speakers-wrapper">
+        <!-- What's New -->
+        <section id="whatsnew">
+          <div class="whatsnew-container padding mist">
+            <div class="container">
               <div class="section-header">
                 <div class="tiny-header o-hidden">
-                  <span data-aos="fade-up" data-aos-delay="100">- Speakers</span>
+                  <span data-aos="fade-up" data-aos-delay="100"
+                    >What you can Expect in 2026</span
+                  >
                 </div>
                 <div class="big-header o-hidden">
                   <h2 data-aos="fade-left" data-aos-delay="200">
-                    Who speaks at Nigeria Manufacturing &amp; Trade Outlook?
+                    Get ready for a bigger, bolder Nigeria Manufacturing &amp;
+                    Trade Outlook experience. Here’s what’s in store:
                   </h2>
                 </div>
               </div>
-              <div class="speakers-box-container">
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/patrick-ajah.jpg" alt="" />
+              <div class="whatsnew-wrapper">
+                <div
+                  class="whatsnew-box box"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
+                  <div class="icon">
+                    <img src="/assets/icons/search.png" alt="Insights" />
                   </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Patrick Ajah</h4>
-                    <p class="designation">CEO,</p>
-                    <p class="company">May & Baker</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/jude-abalaka.jpg" alt="" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Jude Abalaka</h4>
-                    <p class="designation">CEO,</p>
-                    <p class="company">Tranos</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/valentine-okelu.jpg" alt="" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Valentine Okelu</h4>
-                    <p class="designation">CEO,</p>
-                    <p class="company">Neimeth Plc</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/dr-ayo-coker.png" alt="" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Dr Ayotunde Coker</h4>
-                    <p class="designation">CEO,</p>
-                    <p class="company">Open Access Data Center</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/austin-okpagu.jpg" alt="" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Dr Austin Okpagu</h4>
-                    <p class="designation">Country Manager Nigeria,</p>
-                    <p class="company">Verto</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/uzoma-james.png" alt="" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Uzoma James</h4>
-                    <p class="designation">Regional Manager West Africa,</p>
-                    <p class="company">Yellowcard</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/aina-adegbola.jpg" alt="" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Aina A Dele Adegbola</h4>
-                    <p class="designation">
-                      Group Head, CBD Manufacturing 2 <br />CBD -
-                      Manufacturing 2 Group,
+                  <div class="content">
+                    <h4>Insights that cut through the noise</h4>
+                    <p>
+                      Explore multiple expertly curated sessions on the latest
+                      manufacturing & trade trends with dedicated sessions
+                      across driving Nigeria's industrial revolution, creating
+                      an attractive environment for investment, accelerating the
+                      development of critical infrastructure for core
+                      industries, strengthening local content, driving trade
+                      finance amongst other key themes.
                     </p>
-                    <p class="company">First Bank</p>
                   </div>
                 </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/pravin-kumar.jpg" alt="" />
+                <div
+                  class="whatsnew-box box"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                >
+                  <div class="icon">
+                    <img
+                      src="/assets/icons/forge.png"
+                      alt="High-level Networking Opportunities"
+                    />
                   </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Pravin Kumar</h4>
-                    <p class="designation">Group Chief Financial Officer,</p>
-                    <p class="company">DARAJU GROUP</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/daniel-anyanwu.jpeg" alt="" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Daniel Anyanwu</h4>
-                    <p class="designation">
-                      Head, Trade Services | Central Operations and Trade
-                      Services,
+                  <div class="content">
+                    <h4>High-level Networking Opportunities</h4>
+                    <p>
+                      Access exclusive opportunities to connect with key
+                      players, from investors to policymakers, launch your
+                      product, and expand your brand in Nigeria's dynamic
+                      manufacturing & trade market.
                     </p>
-                    <p class="company">Wema Bank</p>
                   </div>
                 </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/dikanna-okafor.jpg" alt="" />
+                <div
+                  class="whatsnew-box box"
+                  data-aos="fade-left"
+                  data-aos-delay="400"
+                >
+                  <div class="icon">
+                    <img
+                      src="/assets/icons/roundtable.svg"
+                      alt="Leadership roundtables"
+                    />
                   </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Dikanna Okafor</h4>
-                    <p class="designation">Deputy Managing Director,</p>
-                    <p class="company">Chicason Group</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/bisi-oke.jpeg" alt="" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Olubisi Oke</h4>
-                    <p class="designation">Head, Business Banking,</p>
-                    <p class="company">Standard Chartered</p>
-                  </div>
-                </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/victor-dorgu.jpg" alt="" />
-                  </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Victor Dorgu</h4>
-                    <p class="designation">
-                      Head, Partner Account Management, West Africa,
+                  <div class="content">
+                    <h4>Leadership Roundtables</h4>
+                    <p>
+                      Align your brand with industry decision‑makers in
+                      high‑level and exclusive discussions on Nigeria's
+                      manufacturing & trade future.
                     </p>
-                    <p class="company">Equinix</p>
                   </div>
                 </div>
-                <div class="speaker-box">
-                  <div class="speaker-image">
-                    <img src="/assets/speakers/prahlad.jpeg" alt="" />
+                <div
+                  class="whatsnew-box box"
+                  data-aos="fade-left"
+                  data-aos-delay="500"
+                >
+                  <div class="icon">
+                    <img src="/assets/icons/deal.png" alt="Exhibition floor" />
                   </div>
-                  <div class="speaker-info">
-                    <h4 class="name">Prahlad K G P</h4>
-                    <p class="designation">COO,</p>
-                    <p class="company">OmniRetail</p>
+                  <div class="content">
+                    <h4>Exhibition Floor</h4>
+                    <p>
+                      Unveil your latest technologies and industry breakthroughs
+                      with our largest‑ever exhibition floor, designed to
+                      elevate your brand and connect with a global audience.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="whatsnew-box box"
+                  data-aos="fade-left"
+                  data-aos-delay="600"
+                >
+                  <div class="icon">
+                    <img
+                      src="/assets/icons/networking-mixer.svg"
+                      alt="Networking mixer"
+                    />
+                  </div>
+                  <div class="content">
+                    <h4>Pre-event Networking Mixer</h4>
+                    <p>
+                      Be part of a high‑energy networking mixer that will set
+                      the stage for a day of game‑changing discussions and
+                      insights from top manufacturing & trade leaders.
+                    </p>
                   </div>
                 </div>
               </div>
+              <div class="button" data-aos="fade-up" data-aos-delay="550">
+                <a
+                  href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Sponsorship%20Deck"
+                  class="btn btn-pry"
+                >
+                  Request Sponsorship Deck
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Testimonial -->
-      <section id="testimonial">
-        <div class="testimonial-container padding mist">
-          <div class="container">
-            <div class="section-header">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">- Testimonial</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  They've been here; What they had to say
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-wrapper">
-            <div class="testimonial-slides">
-              <div class="testimonial-slide">
-                <div class="container">
-                  <div class="testimonial-card t-blue">
-                    <div class="testimonial-card-left" data-aos="fade-right" data-aos-delay="150">
-                      <div class="quote-mark">
-                        <p>&quot;</p>
-                      </div>
-                      <p class="testimony">
-                        I am pleased to be on the panel
-                        session today, sharing key insights on
-                        key trajectories that will define what's
-                        next for Nigeria's manufacturing
-                        industry.
-                      </p>
-                      <div class="testimonial-brand">
-                        <img src="/assets/who-participates-logo/tranos.jpg" alt="Tranos" loading="lazy" />
-                      </div>
-                      <div class="author-details">
-                        <h3 class="name">Jude Abalaka</h3>
-                        <p class="designation">CEO</p>
-                        <p class="company">Tranos</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card-right" data-aos="fade-left" data-aos-delay="150">
-                      <img src="/assets/testimonial/jude-abalaka.png" alt="Jude Abalaka" loading="lazy" />
-                    </div>
-                  </div>
+        <!-- Who participates -->
+        <section id="who-participates">
+          <div class="who-participates-container padding o-hidden">
+            <div class="container">
+              <div class="section-header white">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100"
+                    >- Who attends</span
+                  >
                 </div>
-              </div>
-              <div class="testimonial-slide">
-                <div class="container">
-                  <div class="testimonial-card t-purple">
-                    <div class="testimonial-card-left" data-aos="fade-right" data-aos-delay="150">
-                      <div class="quote-mark">
-                        <p>&quot;</p>
-                      </div>
-                      <p class="testimony">
-                        The conversations we have on
-                        platforms like this are very essential
-                        to deliver what's next for Nigeria's
-                        manufacturing industry, its been a
-                        pleasure meeting with other industry
-                        players and comparing notes.
-                      </p>
-                      <div class="testimonial-brand">
-                        <img src="/assets/who-participates-logo/neimeth.png" alt="Neimeth" loading="lazy" />
-                      </div>
-                      <div class="author-details">
-                        <h3 class="name">Valentine Oku</h3>
-                        <p class="designation">CEO</p>
-                        <p class="company">Neimeth Plc</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card-right" data-aos="fade-left" data-aos-delay="150">
-                      <img src="/assets/testimonial/valentine-oku.png" alt="Valentine Oku" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-slide">
-                <div class="container">
-                  <div class="testimonial-card t-teal">
-                    <div class="testimonial-card-left" data-aos="fade-right" data-aos-delay="150">
-                      <div class="quote-mark">
-                        <p>&quot;</p>
-                      </div>
-                      <p class="testimony">
-                        I really enjoyed the energy in the room
-                        today, discussing global valuechain
-                        and opportunity for integration and
-                        export expansion, I am definitely
-                        looking forward to the next edition.
-                      </p>
-                      <div class="testimonial-brand">
-                        <img src="/assets/who-participates-logo/daraju.jpg" alt="Daraju" loading="lazy" />
-                      </div>
-                      <div class="author-details">
-                        <h3 class="name">Pravin Kumar</h3>
-                        <p class="designation">Group Financial Officer</p>
-                        <p class="company">Daraju Group</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card-right" data-aos="fade-left" data-aos-delay="150">
-                      <img src="/assets/testimonial/pravin-kumar.png" alt="Pravin Kumar" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-slide">
-                <div class="container">
-                  <div class="testimonial-card t-green">
-                    <div class="testimonial-card-left" data-aos="fade-right" data-aos-delay="150">
-                      <div class="quote-mark">
-                        <p>&quot;</p>
-                      </div>
-                      <p class="testimony">
-                        I had a great time speaking at the
-                        Nigeria Manufacturing & Trade
-                        Outlook, we discussed key trends that
-                        will shape the future of trade finance in
-                        Nigeria.
-                      </p>
-                      <div class="testimonial-brand">
-                        <img src="/assets/who-participates-logo/first-bank.png" alt="First Bank" loading="lazy" />
-                      </div>
-                      <div class="author-details">
-                        <h3 class="name">Aina A. Dele Adegbola</h3>
-                        <p class="designation">Group Headl CBD Manufacturing 2 Group.</p>
-                        <p class="company">First Bank</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card-right" data-aos="fade-left" data-aos-delay="150">
-                      <img src="/assets/testimonial/aina-a-dele.png" alt="Aina A Dele" loading="lazy" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-slide">
-                <div class="container">
-                  <div class="testimonial-card t-indigo">
-                    <div class="testimonial-card-left" data-aos="fade-right" data-aos-delay="150">
-                      <div class="quote-mark">
-                        <p>&quot;</p>
-                      </div>
-                      <p class="testimony">
-                        Cross border payments is at the core
-                        of trade, Verto is excited to be part of
-                        the Nigeria Manufacturing & Trade
-                        Outlook, engaging with industry
-                        players and figuring out their pain
-                        points.
-                      </p>
-                      <div class="testimonial-brand">
-                        <img src="/assets/who-participates-logo/verto.svg" alt="Verto" loading="lazy" />
-                      </div>
-                      <div class="author-details">
-                        <h3 class="name">Austin Okpagu</h3>
-                        <p class="designation">Country Manager, Nigeria</p>
-                        <p class="company">Verto</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-card-right" data-aos="fade-left" data-aos-delay="150">
-                      <img src="/assets/testimonial/austin-okpagu.png" alt="Austin Okpagu" loading="lazy" />
-                    </div>
-                  </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    Who participates at our events?
+                  </h2>
                 </div>
               </div>
             </div>
+            <div class="who-participates-wrapper" data-aos="zoom-out">
+              <div class="who-participates-slide-1">
+                <img
+                  src="assets/who-participates-logo/shell.jpg"
+                  alt="Shell Nigeria Gas"
+                />
+                <img
+                  src="assets/who-participates-logo/seplat.jpg"
+                  alt="Seplat Energy"
+                />
+                <img
+                  src="assets/who-participates-logo/fed-min.jpg"
+                  alt="Federal Ministry of Petroleum Resources"
+                />
+                <img
+                  src="assets/who-participates-logo/chevron.jpg"
+                  alt="Chevron"
+                />
+                <img
+                  src="assets/who-participates-logo/gasco.jpg"
+                  alt="GASCO Marine"
+                />
+                <img
+                  src="assets/who-participates-logo/axxela.jpg"
+                  alt="Axxela"
+                />
+                <img src="assets/who-participates-logo/oando.jpg" alt="Oando" />
+                <img src="assets/who-participates-logo/ncdmb.jpg" alt="NCDMB" />
+                <img
+                  src="assets/who-participates-logo/africa-oil.jpg"
+                  alt="Africa Oil"
+                />
+                <img
+                  src="assets/who-participates-logo/viathan.jpg"
+                  alt="Viathan"
+                />
+                <img
+                  src="assets/who-participates-logo/tradegrad.jpg"
+                  alt="TradeGrd"
+                />
+                <img src="assets/who-participates-logo/cecom.jpg" alt="CECOM" />
+                <img
+                  src="assets/who-participates-logo/powergas.jpg"
+                  alt="PowerGas"
+                />
+                <img
+                  src="assets/who-participates-logo/exxon.jpg"
+                  alt="ExxonMobil"
+                />
+                <img
+                  src="assets/who-participates-logo/tetracore.jpg"
+                  alt="Tetracore"
+                />
+                <img
+                  src="assets/who-participates-logo/lfz.jpg"
+                  alt="Lagos Free Zone"
+                />
+                <img
+                  src="assets/who-participates-logo/oil-gas.jpg"
+                  alt="Oil &amp; Gas Free Zones Authority"
+                />
+                <img
+                  src="assets/who-participates-logo/nga.jpg"
+                  alt="Nigerian Gas Association"
+                />
+                <img
+                  src="assets/who-participates-logo/greenville.jpg"
+                  alt="Greenville LNG"
+                />
+              </div>
+              <div class="who-participates-slide-2" dir="rtl">
+                <img src="assets/who-participates-logo/allon.jpg" alt="Allon" />
+                <img src="assets/who-participates-logo/ondo.jpg" alt="Ondo" />
+                <img
+                  src="assets/who-participates-logo/decade-gas.jpg"
+                  alt="Decade of Gas"
+                />
+                <img
+                  src="assets/who-participates-logo/pcngi.png"
+                  alt="P-CNGI"
+                />
+                <img src="assets/who-participates-logo/agpc.png" alt="AGPC" />
+                <img
+                  src="assets/who-participates-logo/autogas.jpg"
+                  alt="Autogas Nigeria"
+                />
+                <img src="assets/who-participates-logo/ge.jpg" alt="GE" />
+                <img src="assets/who-participates-logo/nape.jpg" alt="NAPE" />
+                <img
+                  src="assets/who-participates-logo/ardova.jpg"
+                  alt="Ardova"
+                />
+                <img src="assets/who-participates-logo/asiko.jpg" alt="Asiko" />
+                <img
+                  src="assets/who-participates-logo/rainoil.jpg"
+                  alt="Rainoil"
+                />
+                <img src="assets/who-participates-logo/waep.jpg" alt="WAEP" />
+                <img
+                  src="assets/who-participates-logo/infra-credit.jpg"
+                  alt="InfraCredit"
+                />
+                <img src="assets/who-participates-logo/kpmg.jpg" alt="KPMG" />
+                <img
+                  src="assets/who-participates-logo/sojits.jpg"
+                  alt="Sojitz"
+                />
+                <img
+                  src="assets/who-participates-logo/stears.jpg"
+                  alt="Stears"
+                />
+                <img
+                  src="assets/who-participates-logo/olaniwun-ajayi.jpg"
+                  alt="Olaniwun Ajayi"
+                />
+                <img
+                  src="assets/who-participates-logo/africa-finance.jpg"
+                  alt="Africa Finance Corporation"
+                />
+                <img src="assets/who-participates-logo/petan.jpg" alt="PETAN" />
+              </div>
+              <div class="who-participates-slide-3">
+                <img
+                  src="assets/who-participates-logo/prime-atlantic.jpg"
+                  alt="Prime Atlantic"
+                />
+                <img
+                  src="assets/who-participates-logo/s&pglobal.jpg"
+                  alt="S&amp;P Global"
+                />
+                <img src="assets/who-participates-logo/gacn.jpg" alt="GACN" />
+                <img src="assets/who-participates-logo/entec.jpg" alt="Entec" />
+                <img
+                  src="assets/who-participates-logo/nsia.jpg"
+                  alt="Nigeria Sovereign Investment Authority"
+                />
+                <img
+                  src="assets/who-participates-logo/recon-africa.jpg"
+                  alt="ReconAfrica"
+                />
+                <img
+                  src="assets/who-participates-logo/hsi-energies.jpg"
+                  alt="HSI Energies"
+                />
+                <img
+                  src="assets/who-participates-logo/aggreko.jpg"
+                  alt="Aggreko"
+                />
+                <img
+                  src="assets/who-participates-logo/fbn-quest.svg"
+                  alt="FBNQuest"
+                />
+                <img
+                  src="assets/who-participates-logo/aradel-holdings.png"
+                  alt="Aradel Holdings"
+                />
+                <img
+                  src="assets/who-participates-logo/bell-oil-gas.jpeg"
+                  alt="Bell Oil &amp; Gas"
+                />
+                <img
+                  src="assets/who-participates-logo/nig-midstrem.jpg"
+                  alt="Nigerian Midstream"
+                />
+                <img src="assets/who-participates-logo/fbn.jpg" alt="FBN" />
+                <img
+                  src="assets/who-participates-logo/assoldog.jpg"
+                  alt="ASSOLDOG"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Sponsors -->
-      <!-- <section id="sponsors">
+        <!-- Speakers Section -->
+        <section id="speakers">
+          <div class="speakers-container padding mist">
+            <div class="container">
+              <div class="speakers-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100"
+                      >- Speakers</span
+                    >
+                  </div>
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      2026 Speakers
+                    </h2>
+                  </div>
+                </div>
+                <div class="speakers-box-container">
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/valentine-okelu.jpeg"
+                        alt="Valentine Okelu"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Valentine Okelu</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">
+                        Neimeth International Pharmaceuticals
+                      </p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/olaniyi-yusuf.png"
+                        alt="Olaniyi Yusuf"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Olaniyi Yusuf</h4>
+                      <p class="designation">Chairman,</p>
+                      <p class="company">Nigerian Economic Summit Group</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/pravin-kumar.jpg"
+                        alt="Kumar Pranav"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Pravin Kumar</h4>
+                      <p class="designation">Group Chief Financial Officer,</p>
+                      <p class="company">Daraju Group</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/aina-dele-adegbola.jpg"
+                        alt="Aina Adegbola"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Aina Adegbola</h4>
+                      <p class="designation">
+                        Group Head, CBD Manufacturing 2 Group,
+                      </p>
+                      <p class="company">First Bank</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/charles-ogunwuyi.jpg"
+                        alt="Charles Ogunwuyi"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Charles Ogunwuyi</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Sygen Pharmaceuticals</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/pete-olusoji.jpeg"
+                        alt="Peter Olusoji"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Peter Olusoji</h4>
+                      <p class="designation">
+                        Country Manager and Managing Director,
+                      </p>
+                      <p class="company">Ericsson Nigeria</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/paul-ozioko.png"
+                        alt="Paul Ozioko"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Paul Ozioko</h4>
+                      <p class="designation">Head, Trade & Working Capital,</p>
+                      <p class="company">Rand Merchant Bank Nigeria</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/hio-sola-usidame.jpg"
+                        alt="Hio Sola-Usidame"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Hio Sola-Usidame</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">OnePort365</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/dr-ayotunde-coker.png"
+                        alt="Dr Ayotunde Coker"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Dr Ayotunde Coker</h4>
+                      <p class="designation">CEO,</p>
+                      <p class="company">Open Access Data Centres (OADC)</p>
+                    </div>
+                  </div>
+                  <div class="speaker-box">
+                    <div class="speaker-image">
+                      <img
+                        src="/assets/speakers/olubisi-oke.jpg"
+                        alt="Olubisi Oke"
+                      />
+                    </div>
+                    <div class="speaker-info">
+                      <h4 class="name">Olubisi Oke</h4>
+                      <p class="designation">Head, Business Banking,</p>
+                      <p class="company">Standard Chartered</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section id="testimonial">
+          <div class="testimonial-container padding mist">
+            <div class="container">
+              <div class="section-header">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100"
+                    >- Testimonial</span
+                  >
+                </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    They've been here; What they had to say
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-wrapper">
+              <div class="testimonial-slides">
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-card t-blue">
+                      <div
+                        class="testimonial-card-left"
+                        data-aos="fade-right"
+                        data-aos-delay="150"
+                      >
+                        <div class="quote-mark">
+                          <p>&quot;</p>
+                        </div>
+                        <p class="testimony">
+                          I am pleased to be on the panel session today, sharing
+                          key insights on key trajectories that will define
+                          what's next for Nigeria's manufacturing industry.
+                        </p>
+                        <div class="testimonial-brand">
+                          <img
+                            src="/assets/who-participates-logo/tranos.jpg"
+                            alt="Tranos"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="author-details">
+                          <h3 class="name">Jude Abalaka</h3>
+                          <p class="designation">CEO</p>
+                          <p class="company">Tranos</p>
+                        </div>
+                      </div>
+                      <div
+                        class="testimonial-card-right"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                      >
+                        <img
+                          src="/assets/testimonial/jude-abalaka.png"
+                          alt="Jude Abalaka"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-card t-purple">
+                      <div
+                        class="testimonial-card-left"
+                        data-aos="fade-right"
+                        data-aos-delay="150"
+                      >
+                        <div class="quote-mark">
+                          <p>&quot;</p>
+                        </div>
+                        <p class="testimony">
+                          The conversations we have on platforms like this are
+                          very essential to deliver what's next for Nigeria's
+                          manufacturing industry, its been a pleasure meeting
+                          with other industry players and comparing notes.
+                        </p>
+                        <div class="testimonial-brand">
+                          <img
+                            src="/assets/who-participates-logo/neimeth.png"
+                            alt="Neimeth"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="author-details">
+                          <h3 class="name">Valentine Oku</h3>
+                          <p class="designation">CEO</p>
+                          <p class="company">Neimeth Plc</p>
+                        </div>
+                      </div>
+                      <div
+                        class="testimonial-card-right"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                      >
+                        <img
+                          src="/assets/testimonial/valentine-oku.png"
+                          alt="Valentine Oku"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-card t-teal">
+                      <div
+                        class="testimonial-card-left"
+                        data-aos="fade-right"
+                        data-aos-delay="150"
+                      >
+                        <div class="quote-mark">
+                          <p>&quot;</p>
+                        </div>
+                        <p class="testimony">
+                          I really enjoyed the energy in the room today,
+                          discussing global valuechain and opportunity for
+                          integration and export expansion, I am definitely
+                          looking forward to the next edition.
+                        </p>
+                        <div class="testimonial-brand">
+                          <img
+                            src="/assets/who-participates-logo/daraju.jpg"
+                            alt="Daraju"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="author-details">
+                          <h3 class="name">Pravin Kumar</h3>
+                          <p class="designation">Group Financial Officer</p>
+                          <p class="company">Daraju Group</p>
+                        </div>
+                      </div>
+                      <div
+                        class="testimonial-card-right"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                      >
+                        <img
+                          src="/assets/testimonial/pravin-kumar.png"
+                          alt="Pravin Kumar"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-card t-green">
+                      <div
+                        class="testimonial-card-left"
+                        data-aos="fade-right"
+                        data-aos-delay="150"
+                      >
+                        <div class="quote-mark">
+                          <p>&quot;</p>
+                        </div>
+                        <p class="testimony">
+                          I had a great time speaking at the Nigeria
+                          Manufacturing & Trade Outlook, we discussed key trends
+                          that will shape the future of trade finance in
+                          Nigeria.
+                        </p>
+                        <div class="testimonial-brand">
+                          <img
+                            src="/assets/who-participates-logo/first-bank.png"
+                            alt="First Bank"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="author-details">
+                          <h3 class="name">Aina A. Dele Adegbola</h3>
+                          <p class="designation">
+                            Group Headl CBD Manufacturing 2 Group.
+                          </p>
+                          <p class="company">First Bank</p>
+                        </div>
+                      </div>
+                      <div
+                        class="testimonial-card-right"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                      >
+                        <img
+                          src="/assets/testimonial/aina-a-dele.png"
+                          alt="Aina A Dele"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-card t-indigo">
+                      <div
+                        class="testimonial-card-left"
+                        data-aos="fade-right"
+                        data-aos-delay="150"
+                      >
+                        <div class="quote-mark">
+                          <p>&quot;</p>
+                        </div>
+                        <p class="testimony">
+                          Cross border payments is at the core of trade, Verto
+                          is excited to be part of the Nigeria Manufacturing &
+                          Trade Outlook, engaging with industry players and
+                          figuring out their pain points.
+                        </p>
+                        <div class="testimonial-brand">
+                          <img
+                            src="/assets/who-participates-logo/verto.svg"
+                            alt="Verto"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div class="author-details">
+                          <h3 class="name">Austin Okpagu</h3>
+                          <p class="designation">Country Manager, Nigeria</p>
+                          <p class="company">Verto</p>
+                        </div>
+                      </div>
+                      <div
+                        class="testimonial-card-right"
+                        data-aos="fade-left"
+                        data-aos-delay="150"
+                      >
+                        <img
+                          src="/assets/testimonial/austin-okpagu.png"
+                          alt="Austin Okpagu"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sponsors -->
+        <!-- <section id="sponsors">
         <div class="sponsors-container padding">
           <div class="container">
             <div class="sponsors-wrapper">
@@ -1317,31 +1718,37 @@
         </div>
       </section> -->
 
-      <!-- Highlight -->
-      <section id="highlight">
-        <div class="highlight-container padding mist">
-          <div class="container">
-            <div class="section-header white">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">- Highlights</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Highlights from previous editions of NMTO
-                </h2>
+        <!-- Highlight -->
+        <section id="highlight">
+          <div class="highlight-container padding mist">
+            <div class="container">
+              <div class="section-header white">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100"
+                    >- Highlights</span
+                  >
+                </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    Highlights from previous editions of NMTO
+                  </h2>
+                </div>
               </div>
             </div>
+            <div
+              class="slide-container"
+              data-aos="zoom-out"
+              data-aos-delay="300"
+            >
+              <div class="slider highlight-slider-1"></div>
+              <div class="slider highlight-slider-2" dir="rtl"></div>
+              <div class="slider highlight-slider-3"></div>
+            </div>
           </div>
-          <div class="slide-container" data-aos="zoom-out" data-aos-delay="300">
-            <div class="slider highlight-slider-1"></div>
-            <div class="slider highlight-slider-2" dir="rtl"></div>
-            <div class="slider highlight-slider-3"></div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Event Recap -->
-      <!-- <section id="event-recap">
+        <!-- Event Recap -->
+        <!-- <section id="event-recap">
         <div class="event-recap-container padding bg-white">
           <div class="container">
             <div class="section-header">
@@ -1362,248 +1769,312 @@
         </div>
       </section> -->
 
-      <!-- Timeline -->
-      <section id="timeline">
-        <div class="timeline-container padding mist">
-          <div class="container">
-            <div class="timeline-wrapper">
-              <h2 data-aos="fade-up">
-                Reach Nigeria's manufacturing and trade industry change-makers & grow your business
-              </h2>
+        <!-- Timeline -->
+        <section id="timeline">
+          <div class="timeline-container padding mist">
+            <div class="container">
+              <div class="timeline-wrapper">
+                <h2 data-aos="fade-up">
+                  Reach Nigeria's manufacturing and trade industry change-makers
+                  & grow your business
+                </h2>
 
-              <p data-aos="fade-up" data-aos-delay="100">
-                Partner with us to make your mark across Nigeria's Manufacturing & Trade Industry
-              </p>
-              <div class="timeline-subwrapper">
-                <div class="timeline-item">
-                  <span class="dot blue" data-aos="zoom-in" data-aos-delay="150"></span>
-                  <div class="text">
-                    <h3 data-aos="fade-left" data-aos-delay="150">
-                      Amplify.
-                    </h3>
-                    <p data-aos="fade-left" data-aos-delay="200">
-                      Your brand awareness across multiple touchpoints
-                    </p>
+                <p data-aos="fade-up" data-aos-delay="100">
+                  Partner with us to make your mark across Nigeria's
+                  Manufacturing & Trade Industry
+                </p>
+                <div class="timeline-subwrapper">
+                  <div class="timeline-item">
+                    <span
+                      class="dot blue"
+                      data-aos="zoom-in"
+                      data-aos-delay="150"
+                    ></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="150">
+                        Amplify.
+                      </h3>
+                      <p data-aos="fade-left" data-aos-delay="200">
+                        Your brand awareness across multiple touchpoints
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="dot yellow" data-aos="zoom-in" data-aos-delay="200"></span>
-                  <div class="text">
-                    <h3 data-aos="fade-left" data-aos-delay="200">Engage.</h3>
-                    <p data-aos="fade-left" data-aos-delay="250">
-                      Your prospects with unrivaled thought leadership
-                    </p>
+                  <div class="timeline-item">
+                    <span
+                      class="dot yellow"
+                      data-aos="zoom-in"
+                      data-aos-delay="200"
+                    ></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="200">Engage.</h3>
+                      <p data-aos="fade-left" data-aos-delay="250">
+                        Your prospects with unrivaled thought leadership
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="dot green" data-aos="zoom-in" data-aos-delay="250"></span>
-                  <div class="text">
-                    <h3 data-aos="fade-left" data-aos-delay="250">
-                      Connect.
-                    </h3>
-                    <p data-aos="fade-left" data-aos-delay="300">
-                      Generate relevant and qualified leads
-                    </p>
+                  <div class="timeline-item">
+                    <span
+                      class="dot green"
+                      data-aos="zoom-in"
+                      data-aos-delay="250"
+                    ></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="250">
+                        Connect.
+                      </h3>
+                      <p data-aos="fade-left" data-aos-delay="300">
+                        Generate relevant and qualified leads
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="dot pink" data-aos="zoom-in" data-aos-delay="300"></span>
-                  <div class="text">
-                    <h3 data-aos="fade-left" data-aos-delay="300">
-                      Exhibit.
-                    </h3>
-                    <p data-aos="fade-left" data-aos-delay="350">
-                      Your solutions/services to hundreds of Manufacturing & Trade executives
-                    </p>
+                  <div class="timeline-item">
+                    <span
+                      class="dot pink"
+                      data-aos="zoom-in"
+                      data-aos-delay="300"
+                    ></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="300">
+                        Exhibit.
+                      </h3>
+                      <p data-aos="fade-left" data-aos-delay="350">
+                        Your solutions/services to hundreds of Manufacturing &
+                        Trade executives
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Contact -->
-      <section id="contact">
-        <div class="contact-container padding">
-          <div class="container mist">
-            <div class="contact-wrapper">
-              <h2 data-aos="fade-up">Speak to our team</h2>
+        <!-- Contact -->
+        <section id="contact">
+          <div class="contact-container padding">
+            <div class="container mist">
+              <div class="contact-wrapper">
+                <h2 data-aos="fade-up">Speak to our team</h2>
 
-              <p data-aos="fade-up" data-aos-delay="100">
-                If you are interested in learning more about our available
-                sponsorship, speaking, exhibitions and other partnership
-                opportunities, please speak to our team.
-              </p>
+                <p data-aos="fade-up" data-aos-delay="100">
+                  If you are interested in learning more about our available
+                  sponsorship, speaking, exhibitions and other partnership
+                  opportunities, please speak to our team.
+                </p>
 
-              <div class="contact-box-container">
-                <div class="contact-box" data-aos="zoom-in" data-aos-delay="150">
-                  <h4>Jamiu Ijaodola</h4>
-                  <a href="tel: +2347016673316">+234 701 667 3316</a>
-                  <a href="mailto: jamiu@eventhive.ng">jamiu@eventhive.ng</a>
+                <div class="contact-box-container">
+                  <div
+                    class="contact-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="150"
+                  >
+                    <h4>Jamiu Ijaodola</h4>
+                    <a href="tel: +2347016673316">+234 701 667 3316</a>
+                    <a href="mailto: jamiu@eventhive.ng">jamiu@eventhive.ng</a>
+                  </div>
+                  <div
+                    class="contact-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="250"
+                  >
+                    <h4>Malik Kazeem</h4>
+                    <a href="tel: +2349028112744">+234 902 811 2744</a>
+                    <a href="mailto: malik@eventhive.ng">malik@eventhive.ng</a>
+                  </div>
+                  <div
+                    class="contact-box"
+                    data-aos="zoom-in"
+                    data-aos-delay="250"
+                  >
+                    <h4>Arole Mustapha</h4>
+                    <a href="tel: +2348086081614">+234 808 608 1614</a>
+                    <a href="mailto: arole@eventhive.ng">arole@eventhive.ng</a>
+                  </div>
                 </div>
-                <div class="contact-box" data-aos="zoom-in" data-aos-delay="250">
-                  <h4>Malik Kazeem</h4>
-                  <a href="tel: +2349028112744">+234 902 811 2744</a>
-                  <a href="mailto: malik@eventhive.ng">malik@eventhive.ng</a>
-                </div>
-                <div class="contact-box" data-aos="zoom-in" data-aos-delay="250">
-                  <h4>Arole Mustapha</h4>
-                  <a href="tel: +2348086081614">+234 808 608 1614</a>
-                  <a href="mailto: arole@eventhive.ng">arole@eventhive.ng</a>
-                </div>
-              </div>
 
-              <div class="become">
-                <a href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Sponsorship%20Deck"
-                  class="btn btn-sec" data-aos="fade-up" data-aos-delay="300">Become a Sponsor</a>
+                <div class="become">
+                  <a
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Sponsorship%20Deck"
+                    class="btn btn-sec"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    >Become a Sponsor</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- More About Eventhive -->
-      <section id="more-about">
-        <div class="more-container padding">
-          <div class="container">
-            <div class="more-wrapper aos-init" data-aos="fade-left">
-              <div class="more-logo">
-                <span>An event by:</span>
-                <div class="logos">
-                  <!-- <div class="logo">
+        <!-- More About Eventhive -->
+        <section id="more-about">
+          <div class="more-container padding">
+            <div class="container">
+              <div class="more-wrapper aos-init" data-aos="fade-left">
+                <div class="more-logo">
+                  <span>An event by:</span>
+                  <div class="logos">
+                    <!-- <div class="logo">
                     <img src="assets/logo/energy-logo.png" alt="" />
                   </div>
                   <div class="logo-separator"></div> -->
-                  <div class="logo">
-                    <img src="assets/logo/logo.svg" alt="" />
+                    <div class="logo">
+                      <img src="assets/logo/logo.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <p>
+                  Eventhive is Africa's leading B2B2C event servicing company
+                  with event portfolios across Lagos, London, Nairobi, Kigali,
+                  Johannesburg and New York.
+                </p>
+                <p>
+                  Eventhive operates in the heart of the knowledge and
+                  information economy across major sectors in Africa. We enable
+                  businesses to grow through connecting them with knowledge,
+                  ideas and opportunities.
+                </p>
+
+                <div class="indus-cities">
+                  <h4 class="text-sec">Industries We Operate In:</h4>
+                  <div>
+                    <span>Oil &amp; Gas</span><span>.</span><span>Energy</span
+                    ><span>.</span><span>Tech</span><span>.</span
+                    ><span>Mining</span><span>.</span><span>Finance</span
+                    ><span>.</span><span>Transport</span><span>.</span
+                    ><span>Telecoms</span><span>.</span><span>Aviation</span
+                    ><span>.</span><span>Real Estate</span><span>.</span
+                    ><span>International Trade</span><span>.</span
+                    ><span>Agribusiness</span> <span>.</span
+                    ><span>Private Equity/VC</span><span>.</span
+                    ><span>Creative Economy</span> <span>.</span
+                    ><span>Power</span><span>.</span
+                    ><span>Business of Entertainment</span>
+                  </div>
+                </div>
+                <div class="indus-cities">
+                  <h4 class="text-sec">Cities We Operate In:</h4>
+                  <div>
+                    <span>Lagos</span><span>.</span><span>London</span
+                    ><span>.</span><span>New York</span><span>.</span
+                    ><span>Kigali</span><span>.</span><span>Nairobi</span
+                    ><span>.</span><span>Johannesburg</span>
                   </div>
                 </div>
               </div>
-
-              <p>
-                Eventhive is Africa's leading B2B2C event servicing company with event
-                portfolios across Lagos, London, Nairobi, Kigali, Johannesburg
-                and New York.
-              </p>
-              <p>
-                Eventhive operates in the heart of the knowledge and
-                information economy across major sectors in Africa. We enable
-                businesses to grow through connecting them with knowledge,
-                ideas and opportunities.
-              </p>
-
-              <div class="indus-cities">
-                <h4 class="text-sec">Industries We Operate In:</h4>
-                <div>
-                  <span>Oil &amp;
-                    Gas</span><span>.</span><span>Energy</span><span>.</span><span>Tech</span><span>.</span><span>Mining</span><span>.</span><span>Finance</span><span>.</span><span>Transport</span><span>.</span><span>Telecoms</span><span>.</span><span>Aviation</span><span>.</span><span>Real
-                    Estate</span><span>.</span><span>International Trade</span><span>.</span><span>Agribusiness</span>
-                  <span>.</span><span>Private Equity/VC</span><span>.</span><span>Creative Economy</span>
-                  <span>.</span><span>Power</span><span>.</span><span>Business of Entertainment</span>
-                </div>
-              </div>
-              <div class="indus-cities">
-                <h4 class="text-sec">Cities We Operate In:</h4>
-                <div>
-                  <span>Lagos</span><span>.</span><span>London</span><span>.</span><span>New
-                    York</span><span>.</span><span>Kigali</span><span>.</span><span>Nairobi</span><span>.</span><span>Johannesburg</span>
-                </div>
-              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-container padding">
-        <div class="container">
-          <div class="footer-wrapper">
-            <div class="top">
-              <div class="logo">
-                <div class="logo-icon">
-                  <img src="/assets/logo/nmto-white-logo.png" alt="" />
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="footer-container padding">
+          <div class="container">
+            <div class="footer-wrapper">
+              <div class="top">
+                <div class="logo">
+                  <div class="logo-icon">
+                    <img src="/assets/logo/nmto-white-logo.png" alt="" />
+                  </div>
+                </div>
+                <div class="quick-links">
+                  <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#partners">Partnership</a></li>
+                    <li>
+                      <a
+                        href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Exhibition%20Deck"
+                        >Exhibition</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://tix.africa/discover/nigeria-manufacturing-trade-outlook-2026"
+                        target="_blank"
+                        >Tickets</a
+                      >
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <h3>Nigeria Manufacturing & Trade Outlook 2026</h3>
+                  <p>August 13th, 2026 | Oriental Hotel, VI, Lagos</p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/eventhive.ng"
+                        target="_blank"
+                        ><iconify-icon icon="fa:facebook"></iconify-icon>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://x.com/eventhivedotng?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ"
+                        target="_blank"
+                        ><iconify-icon icon="ri:twitter-x-fill"></iconify-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/eventhive-ng/"
+                        target="_blank"
+                        ><iconify-icon icon="formkit:linkedin"></iconify-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/eventhivedotng?igsh=MWJzbmVpOWxoMHkzYg=="
+                        target="_blank"
+                        ><iconify-icon icon="mdi:instagram"></iconify-icon
+                      ></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="quick-links">
-                <ul>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#partners">Partnership</a></li>
-                  <li>
-                    <a
-                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Nigeria%20Manufacturing%20&%20Trade%20Outlook%20Exhibition%20Deck">Exhibition</a>
-                  </li>
-
-                  <li>
-                    <a href="https://tix.africa/discover/nigeria-manufacturing-trade-outlook-2026"
-                      target="_blank">Tickets</a>
-                  </li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
+              <div class="center">
+                <div id="countdown-timer" class="timer"></div>
               </div>
-              <div class="socials">
-                <h3>Nigeria Manufacturing & Trade Outlook 2026</h3>
+              <div class="divider"></div>
+              <div class="bottom">
                 <p>
-                  August 13th, 2026 | Oriental Hotel, VI, Lagos
+                  &copy; <span class="year">2026</span> Nigeria Manufacturing &
+                  Trade Outlook. All Rights Reserved.
                 </p>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/eventhive.ng" target="_blank"><iconify-icon
-                        icon="fa:facebook"></iconify-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/eventhivedotng?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ" target="_blank"><iconify-icon
-                        icon="ri:twitter-x-fill"></iconify-icon></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/eventhive-ng/" target="_blank"><iconify-icon
-                        icon="formkit:linkedin"></iconify-icon></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/eventhivedotng?igsh=MWJzbmVpOWxoMHkzYg=="
-                      target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
-                  </li>
-                </ul>
               </div>
-            </div>
-            <div class="center">
-              <div id="countdown-timer" class="timer"></div>
-            </div>
-            <div class="divider"></div>
-            <div class="bottom">
-              <p>
-                &copy; <span class="year">2026</span> Nigeria Manufacturing & Trade Outlook.
-                All Rights Reserved.
-              </p>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"
-    referrerpolicy="no-referrer"></script>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <!-- Odometer -->
-  <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
+    <!-- Odometer -->
+    <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
 
-  <!-- Iconify -->
-  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
-  <!-- Aos -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Slick Carousel -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Slick Carousel -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
-  <!-- Custom script -->
-  <script src="/js/script.js"></script>
-</body>
-
+    <!-- Custom script -->
+    <script src="/js/script.js"></script>
+  </body>
 </html>
