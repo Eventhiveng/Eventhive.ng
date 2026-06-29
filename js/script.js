@@ -75,6 +75,34 @@ $(document).ready(function () {
     });
   };
 
+  // Show announcement modal when page loads
+  $(window).on("load", function () {
+    $("#announcement-modal").addClass("active");
+  });
+
+  // Announcement Modal
+  // Close announcement modal when close button is clicked
+  $(".announcement-modal-close").click(function () {
+    $("#announcement-modal").removeClass("active");
+  });
+
+  // Close announcement modal when overlay is clicked
+  $(".announcement-modal-overlay").click(function () {
+    $("#announcement-modal").removeClass("active");
+  });
+
+  // Prevent modal content from closing when clicked
+  $(".announcement-modal-content").click(function (e) {
+    e.stopPropagation();
+  });
+
+  // Close announcement modal when Escape key is pressed
+  $(document).keydown(function (e) {
+    if (e.key === "Escape" && $("#announcement-modal").hasClass("active")) {
+      $("#announcement-modal").removeClass("active");
+    }
+  });
+
   const attendeeComp = () => {
     // Function to calculate slidesToShow based on window width
     function getSlidesToShow() {
