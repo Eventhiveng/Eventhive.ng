@@ -82,7 +82,9 @@
   bottom: 0;
   height: 2px;
   width: 0;
-  transition: width 0.3s ease, background 0.25s ease;
+  transition:
+    width 0.3s ease,
+    background 0.25s ease;
 }
 #navbar .nav-wrapper .nav-links ul li::after {
   right: 0;
@@ -240,8 +242,8 @@ aside.active {
 #hero .hero-container {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(#00000080, #000000dd),
-    url(../assets/section-img/hero.jpg);
+  background-image:
+    linear-gradient(#00000080, #000000dd), url(../assets/section-img/hero.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -737,7 +739,8 @@ aside.active {
 
 /* More About Eventhive  */
 #more-about .more-container {
-  background: linear-gradient(#000000a1, #000000a7),
+  background:
+    linear-gradient(#000000a1, #000000a7),
     url(/assets/section-img/overlay.jpg) no-repeat center/cover fixed;
 }
 
