@@ -226,6 +226,31 @@
   width: 120px;
 }
 
+#navbar .nav-wrapper .logo-icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+  width: 100%;
+  /* max-width: 200px; */
+  /* height: 70px; */
+  padding-block: 5px;
+}
+
+#navbar .nav-wrapper .logo-icon img {
+  object-fit: contain;
+}
+
+#navbar .nav-wrapper .logo-icon .edition {
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -7px;
+  margin-left: 20px;
+  font-size: 0.675rem;
+}
+
 #navbar .nav-wrapper .nav-links ul {
   display: flex;
   gap: 5px;
