@@ -57,7 +57,7 @@
 }
 
 #navbar .nav-wrapper .logo {
-  width: 100px;
+  max-width: 200px;
 }
 
 #navbar .nav-wrapper .nav-links ul {
@@ -221,7 +221,7 @@ aside .aside-container {
 }
 
 aside .aside-container .logo {
-  width: 100px;
+  max-width: 200px;
 }
 
 aside .aside-container .nav-links ul li {
