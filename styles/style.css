@@ -433,6 +433,109 @@ aside.active {
    font-size: 18px; 
 } */
 
+/* Why Kenya */
+#why-kenya .why-kenya-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#why-kenya .why-kenya-box-container .why-kenya-box {
+  flex: 1 1 250px;
+  min-width: 250px;
+  min-height: 280px;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  position: relative;
+}
+
+/* Accent backgrounds */
+#why-kenya .why-kenya-box[data-accent="amber"] {
+  background: #f2a007;
+}
+#why-kenya .why-kenya-box[data-accent="teal"] {
+  background: #2c6b7a;
+}
+#why-kenya .why-kenya-box[data-accent="crimson"] {
+  background: #c8264f;
+}
+#why-kenya .why-kenya-box[data-accent="green"] {
+  background: #2c9282;
+}
+
+/* Arrow/chevron connector — points right into the next box, notches in from the previous one */
+#why-kenya .why-kenya-box-container .why-kenya-box {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 34px) 0%,
+    100% 50%,
+    calc(100% - 34px) 100%,
+    0% 100%,
+    34px 50%
+  );
+  margin-left: -20px;
+}
+
+#why-kenya .why-kenya-box-container .why-kenya-box:first-child {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 34px) 0%,
+    100% 50%,
+    calc(100% - 34px) 100%,
+    0% 100%
+  );
+  margin-left: 0;
+}
+
+#why-kenya .why-kenya-box-container .why-kenya-box:last-child {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 34px 50%);
+}
+
+#why-kenya .why-kenya-box-container .why-kenya-box .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ffffff26;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+#why-kenya .why-kenya-box-container .why-kenya-box .stat-number {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+#why-kenya .why-kenya-box-container .why-kenya-box .stat-copy {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#why-kenya .why-kenya-box-container .why-kenya-box .stat-copy--lead {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+/* Stack cleanly on smaller screens — chevrons don't survive a wrap */
+@media (max-width: 900px) {
+  #why-kenya .why-kenya-box-container {
+    gap: 20px;
+  }
+
+  #why-kenya .why-kenya-box-container .why-kenya-box,
+  #why-kenya .why-kenya-box-container .why-kenya-box:first-child,
+  #why-kenya .why-kenya-box-container .why-kenya-box:last-child {
+    clip-path: none;
+    margin-left: 0;
+    flex: 1 1 100%;
+    border-radius: 8px;
+  }
+}
 /* CountUp */
 #countup .key-stats-section {
   background: #fff;
