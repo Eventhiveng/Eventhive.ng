@@ -131,58 +131,49 @@ $(document).ready(function () {
     }
   });
 
-  // Why Kenya — scroll reveal + count-up
-  // $(function () {
-  //   const $boxes = $("#why-kenya .why-kenya-box");
+  const $slides = $(
+    ".who-participates-slide-1, .who-participates-slide-2, .who-participates-slide-3",
+  );
+  // Who Participates Slides
+  const sliderComp = () => {
+    const getSlidesToShow = () => Math.ceil($window.width() / 250);
+    const slickBaseSettings = {
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 10,
+      slidesToShow: getSlidesToShow(),
+      slidesToScroll: 1,
+      lazyLoad: "ondemand",
+      arrows: false,
+      cssEase: "linear",
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      draggable: false,
+    };
 
-  //   function animateCount($el) {
-  //     const prefix = $el.data("prefix") || "";
-  //     const suffix = $el.data("suffix") || "";
-  //     const target = parseFloat($el.data("count"));
-  //     const isDecimal = target % 1 !== 0;
+    $(".who-participates-slide-1").slick({ ...slickBaseSettings, speed: 2000 });
+    $(".who-participates-slide-2").slick({
+      ...slickBaseSettings,
+      speed: 3000,
+      rtl: true,
+    });
+    $(".who-participates-slide-3").slick({ ...slickBaseSettings, speed: 6000 });
 
-  //     $({ val: 0 }).animate(
-  //       { val: target },
-  //       {
-  //         duration: 1400,
-  //         easing: "swing",
-  //         step: function (now) {
-  //           const display = isDecimal
-  //             ? now.toFixed(1)
-  //             : Math.floor(now).toLocaleString();
-  //           $el.text(prefix + display + suffix);
-  //         },
-  //         complete: function () {
-  //           const display = isDecimal
-  //             ? target.toFixed(1)
-  //             : target.toLocaleString();
-  //           $el.text(prefix + display + suffix);
-  //         },
-  //       },
-  //     );
-  //   }
+    let resizeTimeout;
+    $window.on("resize", () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        $slides.slick(
+          "slickSetOption",
+          "slidesToShow",
+          getSlidesToShow(),
+          true,
+        );
+      }, 200);
+    });
+  };
 
-  //   function revealOnScroll() {
-  //     $boxes.each(function (i) {
-  //       const $box = $(this);
-  //       if ($box.hasClass("in-view")) return;
-
-  //       const top = $box.offset().top;
-  //       const inView = top < $(window).scrollTop() + $(window).height() - 100;
-
-  //       if (inView) {
-  //         setTimeout(() => {
-  //           $box.addClass("in-view");
-  //           const $count = $box.find(".count");
-  //           if ($count.length) animateCount($count);
-  //         }, i * 150); // stagger
-  //       }
-  //     });
-  //   }
-
-  //   $(window).on("scroll resize", revealOnScroll);
-  //   revealOnScroll(); // in case it's already in view on load
-  // });
+  sliderComp();
 
   // Sticky navbar functionality
   $window.on("scroll", function () {
