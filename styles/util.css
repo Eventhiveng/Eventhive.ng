@@ -90,7 +90,7 @@
   border: 2px solid var(--white);
 }
 
-.section-header {
+/* .section-header {
   margin-bottom: 50px;
 }
 
@@ -116,6 +116,22 @@
 
 .section-header.black h2:before {
   background: var(--bg-black);
+} */
+
+.section-header {
+  margin-bottom: 56px;
+}
+
+.section-header h2 {
+  font-size: clamp(28px, 3.4vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  text-transform: none;
+}
+
+.section-header.black {
+  color: var(--bg-black);
 }
 
 .buttons {
@@ -180,7 +196,8 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   100% {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+    text-shadow:
+      2px 2px 4px rgba(0, 0, 0, 0.5),
       0 0 20px rgba(255, 255, 255, 0.3);
   }
 }
