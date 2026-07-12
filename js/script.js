@@ -52,6 +52,23 @@ $(document).ready(function () {
   //   hidePreloader();
   // }, 1000); // Delay of 1 second
 
+  // Show popup when any "Get a Ticket" button is clicked
+  $(".get-ticket-btn").click(function () {
+    $("#ticket-popup").fadeIn();
+  });
+
+  // Hide popup when close button is clicked
+  $(".close-btn").click(function () {
+    $("#ticket-popup").fadeOut();
+  });
+
+  // Hide popup when clicking outside the content
+  $(document).click(function (event) {
+    if (!$(event.target).closest(".popup-content, .get-ticket-btn").length) {
+      $("#ticket-popup").fadeOut();
+    }
+  });
+
   // Initialize highlights slider
   $(".highlights-slider").slick({
     infinite: true,
