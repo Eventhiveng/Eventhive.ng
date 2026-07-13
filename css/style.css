@@ -594,7 +594,9 @@ a:hover {
   bottom: 0;
   height: 2px;
   width: 0;
-  transition: width 0s ease, background 0.25s ease;
+  transition:
+    width 0s ease,
+    background 0.25s ease;
 }
 .navbar .languages ul li a:after {
   content: "";
@@ -685,7 +687,9 @@ a:hover {
   bottom: 0;
   height: 2px;
   width: 0;
-  transition: width 0s ease, background 0.25s ease;
+  transition:
+    width 0s ease,
+    background 0.25s ease;
 }
 .navbar .site-menu ul li a:after {
   content: "";
@@ -952,9 +956,9 @@ a:hover {
 .attend .section-title h2 {
   color: #0b0b0b;
 }
-.attend .section-title h2:before {
+/* .attend .section-title h2:before {
   background: #0b0b0b !important;
-}
+} */
 .attendees h1 {
   font-size: 22px;
   text-transform: uppercase;
@@ -1018,8 +1022,8 @@ a:hover {
     ),
     linear-gradient(to top, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 1) 200%),
     url(../images/bcg/og.jpg); */
-  background-image: linear-gradient(#000000cc, #00000080),
-    url(../images/bcg/london-aerial.jpg);
+  background-image:
+    linear-gradient(#000000cc, #00000080), url(../images/bcg/london-aerial.jpg);
   background-size: cover;
   position: relative;
   text-align: center;
@@ -1202,7 +1206,7 @@ a:hover {
   padding-bottom: 10px;
   color: white;
 }
-.section-title h2:before {
+/* .section-title h2:before {
   content: "";
   width: 200px;
   height: 3px;
@@ -1212,7 +1216,7 @@ a:hover {
   bottom: 0;
   z-index: -1;
   mix-blend-mode: difference;
-}
+} */
 .section-title h2 {
   width: 100%;
   display: block;
@@ -1402,6 +1406,11 @@ a:hover {
   object-fit: cover;
 }
 
+#new img.mySlides {
+  width: 100%;
+  display: none!;
+}
+
 /*  */
 #speak .testimonial {
   width: 100%;
@@ -1499,7 +1508,9 @@ a:hover {
 .autoplay {
   position: absolute;
   color: #000;
-  font: 100px/100% arial, sans-serif;
+  font:
+    100px/100% arial,
+    sans-serif;
   right: 15px;
   text-decoration: none;
   text-shadow: 0 1px 0 #fff;
@@ -1508,7 +1519,9 @@ a:hover {
   height: auto;
   z-index: 999;
   opacity: 0.4;
-  transition: opacity 0.1s ease-in, transform 0.1s ease-out;
+  transition:
+    opacity 0.1s ease-in,
+    transform 0.1s ease-out;
   animation: fade_close 3s ease-out;
 }
 
@@ -1535,9 +1548,9 @@ a:hover {
 .sponsorship .section-title h2 {
   color: rgba(20, 20, 20, 1);
 }
-.sponsorship .section-title h2:before {
+/* .sponsorship .section-title h2:before {
   background: rgba(20, 20, 20, 1) !important;
-}
+} */
 .sponsor h6 {
   font-size: 25px;
 }
@@ -1670,9 +1683,9 @@ a:hover {
 .partners .section-title h2 {
   color: rgba(20, 20, 20, 1);
 }
-.partners .section-title h2:before {
+/* .partners .section-title h2:before {
   background: rgba(20, 20, 20, 1) !important;
-}
+} */
 
 .partners .row {
   text-align: center;
@@ -1701,9 +1714,9 @@ a:hover {
 .ticket .section-title h2 {
   color: #0b0b0b;
 }
-.ticket .section-title h2:before {
+/* .ticket .section-title h2:before {
   background: #0b0b0b !important;
-}
+} */
 .ticket .tick-item {
   border: 1px solid #e8e8e8;
   background-color: #fff;
