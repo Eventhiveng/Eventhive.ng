@@ -369,6 +369,7 @@
 .announcement-modal-close:hover {
   transform: rotate(90deg);
   background: var(--primary-color);
+  color: var(--white);
 }
 
 .announcement-modal-close i {
