@@ -1459,7 +1459,7 @@ const data: DataStore = {
       banner: "/images/events/banner/fb.jpg",
       event: "Fintech Without Borders Forum",
       eventMonth: "October",
-      eventDate: "October 28, 2026",
+      eventDate: "October 1st, 2026",
       eventStatus: "active",
       slug: "fintech-without-borders-forum",
       title: "Fintech Without Borders Forum 2026",
