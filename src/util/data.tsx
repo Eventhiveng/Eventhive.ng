@@ -1571,7 +1571,7 @@ const data: DataStore = {
       eventStatus: "active",
       slug: "lagos-transport-fest",
       title: "Lagos Transport Fest 2026",
-      location: "Lagos, Nigeria",
+      location: "Landmark Event Centre, Victoria Island, Lagos",
       externalLink: "https://transport.eventhive.ng",
       pic1: "/images/events/event-pics/transport-1.png",
       pic2: "/images/events/event-pics/transport-2.png",
