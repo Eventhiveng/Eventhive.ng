@@ -1830,6 +1830,41 @@ const data: DataStore = {
       ],
     },
     {
+      banner: "/images/events/banner/eventhive-banner-blue.png",
+      event: "Travels & Tours Expo",
+      eventMonth: "September",
+      eventDate: "September 22, 2026",
+      eventStatus: "active",
+      slug: "travels-tours-expo",
+      title: "Travels & Tours Expo 2026",
+      location: "Oriental Hotel, Victoria Island, Lagos, Nigeria",
+      externalLink: "https://travels.eventhive.ng",
+      pic1: "/images/events/event-pics/travels-1.jpg",
+      pic2: "/images/events/event-pics/travels-2.jpg",
+      pic3: "/images/events/event-pics/travels-3.jpg",
+      majorDesc: `
+        <p>
+          Connecting Africa's travel operators, airlines and hospitality groups with global demand
+          <br><br>
+          Bringing together the operators, investors, travellers, and innovators shaping Africa's tourism future for focused insights, strategic networking, deal-making, and new opportunities across the continent's travel and tourism value chain.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          At the Travels & Tours Expo, deals get done, destinations get discovered, and Africa's tourism opportunity gets a global audience. The Expo will bring together airline operators, travel agencies, tour operators, hospitality groups, travel technology companies, investors, government representatives, and other key stakeholders shaping the continent's visitor economy.
+          <br><br>
+          With a focus on connecting the world to Africa, the event will feature expert-led discussions, networking opportunities, and an exhibition floor showcasing African destinations, tourism boards, airlines, hotel groups, and travel technology platforms. The Expo is designed to convert conversations into bookings, partnerships, investment leads, and long-term opportunities across Africa's growing travel and tourism ecosystem.
+        </p>
+      `,
+      whyParticipate: [
+        "Connect with 600+ airline operators, travel agencies, tour operators, hospitality groups, investors, and government representatives",
+        "Discover new destinations, travel products, and business opportunities across Africa",
+        "Build strategic partnerships with key players across the travel and tourism value chain",
+        "Explore investment opportunities in Africa's growing tourism and visitor economy",
+        "Gain insights into the trends, innovations, and opportunities shaping the future of travel across Africa",
+      ],
+    },
+    {
       banner: "/images/events/banner/eventhive-banner-white.png",
       event: "Nigeria Aviation Forum",
       eventMonth: "September",
