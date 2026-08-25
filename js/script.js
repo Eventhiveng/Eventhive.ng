@@ -1,241 +1,111 @@
-$(document).ready(function () {
-  // Initialize AOS
+/* ==========================================================================
+   SCRIPT.JS — Lagos Transport Fest
+   ========================================================================== */
+
+$(function () {
+  /* ---------------- AOS ---------------- */
   AOS.init({
-    duration: 1000,
-    delay: 100,
+    duration: 700,
+    easing: "ease-out-cubic",
     once: true,
+    // offset: 60,
   });
 
-  // Highlight Slider One
-  $(".slider-1").slick({
-    infinite: true,
-    speed: 4000,
-    autoplay: true,
-    autoplaySpeed: 10,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    lazyLoad: "ondemand",
-    arrows: false,
-    cssEase: "linear",
+  /* ---------------- Footer year ---------------- */
+  $("#year").text(new Date().getFullYear());
 
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 567,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+  /* ---------------- Nav: mobile toggle ---------------- */
+  const $navToggle = $("#navToggle");
+  const $mobileNav = $("#mobileNav");
+  const $nav = $("#nav");
+
+  function closeMobileNav() {
+    $navToggle.removeClass("active").attr("aria-expanded", "false");
+    $mobileNav.removeClass("open").attr("aria-hidden", "true");
+    $nav.removeClass("menu-open");
+    $("body").removeClass("nav-open");
+  }
+
+  $navToggle.on("click", function () {
+    const open = !$(this).hasClass("active");
+    $(this).toggleClass("active", open).attr("aria-expanded", open);
+    $mobileNav.toggleClass("open", open).attr("aria-hidden", !open);
+    $nav.toggleClass("menu-open", open);
+    $("body").toggleClass("nav-open", open);
   });
 
-  // Highlight Slider Two
-  $(".slider-2").slick({
-    infinite: true,
-    speed: 3000,
-    autoplay: true,
-    autoplaySpeed: 10,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    lazyLoad: "ondemand",
-    arrows: false,
-    cssEase: "linear",
-    rtl: true,
-
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 567,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-  //  Testimonial Slider
-  $(".testimonial-slide").slick({
-    infinite: true,
-    speed: 2000,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    lazyLoad: "ondemand",
-    arrows: false,
-    dots: true,
-    cssEase: "linear",
-
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-  let sts = Math.ceil($(window).width() / 150);
-
-  // Previos Sponsors Slide
-  $(".prev-sponsors-slide-1").slick({
-    infinite: true,
-    speed: 2000,
-    autoplay: true,
-    autoplaySpeed: 10,
-    slidesToShow: sts,
-    slidesToScroll: 1,
-    lazyLoad: "ondemand",
-    arrows: false,
-    cssEase: "linear",
-    pauseOnHover: false,
-    pauseOnFocus: false,
-  });
-
-  $(".prev-sponsors-slide-2").slick({
-    infinite: true,
-    speed: 3000,
-    autoplay: true,
-    autoplaySpeed: 10,
-    slidesToShow: sts,
-    slidesToScroll: 1,
-    lazyLoad: "ondemand",
-    arrows: false,
-    cssEase: "linear",
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    rtl: true,
-  });
+  $mobileNav.find("a").on("click", closeMobileNav);
 
   $(window).on("resize", function () {
-    let sts = Math.ceil($(window).width() / 150);
-
-    $(".prev-sponsors-slide-1, .prev-sponsors-slide-2").slick(
-      "slickSetOption",
-      "slidesToShow",
-      sts,
-      true
-    );
+    if (window.innerWidth > 1024) closeMobileNav();
   });
 
-  $(".hamburger").on("click", function (e) {
-    $(this).toggleClass("open");
-    $("aside").toggleClass("active");
-  });
+  /* ---------------- Nav: scroll state + rail progress ---------------- */
+  const $railFill = $(".nav-rail-fill");
+  const $railNode = $(".nav-rail-node");
 
-  let lastScrollTop = 0;
-  $(window).on(
-    "scroll",
-    _.throttle(function () {
-      let currentScrollTop = $(window).scrollTop();
-      let windowHeight = $(window).height();
-      let delayTime = $(window).width() <= 768 ? 10 : 30;
+  function updateScrollUI() {
+    const scrollTop = $(window).scrollTop();
+    const docHeight = $(document).height() - $(window).height();
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
 
-      $(".speakers-box, .whats-new-box").each(function (i) {
-        let boxTop = $(this).offset().top;
-        if (currentScrollTop + windowHeight > boxTop + $(this).height() / 10) {
-          setTimeout(() => {
-            $(this).addClass("is-showing");
-          }, delayTime * i);
+    $railFill.css("width", progress + "%");
+    $railNode.css("left", progress + "%");
+
+    $nav.toggleClass("scrolled", scrollTop > 40);
+    $("#backToTop").toggleClass("visible", scrollTop > 600);
+  }
+
+  $(window).on("scroll", updateScrollUI);
+  updateScrollUI();
+
+  /* ---------------- Odometer count-up on scroll into view ---------------- */
+  const odometerEls = document.querySelectorAll(".odometer");
+  const odometerObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const final = el.getAttribute("data-odometer-final");
+          el.innerHTML = final;
+          odometerObserver.unobserve(el);
         }
       });
-
-      $(".scroll-top").toggleClass("show", currentScrollTop > 500);
-      $("nav").toggleClass("sticky", currentScrollTop > 150);
-
-      lastScrollTop = currentScrollTop;
-    }, 200)
+    },
+    { threshold: 0.6 },
   );
 
-  // $(window).on("scroll", function () {
-  //   let wScroll = $(window).scrollTop();
+  odometerEls.forEach((el) => odometerObserver.observe(el));
 
-  //   wScroll > 150
-  //     ? $("nav").addClass("sticky")
-  //     : $("nav").removeClass("sticky");
+  /* ---------------- Testimonial slider (slick) ---------------- */
+  $(".testimonial-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    speed: 600,
+    adaptiveHeight: true,
+  });
 
-  //   wScroll > 500
-  //     ? $(".scroll-top").addClass("show")
-  //     : $(".scroll-top").removeClass("show");
+  /* ---------------- Smooth in-page nav highlight ---------------- */
+  const sections = document.querySelectorAll("main section[id]");
+  const navAnchors = document.querySelectorAll(".nav-link");
 
-  //   let delayTime;
-  //   if ($(window).width() <= 768) {
-  //     // For mobile screens (width 768px or less)
-  //     delayTime = 50;
-  //   } else {
-  //     // For larger screens
-  //     delayTime = 150;
-  //   }
-
-  //   $(".speakers-box").each(function (i) {
-  //     let boxTop = $(this).offset().top;
-  //     let windowBottom = wScroll + $(window).height();
-
-  //     if (windowBottom > boxTop + $(this).height() / 10) {
-  //       setTimeout(() => {
-  //         $(this).addClass("is-showing");
-  //       }, delayTime * i);
-  //     }
-  //   });
-
-  //   $(".whats-new-box").each(function (i) {
-  //     let boxTop = $(this).offset().top;
-  //     let windowBottom = wScroll + $(window).height();
-
-  //     if (windowBottom > boxTop + $(this).height() / 10) {
-  //       setTimeout(() => {
-  //         $(this).addClass("is-showing");
-  //       }, delayTime * i);
-  //     }
-  //   });
-  // });
-
-  $(window).scroll(function () {
-    $(".odometer").each(function () {
-      let parent_section_postion = $(this).closest(".right").position();
-      let parent_section_top = parent_section_postion.top;
-      if (
-        $(window).scrollTop() >
-        parent_section_top - ($(window).height() - 200)
-      ) {
-        if ($(this).data("status") == "yes") {
-          $(this).html($(this).data("count"));
-          $(this).data("status", "no");
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+          navAnchors.forEach((a) => {
+            a.classList.toggle("active", a.getAttribute("href") === "#" + id);
+          });
         }
-      }
-    });
-  });
+      });
+    },
+    { rootMargin: "-45% 0px -50% 0px" },
+  );
 
-  $(".scroll-top").on("click", function (e) {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      800
-    );
-    return false;
-  });
+  sections.forEach((section) => sectionObserver.observe(section));
 });

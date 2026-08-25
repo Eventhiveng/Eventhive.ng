@@ -1,38 +1,64 @@
-:root {
-  --white: #fff;
-  --white-dim: #ffffff50;
-  --white-dark: #4c3c3c50;
-  --black: #000;
-  --black-light: #333;
-  --black-sec: #490b0b;
-  --black-overlay: #000000bb;
-  --color-primary: #ffa600;
-}
+/* ==========================================================================
+   DEFAULT.CSS — Reset, Fonts, Design Tokens
+   Lagos Transport Fest — 8th Edition
+   ========================================================================== */
 
-/* Reset */
-* {
-  padding: 0;
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Grotesk:wght@300..700&display=swap");
+
+/* ---- Reset ---- */
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
-
-button {
-  all: unset;
 }
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
+  scroll-padding-top: 88px;
 }
 
 body {
-  position: relative;
-  font-family: "Nunito", sans-serif;
-  font-size: 0.875rem;
-  color: var(--black-light);
-  /* background: var(--white); */
-  z-index: 1;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
 }
 
 h1,
@@ -41,222 +67,113 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
-}
-
-section {
-  scroll-margin-top: 80px;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
 
 p {
-  line-height: 1.7;
+  margin: 0;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+svg {
+  display: block;
 }
 
-/* Container style */
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+::selection {
+  background: var(--color-yellow);
+  color: var(--color-bg);
 }
 
-@media (max-width: 576px) {
-  .container {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-yellow);
+  outline-offset: 3px;
 }
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
-/* Section Padding */
-.padding {
-  padding: 100px 0;
-}
+/* ---- Design Tokens ---- */
+:root {
+  /* Fonts */
+  --font-display: "Space Grotesk", sans-serif;
+  /* --font-body: 'Inter', sans-serif; */
+  --font-body: "Nunito", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 
-@media screen and (max-width: 768px) {
-  .padding {
-    padding: 80px 0;
-  }
-}
+  /* Colors — Deep Indigo / Transit Yellow system */
+  --color-bg: #0f0a28;
+  --color-bg-alt: #170f38;
+  --color-surface: #1e1348;
+  --color-surface-light: #271a5c;
+  --color-border: rgba(247, 245, 255, 0.09);
+  --color-border-strong: rgba(247, 245, 255, 0.16);
 
-@media screen and (max-width: 768px) {
-  .padding {
-    padding: 60px 0;
-  }
-}
+  --color-yellow: #ffc94a;
+  --color-yellow-dark: #f2a400;
+  --color-yellow-soft: rgba(255, 201, 74, 0.12);
 
-/* Re-used styles */
-.text-pry {
-  color: var(--color-primary);
-}
+  --color-text: #f7f5ff;
+  --color-text-muted: #b6add9;
+  --color-text-dim: #8478b0;
 
-.text-white {
-  color: var(--white) !important;
-}
+  --color-blue: #5b8cff;
+  --color-green: #34d399;
+  --color-pink: #ff6fa0;
+  --color-purple: #9b7bff;
 
-.ttu {
-  text-transform: uppercase;
-}
+  --gradient-hero: radial-gradient(
+    120% 120% at 15% 0%,
+    #2a1b63 0%,
+    #0f0a28 55%
+  );
+  --gradient-yellow: linear-gradient(120deg, #ffc94a 0%, #f2a400 100%);
+  --gradient-fade: linear-gradient(
+    180deg,
+    rgba(15, 10, 40, 0) 0%,
+    #0f0a28 100%
+  );
 
-.ttc {
-  text-transform: capitalize;
-}
+  /* Container widths (fluid, not fixed px) */
+  --container-sm: 95%;
+  --container-md: 90%;
+  --container-lg: 85%;
 
-.key {
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
-}
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  /* --radius-pill: 999px; */
+  --radius-pill: 8px;
 
-.sec-head {
-  font-weight: 700;
-  font-size: clamp(24px, 3vw, 40px);
-  color: var(--black-sec);
-  margin-bottom: 20px;
-}
+  /* Spacing rhythm */
+  --section-padding-y: clamp(64px, 9vw, 140px);
 
-.section-heading {
-  max-width: 85%;
-  text-align: center;
-  margin: 0 auto 50px;
-}
+  /* Motion */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition: 0.35s var(--ease);
 
-.section-title {
-  text-align: center;
-}
+  /* Elevation */
+  --shadow-card: 0 20px 60px -20px rgba(0, 0, 0, 0.55);
+  --shadow-glow-yellow:
+    0 0 0 1px rgba(255, 201, 74, 0.35),
+    0 12px 40px -8px rgba(255, 201, 74, 0.25);
 
-.section-title h2 {
-  font-size: clamp(24px, 3vw, 40px);
-  text-align: center;
-  /* margin-bottom: 50px; */
-  color: var(--black-sec);
-  text-transform: capitalize;
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-}
-
-/* .section-title h2::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 20%;
-  width: 250px;
-  height: 15px;
-  background-color: var(--color-primary);
-  z-index: -1;
-} */
-
-.icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-.btn {
-  padding: 15px 30px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-}
-
-.btn-pry {
-  color: var(--white);
-  background-color: var(--color-primary);
-}
-.btn-pry:hover {
-  background-color: transparent;
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
-}
-
-.btn-sec {
-  background-color: transparent;
-  border: 1px solid var(--color-primary);
-}
-
-.btn-sec:hover {
-  background-color: var(--white);
-  color: var(--color-primary);
-}
-
-.left,
-.right {
-  flex: 1;
-}
-
-.odometer {
-  font-family: "Playfair Display", serif !important;
-}
-
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
-.odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
-  right: auto !important;
-}
-
-/* Keyframes */
-@keyframes fade-down {
-  from {
-    opacity: 0;
-    top: -10px;
-  }
-  to {
-    opacity: 1;
-    top: 0;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 166, 0, 0.7);
-  }
-  70% {
-    box-shadow: 0 0 0 30px rgba(255, 166, 0, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 166, 0, 0);
-  }
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  /* Z-index scale */
+  --z-nav: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
 }

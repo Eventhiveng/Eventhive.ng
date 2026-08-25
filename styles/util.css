@@ -1,0 +1,293 @@
+/* ==========================================================================
+   UTIL.CSS — Reusable utility classes
+   ========================================================================== */
+
+/* ---- Container ---- */
+.container {
+  width: var(--container-sm);
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: var(--container-md);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: var(--container-lg);
+  }
+}
+
+/* ---- Section padding / backgrounds ---- */
+.padding {
+  padding-block: var(--section-padding-y);
+}
+
+.mist {
+  background-color: var(--color-bg);
+}
+
+.mist-alt {
+  background-color: var(--color-bg-alt);
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+/* ---- Section header (eyebrow + title), rail-line signature ---- */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+.section-header.center {
+  align-items: center;
+  text-align: center;
+}
+
+.tiny-header,
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+  font-weight: 600;
+}
+
+.tiny-header span,
+.section-badge {
+  position: relative;
+  padding-left: 22px;
+}
+
+.tiny-header span::before,
+.section-badge::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 2px;
+  background: var(--color-yellow);
+}
+
+.tiny-header span::after,
+.section-badge::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid var(--color-yellow);
+}
+
+.big-header h2,
+.section-title {
+  font-size: clamp(1.9rem, 3.4vw, 2.85rem);
+  color: var(--color-text);
+  max-width: 20ch;
+  /* max-width: 32ch; */
+}
+
+.section-header.center .big-header h2,
+.section-header.center .section-title {
+  max-width: 28ch;
+  margin-inline: auto;
+}
+
+.section-subtitle,
+p.content {
+  color: var(--color-text-muted);
+  font-size: clamp(0.98rem, 1.2vw, 1.08rem);
+  max-width: 62ch;
+}
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 30px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    background var(--transition),
+    color var(--transition);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--gradient-yellow);
+  color: var(--color-bg);
+  box-shadow: var(--shadow-glow-yellow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 46px -10px rgba(255, 201, 74, 0.45);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-text);
+  border: 1.5px solid var(--color-border-strong);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-yellow);
+  color: var(--color-yellow);
+  transform: translateY(-3px);
+}
+
+.btn-sm {
+  padding: 8px 22px;
+  font-size: 0.85rem;
+}
+
+/* ---- Grid helpers ---- */
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ---- Card base ---- */
+.box,
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    background var(--transition);
+}
+
+/* ---- Badge / pill / chip ---- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--color-yellow-soft);
+  color: var(--color-yellow);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid rgba(255, 201, 74, 0.3);
+}
+
+/* ---- Dot colors (matches brochure marker system) ---- */
+.dot {
+  display: inline-block;
+  border-radius: 50%;
+}
+.dot.blue {
+  background: var(--color-blue);
+}
+.dot.yellow {
+  background: var(--color-yellow);
+}
+.dot.green {
+  background: var(--color-green);
+}
+.dot.pink {
+  background: var(--color-pink);
+}
+.dot.purple {
+  background: var(--color-purple);
+}
+
+/* ---- Rail / route line signature motif ---- */
+.rail-line {
+  position: relative;
+}
+
+.rail-line::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    var(--color-border-strong) 60%,
+    transparent 0%
+  );
+  background-size: 2px 12px;
+  background-repeat: repeat-y;
+}
+
+/* ---- Scrollbar (webkit) ---- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-light);
+  border-radius: var(--radius-pill);
+}
+
+/* ---- Misc ---- */
+.text-yellow {
+  color: var(--color-yellow);
+}
+.text-muted {
+  color: var(--color-text-muted);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.aspect-fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes fade-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
