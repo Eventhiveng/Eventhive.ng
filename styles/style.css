@@ -1728,6 +1728,14 @@
   -webkit-text-stroke: 2px #fff;
 }
 
+#footer .footer-wrapper .center .event-ended-message {
+  font-size: clamp(24px, 2.5vw, 40px);
+  font-weight: 700;
+  text-align: center;
+  opacity: 0.85;
+  margin: 0;
+}
+
 #footer .footer-wrapper .divider {
   height: 1px;
   width: 100%;
