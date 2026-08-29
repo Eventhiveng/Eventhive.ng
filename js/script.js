@@ -8,7 +8,21 @@ $(function () {
     duration: 700,
     easing: "ease-out-cubic",
     once: true,
-    // offset: 60,
+    offset: 80,
+  });
+
+  // Recalculate positions after layout settles (images, fonts, slick, etc.)
+  function refreshAos() {
+    if (typeof AOS !== "undefined") AOS.refresh();
+  }
+
+  $(window).on("load", refreshAos);
+  setTimeout(refreshAos, 500);
+
+  let aosRefreshTimer;
+  $(window).on("scroll", function () {
+    clearTimeout(aosRefreshTimer);
+    aosRefreshTimer = setTimeout(refreshAos, 150);
   });
 
   /* ---------------- Footer year ---------------- */
@@ -78,16 +92,20 @@ $(function () {
   odometerEls.forEach((el) => odometerObserver.observe(el));
 
   /* ---------------- Testimonial slider (slick) ---------------- */
-  $(".testimonial-slider").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    speed: 600,
-    adaptiveHeight: true,
-  });
+  $(".testimonial-slider")
+    .on("init setPosition reInit afterChange", refreshAos)
+    .slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      speed: 600,
+      adaptiveHeight: true,
+    });
+
+  refreshAos();
 
   /* ---------------- Smooth in-page nav highlight ---------------- */
   const sections = document.querySelectorAll("main section[id]");
