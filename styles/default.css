@@ -1,22 +1,26 @@
-/* Variables */
+/* Variables — premium dark theme */
 :root {
   --white: #ffffff;
   --black: #000000;
-  --primary-color: #000066;
-  --primary-hover-color: #2626c840;
-  --primary-color-light: #0a133a;
-  --secondary-color: #ffa600;
+  --bg: #050507;
+  --bg-elevated: #0c0c12;
+  --bg-card: #12121a;
+  --bg-card-hover: #181822;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.62);
+  --text-soft: rgba(255, 255, 255, 0.78);
+  /* --primary-color: #000066; */
+  --primary-color: #0087e6;
+  --primary-bright: #4d6bff;
+  --primary-hover-color: #1a1a8a;
+  --primary-glow: rgba(0, 0, 102, 0.45);
+  --secondary-color: #ff9500;
   --radius: 4px;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
 }
-
-/* :root {
-    --primary-color: #000066;
-    --secondary-color: #ffa600;
-    --nav-bgd-color: #bcaeae73;
-  --white: #ffffff;
-  --light-gray: #f5f5f5;
-  --dark-gray: #333333;
-} */
 
 /* Reset */
 * {
@@ -50,15 +54,12 @@ iframe {
   display: block;
 }
 
-/* General Style */
 body {
-  font-family: "Nunito", sans-serif;
-  color: var(--white);
-  color: var(--black);
+  font-family: var(--font-body);
+  color: var(--text);
   font-size: 0.9375rem;
-  /* background: #e6e6e6; */
-  background: #ccc;
-  background: var(--white);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -67,13 +68,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-display);
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 section {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 100px;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: var(--white);
 }

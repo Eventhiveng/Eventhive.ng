@@ -1084,3 +1084,42 @@ const sponsorSlideThree = [
   "/assets/images/sponsor25/zitra.png",
   "/assets/images/sponsor25/zoho.svg",
 ];
+
+/* 2026 tiered sponsors — flat, no tiers (for "Which companies come") */
+const companiesComeOne = [
+  "assets/images/sponsors/luno.avif",
+  "assets/images/sponsors/odoo.png",
+  "assets/images/sponsors/oadc.png",
+  "assets/images/sponsors/monica.png",
+  "assets/images/sponsors/bmoni-black.png",
+  "assets/images/sponsors/prestmit.svg",
+  "assets/images/sponsors/aws.png",
+  "assets/images/sponsors/bluebulb.png",
+  "assets/images/sponsors/ethnos.png",
+  "assets/images/sponsors/mastercard.svg",
+  "assets/images/sponsors/paga.png",
+  "assets/images/sponsors/tetradpay.png",
+  "assets/images/sponsors/cleva.svg",
+  "assets/images/sponsors/accrue.png",
+  "assets/images/sponsors/mark-renee.png",
+  "assets/images/sponsors/axia-africa.svg",
+];
+
+const companiesComeTwo = [
+  "assets/images/sponsors/eandc.webp",
+  "assets/images/sponsors/alatpay.png",
+  "assets/images/sponsors/radiant-money.png",
+  "assets/images/sponsors/oxygen-finance.png",
+  "assets/images/sponsors/i-invest.svg",
+  "assets/images/sponsors/equinix.png",
+  "assets/images/sponsors/rabafast.svg",
+  "assets/images/sponsors/cealed.svg",
+  "assets/images/sponsors/juicyway.png",
+  "assets/images/sponsors/epicpay.png",
+  "assets/images/sponsors/redbiller.svg",
+  "assets/images/sponsors/scrella.svg",
+  "assets/images/sponsors/hrpayhub.png",
+  "assets/images/sponsors/artech2000.webp",
+  "assets/images/sponsors/isn.png",
+  "assets/images/sponsors/doroki.svg",
+];
