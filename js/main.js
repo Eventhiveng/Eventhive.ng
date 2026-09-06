@@ -293,11 +293,32 @@ $(document).ready(() => {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     if (distance > 0) {
-      $("#countdown-timer").html(
-        days + "d " + hours + "h " + minutes + "m " + seconds + "s "
-      );
+      const pad = (n) => String(n).padStart(2, "0");
+      $("#countdown-timer").html(`
+        <div class="timer-unit">
+          <span class="timer-value">${days}</span>
+          <span class="timer-label">Days</span>
+        </div>
+        <span class="timer-sep">:</span>
+        <div class="timer-unit">
+          <span class="timer-value">${pad(hours)}</span>
+          <span class="timer-label">Hours</span>
+        </div>
+        <span class="timer-sep">:</span>
+        <div class="timer-unit">
+          <span class="timer-value">${pad(minutes)}</span>
+          <span class="timer-label">Mins</span>
+        </div>
+        <span class="timer-sep">:</span>
+        <div class="timer-unit">
+          <span class="timer-value">${pad(seconds)}</span>
+          <span class="timer-label">Secs</span>
+        </div>
+      `);
     } else {
-      $("#countdown-timer").html("Event is Live!");
+      $("#countdown-timer").html(
+        '<span class="timer-value">Event is Live!</span>'
+      );
       clearInterval(countdownFunction);
     }
   }, 1000);
