@@ -1377,13 +1377,15 @@
       position: relative;
 
       .close {
-        position: absolute;
-        top: -10px;
-        right: 0;
+        position: fixed;
+        top: 16px;
+        right: 20px;
         font-size: 40px;
         color: var(--white);
         cursor: pointer;
-        z-index: 10;
+        z-index: 2010;
+        line-height: 1;
+        padding: 4px 8px;
       }
 
       .speakers-grid {
