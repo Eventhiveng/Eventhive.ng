@@ -8,6 +8,7 @@ $(function () {
         AOS.init({
           duration: 1000,
         });
+        $("#announcement-popup").css("display", "flex").hide().fadeIn();
       });
     });
   }, 1000); // Delay of 1 second
@@ -32,19 +33,17 @@ $(document).ready(function () {
 
   const $testimonialSlide = $(".testimonial-slides");
 
-  // Show modal automatically on page load
-  $("#announcementModal").fadeIn();
+  const hideAnnouncementPopup = () => {
+    $("#announcement-popup").fadeOut(function () {
+      $(this).css("display", "none");
+    });
+  };
 
-  // Hide modal and show main content when clicking close
-  $("#closeModal").click(function () {
-    $("#announcementModal").fadeOut();
-    // $("#mainContent").fadeIn();
-  });
+  $("#closeAnnouncementPopup").click(hideAnnouncementPopup);
 
-  // Hide popup when clicking outside the content
-  $(document).click(function (event) {
-    if (!$(event.target).closest(".modal-content, .get-ticket-btn").length) {
-      $("#announcementModal").fadeOut();
+  $("#announcement-popup").click(function (event) {
+    if ($(event.target).is("#announcement-popup")) {
+      hideAnnouncementPopup();
     }
   });
 
