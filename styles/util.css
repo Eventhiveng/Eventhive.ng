@@ -108,6 +108,11 @@
   color: var(--black);
 }
 
+.section-header.black .tiny-header span {
+  color: var(--black);
+  background: #ffa60226;
+}
+
 /*  */
 .text-sec {
   color: var(--secondary-color);
