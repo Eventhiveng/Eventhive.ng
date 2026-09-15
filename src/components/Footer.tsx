@@ -82,6 +82,9 @@ const Footer = () => {
                   Get exclusive notifications about new events and early bird
                   tickets.
                 </p>
+                <p className="careers-footer-link">
+                  <Link href="/careers">We&apos;re hiring — see open roles</Link>
+                </p>
                 <form className="contact-form" action="">
                   <div className="form-group">
                     <input

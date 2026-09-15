@@ -67,6 +67,22 @@ export type GalleryDataItem = {
   pictures: string[];
 };
 
+export type JobRole = {
+  id: string;
+  title: string;
+  icon: string;
+  location: string;
+  employmentType: string;
+  workStyle: string;
+  reportsTo?: string;
+  salary: string;
+  summary: string;
+  highlights: string[];
+  requirements: string[];
+  experience?: string;
+  applyUrl: string;
+};
+
 export type DataStore = {
   sectorData: SectorDataItem[];
   citiesData: CityDataItem[];

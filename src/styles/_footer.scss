@@ -83,6 +83,21 @@ footer {
             margin-bottom: 20px;
           }
 
+          .careers-footer-link {
+            margin-bottom: 18px;
+
+            a {
+              color: $color-primary;
+              font-weight: 500;
+              text-decoration: underline;
+              text-underline-offset: 3px;
+
+              &:hover {
+                color: $color-white;
+              }
+            }
+          }
+
           .contact-form {
             margin-bottom: 15px;
             .form-group {

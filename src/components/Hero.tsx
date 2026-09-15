@@ -16,13 +16,13 @@ const Hero = () => {
 
         <div className="container">
           <div className="hero-wrapper">
-            <div
+            {/* <div
               className="years text-up"
               data-aos="fade-up"
               data-aos-duration="800"
             >
               <span></span>5 Years — 40+ Events
-            </div>
+            </div> */}
             <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
               <span className="text-pry">
                 Developing Africa&apos;s Businesses{" "}

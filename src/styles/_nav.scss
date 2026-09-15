@@ -65,21 +65,40 @@ nav {
                 }
               }
 
-              &:last-child {
-                margin-left: 20px;
+              &.nav-cta {
+                margin-left: 8px;
+
+                &.hiring {
+                  margin-left: 20px;
+                }
+
                 a {
                   height: 100%;
                   width: 100%;
                   border-radius: 0;
-                  padding: 0 30px;
+                  padding: 0 22px;
                   border: 2px solid $color-secondary;
                   text-align: center;
                   background: $color-secondary;
                   color: $color-white;
+                  white-space: nowrap;
+                  font-weight: 500;
 
                   &:hover {
                     background: $color-white;
                     color: $color-secondary;
+                  }
+                }
+
+                &.hiring a {
+                  background: $color-primary;
+                  border-color: $color-primary;
+                  color: $color-white;
+
+                  &:hover {
+                    background: $color-secondary;
+                    border-color: $color-secondary;
+                    color: $color-white;
                   }
                 }
               }
@@ -117,7 +136,7 @@ nav {
           font-weight: 500;
 
           li {
-            padding: 5px 10px;
+            padding: 5px 8px;
           }
 
           li.has-submenu {

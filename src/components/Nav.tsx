@@ -96,7 +96,10 @@ const Nav = () => {
                     <Icon icon="bi:instagram" />
                   </Link>
                 </li>
-                <li>
+                <li className="nav-cta hiring">
+                  <Link href="/careers">We&apos;re Hiring</Link>
+                </li>
+                <li className="nav-cta">
                   <Link href="#footer">Contact</Link>
                 </li>
               </ul>
@@ -126,6 +129,7 @@ const Nav = () => {
                 { path: "/gallery", label: "Gallery" },
                 { path: "/blog", label: "Blog" },
                 { path: "/get-involved", label: "Get Involved" },
+                { path: "/careers", label: "Careers" },
               ].map(({ path, label }) => (
                 <li key={path} className={pathname === path ? "current" : ""}>
                   <Link href={path}>{label}</Link>
@@ -193,6 +197,7 @@ const Nav = () => {
                 { path: "/gallery", label: "Gallery" },
                 { path: "/blog", label: "Blog" },
                 { path: "/get-involved", label: "Get Involved" },
+                { path: "/careers", label: "Careers" },
               ].map(({ path, label }) => (
                 <li key={path} className={pathname === path ? "current" : ""}>
                   <Link href={path} onClick={toggleMobileNav}>
