@@ -153,7 +153,7 @@ const Nav = () => {
                 </ul>
               </li> */}
               <li className="has-submenu">
-                <Link href="/calendar/2026-eventhive-calender.pdf" download>
+                <Link href="/calendar/2026-eventhive-calendar.pdf" download>
                   Download Calendar <Icon icon="typcn:arrow-sorted-down" />
                 </Link>
               </li>
