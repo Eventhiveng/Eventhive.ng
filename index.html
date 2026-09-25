@@ -47,11 +47,20 @@
   </head>
 
   <body>
-    <div id="preloader">
-      <div class="pulse-loader">
-        <div class="pulse"></div>
-        <div class="pulse"></div>
-        <div class="pulse"></div>
+    <div id="preloader" aria-hidden="true">
+      <div class="preloader-inner">
+        <div class="preloader-emblem">
+          <span class="preloader-ring"></span>
+          <span class="preloader-ring preloader-ring--reverse"></span>
+          <img
+            src="assets/logo/ctl-logo-white.png"
+            alt=""
+            class="preloader-logo"
+          />
+        </div>
+        <div class="preloader-track">
+          <div class="preloader-bar"></div>
+        </div>
       </div>
     </div>
 
@@ -139,6 +148,9 @@
           <div class="hero-container">
             <div class="container">
               <div class="hero-wrapper">
+                <!-- <p class="hero-eyebrow" data-aos="fade-up">
+                  An event by Eventhive
+                </p> -->
                 <h1 data-aos="fade-up" data-aos-delay="100">
                   CyberTrust Leaders Roundtable
                 </h1>

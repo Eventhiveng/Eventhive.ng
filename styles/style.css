@@ -1,34 +1,107 @@
 #preloader {
   position: fixed;
   inset: 0;
-  background: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(0, 180, 255, 0.12), transparent 55%),
+    linear-gradient(165deg, #0a0618 0%, var(--primary-color) 45%, #050508 100%);
 }
 
-#preloader .pulse-loader {
+#preloader .preloader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: min(320px, 85vw);
+}
+
+#preloader .preloader-emblem {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#preloader .pulse {
+#preloader .preloader-logo {
+  width: auto;
+  height: auto;
+  max-width: 48%;
+  max-height: 44%;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  animation: preloader-logo-pulse 1.8s ease-in-out infinite;
+}
+
+#preloader .preloader-ring {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   border-radius: 50%;
-  background: rgba(220, 233, 74, 0.15);
-  animation: pulse 1.5s ease-in-out infinite;
+  border: 2px solid transparent;
+  border-top-color: var(--secondary-color);
+  border-right-color: rgba(0, 180, 255, 0.65);
+  animation: preloader-spin 1.1s linear infinite;
 }
 
-#preloader .pulse:nth-child(2) {
-  animation-delay: 0.5s;
+#preloader .preloader-ring--reverse {
+  inset: 14px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: rgba(220, 233, 74, 0.45);
+  border-left-color: rgba(0, 180, 255, 0.35);
+  animation: preloader-spin 1.6s linear infinite reverse;
 }
 
-#preloader .pulse:nth-child(3) {
-  animation-delay: 1s;
+#preloader .preloader-track {
+  width: 100%;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+#preloader .preloader-bar {
+  height: 100%;
+  width: 40%;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color),
+    var(--primary-light-color)
+  );
+  animation: preloader-bar-slide 1.2s ease-in-out infinite;
+}
+
+@keyframes preloader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-logo-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px rgba(220, 233, 74, 0.35));
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 16px rgba(0, 180, 255, 0.45));
+  }
+}
+
+@keyframes preloader-bar-slide {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
 }
 
 #navbar .nav-container {
