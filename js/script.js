@@ -8,7 +8,8 @@ $(function () {
         AOS.init({
           duration: 1000,
         });
-        $("#announcement-popup").css("display", "flex").hide().fadeIn();
+        // Announcement popup disabled for now
+        // $("#announcement-popup").css("display", "flex").hide().fadeIn();
       });
     });
   }, 1000); // Delay of 1 second
@@ -33,19 +34,20 @@ $(document).ready(function () {
 
   const $testimonialSlide = $(".testimonial-slides");
 
-  const hideAnnouncementPopup = () => {
-    $("#announcement-popup").fadeOut(function () {
-      $(this).css("display", "none");
-    });
-  };
+  // Announcement popup disabled for now
+  // const hideAnnouncementPopup = () => {
+  //   $("#announcement-popup").fadeOut(function () {
+  //     $(this).css("display", "none");
+  //   });
+  // };
 
-  $("#closeAnnouncementPopup").click(hideAnnouncementPopup);
+  // $("#closeAnnouncementPopup").click(hideAnnouncementPopup);
 
-  $("#announcement-popup").click(function (event) {
-    if ($(event.target).is("#announcement-popup")) {
-      hideAnnouncementPopup();
-    }
-  });
+  // $("#announcement-popup").click(function (event) {
+  //   if ($(event.target).is("#announcement-popup")) {
+  //     hideAnnouncementPopup();
+  //   }
+  // });
 
   // Toggle Nav
   const toggleNav = () => {
