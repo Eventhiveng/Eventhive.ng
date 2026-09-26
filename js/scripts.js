@@ -2,21 +2,22 @@
   $(document).ready(function () {
     "use strict";
 
-    const hideAnnouncementPopup = () => {
-      $("#announcement-popup").fadeOut(function () {
-        $(this).css("display", "none");
-      });
-    };
+    // Announcement popup disabled for now
+    // const hideAnnouncementPopup = () => {
+    //   $("#announcement-popup").fadeOut(function () {
+    //     $(this).css("display", "none");
+    //   });
+    // };
 
-    $("#announcement-popup").css("display", "flex").hide().fadeIn();
+    // $("#announcement-popup").css("display", "flex").hide().fadeIn();
 
-    $("#closeAnnouncementPopup").on("click", hideAnnouncementPopup);
+    // $("#closeAnnouncementPopup").on("click", hideAnnouncementPopup);
 
-    $("#announcement-popup").on("click", function (event) {
-      if ($(event.target).is("#announcement-popup")) {
-        hideAnnouncementPopup();
-      }
-    });
+    // $("#announcement-popup").on("click", function (event) {
+    //   if ($(event.target).is("#announcement-popup")) {
+    //     hideAnnouncementPopup();
+    //   }
+    // });
 
     /* MENU TOGGLE */
     $(".side-widget .site-menu ul li i").on("click", function (e) {
