@@ -39,14 +39,21 @@ export function parseEventStartDate(event: EventPageData): Date | null {
       `${month} ${day}, ${year}`
   );
 
-  const dt = new Date(legacyNormalized);
+  // "September 29th, 2026" / "October 1st, 2026" are not valid Date strings.
+  // Drop the ordinal so the day is preserved.
+  const ordinalStripped = legacyNormalized.replace(
+    /(\d{1,2})(st|nd|rd|th)\b/gi,
+    "$1"
+  );
+
+  const dt = new Date(ordinalStripped);
   if (!Number.isNaN(dt.getTime())) return dt;
 
   // Fallback: use eventMonth + first day we can find.
   const monthIdx = MONTH_INDEX[(event.eventMonth || "").toLowerCase()];
   if (monthIdx === undefined) return null;
 
-  const dayMatch = raw.match(/\b(\d{1,2})\b/);
+  const dayMatch = raw.match(/\b(\d{1,2})(?:st|nd|rd|th)?\b/i);
   const yearMatch = raw.match(/\b(20\d{2})\b/);
   const day = dayMatch ? Number(dayMatch[1]) : 1;
   const year = yearMatch ? Number(yearMatch[1]) : new Date().getFullYear();
