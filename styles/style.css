@@ -888,6 +888,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 40px;
 }
 
 .sponsors-logo {
@@ -897,7 +898,9 @@
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
@@ -944,7 +947,9 @@
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
