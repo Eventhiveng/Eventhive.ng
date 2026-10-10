@@ -1689,17 +1689,126 @@
   margin-bottom: 8px;
 }
 
-#meet .meet-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+#meet .meet-container {
+  position: relative;
 }
 
-#meet .meet-grid span {
+#meet .meet-container::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 320px;
+  height: 320px;
+  background: #e67e2266;
+  filter: blur(110px);
+  z-index: 0;
+}
+
+#meet .container {
+  position: relative;
+  z-index: 1;
+}
+
+#meet .section-header {
+  width: 100%;
+}
+
+#meet p {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+#meet .meet-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+#meet .meet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  min-height: 180px;
+  padding: 28px 24px;
   border: 1px solid #ffffff1a;
+  border-radius: 16px;
   background: #2c181099;
-  border-radius: 999px;
-  padding: 12px 18px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+#meet .meet-card:hover {
+  transform: translateY(-8px);
+  border-color: #e67e2280;
+}
+
+#meet .meet-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+#meet .meet-icon.real-estate {
+  background: #34495e;
+}
+#meet .meet-icon.manufacturing {
+  background: #3498db;
+}
+#meet .meet-icon.telecom {
+  background: #8b4513;
+}
+#meet .meet-icon.agribusiness {
+  background: #27ae60;
+}
+#meet .meet-icon.hospitality {
+  background: #16a085;
+}
+#meet .meet-icon.education {
+  background: #8e44ad;
+}
+#meet .meet-icon.construction {
+  background: #e74c3c;
+}
+#meet .meet-icon.government {
+  background: #e67e22;
+}
+#meet .meet-icon.solar {
+  background: #f39c12;
+}
+#meet .meet-icon.storage {
+  background: #d35400;
+}
+#meet .meet-icon.finance {
+  background: #9b59b6;
+}
+#meet .meet-icon.mobility {
+  background: #1abc9c;
+}
+
+#meet .meet-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+@media screen and (max-width: 991px) {
+  #meet .meet-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 567px) {
+  #meet .meet-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 #partner .partnership-buttons {
