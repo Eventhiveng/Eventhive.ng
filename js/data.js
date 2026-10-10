@@ -90,6 +90,13 @@ const speakers = [
     image: "assets/images/speakers/dr-ayo-alo.png",
     linkedIn: "#",
   },
+  {
+    name: "Ifeoluwa Oluwabunmi Famuyiwa",
+    title: "Head, Real Estate Acquisitions and Investment,",
+    company: "JODOA Properties",
+    image: "assets/images/speakers/ifeoluwa-oluwabunmi-famuyiwa.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakers = [
