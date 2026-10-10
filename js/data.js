@@ -83,6 +83,13 @@ const speakers = [
     image: "assets/images/speakers/bright-okereke.png",
     linkedIn: "#",
   },
+  {
+    name: "Dr Ayo Alo",
+    title: "CEO,",
+    company: "Axial Pacific Realty",
+    image: "assets/images/speakers/dr-ayo-alo.png",
+    linkedIn: "#",
+  },
 ];
 
 // const speakers = [
