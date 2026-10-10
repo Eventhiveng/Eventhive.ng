@@ -1,81 +1,214 @@
-/* Responsive Design */
-/* Tab pro */
-@media (max-width: 1024px) {
-  #about .about-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+/* Big screen */
+@media only screen and (max-width: 1200px) {
+  /* Hero */
+  #hero .hero-wrapper .hero-buttons {
+    flex-direction: column;
+  }
+
+  /* Hero */
+
+  #hero .hero-wrapper {
+    width: 80%;
+  }
+
+  #hero .hero-wrapper .hero-description {
+    width: 100%;
+  }
+
+  /* Who attends */
+  #who-attends .who-attends-cards {
+    flex: 1 1 calc((100% - 30px) / 2);
+  }
+
+  #who-attends .who-attends-cards .image {
+    height: 300px;
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 calc((100% - 60px) / 3);
+  }
+}
+
+/* Tab Pro */
+@media only screen and (max-width: 991px) {
+  /* #counter .count-wrapper .top {
+    display: block;
+  } */
+
+  /* Navbar */
+  #navbar .nav-wrapper .nav-links {
+    display: none;
+  }
+
+  #navbar .nav-wrapper .hamburger {
+    display: flex;
+  }
+
+  #navbar .nav-wrapper .button {
+    display: none;
+  }
+
+  /* Counter */
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .logo {
+    flex: 0 0 100%;
+    border-bottom: 3px solid var(--white);
+  }
+
+  /* Why attend */
+  #why-attend .why-attend-box-container .why-attend-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Partner */
+  #partner .partner-wrapper .partner-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Whats new */
+  #whatsnew .whatsnew-wrapper .whatsnew-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Engage Leaders */
+  #engage-leaders .engage-wrapper {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  #engage-leaders .engage-wrapper .engage-left,
+  #engage-leaders .engage-wrapper .engage-right,
+  #engage-leaders .engage-wrapper .engage-action {
+    width: 100%;
+  }
+
+  #engage-leaders .engage-wrapper .engage-action-desktop {
+    display: none;
+  }
+
+  #engage-leaders .engage-wrapper .engage-action-mobile {
+    display: block;
+    margin-top: 24px;
+  }
+
+  /* Event Recap */
+  #event-recap-section .event-recap-wrapper .video-container {
+    height: 500px;
   }
 }
 
 /* Tablet */
-@media (max-width: 768px) {
-  #navbar .nav-menu {
+@media only screen and (max-width: 768px) {
+  /* Hero */
+  #hero .hero-wrapper {
+    width: 100%;
+  }
+
+  #hero .hero-wrapper .hero-description {
+    width: 100%;
+  }
+
+  #hero .hero-image {
     display: none;
   }
 
-  #navbar .nav-toggle {
-    display: flex;
-  }
-
-  #hero .hero-buttons {
+  /* About */
+  #about .about-wrapper {
     flex-direction: column;
-    align-items: center;
   }
 
-  .expectations-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .speakers-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .sponsor-logos {
-    gap: 2rem;
-  }
-
-  .sponsor-logo-item {
-    width: 200px;
-    height: 120px;
-  }
-
-  .partnership-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .highlights-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .logo-item {
-    width: 150px;
-    height: 90px;
-    padding: 1rem;
-  }
-
-  .gallery-img {
-    width: 300px !important;
-    height: 220px;
-  }
-
-  .partnership-buttons {
+  #about .about-wrapper .right {
     flex-direction: column;
-    align-items: center;
   }
 
-  .preloader-text {
-    font-size: 1.5rem;
+  #about .about-wrapper .right .hidden-image {
+    display: block;
   }
 
-  .loading-bar {
-    width: 220px;
+  /* Event Intro */
+  #event-intro .event-intro-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Counter */
+  #counter .count-wrapper {
+    border-radius: 32px;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(4) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(5),
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
+  }
+
+  /* Key */
+  #key .key-box-container .key-box {
+    flex: 0 0 100%;
+    flex-direction: column;
+  }
+
+  /* Why attend */
+  #why-attend .why-attend-box-container .why-attend-box {
+    flex: 0 0 100%;
+  }
+
+  /* Who attends */
+  #who-attends .who-attends-cards {
+    flex: 1 1 100%;
+  }
+
+  /* Partner */
+  #partner .partner-wrapper .partner-box {
+    flex: 0 0 100%;
+  }
+  /* Whats new */
+  #whatsnew .whatsnew-wrapper .whatsnew-box {
+    flex: 0 0 100%;
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 100%;
+  }
+
+  #speakers .speakers-box-container .speaker-box .speaker-image {
+    height: 400px;
+  }
+
+  /* Testimonial */
+  #testimonial .testimonial-subwrapper {
+    flex-direction: column-reverse;
+  }
+
+  /* Event Recap */
+  #event-recap-section .event-recap-wrapper .video-container {
+    height: 400px;
   }
 
   /* Footer */
   #footer .footer-wrapper .top {
     flex-direction: column;
-    flex-wrap: nowrap;
   }
 
   #footer .footer-wrapper .top .quick-links {
@@ -84,78 +217,33 @@
 }
 
 /* Mobile */
-@media (max-width: 480px) {
-  .countup-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media only screen and (max-width: 568px) {
+  /* Hero */
+  #hero .hero-wrapper .icon.icon-1 {
+    left: 2%;
+    top: -15%;
+  }
+  #hero .hero-wrapper .icon.icon-2 {
+    right: 2%;
+    top: -13%;
   }
 
-  .attendees-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .speakers-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  /* .speaker-image {
-    height: 300px;
-  } */
-
-  .sponsor-logo-item {
-    width: 180px;
-    height: 100px;
-    padding: 1.5rem;
-  }
-
-  .sponsor-tier-title {
-    font-size: 1.5rem;
-  }
-
-  .focus-points {
-    grid-template-columns: 1fr;
-  }
-
-  .thematic-areas {
+  #hero .hero-wrapper .hero-buttons {
     flex-direction: column;
-    align-items: center;
   }
 
-  .logo-item {
-    width: 130px;
-    height: 80px;
-    padding: 0.8rem;
+  /* Counter */
+  #counter .count-wrapper .bottom .count-box:nth-child(3),
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: none;
   }
 
-  .gallery-img {
-    width: 280px !important;
-    height: 200px;
+  #counter .count-wrapper .bottom .count-box:nth-child(4),
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
   }
 
-  .logos-track {
-    gap: 1.5rem;
-  }
-
-  .preloader-text {
-    font-size: 1.4rem;
-  }
-
-  .loading-bar {
-    width: 200px;
-  }
-
-  .solar-loader {
-    width: 120px;
-    height: 120px;
-  }
-
-  .sun {
-    width: 50px;
-    height: 50px;
-  }
-
-  .planet {
-    width: 16px;
-    height: 16px;
+  #counter .count-wrapper .bottom .count-box:nth-child(4) {
+    border-right: 3px solid var(--white);
   }
 }
