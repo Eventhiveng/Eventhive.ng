@@ -1081,6 +1081,12 @@
     transform var(--transition); */
 }
 
+#sponsors a.sponsors-logo,
+#sponsors a.sponsors-tier-logo-lg {
+  text-decoration: none;
+  color: inherit;
+}
+
 #sponsors .sponsors-logo img,
 #sponsors .sponsors-tier-logo-lg img {
   max-width: 100%;
