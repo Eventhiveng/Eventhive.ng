@@ -907,6 +907,11 @@
   align-items: center;
 }
 
+#sponsors-section a.sponsors-logo {
+  text-decoration: none;
+  color: inherit;
+}
+
 .sponsors-logo:hover {
   transform: scale(1.05);
   /* background: rgba(255, 255, 255, 0.1); */
