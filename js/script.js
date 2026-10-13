@@ -1,13 +1,11 @@
 $(function () {
   setTimeout(function () {
-    $("#preloader").fadeOut("500", function () {
-      $(".main-container").fadeIn("500", function () {
-        AOS.init({
-          duration: 1000,
-        });
+    $("#preloader").fadeOut(500, function () {
+      AOS.init({
+        duration: 1000,
       });
     });
-  }, 1000);
+  }, 800);
 });
 
 $(document).ready(function () {
