@@ -11,6 +11,7 @@ import Preloader from "@/components/Preloader";
 import PreloaderManager from "@/components/PreloaderManager";
 import ClientOnly from "@/components/ClientOnly";
 import ConditionalMarquee from "@/components/ConditionalMarquee";
+import Calendar2027Announcement from "@/components/Calendar2027Announcement";
 import AOSInit from "@/components/AOSInit";
 
 // const geistSans = Geist({
@@ -183,6 +184,7 @@ export default function RootLayout({
           <CustomCursor />
           <ScrollTop />
           <ConditionalMarquee />
+          <Calendar2027Announcement />
         </ClientOnly>
         <div className="main-content">
           <Nav />

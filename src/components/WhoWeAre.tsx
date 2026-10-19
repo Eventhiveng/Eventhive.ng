@@ -1,5 +1,6 @@
 import SectionHeader from "./SectionHeader";
 import Image from "next/image";
+import { CALENDAR_2027_PDF } from "@/util/calendar2027";
 
 const WhoWeAre = () => {
   return (
@@ -42,14 +43,14 @@ const WhoWeAre = () => {
           </div>
 
           <a
-            href="/calendar/2026-eventhive-calendar.pdf"
+            href={CALENDAR_2027_PDF}
             download
             className="btn btn-pry"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delat="300"
           >
-            Download 2026 Event Calendar
+            Download 2027 Event Calendar
           </a>
         </div>
         <div

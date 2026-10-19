@@ -1,3 +1,5 @@
+import { CALENDAR_2027_PDF } from "@/util/calendar2027";
+
 const Hero = () => {
   return (
     <section className="hero">
@@ -49,7 +51,7 @@ const Hero = () => {
             </div>
 
             <a
-              href="/calendar/2026-eventhive-calendar.pdf"
+              href={CALENDAR_2027_PDF}
               download
               className="btn btn-pry"
               data-aos="fade-up"
@@ -57,7 +59,7 @@ const Hero = () => {
               data-aos-delay="300"
               data-aos-offset="-100"
             >
-              Dowload 2026 Event Calendar
+              Download 2027 Event Calendar
             </a>
           </div>
         </div>

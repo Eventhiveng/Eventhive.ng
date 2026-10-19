@@ -1,6 +1,7 @@
 import Carousel from "./Carousel";
 import SectionHeader from "./SectionHeader";
 import data from "../util/data";
+import { CALENDAR_2027_PDF } from "@/util/calendar2027";
 
 const Events = () => {
   return (
@@ -13,14 +14,14 @@ const Events = () => {
             type={"single"}
           />
           <a
-            href="/calendar/2026-eventhive-calendar.pdf"
+            href={CALENDAR_2027_PDF}
             download
             className="btn btn-pry"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="300"
           >
-            Download 2026 Event Calendar
+            Download 2027 Event Calendar
           </a>
         </div>
         <div className="events-wrapper">

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { CALENDAR_2027_PDF } from "@/util/calendar2027";
 
 const Nav = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -153,7 +154,7 @@ const Nav = () => {
                 </ul>
               </li> */}
               <li className="has-submenu">
-                <Link href="/calendar/2026-eventhive-calendar.pdf" download>
+                <Link href={CALENDAR_2027_PDF} download>
                   Download Calendar <Icon icon="typcn:arrow-sorted-down" />
                 </Link>
               </li>
@@ -223,7 +224,7 @@ const Nav = () => {
                 </ul>
               </li> */}
               <li className="has-submenu">
-                <Link href="/calendar/2026-eventhive-calendar.pdf" download>
+                <Link href={CALENDAR_2027_PDF} download>
                   Download Calendar <Icon icon="typcn:arrow-sorted-down" />
                 </Link>
               </li>
