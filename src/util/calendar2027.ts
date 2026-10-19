@@ -1,1 +1,1 @@
-export const CALENDAR_2027_PDF = "/calendar/2026-eventhive-calendar.pdf";
+export const CALENDAR_2027_PDF = "/calendar/2027-eventhive-calendar.pdf";
