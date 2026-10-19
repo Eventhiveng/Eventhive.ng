@@ -635,6 +635,7 @@
 #speakers .speakers-box-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 60px 30px;
 }
 
@@ -650,6 +651,7 @@
   height: 300px;
   border-radius: 8px;
   overflow: hidden;
+  background: #f4f6fb;
 }
 
 #speakers .speakers-box-container .speaker-box .speaker-image img {
@@ -669,6 +671,7 @@
   margin: 10px 0;
   font-size: 14px;
   opacity: 0.85;
+  min-height: 3.7em;
 }
 
 #speakers .speakers-box-container .speaker-box .speaker-info .company {
