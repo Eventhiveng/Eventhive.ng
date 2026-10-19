@@ -1964,6 +1964,39 @@ const data: DataStore = {
         "Build partnerships for deal making and growth",
       ],
     },
+    {
+      banner: "/images/events/banner/cybertrust.jpg",
+      event: "CyberTrust Leaders Roundtable",
+      eventMonth: "November",
+      eventDate: "November 23, 2026",
+      eventStatus: "active",
+      slug: "cybertrust-leaders-roundtable",
+      title: "CyberTrust Leaders Roundtable 2026",
+      location: "Fourpoints by Sheraton, Victoria Island, Lagos",
+      externalLink:
+        "https://tix.africa/discover/cyber-trust-leaders-roundtable-2026",
+      pic1: "/images/events/event-pics/cybertrust-1.jpg",
+      pic2: "/images/events/event-pics/cybertrust-2.jpg",
+      pic3: "/images/events/event-pics/cybertrust-3.jpg",
+      majorDesc: `
+        <p>
+          The CyberTrust Leaders Roundtable is a closed-door executive forum for leaders shaping cybersecurity, risk, identity and customer protection across Nigeria's most digitally connected industries. Where digital trust meets cyber resilience.
+        </p>
+      `,
+      minorDesc: `
+        <p>
+          Nigeria's economy is becoming increasingly digital, and with that comes a parallel challenge: trust. The roundtable brings together C-level executives, cybersecurity leaders, regulators and technology providers across financial services, telecommunications, e-commerce, insurance and government to examine how organisations protect their systems, customers and data.
+          <br><br>
+          The first edition focuses on cyber-enabled fraud, identity theft, AI-powered attacks, deepfakes and data breaches, and the partnerships required to build more resilient organisations. It takes place on the 23rd of November, 2026 at Four Points by Sheraton, Victoria Island, Lagos.
+        </p>
+      `,
+      whyParticipate: [
+        "Get ahead of AI-powered attacks, deepfakes and synthetic identities before they reach your organisation.",
+        "Hear from CISOs, CROs and CIOs at leading banks, fintechs, telcos and platforms on what is actually working.",
+        "Engage regulators from the CBN, NDPC, NITDA and EFCC on where policy is heading.",
+        "Meet identity, fraud-prevention and threat-intelligence providers in a closed-door format.",
+      ],
+    },
   ],
 };
 
