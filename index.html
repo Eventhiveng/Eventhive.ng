@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/logo/icon.png" type="image/x-icon" />
 
     <meta
       name="description"
-      content="Join Africa's leading gathering of fintech stakeholders at Africa Fintech Live, 18th May 2027, Sarit Expo Center, Nairobi. Explore innovations, trends, and opportunities shaping the future of finance across the continent."
+      content="Africa Fintech Live is East Africa's #1 fintech show. 18 May 2027 at Sarit Expo Center, Nairobi. Africa's fintech ecosystem, united under one roof."
     />
-
     <meta
       name="keywords"
-      content="Africa Fintech Live, Fintech Event Africa, Financial Innovation, Fintech Trends, Finance in Africa, Nairobi Fintech Expo, African Financial Ecosystem, Fintech Stakeholders, Banking Technology, Fintech Conference 2026"
+      content="Africa Fintech Live, East Africa fintech, Nairobi fintech event, payments, banking, digital assets, Sarit Expo Center"
     />
 
-    <title>Africa Fintech Live | Nairobi</title>
+    <link rel="shortcut icon" href="assets/logo/icon.png" type="image/x-icon" />
 
-    <!-- Slick css -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -28,129 +25,153 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-
-    <!-- Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <!-- Odometer -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
 
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/util.css" />
     <link rel="stylesheet" href="styles/media.css" />
     <link rel="stylesheet" href="styles/default.css" />
+    <title>Africa Fintech Live | Nairobi</title>
   </head>
 
   <body>
-    <!-- Announcement Modal -->
-    <div id="announcement-modal" class="announcement-modal">
-      <div class="announcement-modal-overlay"></div>
-      <div class="announcement-modal-content">
-        <button
-          class="announcement-modal-close"
-          aria-label="Close announcement"
-        >
-          <iconify-icon icon="ph:x" size="24"></iconify-icon>
-        </button>
-        <div class="announcement-image-wrapper">
-          <img
-            src="/assets/announcement/prices-up-soon.jpeg"
-            alt="Prices going up soon - Register now and save 50% off"
-          />
-        </div>
-        <div class="announcement-download">
-          <div
-            class="btn btn-pry get-ticket-btn"
-            data-aos="fade-up"
-            data-aos-delay="200"
+    <div id="preloader">
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div id="announcement-modal" class="announcement-modal">
+        <div class="announcement-modal-overlay"></div>
+        <div class="announcement-modal-content">
+          <button
+            class="announcement-modal-close"
+            aria-label="Close announcement"
           >
-            <span class="icon front">
-              <iconify-icon icon="ph:ticket"></iconify-icon>
-            </span>
-            <span class="text">Ticket </span>
-            <span class="icon back">
-              <iconify-icon icon="ph:ticket"></iconify-icon>
-            </span>
+            <iconify-icon icon="ph:x" size="24"></iconify-icon>
+          </button>
+          <div class="announcement-image-wrapper">
+            <img
+              src="/assets/announcement/prices-up-soon.jpeg"
+              alt="Prices going up soon - Register now and save 50% off"
+            />
           </div>
         </div>
       </div>
-    </div>
-    <!-- <div id="announcementModal" class="modal-overlay">
-    <div class="modal-content">
-      <h2>- Announcement -</h2>
-      <h3>Early bird tickets close out soon.</h3>
-      <p>Secure your pass at <strong>50%</strong> off standard price now!</p>
-      <p>Hurry while the offer lasts!</p>
-      <button id="claimOffer" class="get-ticket-btn">Get Ticket</button>
-      <a class="modal-download-agenda" href="assets/downloads/2026-afl-agenda.pdf"
-        download="2026-AFL-Agenda.pdf">Download agenda (PDF)</a>
-      <button id="closeModal">Close</button>
-    </div>
-  </div> -->
 
-    <!-- Popup Modal -->
-    <div id="ticket-popup" class="popup">
-      <div class="popup-container">
-        <div class="popup-content">
-          <span class="close-btn">&times;</span>
-          <h2>Select Your Ticketing Platform</h2>
-          <a
-            href="https://tix.africa/africa-fintech-live-2026"
-            target="_blank"
-            class="btn btn-pry"
-            >Get a Ticket (Tix[USD])
-          </a>
-          <a
-            href="https://www.eventbrite.com/e/1782680819319?aff=oddtdtcreator"
-            target="_blank"
-            class="btn btn-sec"
-            >Get a Ticket (Eventbrite[USD])</a
-          >
-          <a
-            href="https://eventhive.hustlesasa.shop/products/69c56f5d37f7bb0ead2d200d"
-            target="_blank"
-            class="btn btn-sec"
-            >Get a Ticket (Hustlesasa[KES])</a
-          >
+      <div id="ticket-popup" class="popup">
+        <div class="popup-container">
+          <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Select Your Ticketing Platform</h2>
+            <a
+              href="https://tix.africa/discover/africa-fintech-live-2027"
+              target="_blank"
+              class="btn btn-pry"
+              >Get a Ticket (Tix[USD])</a
+            >
+            <a
+              href="https://www.eventbrite.com/e/africa-fintech-live-2027-tickets-2003827767795?aff=oddtdtcreator"
+              target="_blank"
+              class="btn btn-sec"
+              >Get a Ticket (Eventbrite[USD])</a
+            >
+            <a
+              href="https://eventhive.hustlesasa.shop/products/6adb840980d092d31e90a6bd"
+              target="_blank"
+              class="btn btn-sec"
+              >Get a Ticket (Hustlesasa[KES])</a
+            >
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Header -->
-    <header>
-      <!-- Nav -->
-      <nav id="nav">
-        <div class="nav-container">
-          <div class="container">
-            <div class="nav-wrapper">
-              <div class="hamburger" data-aos="fade-up" data-aos-delay="200">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <div class="button mobile-btn">
-                <div
-                  class="btn btn-pry get-ticket-btn"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <span class="icon front">
-                    <iconify-icon icon="ph:ticket"></iconify-icon>
-                  </span>
-                  <span class="text">Ticket </span>
-                  <span class="icon back">
-                    <iconify-icon icon="ph:ticket"></iconify-icon>
-                  </span>
+      <header>
+        <nav id="navbar">
+          <div class="nav-container">
+            <div class="external-container">
+              <div class="nav-wrapper">
+                <div class="logo">
+                  <a href="/">
+                    <div class="logo-icon">
+                      <img
+                        src="assets/logo/afl-white-yellow-logo.png"
+                        alt="Africa Fintech Live"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="nav-links">
+                  <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#partner">Partnership</a></li>
+                    <li>
+                      <a
+                        href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Exhibition%20Deck"
+                        >Exhibition</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="assets/downloads/2026-afl-agenda.pdf"
+                        download="2026-AFL-Agenda.pdf"
+                        >Agenda</a
+                      >
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="button">
+                  <a href="#" class="btn btn-sec get-ticket-btn">Get a Ticket</a>
+                </div>
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
               </div>
+            </div>
+          </div>
+        </nav>
+
+        <aside id="aside">
+          <div class="aside-container">
+            <div class="aside-wrapper">
+              <div class="logo">
+                <a href="/">
+                  <img
+                    src="assets/logo/afl-white-yellow-logo.png"
+                    alt="Africa Fintech Live"
+                  />
+                </a>
+              </div>
               <div class="nav-links">
-                <ul data-aos="fade-up" data-aos-delay="200">
+                <ul>
+                  <li class="active"><a href="#">Home</a></li>
                   <li><a href="#about">About</a></li>
-                  <li><a href="#partner">Partner</a></li>
+                  <li><a href="#partner">Partnership</a></li>
+                  <li>
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Exhibition%20Deck"
+                      >Exhibition</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="get-ticket-btn">Tickets</a>
+                  </li>
                   <li>
                     <a
                       href="assets/downloads/2026-afl-agenda.pdf"
@@ -158,710 +179,780 @@
                       >Agenda</a
                     >
                   </li>
-                  <li><a href="mailto:jamiu@eventhive.com">Exhibition</a></li>
                   <li><a href="#contact">Contact</a></li>
                 </ul>
               </div>
-              <div class="logo" data-aos="zoom-in" data-aos-delay="100">
-                <a href="/">
-                  <img src="/assets/logo/afl-white-yellow-logo.png" alt="" />
-                </a>
-              </div>
-              <div class="button">
-                <div
-                  class="btn btn-pry get-ticket-btn"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
+              <div>
+                <small
+                  >&copy; <span class="year">2026</span>. An event by
+                  eventhive</small
                 >
-                  <span class="icon front">
-                    <iconify-icon icon="ph:ticket"></iconify-icon>
-                  </span>
-                  <span class="text">Ticket </span>
-                  <span class="icon back">
-                    <iconify-icon icon="ph:ticket"></iconify-icon>
-                  </span>
-                </div>
-                <!-- <a
-                  href="#"
-                  class="btn btn-pry get-ticket-btn"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <span class="icon front">
-                    <iconify-icon icon="ph:ticket"></iconify-icon>
-                  </span>
-                  <span class="text">Get Ticket </span>
-                  <span class="icon back">
-                    <iconify-icon icon="ph:ticket"></iconify-icon>
-                  </span>
-                </a> -->
               </div>
             </div>
           </div>
-        </div>
-      </nav>
-      <!-- Aside -->
-      <aside id="aside">
-        <div class="aside-container">
-          <div class="aside-wrapper">
-            <div class="logo">
-              <a href="/">
-                <img src="/assets/logo/afl-white-yellow-logo.png" alt="" />
-              </a>
-            </div>
-            <div class="nav-links">
-              <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#partner">Partner</a></li>
-                <li><a href="">Exhibition</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-            <div class="aside-download">
-              <a
-                href="assets/downloads/2026-afl-agenda.pdf"
-                download="2026-AFL-Agenda.pdf"
-                class="btn btn-sec"
-              >
-                <span class="icon front">
-                  <iconify-icon icon="ph:download-simple"></iconify-icon>
-                </span>
-                <span class="text">Download agenda</span>
-                <span class="icon back">
-                  <iconify-icon icon="ph:download-simple"></iconify-icon>
-                </span>
-              </a>
-            </div>
-            <div>
-              <small
-                >&copy; <span class="year">2025</span>. An event by
-                eventhive</small
-              >
-            </div>
-          </div>
-        </div>
-      </aside>
-    </header>
+        </aside>
+      </header>
 
-    <!-- Main -->
-    <main>
-      <!-- Hero -->
-      <section id="hero">
-        <div class="hero-container" data-aos="zoom-out">
-          <div class="container">
-            <div class="hero-wrapper">
-              <div class="container">
-                <div class="hero-header o-hidden">
-                  <h1
-                    data-aos="zoom-out-down"
-                    data-aos-delay="500"
-                    data-aos-anchor="#hero"
-                  >
-                    Driving Financial
-                    <span class="text-pry">Innovation Across Africa</span>
+      <main>
+        <section id="hero">
+          <div class="hero-container">
+            <div class="container">
+              <div class="hero-wrapper">
+                <div class="hero-header">
+                  <h1 data-aos="fade-up" data-aos-delay="100">
+                    <span>East Africa's #1 Fintech Show</span>
                   </h1>
                 </div>
-
-                <div
-                  class="hero-event-details"
-                  data-aos="fade-up"
-                  data-aos-delay="550"
-                  data-aos-anchor="#hero"
-                >
-                  <p class="date-location">
-                    <span class="text-pry">18th May, 2027</span> |
-                    <span>Sarit Expo Center, Nairobi, Kenya</span>
+                <div class="hero-description">
+                  <p data-aos="fade-up" data-aos-delay="200">
+                    Africa's fintech ecosystem united under one roof
                   </p>
                 </div>
-
-                <div class="hero-description o-hidden">
-                  <p
-                    data-aos="fade-up"
-                    data-aos-delay="600"
-                    data-aos-anchor="#hero"
-                  >
-                    Join Africa's leading gathering of stakeholders working
-                    across various verticals of finance and banking, as they
-                    explore cutting-edge trends, innovations, and opportunities
-                    in fintech, driving progress across the continent's
-                    financial ecosystem.
-                  </p>
+                <div class="date-loc" data-aos="fade-up" data-aos-delay="300">
+                  <h4 class="date">
+                    4th Edition | 18 May 2027 | Sarit Expo Center, Nairobi,
+                    Kenya
+                  </h4>
                 </div>
-                <div class="hero-buttons o-hidden">
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="350">
+                  <div class="button">
+                    <a href="#" class="btn btn-pry get-ticket-btn">Buy tickets</a>
+                  </div>
+                  <div class="button">
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Sponsorship%20Deck"
+                      class="btn btn-sec"
+                      >Request sponsorship deck</a
+                    >
+                  </div>
+                  <div class="button">
+                    <a
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Exhibition%20Deck"
+                      class="btn btn-pry"
+                      >Request Exhibition Deck</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="event-intro">
+          <div class="event-intro-container padding mist">
+            <div class="container">
+              <div class="event-intro-wrapper">
+                <div class="left">
+                  <div class="image" data-aos="zoom-in" data-aos-delay="250">
+                    <img
+                      src="assets/highlight/16.jpg"
+                      alt="Africa Fintech Live audience"
+                    />
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="event-intro-heading">
+                    <h3 data-aos="fade-left">
+                      Unrivalled seniority.
+                      <br />
+                      Unmatched impact.
+                    </h3>
+                  </div>
+                  <div class="event-intro-description">
+                    <p data-aos="fade-left" data-aos-delay="150">
+                      Africa Fintech Live sets the agenda for the future of
+                      fintech, payments and banking across East Africa.
+                    </p>
+                    <p data-aos="fade-left" data-aos-delay="250">
+                      Hosted in Nairobi, this is the leading fintech, payments
+                      and banking event uniting industry leaders at the top of
+                      their game.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <div class="about-container padding">
+            <div class="container">
+              <div class="about-wrapper mist">
+                <div class="left">
+                  <div class="about-heading">
+                    <h3 data-aos="fade-right">
+                      Drive your business growth at the leading gathering of
+                      Africa's fintech players
+                    </h3>
+                  </div>
+                  <div class="about-description">
+                    <p data-aos="fade-right" data-aos-delay="200">
+                      Africa Fintech Live has become the gathering point for
+                      over 1000 professionals and 300 companies, blending
+                      diverse expertise from payments, fintech, digital assets,
+                      banking and retail industries.
+                    </p>
+                    <p data-aos="fade-right" data-aos-delay="300">
+                      As a hub of innovation, we harness the power of diverse
+                      ideas and solutions, creating a melting pot where the
+                      latest trends and forward-thinking strategies take shape.
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="image" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="assets/highlight/5.jpg" alt="" />
+                  </div>
                   <div
-                    class="button"
-                    data-aos="fade-up"
-                    data-aos-delay="650"
-                    data-aos-anchor="#hero"
+                    class="image hidden-image"
+                    data-aos="zoom-in"
+                    data-aos-delay="350"
+                  >
+                    <img src="assets/highlight/11.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="counter">
+          <div class="count-container padding mist">
+            <div class="container">
+              <div class="count-wrapper" data-aos="zoom-in">
+                <div class="bottom">
+                  <div class="logo">
+                    <div class="image">
+                      <img
+                        src="assets/logo/afl-white-yellow-logo.png"
+                        alt="Africa Fintech Live"
+                      />
+                    </div>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="2"
+                        >0</span
+                      ><span class="plus"></span>
+                    </h2>
+                    <p>Stages</p>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span
+                        class="odometer"
+                        data-status="yes"
+                        data-count="1000"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>Attendees</p>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="25"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>Exhibitors</p>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="300"
+                        >0</span
+                      ><span class="plus">+</span>
+                    </h2>
+                    <p>Companies</p>
+                  </div>
+                  <div class="count-box">
+                    <h2>
+                      <span class="odometer" data-status="yes" data-count="50"
+                        >0</span
+                      ><span class="plus">%</span>
+                    </h2>
+                    <p>C-level, Director, VP or Head-of-level</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="engage-leaders">
+          <div class="engage-container padding mist">
+            <div class="container">
+              <div class="engage-wrapper">
+                <div class="engage-left">
+                  <div class="section-header">
+                    <div class="big-header o-hidden">
+                      <h2 data-aos="fade-right" data-aos-delay="100">
+                        ENGAGE EAST AFRICA'S FINTECH, BANKING &amp; PAYMENTS
+                        LEADERS
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="engage-action engage-action-desktop"
+                    data-aos="fade-right"
+                    data-aos-delay="250"
                   >
                     <a
                       href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Sponsorship%20Deck"
                       class="btn btn-pry"
                     >
-                      <span class="icon front">
-                        <iconify-icon icon="octicon:sponsor-tiers-24">
-                        </iconify-icon>
-                      </span>
-                      <span class="text">Request Sponsorship Deck</span>
-                      <span class="icon back">
-                        <iconify-icon icon="octicon:sponsor-tiers-24">
-                        </iconify-icon>
-                      </span>
+                      Request Sponsorship Deck
                     </a>
                   </div>
+                </div>
+                <div class="engage-right engage-description">
+                  <p data-aos="fade-left" data-aos-delay="200">
+                    The organisations and teams shaping the future of fintech,
+                    banking and payments meet in Nairobi this May.
+                  </p>
+                  <p data-aos="fade-left" data-aos-delay="300">
+                    Where East Africa's fintech, banking and payments
+                    partnerships begin.
+                  </p>
                   <div
-                    class="button"
+                    class="engage-action engage-action-mobile"
                     data-aos="fade-up"
-                    data-aos-delay="700"
-                    data-aos-anchor="#hero"
+                    data-aos-delay="350"
                   >
                     <a
-                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Exhibition%20Deck"
-                      class="btn btn-sec"
-                    >
-                      <span class="icon front">
-                        <iconify-icon icon="icon-park-outline:booth">
-                        </iconify-icon>
-                      </span>
-                      <span class="text">Request Exhibition Deck</span>
-                      <span class="icon back">
-                        <iconify-icon icon="icon-park-outline:booth">
-                        </iconify-icon>
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    class="button"
-                    data-aos="fade-up"
-                    data-aos-delay="750"
-                    data-aos-anchor="#hero"
-                  >
-                    <a
-                      href="assets/downloads/2026-afl-agenda.pdf"
-                      download="2026-AFL-Agenda.pdf"
+                      href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Sponsorship%20Deck"
                       class="btn btn-pry"
                     >
-                      <span class="icon front">
-                        <iconify-icon icon="ph:download-simple"></iconify-icon>
-                      </span>
-                      <span class="text">Download agenda</span>
-                      <span class="icon back">
-                        <iconify-icon icon="ph:download-simple"></iconify-icon>
-                      </span>
+                      Request Sponsorship Deck
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- About -->
-      <section id="about">
-        <div class="about-container padding">
-          <div class="container">
-            <div class="about-wrapper">
-              <div class="left">
+        <section id="key">
+          <div class="key-container padding mist">
+            <div class="container">
+              <div class="key-wrapper">
                 <div class="section-header">
                   <div class="tiny-header o-hidden">
-                    <span data-aos="fade-up" data-aos-delay="100"
-                      >About the Event</span
-                    >
+                    <span data-aos="fade-up" data-aos-delay="100">- Insights</span>
                   </div>
                   <div class="big-header o-hidden">
                     <h2 data-aos="fade-left" data-aos-delay="200">
-                      Empowering Africa's fintech ecosystem
+                      2027 Key Content Tracks
                     </h2>
                   </div>
                 </div>
-                <div class="description">
-                  <p data-aos="fade-right" data-aos-delay="250">
-                    Africa Fintech Live is the premier annual gathering that
-                    brings together the brightest minds and innovators from
-                    payments, telcos, banking, fintech, and e-commerce. Now in
-                    its second year, it’s the ultimate platform for
-                    collaboration, insights, and shaping the future of financial
-                    technology across the continent.
-                  </p>
-                </div>
-              </div>
-              <div class="right">
-                <div class="image" data-aos="zoom-in" data-aos-delay="150">
-                  <!-- <img src="/assets/section-img/about.jpg" alt="" /> -->
-                  <img src="/assets/highlight/16.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Event by numbers -->
-      <section id="event">
-        <div class="event-container padding">
-          <div class="container">
-            <div class="event-wrapper">
-              <div class="event-box" data-aos="fade-up" data-aos-delay="50">
-                <div class="icon">
-                  <img src="/assets/icons/attendees.svg" alt="" />
-                </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="1000"
-                      >0</span
-                    ><span class="plus">+</span>
-                  </h2>
-                  <p>Attendees</p>
-                </div>
-              </div>
-              <div class="event-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon">
-                  <img src="/assets/icons/companies.svg" alt="" />
-                </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="200"
-                      >0</span
-                    ><span class="plus">+</span>
-                  </h2>
-                  <p>Companies</p>
-                </div>
-              </div>
-              <div class="event-box" data-aos="fade-up" data-aos-delay="150">
-                <div class="icon">
-                  <img src="/assets/icons/speakers.svg" alt="" />
-                </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="30"
-                      >0</span
-                    ><span class="plus">+</span>
-                  </h2>
-                  <p>Speakers</p>
-                </div>
-              </div>
-              <div class="event-box" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon">
-                  <img src="/assets/icons/exhibitors.svg" alt="" />
-                </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="25"
-                      >0</span
-                    ><span class="plus">+</span>
-                  </h2>
-                  <p>Exhibitors</p>
-                </div>
-              </div>
-              <div class="event-box" data-aos="fade-up" data-aos-delay="250">
-                <div class="icon">
-                  <img src="/assets/icons/stages.svg" alt="" />
-                </div>
-                <div class="count-box">
-                  <h2>
-                    <span class="odometer" data-status="yes" data-count="2"
-                      >0</span
-                    ><span class="plus">+</span>
-                  </h2>
-                  <p>Stages of content</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonial -->
-      <section id="testimonial">
-        <div class="testimonial-container padding">
-          <div class="container">
-            <div class="testimonial-wrapper">
-              <div class="left">
-                <div class="quote">
-                  <p data-aos="fade-right">
-                    We are delighted to be part of the Africa FIntech Live,
-                    indicating Mastercard's commitment to driving the
-                    development of Africa's fintech ecosystem.
-                  </p>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="details" data-aos="fade-right" data-aos-delay="100">
-                  <h4 class="name">Shehryar Ali</h4>
-                  <p class="designation">
-                    Senior Vice President & Country Manager for East Africa &
-                    Indian Ocean Islands,
-                  </p>
-                  <p class="company">Mastercard</p>
-                </div>
-
-                <div class="button" data-aos="fade-right" data-aos-delay="150">
-                  <a
-                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Exhibition%20Deck"
-                    class="btn btn-sec"
-                  >
-                    <span class="icon front">
-                      <iconify-icon icon="icon-park-outline:booth">
-                      </iconify-icon>
-                    </span>
-                    <span class="text">Request Exhibition Deck</span>
-                    <span class="icon back">
-                      <iconify-icon icon="icon-park-outline:booth">
-                      </iconify-icon>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="right">
-                <div class="image" data-aos="fade-up" data-aos-delay="250">
-                  <img src="/assets/section-img/testimonial.jpg" alt="" />
+                <div class="key-box-container">
+                  <div class="key-box box" data-aos="fade-left" data-aos-delay="200">
+                    <div class="icon">
+                      <img src="assets/icons/payment.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Payments &amp; Remittances</h3>
+                      <p>
+                        The evolving landscape of domestic and cross-border
+                        payments across East Africa, including real-time
+                        transfers, mobile money, diaspora remittances, and the
+                        role of fintechs in driving financial inclusion.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="key-box box" data-aos="fade-right" data-aos-delay="200">
+                    <div class="icon">
+                      <img src="assets/icons/regulation.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Regulation</h3>
+                      <p>
+                        The regulatory ecosystem shaping East Africa's fintech
+                        sector, from policy reforms and sandbox frameworks to
+                        the balance between innovation and consumer protection.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="key-box box" data-aos="fade-left" data-aos-delay="200">
+                    <div class="icon">
+                      <img src="assets/icons/crypto.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Crypto &amp; DeFi</h3>
+                      <p>
+                        Cryptocurrencies and decentralized finance across East
+                        Africa, covering peer-to-peer trading, blockchain
+                        adoption, regulatory responses, and the opportunities
+                        and risks inside the DeFi ecosystem.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="key-box box" data-aos="fade-right" data-aos-delay="250">
+                    <div class="icon">
+                      <img src="assets/icons/lending.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Lending &amp; Credit</h3>
+                      <p>
+                        Digital lending across the region, including credit
+                        scoring, buy-now-pay-later, micro-lending, and the
+                        discipline of responsible lending and recovery.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="key-box box" data-aos="fade-left" data-aos-delay="250">
+                    <div class="icon">
+                      <img src="assets/icons/fraud.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>AI, Fraud &amp; Security</h3>
+                      <p>
+                        How artificial intelligence is strengthening fraud
+                        detection, cybersecurity, and risk mitigation, and the
+                        ethical questions that come with it.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="key-box box" data-aos="fade-right" data-aos-delay="300">
+                    <div class="icon">
+                      <img src="assets/icons/finance.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Embedded Finance</h3>
+                      <p>
+                        How financial services are being built into
+                        non-financial platforms, including APIs, partnerships,
+                        and new ways of distributing financial products.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="key-box box" data-aos="fade-left" data-aos-delay="300">
+                    <div class="icon">
+                      <img src="assets/icons/wealth.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Wealth, Investment &amp; Asset Management</h3>
+                      <p>
+                        Digital savings, wealth management, and investing,
+                        including robo-advice and wider access to financial
+                        markets.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="key-box box" data-aos="fade-right" data-aos-delay="350">
+                    <div class="icon">
+                      <img src="assets/icons/agent-banking.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Agent Banking</h3>
+                      <p>
+                        The role of agent networks in taking financial services
+                        further, from operating models and technology to the
+                        rules that keep those networks working.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="key-box box" data-aos="fade-left" data-aos-delay="350">
+                    <div class="icon">
+                      <img src="assets/icons/customer.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h3>Customer Experience</h3>
+                      <p>
+                        How teams are using design, personalisation, and
+                        omnichannel service to improve engagement, retention,
+                        and satisfaction.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- What's new -->
-      <section id="whats-new">
-        <div class="whats-new-container padding">
-          <div class="container">
-            <div class="section-header">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">What's New</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  What you can expect in 2026
-                </h2>
-              </div>
-            </div>
-            <div class="whats-new-wrapper">
-              <div
-                class="whats-new-box"
-                data-aos="fade-left"
-                data-aos-delay="100"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/liveexpo.svg" alt="" />
+        <section id="why-attend">
+          <div class="why-attend-container padding mist">
+            <div class="container">
+              <div class="why-attend-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100">- Why attend</span>
+                  </div>
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      No better place to be
+                    </h2>
+                  </div>
                 </div>
-                <div class="content">
-                  <h4>Live expo</h4>
-                  <p>
-                    We are expanding our exhibition arena at this year's edition
-                    of the Africa Fintech Live, providing more partners with an
-                    opportunity to showcase their latest solutions, services and
-                    products to the entire value chain of the fintech ecosystem
-                  </p>
-                </div>
-              </div>
-              <div
-                class="whats-new-box"
-                data-aos="fade-left"
-                data-aos-delay="200"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/happyhour.svg" alt="" />
-                </div>
-                <div class="content">
-                  <h4>Pre-event happy hour</h4>
-                  <p>
-                    As a prelude to the Africa Fintech Live, we are convening
-                    attendees for a ight of networking, fun, and revelry that
-                    you won't want to miss. We are looking forward to delivering
-                    a truly unforgettable evening!
-                  </p>
-                </div>
-              </div>
-              <div
-                class="whats-new-box"
-                data-aos="fade-left"
-                data-aos-delay="300"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/newstage.svg" alt="" />
-                </div>
-                <div class="content">
-                  <h4>New stages and content</h4>
-                  <p>
-                    To explore multiple contents, we are introducing new
-                    categories of conversations at this year's edition of the
-                    event.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="whats-new-box"
-                data-aos="fade-left"
-                data-aos-delay="400"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/networking.png" alt="" />
-                </div>
-                <div class="content">
-                  <h4>Networking</h4>
-                  <p>
-                    To aid 1-2-1 networking, we are designing lounges that cater
-                    to optimum value for quick discussions amongst stakeholders
-                    participating at the event.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="whats-new-box"
-                data-aos="fade-left"
-                data-aos-delay="500"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/pitch.svg" alt="" />
-                </div>
-                <div class="content">
-                  <h4>Pitch live</h4>
-                  <p>
-                    At this year's edition of the Africa Fintech Live, we are
-                    lauching a Pitch live, providing the brightest entrepreneurs
-                    across various markets, with an opportuninty to present
-                    their groundbreaking innovations and ideas.
-                  </p>
+                <p class="content" data-aos="fade-up" data-aos-delay="50">
+                  1000+ fintech, payments, digital assets, banking and retail
+                  players get together for a day of jam-packed conversations,
+                  exchanges and networking about what's now &amp; next across
+                  our industry.
+                </p>
+                <div class="why-attend-box-container">
+                  <div class="why-attend-box box" data-aos="flip-left" data-aos-delay="100">
+                    <div class="icon">
+                      <img src="assets/icons/search.png" alt="" />
+                    </div>
+                    <h4>Explore New Frontiers</h4>
+                    <p>
+                      Gain insights from leading FinTech pioneers who are
+                      pushing industry boundaries. Engage in thought-provoking
+                      discussions, exchange diverse perspectives, and
+                      collaborate toward groundbreaking innovations.
+                    </p>
+                  </div>
+                  <div class="why-attend-box box" data-aos="flip-left" data-aos-delay="200">
+                    <div class="icon">
+                      <img src="assets/icons/forge.png" alt="" />
+                    </div>
+                    <h4>Forge New Ventures</h4>
+                    <p>
+                      Network with industry leaders from 300+ companies and
+                      connect with forward-thinking individuals and brands.
+                      Build lasting relationships that will advance your FinTech
+                      mission.
+                    </p>
+                  </div>
+                  <div class="why-attend-box box" data-aos="flip-left" data-aos-delay="300">
+                    <div class="icon">
+                      <img src="assets/icons/deal.png" alt="" />
+                    </div>
+                    <h4>Fast-track Deals</h4>
+                    <p>
+                      Leverage the vibrant atmosphere to present your products
+                      and services to over 1,000 key professionals, accelerating
+                      your path to impactful deals and collaborations.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Key content focus -->
-      <section id="key">
-        <div class="key-container padding">
-          <div class="container">
-            <div class="section-header white">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100"
-                  >Key Content Focus</span
+        <section id="who-attends">
+          <div class="who-attends-container">
+            <div class="container">
+              <div class="who-attends-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100">- Who attends</span>
+                  </div>
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">
+                      Whatever your portfolio is, there is something for
+                      everyone at Africa Fintech Live
+                    </h2>
+                  </div>
+                </div>
+                <div class="who-attends-cards-container">
+                  <div class="who-attends-cards blue" data-aos="fade-up" data-aos-delay="250">
+                    <div class="contents">
+                      <h3>The industry leader</h3>
+                      <ul>
+                        <li>Drive strong partnership to thrive in an era of market consolidation</li>
+                        <li>Explore emerging business models to exploit new opportunities</li>
+                        <li>Future gaze to remain one step ahead</li>
+                      </ul>
+                    </div>
+                    <div class="image">
+                      <img src="assets/highlight/12.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="who-attends-cards orange" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contents">
+                      <h3>The product director</h3>
+                      <ul>
+                        <li>Understand consumer trends to scale product lines</li>
+                        <li>Remain compliant whilst balancing the need to innovate</li>
+                        <li>Integrate emerging technologies</li>
+                      </ul>
+                    </div>
+                    <div class="image">
+                      <img src="assets/highlight/18.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="who-attends-cards green" data-aos="fade-up" data-aos-delay="350">
+                    <div class="contents">
+                      <h3>The compliance director</h3>
+                      <ul>
+                        <li>Stay abreast of regulatory changes to inform future strategies</li>
+                        <li>Identify future threats to safeguard your customers</li>
+                        <li>Understand how policy will shape the fintech ecosystem and your business</li>
+                      </ul>
+                    </div>
+                    <div class="image">
+                      <img src="assets/highlight/22.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="who-attends-cards purple" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contents">
+                      <h3>The marketing and sales director</h3>
+                      <ul>
+                        <li>Build your marketing and sales pipeline</li>
+                        <li>Enhance your company's brand by positioning amongst the best</li>
+                        <li>Deliver your brand announcements and launch new solutions</li>
+                      </ul>
+                    </div>
+                    <div class="image">
+                      <img src="assets/highlight/28.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="whatsnew">
+          <div class="whatsnew-container padding mist">
+            <div class="container">
+              <div class="section-header">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100">What you can expect in 2027</span>
+                </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    Get ready for a bigger Africa Fintech Live
+                  </h2>
+                </div>
+              </div>
+              <div class="whatsnew-wrapper">
+                <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="200">
+                  <div class="icon">
+                    <img src="assets/icons/search.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4>Insights that cut through the noise</h4>
+                    <p>
+                      Explore multiple expertly curated sessions on the latest
+                      fintech, payments and banking trends, with dedicated
+                      sessions across fintech infrastructure, stablecoins &amp;
+                      payments, open banking, digital identity &amp; fraud and
+                      much more.
+                    </p>
+                  </div>
+                </div>
+                <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="300">
+                  <div class="icon">
+                    <img src="assets/icons/forge.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4>The global ecosystem under one roof</h4>
+                    <p>
+                      We bring the entire fintech, banking and payments
+                      ecosystem together under one roof. From traditional
+                      banking giants to digital challengers, key regulators and
+                      policymakers, to BigTech disruptors; this is your chance
+                      to connect directly with the industry's most influential
+                      players.
+                    </p>
+                  </div>
+                </div>
+                <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="400">
+                  <div class="icon">
+                    <img src="assets/icons/media-vis.svg" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4>Brightest minds across our ecosystem</h4>
+                    <p>
+                      Hear from C-suite and director-level leaders from
+                      Mastercard, Access Bank, Standard Chartered, Kenya
+                      Commercial Bank, Absa Bank Kenya, Paystack and more.
+                      They've all been part of our events. Access insider
+                      perspectives on the strategies driving success in today's
+                      market.
+                    </p>
+                  </div>
+                </div>
+                <div class="whatsnew-box box" data-aos="fade-left" data-aos-delay="500">
+                  <div class="icon">
+                    <img src="assets/icons/deal.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <h4>Networking redefined, influence amplified</h4>
+                    <p>
+                      At Africa Fintech Live, we fuel the conversations that
+                      keep the industry moving. Dive into 1-2-1 connect
+                      meetings, collaborative sessions, thematic roundtables and
+                      an electrifying sunset hour where meaningful connections
+                      are forged.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="button" data-aos="fade-up" data-aos-delay="550">
+                <a
+                  href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Sponsorship%20Deck"
+                  class="btn btn-pry"
                 >
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Focused insights for every
-                  <span class="text-pry">fintech stakeholders</span>
-                </h2>
-              </div>
-            </div>
-            <div class="key-wrapper">
-              <div class="key-box" data-aos="flip-left" data-aos-delay="10">
-                <img src="/assets/icons/fraud.svg" alt="" />
-                Fraud & FinCrime
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="30">
-                <img src="/assets/icons/payment.svg" alt="" />
-                Payments Innovation
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="50">
-                <img src="/assets/icons/cryptocurrency.svg" alt="" />
-                Digital Currencies & CBDCs
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="70">
-                <img src="/assets/icons/governance.svg" alt="" />
-                Regulation
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="100">
-                <img src="/assets/icons/crossborder.svg" alt="" />
-                Cross-border Payments
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="120">
-                <img src="/assets/icons/capital-venture.svg" alt="" />
-                Embedded Finance
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="150">
-                <img src="/assets/icons/financial.svg" alt="" />
-                Bank, Fintech & Telco's
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="170">
-                <img src="/assets/icons/fintech.svg" alt="" />
-                Money & Digital Transformation
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="200">
-                <img src="/assets/icons/forex.svg" alt="" />
-                Forex
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="220">
-                <img src="/assets/icons/talent.svg" alt="" />
-                Future of CX
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="250">
-                <img src="/assets/icons/lending.svg" alt="" />
-                Lending
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="270">
-                <img src="/assets/icons/ecommerce.svg" alt="" />
-                E-commerce & POS Innovation
-              </div>
-              <div class="key-box" data-aos="flip-left" data-aos-delay="300">
-                <img src="/assets/icons/openfinance.svg" alt="" />
-                Open Finance
+                  Request Sponsorship Deck
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Partner -->
-      <section id="partner">
-        <div class="partner-container padding">
-          <div class="container">
-            <div class="section-header">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">Partnership</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Partner with Us
-                </h2>
-              </div>
+        <section id="sunset">
+          <div class="sunset-container">
+            <div class="sunset-copy">
+              <h2 data-aos="fade-right">The official sunset hour</h2>
+              <div class="accent-bar"></div>
+              <h3 data-aos="fade-right" data-aos-delay="100">
+                Turning handshakes into long-lasting connections.
+              </h3>
+              <p data-aos="fade-right" data-aos-delay="200">
+                Keep the momentum going with an evening of drinks, live music,
+                and relaxed conversation. This is where the networking magic
+                happens.
+              </p>
             </div>
-            <div class="partner-wrapper">
-              <div
-                class="partner-box"
-                data-aos="fade-left"
-                data-aos-delay="200"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/exhibition.svg" alt="" />
-                </div>
-                <div class="content">
-                  <h4>Exhibition</h4>
-                  <p>
-                    We provide you with unrivlaed opportunites of reaching your
-                    target market and demonstrating your soultions in Africa's
-                    fast growing fintech ecosystem.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="partner-box"
-                data-aos="fade-left"
-                data-aos-delay="300"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/brand-aware.svg" alt="" />
-                </div>
-                <div class="content">
-                  <h4>Brand awareness</h4>
-                  <p>
-                    Africa Fintech Live plays host to senior industry leaders,
-                    exploring partnership provides you with an opportuninty for
-                    raising your brand awareness and positioning it for growth.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="partner-box"
-                data-aos="fade-left"
-                data-aos-delay="400"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/media-vis.svg" alt="" />
-                </div>
-                <div class="content">
-                  <h4>Media visibility</h4>
-                  <p>
-                    We leverage multiple media platforms to ensure your brand
-                    messages gets to the right audience before, during and after
-                    the event. We have done this multiple times for the multiple
-                    brands.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="partner-box"
-                data-aos="fade-left"
-                data-aos-delay="500"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/thoughleader.svg" alt="" />
-                </div>
-                <div class="content">
-                  <h4>Thought leadership</h4>
-                  <p>
-                    Joining panel sessions, fireside chats, breakout sessions
-                    and keynote sessions are some of the ways to profile your
-                    brand as a leader through demonstration of thought
-                    leadership to a unique audience across the Africa fintech
-                    ecosystem.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="partner-box"
-                data-aos="fade-left"
-                data-aos-delay="600"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/leads.svg" alt="" />
-                </div>
-                <div class="content">
-                  <h4>Lead generation</h4>
-                  <p>
-                    We bring industry leaders and customers to Africa Fintech
-                    Live providing you with an opportunity to generate qualified
-                    leads and network with sector stakeholders.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="partner-box"
-                data-aos="fade-left"
-                data-aos-delay="700"
-              >
-                <div class="icon">
-                  <img src="/assets/icons/indusryleader.svg" alt="" />
-                </div>
-                <div class="content">
-                  <h4>Industry leadership</h4>
-                  <p>
-                    We provide you with an opportunity to demonstrate
-                    leaderships across the fintech ecosystem, through our
-                    sponsorship opportunities.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="button" data-aos="fade-up" data-aos-delay="550">
-              <a
-                href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Sponsorship%20Deck"
-                class="btn btn-pry"
-              >
-                <span class="icon front">
-                  <iconify-icon icon="octicon:sponsor-tiers-24"> </iconify-icon>
-                </span>
-                <span class="text">Request Sponsorship Deck</span>
-                <span class="icon back">
-                  <iconify-icon icon="octicon:sponsor-tiers-24"> </iconify-icon>
-                </span>
-              </a>
+            <div class="sunset-image">
+              <img src="assets/highlight/20.jpg" alt="Africa Fintech Live networking" />
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Speakers -->
-      <section id="speakers">
-        <div class="speakers-container padding">
-          <div class="container">
-            <div class="section-header white">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">Speakers</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Who Speaks <span class="text-pry">at AFL</span>
-                </h2>
+        <section id="who-participates">
+          <div class="who-participates-container padding o-hidden">
+            <div class="container">
+              <div class="section-header white">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100">- Who attends</span>
+                </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    Who participates at our events?
+                  </h2>
+                </div>
               </div>
             </div>
-            <div class="speakers-wrapper o-hidden">
-              <!-- <div class="speaker-box o-hidden">
+            <div class="who-participates-wrapper" data-aos="zoom-out">
+              <div class="who-participates-slide-1">
+              <img src="assets/who-participates-logo/mastercard.png" alt="" />
+              <img src="assets/who-participates-logo/up.jpg" alt="" />
+              <img
+                src="assets/who-participates-logo/interswitch-colored.png"
+                alt=""
+              />
+              <img src="assets/who-participates-logo/9-psb.png" alt="" />
+              <img src="assets/who-participates-logo/dpopay.png" alt="" />
+              <img src="assets/who-participates-logo/palmpay.png" alt="" />
+              <img src="assets/who-participates-logo/zoho.jpg" alt="" />
+              <img src="assets/who-participates-logo/vfd.png" alt="" />
+              <img src="assets/who-participates-logo/octa.png" alt="" />
+              <img src="assets/who-participates-logo/paystack.jpg" alt="" />
+              <img src="assets/who-participates-logo/freshworks.png" alt="" />
+              <img src="assets/who-participates-logo/rackcenter.jpg" alt="" />
+              <img src="assets/who-participates-logo/moniepoint.png" alt="" />
+              <img src="assets/who-participates-logo/maplerad.png" alt="" />
+              <img src="assets/who-participates-logo/payaza.png" alt="" />
+              <img src="assets/who-participates-logo/termii.png" alt="" />
+              <img src="assets/who-participates-logo/uber.png" alt="" />
+              <img src="assets/who-participates-logo/yellowcard.png" alt="" />
+              <img src="assets/who-participates-logo/qwid.png" alt="" />
+              <img src="assets/who-participates-logo/flutterwave.png" alt="" />
+              <img src="assets/who-participates-logo/cleva.jpg" alt="" />
+              <img src="assets/who-participates-logo/anchoria.png" alt="" />
+              <img src="assets/who-participates-logo/bitmama.png" alt="" />
+              <img src="assets/who-participates-logo/servercore.png" alt="" />
+              <img src="assets/who-participates-logo/bolt.png" alt="" />
+              <img src="assets/who-participates-logo/zone.jpg" alt="" />
+              <img src="assets/who-participates-logo/identitypass.png" alt="" />
+            </div>
+            <div class="who-participates-slide-2" dir="rtl">
+              <img src="assets/who-participates-logo/migo.png" alt="" />
+              <img src="assets/who-participates-logo/uba.jpg" alt="" />
+              <img
+                src="assets/who-participates-logo/nationalbankrwanda.png"
+                alt=""
+              />
+              <img src="assets/who-participates-logo/scrella.png" alt="" />
+              <img
+                src="assets/who-participates-logo/africastalking.png"
+                alt=""
+              />
+              <img src="assets/who-participates-logo/anchor.jpg" alt="" />
+              <img src="assets/who-participates-logo/i-invest.jpg" alt="" />
+              <img src="assets/who-participates-logo/cellulant.jpg" alt="" />
+              <img src="assets/who-participates-logo/scalex.png" alt="" />
+              <img src="assets/who-participates-logo/mycoverai.png" alt="" />
+              <img src="assets/who-participates-logo/infobip.jpg" alt="" />
+              <img src="assets/who-participates-logo/zitra.png" alt="" />
+              <img src="assets/who-participates-logo/rra.jpg" alt="" />
+              <img src="assets/who-participates-logo/ami.png" alt="" />
+              <img src="assets/who-participates-logo/nownow.png" alt="" />
+              <img src="assets/who-participates-logo/credo.jpg" alt="" />
+              <img src="assets/who-participates-logo/flincap.png" alt="" />
+              <img src="assets/who-participates-logo/seerbit.png" alt="" />
+              <img src="assets/who-participates-logo/alx.png" alt="" />
+              <img src="assets/who-participates-logo/pocketfood.jpg" alt="" />
+              <img src="assets/who-participates-logo/ayo.jpg" alt="" />
+              <img src="assets/who-participates-logo/africadate.jpg" alt="" />
+              <img
+                src="assets/who-participates-logo/republicofrwanda.jpg"
+                alt=""
+              />
+              <img src="assets/who-participates-logo/zerocomplex.png" alt="" />
+              <img src="assets/who-participates-logo/flick.png" alt="" />
+              <img src="assets/who-participates-logo/garamart.jpg" alt="" />
+              <img src="assets/who-participates-logo/prembly.jpg" alt="" />
+            </div>
+            <div class="who-participates-slide-3">
+              <img src="assets/who-participates-logo/chamsaccess.jpg" alt="" />
+              <img src="assets/who-participates-logo/bunce.png" alt="" />
+              <img src="assets/who-participates-logo/3line.png" alt="" />
+              <img src="assets/who-participates-logo/turaco.png" alt="" />
+              <img src="assets/who-participates-logo/fifthlab.png" alt="" />
+              <img src="assets/who-participates-logo/pawapay.png" alt="" />
+              <img src="assets/who-participates-logo/arca.jpg" alt="" />
+              <img src="assets/who-participates-logo/upperlink.jpg" alt="" />
+              <img src="assets/who-participates-logo/pfs.jpg" alt="" />
+              <img src="assets/who-participates-logo/furex.png" alt="" />
+              <img src="assets/who-participates-logo/cent.png" alt="" />
+              <img src="assets/who-participates-logo/inlaks.png" alt="" />
+              <img src="assets/who-participates-logo/shortlet.png" alt="" />
+              <img
+                src="assets/who-participates-logo/businessinsider.png"
+                alt=""
+              />
+              <img src="assets/who-participates-logo/pesc-choice.jpg" alt="" />
+              <img src="assets/who-participates-logo/bankofkigali.jpg" alt="" />
+              <img src="assets/who-participates-logo/tekexperts.png" alt="" />
+              <img src="assets/who-participates-logo/getequity.jpg" alt="" />
+              <img
+                src="assets/who-participates-logo/businessinsider.png"
+                alt=""
+              />
+              <img src="assets/who-participates-logo/i&m-bank.jpg" alt="" />
+              <img src="assets/who-participates-logo/absa.png" alt="" />
+              <img src="assets/who-participates-logo/irembo.jpg" alt="" />
+              <img src="assets/who-participates-logo/eversend.jpg" alt="" />
+              <img src="assets/who-participates-logo/sasapay.png" alt="" />
+              <img src="assets/who-participates-logo/dcg.png" alt="" />
+              <img src="assets/who-participates-logo/techstars.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section id="speakers">
+          <div class="speakers-container padding mist">
+            <div class="container">
+              <div class="speakers-wrapper">
+                <div class="section-header">
+                  <div class="tiny-header o-hidden">
+                    <span data-aos="fade-up" data-aos-delay="100">- Speakers</span>
+                  </div>
+                  <div class="big-header o-hidden">
+                    <h2 data-aos="fade-left" data-aos-delay="200">Who Speaks at Africa Fintech Live?</h2>
+                  </div>
+                </div>
+                <div class="speakers-box-container speakers-wrapper">
+                  <!-- <div class="speaker-box o-hidden">
               <div data-aos="fade-left" data-aos-delay="100">
                 <div class="speaker-image">
                   <img src="/assets/speakers/esther-waititu.jpg" alt="" />
@@ -1472,333 +1563,165 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Highlights -->
-      <section id="highlight">
-        <div class="highlight-container padding">
-          <div class="container">
-            <div class="section-header">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">Highlights</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Highlights from previous editions
-                </h2>
-              </div>
-            </div>
-            <div class="highlight-wrapper">
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="50"
-                  src="assets/highlight/1.jpg"
-                  alt="Image 1"
-                />
-              </div>
-              <div class="highlight-item v-stretch">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="150"
-                  src="assets/highlight/2.jpg"
-                  alt="Image 2"
-                />
-              </div>
-              <div class="highlight-item h-stretch">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="350"
-                  src="assets/highlight/3.jpg"
-                  alt="Image 3"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="200"
-                  src="assets/highlight/4.jpg"
-                  alt="Image 4"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="100"
-                  src="assets/highlight/5.jpg"
-                  alt="Image 5"
-                />
-              </div>
-              <div class="highlight-item v-stretch">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="200"
-                  src="assets/highlight/6.jpg"
-                  alt="Image 6"
-                />
-              </div>
-              <div class="highlight-item big-stretch">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="350"
-                  src="assets/highlight/7.jpg"
-                  alt="Image 7"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="150"
-                  src="assets/highlight/8.jpg"
-                  alt="Image 8"
-                />
-              </div>
-              <div class="highlight-item h-stretch">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="50"
-                  src="assets/highlight/9.jpg"
-                  alt="Image 9"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="200"
-                  src="assets/highlight/10.jpg"
-                  alt="Image 10"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="250"
-                  src="assets/highlight/11.jpg"
-                  alt="Image 11"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="350"
-                  src="assets/highlight/12.jpg"
-                  alt="Image 12"
-                />
-              </div>
-              <div class="highlight-item v-stretch">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="100"
-                  src="assets/highlight/13.jpg"
-                  alt="Image 13"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="150"
-                  src="assets/highlight/14.jpg"
-                  alt="Image 14"
-                />
-              </div>
-              <div class="highlight-item big-stretch">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="50"
-                  src="assets/highlight/15.jpg"
-                  alt="Image 15"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="100"
-                  src="assets/highlight/16.jpg"
-                  alt="Image 16"
-                />
-              </div>
-              <div class="highlight-item h-stretch">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="250"
-                  src="assets/highlight/17.jpg"
-                  alt="Image 17"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="300"
-                  src="assets/highlight/18.jpg"
-                  alt="Image 18"
-                />
-              </div>
-              <div class="highlight-item big-stretch">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="100"
-                  src="assets/highlight/19.jpg"
-                  alt="Image 19"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="50"
-                  src="assets/highlight/20.jpg"
-                  alt="Image 20"
-                />
-              </div>
-              <div class="highlight-item">
-                <img
-                  data-aos="zoom-out"
-                  data-aos-delay="150"
-                  src="assets/highlight/21.jpg"
-                  alt="Image 21"
-                />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Who participates -->
-      <section id="who-participates">
-        <div class="who-participates-container padding o-hidden">
-          <div class="container">
-            <div class="section-header white">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">Who attends</span>
+        <section id="testimonial">
+          <div class="testimonial-container padding mist">
+            <div class="container">
+              <div class="section-header">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100">- Testimonial</span>
+                </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">What they had to say</h2>
+                </div>
               </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Who attends <span class="text-pry">our events</span>
-                </h2>
+            </div>
+            <div class="testimonial-wrapper">
+              <div class="testimonial-slides">
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-subwrapper">
+                      <div class="left">
+                        <div class="image">
+                          <div class="parallelogram"></div>
+                          <img src="assets/speakers/carl-odame-gyenti.jpeg" alt="Carl Odame-Gyenti" />
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="testimony">
+                          What stood out at Africa Fintech Live 2026 was the
+                          quality of engagement between banks and fintech
+                          innovators, reinforcing the importance of collaboration
+                          in advancing Africa's digital economy.
+                        </p>
+                        <div class="author-details">
+                          <h3 class="name">Carl Odame-Gyenti</h3>
+                          <p class="designation">Director, Banks &amp; Broker Dealers and Fintechs,</p>
+                          <p class="company">Standard Chartered</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-subwrapper">
+                      <div class="left">
+                        <div class="image">
+                          <div class="parallelogram"></div>
+                          <img src="assets/speakers/olanma-john-agbaje.png" alt="Olanma John-Agbaje" />
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="testimony">
+                          Africa Fintech Live 2026 was an impressive gathering of
+                          industry leaders. I particularly valued the
+                          conversations around digital banking, innovation, and
+                          partnerships driving more accessible financial services
+                          across Africa.
+                        </p>
+                        <div class="author-details">
+                          <h3 class="name">Olanma John-Agbaje</h3>
+                          <p class="designation">Country Operating Officer, Kenya,</p>
+                          <p class="company">Access Bank</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-subwrapper">
+                      <div class="left">
+                        <div class="image">
+                          <div class="parallelogram"></div>
+                          <img src="assets/speakers/oumar-barry.png" alt="Oumar Barry" />
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="testimony">
+                          AFL2026 was a rewarding experience. I enjoyed connecting
+                          with innovators who share our passion for simplifying
+                          cross-border payments and unlocking Africa's fintech
+                          potential.
+                        </p>
+                        <div class="author-details">
+                          <h3 class="name">Oumar Barry</h3>
+                          <p class="designation">Co-Founder and CEO,</p>
+                          <p class="company">Cauridor</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-subwrapper">
+                      <div class="left">
+                        <div class="image">
+                          <div class="parallelogram"></div>
+                          <img src="assets/speakers/kakea-mbacha.jpeg" alt="Kakea Mbacha" />
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="testimony">
+                          I enjoyed the inspiring conversations at Africa Fintech
+                          Live 2026, particularly around remittances, financial
+                          inclusion, and creating seamless financial experiences
+                          for Africans at home and abroad.
+                        </p>
+                        <div class="author-details">
+                          <h3 class="name">Kakea Mbacha</h3>
+                          <p class="designation">Country Manager, Kenya,</p>
+                          <p class="company">LemFi</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-slide">
+                  <div class="container">
+                    <div class="testimonial-subwrapper">
+                      <div class="left">
+                        <div class="image">
+                          <div class="parallelogram"></div>
+                          <img src="assets/speakers/caroline-hane-weijman.png" alt="Caroline Hane-Weijman" />
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="testimony">
+                          It was wonderful connecting with Africa's fintech
+                          community at Africa Fintech Live 2026. The conversations
+                          on payment innovation and empowering African businesses
+                          were truly inspiring.
+                        </p>
+                        <div class="author-details">
+                          <h3 class="name">Caroline Hane-Weijman</h3>
+                          <p class="designation">Kenya Country Lead,</p>
+                          <p class="company">Paystack</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="who-participates-wrapper" data-aos="zoom-out">
-            <div class="who-participates-slide-1">
-              <img src="assets/who-participates-logo/mastercard.png" alt="" />
-              <img src="assets/who-participates-logo/up.jpg" alt="" />
-              <img
-                src="assets/who-participates-logo/interswitch-colored.png"
-                alt=""
-              />
-              <img src="assets/who-participates-logo/9-psb.png" alt="" />
-              <img src="assets/who-participates-logo/dpopay.png" alt="" />
-              <img src="assets/who-participates-logo/palmpay.png" alt="" />
-              <img src="assets/who-participates-logo/zoho.jpg" alt="" />
-              <img src="assets/who-participates-logo/vfd.png" alt="" />
-              <img src="assets/who-participates-logo/octa.png" alt="" />
-              <img src="assets/who-participates-logo/paystack.jpg" alt="" />
-              <img src="assets/who-participates-logo/freshworks.png" alt="" />
-              <img src="assets/who-participates-logo/rackcenter.jpg" alt="" />
-              <img src="assets/who-participates-logo/moniepoint.png" alt="" />
-              <img src="assets/who-participates-logo/maplerad.png" alt="" />
-              <img src="assets/who-participates-logo/payaza.png" alt="" />
-              <img src="assets/who-participates-logo/termii.png" alt="" />
-              <img src="assets/who-participates-logo/uber.png" alt="" />
-              <img src="assets/who-participates-logo/yellowcard.png" alt="" />
-              <img src="assets/who-participates-logo/qwid.png" alt="" />
-              <img src="assets/who-participates-logo/flutterwave.png" alt="" />
-              <img src="assets/who-participates-logo/cleva.jpg" alt="" />
-              <img src="assets/who-participates-logo/anchoria.png" alt="" />
-              <img src="assets/who-participates-logo/bitmama.png" alt="" />
-              <img src="assets/who-participates-logo/servercore.png" alt="" />
-              <img src="assets/who-participates-logo/bolt.png" alt="" />
-              <img src="assets/who-participates-logo/zone.jpg" alt="" />
-              <img src="assets/who-participates-logo/identitypass.png" alt="" />
-            </div>
-            <div class="who-participates-slide-2" dir="rtl">
-              <img src="assets/who-participates-logo/migo.png" alt="" />
-              <img src="assets/who-participates-logo/uba.jpg" alt="" />
-              <img
-                src="assets/who-participates-logo/nationalbankrwanda.png"
-                alt=""
-              />
-              <img src="assets/who-participates-logo/scrella.png" alt="" />
-              <img
-                src="assets/who-participates-logo/africastalking.png"
-                alt=""
-              />
-              <img src="assets/who-participates-logo/anchor.jpg" alt="" />
-              <img src="assets/who-participates-logo/i-invest.jpg" alt="" />
-              <img src="assets/who-participates-logo/cellulant.jpg" alt="" />
-              <img src="assets/who-participates-logo/scalex.png" alt="" />
-              <img src="assets/who-participates-logo/mycoverai.png" alt="" />
-              <img src="assets/who-participates-logo/infobip.jpg" alt="" />
-              <img src="assets/who-participates-logo/zitra.png" alt="" />
-              <img src="assets/who-participates-logo/rra.jpg" alt="" />
-              <img src="assets/who-participates-logo/ami.png" alt="" />
-              <img src="assets/who-participates-logo/nownow.png" alt="" />
-              <img src="assets/who-participates-logo/credo.jpg" alt="" />
-              <img src="assets/who-participates-logo/flincap.png" alt="" />
-              <img src="assets/who-participates-logo/seerbit.png" alt="" />
-              <img src="assets/who-participates-logo/alx.png" alt="" />
-              <img src="assets/who-participates-logo/pocketfood.jpg" alt="" />
-              <img src="assets/who-participates-logo/ayo.jpg" alt="" />
-              <img src="assets/who-participates-logo/africadate.jpg" alt="" />
-              <img
-                src="assets/who-participates-logo/republicofrwanda.jpg"
-                alt=""
-              />
-              <img src="assets/who-participates-logo/zerocomplex.png" alt="" />
-              <img src="assets/who-participates-logo/flick.png" alt="" />
-              <img src="assets/who-participates-logo/garamart.jpg" alt="" />
-              <img src="assets/who-participates-logo/prembly.jpg" alt="" />
-            </div>
-            <div class="who-participates-slide-3">
-              <img src="assets/who-participates-logo/chamsaccess.jpg" alt="" />
-              <img src="assets/who-participates-logo/bunce.png" alt="" />
-              <img src="assets/who-participates-logo/3line.png" alt="" />
-              <img src="assets/who-participates-logo/turaco.png" alt="" />
-              <img src="assets/who-participates-logo/fifthlab.png" alt="" />
-              <img src="assets/who-participates-logo/pawapay.png" alt="" />
-              <img src="assets/who-participates-logo/arca.jpg" alt="" />
-              <img src="assets/who-participates-logo/upperlink.jpg" alt="" />
-              <img src="assets/who-participates-logo/pfs.jpg" alt="" />
-              <img src="assets/who-participates-logo/furex.png" alt="" />
-              <img src="assets/who-participates-logo/cent.png" alt="" />
-              <img src="assets/who-participates-logo/inlaks.png" alt="" />
-              <img src="assets/who-participates-logo/shortlet.png" alt="" />
-              <img
-                src="assets/who-participates-logo/businessinsider.png"
-                alt=""
-              />
-              <img src="assets/who-participates-logo/pesc-choice.jpg" alt="" />
-              <img src="assets/who-participates-logo/bankofkigali.jpg" alt="" />
-              <img src="assets/who-participates-logo/tekexperts.png" alt="" />
-              <img src="assets/who-participates-logo/getequity.jpg" alt="" />
-              <img
-                src="assets/who-participates-logo/businessinsider.png"
-                alt=""
-              />
-              <img src="assets/who-participates-logo/i&m-bank.jpg" alt="" />
-              <img src="assets/who-participates-logo/absa.png" alt="" />
-              <img src="assets/who-participates-logo/irembo.jpg" alt="" />
-              <img src="assets/who-participates-logo/eversend.jpg" alt="" />
-              <img src="assets/who-participates-logo/sasapay.png" alt="" />
-              <img src="assets/who-participates-logo/dcg.png" alt="" />
-              <img src="assets/who-participates-logo/techstars.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Sponsors -->
-      <section id="sponsors">
-        <div class="sponsors-container padding">
-          <div class="container">
-            <div class="sponsors-wrapper">
-              <div class="section-header black">
-                <h2 data-aos="fade-up">2026 Sponsors and Partners</h2>
-              </div>
-
-              <div class="sponsors-grid-container">
+        <section id="sponsors">
+          <div class="sponsors-container padding">
+            <div class="container">
+              <div class="sponsors-wrapper">
+                <div class="section-header black">
+                  <h2 data-aos="fade-up">2027 Sponsors and Partners</h2>
+                </div>
+                <div class="sponsors-grid-container">
                 <div class="sponsors-grid">
                   <div class="sponsors-grid-header">Associate Sponsors</div>
                   <div class="sponsors-grid-wrapper">
@@ -1875,261 +1798,387 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Contact -->
-      <section id="contact">
-        <div class="contact-container padding">
-          <div class="container">
-            <div class="section-header white">
-              <div class="tiny-header o-hidden">
-                <span data-aos="fade-up" data-aos-delay="100">Contact</span>
-              </div>
-              <div class="big-header o-hidden">
-                <h2 data-aos="fade-left" data-aos-delay="200">
-                  Speak to
-                  <span style="color: var(--primary-color)">our team</span>
-                </h2>
+        <section id="highlight">
+          <div class="highlight-container padding mist">
+            <div class="container">
+              <div class="section-header white">
+                <div class="tiny-header o-hidden">
+                  <span data-aos="fade-up" data-aos-delay="100">- Highlights</span>
+                </div>
+                <div class="big-header o-hidden">
+                  <h2 data-aos="fade-left" data-aos-delay="200">
+                    Highlights from previous editions
+                  </h2>
+                </div>
               </div>
             </div>
-            <div class="contact-wrapper">
-              <div class="left">
-                <div class="speak">
-                  <p data-aos="zoom-out" data-aos-delay="150">
-                    If you are interested in learning more about our available
-                    sponsorship, speaking, exhibitions and other partnership
-                    opportunities, please speak to our team.
-                  </p>
+            <div class="slide-container" data-aos="zoom-out" data-aos-delay="300">
+              <div class="slider highlight-slider-1"></div>
+              <div class="slider highlight-slider-2" dir="rtl"></div>
+              <div class="slider highlight-slider-3"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="partner">
+          <div class="partner-platforms">
+            <div class="partner-intro">
+              <p class="eyebrow">Partner with us</p>
+              <h2 data-aos="fade-right">
+                Drive your brand's commercial growth at the
+                <span>Africa Fintech Live 2027</span>
+              </h2>
+              <a
+                href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Sponsorship%20Deck"
+                class="btn btn-pry"
+                >Request Sponsorship Deck</a
+              >
+            </div>
+            <div class="partner-grid">
+              <article>
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 54 54" fill="none">
+                    <circle cx="27" cy="27" r="25" stroke="#1b2a6b" stroke-width="1.6" />
+                    <path d="M18 34.5c1.4-3.2 4-5 9-5s7.6 1.8 9 5" stroke="#1b2a6b" stroke-width="1.6" stroke-linecap="round" />
+                    <circle cx="27" cy="22" r="4.2" stroke="#1b2a6b" stroke-width="1.6" />
+                  </svg>
                 </div>
+                <h3>Keynote Presentation</h3>
+                <p>
+                  Demonstrate your thought leadership by delivering a keynote
+                  presentation to an engaged audience of fintech and payments
+                  leaders.
+                </p>
+              </article>
+              <article>
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 54 54" fill="none">
+                    <circle cx="27" cy="27" r="25" stroke="#1b2a6b" stroke-width="1.6" />
+                    <circle cx="18" cy="24" r="2.6" stroke="#1b2a6b" stroke-width="1.5" />
+                    <circle cx="27" cy="22" r="3" stroke="#1b2a6b" stroke-width="1.5" />
+                    <circle cx="36" cy="24" r="2.6" stroke="#1b2a6b" stroke-width="1.5" />
+                    <path d="M14 34c.8-2.4 2.4-3.6 4.2-3.6 1.6 0 2.8.8 3.6 2.2M23 33.5c.8-2.6 2.4-4 4.4-4s3.6 1.4 4.4 4M32.2 32.6c.8-2.2 2.2-3.4 3.8-3.4 1.6 0 3 .9 3.8 2.8" stroke="#1b2a6b" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <h3>Panel Discussions</h3>
+                <p>
+                  Showcase your expertise by discussing the hot topics of the day
+                  relating to your solutions on stage with a panel of senior
+                  industry experts.
+                </p>
+              </article>
+              <article>
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 54 54" fill="none">
+                    <circle cx="27" cy="27" r="25" stroke="#1b2a6b" stroke-width="1.6" />
+                    <path d="M22 34h10M24 34v-2.2c0-1.2.4-2 1.4-3.2.7-.8 1.1-1.6 1.1-2.6 0-1.2-.8-2-2-2s-2 .8-2 2" stroke="#1b2a6b" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M28.2 24.2c1.2.2 2.2 1.2 2.2 2.8 0 1-.4 1.8-1.1 2.6" stroke="#1b2a6b" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <h3>Fireside Chats</h3>
+                <p>
+                  Discuss a hot topic relating to your solutions on stage with a
+                  leader from the fintech and payments industry.
+                </p>
+              </article>
+              <article>
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 54 54" fill="none">
+                    <circle cx="27" cy="27" r="25" stroke="#1b2a6b" stroke-width="1.6" />
+                    <circle cx="27" cy="20" r="2.4" stroke="#1b2a6b" stroke-width="1.5" />
+                    <circle cx="20" cy="30" r="2.4" stroke="#1b2a6b" stroke-width="1.5" />
+                    <circle cx="34" cy="30" r="2.4" stroke="#1b2a6b" stroke-width="1.5" />
+                    <path d="M27 22.6v3.2M21.6 28.2l3.2-2.2M32.4 28.2l-3.2-2.2" stroke="#1b2a6b" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <h3>Roundtables</h3>
+                <p>
+                  Share your experiences and expertise with senior
+                  decision-makers from your target accounts in a private
+                  roundtable discussion, with a topic and guestlist tailored to
+                  your requirements.
+                </p>
+              </article>
+              <article>
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 54 54" fill="none">
+                    <circle cx="27" cy="27" r="25" stroke="#1b2a6b" stroke-width="1.6" />
+                    <path d="M18 33.5V23.5l9-4 9 4v10" stroke="#1b2a6b" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M24 33.5v-5h6v5" stroke="#1b2a6b" stroke-width="1.5" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <h3>Exhibition</h3>
+                <p>
+                  Showcase your products and solutions through your carved out
+                  space, designed to host your most valuable current and
+                  prospective clients and lead the conversations that will shape
+                  your business for the year.
+                </p>
+              </article>
+              <article>
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 54 54" fill="none">
+                    <circle cx="27" cy="27" r="25" stroke="#1b2a6b" stroke-width="1.6" />
+                    <rect x="19" y="21" width="12" height="12" rx="1.5" stroke="#1b2a6b" stroke-width="1.5" />
+                    <path d="M31 24.5l5-2.2v9.4l-5-2.2" stroke="#1b2a6b" stroke-width="1.5" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <h3>Media Visibility</h3>
+                <p>
+                  We leverage multiple media platforms to ensure your brand
+                  messages get to the right audience before, during and after the
+                  event. We have done this multiple times for multiple brands.
+                </p>
+              </article>
+              <article>
+                <div class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 54 54" fill="none">
+                    <circle cx="27" cy="27" r="25" stroke="#1b2a6b" stroke-width="1.6" />
+                    <path d="M20 32h14M22.5 32c0-3 2-5.5 4.5-5.5s4.5 2.5 4.5 5.5" stroke="#1b2a6b" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M27 22.5v2.2M22.2 24.2l1.4 1.4M31.8 24.2l-1.4 1.4" stroke="#1b2a6b" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <h3>Sunset Hours</h3>
+                <p>
+                  Keep the momentum going with an evening of drinks, live music,
+                  and relaxed conversation. This is where handshakes turn into
+                  long-lasting connections.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="timeline">
+          <div class="timeline-container padding mist">
+            <div class="container">
+              <div class="timeline-wrapper">
+                <h2 data-aos="fade-up">You've got the brand, we've got the platform</h2>
+                <p data-aos="fade-up" data-aos-delay="100">
+                  Partner with us to make your mark across East Africa's fintech
+                  ecosystem
+                </p>
+                <div class="timeline-subwrapper">
+                  <div class="timeline-item">
+                    <span class="dot blue" data-aos="zoom-in" data-aos-delay="150"></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="150">Amplify.</h3>
+                      <p data-aos="fade-left" data-aos-delay="200">
+                        Your brand awareness across multiple touchpoints
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="dot yellow" data-aos="zoom-in" data-aos-delay="200"></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="200">Engage.</h3>
+                      <p data-aos="fade-left" data-aos-delay="250">
+                        Your prospects with unrivaled thought leadership
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="dot green" data-aos="zoom-in" data-aos-delay="250"></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="250">Connect.</h3>
+                      <p data-aos="fade-left" data-aos-delay="300">
+                        Generate relevant and qualified leads
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="dot pink" data-aos="zoom-in" data-aos-delay="300"></span>
+                    <div class="text">
+                      <h3 data-aos="fade-left" data-aos-delay="300">Exhibit.</h3>
+                      <p data-aos="fade-left" data-aos-delay="350">
+                        Your innovative solutions and services to thousands of
+                        attendees
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact">
+          <div class="contact-container padding">
+            <div class="container mist">
+              <div class="contact-wrapper">
+                <h2 data-aos="fade-up">Speak to our team</h2>
+                <p data-aos="fade-up" data-aos-delay="100">
+                  If you are interested in learning more about our available
+                  sponsorship, speaking, exhibitions and other partnership
+                  opportunities, please speak to our team.
+                </p>
                 <div class="contact-box-container">
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-out"
-                    data-aos-delay="200"
-                  >
-                    <h2>Jamiu Ijaodola</h2>
-                    <p><a href="tel: +2347016673316">+234 701 667 3316</a></p>
-                    <p>
-                      <a href="mailto: jamiu@eventhive.ng"
-                        >jamiu@eventhive.ng</a
-                      >
-                    </p>
+                  <div class="contact-box" data-aos="zoom-in" data-aos-delay="150">
+                    <h4>Jamiu Ijaodola</h4>
+                    <a href="tel:+2347016673316">+234 701 667 3316</a>
+                    <a href="mailto:jamiu@eventhive.ng">jamiu@eventhive.ng</a>
                   </div>
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-in"
-                    data-aos-delay="250"
-                  >
-                    <h2>Malik Kazeem</h2>
-                    <p><a href="tel: +2349028112744">+234 902 811 2744</a></p>
-                    <p>
-                      <a href="mailto: malik@eventhive.ng"
-                        >malik@eventhive.ng</a
-                      >
-                    </p>
+                  <div class="contact-box" data-aos="zoom-in" data-aos-delay="250">
+                    <h4>Malik Kazeem</h4>
+                    <a href="tel:+2349028112744">+234 902 811 2744</a>
+                    <a href="mailto:malik@eventhive.ng">malik@eventhive.ng</a>
                   </div>
-                  <div
-                    class="contact-box"
-                    data-aos="zoom-out"
-                    data-aos-delay="300"
-                  >
-                    <h2>Arole Mustapha</h2>
-                    <p><a href="tel: +2348086081614">+234 808 608 1614</a></p>
-                    <p>
-                      <a href="mailto: arole@eventhive.ng"
-                        >arole@eventhive.ng</a
-                      >
-                    </p>
+                  <div class="contact-box" data-aos="zoom-in" data-aos-delay="250">
+                    <h4>Arole Mustapha</h4>
+                    <a href="tel:+2348086081614">+234 808 608 1614</a>
+                    <a href="mailto:arole@eventhive.ng">arole@eventhive.ng</a>
                   </div>
                 </div>
-                <div class="button" data-aos="fade-up" data-aos-delay="150">
-                  <div
-                    class="btn btn-pry get-ticket-btn"
+                <div class="become">
+                  <a
+                    href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Sponsorship%20Deck"
+                    class="btn btn-sec"
                     data-aos="fade-up"
-                    data-aos-delay="200"
+                    data-aos-delay="300"
+                    >Become a Sponsor</a
                   >
-                    <span class="icon front">
-                      <iconify-icon icon="ph:ticket"></iconify-icon>
-                    </span>
-                    <span class="text">Ticket </span>
-                    <span class="icon back">
-                      <iconify-icon icon="ph:ticket"></iconify-icon>
-                    </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="more-about">
+          <div class="more-container padding">
+            <div class="container">
+              <div class="more-wrapper" data-aos="fade-left">
+                <div class="more-logo">
+                  <span>An event by:</span>
+                  <div class="logos">
+                    <div class="logo">
+                      <img src="assets/logo/logo.svg" alt="Eventhive" />
+                    </div>
                   </div>
-                  <!-- <a href="#" class="btn btn-pry get-ticket-btn">
-                    <span class="icon front">
-                      <iconify-icon icon="ph:ticket"></iconify-icon>
-                    </span>
-                    <span class="text">Get Ticket </span>
-                    <span class="icon back">
-                      <iconify-icon icon="ph:ticket"></iconify-icon>
-                    </span>
-                  </a> -->
                 </div>
-              </div>
-              <div class="right">
-                <div class="image" data-aos="zoom-out" data-aos-delay="150">
-                  <img src="/assets/section-img/contact.jpg" alt="" />
-
-                  <!-- <div class="play">
-                    <a
-                      href="https://www.youtube.com/watch?v=LZ9d5y41O70&feature=youtu.be&ab_channel=NewsCentralTV"
-                      target="_blank"
-                    >
-                      <div class="play-button">
-                        <iconify-icon
-                          icon="solar:play-broken"
-                          style="color: white"
-                        ></iconify-icon>
-                      </div>
-                    </a>
-                  </div> -->
+                <p>
+                  Eventhive is Africa's leading B2B2C event servicing company
+                  with event portfolios across Lagos, London, Nairobi, Kigali
+                  and New York.
+                </p>
+                <p>
+                  Eventhive operates in the heart of the knowledge and
+                  information economy across major sectors in Africa. We enable
+                  businesses to grow through connecting them with knowledge,
+                  ideas and opportunities.
+                </p>
+                <div class="indus-cities">
+                  <h4 class="text-sec">Industries We Operate In:</h4>
+                  <div>
+                    <span>Energy</span><span>.</span><span>Tech</span><span>.</span
+                    ><span>Real Estate</span><span>.</span><span>Finance</span
+                    ><span>.</span><span>Transport</span>
+                  </div>
+                </div>
+                <div class="indus-cities">
+                  <h4 class="text-sec">Cities We Operate In:</h4>
+                  <div>
+                    <span>Lagos</span><span>.</span><span>London</span><span>.</span
+                    ><span>New York</span><span>.</span><span>Kigali</span
+                    ><span>.</span><span>Nairobi</span><span>.</span
+                    ><span>Johannesburg</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
-      <!-- More About Eventhive -->
-      <section id="more-about" class="padding o-hidden">
-        <div class="more-container" data-aos="fade-left">
+      <footer id="footer">
+        <div class="footer-container padding">
           <div class="container">
-            <div class="more-logo">
-              <span>An event by:</span>
-              <div class="logo">
-                <img src="assets/logo/logo.svg" alt="" />
-              </div>
-            </div>
-
-            <p>
-              Eventhive is Africa's leading B2B2C event servicing company with
-              event portfolios across Lagos, London, Nairobi, Kigali and New
-              York.
-            </p>
-            <p>
-              Eventhive.ng operates in the heart of the knowledge and
-              information economy across major sectors in Africa. We enable
-              businesses to grow through connecting them with knowledge, ideas
-              and opportunities.
-            </p>
-
-            <div class="indus-cities">
-              <h4 class="text-sec">Industries We Operate In:</h4>
-              <div>
-                <span>Energy</span><span>.</span><span>Tech</span><span>.</span
-                ><span>Real Estate</span><span>.</span><span>Finance</span
-                ><span>.</span><span>Transport</span>
-              </div>
-            </div>
-            <div class="indus-cities">
-              <h4 class="text-sec">Cities We Operate In:</h4>
-              <div>
-                <span>Lagos</span><span>.</span><span>London</span><span>.</span
-                ><span>New York</span><span>.</span><span>Kigali</span
-                ><span>.</span><span>Nairobi</span><span>.</span
-                ><span>Johannesburg</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-container padding">
-        <div class="container">
-          <div class="footer-wrapper">
-            <div class="top">
-              <div class="logo">
-                <div class="logo-icon">
-                  <img src="/assets/logo/afl-white-logo.png" alt="" />
+            <div class="footer-wrapper">
+              <div class="top">
+                <div class="logo">
+                  <div class="logo-icon">
+                    <img src="assets/logo/afl-white-logo.png" alt="Africa Fintech Live" />
+                  </div>
+                </div>
+                <div class="quick-links">
+                  <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#partner">Partnership</a></li>
+                    <li>
+                      <a
+                        href="mailto:jamiu@eventhive.ng?subject=Request%20for%20Africa%20Fintech%20Live%20Exhibition%20Deck"
+                        >Exhibition</a
+                      >
+                    </li>
+                    <li><a href="#" class="get-ticket-btn">Tickets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <h3>Africa Fintech Live 2027</h3>
+                  <p>18 May 2027 | Sarit Expo Center, Nairobi, Kenya</p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/share/JqRxmCpGDEoj8RZM/?mibextid=LQQJ4d"
+                        target="_blank"
+                        ><iconify-icon icon="fa:facebook"></iconify-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://x.com/afritechseries?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ"
+                        target="_blank"
+                        ><iconify-icon icon="ri:twitter-x-fill"></iconify-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/africa-tech-series/"
+                        target="_blank"
+                        ><iconify-icon icon="formkit:linkedin"></iconify-icon
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/afritechseries?igsh=MWVwajkyYjNyYW8zZw=="
+                        target="_blank"
+                        ><iconify-icon icon="mdi:instagram"></iconify-icon
+                      ></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="quick-links">
-                <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#partner">Partner</a></li>
-                  <li><a href="">Exhibition</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
+              <div class="center">
+                <div id="countdown-timer" class="timer"></div>
               </div>
-              <div class="socials">
-                <h3>Africa Fintech Live 2027</h3>
-                <p>May 18th, 2027 | Nairobi, Kenya</p>
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/share/JqRxmCpGDEoj8RZM/?mibextid=LQQJ4d"
-                      ><iconify-icon icon="fa:facebook"></iconify-icon>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://x.com/afritechseries?s=11&t=U0Zbl5bO-TfL3iYzbuAOLQ"
-                      target="_blank"
-                      ><iconify-icon icon="ri:twitter-x-fill"></iconify-icon
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/company/africa-tech-series/"
-                      target="_blank"
-                      ><iconify-icon icon="formkit:linkedin"></iconify-icon
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/afritechseries?igsh=MWVwajkyYjNyYW8zZw=="
-                      target="_blank"
-                      ><iconify-icon icon="mdi:instagram"></iconify-icon
-                    ></a>
-                  </li>
-                </ul>
+              <div class="divider"></div>
+              <div class="bottom">
+                <p>
+                  &copy; <span class="year">2026</span> Africa Fintech Live. All
+                  Rights Reserved.
+                </p>
               </div>
-            </div>
-            <div class="center">
-              <div id="countdown-timer" class="timer"></div>
-            </div>
-            <div class="divider"></div>
-            <div class="bottom">
-              <p>
-                &copy; <span class="year">2025</span> Africa Fintech Live. All
-                Rights Reserved.
-              </p>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
-    <!-- Scripts -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
-    <!-- Odometer -->
     <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
-
-    <!-- Iconify -->
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-
-    <!-- Aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Slick Carousel -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-
-    <!-- Custom script -->
-    <script src="/js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

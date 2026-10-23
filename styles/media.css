@@ -1,53 +1,67 @@
 /* Big screen */
 @media only screen and (max-width: 1200px) {
-}
-
-/* Tap Pro */
-@media only screen and (max-width: 991px) {
-  /* Nav */
-  #nav .nav-wrapper .nav-links {
-    display: none;
-  }
-
-  #nav .nav-wrapper .hamburger {
-    display: flex;
-  }
-
-  #nav .nav-wrapper .logo {
-    margin-left: 50px;
+  /* Hero */
+  #hero .hero-wrapper .hero-buttons {
+    flex-direction: column;
   }
 
   /* Hero */
-  #hero .hero-wrapper .hero-header {
-    width: 100%;
+
+  #hero .hero-wrapper {
+    width: 80%;
   }
 
   #hero .hero-wrapper .hero-description {
     width: 100%;
-    text-align: justify;
   }
 
-  /* Testimonial */
-  #testimonial .testimonial-container {
-    height: auto;
+  /* Who attends */
+  #who-attends .who-attends-cards {
+    flex: 1 1 calc((100% - 30px) / 2);
   }
 
-  #testimonial .testimonial-wrapper {
-    flex-direction: column;
+  #who-attends .who-attends-cards .image {
+    height: 300px;
   }
 
-  /* What's new */
-  #whats-new .whats-new-wrapper .whats-new-box {
-    flex: 0 0 calc((100% - 30px) / 2);
+  /* Speakers stay four across until the tablet breakpoint */
+}
+
+/* Tab Pro */
+@media only screen and (max-width: 991px) {
+  /* #counter .count-wrapper .top {
+    display: block;
+  } */
+
+  /* Navbar */
+  #navbar .nav-wrapper .nav-links {
+    display: none;
   }
 
-  /* Key */
-  #key .key-wrapper .key-box {
-    flex: 0 0 calc((100% - 90px) / 4);
+  #navbar .nav-wrapper .hamburger {
+    display: flex;
   }
 
-  /* Partner */
-  #partner .partner-wrapper .partner-box {
+  #navbar .nav-wrapper .button {
+    display: none;
+  }
+
+  /* Counter */
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .logo {
+    flex: 0 0 100%;
+    border-bottom: 3px solid var(--white);
+  }
+
+  /* Why attend */
+  #why-attend .why-attend-box-container .why-attend-box {
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
@@ -56,25 +70,52 @@
     flex: 0 0 calc((100% - 30px) / 2);
   }
 
-  /* Contact */
-  #contact .contact-container {
-    height: auto;
+  /* Partner */
+  #partner .partner-wrapper .partner-box {
+    flex: 0 0 calc((100% - 30px) / 2);
   }
 
-  #contact .contact-wrapper {
+  /* Whats new */
+  #whatsnew .whatsnew-wrapper .whatsnew-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Engage Leaders */
+  #engage-leaders .engage-wrapper {
     flex-direction: column;
+    gap: 28px;
+  }
+
+  #engage-leaders .engage-wrapper .engage-left,
+  #engage-leaders .engage-wrapper .engage-right,
+  #engage-leaders .engage-wrapper .engage-action {
+    width: 100%;
+  }
+
+  #engage-leaders .engage-wrapper .engage-action-desktop {
+    display: none;
+  }
+
+  #engage-leaders .engage-wrapper .engage-action-mobile {
+    display: block;
+    margin-top: 24px;
+  }
+
+  /* Event Recap */
+  #event-recap-section .event-recap-wrapper .video-container {
+    height: 500px;
   }
 }
 
 /* Tablet */
 @media only screen and (max-width: 768px) {
-  /* Nav */
-  #nav .nav-wrapper .button {
-    display: none;
+  /* Hero */
+  #hero .hero-wrapper {
+    width: 100%;
   }
 
-  #nav .nav-wrapper .mobile-btn {
-    display: block;
+  #hero .hero-wrapper .hero-description {
+    width: 100%;
   }
 
   /* About */
@@ -82,23 +123,60 @@
     flex-direction: column;
   }
 
-  /* Highlight */
-  #highlight .highlight-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  #about .about-wrapper .right {
+    flex-direction: column;
   }
 
-  /* What's new */
-  #whats-new .whats-new-wrapper .whats-new-box {
-    flex: 0 0 100%;
+  #about .about-wrapper .right .hidden-image {
+    display: block;
+  }
+
+  /* Event Intro */
+  #event-intro .event-intro-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Counter */
+  #counter .count-wrapper {
+    border-radius: 32px;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(4) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(5),
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
   }
 
   /* Key */
-  #key .key-wrapper .key-box {
-    flex: 0 0 calc((100% - 60px) / 3);
+  #key .key-box-container .key-box {
+    flex: 0 0 100%;
+    flex-direction: column;
+  }
+
+  /* Why attend */
+  #why-attend .why-attend-box-container .why-attend-box {
+    flex: 0 0 100%;
+  }
+
+  /* Who attends */
+  #who-attends .who-attends-cards {
+    flex: 1 1 100%;
   }
 
   /* Partner */
   #partner .partner-wrapper .partner-box {
+    flex: 0 0 100%;
+  }
+  /* Whats new */
+  #whatsnew .whatsnew-wrapper .whatsnew-box {
     flex: 0 0 100%;
   }
 
@@ -107,28 +185,92 @@
     flex: 0 0 100%;
   }
 
+  #speakers .speakers-box-container .speaker-box .speaker-image {
+    width: min(100%, 280px);
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  /* Testimonial */
+  #testimonial .testimonial-subwrapper {
+    flex-direction: column-reverse;
+  }
+
+  /* Event Recap */
+  #event-recap-section .event-recap-wrapper .video-container {
+    height: 400px;
+  }
+
   /* Footer */
   #footer .footer-wrapper .top {
     flex-direction: column;
+  }
+
+  #footer .footer-wrapper .top .quick-links {
+    display: block;
   }
 }
 
 /* Mobile */
 @media only screen and (max-width: 568px) {
-  /* Highlight */
-  #highlight .highlight-wrapper .v-stretch {
-    grid-row: span 1;
+  /* Hero */
+  #hero .hero-wrapper .icon.icon-1 {
+    left: 2%;
+    top: -15%;
   }
-  #highlight .highlight-wrapper .h-stretch {
-    grid-column: span 1;
+  #hero .hero-wrapper .icon.icon-2 {
+    right: 2%;
+    top: -13%;
   }
 
-  /* Key */
-  #key .key-wrapper .key-box {
-    flex: 0 0 calc((100% - 30px) / 2);
+  #hero .hero-wrapper .hero-buttons {
+    flex-direction: column;
   }
-  /* #highlight .highlight-wrapper .big-stretch {
-    grid-column: span 1;
-    grid-row: span 1;
-  } */
+
+  /* Counter */
+  #counter .count-wrapper .bottom .count-box:nth-child(3),
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(4),
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(4) {
+    border-right: 3px solid var(--white);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #sunset .sunset-container,
+  #partner .partner-platforms,
+  #partner .partner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #sunset .sunset-copy::before {
+    display: none;
+  }
+
+  #sunset .sunset-image {
+    min-height: 320px;
+    margin-left: 0;
+  }
+
+  #sunset .sunset-copy,
+  #partner .partner-intro,
+  #partner .partner-grid {
+    padding: 36px 20px;
+  }
+
+  #partner .partner-intro {
+    min-height: 0;
+  }
+
+  #partner .partner-grid article:last-child {
+    max-width: none;
+    grid-template-columns: 54px 1fr;
+  }
 }
