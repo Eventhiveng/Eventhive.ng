@@ -1,31 +1,35 @@
 $(function () {
-  const refreshAos = function () {
-    if (window.AOS) {
-      AOS.refresh();
-    }
-  };
+  // Lock scroll while the preloader is up so early scroll doesn't fight reveal
+  $("html, body").css("overflow", "hidden");
 
   const revealPage = function () {
-    $("#preloader").fadeOut(500, function () {
-      $(".main-container").fadeIn(500, function () {
+    $("#preloader").fadeOut(400, function () {
+      $(".main-container").css("display", "block").hide().fadeIn(400, function () {
         if (window.AOS) {
           AOS.init({
             duration: 800,
             once: true,
-            offset: 40,
+            offset: 80,
             easing: "ease-out-cubic",
             mirror: false,
+            disableMutationObserver: false,
           });
         }
-        $(window).trigger("scroll");
-        setTimeout(refreshAos, 200);
-        setTimeout(refreshAos, 800);
-        setTimeout(refreshAos, 1600);
+
+        // Init carousels after the page is visible, then one AOS refresh
+        if (typeof window.__plInitCarousels === "function") {
+          window.__plInitCarousels();
+        }
+
+        setTimeout(function () {
+          if (window.AOS) AOS.refresh();
+          $("html, body").css("overflow", "");
+        }, 300);
       });
     });
   };
 
-  setTimeout(revealPage, 600);
+  setTimeout(revealPage, 500);
 });
 
 $(document).ready(function () {
@@ -88,14 +92,10 @@ $(document).ready(function () {
     });
   };
 
-  const refreshAos = function () {
-    if (window.AOS) {
-      AOS.refresh();
-    }
-  };
-
   const highlightComp = () => {
-    if (!$highlightSlideOne.length) return;
+    if (!$highlightSlideOne.length || $highlightSlideOne.hasClass("slick-initialized")) {
+      return;
+    }
 
     const highlightSettings1 = {
       infinite: true,
@@ -126,11 +126,12 @@ $(document).ready(function () {
     $highlightSlideOne.slick(highlightSettings1);
     $highlightSlideTwo.slick(highlightSettings2);
     $highlightSlideThree.slick(highlightSettings3);
-    refreshAos();
   };
 
   const attendeeComp = () => {
-    if (!$attendeeSlideOne.length) return;
+    if (!$attendeeSlideOne.length || $attendeeSlideOne.hasClass("slick-initialized")) {
+      return;
+    }
 
     function getSlidesToShow() {
       return Math.ceil($(window).width() / 250);
@@ -163,7 +164,6 @@ $(document).ready(function () {
     $attendeeSlideOne.slick(slickSettings1);
     $attendeeSlideTwo.slick(slickSettings2);
     $attendeeSlideThree.slick(slickSettings3);
-    refreshAos();
 
     let resizeTimeout;
     $(window).on("resize", function () {
@@ -171,9 +171,13 @@ $(document).ready(function () {
       resizeTimeout = setTimeout(function () {
         const newSlidesToShow = getSlidesToShow();
         $slides.slick("slickSetOption", "slidesToShow", newSlidesToShow, true);
-        refreshAos();
       }, 200);
     });
+  };
+
+  window.__plInitCarousels = function () {
+    highlightComp();
+    attendeeComp();
   };
 
   const runStatCounts = function () {
@@ -204,17 +208,7 @@ $(document).ready(function () {
     });
   };
 
-  let aosScrollTick = false;
-  $(window).on("scroll", function () {
-    runStatCounts();
-    if (!aosScrollTick) {
-      aosScrollTick = true;
-      window.requestAnimationFrame(function () {
-        refreshAos();
-        aosScrollTick = false;
-      });
-    }
-  });
+  $(window).on("scroll", runStatCounts);
 
   setTimeout(function () {
     runStatCounts();
@@ -225,10 +219,7 @@ $(document).ready(function () {
         $el.data("status", "no");
       }
     });
-    refreshAos();
-  }, 1800);
-
-  $(window).on("load", refreshAos);
+  }, 2000);
 
   const countdownFunction = setInterval(function () {
     const now = new Date().getTime();
@@ -254,6 +245,4 @@ $(document).ready(function () {
   $(".year").text(new Date().getFullYear());
 
   toggleNav();
-  highlightComp();
-  attendeeComp();
 });

@@ -318,6 +318,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .section-header {
+    width: 100%;
+  }
+
   #key .key-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
