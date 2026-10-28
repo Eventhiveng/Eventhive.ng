@@ -1,27 +1,49 @@
 /* Big screen */
 @media only screen and (max-width: 1200px) {
+  /* Hero */
+  #hero .hero-wrapper .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero .hero-wrapper .hero-buttons .btn {
+    width: fit-content;
+    min-width: 260px;
+    text-align: center;
+  }
+
+  /* Hero */
+
+  #hero .hero-wrapper {
+    width: 80%;
+  }
+
+  #hero .hero-wrapper .hero-description {
+    width: 100%;
+  }
+
+  /* Who attends */
+  #who-attends .who-attends-cards {
+    flex: 1 1 calc((100% - 30px) / 2);
+  }
+
+  #who-attends .who-attends-cards .image {
+    height: 300px;
+  }
+
   /* Speakers */
   #speakers .speakers-wrapper .speaker-box {
     flex: 0 0 calc((100% - 60px) / 3);
   }
 }
 
-/* Tap Pro */
+/* Tab Pro */
 @media only screen and (max-width: 991px) {
-  /* Key */
-  #key .key-wrapper .key-box {
-    flex: 0 0 calc((100% - 90px) / 4);
-  }
+  /* #counter .count-wrapper .top {
+    display: block;
+  } */
 
-  /* Speakers */
-  #speakers .speakers-wrapper .speaker-box {
-    flex: 0 0 calc((100% - 30px) / 2);
-  }
-}
-
-/* Tablet */
-@media only screen and (max-width: 768px) {
-  /* Nav */
+  /* Navbar */
   #navbar .nav-wrapper .nav-links {
     display: none;
   }
@@ -30,38 +52,84 @@
     display: flex;
   }
 
-  #navbar .nav-wrapper .logo-name {
-    display: none;
-  }
-
   #navbar .nav-wrapper .button {
     display: none;
   }
 
-  /* Hero */
-  #hero .hero-container .hero-wrapper {
+  /* Counter */
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .logo {
+    flex: 0 0 100%;
+    border-bottom: 3px solid var(--white);
+  }
+
+  /* Why attend */
+  #why-attend .why-attend-box-container .why-attend-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Partner */
+  #partner .partner-wrapper .partner-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Whats new */
+  #whatsnew .whatsnew-wrapper .whatsnew-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
+  /* Engage Leaders */
+  #engage-leaders .engage-wrapper {
     flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 28px;
   }
 
-  #hero .hero-container .hero-wrapper .floating-loc,
-  #hero .hero-container .hero-wrapper .floating-logo {
-    position: static;
+  #engage-leaders .engage-wrapper .engage-left,
+  #engage-leaders .engage-wrapper .engage-right,
+  #engage-leaders .engage-wrapper .engage-action {
+    width: 100%;
   }
 
-  #hero .hero-container .hero-wrapper .floating-logo {
+  #engage-leaders .engage-wrapper .engage-action-desktop {
     display: none;
   }
 
-  #hero .hero-container .hero-wrapper .hero-content {
-    flex-direction: column;
-    align-items: start;
+  #engage-leaders .engage-wrapper .engage-action-mobile {
+    display: block;
+    margin-top: 24px;
   }
 
-  #hero .hero-container .hero-wrapper .hero-content .left {
+  /* Event Recap */
+  #event-recap-section .event-recap-wrapper .video-container {
+    height: 500px;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  /* Hero */
+  #hero .hero-wrapper {
     width: 100%;
+  }
+
+  #hero .hero-wrapper .hero-description {
+    width: 100%;
+  }
+
+  #hero .hero-image {
+    display: none;
   }
 
   /* About */
@@ -69,24 +137,70 @@
     flex-direction: column;
   }
 
-  /* What's new */
-  #why-attend .why-attend-wrapper .why-attend-box {
-    flex: 0 0 100%;
+  #about .about-wrapper .right {
+    flex-direction: column;
   }
 
-  /* Expect */
-  #expect .expect-wrapper .expect-box {
-    flex: 0 0 100%;
+  #about .about-wrapper .right .hidden-image {
+    display: block;
+  }
+
+  /* Event Intro */
+  #event-intro .event-intro-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Counter */
+  #counter .count-wrapper {
+    border-radius: 32px;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(4) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(5),
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
   }
 
   /* Key */
-  #key .key-wrapper .key-box {
-    flex: 0 0 calc((100% - 60px) / 3);
+  #key .key-box-container .key-box {
+    flex: 0 0 100%;
+    flex-direction: column;
+  }
+
+  /* Why attend */
+  #why-attend .why-attend-box-container .why-attend-box {
+    flex: 0 0 100%;
+  }
+
+  /* Who attends */
+  #who-attends .who-attends-cards {
+    flex: 1 1 100%;
   }
 
   /* Partner */
   #partner .partner-wrapper .partner-box {
     flex: 0 0 100%;
+  }
+  /* Whats new */
+  #whatsnew .whatsnew-wrapper .whatsnew-box {
+    flex: 0 0 100%;
+  }
+
+  /* Speakers */
+  #speakers .speakers-wrapper .speaker-box {
+    flex: 0 0 100%;
+  }
+
+  #speakers .speakers-box-container .speaker-box .speaker-image {
+    height: 400px;
   }
 
   /* Testimonial */
@@ -94,17 +208,11 @@
     flex-direction: column-reverse;
   }
 
-  /* Speakers */
-  #speakers .speakers-wrapper .speaker-box {
-    flex: 0 0 100%;
+  /* Event Recap */
+  #event-recap-section .event-recap-wrapper .video-container {
+    height: 400px;
   }
-  #speakers .speakers-wrapper .speaker-box .speaker-image {
-    height: auto;
-    /* max-height: 300px; */
-  }
-  #speakers .speakers-wrapper .speaker-box .speaker-image img {
-    aspect-ratio: 1/1;
-  }
+
   /* Footer */
   #footer .footer-wrapper .top {
     flex-direction: column;
@@ -117,13 +225,139 @@
 
 /* Mobile */
 @media only screen and (max-width: 568px) {
-  /* Key */
-  #key .key-wrapper .key-box {
-    flex: 0 0 calc((100% - 30px) / 2);
+  /* Hero */
+  #hero .hero-wrapper .icon.icon-1 {
+    left: 2%;
+    top: -15%;
+  }
+  #hero .hero-wrapper .icon.icon-2 {
+    right: 2%;
+    top: -13%;
   }
 
-  /* Speakers */
-  #speakers .speakers-wrapper .speaker-box {
-    flex: 0 0 100%;
+  #hero .hero-wrapper .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero .hero-wrapper .hero-buttons .btn {
+    width: fit-content;
+    min-width: 240px;
+    text-align: center;
+  }
+
+  /* Counter */
+  #counter .count-wrapper .bottom .count-box:nth-child(3),
+  #counter .count-wrapper .bottom .count-box:nth-child(5) {
+    border-right: none;
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(4),
+  #counter .count-wrapper .bottom .count-box:nth-child(6) {
+    border-top: 3px solid var(--white);
+  }
+
+  #counter .count-wrapper .bottom .count-box:nth-child(4) {
+    border-right: 3px solid var(--white);
   }
 }
+
+/* Payments Live 2027 partial-switch responsive */
+@media only screen and (max-width: 1200px) {
+  #hero .hero-wrapper .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero .hero-wrapper .hero-buttons .btn {
+    width: fit-content;
+    min-width: 260px;
+    text-align: center;
+  }
+
+  #key .key-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #whatsnew .whatsnew-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #partner .partner-split {
+    grid-template-columns: 1fr;
+  }
+
+  #about .about-wrapper {
+    flex-direction: column;
+  }
+
+  #why-attend .why-attend-wrapper {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  #testimonial .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #testimonial .t-card:nth-child(3) {
+    grid-column: auto;
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  #key .key-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #hero .hero-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #key .key-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #whatsnew .whatsnew-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  #partner .partner-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  #testimonial .t-photo {
+    flex: 0 0 100px;
+    width: 100px;
+    min-height: 140px;
+  }
+
+  #testimonial .t-body {
+    padding: 14px 14px;
+  }
+
+  #counter .key-stats-grid {
+    gap: 32px 20px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  #key .key-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 12px;
+  }
+
+  #key .key-wrapper .key-box img {
+    width: 72px;
+    height: 72px;
+  }
+
+  #hero .hero-wrapper .hero-header h1 {
+    max-width: none;
+  }
+}
+

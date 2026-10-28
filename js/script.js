@@ -1,26 +1,31 @@
-// $(window).on("load", function () {
-//   $("#preloader").fadeOut(500, () => {
-//     $(".main-container").fadeIn(500, () => {
-//       AOS.init({
-//         duration: 1000,
-//       });
-//     });
-//   });
-// });
-
 $(function () {
-  // Simulate loading delay for 1 second
-  setTimeout(function () {
-    // Fade out the preloader
-    $("#preloader").fadeOut("500", function () {
-      // Show the main content
-      $(".main-container").fadeIn("500", function () {
-        AOS.init({
-          duration: 1000,
-        });
+  const refreshAos = function () {
+    if (window.AOS) {
+      AOS.refresh();
+    }
+  };
+
+  const revealPage = function () {
+    $("#preloader").fadeOut(500, function () {
+      $(".main-container").fadeIn(500, function () {
+        if (window.AOS) {
+          AOS.init({
+            duration: 800,
+            once: true,
+            offset: 40,
+            easing: "ease-out-cubic",
+            mirror: false,
+          });
+        }
+        $(window).trigger("scroll");
+        setTimeout(refreshAos, 200);
+        setTimeout(refreshAos, 800);
+        setTimeout(refreshAos, 1600);
       });
     });
-  }, 500); // Delay of 1 second
+  };
+
+  setTimeout(revealPage, 600);
 });
 
 $(document).ready(function () {
@@ -31,43 +36,40 @@ $(document).ready(function () {
   const $highlightSlideTwo = $(".highlight-slider-2");
   const $highlightSlideThree = $(".highlight-slider-3");
 
-  const $attendeeSlideOne = $(".who-attends-slide-1");
-  const $attendeeSlideTwo = $(".who-attends-slide-2");
-  const $attendeeSlideThree = $(".who-attends-slide-3");
-
-  const $testimonialSlide = $(".testimonial-slides");
+  const $attendeeSlideOne = $(
+    ".who-participates-slide-1, .who-attends-slide-1"
+  ).first();
+  const $attendeeSlideTwo = $(
+    ".who-participates-slide-2, .who-attends-slide-2"
+  ).first();
+  const $attendeeSlideThree = $(
+    ".who-participates-slide-3, .who-attends-slide-3"
+  ).first();
 
   const $slides = $(
-    ".who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
+    ".who-participates-slide-1, .who-participates-slide-2, .who-participates-slide-3, .who-attends-slide-1, .who-attends-slide-2, .who-attends-slide-3"
   );
 
-  // Ticket
-  // Show popup when any "Get a Ticket" button is clicked
   $(".get-ticket-btn").click(function () {
     $("#ticket-popup").fadeIn();
   });
 
-  // Hide popup when close button is clicked
   $(".close-btn").click(function () {
     $("#ticket-popup").fadeOut();
   });
 
-  // Hide popup when clicking outside the content
   $(document).click(function (event) {
     if (!$(event.target).closest(".popup-content, .get-ticket-btn").length) {
       $("#ticket-popup").fadeOut();
     }
   });
 
-  // Toggle Nav
   const toggleNav = () => {
-    // Toggle hamburger and aside menu
     $hamburger.on("click", function () {
       $(this).toggleClass("open");
       $asideMenu.toggleClass("open");
     });
 
-    // Close the aside menu when a link is clicked
     $asideMenuLink.on("click", function () {
       $asideMenu.removeClass("open");
       $hamburger.removeClass("open");
@@ -86,27 +88,15 @@ $(document).ready(function () {
     });
   };
 
-  // const accordionFunc = () => {
-  //   // Open the first accordion item by default and set the icon to minus
-  //   $(".accordion-content").first().show();
-  //   $(".accordion-header").first().find(".icon").text("-");
-
-  //   $(".accordion-header").on("click", function () {
-  //     const $icon = $(this).find(".icon");
-  //     const $content = $(this).next(".accordion-content");
-
-  //     // Toggle this section's visibility and icon
-  //     $content.slideToggle(200, function () {
-  //       $icon.text($content.is(":visible") ? "-" : "+");
-  //     });
-
-  //     // Hide other sections and set their icons to plus
-  //     $(".accordion-content").not($content).slideUp(200);
-  //     $(".accordion-header").not($(this)).find(".icon").text("+");
-  //   });
-  // };
+  const refreshAos = function () {
+    if (window.AOS) {
+      AOS.refresh();
+    }
+  };
 
   const highlightComp = () => {
+    if (!$highlightSlideOne.length) return;
+
     const highlightSettings1 = {
       infinite: true,
       speed: 4000,
@@ -117,26 +107,10 @@ $(document).ready(function () {
       lazyLoad: "ondemand",
       arrows: false,
       cssEase: "linear",
-
       responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 567,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
+        { breakpoint: 991, settings: { slidesToShow: 3 } },
+        { breakpoint: 767, settings: { slidesToShow: 2 } },
+        { breakpoint: 567, settings: { slidesToShow: 1 } },
       ],
     };
 
@@ -152,10 +126,12 @@ $(document).ready(function () {
     $highlightSlideOne.slick(highlightSettings1);
     $highlightSlideTwo.slick(highlightSettings2);
     $highlightSlideThree.slick(highlightSettings3);
+    refreshAos();
   };
 
   const attendeeComp = () => {
-    // Function to calculate slidesToShow based on window width
+    if (!$attendeeSlideOne.length) return;
+
     function getSlidesToShow() {
       return Math.ceil($(window).width() / 250);
     }
@@ -187,114 +163,97 @@ $(document).ready(function () {
     $attendeeSlideOne.slick(slickSettings1);
     $attendeeSlideTwo.slick(slickSettings2);
     $attendeeSlideThree.slick(slickSettings3);
+    refreshAos();
 
-    // Throttle function to optimize resize event handling
     let resizeTimeout;
     $(window).on("resize", function () {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(function () {
         const newSlidesToShow = getSlidesToShow();
         $slides.slick("slickSetOption", "slidesToShow", newSlidesToShow, true);
-      }, 200); // Delay to prevent excessive updates during resizing
+        refreshAos();
+      }, 200);
     });
   };
 
-  const testimonialComp = () => {
-    const testimonialSettings = {
-      infinite: true,
-      speed: 2000,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      lazyLoad: "ondemand",
-      arrows: false,
-      cssEase: "linear",
-      dots: true,
-      fade: true,
-    };
+  const runStatCounts = function () {
+    $(".stat-num").each(function () {
+      const $el = $(this);
+      if ($el.data("status") !== "yes") return;
 
-    $testimonialSlide.slick(testimonialSettings);
-  };
+      const $section = $el.closest("#counter, .key-stats");
+      if (!$section.length) return;
 
-  // let currentImageSrc = "/assets/section-img/trade.jpg"; // Track the current image
-
-  // $(window).on("scroll", function () {
-  //   let scrollTop = $(window).scrollTop();
-  //   let windowHeight = $(window).height();
-
-  //   $(".agenda-item").each(function () {
-  //     const $item = $(this);
-  //     const itemOffsetTop = $item.offset().top;
-  //     const itemHeight = $item.outerHeight();
-  //     const imageSrc = $item.data("image");
-
-  //     // Check if the agenda item is within the viewport
-  //     if (
-  //       scrollTop >= itemOffsetTop - windowHeight / 1.3 &&
-  //       scrollTop < itemOffsetTop + itemHeight - windowHeight / 1.3
-  //     ) {
-  //       if (imageSrc !== currentImageSrc) {
-  //         // Only update if image is different
-  //         currentImageSrc = imageSrc;
-  //         $(".agenda-image img").fadeOut(200, function () {
-  //           $(this).attr("src", currentImageSrc).fadeIn(200);
-  //         });
-  //       }
-  //       return false; // Stop checking after finding the active item
-  //     }
-  //   });
-  // });
-
-  $(window).scroll(function () {
-    $(".odometer").each(function () {
-      let parent_section_postion = $(this).closest(".event-wrapper").position();
-      let parent_section_top = parent_section_postion.top;
-      if (
-        $(window).scrollTop() >
-        parent_section_top - ($(window).height() - 200)
-      ) {
-        if ($(this).data("status") == "yes") {
-          $(this).html($(this).data("count"));
-          $(this).data("status", "no");
-        }
+      const parentTop = $section.offset().top;
+      if ($(window).scrollTop() > parentTop - ($(window).height() - 200)) {
+        const target = Number($el.data("count")) || 0;
+        $({ n: 0 }).animate(
+          { n: target },
+          {
+            duration: 1200,
+            step: function (now) {
+              $el.text(Math.floor(now));
+            },
+            complete: function () {
+              $el.text(target);
+            },
+          }
+        );
+        $el.data("status", "no");
       }
     });
+  };
+
+  let aosScrollTick = false;
+  $(window).on("scroll", function () {
+    runStatCounts();
+    if (!aosScrollTick) {
+      aosScrollTick = true;
+      window.requestAnimationFrame(function () {
+        refreshAos();
+        aosScrollTick = false;
+      });
+    }
   });
 
-  // const countdownFunction = setInterval(function () {
-  //   const now = new Date().getTime();
-  //   const eventDate = new Date("March 27, 2025 00:00:00").getTime();
+  setTimeout(function () {
+    runStatCounts();
+    $(".stat-num").each(function () {
+      const $el = $(this);
+      if ($el.data("status") === "yes") {
+        $el.text($el.data("count"));
+        $el.data("status", "no");
+      }
+    });
+    refreshAos();
+  }, 1800);
 
-  //   // Calculate the time remaining
-  //   const distance = eventDate - now;
-  //   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  //   const hours = Math.floor(
-  //     (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  //   );
-  //   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  //   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  $(window).on("load", refreshAos);
 
-  //   // Display countdown
-  //   if (distance > 0) {
-  //     $("#countdown-timer").html(
-  //       days + "d " + hours + "h " + minutes + "m " + seconds + "s "
-  //     );
-  //   } else {
-  //     $("#countdown-timer").html("Event is Live!");
-  //   }
+  const countdownFunction = setInterval(function () {
+    const now = new Date().getTime();
+    const eventDate = new Date("June 30, 2027 09:00:00").getTime();
+    const distance = eventDate - now;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  //   // Stop the countdown if both events are live
-  //   if (distance < 0) {
-  //     clearInterval(countdownFunction);
-  //   }
-  // }, 1000);
+    if (distance > 0) {
+      $("#countdown-timer").html(
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s "
+      );
+    } else {
+      $("#countdown-timer").html("Event is Live!");
+      clearInterval(countdownFunction);
+    }
+  }, 1000);
 
-  // Initialize functions
+  $(".year").text(new Date().getFullYear());
+
   toggleNav();
-  // accordionFunc();
   highlightComp();
   attendeeComp();
-  testimonialComp();
-  // $(window).on("scroll", function () {
-  //   AOS.refresh();
-  // });
 });

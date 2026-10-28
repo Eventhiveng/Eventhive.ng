@@ -2,8 +2,14 @@
 :root {
   --white: #fff;
   --black: #000;
-  --primary-color: #000060;
-  --secondary-color: #ec732a;
+  --primary-color: #0a0f2c;
+  --secondary-color: #0055FF;
+  --accent-lime: #c8ff00;
+  --accent-coral: #ff6b6b;
+  --accent-mint: #7dffa3;
+  --accent-lavender: #c4b5fd;
+  --accent-gold: #f5c542;
+  --stat-gradient: linear-gradient(135deg, #ff2d8b, #ff8a00);
 }
 
 /* Reset */
@@ -63,7 +69,6 @@ section {
 }
 
 /* Ticket */
-/* Popup Background */
 .popup {
   display: none;
 }
@@ -81,7 +86,6 @@ section {
   z-index: 999;
 }
 
-/* Popup Content */
 .popup .popup-content {
   background: #fff;
   padding: 20px;
@@ -93,7 +97,6 @@ section {
   position: relative;
 }
 
-/* Close Button */
 .popup .close-btn {
   font-size: 24px;
   cursor: pointer;
@@ -108,15 +111,6 @@ section {
   font-size: clamp(20px, 5vw, 24px);
 }
 
-/* Ticket Links */
-/* .popup .btn-sec {
-  margin-top: 20px;
-} */
-
 .popup .popup-content .btn {
   margin-bottom: 20px;
 }
-
-/* .popup .btn-sec:hover {
-  color: var(--white);
-} */
