@@ -97,6 +97,13 @@ const speakers = [
     image: "assets/images/speakers/ifeoluwa-oluwabunmi-famuyiwa.jpeg",
     linkedIn: "#",
   },
+  {
+    name: "Uche Ibeadotam",
+    title: "Team Lead,",
+    company: "ARM Private Wealth – Abuja/North.",
+    image: "assets/images/speakers/uche-ibeadotam.jpeg",
+    linkedIn: "#",
+  },
 ];
 
 // const speakers = [
