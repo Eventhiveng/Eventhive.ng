@@ -475,12 +475,12 @@
 
   .stats-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 28px 0;
     text-align: center;
 
     .count-box {
-      padding: 12px 28px;
+      padding: 12px 20px;
       border-left: 1px solid var(--border);
       display: flex;
       flex-direction: column;
@@ -489,7 +489,6 @@
 
       &:first-child {
         border-left: none;
-        padding-left: 0;
       }
 
       h2 {
@@ -513,7 +512,16 @@
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px 0;
+
+      .count-box:nth-child(3n + 1) {
+        border-left: none;
+      }
+    }
+
+    @media (max-width: 600px) {
       grid-template-columns: repeat(2, 1fr);
       gap: 32px 16px;
 
