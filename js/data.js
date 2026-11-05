@@ -1,5 +1,12 @@
 const speakers = [
   {
+    name: "Engr. Muttaqha Rabe Darma, PhD",
+    title: "Hon. Minister of Housing & Urban Development,",
+    company: "Federal Republic of Nigeria",
+    image: "assets/images/speakers/muttaqha-rabe-darma.jpeg",
+    linkedIn: "#",
+  },
+  {
     name: "His Royal Majesty (HRM) Oba Akintoye Felix Adeoye",
     title: "President,",
     company: "Real Estate Developers Association of Nigeria",
@@ -34,13 +41,13 @@ const speakers = [
     image: "assets/images/speakers/jamila-faniyi.png",
     linkedIn: "#",
   },
-  {
-    name: "Olubiyi Adekunbi",
-    title: "Head of Real Estate Investment",
-    company: "ARM Investment Managers",
-    image: "assets/images/speakers/olubiyi-adekunbi.jpeg",
-    linkedIn: "#",
-  },
+  // {
+  //   name: "Olubiyi Adekunbi",
+  //   title: "Head of Real Estate Investment",
+  //   company: "ARM Investment Managers",
+  //   image: "assets/images/speakers/olubiyi-adekunbi.jpeg",
+  //   linkedIn: "#",
+  // },
   {
     name: "Paul Foh",
     title: "CEO,",
@@ -55,13 +62,13 @@ const speakers = [
     image: "assets/images/speakers/samson-akejelu.jpeg",
     linkedIn: "#",
   },
-  {
-    name: "Emmanuel Ilaboya",
-    title: "GM, Concrete & Innovation",
-    company: "HBM Nigeria",
-    image: "assets/images/speakers/emmanuel-ilaboya.jpeg",
-    linkedIn: "#",
-  },
+  // {
+  //   name: "Emmanuel Ilaboya",
+  //   title: "GM, Concrete & Innovation",
+  //   company: "HBM Nigeria",
+  //   image: "assets/images/speakers/emmanuel-ilaboya.jpeg",
+  //   linkedIn: "#",
+  // },
   {
     name: "Dr Munachino Eze",
     title: "Chairman,",
