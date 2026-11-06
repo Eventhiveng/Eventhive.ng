@@ -808,7 +808,7 @@
   box-shadow:
     1px 1px 10px #3e3c3c5d,
     inset -1px -1px 10px #31333653;
-  object-position: top;
+  object-position: center;
 }
 
 #highlight .highlight-container .slide-container .highlight-slider-1 img {
