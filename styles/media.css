@@ -1,5 +1,9 @@
 /* Big screen */
 @media only screen and (max-width: 1200px) {
+  /* Speakers */
+  #speakers .speakers-box-container .speaker-box {
+    flex: 0 0 calc((100% - 60px) / 3);
+  }
 }
 
 /* Tap Pro */
@@ -16,7 +20,7 @@
 
   /* Speakers */
   #speakers .speakers-box-container .speaker-box {
-    flex: 0 0 calc((100% - 60px) / 3);
+    flex: 0 0 calc((100% - 60px) / 2);
   }
 }
 
