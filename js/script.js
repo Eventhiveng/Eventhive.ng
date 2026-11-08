@@ -75,10 +75,10 @@ $(document).ready(function () {
     });
   };
 
-  // Show announcement modal when page loads
-  $(window).on("load", function () {
-    $("#announcement-modal").addClass("active");
-  });
+  // Tickets-closed banner disabled for 2027 prep — re-enable when needed
+  // $(window).on("load", function () {
+  //   $("#announcement-modal").addClass("active");
+  // });
 
   // Announcement Modal
   // Close announcement modal when close button is clicked
@@ -197,7 +197,7 @@ $(document).ready(function () {
   };
 
   const populateHighlightSlides = () => {
-    const TOTAL_HIGHLIGHT_IMAGES = 137;
+    const TOTAL_HIGHLIGHT_IMAGES = 143;
 
     const shuffle = (array) => {
       let currentIndex = array.length;

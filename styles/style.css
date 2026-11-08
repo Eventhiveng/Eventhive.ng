@@ -243,6 +243,7 @@
   right: -300px;
   width: 1000px;
   height: 1000px;
+  min-height: 105%;
   border-radius: 50%;
   overflow: hidden;
   z-index: -1;
@@ -254,7 +255,8 @@
   background:
     linear-gradient(to right, #011556cc, #00000080),
     url(/assets/section-img/hero-speaker.jpg) no-repeat;
-  background-position: top 20% left -100px;
+  /* background-position: top 20% left -100px; */
+  background-position: top 50% left -200px;
   background-clip: border-box;
   background-size: cover;
   position: relative;
