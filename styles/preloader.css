@@ -37,6 +37,10 @@
   letter-spacing: 0.1em;
 }
 
+body.announcement-open {
+  overflow: hidden;
+}
+
 /* Announcement Modal */
 .announcement-modal {
   position: fixed;

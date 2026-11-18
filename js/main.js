@@ -1,4 +1,11 @@
 $(function () {
+  const $announcement = $("#announcement");
+
+  function closeAnnouncement() {
+    $announcement.removeClass("active");
+    $("body").removeClass("announcement-open");
+  }
+
   setTimeout(function () {
     $(".preloader").fadeOut("500", function () {
       $(".main-container").fadeIn("500", function () {
@@ -6,8 +13,20 @@ $(function () {
           duration: 800,
         });
       });
+      $announcement.addClass("active");
+      $("body").addClass("announcement-open");
     });
   }, 1000);
+
+  $announcement.on(
+    "click",
+    ".announcement-modal-overlay, .announcement-modal-close",
+    closeAnnouncement,
+  );
+
+  $(document).on("keydown", function (event) {
+    if (event.key === "Escape") closeAnnouncement();
+  });
 });
 
 $(document).ready(() => {
