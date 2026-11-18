@@ -126,4 +126,34 @@ $(function () {
   );
 
   sections.forEach((section) => sectionObserver.observe(section));
+
+  /* ---------------- Announcement popup ---------------- */
+  const announce = document.getElementById("announce");
+
+  if (announce) {
+    const announceClose = announce.querySelector(".announce-close");
+    let announceTimer;
+
+    function openAnnounce() {
+      announce.hidden = false;
+      document.body.classList.add("announce-open");
+      announceClose.focus();
+    }
+
+    function closeAnnounce() {
+      announce.hidden = true;
+      document.body.classList.remove("announce-open");
+      clearTimeout(announceTimer);
+    }
+
+    announce.addEventListener("click", function (event) {
+      if (event.target.closest("[data-announce-close]")) closeAnnounce();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !announce.hidden) closeAnnounce();
+    });
+
+    announceTimer = setTimeout(openAnnounce, 600);
+  }
 });

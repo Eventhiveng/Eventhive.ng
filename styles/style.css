@@ -1676,3 +1676,76 @@
   visibility: visible;
   transform: translateY(0);
 }
+
+/* ==================== ANNOUNCEMENT POPUP ==================== */
+body.announce-open {
+  overflow: hidden;
+}
+
+.announce {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.announce[hidden] {
+  display: none;
+}
+
+.announce-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 6, 20, 0.78);
+}
+
+.announce-dialog {
+  position: relative;
+  width: min(440px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  padding: 14px;
+  background: var(--color-bg, #0f0a28);
+  border: 1px solid rgba(255, 201, 74, 0.35);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  max-height: calc(100dvh - 48px);
+  overflow: auto;
+}
+
+.announce-dialog img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: calc(var(--radius-lg) - 8px);
+}
+
+.announce-dialog .btn {
+  justify-content: center;
+}
+
+.announce-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(15, 10, 40, 0.72);
+  color: #fff;
+  font-size: 1.15rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.announce-close:hover {
+  background: var(--color-yellow);
+  color: var(--color-bg);
+}
